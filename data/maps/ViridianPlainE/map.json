@@ -1,0 +1,77 @@
+{
+  "id": "MAP_VIRIDIAN_PLAIN_E",
+  "name": "ViridianPlainE",
+  "layout": "LAYOUT_VIRIDIAN_PLAIN_E",
+  "music": "MUS_RG_ROUTE1",
+  "region_map_section": "MAPSEC_VIRIDIAN_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "direction": "left",
+      "offset": 38,
+      "map": "MAP_NEW_MAP1"
+    },
+    {
+      "direction": "left",
+      "offset": 0,
+      "map": "MAP_ROUTE1"
+    },
+    {
+      "direction": "up",
+      "offset": 10,
+      "map": "MAP_VIRIDIAN_COMPLEX"
+    },
+    {
+      "direction": "up",
+      "offset": -44,
+      "map": "MAP_VIRIDIAN_CITY"
+    },
+    {
+      "direction": "down",
+      "offset": -56,
+      "map": "MAP_CINNABAR_SEA_N"
+    },
+    {
+      "direction": "right",
+      "offset": -42,
+      "map": "MAP_VIRIDIAN_COAST"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAY_FISHING",
+      "x": 32,
+      "y": 31,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 27,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_VIRIDIAN_PLAIN_EFARM_INSIDE",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

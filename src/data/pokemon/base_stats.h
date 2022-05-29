@@ -33956,4 +33956,35 @@ const struct BaseStats gBaseStats[] =
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = FALSE,
     },
+    
+    //Custom mons
+    [SPECIES_SHINX_KANTO] =
+    {
+        .baseHP        = 43,
+        .baseAttack    = 60,
+        .baseDefense   = 39,
+        .baseSpeed     = 32,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 39,
+        .type1 = TYPE_ELECTRIC,
+        .type2 = TYPE_FIRE,
+        .catchRate = 235,
+        .expYield = 53,
+        .evYield_Attack    = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = 70,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroup1 = EGG_GROUP_FIELD,
+        .eggGroup2 = EGG_GROUP_FIELD,
+        #ifdef BATTLE_ENGINE
+            .abilities = {ABILITY_VOLT_ABSORB, ABILITY_INTIMIDATE, ABILITY_GUTS},
+        #else
+            .abilities = {ABILITY_NONE, ABILITY_INTIMIDATE, ABILITY_GUTS},
+        #endif
+        .bodyColor = BODY_COLOR_RED,
+        .noFlip = FALSE,
+        .flags = FLAG_GENDER_DIFFERENCE,
+    },
+
 };

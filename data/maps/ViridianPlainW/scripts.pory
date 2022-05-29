@@ -1,0 +1,8 @@
+mapscripts ViridianPlainW_MapScripts {}
+
+script ViridianPlainW_SeasideCottageSign{
+lock
+msgbox("Viridian Seaside Cottages\lSeeking new tenants!")
+release
+end
+}

@@ -571,6 +571,22 @@ gStdScripts_End::
 	.include "data/maps/Route119_WeatherInstitute_2F/scripts.inc"
 	.include "data/maps/Route119_House/scripts.inc"
 	.include "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc"
+	.include "data/maps/NewMap1/scripts.inc"
+	.include "data/maps/ViridianCity/scripts.inc"
+	.include "data/maps/Route1/scripts.inc"
+	.include "data/maps/Route2/scripts.inc"
+	.include "data/maps/ViridianPlainE/scripts.inc"
+	.include "data/maps/ViridianPlainW/scripts.inc"
+	.include "data/maps/ViridianComplex/scripts.inc"
+	.include "data/maps/ViridianHill/scripts.inc"
+	.include "data/maps/ViridianPlainNW/scripts.inc"
+	.include "data/maps/ViridianPlainW_N/scripts.inc"
+	.include "data/maps/ViridianForestW/scripts.inc"
+	.include "data/maps/PalletPlayerHouseB1F/scripts.inc"
+	.include "data/maps/PalletPlayerHouse/scripts.inc"
+	.include "data/maps/PalletProtagHouse/scripts.inc"
+	.include "data/maps/PalletPlayerHouse_1F/scripts.inc"
+	.include "data/maps/PalletOakLab/scripts.inc"
 
 	.include "data/scripts/std_msgbox.inc"
 	.include "data/scripts/trainer_battle.inc"
@@ -1056,3 +1072,25 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+	.include "data/maps/PewterCity/scripts.inc"
+
+	.include "data/maps/CinnabarSeaN/scripts.inc"
+
+	.include "data/maps/ViridianPokemonCenter1F/scripts.inc"
+
+	.include "data/maps/ViridianPlainEFarmInside/scripts.inc"
+
+	.include "data/maps/PewterPokemonCenter1F/scripts.inc"
+
+	.include "data/maps/PewterMine/scripts.inc"
+
+	.include "data/maps/ViridianPokeMart/scripts.inc"
+
+	.include "data/maps/Route3/scripts.inc"
+
+	.include "data/maps/NightmareRange/scripts.inc"
+
+	.include "data/maps/ViridianCoast/scripts.inc"
+
+	.include "data/maps/ViridianForestC/scripts.inc"

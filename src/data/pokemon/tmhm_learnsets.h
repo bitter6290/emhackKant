@@ -24751,4 +24751,25 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM22_SOLAR_BEAM)
                                             | TMHM(TM11_SUNNY_DAY)
                                             | TMHM(TM12_TAUNT)),
+                                            
+    [SPECIES_SHINX_KANTO]       = TMHM_LEARNSET(TMHM(TM45_ATTRACT)
+                                            | TMHM(TM32_DOUBLE_TEAM)
+                                            | TMHM(TM42_FACADE)
+                                            | TMHM(HM05_FLASH)
+                                            | TMHM(TM21_FRUSTRATION)
+                                            | TMHM(TM10_HIDDEN_POWER)
+                                            | TMHM(TM35_FLAMETHROWER)
+                                            | TMHM(TM16_LIGHT_SCREEN)
+                                            | TMHM(TM17_PROTECT)
+                                            | TMHM(TM18_RAIN_DANCE)
+                                            | TMHM(TM44_REST)
+                                            | TMHM(TM27_RETURN)
+                                            | TMHM(TM05_ROAR)
+                                            | TMHM(TM43_SECRET_POWER)
+                                            | TMHM(TM34_SHOCK_WAVE)
+                                            | TMHM(HM04_STRENGTH)
+                                            | TMHM(TM46_THIEF)
+                                            | TMHM(TM25_THUNDER)
+                                            | TMHM(TM24_THUNDERBOLT)
+                                            | TMHM(TM06_TOXIC)),
 };

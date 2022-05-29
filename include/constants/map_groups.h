@@ -590,7 +590,46 @@
 
 // gMapGroup_IndoorRoute124
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
+#define MAP_VIRIDIAN_PLAIN_NW                      (1 | (33 << 8))
+#define MAP_PALLET_PROTAG_HOUSE                    (2 | (33 << 8))
+#define MAP_PALLET_PLAYER_HOUSE                    (3 | (33 << 8))
 
-#define MAP_GROUPS_COUNT 34
+// gMapGroup_NewCities
+#define MAP_NEW_MAP1      (0 | (34 << 8))
+#define MAP_VIRIDIAN_CITY (1 | (34 << 8))
+#define MAP_PEWTER_CITY   (2 | (34 << 8))
+
+// gMapGroup_NewRoutes
+#define MAP_ROUTE1 (0 | (35 << 8))
+#define MAP_ROUTE2 (1 | (35 << 8))
+#define MAP_ROUTE3 (2 | (35 << 8))
+
+// gMapGroup_NewOuter
+#define MAP_VIRIDIAN_PLAIN_E   (0 | (36 << 8))
+#define MAP_VIRIDIAN_COMPLEX   (1 | (36 << 8))
+#define MAP_VIRIDIAN_PLAIN_W   (2 | (36 << 8))
+#define MAP_VIRIDIAN_HILL      (3 | (36 << 8))
+#define MAP_VIRIDIAN_PLAIN_W_N (4 | (36 << 8))
+#define MAP_VIRIDIAN_FOREST_W  (5 | (36 << 8))
+#define MAP_CINNABAR_SEA_N     (6 | (36 << 8))
+#define MAP_PEWTER_MINE        (7 | (36 << 8))
+#define MAP_NIGHTMARE_RANGE    (8 | (36 << 8))
+#define MAP_VIRIDIAN_COAST     (9 | (36 << 8))
+#define MAP_VIRIDIAN_FOREST_C  (10 | (36 << 8))
+
+// gMapGroup_NewIndoor
+#define MAP_PALLET_PLAYER_HOUSE_1F      (0 | (37 << 8))
+#define MAP_PALLET_PLAYER_HOUSE_B1F     (1 | (37 << 8))
+#define MAP_PALLET_OAK_LAB              (2 | (37 << 8))
+#define MAP_VIRIDIAN_POKEMON_CENTER1F   (3 | (37 << 8))
+#define MAP_VIRIDIAN_PLAIN_EFARM_INSIDE (4 | (37 << 8))
+#define MAP_PEWTER_POKEMON_CENTER1F     (5 | (37 << 8))
+#define MAP_VIRIDIAN_POKE_MART          (6 | (37 << 8))
+
+// gMapGroup_NewGrotto
+
+// gMapGroup_NewDungeon
+
+#define MAP_GROUPS_COUNT 40
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

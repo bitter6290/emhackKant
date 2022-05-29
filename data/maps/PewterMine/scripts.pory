@@ -1,0 +1,51 @@
+mapscripts PewterMine_MapScripts {
+	map_script MAP_SCRIPT_ON_TRANSITION: PewterMine_OnTransition
+	}
+
+script PewterMine_OnTransition{
+if(var(VAR_STORY_PROGRESS)>15){
+removeobject(1)
+removeobject(2)
+}
+end
+}
+script PewterMine_JoinEmilie{
+lock
+if(var(VAR_STORY_PROGRESS)<14){
+msgbox(format("Ugh... I'll show you! You grunts have nothing on us!"))
+faceplayer
+msgbox(format("Hey, you! Help me beat this guy!"),MSGBOX_YESNO)
+if(var(VAR_RESULT)==1){
+multi_fixed_2_vs_1(TRAINER_GRUNT_AQUA_HIDEOUT_2,format("How..."),TRAINER_GRUNT_AQUA_HIDEOUT_1,3)
+specialvar(VAR_RESULT, GetBattleOutcome)
+if(var(VAR_RESULT)==B_OUTCOME_WON){
+setvar(VAR_STORY_PROGRESS,14)
+}
+else{
+special(SetCB2WhiteOut)
+}
+}
+}
+release
+end
+}
+script PewterMine_JoinCaleb{
+lock
+if(var(VAR_STORY_PROGRESS)<14){
+msgbox(format("You people have no right to be here! Here, or anywhere in Kanto!"))
+faceplayer
+msgbox(format("Hey! Help me chase this grunt away!"),MSGBOX_YESNO)
+if(var(VAR_RESULT)==1){
+multi_fixed_2_vs_1(TRAINER_GRUNT_AQUA_HIDEOUT_3,format("No!"),TRAINER_SAWYER_1,2)
+specialvar(VAR_RESULT, GetBattleOutcome)
+if(var(VAR_RESULT)==B_OUTCOME_WON){
+setvar(VAR_STORY_PROGRESS,14)
+}
+else{
+special(SetCB2WhiteOut)
+}
+}
+}
+release
+end
+}

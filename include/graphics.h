@@ -6760,6 +6760,16 @@ extern const u8 gMonFootprint_Glastrier[];
 extern const u8 gMonFootprint_Spectrier[];
 extern const u8 gMonFootprint_Calyrex[];
 
+// custom mons
+
+extern const u32 gMonFrontPic_ShinxKanto[];
+extern const u32 gMonPalette_ShinxKanto[];
+extern const u32 gMonBackPic_ShinxKanto[];
+extern const u32 gMonShinyPalette_ShinxKanto[];
+extern const u32 gMonStillFrontPic_ShinxKanto[];
+extern const u8 gMonIcon_ShinxKanto[];
+extern const u8 gMonFootprint_ShinxKanto[];
+
 // trainer sprites
 extern const u32 gTrainerFrontPic_Hiker[];
 extern const u32 gTrainerFrontPic_AquaGruntM[];

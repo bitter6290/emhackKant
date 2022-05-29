@@ -6691,3 +6691,12 @@ const u8 gMonFootprint_Regidrago[] = INCBIN_U8("graphics/pokemon/regidrago/footp
 const u8 gMonFootprint_Glastrier[] = INCBIN_U8("graphics/pokemon/glastrier/footprint.1bpp");
 const u8 gMonFootprint_Spectrier[] = INCBIN_U8("graphics/pokemon/spectrier/footprint.1bpp");
 const u8 gMonFootprint_Calyrex[] = INCBIN_U8("graphics/pokemon/calyrex/footprint.1bpp");
+
+//custom mons
+
+const u32 gMonFrontPic_ShinxKanto[] = INCBIN_U32("graphics/pokemon/shinxkanto/anim_front.4bpp.lz");
+const u32 gMonPalette_ShinxKanto[] = INCBIN_U32("graphics/pokemon/shinxkanto/normal.gbapal.lz");
+const u32 gMonBackPic_ShinxKanto[] = INCBIN_U32("graphics/pokemon/shinxkanto/back.4bpp.lz");
+const u32 gMonShinyPalette_ShinxKanto[] = INCBIN_U32("graphics/pokemon/shinxkanto/shiny.gbapal.lz");
+const u8 gMonIcon_ShinxKanto[] = INCBIN_U8("graphics/pokemon/shinxkanto/icon.4bpp");
+const u8 gMonFootprint_ShinxKanto[] = INCBIN_U8("graphics/pokemon/shinxkanto/footprint.1bpp");

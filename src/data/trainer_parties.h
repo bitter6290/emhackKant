@@ -1,37 +1,42 @@
 static const struct TrainerMonNoItemDefaultMoves sParty_Sawyer1[] = {
     {
-    .iv = 0,
-    .lvl = 21,
-    .species = SPECIES_GEODUDE,
+    .iv = 90,
+    .lvl = 10,
+    .species = SPECIES_SHINX_KANTO,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntAquaHideout1[] = {
     {
-    .iv = 0,
-    .lvl = 32,
-    .species = SPECIES_POOCHYENA,
+    .iv = 90,
+    .lvl = 10,
+    .species = SPECIES_ZUBAT,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntAquaHideout2[] = {
     {
-    .iv = 0,
-    .lvl = 31,
-    .species = SPECIES_ZUBAT,
+    .iv = 100,
+    .lvl = 14,
+    .species = SPECIES_SHINX_KANTO,
     },
     {
-    .iv = 0,
-    .lvl = 31,
-    .species = SPECIES_CARVANHA,
+    .iv = 100,
+    .lvl = 14,
+    .species = SPECIES_DROWZEE,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntAquaHideout3[] = {
     {
-    .iv = 0,
-    .lvl = 32,
+    .iv = 100,
+    .lvl = 14,
     .species = SPECIES_ZUBAT,
+    },
+    {
+    .iv = 100,
+    .lvl = 14,
+    .species = SPECIES_RATTATA,
     }
 };
 
@@ -817,12 +822,11 @@ static const struct TrainerMonNoItemCustomMoves sParty_Ricky5[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Randall[] = {
+static const struct TrainerMonNoItemCustomMoves sParty_Randall[] = {
     {
     .iv = 255,
     .lvl = 26,
     .species = SPECIES_SWELLOW,
-    .heldItem = ITEM_NONE,
     .moves = {MOVE_QUICK_ATTACK, MOVE_AGILITY, MOVE_WING_ATTACK, MOVE_NONE}
     }
 };
@@ -12434,3 +12438,4 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayLinkPlaceholder[] = {
     .species = SPECIES_KYOGRE,
     }
 };
+

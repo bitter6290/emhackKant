@@ -2417,7 +2417,7 @@
       "width": 58,
       "height": 26,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "0",
+      "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/UnusedOutdoorArea/border.bin",
       "blockdata_filepath": "data/layouts/UnusedOutdoorArea/map.bin"
     },
@@ -4410,6 +4410,276 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP1",
+      "name": "NewMap1_Layout",
+      "width": 24,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/NewMap1/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE1",
+      "name": "Route1_Layout",
+      "width": 24,
+      "height": 38,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route1/border.bin",
+      "blockdata_filepath": "data/layouts/Route1/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_PLAIN_E",
+      "name": "ViridianPlainE_Layout",
+      "width": 40,
+      "height": 58,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/ViridianPlainE/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianPlainE/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_CITY",
+      "name": "ViridianCity_Layout",
+      "width": 54,
+      "height": 42,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/ViridianCity/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_COMPLEX",
+      "name": "ViridianComplex_Layout",
+      "width": 30,
+      "height": 42,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/ViridianComplex/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianComplex/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_PLAIN_W",
+      "name": "ViridianPlainW_Layout",
+      "width": 32,
+      "height": 51,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/ViridianPlainW/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianPlainW/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE2",
+      "name": "Route2_Layout",
+      "width": 28,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route2/border.bin",
+      "blockdata_filepath": "data/layouts/Route2/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_HILL",
+      "name": "ViridianHill_Layout",
+      "width": 12,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/ViridianHill/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianHill/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_PLAIN_NW",
+      "name": "ViridianPlainNW_Layout",
+      "width": 1,
+      "height": 1,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/ViridianPlainNW/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianPlainNW/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_PLAIN_W_N",
+      "name": "ViridianPlainW_N_Layout",
+      "width": 32,
+      "height": 7,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/ViridianPlainW_N/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianPlainW_N/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_FOREST_W",
+      "name": "ViridianForestW_Layout",
+      "width": 32,
+      "height": 100,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/ViridianForestW/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianForestW/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALLET_PROTAG_HOUSE",
+      "name": "PalletProtagHouse_Layout",
+      "width": 1,
+      "height": 1,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/PalletProtagHouse/border.bin",
+      "blockdata_filepath": "data/layouts/PalletProtagHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALLET_PLAYER_HOUSE",
+      "name": "PalletPlayerHouse_Layout",
+      "width": 1,
+      "height": 1,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/PalletPlayerHouse/border.bin",
+      "blockdata_filepath": "data/layouts/PalletPlayerHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALLET_PLAYER_HOUSE_1F",
+      "name": "PalletPlayerHouse_1F_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/PalletPlayerHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/PalletPlayerHouse_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALLET_PLAYER_HOUSE_B1F",
+      "name": "PalletPlayerHouseB1F_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/PalletPlayerHouseB1F/border.bin",
+      "blockdata_filepath": "data/layouts/PalletPlayerHouseB1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALLET_OAK_LAB",
+      "name": "PalletOakLab_Layout",
+      "width": 15,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/PalletOakLab/border.bin",
+      "blockdata_filepath": "data/layouts/PalletOakLab/map.bin"
+    },
+    {
+      "id": "LAYOUT_PEWTER_CITY",
+      "name": "PewterCity_Layout",
+      "width": 28,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/PewterCity/border.bin",
+      "blockdata_filepath": "data/layouts/PewterCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_CINNABAR_SEA_N",
+      "name": "CinnabarSeaN_Layout",
+      "width": 96,
+      "height": 36,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/CinnabarSeaN/border.bin",
+      "blockdata_filepath": "data/layouts/CinnabarSeaN/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_POKEMON_CENTER1F",
+      "name": "ViridianPokemonCenter1F_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/ViridianPokemonCenter1F/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianPokemonCenter1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_PLAIN_EFARM_INSIDE",
+      "name": "ViridianPlainEFarmInside_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/ViridianPlainEFarmInside/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianPlainEFarmInside/map.bin"
+    },
+    {
+      "id": "LAYOUT_PEWTER_POKEMON_CENTER1F",
+      "name": "PewterPokemonCenter1F_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/PewterPokemonCenter1F/border.bin",
+      "blockdata_filepath": "data/layouts/PewterPokemonCenter1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PEWTER_MINE",
+      "name": "PewterMine_Layout",
+      "width": 20,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/PewterMine/border.bin",
+      "blockdata_filepath": "data/layouts/PewterMine/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_POKE_MART",
+      "name": "ViridianPokeMart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/ViridianPokeMart/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianPokeMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE3",
+      "name": "Route3_Layout",
+      "width": 124,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/Route3/border.bin",
+      "blockdata_filepath": "data/layouts/Route3/map.bin"
+    },
+    {
+      "id": "LAYOUT_NIGHTMARE_RANGE",
+      "name": "NightmareRange_Layout",
+      "width": 84,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/NightmareRange/border.bin",
+      "blockdata_filepath": "data/layouts/NightmareRange/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_COAST",
+      "name": "ViridianCoast_Layout",
+      "width": 32,
+      "height": 100,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/ViridianCoast/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianCoast/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_FOREST_C",
+      "name": "ViridianForestC_Layout",
+      "width": 28,
+      "height": 100,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/ViridianForestC/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianForestC/map.bin"
     }
   ]
 }

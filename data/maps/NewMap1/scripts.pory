@@ -1,0 +1,69 @@
+mapscripts NewMap1_MapScripts{
+	MAP_SCRIPT_ON_LOAD: NewMap1_OnLoad
+}
+
+script NewMap1_OnLoad{
+	setrespawn(HEAL_LOCATION_PALLET_TOWN)
+	removeobject(1)
+	delay(5)
+	end
+}
+
+script NewMap1_OakStopsPlayer{
+lock
+if(var(VAR_STORY_PROGRESS)<2){
+msgbox(format("Oak: {PLAYER}!"))
+playse(SE_PIN)
+applymovement(OBJ_EVENT_ID_PLAYER,PlayerExclam)
+waitmovement(OBJ_EVENT_ID_PLAYER)
+msgbox(format("Oak: You can't go out without a Pokémon!" 
+	"\lIf you want to talk about leaving Pallet Town, come to my lab."))
+applymovement(OBJ_EVENT_ID_PLAYER,Pallet_PlayerRetreat)
+waitmovement(OBJ_EVENT_ID_PLAYER)
+}
+elif(var(VAR_STORY_PROGRESS)==2){
+msgbox(format("Oak: {PLAYER}!"))
+playse(SE_PIN)
+applymovement(OBJ_EVENT_ID_PLAYER,PlayerExclam)
+waitmovement(OBJ_EVENT_ID_PLAYER)
+showobjectat(1,MAP_NEW_MAP1)
+getplayerxy(VAR_RESULT,VAR_TEMP_1)
+if(var(VAR_RESULT)==11){
+applymovement(1,Pallet_OakStepLeft)
+waitmovement(1)
+}
+applymovement(1,Pallet_OakUp)
+waitmovement(1)
+msgbox(format("Since you're leaving town... I would like to ask you one small favor.\lMorgan, one of my assistants, left a day ago to study Pokémon at the mine in Pewter City.\lShe told me she would be back by today, and I can't help but worry.\lCould you go and check on her? Pewter City is just two towns to the north of here, and the roads in between are easy to navigate."))
+msgbox(format("Thank you, {PLAYER}."))
+applymovement(1,Pallet_OakDown)
+waitmovement(1)
+removeobject(1)
+delay(10)
+addvar(VAR_STORY_PROGRESS,1)
+}
+release
+end
+}
+
+movement PlayerExclam{
+face_down
+emote_exclamation_mark
+step_end
+}
+movement Pallet_PlayerRetreat{
+walk_down
+step_end
+}
+movement Pallet_OakStepLeft{
+walk_left
+step_end
+}
+movement Pallet_OakUp{
+walk_up*6
+step_end
+}
+movement Pallet_OakDown{
+walk_down*6
+step_end
+}

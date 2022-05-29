@@ -75,7 +75,8 @@ struct Trainer
     /*0x10*/ u16 items[MAX_TRAINER_ITEMS];
     /*0x18*/ bool8 doubleBattle;
     /*0x1C*/ u32 aiFlags;
-    /*0x20*/ u8 partySize;
+    /*0x20*/ unsigned int partySize:4;
+    /*0x22*/ unsigned int scalingLevel:4;
     /*0x24*/ union TrainerMonPtr party;
 };
 

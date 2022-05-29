@@ -6104,6 +6104,12 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = MON_COORDS_SIZE(64, 56),
         .y_offset = 7,
     },
+    // Custom mons
+    [SPECIES_SHINX_KANTO] =
+    {
+        .size = MON_COORDS_SIZE(64, 48),
+        .y_offset = 8,
+    },
     // Egg
     [SPECIES_EGG] =
     {

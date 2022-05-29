@@ -1,0 +1,44 @@
+{
+  "id": "MAP_CINNABAR_SEA_N",
+  "name": "CinnabarSeaN",
+  "layout": "LAYOUT_CINNABAR_SEA_N",
+  "music": "MUS_RG_ROUTE11",
+  "region_map_section": "MAPSEC_ROUTE_19",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "direction": "up",
+      "offset": 32,
+      "map": "MAP_NEW_MAP1"
+    },
+    {
+      "direction": "up",
+      "offset": 0,
+      "map": "MAP_VIRIDIAN_PLAIN_W"
+    },
+    {
+      "direction": "up",
+      "offset": 56,
+      "map": "MAP_VIRIDIAN_PLAIN_E"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

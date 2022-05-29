@@ -1271,6 +1271,8 @@ gCryTable::
 	@ Calyrex
 	cry Cry_CalyrexIceRider
 	cry Cry_CalyrexShadowRider
+	@ Custom mons
+	cry Cry_ShinxKanto
 
 	.align 2
 gCryTable_Reverse::
@@ -2545,3 +2547,5 @@ gCryTable_Reverse::
 	@ Calyrex
 	cry_reverse Cry_CalyrexIceRider
 	cry_reverse Cry_CalyrexShadowRider
+	@ Custom mons
+	cry_reverse Cry_ShinxKanto

@@ -1,0 +1,60 @@
+mapscripts Route2_MapScripts{
+}
+
+script Route2_SouthGrunt{
+lock
+if(var(VAR_STORY_PROGRESS)<15){
+msgbox(format("We're gonna be setting up a tollbooth here!\lIt's not ready yet, so you'll have to find another way."))
+}
+release
+end
+}
+script Route2_SouthStop{
+lock
+if(var(VAR_STORY_PROGRESS)<15){
+playse(SE_PIN)
+getplayerxy(VAR_RESULT,VAR_TEMP_1)
+if(var(VAR_RESULT)>14){
+applymovement(2,ExclamRight)
+}
+else{
+applymovement(2,ExclamLeft)
+}
+waitmovement(2)
+msgbox("Hey!")
+msgbox(Route2_GruntMessage1)
+applymovement(OBJ_EVENT_ID_PLAYER,Route2_PlayerRetreats)
+waitmovement(OBJ_EVENT_ID_PLAYER)
+}
+release
+end
+}
+
+script Route2_HikerMessage{
+lock
+msgbox(format("Go through here if you really want. I won't stop you."))
+release
+end
+}
+
+text Route2_GruntMessage1{
+format("We're gonna be setting up a tollbooth here!\lIt's not ready yet, so you'll have to find another way.")
+}
+movement ExclamRight{
+face_right
+emote_exclamation_mark
+step_end
+}
+movement ExclamLeft{
+face_left
+emote_exclamation_mark
+step_end
+}
+movement(global) FaceDown{
+face_down
+step_end
+}
+movement Route2_PlayerRetreats{
+walk_down
+step_end
+}

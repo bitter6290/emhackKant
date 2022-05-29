@@ -1,0 +1,157 @@
+mapscripts PalletOakLab_MapScripts{}
+
+script PalletOakLab_OakDialogue{
+lock
+faceplayer
+if(var(VAR_STORY_PROGRESS)==0){
+msgbox(format("Ah, {PLAYER}!"))
+msgbox(format("So you're finally ready to leave. Hmm...\nI know you want to see the world. But with everything going on out there, I can't stop thinking of what happened to him..."))
+waitmessage
+playse(SE_PIN)
+applymovement(4,Exclam)
+waitmovement(4)
+msgbox(format("Ah, I'm sorry."))
+msgbox(format("{PLAYER}. Kanto is a big place, and full of dangers for a young boy like you.\lBut if you really want to leave, then promise me two things.\lFirst, you will not go alone.\lTake one of the Pokémon on the table there with you. It will be your protector and your closest companion.\lSecond, you will help me in return.\lOver the last five years, hundreds of new Pokémon have moved into this region, by choice or human intervention. With my age and reputation, I have no hope of documenting them all.\lBut you, you could do it. Scour the region, study its inhabitants, and record it all in this Pokédex!"))
+playfanfare(MUS_OBTAIN_ITEM)
+message(format("You obtained the Pokédex!"))
+waitfanfare
+setflag(FLAG_SYS_POKEDEX_GET)
+special(SetUnlockedPokedexFlags)
+setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
+setvar(VAR_STORY_PROGRESS,1)
+msgbox(format("You'll also need to be equipped for your journey. These items will be crucial for you as you traverse Kanto. Use them well."))
+setflag(FLAG_SYS_B_DASH)
+playfanfare(MUS_OBTAIN_ITEM)
+message(format("You obtained the Running Shoes!"))
+waitfanfare
+giveitem(ITEM_POKE_BALL,10)
+giveitem(ITEM_POTION,5)
+}
+msgbox(format("I have nothing more for you right now... These last five years have been hard even for me.\lBut if you fill out the pages of the Pokédex, it will benefit you and me alike. Your new research could help me make marvels again."))
+release
+end
+}
+
+script PalletOakLab_ChooseBulbasaur{
+lock
+if(var(VAR_STORY_PROGRESS)==0){
+msgbox(format("This ball contains a Pokémon... but it belongs to Professor Oak.\lDon't take it without his permission!"))
+}
+elif(var(VAR_STORY_PROGRESS)==1){
+msgbox(format("This ball contains Bulbasaur, the Grass-type Pokémon!\lWould you like to take it with you?"),MSGBOX_YESNO)
+if(var(VAR_RESULT)==1){
+getpartysize
+if(var(VAR_RESULT)<6){
+givemon(SPECIES_BULBASAUR,5,ITEM_NONE)
+setflag(FLAG_SYS_POKEMON_GET)
+setflag(FLAG_TOOK_BULBASAUR)
+addvar(VAR_STORY_PROGRESS,1)
+removeobject(3)
+playfanfare(MUS_OBTAIN_ITEM)
+msgbox(format("You chose Bulbasaur!"))
+waitfanfare
+msgbox(format("Would you like to give Bulbasaur a nickname?"),MSGBOX_YESNO)
+if(var(VAR_RESULT)==1){
+	setvar(VAR_0x8004, 0)
+	call(Common_EventScript_NameReceivedPartyMon)
+	
+}
+}
+else{
+msgbox(format("You shouldn't be able to do this, you should probably tell someone."))
+}
+}
+}
+else{
+msgbox(format("This ball contains Bulbasaur, the Grass-type Pokémon!"))
+}
+release
+end
+}
+
+script PalletOakLab_ChooseCharmander{
+lock
+if(var(VAR_STORY_PROGRESS)==0){
+msgbox(format("This ball contains a Pokémon... but it belongs to Professor Oak.\lDon't take it without his permission!"))
+}
+elif(var(VAR_STORY_PROGRESS)==1){
+msgbox(format("This ball contains Charmander, the Fire-type Pokémon!\lWould you like to take it with you?"),MSGBOX_YESNO)
+if(var(VAR_RESULT)==1){
+getpartysize
+if(var(VAR_RESULT)<6){
+givemon(SPECIES_CHARMANDER,5,ITEM_NONE)
+setflag(FLAG_SYS_POKEMON_GET)
+setflag(FLAG_TOOK_CHARMANDER)
+addvar(VAR_STORY_PROGRESS,1)
+removeobject(2)
+playfanfare(MUS_OBTAIN_ITEM)
+msgbox(format("You chose Charmander!"))
+waitfanfare
+msgbox(format("Would you like to give Charmander a nickname?"),MSGBOX_YESNO)
+if(var(VAR_RESULT)==1){
+	setvar(VAR_0x8004, 0)
+	call(Common_EventScript_NameReceivedPartyMon)
+	
+}
+}
+else{
+msgbox(format("You shouldn't be able to do this, you should probably tell someone."))
+}
+}
+}
+else{
+msgbox(format("This ball contains Charmander, the Fire-type Pokémon!"))
+}
+release
+end
+}
+
+script PalletOakLab_ChooseSquirtle{
+lock
+if(var(VAR_STORY_PROGRESS)==0){
+msgbox(format("This ball contains a Pokémon... but it belongs to Professor Oak.\lDon't take it without his permission!"))
+}
+elif(var(VAR_STORY_PROGRESS)==1){
+msgbox(format("This ball contains Squirtle, the Water-type Pokémon!\lWould you like to take it with you?"),MSGBOX_YESNO)
+if(var(VAR_RESULT)==1){
+getpartysize
+if(var(VAR_RESULT)<6){
+givemon(SPECIES_SQUIRTLE,5,ITEM_NONE)
+setflag(FLAG_SYS_POKEMON_GET)
+setflag(FLAG_TOOK_SQUIRTLE)
+addvar(VAR_STORY_PROGRESS,1)
+removeobject(1)
+playfanfare(MUS_OBTAIN_ITEM)
+msgbox(format("You chose Squirtle!"))
+waitfanfare
+msgbox(format("Would you like to give Squirtle a nickname?"),MSGBOX_YESNO)
+if(var(VAR_RESULT)==1){
+	setvar(VAR_0x8004, 0)
+	call(Common_EventScript_NameReceivedPartyMon)
+	
+}
+}
+else{
+msgbox(format("You shouldn't be able to do this, you should probably tell someone."))
+}
+}
+}
+else{
+msgbox(format("This ball contains Squirtle, the Water-type Pokémon!"))
+}
+release
+end
+}
+
+script PalletOakLab_ScientistTalks{
+lock
+faceplayer
+if(var(VAR_STORY_PROGRESS)<16){
+msgbox(format("I'm not the only scientist working for Oak. Right now, there are two of us left.\lI wonder how Morgan is doing..."))
+}
+release
+end
+}
+movement Exclam{
+emote_exclamation_mark
+}

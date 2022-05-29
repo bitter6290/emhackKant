@@ -1,4 +1,5 @@
 {
+  "layouts_table_label": "gMapLayouts",
   "group_order": [
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorLittleroot",
@@ -33,7 +34,13 @@
     "gMapGroup_IndoorRoute113",
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
-    "gMapGroup_IndoorRoute124"
+    "gMapGroup_IndoorRoute124",
+    "gMapGroup_NewCities",
+    "gMapGroup_NewRoutes",
+    "gMapGroup_NewOuter",
+    "gMapGroup_NewIndoor",
+    "gMapGroup_NewGrotto",
+    "gMapGroup_NewDungeon"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -619,73 +626,47 @@
     "Route119_House"
   ],
   "gMapGroup_IndoorRoute124": [
-    "Route124_DivingTreasureHuntersHouse"
+    "Route124_DivingTreasureHuntersHouse",
+    "ViridianPlainNW",
+    "PalletProtagHouse",
+    "PalletPlayerHouse"
   ],
-  "connections_include_order": [
-    "LittlerootTown",
-    "OldaleTown",
-    "DewfordTown",
-    "LavaridgeTown",
-    "FallarborTown",
-    "VerdanturfTown",
-    "PacifidlogTown",
-    "PetalburgCity",
-    "SlateportCity",
-    "MauvilleCity",
-    "RustboroCity",
-    "FortreeCity",
-    "LilycoveCity",
-    "MossdeepCity",
-    "SootopolisCity",
-    "EverGrandeCity",
-    "Route101",
-    "Route102",
-    "Route103",
-    "Route104",
-    "Route105",
-    "Route106",
-    "Route107",
-    "Route108",
-    "Route109",
-    "Route110",
-    "Route111",
-    "Route112",
-    "Route113",
-    "Route114",
-    "Route115",
-    "Route116",
-    "Route117",
-    "Route118",
-    "Route119",
-    "Route120",
-    "Route121",
-    "Route122",
-    "Route123",
-    "Route124",
-    "Route125",
-    "Route126",
-    "Route127",
-    "Route128",
-    "Route129",
-    "Route130",
-    "Route131",
-    "Route132",
-    "Route133",
-    "Route134",
-    "Underwater_Route105",
-    "Underwater_Route124",
-    "Underwater_Route125",
-    "Underwater_Route126",
-    "Underwater_Route127",
-    "Underwater_Route128",
-    "Underwater_Route129",
-    "SafariZone_Northwest",
-    "SafariZone_North",
-    "SafariZone_Southwest",
-    "SafariZone_South",
-    "SafariZone_Northeast",
-    "SafariZone_Southeast",
-    "BattleFrontier_OutsideWest",
-    "BattleFrontier_OutsideEast"
+  "gMapGroup_NewCities": [
+    "NewMap1",
+    "ViridianCity",
+    "PewterCity"
+  ],
+  "gMapGroup_NewRoutes": [
+    "Route1",
+    "Route2",
+    "Route3"
+  ],
+  "gMapGroup_NewOuter": [
+    "ViridianPlainE",
+    "ViridianComplex",
+    "ViridianPlainW",
+    "ViridianHill",
+    "ViridianPlainW_N",
+    "ViridianForestW",
+    "CinnabarSeaN",
+    "PewterMine",
+    "NightmareRange",
+    "ViridianCoast",
+    "ViridianForestC"
+  ],
+  "gMapGroup_NewIndoor": [
+    "PalletPlayerHouse_1F",
+    "PalletPlayerHouseB1F",
+    "PalletOakLab",
+    "ViridianPokemonCenter1F",
+    "ViridianPlainEFarmInside",
+    "PewterPokemonCenter1F",
+    "ViridianPokeMart"
+  ],
+  "gMapGroup_NewGrotto": [
+
+  ],
+  "gMapGroup_NewDungeon": [
+
   ]
 }

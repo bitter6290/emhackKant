@@ -1,0 +1,20 @@
+mapscripts ViridianForestW_MapScripts {}
+
+script VFW_HikerFirst{
+lock
+if(var(VAR_STORY_PROGRESS)<4){
+msgbox(format("Hey! You!"))
+applymovement(OBJ_EVENT_ID_PLAYER,VFW_ExclamLeft)
+waitmovement(OBJ_EVENT_ID_PLAYER)
+msgbox(format("What are you doing going through these woods? Nobody comes here anymore, not since Archie built that road there.\lIf you really want to come through, remember this. The plants here have a pattern to them, one that should help you to keep your bearings and avoid running in circles.\lYour party should be prepared, too. I've heard that a new Fire-type Pokémon was spotted in the fields southeast of here, and it'll keep the bugs away from you for sure!"))
+setvar(VAR_STORY_PROGRESS,4)
+}
+release
+end
+}
+
+movement VFW_ExclamLeft{
+face_left
+emote_exclamation_mark
+step_end
+}

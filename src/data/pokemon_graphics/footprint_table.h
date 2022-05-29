@@ -899,5 +899,7 @@ const u8 *const gMonFootprintTable[] =
     [SPECIES_GLASTRIER] = gMonFootprint_Glastrier,
     [SPECIES_SPECTRIER] = gMonFootprint_Spectrier,
     [SPECIES_CALYREX] = gMonFootprint_Calyrex,
+    //custom mons
+    [SPECIES_SHINX_KANTO] = gMonFootprint_ShinxKanto,
     [SPECIES_EGG] = gMonFootprint_Bulbasaur,
 };

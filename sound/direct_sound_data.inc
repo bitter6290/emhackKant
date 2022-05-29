@@ -4305,6 +4305,12 @@ Cry_CalyrexIceRider::
 	.align 2
 Cry_CalyrexShadowRider::
 	.incbin "sound/direct_sound_samples/cries/calyrex_shadow_rider.bin"
+	
+	@ Custom mons
+	
+	.align 2
+Cry_ShinxKanto::
+	.incbin "sound/direct_sound_samples/cries/shinx.bin"
 
 	.align 2
 DirectSoundWaveData_register_noise::

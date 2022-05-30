@@ -2328,7 +2328,7 @@ void DoesContestCategoryHaveMuseumPainting(void)
         break;
     }
 
-    if (gSaveBlock1Ptr->contestWinners[contestWinner].species == SPECIES_NONE)
+    if (gSaveBlock2Ptr->contestWinners[contestWinner].species == SPECIES_NONE)
         gSpecialVar_0x8004 = FALSE;
     else
         gSpecialVar_0x8004 = TRUE;
@@ -2360,7 +2360,7 @@ u8 CountPlayerMuseumPaintings(void)
 
     for (i = 0; i < NUM_CONTEST_WINNERS - MUSEUM_CONTEST_WINNERS_START; i++)
     {
-        if (gSaveBlock1Ptr->contestWinners[MUSEUM_CONTEST_WINNERS_START + i].species)
+        if (gSaveBlock2Ptr->contestWinners[MUSEUM_CONTEST_WINNERS_START + i].species)
             count++;
     }
 

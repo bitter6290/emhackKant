@@ -174,8 +174,8 @@ static void SetSrcLookupPointers(void)
     sSecretBasesSave = gSaveBlock1Ptr->secretBases;
     sTvShowsSave = gSaveBlock1Ptr->tvShows;
     sPokeNewsSave = gSaveBlock1Ptr->pokeNews;
-    sOldManSave = &gSaveBlock1Ptr->oldMan;
-    sDewfordTrendsSave = gSaveBlock1Ptr->dewfordTrends;
+    sOldManSave = &gSaveBlock2Ptr->oldMan;
+    sDewfordTrendsSave = gSaveBlock2Ptr->dewfordTrends;
     sRecordMixMailSave = &sRecordMixMail;
     sBattleTowerSave = &gSaveBlock2Ptr->frontier.towerPlayer;
     sLilycoveLadySave = &gSaveBlock1Ptr->lilycoveLady;
@@ -960,8 +960,8 @@ static void ReceiveDaycareMailData(struct RecordMixingDaycareMail *records, size
 
     // Save player's record mixed mail to the daycare (in case it has changed)
     mixMail = (void *)records + multiplayerId * recordSize;
-    memcpy(&gSaveBlock1Ptr->daycare.mons[0].mail, &mixMail->mail[0], sizeof(struct DaycareMail));
-    memcpy(&gSaveBlock1Ptr->daycare.mons[1].mail, &mixMail->mail[1], sizeof(struct DaycareMail));
+    memcpy(&gSaveBlock2Ptr->daycare.mons[0].mail, &mixMail->mail[0], sizeof(struct DaycareMail));
+    memcpy(&gSaveBlock2Ptr->daycare.mons[1].mail, &mixMail->mail[1], sizeof(struct DaycareMail));
     SeedRng(oldSeed);
 }
 
@@ -1372,9 +1372,9 @@ static void ReceiveRankingHallRecords(struct PlayerHallRecords *records, size_t 
 
 static void GetRecordMixingDaycareMail(struct RecordMixingDaycareMail *dst)
 {
-    sRecordMixMail.mail[0] = gSaveBlock1Ptr->daycare.mons[0].mail;
-    sRecordMixMail.mail[1] = gSaveBlock1Ptr->daycare.mons[1].mail;
-    InitDaycareMailRecordMixing(&gSaveBlock1Ptr->daycare, &sRecordMixMail);
+    sRecordMixMail.mail[0] = gSaveBlock2Ptr->daycare.mons[0].mail;
+    sRecordMixMail.mail[1] = gSaveBlock2Ptr->daycare.mons[1].mail;
+    InitDaycareMailRecordMixing(&gSaveBlock2Ptr->daycare, &sRecordMixMail);
     *dst = *sRecordMixMailSave;
 }
 

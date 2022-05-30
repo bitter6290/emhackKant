@@ -137,8 +137,8 @@ static const struct GFRomHeader sGFRomHeader = {
     .playerGenderOffset = offsetof(struct SaveBlock2, playerGender),
     .frontierStatusOffset = offsetof(struct SaveBlock2, frontier.challengeStatus),
     .frontierStatusOffset2 = offsetof(struct SaveBlock2, frontier.challengeStatus),
-    .externalEventFlagsOffset = offsetof(struct SaveBlock1, externalEventFlags),
-    .externalEventDataOffset = offsetof(struct SaveBlock1, externalEventData),
+    .externalEventFlagsOffset = offsetof(struct SaveBlock2, externalEventFlags),
+    .externalEventDataOffset = offsetof(struct SaveBlock2, externalEventData),
     .unk18 = 0x00000000,
     .baseStats = gBaseStats,
     .abilityNames = gAbilityNames,
@@ -157,7 +157,7 @@ static const struct GFRomHeader sGFRomHeader = {
     .bagCountBerries = BAG_BERRIES_COUNT,
     .pcItemsCount = PC_ITEMS_COUNT,
     .pcItemsOffset = offsetof(struct SaveBlock1, pcItems),
-    .giftRibbonsOffset = offsetof(struct SaveBlock1, giftRibbons),
+    .giftRibbonsOffset = offsetof(struct SaveBlock2, giftRibbons),
     #ifndef FREE_ENIGMA_BERRY
     .enigmaBerryOffset = offsetof(struct SaveBlock1, enigmaBerry),
     #endif

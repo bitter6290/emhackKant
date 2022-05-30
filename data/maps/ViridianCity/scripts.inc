@@ -25,6 +25,12 @@ Viridian_BerrySeller_2:
 	goto Viridian_BerrySeller_1
 
 
+Viridian_GymBlocker::
+	lock
+	msgbox Viridian_GymBlocker_Text_0
+	return
+
+
 Viridian_Berries:
 	.2byte ITEM_ORAN_BERRY
 	.2byte ITEM_PECHA_BERRY
@@ -45,3 +51,9 @@ Viridian_BerrySeller_Text_0:
 Viridian_BerrySeller_Text_1:
 	.string "Would you like to buy some of my\n"
 	.string "berries?$"
+
+Viridian_GymBlocker_Text_0:
+	.string "Soren left a few days ago to conduct\n"
+	.string "inspections at the Pewter Mine.\l"
+	.string "Sadly, I can't let you in the gym right\l"
+	.string "now!$"

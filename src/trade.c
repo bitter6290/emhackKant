@@ -1064,7 +1064,7 @@ static bool8 BufferTradeParties(void)
         }
         break;
     case 17:
-        Trade_Memcpy(gBlockSendBuffer, gSaveBlock1Ptr->giftRibbons, sizeof(sTradeMenuData->giftRibbons));
+        Trade_Memcpy(gBlockSendBuffer, gSaveBlock2Ptr->giftRibbons, sizeof(sTradeMenuData->giftRibbons));
         sTradeMenuData->bufferPartyState++;
         break;
     case 19:
@@ -2308,10 +2308,10 @@ static void SaveTradeGiftRibbons(void)
 
     for (i = 0; i < (int)ARRAY_COUNT(sTradeMenuData->giftRibbons); i++)
     {
-        if (gSaveBlock1Ptr->giftRibbons[i] == 0 && sTradeMenuData->giftRibbons[i] != 0)
+        if (gSaveBlock2Ptr->giftRibbons[i] == 0 && sTradeMenuData->giftRibbons[i] != 0)
         {
             if (sTradeMenuData->giftRibbons[i] < 64)
-                gSaveBlock1Ptr->giftRibbons[i] = sTradeMenuData->giftRibbons[i];
+                gSaveBlock2Ptr->giftRibbons[i] = sTradeMenuData->giftRibbons[i];
         }
     }
 }

@@ -19,6 +19,10 @@ msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
 release
 end
 }
+script Viridian_GymBlocker{
+lock
+msgbox(format("Soren left a few days ago to conduct inspections at the Pewter Mine.\lSadly, I can't let you in the gym right now!"))
+}
 
 raw `
 Viridian_Berries:

@@ -249,7 +249,7 @@ static void FindMapsWithMon(u16 species)
     if (sPokedexAreaScreen->alteringCaveId >= NUM_ALTERING_CAVE_TABLES)
         sPokedexAreaScreen->alteringCaveId = 0;
 
-    roamer = &gSaveBlock1Ptr->roamer;
+    roamer = &gSaveBlock2Ptr->roamer;
     if (species != roamer->species)
     {
         sPokedexAreaScreen->numOverworldAreas = 0;

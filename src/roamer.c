@@ -14,7 +14,7 @@ enum
     MAP_NUM, // map number
 };
 
-#define ROAMER (&gSaveBlock1Ptr->roamer)
+#define ROAMER (&gSaveBlock2Ptr->roamer)
 EWRAM_DATA static u8 sLocationHistory[3][2] = {0};
 EWRAM_DATA static u8 sRoamerLocation[2] = {0};
 

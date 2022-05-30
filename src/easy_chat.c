@@ -1459,7 +1459,7 @@ void ShowEasyChatScreen(void)
         words = gSaveBlock1Ptr->mail[gSpecialVar_0x8005].words;
         break;
     case EASY_CHAT_TYPE_BARD_SONG:
-        bard = &gSaveBlock1Ptr->oldMan.bard;
+        bard = &gSaveBlock2Ptr->oldMan.bard;
         for (i = 0; i < BARD_SONG_LENGTH; i ++)
             bard->temporaryLyrics[i] = bard->songLyrics[i];
 
@@ -1479,8 +1479,8 @@ void ShowEasyChatScreen(void)
         break;
     case EASY_CHAT_TYPE_TRENDY_PHRASE:
         words = (u16 *)gStringVar3;
-        words[0] = gSaveBlock1Ptr->dewfordTrends[0].words[0];
-        words[1] = gSaveBlock1Ptr->dewfordTrends[0].words[1];
+        words[0] = gSaveBlock2Ptr->dewfordTrends[0].words[0];
+        words[1] = gSaveBlock2Ptr->dewfordTrends[0].words[1];
         break;
     case EASY_CHAT_TYPE_GABBY_AND_TY:
         words = gSaveBlock1Ptr->gabbyAndTyData.quote;
@@ -5413,7 +5413,7 @@ static bool8 IsAdditionalPhraseUnlocked(u8 additionalPhraseId)
 {
     int byteOffset = additionalPhraseId / 8;
     int shift = additionalPhraseId % 8;
-    return (gSaveBlock1Ptr->additionalPhrases[byteOffset] >> shift) & 1;
+    return (gSaveBlock2Ptr->additionalPhrases[byteOffset] >> shift) & 1;
 }
 
 void UnlockAdditionalPhrase(u8 additionalPhraseId)
@@ -5422,7 +5422,7 @@ void UnlockAdditionalPhrase(u8 additionalPhraseId)
     {
         int byteOffset = additionalPhraseId / 8;
         int shift = additionalPhraseId % 8;
-        gSaveBlock1Ptr->additionalPhrases[byteOffset] |= 1 << shift;
+        gSaveBlock2Ptr->additionalPhrases[byteOffset] |= 1 << shift;
     }
 }
 
@@ -5553,10 +5553,10 @@ void InitEasyChatPhrases(void)
     // Mauville old man data is corrupted, which is initialized directly after
     // this function is called when starting a new game.
     for (i = 0; i < 64; i++)
-        gSaveBlock1Ptr->additionalPhrases[i] = 0;
+        gSaveBlock2Ptr->additionalPhrases[i] = 0;
 #else
-    for (i = 0; i < ARRAY_COUNT(gSaveBlock1Ptr->additionalPhrases); i++)
-        gSaveBlock1Ptr->additionalPhrases[i] = 0;
+    for (i = 0; i < ARRAY_COUNT(gSaveBlock2Ptr->additionalPhrases); i++)
+        gSaveBlock2Ptr->additionalPhrases[i] = 0;
 #endif
 }
 

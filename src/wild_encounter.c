@@ -137,7 +137,7 @@ static bool8 CheckFeebas(void)
         if (Random() % 100 > 49)
             return FALSE;
 
-        FeebasSeedRng(gSaveBlock1Ptr->dewfordTrends[0].rand);
+        FeebasSeedRng(gSaveBlock2Ptr->dewfordTrends[0].rand);
 
         // Assign each Feebas spot to a random fishing spot.
         // Randomness is fixed depending on the seed above.
@@ -621,7 +621,7 @@ bool8 StandardWildEncounter(u16 currMetaTileBehavior, u16 previousMetaTileBehavi
 
             if (TryStartRoamerEncounter() == TRUE)
             {
-                roamer = &gSaveBlock1Ptr->roamer;
+                roamer = &gSaveBlock2Ptr->roamer;
                 if (!IsWildLevelAllowedByRepel(roamer->level))
                     return FALSE;
 
@@ -670,7 +670,7 @@ bool8 StandardWildEncounter(u16 currMetaTileBehavior, u16 previousMetaTileBehavi
 
             if (TryStartRoamerEncounter() == TRUE)
             {
-                roamer = &gSaveBlock1Ptr->roamer;
+                roamer = &gSaveBlock2Ptr->roamer;
                 if (!IsWildLevelAllowedByRepel(roamer->level))
                     return FALSE;
 

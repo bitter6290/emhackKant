@@ -5,7 +5,6 @@ NewMap1_MapScripts::
 
 NewMap1_OnLoad::
 	setrespawn HEAL_LOCATION_PALLET_TOWN
-	removeobject 0
 	removeobject 1
 	end
 
@@ -106,8 +105,8 @@ NewMap1_OakStopsPlayer_Text_2:
 	.string "and I can't help but worry.\l"
 	.string "Could you go and check on her? Pewter\l"
 	.string "City is just two towns to the north of\l"
-	.string "here, and the roads in between are easy\l"
-	.string "to navigate.$"
+	.string "here, and the roads in between ought\l"
+	.string "to be easy to navigate.$"
 
 NewMap1_OakStopsPlayer_Text_3:
 	.string "Thank you, {PLAYER}.$"

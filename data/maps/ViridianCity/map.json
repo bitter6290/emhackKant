@@ -104,7 +104,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Viridian_BerrySeller",
       "flag": "0"
     }
   ],
@@ -127,7 +127,7 @@
       "x": 23,
       "y": 23,
       "elevation": 0,
-      "dest_map": "MAP_VIRIDIAN_CITY",
+      "dest_map": "MAP_VIRIDIAN_HOUSE_C2",
       "dest_warp_id": 0
     },
     {
@@ -184,6 +184,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 44,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    }
   ]
 }

@@ -1099,3 +1099,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/IndigoWoodsE/scripts.inc"
 
 	.include "data/maps/IndigoRange/scripts.inc"
+
+	.include "data/maps/ViridianHouseC2/scripts.inc"

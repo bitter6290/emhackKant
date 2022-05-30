@@ -1,0 +1,32 @@
+mapscripts ViridianCity_MapScripts{
+}
+
+script ViridianGymSign{
+lock
+msgbox(format("Viridian City Gym\lLeader: Soren\lKanto's top speleologist!"))
+release
+end
+}
+
+script Viridian_BerrySeller{
+lock
+msgbox(format("Hi! I'm Viridian City's Berry Trader!"))
+msgbox(format("Would you like to buy some of my berries?"),MSGBOX_YESNO)
+if(var(VAR_RESULT)==1){
+pokemart(Viridian_Berries)
+}
+msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+release
+end
+}
+
+raw `
+Viridian_Berries:
+	.2byte ITEM_ORAN_BERRY
+	.2byte ITEM_PECHA_BERRY
+	.2byte ITEM_CHESTO_BERRY
+	.2byte ITEM_CHERI_BERRY
+	.2byte ITEM_NONE
+	release
+	end
+`

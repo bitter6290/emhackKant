@@ -40,7 +40,8 @@
     "gMapGroup_NewOuter",
     "gMapGroup_NewIndoor",
     "gMapGroup_NewGrotto",
-    "gMapGroup_NewDungeon"
+    "gMapGroup_NewDungeon",
+    "gMapGroup_NewUrban"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -670,5 +671,8 @@
   ],
   "gMapGroup_NewDungeon": [
 
+  ],
+  "gMapGroup_NewUrban": [
+    "ViridianHouseC2"
   ]
 }

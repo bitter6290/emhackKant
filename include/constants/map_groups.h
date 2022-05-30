@@ -632,6 +632,9 @@
 
 // gMapGroup_NewDungeon
 
-#define MAP_GROUPS_COUNT 40
+// gMapGroup_NewUrban
+#define MAP_VIRIDIAN_HOUSE_C2 (0 | (40 << 8))
+
+#define MAP_GROUPS_COUNT 41
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

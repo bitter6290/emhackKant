@@ -13,7 +13,7 @@ lock
 if(var(VAR_STORY_PROGRESS)<2){
 msgbox(format("Oak: {PLAYER}!"))
 playse(SE_PIN)
-applymovement(OBJ_EVENT_ID_PLAYER,PlayerExclam)
+applymovement(OBJ_EVENT_ID_PLAYER,Pallet_PlayerExclam)
 waitmovement(OBJ_EVENT_ID_PLAYER)
 msgbox(format("Oak: You can't go out without a Pokémon!" 
 	"\lIf you want to talk about leaving Pallet Town, come to my lab."))
@@ -44,7 +44,7 @@ release
 end
 }
 
-movement PlayerExclam{
+movement Pallet_PlayerExclam{
 face_down
 emote_exclamation_mark
 step_end

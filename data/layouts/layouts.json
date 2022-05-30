@@ -4700,6 +4700,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/IndigoRange/border.bin",
       "blockdata_filepath": "data/layouts/IndigoRange/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_HOUSE_C2",
+      "name": "ViridianHouseC2_Layout",
+      "width": 12,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/ViridianHouseC2/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianHouseC2/map.bin"
     }
   ]
 }

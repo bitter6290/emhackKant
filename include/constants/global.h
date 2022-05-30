@@ -138,6 +138,7 @@
 #define DIR_NORTHWEST   7
 #define DIR_NORTHEAST   8
 
+
 #define CONNECTION_INVALID -1
 #define CONNECTION_NONE     0
 #define CONNECTION_SOUTH    1

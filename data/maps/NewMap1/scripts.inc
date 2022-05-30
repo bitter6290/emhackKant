@@ -5,8 +5,8 @@ NewMap1_MapScripts::
 
 NewMap1_OnLoad::
 	setrespawn HEAL_LOCATION_PALLET_TOWN
+	removeobject 0
 	removeobject 1
-	delay 5
 	end
 
 
@@ -47,7 +47,6 @@ NewMap1_OakStopsPlayer_6:
 	applymovement 1, Pallet_OakDown
 	waitmovement 1
 	removeobject 1
-	delay 10
 	addvar VAR_STORY_PROGRESS, 1
 	goto NewMap1_OakStopsPlayer_1
 

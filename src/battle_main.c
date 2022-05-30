@@ -1829,8 +1829,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
     u8 fixedIV;
     s32 i, j;
     u8 monsCount;
-    u8 coeffTarget = 1;
-    u8 coeffPlayer = 0;
+    u8 baseCoeff;
         
     //find party max level for dynamic leveling
 	u8 maxLevel = 0;
@@ -1847,40 +1846,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
 		if(LevelCheck > maxLevel)
 		maxLevel = LevelCheck;
     }
-
-    switch (gTrainers[trainerNum].scalingLevel)
-    {
-    case 0:
-    {
-    	coeffTarget = 8;
-    	coeffPlayer = 8;
-    }
-    case 1:
-    {
-    	coeffTarget = 6;
-    	coeffPlayer = 10;
-    }
-    case 2:
-    {
-    	coeffTarget = 5;
-    	coeffPlayer = 11;
-    }
-    case 3:
-    {
-    	coeffTarget = 4;
-    	coeffPlayer = 12;
-    }
-    case 4:
-    {
-    	coeffTarget = 3;
-    	coeffPlayer = 13;
-    }
-    case 5:
-    {
-    	coeffTarget = 2;
-    	coeffPlayer = 14;
-    }
-    }
+	baseCoeff = 16 - gTrainers[trainerNum].scalingCoeff;
     
     
     if (trainerNum == TRAINER_SECRET_BASE)
@@ -1929,7 +1895,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
 
                 personalityValue += nameHash << 8;
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
-                CreateMon(&party[i], partyData[i].species, (coeffTarget*partyData[i].lvl+coeffPlayer*maxLevel+8) >> 4, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                CreateMon(&party[i], partyData[i].species, (baseCoeff*partyData[i].lvl + gTrainers[trainerNum].scalingCoeff * maxLevel + 8) >> 4, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 break;
             }
             case F_TRAINER_PARTY_CUSTOM_MOVESET:
@@ -1941,7 +1907,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
 
                 personalityValue += nameHash << 8;
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
-                CreateMon(&party[i], partyData[i].species, (coeffTarget*partyData[i].lvl+coeffPlayer*maxLevel+8) >> 4, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                CreateMon(&party[i], partyData[i].species, (baseCoeff*partyData[i].lvl + gTrainers[trainerNum].scalingCoeff * maxLevel + 8) >> 4, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
 
                 for (j = 0; j < MAX_MON_MOVES; j++)
                 {
@@ -1959,7 +1925,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
 
                 personalityValue += nameHash << 8;
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
-                CreateMon(&party[i], partyData[i].species, (coeffTarget*partyData[i].lvl+coeffPlayer*maxLevel+8) >> 4, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                CreateMon(&party[i], partyData[i].species, (baseCoeff*partyData[i].lvl + gTrainers[trainerNum].scalingCoeff * maxLevel + 8) >> 4, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
 
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
                 break;
@@ -1973,7 +1939,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
 
                 personalityValue += nameHash << 8;
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
-                CreateMon(&party[i], partyData[i].species, (coeffTarget*partyData[i].lvl+coeffPlayer*maxLevel+8) >> 4, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                CreateMon(&party[i], partyData[i].species, (baseCoeff*partyData[i].lvl + gTrainers[trainerNum].scalingCoeff * maxLevel + 8) >> 4, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
 
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
 

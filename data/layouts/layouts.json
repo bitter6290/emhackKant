@@ -4680,6 +4680,26 @@
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/ViridianForestC/border.bin",
       "blockdata_filepath": "data/layouts/ViridianForestC/map.bin"
+    },
+    {
+      "id": "LAYOUT_INDIGO_WOODS_E",
+      "name": "IndigoWoodsE_Layout",
+      "width": 28,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/IndigoWoodsE/border.bin",
+      "blockdata_filepath": "data/layouts/IndigoWoodsE/map.bin"
+    },
+    {
+      "id": "LAYOUT_INDIGO_RANGE",
+      "name": "IndigoRange_Layout",
+      "width": 100,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/IndigoRange/border.bin",
+      "blockdata_filepath": "data/layouts/IndigoRange/map.bin"
     }
   ]
 }

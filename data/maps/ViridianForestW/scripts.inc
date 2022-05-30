@@ -12,11 +12,18 @@ VFW_HikerFirst_1:
 
 VFW_HikerFirst_2:
 	msgbox VFW_HikerFirst_Text_0
+	playse SE_PIN
 	applymovement OBJ_EVENT_ID_PLAYER, VFW_ExclamLeft
 	waitmovement OBJ_EVENT_ID_PLAYER
 	msgbox VFW_HikerFirst_Text_1
 	setvar VAR_STORY_PROGRESS, 4
 	goto VFW_HikerFirst_1
+
+
+VFW_EventScript_BTim::
+	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_4, VFW_EventScript_BTim_Text_0, VFW_EventScript_BTim_Text_1
+	msgbox VFW_EventScript_BTim_Text_2, MSGBOX_AUTOCLOSE
+	end
 
 
 VFW_ExclamLeft:
@@ -41,3 +48,15 @@ VFW_HikerFirst_Text_1:
 	.string "was spotted in the fields southeast of\l"
 	.string "here, and it'll keep the bugs away from\l"
 	.string "you for sure!$"
+
+VFW_EventScript_BTim_Text_0:
+	.string "I'll show you the rare Pokémon I found\n"
+	.string "last week!$"
+
+VFW_EventScript_BTim_Text_1:
+	.string "Stumbled into defeat...$"
+
+VFW_EventScript_BTim_Text_2:
+	.string "To tell the truth, I was lost in this\n"
+	.string "forest when I found my Pikachu. I\l"
+	.string "wonder where they come from...$"

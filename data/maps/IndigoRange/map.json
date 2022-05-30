@@ -1,0 +1,44 @@
+{
+  "id": "MAP_INDIGO_RANGE",
+  "name": "IndigoRange",
+  "layout": "LAYOUT_INDIGO_RANGE",
+  "music": "MUS_RG_ROUTE11",
+  "region_map_section": "MAPSEC_ROUTE_23",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "direction": "right",
+      "offset": 0,
+      "map": "MAP_PEWTER_MINE"
+    },
+    {
+      "direction": "up",
+      "offset": 88,
+      "map": "MAP_NIGHTMARE_RANGE"
+    },
+    {
+      "direction": "down",
+      "offset": 92,
+      "map": "MAP_INDIGO_WOODS_E"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

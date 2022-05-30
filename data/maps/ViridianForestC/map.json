@@ -32,6 +32,11 @@
       "direction": "down",
       "offset": -34,
       "map": "MAP_VIRIDIAN_COMPLEX"
+    },
+    {
+      "direction": "down",
+      "offset": -4,
+      "map": "MAP_VIRIDIAN_COAST"
     }
   ],
   "object_events": [

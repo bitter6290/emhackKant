@@ -616,6 +616,8 @@
 #define MAP_NIGHTMARE_RANGE    (8 | (36 << 8))
 #define MAP_VIRIDIAN_COAST     (9 | (36 << 8))
 #define MAP_VIRIDIAN_FOREST_C  (10 | (36 << 8))
+#define MAP_INDIGO_WOODS_E     (11 | (36 << 8))
+#define MAP_INDIGO_RANGE       (12 | (36 << 8))
 
 // gMapGroup_NewIndoor
 #define MAP_PALLET_PLAYER_HOUSE_1F      (0 | (37 << 8))

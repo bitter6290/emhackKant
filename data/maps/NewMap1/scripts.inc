@@ -22,7 +22,7 @@ NewMap1_OakStopsPlayer_1:
 NewMap1_OakStopsPlayer_2:
 	msgbox NewMap1_OakStopsPlayer_Text_0
 	playse SE_PIN
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerExclam
+	applymovement OBJ_EVENT_ID_PLAYER, DownExclam
 	waitmovement OBJ_EVENT_ID_PLAYER
 	msgbox NewMap1_OakStopsPlayer_Text_1
 	applymovement OBJ_EVENT_ID_PLAYER, Pallet_PlayerRetreat
@@ -32,7 +32,7 @@ NewMap1_OakStopsPlayer_2:
 NewMap1_OakStopsPlayer_3:
 	msgbox NewMap1_OakStopsPlayer_Text_0
 	playse SE_PIN
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerExclam
+	applymovement OBJ_EVENT_ID_PLAYER, DownExclam
 	waitmovement OBJ_EVENT_ID_PLAYER
 	showobjectat 1, MAP_NEW_MAP1
 	getplayerxy VAR_RESULT, VAR_TEMP_1
@@ -55,7 +55,7 @@ NewMap1_OakStopsPlayer_7:
 	goto NewMap1_OakStopsPlayer_6
 
 
-PlayerExclam:
+DownExclam::
 	face_down
 	emote_exclamation_mark
 	step_end

@@ -37,7 +37,7 @@ Viridian_Berries:
 ViridianGymSign_Text_0:
 	.string "Viridian City Gym\l"
 	.string "Leader: Soren\l"
-	.string "Kanto's leading speleologist!$"
+	.string "Kanto's top speleologist!$"
 
 Viridian_BerrySeller_Text_0:
 	.string "Hi! I'm Viridian City's Berry Trader!$"

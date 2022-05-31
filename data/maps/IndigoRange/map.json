@@ -19,14 +19,14 @@
       "map": "MAP_PEWTER_MINE"
     },
     {
-      "direction": "up",
-      "offset": 88,
-      "map": "MAP_NIGHTMARE_RANGE"
-    },
-    {
       "direction": "down",
       "offset": 92,
       "map": "MAP_INDIGO_WOODS_E"
+    },
+    {
+      "direction": "up",
+      "offset": 88,
+      "map": "MAP_NIGHTMARE_RANGE"
     }
   ],
   "object_events": [

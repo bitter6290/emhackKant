@@ -655,7 +655,7 @@
 #define FLAG_TOOK_CHARMANDER  0x265 // Unused Flag
 #define FLAG_TOOK_SQUIRTLE  0x266 // Unused Flag
 #define FLAG_QUEST_MENU_ACTIVE  0x267 // Unused Flag
-#define FLAG_UNUSED_0x268  0x268 // Unused Flag
+#define FLAG_PEWTER_MINE_DONE  0x268 // Unused Flag
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag
 #define FLAG_UNUSED_0x26A  0x26A // Unused Flag
 #define FLAG_UNUSED_0x26B  0x26B // Unused Flag

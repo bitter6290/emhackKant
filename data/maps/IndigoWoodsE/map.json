@@ -32,6 +32,11 @@
       "direction": "up",
       "offset": 28,
       "map": "MAP_PEWTER_CITY"
+    },
+    {
+      "direction": "up",
+      "offset": -92,
+      "map": "MAP_INDIGO_RANGE"
     }
   ],
   "object_events": [

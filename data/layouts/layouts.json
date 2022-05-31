@@ -4710,6 +4710,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/ViridianHouseC2/border.bin",
       "blockdata_filepath": "data/layouts/ViridianHouseC2/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_GYM_1F",
+      "name": "ViridianGym_1F_Layout",
+      "width": 14,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/ViridianGym_1F/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianGym_1F/map.bin"
     }
   ]
 }

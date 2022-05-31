@@ -5,7 +5,7 @@
   "music": "MUS_RG_ROUTE1",
   "region_map_section": "MAPSEC_ROUTE_2",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_NONE",
   "allow_cycling": true,
   "allow_escaping": false,
@@ -45,7 +45,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Route2_Grunt",
       "flag": "0"
     },
     {
@@ -58,7 +58,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route2_SouthGrunt",
+      "script": "Route2_Grunt",
       "flag": "0"
     },
     {
@@ -86,7 +86,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "Route2_SouthStop"
+      "script": "Route2_Stop"
     },
     {
       "type": "trigger",
@@ -95,7 +95,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "Route2_Stop"
     },
     {
       "type": "trigger",
@@ -104,7 +104,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "Route2_Stop"
     },
     {
       "type": "trigger",
@@ -113,7 +113,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "Route2_SouthStop"
+      "script": "Route2_Stop"
     }
   ],
   "bg_events": [

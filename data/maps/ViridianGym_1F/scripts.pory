@@ -1,0 +1,14 @@
+mapscripts ViridianGym_1F_MapScripts {}
+
+script VirGym_SorenBattle{
+lock
+msgbox(format("Ahaha! So you found me! How do you like my little den? I’m Soren, 
+Kanto’s first and greatest expert on caves and tunnels! Three years ago, coal was found 
+under Pewter City, and who would answer the call but me! That mine, ja, and all the riches
+ that came with it... it’s all because of me!"))
+msgbox(format("Hah... but that is not what you’re here for, is it? No, you’re here for Soren
+ the gym leader. Very well! My Pokémon are always willing to show why I’m also Kanto’s 
+ greatest Ground-type expert! Hahaha!"))
+release
+end
+}

@@ -49,3 +49,7 @@ special(SetCB2WhiteOut)
 release
 end
 }
+
+script PewterMine_Explosion{
+
+}

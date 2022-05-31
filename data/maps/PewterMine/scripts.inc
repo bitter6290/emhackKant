@@ -73,6 +73,10 @@ PewterMine_JoinCaleb_6:
 	goto PewterMine_JoinCaleb_1
 
 
+PewterMine_Explosion::
+	return
+
+
 PewterMine_JoinEmilie_Text_0:
 	.string "Ugh... I'll show you! You grunts have\n"
 	.string "nothing on us!$"

@@ -41,7 +41,8 @@
     "gMapGroup_NewIndoor",
     "gMapGroup_NewGrotto",
     "gMapGroup_NewDungeon",
-    "gMapGroup_NewUrban"
+    "gMapGroup_NewUrban",
+    "gMapGroup_NewGym"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -674,5 +675,8 @@
   ],
   "gMapGroup_NewUrban": [
     "ViridianHouseC2"
+  ],
+  "gMapGroup_NewGym": [
+    "ViridianGym_1F"
   ]
 }

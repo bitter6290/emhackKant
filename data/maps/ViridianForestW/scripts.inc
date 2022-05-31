@@ -26,6 +26,13 @@ VFW_EventScript_BTim::
 	end
 
 
+VFW_GrottoMasterSign::
+	lock
+	msgbox VFW_GrottoMasterSign_Text_0
+	release
+	end
+
+
 VFW_ExclamLeft:
 	face_left
 	emote_exclamation_mark
@@ -37,7 +44,7 @@ VFW_HikerFirst_Text_0:
 VFW_HikerFirst_Text_1:
 	.string "What are you doing going through these\n"
 	.string "woods? Nobody comes here anymore, not\l"
-	.string "since Archie built that road there.\l"
+	.string "since the boss built that road there.\l"
 	.string "If you really want to come through,\l"
 	.string "remember this. The plants here have a\l"
 	.string "pattern to them, one that should help\l"
@@ -58,5 +65,8 @@ VFW_EventScript_BTim_Text_1:
 
 VFW_EventScript_BTim_Text_2:
 	.string "To tell the truth, I was lost in this\n"
-	.string "forest when I found my Pikachu. I\l"
-	.string "wonder where they come from...$"
+	.string "forest when I found this Pikachu. But I\l"
+	.string "haven't found another once since...$"
+
+VFW_GrottoMasterSign_Text_0:
+	.string "Even if there's only one way through an area, it never hurts to explore all the possible routes!\lYou never know what you might come accross. Hee hee!$"

@@ -7,7 +7,7 @@ msgbox(format("Hey! You!"))
 playse(SE_PIN)
 applymovement(OBJ_EVENT_ID_PLAYER,VFW_ExclamLeft)
 waitmovement(OBJ_EVENT_ID_PLAYER)
-msgbox(format("What are you doing going through these woods? Nobody comes here anymore, not since Archie built that road there.\lIf you really want to come through, remember this. The plants here have a pattern to them, one that should help you to keep your bearings and avoid running in circles.\lYour party should be prepared, too. I've heard that a new Fire-type Pokémon was spotted in the fields southeast of here, and it'll keep the bugs away from you for sure!"))
+msgbox(format("What are you doing going through these woods? Nobody comes here anymore, not since the boss built that road there.\lIf you really want to come through, remember this. The plants here have a pattern to them, one that should help you to keep your bearings and avoid running in circles.\lYour party should be prepared, too. I've heard that a new Fire-type Pokémon was spotted in the fields southeast of here, and it'll keep the bugs away from you for sure!"))
 setvar(VAR_STORY_PROGRESS,4)
 }
 release
@@ -16,7 +16,13 @@ end
 
 script VFW_EventScript_BTim{
 	trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_4,format("I'll show you the rare Pokémon I found last week!"),format("Stumbled into defeat..."))
-	msgbox(format("To tell the truth, I was lost in this forest when I found my Pikachu. I wonder where they come from..."), MSGBOX_AUTOCLOSE)
+	msgbox(format("To tell the truth, I was lost in this forest when I found this Pikachu. But I haven't found another once since..."), MSGBOX_AUTOCLOSE)
+	end
+}
+script VFW_GrottoMasterSign{
+	lock
+	msgbox("Even if there's only one way through an area, it never hurts to explore all the possible routes!\lYou never know what you might come accross. Hee hee!")
+	release
 	end
 }
 movement VFW_ExclamLeft{

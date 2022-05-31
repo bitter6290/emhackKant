@@ -1,7 +1,7 @@
 mapscripts Route2_MapScripts{
 }
 
-script Route2_SouthGrunt{
+script Route2_Grunt{
 lock
 if(var(VAR_STORY_PROGRESS)<15){
 msgbox(format("We're gonna be setting up a tollbooth here!\lIt's not ready yet, so you'll have to find another way."))
@@ -9,21 +9,36 @@ msgbox(format("We're gonna be setting up a tollbooth here!\lIt's not ready yet, 
 release
 end
 }
-script Route2_SouthStop{
+script Route2_Stop{
 lock
 if(var(VAR_STORY_PROGRESS)<15){
 playse(SE_PIN)
 getplayerxy(VAR_RESULT,VAR_TEMP_1)
 if(var(VAR_RESULT)>14){
+if(var(VAR_TEMP_1)>50){
 applymovement(2,ExclamRight)
 }
 else{
+applymovement(1,ExclamRight)
+}
+}
+else{
+if(var(VAR_TEMP_1)>50){
 applymovement(2,ExclamLeft)
 }
-waitmovement(2)
+else{
+applymovement(1,ExclamLeft)
+}
+}
+waitmovement(0)
 msgbox("Hey!")
 msgbox(Route2_GruntMessage1)
+if(var(VAR_TEMP_1)>50){
 applymovement(OBJ_EVENT_ID_PLAYER,Route2_PlayerRetreats)
+}
+else{
+applymovement(OBJ_EVENT_ID_PLAYER,Route2_RetreatUp)
+}
 waitmovement(OBJ_EVENT_ID_PLAYER)
 }
 release
@@ -56,5 +71,9 @@ step_end
 }
 movement Route2_PlayerRetreats{
 walk_down
+step_end
+}
+movement Route2_RetreatUp{
+walk_up
 step_end
 }

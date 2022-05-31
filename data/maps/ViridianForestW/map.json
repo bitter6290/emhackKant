@@ -42,6 +42,11 @@
       "direction": "down",
       "offset": 28,
       "map": "MAP_VIRIDIAN_COAST"
+    },
+    {
+      "direction": "right",
+      "offset": 0,
+      "map": "MAP_VIRIDIAN_FOREST_C"
     }
   ],
   "object_events": [

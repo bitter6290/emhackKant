@@ -1123,3 +1123,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/PewterCave1F/scripts.inc"
 
 	.include "data/maps/PewterMineSouthHouse/scripts.inc"
+
+	.include "data/maps/PewterMineNorthHouse/scripts.inc"

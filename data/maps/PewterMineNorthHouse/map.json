@@ -1,7 +1,7 @@
 {
-  "id": "MAP_PEWTER_MINE_SOUTH_HOUSE",
-  "name": "PewterMineSouthHouse",
-  "layout": "LAYOUT_PEWTER_MINE_SOUTH_HOUSE",
+  "id": "MAP_PEWTER_MINE_NORTH_HOUSE",
+  "name": "PewterMineNorthHouse",
+  "layout": "LAYOUT_PEWTER_MINE_NORTH_HOUSE",
   "music": "MUS_RG_PEWTER",
   "region_map_section": "MAPSEC_PEWTER_CITY",
   "requires_flash": false,
@@ -10,38 +10,38 @@
   "allow_cycling": false,
   "allow_escaping": false,
   "allow_running": true,
-  "show_map_name": false,
+  "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_2",
-      "x": 7,
-      "y": 5,
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "x": 8,
+      "y": 4,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PewterMineSHouse_ManDia",
+      "script": "NULL",
       "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 4,
+      "x": 8,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_MINE",
-      "dest_warp_id": 1
+      "dest_warp_id": 0
     },
     {
-      "x": 3,
+      "x": 7,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_MINE",
-      "dest_warp_id": 1
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

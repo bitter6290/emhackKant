@@ -629,6 +629,7 @@
 #define MAP_VIRIDIAN_PLAIN_EFARM_INSIDE (4 | (37 << 8))
 #define MAP_PEWTER_POKEMON_CENTER1F     (5 | (37 << 8))
 #define MAP_VIRIDIAN_POKE_MART          (6 | (37 << 8))
+#define MAP_PEWTER_MINE_SOUTH_HOUSE     (7 | (37 << 8))
 
 // gMapGroup_NewGrotto
 

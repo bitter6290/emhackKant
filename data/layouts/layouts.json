@@ -4810,6 +4810,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/PewterCave1F/border.bin",
       "blockdata_filepath": "data/layouts/PewterCave1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PEWTER_MINE_SOUTH_HOUSE",
+      "name": "PewterMineSouthHouse_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PewterMineSouthHouse/border.bin",
+      "blockdata_filepath": "data/layouts/PewterMineSouthHouse/map.bin"
     }
   ]
 }

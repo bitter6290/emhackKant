@@ -1,0 +1,55 @@
+{
+  "id": "MAP_DEEP_VIR_FOREST1",
+  "name": "DeepVirForest1",
+  "layout": "LAYOUT_DEEP_VIR_FOREST1",
+  "music": "MUS_NONE",
+  "region_map_section": "MAPSEC_VIRIDIAN_FOREST",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "direction": "up",
+      "offset": 0,
+      "map": "MAP_DEEP_VIR_FOREST2"
+    },
+    {
+      "direction": "right",
+      "offset": 0,
+      "map": "MAP_DEEP_VIR_FOREST3"
+    },
+    {
+      "direction": "down",
+      "offset": -20,
+      "map": "MAP_DEEP_VIR_FOREST4"
+    },
+    {
+      "direction": "left",
+      "offset": -20,
+      "map": "MAP_DEEP_VIR_FOREST5"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_VIRIDIAN_FOREST_C",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

@@ -1,0 +1,20 @@
+mapscripts PewterMineSouthHouse_MapScripts {}
+
+script PewterMineSHouse_ManDia{
+lock
+if(!flag(FLAG_TEMP_1)){
+msgbox(format("No... What will I do..."))
+faceplayer
+playse(SE_PIN)
+applymovement(1,PewterMine_Exclam)
+waitmovement(1)
+msgbox(format("Ah! Who are you?"))
+msgbox(format("Professor Oak? An assistant...\lOh! Yes, she came here yesterday. But as you can see, she isn't in here with me...\lI can't say for sure, but I think she was resting in the building north of here when Team Rocket arrived."))
+setflag(FLAG_TEMP_1)
+}
+else{
+msgbox(format("I think she was resting in the building on the other side of the mine. I sincerely hope she hasn't been hurt..."))
+}
+release
+end
+}

@@ -4,7 +4,14 @@ PewterMine_MapScripts::
 
 
 PewterMine_OnTransition::
+	compare VAR_STORY_PROGRESS, 14
+	goto_if_lt PewterMine_OnTransition_2
+PewterMine_OnTransition_1:
 	end
+
+PewterMine_OnTransition_2:
+	setflag FLAG_TEMP_3
+	goto PewterMine_OnTransition_1
 
 
 PewterMine_JoinEmilie::
@@ -33,6 +40,7 @@ PewterMine_JoinEmilie_4:
 
 PewterMine_JoinEmilie_6:
 	setvar VAR_STORY_PROGRESS, 14
+	playbgm MUS_RG_ROCKET_HIDEOUT, FALSE
 	delay 10
 	goto PewterMine_Explosion
 	goto PewterMine_JoinEmilie_1
@@ -64,9 +72,42 @@ PewterMine_JoinCaleb_4:
 
 PewterMine_JoinCaleb_6:
 	setvar VAR_STORY_PROGRESS, 14
+	playbgm MUS_RG_ROCKET_HIDEOUT, FALSE
 	delay 10
 	goto PewterMine_Explosion
 	goto PewterMine_JoinCaleb_1
+
+
+PewterMine_FirstEntrance::
+	lock
+	compare VAR_STORY_PROGRESS, 5
+	goto_if_lt PewterMine_FirstEntrance_2
+	compare VAR_STORY_PROGRESS, 14
+	goto_if_lt PewterMine_FirstEntrance_3
+PewterMine_FirstEntrance_1:
+	release
+	end
+
+PewterMine_FirstEntrance_2:
+	playse SE_PIN
+	applymovement OBJ_EVENT_ID_PLAYER, PewterMine_Exclam
+	playbgm MUS_RG_ROCKET_HIDEOUT, FALSE
+	special SpawnCameraObject
+	applymovement OBJ_EVENT_ID_CAMERA, PewterMine_CameraFirst
+	waitmovement 0
+	applymovement 6, PewterMine_FirstGrunt2
+	msgbox PewterMine_FirstEntrance_Text_0
+	applymovement 7, PewterMine_FirstGrunt
+	msgbox PewterMine_FirstEntrance_Text_1
+	applymovement OBJ_EVENT_ID_CAMERA, PewterMine_CameraFirstBack
+	waitmovement 0
+	special RemoveCameraObject
+	addvar VAR_STORY_PROGRESS, 1
+	goto PewterMine_FirstEntrance_1
+
+PewterMine_FirstEntrance_3:
+	playbgm MUS_RG_ROCKET_HIDEOUT, FALSE
+	goto PewterMine_FirstEntrance_1
 
 
 PewterMine_Magma6Dia::
@@ -91,9 +132,12 @@ PewterMine_Magma10Dia::
 	lock
 	msgbox PewterMine_Magma10Dia_Text_0
 	faceplayer
+	playse SE_PIN
 	applymovement 10, PewterMine_Exclam
+	waitmovement 10
 	msgbox PewterMine_Magma10Dia_Text_1
-	return
+	release
+	end
 
 
 PewterMine_Explosion::
@@ -106,7 +150,9 @@ PewterMine_Explosion::
 	applymovement 8, PewterMine_Aqua8Jump
 	waitmovement 8
 	msgbox PewterMine_Explosion_Text_0
+	playse SE_PIN
 	applymovement 4, PewterMine_Exclam
+	waitmovement 4
 	msgbox PewterMine_Explosion_Text_1
 	msgbox PewterMine_Explosion_Text_2
 	waitmessage
@@ -119,12 +165,29 @@ PewterMine_Explosion::
 	applymovement 5, PewterMine_Aqua3Run
 	waitmovement 0
 	fadescreen 1
+	removeobject 1
+	removeobject 2
+	removeobject 3
+	removeobject 4
+	removeobject 5
+	removeobject 6
+	removeobject 7
+	removeobject 8
+	removeobject 9
+	removeobject 10
+	removeobject 11
 	special ShakeCamera
 	setflag FLAG_PEWTER_MINE_DONE
 	applymovement OBJ_EVENT_ID_CAMERA, PewterMine_CameraBack
 	waitmovement 0
 	special RemoveCameraObject
+	clearflag FLAG_TEMP_3
+	showobjectat 13, MAP_PEWTER_MINE
+	showobjectat 14, MAP_PEWTER_MINE
+	showobjectat 15, MAP_PEWTER_MINE
+	showobjectat 16, MAP_PEWTER_MINE
 	fadescreen 0
+	playbgm MUS_RG_PEWTER, FALSE
 	release
 	end
 
@@ -252,7 +315,7 @@ PewterMine_Aqua11Run:
 	walk_fast_right
 	step_end
 
-PewterMine_Exclam:
+PewterMine_Exclam::
 	emote_exclamation_mark
 	step_end
 
@@ -286,6 +349,44 @@ PewterMine_CameraBack:
 	walk_fast_up
 	step_end
 
+PewterMine_CameraFirst:
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	step_end
+
+PewterMine_CameraFirstBack:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
+
+PewterMine_FirstGrunt:
+	walk_in_place_down
+	walk_in_place_down
+	walk_in_place_down
+	step_end
+
+PewterMine_FirstGrunt2:
+	walk_in_place_down
+	walk_in_place_down
+	walk_in_place_down
+	step_end
+
 PewterMine_JoinEmilie_Text_0:
 	.string "Ugh... I'll show you! You grunts have\n"
 	.string "nothing on us!$"
@@ -306,8 +407,15 @@ PewterMine_JoinCaleb_Text_1:
 PewterMine_JoinCaleb_Text_2:
 	.string "No!$"
 
+PewterMine_FirstEntrance_Text_0:
+	.string "Come on! It's already over for you!$"
+
+PewterMine_FirstEntrance_Text_1:
+	.string "Shut up! We've already cleared you out\n"
+	.string "of the mine!$"
+
 PewterMine_Magma6Dia_Text_0:
-	.string "Zubat! Clear out the enemy!$"
+	.string "Zubat! Confuse the enemy!$"
 
 PewterMine_Aqua7Dia_Text_0:
 	.string "Ack... What are you people doing on our\n"

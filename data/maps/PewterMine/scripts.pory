@@ -3,6 +3,9 @@ mapscripts PewterMine_MapScripts {
 	}
 
 script PewterMine_OnTransition{
+if(var(VAR_STORY_PROGRESS)<14){
+setflag(FLAG_TEMP_3)
+}
 end
 }
 script PewterMine_JoinEmilie{
@@ -16,6 +19,7 @@ multi_fixed_2_vs_1(TRAINER_GRUNT_AQUA_HIDEOUT_2,format("How..."),TRAINER_GRUNT_A
 specialvar(VAR_RESULT, GetBattleOutcome)
 if(var(VAR_RESULT)==B_OUTCOME_WON){
 setvar(VAR_STORY_PROGRESS,14)
+playbgm(MUS_RG_ROCKET_HIDEOUT,FALSE)
 delay(10)
 goto(PewterMine_Explosion)
 }
@@ -38,6 +42,7 @@ multi_fixed_2_vs_1(TRAINER_GRUNT_AQUA_HIDEOUT_3,format("No!"),TRAINER_SAWYER_1,2
 specialvar(VAR_RESULT, GetBattleOutcome)
 if(var(VAR_RESULT)==B_OUTCOME_WON){
 setvar(VAR_STORY_PROGRESS,14)
+playbgm(MUS_RG_ROCKET_HIDEOUT,FALSE)
 delay(10)
 goto(PewterMine_Explosion)
 }
@@ -50,9 +55,34 @@ release
 end
 }
 
+script PewterMine_FirstEntrance{
+lock
+if(var(VAR_STORY_PROGRESS)<5){
+playse(SE_PIN)
+applymovement(OBJ_EVENT_ID_PLAYER,PewterMine_Exclam)
+playbgm(MUS_RG_ROCKET_HIDEOUT,FALSE)
+special(SpawnCameraObject)
+applymovement(OBJ_EVENT_ID_CAMERA,PewterMine_CameraFirst)
+waitmovement(0)
+applymovement(6,PewterMine_FirstGrunt2)
+msgbox("Come on! It's already over for you!")
+applymovement(7,PewterMine_FirstGrunt)
+msgbox(format("Shut up! We've already cleared you out of the mine!"))
+applymovement(OBJ_EVENT_ID_CAMERA,PewterMine_CameraFirstBack)
+waitmovement(0)
+special(RemoveCameraObject)
+addvar(VAR_STORY_PROGRESS,1)
+}
+elif(var(VAR_STORY_PROGRESS)<14){
+playbgm(MUS_RG_ROCKET_HIDEOUT,FALSE)
+}
+release
+end
+}
+
 script PewterMine_Magma6Dia{
 lock
-msgbox(format("Zubat! Clear out the enemy!"))
+msgbox(format("Zubat! Confuse the enemy!"))
 release
 end
 }
@@ -70,8 +100,12 @@ script PewterMine_Magma10Dia{
 lock
 msgbox(format("Heh... Our plan is already in place! Those fools just don't know it yet..."))
 faceplayer
+playse(SE_PIN)
 applymovement(10,PewterMine_Exclam)
+waitmovement(10)
 msgbox(format("Who are you?\nYou didn't hear anything, OK?"))
+release
+end
 
 }
 script PewterMine_Explosion{
@@ -84,7 +118,9 @@ playse(SE_PIN)
 applymovement(8,PewterMine_Aqua8Jump)
 waitmovement(8)
 msgbox(format("It's a bomb!"))
+playse(SE_PIN)
 applymovement(4,PewterMine_Exclam)
+waitmovement(4)
 msgbox(format("Hold da kaeft!"))
 msgbox("Run!")
 waitmessage
@@ -97,12 +133,29 @@ applymovement(3,PewterMine_Aqua3Run)
 applymovement(5,PewterMine_Aqua3Run)
 waitmovement(0)
 fadescreen(1)
+removeobject(1)
+removeobject(2)
+removeobject(3)
+removeobject(4)
+removeobject(5)
+removeobject(6)
+removeobject(7)
+removeobject(8)
+removeobject(9)
+removeobject(10)
+removeobject(11)
 special(ShakeCamera)
 setflag(FLAG_PEWTER_MINE_DONE)
 applymovement(OBJ_EVENT_ID_CAMERA,PewterMine_CameraBack)
 waitmovement(0)
 special(RemoveCameraObject)
+clearflag(FLAG_TEMP_3)
+showobjectat(13,MAP_PEWTER_MINE)
+showobjectat(14,MAP_PEWTER_MINE)
+showobjectat(15,MAP_PEWTER_MINE)
+showobjectat(16,MAP_PEWTER_MINE)
 fadescreen(0)
+playbgm(MUS_RG_PEWTER,FALSE)
 release
 end
 }
@@ -156,7 +209,7 @@ walk_diag_northeast
 walk_fast_right*9
 step_end
 }
-movement PewterMine_Exclam{
+movement(global) PewterMine_Exclam{
 emote_exclamation_mark
 }
 movement PewterMine_CameraExplosion{
@@ -167,5 +220,21 @@ step_end
 movement PewterMine_CameraBack{
 walk_fast_right*5
 walk_fast_up*7
+step_end
+}
+movement PewterMine_CameraFirst{
+walk_fast_left*10
+step_end
+}
+movement PewterMine_CameraFirstBack{
+walk_fast_right*10
+step_end
+}
+movement PewterMine_FirstGrunt{
+walk_in_place_down*3
+step_end
+}
+movement PewterMine_FirstGrunt2{
+walk_in_place_down*3
 step_end
 }

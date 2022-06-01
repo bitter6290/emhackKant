@@ -69,4 +69,8 @@ VFW_EventScript_BTim_Text_2:
 	.string "haven't found another once since...$"
 
 VFW_GrottoMasterSign_Text_0:
-	.string "Even if there's only one way through an area, it never hurts to explore all the possible routes!\lYou never know what you might come accross. Hee hee!$"
+	.string "Even if there's only one way through an\n"
+	.string "area, it never hurts to explore all the\l"
+	.string "possible routes!\l"
+	.string "You never know what you might come\l"
+	.string "across!$"

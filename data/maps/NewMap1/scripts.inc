@@ -5,7 +5,7 @@ NewMap1_MapScripts::
 
 NewMap1_OnLoad::
 	setrespawn HEAL_LOCATION_PALLET_TOWN
-	removeobject 1
+	setflag FLAG_TEMP_5
 	end
 
 
@@ -34,6 +34,7 @@ NewMap1_OakStopsPlayer_3:
 	playse SE_PIN
 	applymovement OBJ_EVENT_ID_PLAYER, DownExclam
 	waitmovement OBJ_EVENT_ID_PLAYER
+	clearflag FLAG_TEMP_5
 	showobjectat 1, MAP_NEW_MAP1
 	getplayerxy VAR_RESULT, VAR_TEMP_1
 	compare VAR_RESULT, 11
@@ -45,7 +46,7 @@ NewMap1_OakStopsPlayer_6:
 	msgbox NewMap1_OakStopsPlayer_Text_3
 	applymovement 1, Pallet_OakDown
 	waitmovement 1
-	removeobject 1
+	setflag FLAG_TEMP_5
 	addvar VAR_STORY_PROGRESS, 1
 	goto NewMap1_OakStopsPlayer_1
 

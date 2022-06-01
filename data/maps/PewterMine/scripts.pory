@@ -3,10 +3,6 @@ mapscripts PewterMine_MapScripts {
 	}
 
 script PewterMine_OnTransition{
-if(var(VAR_STORY_PROGRESS)>15){
-removeobject(1)
-removeobject(2)
-}
 end
 }
 script PewterMine_JoinEmilie{
@@ -20,8 +16,8 @@ multi_fixed_2_vs_1(TRAINER_GRUNT_AQUA_HIDEOUT_2,format("How..."),TRAINER_GRUNT_A
 specialvar(VAR_RESULT, GetBattleOutcome)
 if(var(VAR_RESULT)==B_OUTCOME_WON){
 setvar(VAR_STORY_PROGRESS,14)
+delay(10)
 goto(PewterMine_Explosion)
-waitmovement(6)
 }
 else{
 special(SetCB2WhiteOut)
@@ -42,8 +38,8 @@ multi_fixed_2_vs_1(TRAINER_GRUNT_AQUA_HIDEOUT_3,format("No!"),TRAINER_SAWYER_1,2
 specialvar(VAR_RESULT, GetBattleOutcome)
 if(var(VAR_RESULT)==B_OUTCOME_WON){
 setvar(VAR_STORY_PROGRESS,14)
+delay(10)
 goto(PewterMine_Explosion)
-waitmovement(6)
 }
 else{
 special(SetCB2WhiteOut)
@@ -63,7 +59,7 @@ end
 
 script PewterMine_Aqua7Dia{
 lock
-msgbox(format("Ugh... What are you people doing here? This is our turf!"))
+msgbox(format("Ack... What are you people doing on our turf?"))
 release
 end
 }
@@ -71,25 +67,105 @@ end
 script PewterMine_Magma9Dia{
 }
 script PewterMine_Magma10Dia{
+lock
+msgbox(format("Heh... Our plan is already in place! Those fools just don't know it yet..."))
+faceplayer
+applymovement(10,PewterMine_Exclam)
+msgbox(format("Who are you?\nYou didn't hear anything, OK?"))
+
 }
 script PewterMine_Explosion{
 lock
+delay(5)
+special(SpawnCameraObject)
+applymovement(OBJ_EVENT_ID_CAMERA,PewterMine_CameraExplosion)
+waitmovement(0)
+playse(SE_PIN)
+applymovement(8,PewterMine_Aqua8Jump)
+waitmovement(8)
+msgbox(format("It's a bomb!"))
+applymovement(4,PewterMine_Exclam)
+msgbox(format("Hold da kaeft!"))
+msgbox("Run!")
+waitmessage
+applymovement(8,PewterMine_Aqua8Run)
+applymovement(4,PewterMine_SorenRun)
 applymovement(6,PewterMine_Aqua7Run)
 applymovement(7,PewterMine_Aqua7Run)
 applymovement(9,PewterMine_Magma9Run)
-waitmovement(6)
+applymovement(3,PewterMine_Aqua3Run)
+applymovement(5,PewterMine_Aqua3Run)
+waitmovement(0)
+fadescreen(1)
+special(ShakeCamera)
+setflag(FLAG_PEWTER_MINE_DONE)
+applymovement(OBJ_EVENT_ID_CAMERA,PewterMine_CameraBack)
+waitmovement(0)
+special(RemoveCameraObject)
+fadescreen(0)
 release
 end
 }
 
 movement PewterMine_Aqua7Run{
-walk_fast_right
 walk_diag_northeast
-walk_fast_right*8
+walk_fast_right*11
 step_end
 }
 movement PewterMine_Magma9Run{
 walk_fast_down*3
+walk_fast_right*10
+step_end
+}
+movement PewterMine_Aqua3Run{
+walk_fast_up*3
+walk_fast_right
+walk_diag_northeast
+walk_fast_right*11
+step_end
+}
+movement PewterMine_Aqua8Run{
+walk_fast_right*2
+walk_diag_northeast
+walk_fast_right*4
+walk_diag_northeast
+walk_fast_right*10
+step_end
+}
+movement PewterMine_Aqua8Jump{
+emote_exclamation_mark
+delay_16
+jump_in_place_right
+jump_in_place_right
+}
+movement PewterMine_SorenRun{
+walk_fast_down*3
+walk_fast_right*2
+walk_diag_northeast
+walk_fast_right*4
+walk_diag_northeast
+walk_fast_right*9
+step_end
+}
+movement PewterMine_Aqua11Run{
+walk_fast_up*2
+walk_fast_right*2
+walk_diag_northeast
+walk_fast_right*4
+walk_diag_northeast
+walk_fast_right*9
+step_end
+}
+movement PewterMine_Exclam{
+emote_exclamation_mark
+}
+movement PewterMine_CameraExplosion{
+walk_fast_down*7
+walk_fast_left*5
+step_end
+}
+movement PewterMine_CameraBack{
 walk_fast_right*5
+walk_fast_up*7
 step_end
 }

@@ -12112,6 +12112,420 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_DEEP_VIR_FOREST1",
+          "base_label": "gDeepVirForest1G",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_HOOTHOOT"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_NUZLEAF"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_HOOTHOOT"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_TANGELA"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_DUSKULL"
+              },
+              {
+                "min_level": 19,
+                "max_level": 23,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_PHANTUMP"
+              },
+              {
+                "min_level": 21,
+                "max_level": 25,
+                "species": "SPECIES_DUSKULL"
+              },
+              {
+                "min_level": 21,
+                "max_level": 25,
+                "species": "SPECIES_PHANTUMP"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_DEEP_VIR_FOREST2",
+          "base_label": "gDeepVirForest2G",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_HOOTHOOT"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_NUZLEAF"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_HOOTHOOT"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_ODDISH"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_PHANTUMP"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_MISDREAVUS"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_SEEDOT"
+              },
+              {
+                "min_level": 20,
+                "max_level": 25,
+                "species": "SPECIES_MISDREAVUS"
+              },
+              {
+                "min_level": 19,
+                "max_level": 23,
+                "species": "SPECIES_GASTLY"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_DEEP_VIR_FOREST3",
+          "base_label": "gDeepVirForest3G",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_HOOTHOOT"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_NUZLEAF"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_MURKROW"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_PHANTUMP"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_PUMPKABOO"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_PUMPKABOO_LARGE"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_HOOTHOOT"
+              },
+              {
+                "min_level": 20,
+                "max_level": 25,
+                "species": "SPECIES_PUMPKABOO_SUPER"
+              },
+              {
+                "min_level": 20,
+                "max_level": 25,
+                "species": "SPECIES_PUMPKABOO_SMALL"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_DEEP_VIR_FOREST5",
+          "base_label": "gDeepVirForest5G",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_HOOTHOOT"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_NUZLEAF"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_FOONGUS"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_PARAS"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 25,
+                "species": "SPECIES_NOCTOWL"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_PHANTUMP"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 19,
+                "max_level": 23,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_MIMIKYU"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_DEEP_VIR_FOREST4",
+          "base_label": "gDeepVirForest4G",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_HOOTHOOT"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_NUZLEAF"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_WEEPINBELL"
+              },
+              {
+                "min_level": 19,
+                "max_level": 23,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_PHANTUMP"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_HOOTHOOT"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_SHUPPET"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 21,
+                "max_level": 25,
+                "species": "SPECIES_SHUPPET"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_DEEP_VIR_FOREST6",
+          "base_label": "gDeepVirForest60",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_HOOTHOOT"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_NUZLEAF"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_TANGELA"
+              },
+              {
+                "min_level": 20,
+                "max_level": 24,
+                "species": "SPECIES_PHANTUMP"
+              },
+              {
+                "min_level": 19,
+                "max_level": 23,
+                "species": "SPECIES_HOOTHOOT"
+              },
+              {
+                "min_level": 19,
+                "max_level": 23,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 21,
+                "max_level": 25,
+                "species": "SPECIES_GLOOM"
+              },
+              {
+                "min_level": 18,
+                "max_level": 22,
+                "species": "SPECIES_DREEPY"
+              },
+              {
+                "min_level": 18,
+                "max_level": 22,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 18,
+                "max_level": 22,
+                "species": "SPECIES_ABSOL"
+              }
+            ]
+          }
         }
       ]
     },

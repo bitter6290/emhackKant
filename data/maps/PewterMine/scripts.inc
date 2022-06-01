@@ -4,15 +4,7 @@ PewterMine_MapScripts::
 
 
 PewterMine_OnTransition::
-	compare VAR_STORY_PROGRESS, 15
-	goto_if_gt PewterMine_OnTransition_2
-PewterMine_OnTransition_1:
 	end
-
-PewterMine_OnTransition_2:
-	removeobject 1
-	removeobject 2
-	goto PewterMine_OnTransition_1
 
 
 PewterMine_JoinEmilie::
@@ -41,6 +33,7 @@ PewterMine_JoinEmilie_4:
 
 PewterMine_JoinEmilie_6:
 	setvar VAR_STORY_PROGRESS, 14
+	delay 10
 	goto PewterMine_Explosion
 	goto PewterMine_JoinEmilie_1
 
@@ -71,8 +64,8 @@ PewterMine_JoinCaleb_4:
 
 PewterMine_JoinCaleb_6:
 	setvar VAR_STORY_PROGRESS, 14
+	delay 10
 	goto PewterMine_Explosion
-	waitmovement 6
 	goto PewterMine_JoinCaleb_1
 
 
@@ -95,22 +88,52 @@ PewterMine_Magma9Dia::
 
 
 PewterMine_Magma10Dia::
+	lock
+	msgbox PewterMine_Magma10Dia_Text_0
+	faceplayer
+	applymovement 10, PewterMine_Exclam
+	msgbox PewterMine_Magma10Dia_Text_1
 	return
 
 
 PewterMine_Explosion::
 	lock
+	delay 5
+	special SpawnCameraObject
+	applymovement OBJ_EVENT_ID_CAMERA, PewterMine_CameraExplosion
+	waitmovement 0
+	playse SE_PIN
+	applymovement 8, PewterMine_Aqua8Jump
+	waitmovement 8
+	msgbox PewterMine_Explosion_Text_0
+	applymovement 4, PewterMine_Exclam
+	msgbox PewterMine_Explosion_Text_1
+	msgbox PewterMine_Explosion_Text_2
+	waitmessage
+	applymovement 8, PewterMine_Aqua8Run
+	applymovement 4, PewterMine_SorenRun
 	applymovement 6, PewterMine_Aqua7Run
 	applymovement 7, PewterMine_Aqua7Run
 	applymovement 9, PewterMine_Magma9Run
-	waitmovement 6
+	applymovement 3, PewterMine_Aqua3Run
+	applymovement 5, PewterMine_Aqua3Run
+	waitmovement 0
+	fadescreen 1
+	special ShakeCamera
+	setflag FLAG_PEWTER_MINE_DONE
+	applymovement OBJ_EVENT_ID_CAMERA, PewterMine_CameraBack
+	waitmovement 0
+	special RemoveCameraObject
+	fadescreen 0
 	release
 	end
 
 
 PewterMine_Aqua7Run:
-	walk_fast_right
 	walk_diag_northeast
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
 	walk_fast_right
 	walk_fast_right
 	walk_fast_right
@@ -130,6 +153,137 @@ PewterMine_Magma9Run:
 	walk_fast_right
 	walk_fast_right
 	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
+
+PewterMine_Aqua3Run:
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_right
+	walk_diag_northeast
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
+
+PewterMine_Aqua8Run:
+	walk_fast_right
+	walk_fast_right
+	walk_diag_northeast
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_diag_northeast
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
+
+PewterMine_Aqua8Jump:
+	emote_exclamation_mark
+	delay_16
+	jump_in_place_right
+	jump_in_place_right
+	step_end
+
+PewterMine_SorenRun:
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_right
+	walk_fast_right
+	walk_diag_northeast
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_diag_northeast
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
+
+PewterMine_Aqua11Run:
+	walk_fast_up
+	walk_fast_up
+	walk_fast_right
+	walk_fast_right
+	walk_diag_northeast
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_diag_northeast
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
+
+PewterMine_Exclam:
+	emote_exclamation_mark
+	step_end
+
+PewterMine_CameraExplosion:
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	step_end
+
+PewterMine_CameraBack:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
 	step_end
 
 PewterMine_JoinEmilie_Text_0:
@@ -156,5 +310,22 @@ PewterMine_Magma6Dia_Text_0:
 	.string "Zubat! Clear out the enemy!$"
 
 PewterMine_Aqua7Dia_Text_0:
-	.string "Ugh... What are you people doing here?\n"
-	.string "This is our turf!$"
+	.string "Ack... What are you people doing on our\n"
+	.string "turf?$"
+
+PewterMine_Magma10Dia_Text_0:
+	.string "Heh... Our plan is already in place! Those\n"
+	.string "fools just don't know it yet...$"
+
+PewterMine_Magma10Dia_Text_1:
+	.string "Who are you?\n"
+	.string "You didn't hear anything, OK?$"
+
+PewterMine_Explosion_Text_0:
+	.string "It's a bomb!$"
+
+PewterMine_Explosion_Text_1:
+	.string "Hold da kaeft!$"
+
+PewterMine_Explosion_Text_2:
+	.string "Run!$"

@@ -96,7 +96,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = ARRAY_COUNT(sParty_GruntAquaHideout4),
         .party = {.NoItemDefaultMoves = sParty_GruntAquaHideout4},
-        .scalingCoeff = 11
+        .scalingCoeff = 10
     },
 
     [TRAINER_GRUNT_SEAFLOOR_CAVERN_1] =

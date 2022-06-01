@@ -603,6 +603,7 @@
 #define MAP_ROUTE1 (0 | (35 << 8))
 #define MAP_ROUTE2 (1 | (35 << 8))
 #define MAP_ROUTE3 (2 | (35 << 8))
+#define MAP_ROUTE4 (3 | (35 << 8))
 
 // gMapGroup_NewOuter
 #define MAP_VIRIDIAN_PLAIN_E   (0 | (36 << 8))
@@ -618,6 +619,7 @@
 #define MAP_VIRIDIAN_FOREST_C  (10 | (36 << 8))
 #define MAP_INDIGO_WOODS_E     (11 | (36 << 8))
 #define MAP_INDIGO_RANGE       (12 | (36 << 8))
+#define MAP_PEWTER_RANGE       (13 | (36 << 8))
 
 // gMapGroup_NewIndoor
 #define MAP_PALLET_PLAYER_HOUSE_1F      (0 | (37 << 8))
@@ -631,6 +633,12 @@
 // gMapGroup_NewGrotto
 
 // gMapGroup_NewDungeon
+#define MAP_DEEP_VIR_FOREST1 (0 | (39 << 8))
+#define MAP_DEEP_VIR_FOREST2 (1 | (39 << 8))
+#define MAP_DEEP_VIR_FOREST3 (2 | (39 << 8))
+#define MAP_DEEP_VIR_FOREST4 (3 | (39 << 8))
+#define MAP_DEEP_VIR_FOREST5 (4 | (39 << 8))
+#define MAP_DEEP_VIR_FOREST6 (5 | (39 << 8))
 
 // gMapGroup_NewUrban
 #define MAP_VIRIDIAN_HOUSE_C2 (0 | (40 << 8))
@@ -638,6 +646,9 @@
 // gMapGroup_NewGym
 #define MAP_VIRIDIAN_GYM_1F (0 | (41 << 8))
 
-#define MAP_GROUPS_COUNT 42
+// gMapGroup_NewCave
+#define MAP_PEWTER_CAVE1F (0 | (42 << 8))
+
+#define MAP_GROUPS_COUNT 43
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

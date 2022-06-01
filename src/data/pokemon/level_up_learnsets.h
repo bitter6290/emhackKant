@@ -19251,9 +19251,9 @@ static const struct LevelUpMove sCalyrexShadowRiderLevelUpLearnset[] = {
 static const struct LevelUpMove sShinxKantoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 5, MOVE_LEER),
-    LEVEL_UP_MOVE( 9, MOVE_CHARGE),
-    LEVEL_UP_MOVE(11, MOVE_EMBER),
-    LEVEL_UP_MOVE(13, MOVE_SPARK),
+    LEVEL_UP_MOVE( 9, MOVE_EMBER),
+    LEVEL_UP_MOVE(11, MOVE_SPARK),
+    LEVEL_UP_MOVE(13, MOVE_CHARGE),
     LEVEL_UP_MOVE(17, MOVE_FIRE_FANG),
     LEVEL_UP_MOVE(21, MOVE_ROAR),
     LEVEL_UP_MOVE(25, MOVE_WILL_O_WISP),

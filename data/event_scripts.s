@@ -1103,3 +1103,21 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/ViridianHouseC2/scripts.inc"
 
 	.include "data/maps/ViridianGym_1F/scripts.inc"
+
+	.include "data/maps/PewterRange/scripts.inc"
+
+	.include "data/maps/DeepVirForest1/scripts.inc"
+
+	.include "data/maps/DeepVirForest2/scripts.inc"
+
+	.include "data/maps/DeepVirForest3/scripts.inc"
+
+	.include "data/maps/DeepVirForest4/scripts.inc"
+
+	.include "data/maps/DeepVirForest5/scripts.inc"
+
+	.include "data/maps/DeepVirForest6/scripts.inc"
+
+	.include "data/maps/Route4/scripts.inc"
+
+	.include "data/maps/PewterCave1F/scripts.inc"

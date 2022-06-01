@@ -41,6 +41,7 @@ PewterMine_JoinEmilie_4:
 
 PewterMine_JoinEmilie_6:
 	setvar VAR_STORY_PROGRESS, 14
+	goto PewterMine_Explosion
 	goto PewterMine_JoinEmilie_1
 
 
@@ -70,12 +71,66 @@ PewterMine_JoinCaleb_4:
 
 PewterMine_JoinCaleb_6:
 	setvar VAR_STORY_PROGRESS, 14
+	goto PewterMine_Explosion
+	waitmovement 6
 	goto PewterMine_JoinCaleb_1
 
 
-PewterMine_Explosion::
+PewterMine_Magma6Dia::
+	lock
+	msgbox PewterMine_Magma6Dia_Text_0
+	release
+	end
+
+
+PewterMine_Aqua7Dia::
+	lock
+	msgbox PewterMine_Aqua7Dia_Text_0
+	release
+	end
+
+
+PewterMine_Magma9Dia::
 	return
 
+
+PewterMine_Magma10Dia::
+	return
+
+
+PewterMine_Explosion::
+	lock
+	applymovement 6, PewterMine_Aqua7Run
+	applymovement 7, PewterMine_Aqua7Run
+	applymovement 9, PewterMine_Magma9Run
+	waitmovement 6
+	release
+	end
+
+
+PewterMine_Aqua7Run:
+	walk_fast_right
+	walk_diag_northeast
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
+
+PewterMine_Magma9Run:
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
 
 PewterMine_JoinEmilie_Text_0:
 	.string "Ugh... I'll show you! You grunts have\n"
@@ -96,3 +151,10 @@ PewterMine_JoinCaleb_Text_1:
 
 PewterMine_JoinCaleb_Text_2:
 	.string "No!$"
+
+PewterMine_Magma6Dia_Text_0:
+	.string "Zubat! Clear out the enemy!$"
+
+PewterMine_Aqua7Dia_Text_0:
+	.string "Ugh... What are you people doing here?\n"
+	.string "This is our turf!$"

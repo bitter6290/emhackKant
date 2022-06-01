@@ -1,7 +1,7 @@
 static const struct TrainerMonNoItemDefaultMoves sParty_Sawyer1[] = {
     {
     .iv = 90,
-    .lvl = 10,
+    .lvl = 12,
     .species = SPECIES_SHINX_KANTO,
     }
 };
@@ -9,7 +9,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Sawyer1[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntAquaHideout1[] = {
     {
     .iv = 90,
-    .lvl = 10,
+    .lvl = 12,
     .species = SPECIES_ZUBAT,
     }
 };

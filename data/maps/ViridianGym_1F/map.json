@@ -31,7 +31,7 @@
   "warp_events": [
     {
       "x": 7,
-      "y": 23,
+      "y": 22,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_CITY",
       "dest_warp_id": 8

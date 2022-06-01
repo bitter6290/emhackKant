@@ -32,6 +32,16 @@
       "direction": "down",
       "offset": 32,
       "map": "MAP_VIRIDIAN_FOREST_C"
+    },
+    {
+      "direction": "up",
+      "offset": 24,
+      "map": "MAP_PEWTER_RANGE"
+    },
+    {
+      "direction": "up",
+      "offset": 100,
+      "map": "MAP_ROUTE4"
     }
   ],
   "object_events": [

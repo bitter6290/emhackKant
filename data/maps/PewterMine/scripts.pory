@@ -20,6 +20,8 @@ multi_fixed_2_vs_1(TRAINER_GRUNT_AQUA_HIDEOUT_2,format("How..."),TRAINER_GRUNT_A
 specialvar(VAR_RESULT, GetBattleOutcome)
 if(var(VAR_RESULT)==B_OUTCOME_WON){
 setvar(VAR_STORY_PROGRESS,14)
+goto(PewterMine_Explosion)
+waitmovement(6)
 }
 else{
 special(SetCB2WhiteOut)
@@ -40,6 +42,8 @@ multi_fixed_2_vs_1(TRAINER_GRUNT_AQUA_HIDEOUT_3,format("No!"),TRAINER_SAWYER_1,2
 specialvar(VAR_RESULT, GetBattleOutcome)
 if(var(VAR_RESULT)==B_OUTCOME_WON){
 setvar(VAR_STORY_PROGRESS,14)
+goto(PewterMine_Explosion)
+waitmovement(6)
 }
 else{
 special(SetCB2WhiteOut)
@@ -50,6 +54,42 @@ release
 end
 }
 
-script PewterMine_Explosion{
+script PewterMine_Magma6Dia{
+lock
+msgbox(format("Zubat! Clear out the enemy!"))
+release
+end
+}
 
+script PewterMine_Aqua7Dia{
+lock
+msgbox(format("Ugh... What are you people doing here? This is our turf!"))
+release
+end
+}
+
+script PewterMine_Magma9Dia{
+}
+script PewterMine_Magma10Dia{
+}
+script PewterMine_Explosion{
+lock
+applymovement(6,PewterMine_Aqua7Run)
+applymovement(7,PewterMine_Aqua7Run)
+applymovement(9,PewterMine_Magma9Run)
+waitmovement(6)
+release
+end
+}
+
+movement PewterMine_Aqua7Run{
+walk_fast_right
+walk_diag_northeast
+walk_fast_right*8
+step_end
+}
+movement PewterMine_Magma9Run{
+walk_fast_down*3
+walk_fast_right*5
+step_end
 }

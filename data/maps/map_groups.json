@@ -42,7 +42,8 @@
     "gMapGroup_NewGrotto",
     "gMapGroup_NewDungeon",
     "gMapGroup_NewUrban",
-    "gMapGroup_NewGym"
+    "gMapGroup_NewGym",
+    "gMapGroup_NewCave"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -641,7 +642,8 @@
   "gMapGroup_NewRoutes": [
     "Route1",
     "Route2",
-    "Route3"
+    "Route3",
+    "Route4"
   ],
   "gMapGroup_NewOuter": [
     "ViridianPlainE",
@@ -656,7 +658,8 @@
     "ViridianCoast",
     "ViridianForestC",
     "IndigoWoodsE",
-    "IndigoRange"
+    "IndigoRange",
+    "PewterRange"
   ],
   "gMapGroup_NewIndoor": [
     "PalletPlayerHouse_1F",
@@ -671,12 +674,20 @@
 
   ],
   "gMapGroup_NewDungeon": [
-
+    "DeepVirForest1",
+    "DeepVirForest2",
+    "DeepVirForest3",
+    "DeepVirForest4",
+    "DeepVirForest5",
+    "DeepVirForest6"
   ],
   "gMapGroup_NewUrban": [
     "ViridianHouseC2"
   ],
   "gMapGroup_NewGym": [
     "ViridianGym_1F"
+  ],
+  "gMapGroup_NewCave": [
+    "PewterCave1F"
   ]
 }

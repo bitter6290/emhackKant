@@ -37,6 +37,11 @@
       "direction": "up",
       "offset": -92,
       "map": "MAP_INDIGO_RANGE"
+    },
+    {
+      "direction": "right",
+      "offset": 0,
+      "map": "MAP_ROUTE2"
     }
   ],
   "object_events": [

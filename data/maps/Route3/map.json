@@ -42,6 +42,11 @@
       "direction": "up",
       "offset": 100,
       "map": "MAP_ROUTE4"
+    },
+    {
+      "direction": "down",
+      "offset": 60,
+      "map": "MAP_VIRIDIAN_FOREST_NW"
     }
   ],
   "object_events": [

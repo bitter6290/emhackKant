@@ -24,11 +24,6 @@
       "map": "MAP_VIRIDIAN_FOREST_W"
     },
     {
-      "direction": "down",
-      "offset": 0,
-      "map": "MAP_ROUTE2"
-    },
-    {
       "direction": "left",
       "offset": 0,
       "map": "MAP_PEWTER_MINE"
@@ -37,6 +32,16 @@
       "direction": "right",
       "offset": 0,
       "map": "MAP_ROUTE3"
+    },
+    {
+      "direction": "down",
+      "offset": -28,
+      "map": "MAP_INDIGO_WOODS_E"
+    },
+    {
+      "direction": "up",
+      "offset": -32,
+      "map": "MAP_NIGHTMARE_RANGE"
     }
   ],
   "object_events": [

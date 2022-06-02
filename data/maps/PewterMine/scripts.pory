@@ -1,5 +1,5 @@
 mapscripts PewterMine_MapScripts {
-	map_script MAP_SCRIPT_ON_TRANSITION: PewterMine_OnTransition
+	MAP_SCRIPT_ON_TRANSITION: PewterMine_OnTransition
 	}
 
 script PewterMine_OnTransition{

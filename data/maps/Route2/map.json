@@ -32,6 +32,16 @@
       "direction": "up",
       "offset": 0,
       "map": "MAP_PEWTER_CITY"
+    },
+    {
+      "direction": "left",
+      "offset": 0,
+      "map": "MAP_INDIGO_WOODS_E"
+    },
+    {
+      "direction": "up",
+      "offset": -20,
+      "map": "MAP_PEWTER_MINE"
     }
   ],
   "object_events": [

@@ -1,0 +1,19 @@
+mapscripts PalletPlayerHouse_1F_MapScripts{
+}
+
+script TalkToMom{
+lock
+if(var(VAR_STORY_PROGRESS) < 2){
+msgbox(format("Oh, {PLAYER}!"))
+msgbox(format("I heard from Professor Oak that you were thinking about leaving Pallet Town.\lIt's important for a boy like you to see the world, but please stay safe. And come back home to me once in a while!"))
+}
+else{
+msgbox(format("{PLAYER}! You're home! Why don't you take a little rest and heal up your Pokémon?"))
+special(HealPlayerParty)
+msgbox(format("All better!"))
+msgbox(format("Come back to see me soon! I'm so proud to see you become a Trainer."))
+
+}
+release
+end
+}

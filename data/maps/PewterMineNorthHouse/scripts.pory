@@ -3,48 +3,57 @@ mapscripts PewterMineNorthHouse_MapScripts{
 }
 	
 script PewterMineNorthHouse_OnLoad{
-if(var(VAR_STORY_PROGRESS)>14){
-setflag(FLAG_TEMP_3)
-end
-}
+	if(var(VAR_STORY_PROGRESS)>14){
+	setflag(FLAG_TEMP_3)
+	}
+	end
 }
 
 script PewterMineNorthHouse_Morgan{
-lock
-if(var(VAR_STORY_PROGRESS)==14){
-playse(SE_PIN)
-applymovement(1,PewterMine_Exclam)
-waitmovement(1)
-msgbox("Ah!")
-applymovement(1,PewterMineNorthHouse_MorganSouth)
-waitmovement(1)
-msgbox(format("Are you... {PLAYER}?"))
-waitmessage
-delay(30)
-msgbox(format("So you've left Pallet Town... Oak must have sent you.\lAnd you got caught up in all of this! How stressful..."))
-applymovement(1,PewterMineNorthHouse_MorganSide)
-waitmovement(1)
-msgbox(format("I'm Morgan, Professor Oak's assistant. As you might have guessed, I got trapped in here when the fighting started. And just now, that sound I heard?"))
-waitmessage
-delay(60)
-applymovement(1,PewterMine_Exclam)
-waitmovement(1)
-msgbox(format("An explosion? Really!?"))
-msgbox(format("I need to get out of here... And you should too, {PLAYER}. Who knows what the impact has done to the tunnels below us?"))
-applymovement(1,PewterMineNorthHouse_MorganThree)
-waitmovement(1)
-playse(SE_PIN)
-applymovement(1,PewterMine_Exclam)
-waitmovement(1)
-msgbox(format("And if you have time, come to the lab and tell Oak what you saw. He'll be interested in hearing what happened from you, too.\lAfter all, I spent the whole time in here..."))
-applymovement(1,PewterMineNorthHouse_MorganSouth)
-setflag(FLAG_TEMP_3)
-removeobject(1)
-addvar(VAR_STORY_PROGRESS,1)
-}
+	lock
+		if(var(VAR_STORY_PROGRESS)==14){
+		getplayerxy(VAR_RESULT,VAR_TEMP_1)
+		playse(SE_PIN)
+		applymovement(1,PewterMine_Exclam)
+		waitmovement(1)
+		msgbox("Ah!")
+		if(var(VAR_RESULT)==7){
+		applymovement(OBJ_EVENT_ID_PLAYER,PewterMineNorth_PlayerStep)
+		}
+		applymovement(1,PewterMineNorthHouse_MorganSouth)
+		waitmovement(1)
+		msgbox(format("Are you... {PLAYER}?"))
+		waitmessage
+		delay(30)
+		msgbox(format("So you've left Pallet Town... Oak must have sent you."))
+		applymovement(1,PewterMineNorthHouse_MorganSide)
+		waitmovement(1)
+		msgbox(format("I'm Morgan, his assistant. As you might have guessed, I got trapped in here when the fighting started."))
+		msgbox(format("Incidentally, that sound just now..."))
+		waitmessage
+		delay(30)
+		applymovement(1,PewterMine_Exclam)
+		waitmovement(1)
+		msgbox(format("An explosion? Really!?"))
+		msgbox(format("I need to get out of here... And you should too, {PLAYER}. Who knows what the impact has done to the mine tunnels? The whole thing could collapse at any second."))
+		applymovement(1,PewterMineNorthHouse_MorganThree)
+		waitmovement(1)
+		playse(SE_PIN)
+		applymovement(1,PewterMine_Exclam)
+		waitmovement(1)
+		msgbox(format("Oh! And if you have time, come back to the lab and tell Oak what you saw. He'll be interested in hearing what happened from you, too.\lAfter all, I spent the whole time in here..."))
+		applymovement(1,PewterMineNorthHouse_MorganSouth)
+		waitmovement(1)
+		playse(SE_DOOR)
+		setflag(FLAG_TEMP_3)
+		removeobject(1)
+		addvar(VAR_STORY_PROGRESS,1)
+	}
 release
 end
 }
+
+
 
 movement PewterMineNorthHouse_MorganSouth{
 walk_down*2
@@ -57,4 +66,8 @@ movement PewterMineNorthHouse_MorganThree{
 walk_left
 walk_down
 face_right
+}
+movement PewterMineNorth_PlayerStep{
+walk_right
+face_up
 }

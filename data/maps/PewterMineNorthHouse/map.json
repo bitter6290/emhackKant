@@ -31,14 +31,14 @@
   "warp_events": [
     {
       "x": 8,
-      "y": 8,
+      "y": 9,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_MINE",
       "dest_warp_id": 0
     },
     {
       "x": 7,
-      "y": 8,
+      "y": 9,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_MINE",
       "dest_warp_id": 0
@@ -48,6 +48,15 @@
     {
       "type": "trigger",
       "x": 8,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "PewterMineNorthHouse_Morgan"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
       "y": 8,
       "elevation": 0,
       "var": "VAR_TEMP_0",

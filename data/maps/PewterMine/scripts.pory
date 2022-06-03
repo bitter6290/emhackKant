@@ -67,7 +67,7 @@ waitmovement(0)
 applymovement(6,PewterMine_FirstGrunt2)
 msgbox("Come on! It's already over for you!")
 applymovement(7,PewterMine_FirstGrunt)
-msgbox(format("Shut up! We've already cleared you out of the mine!"))
+msgbox(format("Shut up! We've already cleared you out of the mine!\lAnyone can see that you're losing!"))
 applymovement(OBJ_EVENT_ID_CAMERA,PewterMine_CameraFirstBack)
 waitmovement(0)
 special(RemoveCameraObject)
@@ -213,21 +213,23 @@ movement(global) PewterMine_Exclam{
 emote_exclamation_mark
 }
 movement PewterMine_CameraExplosion{
-walk_fast_down*7
+walk_fast_down*9
 walk_fast_left*5
 step_end
 }
 movement PewterMine_CameraBack{
 walk_fast_right*5
-walk_fast_up*7
+walk_fast_up*9
 step_end
 }
 movement PewterMine_CameraFirst{
 walk_fast_left*10
+walk_fast_down*2
 step_end
 }
 movement PewterMine_CameraFirstBack{
 walk_fast_right*10
+walk_fast_down*2
 step_end
 }
 movement PewterMine_FirstGrunt{
@@ -235,6 +237,6 @@ walk_in_place_down*3
 step_end
 }
 movement PewterMine_FirstGrunt2{
-walk_in_place_down*3
+walk_in_place_up*3
 step_end
 }

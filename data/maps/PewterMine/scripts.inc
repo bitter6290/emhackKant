@@ -327,6 +327,8 @@ PewterMine_CameraExplosion:
 	walk_fast_down
 	walk_fast_down
 	walk_fast_down
+	walk_fast_down
+	walk_fast_down
 	walk_fast_left
 	walk_fast_left
 	walk_fast_left
@@ -347,6 +349,8 @@ PewterMine_CameraBack:
 	walk_fast_up
 	walk_fast_up
 	walk_fast_up
+	walk_fast_up
+	walk_fast_up
 	step_end
 
 PewterMine_CameraFirst:
@@ -360,6 +364,8 @@ PewterMine_CameraFirst:
 	walk_fast_left
 	walk_fast_left
 	walk_fast_left
+	walk_fast_down
+	walk_fast_down
 	step_end
 
 PewterMine_CameraFirstBack:
@@ -373,6 +379,8 @@ PewterMine_CameraFirstBack:
 	walk_fast_right
 	walk_fast_right
 	walk_fast_right
+	walk_fast_down
+	walk_fast_down
 	step_end
 
 PewterMine_FirstGrunt:
@@ -382,9 +390,9 @@ PewterMine_FirstGrunt:
 	step_end
 
 PewterMine_FirstGrunt2:
-	walk_in_place_down
-	walk_in_place_down
-	walk_in_place_down
+	walk_in_place_up
+	walk_in_place_up
+	walk_in_place_up
 	step_end
 
 PewterMine_JoinEmilie_Text_0:
@@ -412,7 +420,8 @@ PewterMine_FirstEntrance_Text_0:
 
 PewterMine_FirstEntrance_Text_1:
 	.string "Shut up! We've already cleared you out\n"
-	.string "of the mine!$"
+	.string "of the mine!\l"
+	.string "Anyone can see that you're losing!$"
 
 PewterMine_Magma6Dia_Text_0:
 	.string "Zubat! Confuse the enemy!$"

@@ -379,8 +379,8 @@ PewterMine_CameraFirstBack:
 	walk_fast_right
 	walk_fast_right
 	walk_fast_right
-	walk_fast_down
-	walk_fast_down
+	walk_fast_up
+	walk_fast_up
 	step_end
 
 PewterMine_FirstGrunt:

@@ -1127,3 +1127,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/PewterMineNorthHouse/scripts.inc"
 
 	.include "data/maps/ViridianForestNW/scripts.inc"
+
+	.include "data/maps/CeladonBay/scripts.inc"
+
+	.include "data/maps/CeladonCity/scripts.inc"
+
+	.include "data/maps/CeladonSeaW/scripts.inc"
+
+	.include "data/maps/CeladonPokemonCenter1F/scripts.inc"

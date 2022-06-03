@@ -4794,7 +4794,7 @@
     {
       "id": "LAYOUT_ROUTE4",
       "name": "Route4_Layout",
-      "width": 76,
+      "width": 92,
       "height": 28,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fortree",
@@ -4840,6 +4840,46 @@
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/ViridianForestNW/border.bin",
       "blockdata_filepath": "data/layouts/ViridianForestNW/map.bin"
+    },
+    {
+      "id": "LAYOUT_CELADON_BAY",
+      "name": "CeladonBay_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/CeladonBay/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonBay/map.bin"
+    },
+    {
+      "id": "LAYOUT_CELADON_CITY",
+      "name": "CeladonCity_Layout",
+      "width": 52,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/CeladonCity/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_CELADON_SEA_W",
+      "name": "CeladonSeaW_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/CeladonSeaW/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonSeaW/map.bin"
+    },
+    {
+      "id": "LAYOUT_CELADON_POKEMON_CENTER1F",
+      "name": "CeladonPokemonCenter1F_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/CeladonPokemonCenter1F/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonPokemonCenter1F/map.bin"
     }
   ]
 }

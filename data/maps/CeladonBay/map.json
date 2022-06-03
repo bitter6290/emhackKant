@@ -1,9 +1,9 @@
 {
-  "id": "MAP_VIRIDIAN_FOREST_NW",
-  "name": "ViridianForestNW",
-  "layout": "LAYOUT_VIRIDIAN_FOREST_NW",
-  "music": "MUS_RG_VIRIDIAN_FOREST",
-  "region_map_section": "MAPSEC_VIRIDIAN_FOREST",
+  "id": "MAP_CELADON_BAY",
+  "name": "CeladonBay",
+  "layout": "LAYOUT_CELADON_BAY",
+  "music": "MUS_RG_ROUTE3",
+  "region_map_section": "MAPSEC_CELADON_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
@@ -15,13 +15,28 @@
   "connections": [
     {
       "direction": "left",
-      "offset": 0,
+      "offset": 60,
+      "map": "MAP_VIRIDIAN_COAST"
+    },
+    {
+      "direction": "left",
+      "offset": -40,
       "map": "MAP_VIRIDIAN_FOREST_C"
+    },
+    {
+      "direction": "up",
+      "offset": 0,
+      "map": "MAP_VIRIDIAN_FOREST_NW"
+    },
+    {
+      "direction": "right",
+      "offset": -4,
+      "map": "MAP_CELADON_CITY"
     },
     {
       "direction": "down",
       "offset": 0,
-      "map": "MAP_CELADON_BAY"
+      "map": "MAP_CELADON_SEA_W"
     }
   ],
   "object_events": [

@@ -598,6 +598,7 @@
 #define MAP_NEW_MAP1      (0 | (34 << 8))
 #define MAP_VIRIDIAN_CITY (1 | (34 << 8))
 #define MAP_PEWTER_CITY   (2 | (34 << 8))
+#define MAP_CELADON_CITY  (3 | (34 << 8))
 
 // gMapGroup_NewRoutes
 #define MAP_ROUTE1 (0 | (35 << 8))
@@ -621,6 +622,7 @@
 #define MAP_INDIGO_RANGE       (12 | (36 << 8))
 #define MAP_PEWTER_RANGE       (13 | (36 << 8))
 #define MAP_VIRIDIAN_FOREST_NW (14 | (36 << 8))
+#define MAP_CELADON_BAY        (15 | (36 << 8))
 
 // gMapGroup_NewIndoor
 #define MAP_PALLET_PLAYER_HOUSE_1F      (0 | (37 << 8))
@@ -632,6 +634,7 @@
 #define MAP_VIRIDIAN_POKE_MART          (6 | (37 << 8))
 #define MAP_PEWTER_MINE_SOUTH_HOUSE     (7 | (37 << 8))
 #define MAP_PEWTER_MINE_NORTH_HOUSE     (8 | (37 << 8))
+#define MAP_CELADON_POKEMON_CENTER1F    (9 | (37 << 8))
 
 // gMapGroup_NewGrotto
 
@@ -652,6 +655,9 @@
 // gMapGroup_NewCave
 #define MAP_PEWTER_CAVE1F (0 | (42 << 8))
 
-#define MAP_GROUPS_COUNT 43
+// gMapGroup_NewOcean
+#define MAP_CELADON_SEA_W (0 | (43 << 8))
+
+#define MAP_GROUPS_COUNT 44
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

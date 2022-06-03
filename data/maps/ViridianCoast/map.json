@@ -32,6 +32,11 @@
       "direction": "up",
       "offset": 4,
       "map": "MAP_VIRIDIAN_FOREST_C"
+    },
+    {
+      "direction": "right",
+      "offset": -60,
+      "map": "MAP_CELADON_BAY"
     }
   ],
   "object_events": [

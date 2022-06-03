@@ -43,7 +43,8 @@
     "gMapGroup_NewDungeon",
     "gMapGroup_NewUrban",
     "gMapGroup_NewGym",
-    "gMapGroup_NewCave"
+    "gMapGroup_NewCave",
+    "gMapGroup_NewOcean"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -637,7 +638,8 @@
   "gMapGroup_NewCities": [
     "NewMap1",
     "ViridianCity",
-    "PewterCity"
+    "PewterCity",
+    "CeladonCity"
   ],
   "gMapGroup_NewRoutes": [
     "Route1",
@@ -660,7 +662,8 @@
     "IndigoWoodsE",
     "IndigoRange",
     "PewterRange",
-    "ViridianForestNW"
+    "ViridianForestNW",
+    "CeladonBay"
   ],
   "gMapGroup_NewIndoor": [
     "PalletPlayerHouse_1F",
@@ -671,7 +674,8 @@
     "PewterPokemonCenter1F",
     "ViridianPokeMart",
     "PewterMineSouthHouse",
-    "PewterMineNorthHouse"
+    "PewterMineNorthHouse",
+    "CeladonPokemonCenter1F"
   ],
   "gMapGroup_NewGrotto": [
 
@@ -692,5 +696,8 @@
   ],
   "gMapGroup_NewCave": [
     "PewterCave1F"
+  ],
+  "gMapGroup_NewOcean": [
+    "CeladonSeaW"
   ]
 }

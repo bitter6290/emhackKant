@@ -33,26 +33,25 @@ PewterMineNorthHouse_Morgan_2:
 PewterMineNorthHouse_Morgan_4:
 	applymovement 1, PewterMineNorthHouse_MorganSouth
 	waitmovement 1
+	applymovement 1, PewterMineNorthHouse_MorganSouth
+	waitmovement 1
 	msgbox PewterMineNorthHouse_Morgan_Text_1
-	waitmessage
-	delay 30
-	msgbox PewterMineNorthHouse_Morgan_Text_2
 	applymovement 1, PewterMineNorthHouse_MorganSide
 	waitmovement 1
+	msgbox PewterMineNorthHouse_Morgan_Text_2
 	msgbox PewterMineNorthHouse_Morgan_Text_3
-	msgbox PewterMineNorthHouse_Morgan_Text_4
 	waitmessage
 	delay 30
 	applymovement 1, PewterMine_Exclam
 	waitmovement 1
+	msgbox PewterMineNorthHouse_Morgan_Text_4
 	msgbox PewterMineNorthHouse_Morgan_Text_5
-	msgbox PewterMineNorthHouse_Morgan_Text_6
 	applymovement 1, PewterMineNorthHouse_MorganThree
 	waitmovement 1
 	playse SE_PIN
 	applymovement 1, PewterMine_Exclam
 	waitmovement 1
-	msgbox PewterMineNorthHouse_Morgan_Text_7
+	msgbox PewterMineNorthHouse_Morgan_Text_6
 	applymovement 1, PewterMineNorthHouse_MorganSouth
 	waitmovement 1
 	playse SE_DOOR
@@ -68,16 +67,17 @@ PewterMineNorthHouse_Morgan_5:
 
 PewterMineNorthHouse_MorganSouth:
 	walk_down
-	walk_down
 	step_end
 
 PewterMineNorthHouse_MorganSide:
 	face_left
+	delay_16
 	face_down
 	step_end
 
 PewterMineNorthHouse_MorganThree:
 	walk_left
+	walk_down
 	walk_down
 	face_right
 	step_end
@@ -91,34 +91,31 @@ PewterMineNorthHouse_Morgan_Text_0:
 	.string "Ah!$"
 
 PewterMineNorthHouse_Morgan_Text_1:
-	.string "Are you... {PLAYER}?$"
+	.string "Are you... {PLAYER}?\n"
+	.string "So Oak must have sent you.$"
 
 PewterMineNorthHouse_Morgan_Text_2:
-	.string "So you've left Pallet Town... Oak must\n"
-	.string "have sent you.$"
+	.string "I'm Morgan, his assistant.\n"
+	.string "As you might have guessed, I got\l"
+	.string "trapped in here when the fighting\l"
+	.string "started.$"
 
 PewterMineNorthHouse_Morgan_Text_3:
-	.string "I'm Morgan, his assistant. As you might\n"
-	.string "have guessed, I got trapped in here\l"
-	.string "when the fighting started.$"
-
-PewterMineNorthHouse_Morgan_Text_4:
 	.string "Incidentally, that sound just now...$"
 
-PewterMineNorthHouse_Morgan_Text_5:
+PewterMineNorthHouse_Morgan_Text_4:
 	.string "An explosion? Really!?$"
 
-PewterMineNorthHouse_Morgan_Text_6:
-	.string "I need to get out of here... And you\n"
-	.string "should too, {PLAYER}. Who knows what\l"
-	.string "the impact has done to the mine\l"
-	.string "tunnels? The whole thing could\l"
-	.string "collapse at any second.$"
+PewterMineNorthHouse_Morgan_Text_5:
+	.string "I need to get out of here. And you\n"
+	.string "should too, {PLAYER}. We don't know\l"
+	.string "how badly the mine tunnels were\l"
+	.string "damaged...$"
 
-PewterMineNorthHouse_Morgan_Text_7:
+PewterMineNorthHouse_Morgan_Text_6:
 	.string "Oh! And if you have time, come back to\n"
 	.string "the lab and tell Oak what you saw. He'll\l"
-	.string "be interested in hearing what happened\l"
+	.string "be interested in hearing the story\l"
 	.string "from you, too.\l"
 	.string "After all, I spent the whole time in\l"
 	.string "here...$"

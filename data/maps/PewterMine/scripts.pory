@@ -229,7 +229,7 @@ step_end
 }
 movement PewterMine_CameraFirstBack{
 walk_fast_right*10
-walk_fast_down*2
+walk_fast_up*2
 step_end
 }
 movement PewterMine_FirstGrunt{

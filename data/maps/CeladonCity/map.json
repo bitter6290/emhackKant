@@ -17,6 +17,21 @@
       "direction": "left",
       "offset": 4,
       "map": "MAP_CELADON_BAY"
+    },
+    {
+      "direction": "left",
+      "offset": -36,
+      "map": "MAP_VIRIDIAN_FOREST_NW"
+    },
+    {
+      "direction": "down",
+      "offset": 0,
+      "map": "MAP_CYCLING_ROAD_N"
+    },
+    {
+      "direction": "up",
+      "offset": 0,
+      "map": "MAP_CELADON_RANGE"
     }
   ],
   "object_events": [

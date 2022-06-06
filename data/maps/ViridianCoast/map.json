@@ -3,7 +3,7 @@
   "name": "ViridianCoast",
   "layout": "LAYOUT_VIRIDIAN_COAST",
   "music": "MUS_RG_ROUTE1",
-  "region_map_section": "MAPSEC_VIRIDIAN_CITY",
+  "region_map_section": "MAPSEC_VIRIDIAN_FIELD",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
@@ -37,6 +37,11 @@
       "direction": "right",
       "offset": -60,
       "map": "MAP_CELADON_BAY"
+    },
+    {
+      "direction": "right",
+      "offset": 20,
+      "map": "MAP_CELADON_SEA_W"
     }
   ],
   "object_events": [

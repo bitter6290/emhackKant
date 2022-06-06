@@ -2,8 +2,8 @@
   "id": "MAP_NIGHTMARE_RANGE",
   "name": "NightmareRange",
   "layout": "LAYOUT_NIGHTMARE_RANGE",
-  "music": "MUS_MT_CHIMNEY",
-  "region_map_section": "MAPSEC_MT_MOON",
+  "music": "MUS_RG_MT_MOON",
+  "region_map_section": "MAPSEC_NIGHTMARE_RANGE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_ROUTE",
@@ -37,6 +37,11 @@
       "direction": "down",
       "offset": 32,
       "map": "MAP_PEWTER_CITY"
+    },
+    {
+      "direction": "right",
+      "offset": 20,
+      "map": "MAP_PEWTER_RANGE"
     }
   ],
   "object_events": [

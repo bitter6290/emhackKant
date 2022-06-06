@@ -663,7 +663,12 @@
     "IndigoRange",
     "PewterRange",
     "ViridianForestNW",
-    "CeladonBay"
+    "CeladonBay",
+    "MtMoonOverworld",
+    "CeruleanMeadowNW",
+    "CeladonRange",
+    "CeruleanMeadow",
+    "CeruleanWoodsNW"
   ],
   "gMapGroup_NewIndoor": [
     "PalletPlayerHouse_1F",
@@ -678,7 +683,7 @@
     "CeladonPokemonCenter1F"
   ],
   "gMapGroup_NewGrotto": [
-
+    "GrottoMaster"
   ],
   "gMapGroup_NewDungeon": [
     "DeepVirForest1",
@@ -698,6 +703,7 @@
     "PewterCave1F"
   ],
   "gMapGroup_NewOcean": [
-    "CeladonSeaW"
+    "CeladonSeaW",
+    "CyclingRoadN"
   ]
 }

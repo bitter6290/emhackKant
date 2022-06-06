@@ -47,6 +47,7 @@ NewMap1_OakStopsPlayer_6:
 	applymovement 1, Pallet_OakDown
 	waitmovement 1
 	setflag FLAG_TEMP_5
+	removeobject 1
 	addvar VAR_STORY_PROGRESS, 1
 	goto NewMap1_OakStopsPlayer_1
 

@@ -27,6 +27,26 @@
       "direction": "right",
       "offset": 0,
       "map": "MAP_DEEP_VIR_FOREST2"
+    },
+    {
+      "direction": "up",
+      "offset": 0,
+      "map": "MAP_DEEP_VIR_FOREST3"
+    },
+    {
+      "direction": "up",
+      "offset": 20,
+      "map": "MAP_DEEP_VIR_FOREST6"
+    },
+    {
+      "direction": "left",
+      "offset": 0,
+      "map": "MAP_DEEP_VIR_FOREST6"
+    },
+    {
+      "direction": "down",
+      "offset": -40,
+      "map": "MAP_DEEP_VIR_FOREST2"
     }
   ],
   "object_events": [

@@ -3,7 +3,7 @@
   "name": "CeladonBay",
   "layout": "LAYOUT_CELADON_BAY",
   "music": "MUS_RG_ROUTE3",
-  "region_map_section": "MAPSEC_CELADON_CITY",
+  "region_map_section": "MAPSEC_CELADON_BAY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
@@ -37,6 +37,11 @@
       "direction": "down",
       "offset": 0,
       "map": "MAP_CELADON_SEA_W"
+    },
+    {
+      "direction": "right",
+      "offset": 36,
+      "map": "MAP_CYCLING_ROAD_N"
     }
   ],
   "object_events": [

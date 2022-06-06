@@ -33,6 +33,12 @@ VFW_GrottoMasterSign::
 	end
 
 
+VFW_EventScript_Charlotte::
+	trainerbattle_single TRAINER_GRUNT_SEAFLOOR_CAVERN_1, VFW_EventScript_Charlotte_Text_0, VFW_EventScript_Charlotte_Text_1
+	msgbox VFW_EventScript_Charlotte_Text_2, MSGBOX_AUTOCLOSE
+	end
+
+
 VFW_ExclamLeft:
 	face_left
 	emote_exclamation_mark
@@ -46,9 +52,9 @@ VFW_HikerFirst_Text_1:
 	.string "woods? Nobody comes here anymore, not\l"
 	.string "since the boss built that road there.\l"
 	.string "If you really want to come through,\l"
-	.string "remember this. The plants here have a\l"
-	.string "pattern to them, one that should help\l"
-	.string "you to keep your bearings and avoid\l"
+	.string "remember this. There's a pattern to the\l"
+	.string "plants here, one that should help you\l"
+	.string "to keep your bearings and avoid\l"
 	.string "running in circles.\l"
 	.string "Your party should be prepared, too. I've\l"
 	.string "heard that a new Fire-type Pokémon\l"
@@ -74,3 +80,14 @@ VFW_GrottoMasterSign_Text_0:
 	.string "possible routes!\l"
 	.string "You never know what you might come\l"
 	.string "across!$"
+
+VFW_EventScript_Charlotte_Text_0:
+	.string "Hey!\n"
+	.string "Don't disturb the plants!$"
+
+VFW_EventScript_Charlotte_Text_1:
+	.string "Ah, stepped on a flower...$"
+
+VFW_EventScript_Charlotte_Text_2:
+	.string "Are you trying to get to Pewter City?\l"
+	.string "You're about halfway there now, I think.$"

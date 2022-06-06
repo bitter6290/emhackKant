@@ -4837,7 +4837,7 @@
       "width": 40,
       "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mossdeep",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/ViridianForestNW/border.bin",
       "blockdata_filepath": "data/layouts/ViridianForestNW/map.bin"
     },
@@ -4867,7 +4867,7 @@
       "width": 40,
       "height": 80,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/CeladonSeaW/border.bin",
       "blockdata_filepath": "data/layouts/CeladonSeaW/map.bin"
     },
@@ -4880,6 +4880,76 @@
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/CeladonPokemonCenter1F/border.bin",
       "blockdata_filepath": "data/layouts/CeladonPokemonCenter1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_MOON_OVERWORLD",
+      "name": "MtMoonOverworld_Layout",
+      "width": 60,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/MtMoonOverworld/border.bin",
+      "blockdata_filepath": "data/layouts/MtMoonOverworld/map.bin"
+    },
+    {
+      "id": "LAYOUT_CYCLING_ROAD_N",
+      "name": "CyclingRoadN_Layout",
+      "width": 20,
+      "height": 108,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/CyclingRoadN/border.bin",
+      "blockdata_filepath": "data/layouts/CyclingRoadN/map.bin"
+    },
+    {
+      "id": "LAYOUT_CERULEAN_MEADOW_NW",
+      "name": "CeruleanMeadowNW_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/CeruleanMeadowNW/border.bin",
+      "blockdata_filepath": "data/layouts/CeruleanMeadowNW/map.bin"
+    },
+    {
+      "id": "LAYOUT_CELADON_RANGE",
+      "name": "CeladonRange_Layout",
+      "width": 64,
+      "height": 36,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/CeladonRange/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonRange/map.bin"
+    },
+    {
+      "id": "LAYOUT_CERULEAN_MEADOW",
+      "name": "CeruleanMeadow_Layout",
+      "width": 28,
+      "height": 56,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/CeruleanMeadow/border.bin",
+      "blockdata_filepath": "data/layouts/CeruleanMeadow/map.bin"
+    },
+    {
+      "id": "LAYOUT_CERULEAN_WOODS_NW",
+      "name": "CeruleanWoodsNW_Layout",
+      "width": 32,
+      "height": 88,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/CeruleanWoodsNW/border.bin",
+      "blockdata_filepath": "data/layouts/CeruleanWoodsNW/map.bin"
+    },
+    {
+      "id": "LAYOUT_GROTTO_MASTER",
+      "name": "GrottoMaster_Layout",
+      "width": 11,
+      "height": 10,
+      "primary_tileset": "gTileset_SecretBase",
+      "secondary_tileset": "gTileset_SecretBaseBlueCave",
+      "border_filepath": "data/layouts/GrottoMaster/border.bin",
+      "blockdata_filepath": "data/layouts/GrottoMaster/map.bin"
     }
   ]
 }

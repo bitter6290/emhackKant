@@ -1135,3 +1135,17 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CeladonSeaW/scripts.inc"
 
 	.include "data/maps/CeladonPokemonCenter1F/scripts.inc"
+
+	.include "data/maps/MtMoonOverworld/scripts.inc"
+
+	.include "data/maps/CyclingRoadN/scripts.inc"
+
+	.include "data/maps/CeruleanMeadowNW/scripts.inc"
+
+	.include "data/maps/CeladonRange/scripts.inc"
+
+	.include "data/maps/CeruleanMeadow/scripts.inc"
+
+	.include "data/maps/CeruleanWoodsNW/scripts.inc"
+
+	.include "data/maps/GrottoMaster/scripts.inc"

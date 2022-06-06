@@ -3,7 +3,7 @@
   "name": "PewterRange",
   "layout": "LAYOUT_PEWTER_RANGE",
   "music": "MUS_RG_MT_MOON",
-  "region_map_section": "MAPSEC_MT_MOON",
+  "region_map_section": "MAPSEC_PEWTER_RANGE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
@@ -27,6 +27,16 @@
       "direction": "right",
       "offset": 32,
       "map": "MAP_ROUTE4"
+    },
+    {
+      "direction": "right",
+      "offset": 0,
+      "map": "MAP_MT_MOON_OVERWORLD"
+    },
+    {
+      "direction": "left",
+      "offset": -20,
+      "map": "MAP_NIGHTMARE_RANGE"
     }
   ],
   "object_events": [

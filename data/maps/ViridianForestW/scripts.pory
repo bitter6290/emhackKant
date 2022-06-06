@@ -7,7 +7,7 @@ msgbox(format("Hey! You!"))
 playse(SE_PIN)
 applymovement(OBJ_EVENT_ID_PLAYER,VFW_ExclamLeft)
 waitmovement(OBJ_EVENT_ID_PLAYER)
-msgbox(format("What are you doing going through these woods? Nobody comes here anymore, not since the boss built that road there.\lIf you really want to come through, remember this. The plants here have a pattern to them, one that should help you to keep your bearings and avoid running in circles.\lYour party should be prepared, too. I've heard that a new Fire-type Pokémon was spotted in the fields southeast of here, and it'll keep the bugs away from you for sure!"))
+msgbox(format("What are you doing going through these woods? Nobody comes here anymore, not since the boss built that road there.\lIf you really want to come through, remember this. There's a pattern to the plants here, one that should help you to keep your bearings and avoid running in circles.\lYour party should be prepared, too. I've heard that a new Fire-type Pokémon was spotted in the fields southeast of here, and it'll keep the bugs away from you for sure!"))
 setvar(VAR_STORY_PROGRESS,4)
 }
 release
@@ -23,6 +23,11 @@ script VFW_GrottoMasterSign{
 	lock
 	msgbox(format("Even if there's only one way through an area, it never hurts to explore all the possible routes!\lYou never know what you might come across!"))
 	release
+	end
+}
+script VFW_EventScript_Charlotte{
+	trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_1,format("Hey!\nDon't disturb the plants!"),format("Ah, stepped on a flower..."))
+	msgbox(format("Are you trying to get to Pewter City?\lYou're about halfway there now, I think."), MSGBOX_AUTOCLOSE)
 	end
 }
 movement VFW_ExclamLeft{

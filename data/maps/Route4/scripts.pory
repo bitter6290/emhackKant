@@ -1,1 +1,17 @@
-mapscripts Route4_MapScripts {}
+mapscripts Route4_MapScripts {
+	MAP_SCRIPT_ON_LOAD: Route4_OnLoad
+}
+
+script Route4_OnLoad{
+if(var(VAR_STORY_PROGRESS)>15){
+setflag(FLAG_TEMP_3)
+}
+end
+}
+
+script Route4_Hiker{
+lock
+msgbox(format("Over or through, over or through, over or through..."))
+release
+end
+}

@@ -1,0 +1,13 @@
+mapscripts GrottoMaster_MapScripts {}
+
+script GrottoMaster{
+lock
+if(!flag(FLAG_HAS_GROTTO_LIST)){
+giveitem(ITEM_GROTTO_LIST,1)
+setflag(FLAG_HAS_GROTTO_LIST)
+}
+else{
+}
+release
+end
+}

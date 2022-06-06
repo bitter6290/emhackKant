@@ -557,3 +557,11 @@ gMetatiles_UnionRoom::
 	.align 1
 gMetatileAttributes_UnionRoom::
 	.incbin "data/tilesets/secondary/union_room/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_cycling::
+	.incbin "data/tilesets/secondary/cycling/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_cycling::
+	.incbin "data/tilesets/secondary/cycling/metatile_attributes.bin"

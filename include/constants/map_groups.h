@@ -623,6 +623,11 @@
 #define MAP_PEWTER_RANGE       (13 | (36 << 8))
 #define MAP_VIRIDIAN_FOREST_NW (14 | (36 << 8))
 #define MAP_CELADON_BAY        (15 | (36 << 8))
+#define MAP_MT_MOON_OVERWORLD  (16 | (36 << 8))
+#define MAP_CERULEAN_MEADOW_NW (17 | (36 << 8))
+#define MAP_CELADON_RANGE      (18 | (36 << 8))
+#define MAP_CERULEAN_MEADOW    (19 | (36 << 8))
+#define MAP_CERULEAN_WOODS_NW  (20 | (36 << 8))
 
 // gMapGroup_NewIndoor
 #define MAP_PALLET_PLAYER_HOUSE_1F      (0 | (37 << 8))
@@ -637,6 +642,7 @@
 #define MAP_CELADON_POKEMON_CENTER1F    (9 | (37 << 8))
 
 // gMapGroup_NewGrotto
+#define MAP_GROTTO_MASTER (0 | (38 << 8))
 
 // gMapGroup_NewDungeon
 #define MAP_DEEP_VIR_FOREST1 (0 | (39 << 8))
@@ -656,7 +662,8 @@
 #define MAP_PEWTER_CAVE1F (0 | (42 << 8))
 
 // gMapGroup_NewOcean
-#define MAP_CELADON_SEA_W (0 | (43 << 8))
+#define MAP_CELADON_SEA_W  (0 | (43 << 8))
+#define MAP_CYCLING_ROAD_N (1 | (43 << 8))
 
 #define MAP_GROUPS_COUNT 44
 

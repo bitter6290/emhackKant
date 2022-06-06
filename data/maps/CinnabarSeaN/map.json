@@ -3,7 +3,7 @@
   "name": "CinnabarSeaN",
   "layout": "LAYOUT_CINNABAR_SEA_N",
   "music": "MUS_RG_ROUTE11",
-  "region_map_section": "MAPSEC_ROUTE_19",
+  "region_map_section": "MAPSEC_CINNABAR_SEA",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",

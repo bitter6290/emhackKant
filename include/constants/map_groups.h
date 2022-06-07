@@ -599,6 +599,7 @@
 #define MAP_VIRIDIAN_CITY (1 | (34 << 8))
 #define MAP_PEWTER_CITY   (2 | (34 << 8))
 #define MAP_CELADON_CITY  (3 | (34 << 8))
+#define MAP_CERULEAN_CITY (4 | (34 << 8))
 
 // gMapGroup_NewRoutes
 #define MAP_ROUTE1 (0 | (35 << 8))

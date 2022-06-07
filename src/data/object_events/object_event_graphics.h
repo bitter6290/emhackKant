@@ -380,3 +380,4 @@ const u32 gObjectEventPic_HoOh[] = INCBIN_U32("graphics/object_events/pics/pokem
 const u16 gObjectEventPal_HoOh[] = INCBIN_U16("graphics/object_events/palettes/ho_oh.gbapal");
 const u32 gObjectEventPic_ScientistF[] = INCBIN_U32("graphics/object_events/pics/people/scientist_f.4bpp");
 const u16 gObjectEventPal_ScientistF[] = INCBIN_U16("graphics/object_events/palettes/scientist_f.gbapal");
+const u32 gObjectEventPic_RopeHole[] = INCBIN_U32("graphics/object_events/pics/hmevents/rope.4bpp");

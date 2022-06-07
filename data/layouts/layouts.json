@@ -4927,7 +4927,7 @@
       "width": 28,
       "height": 56,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/CeruleanMeadow/border.bin",
       "blockdata_filepath": "data/layouts/CeruleanMeadow/map.bin"
     },
@@ -4937,7 +4937,7 @@
       "width": 32,
       "height": 88,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/CeruleanWoodsNW/border.bin",
       "blockdata_filepath": "data/layouts/CeruleanWoodsNW/map.bin"
     },
@@ -4950,6 +4950,16 @@
       "secondary_tileset": "gTileset_SecretBaseBlueCave",
       "border_filepath": "data/layouts/GrottoMaster/border.bin",
       "blockdata_filepath": "data/layouts/GrottoMaster/map.bin"
+    },
+    {
+      "id": "LAYOUT_CERULEAN_CITY",
+      "name": "CeruleanCity_Layout",
+      "width": 52,
+      "height": 72,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/CeruleanCity/border.bin",
+      "blockdata_filepath": "data/layouts/CeruleanCity/map.bin"
     }
   ]
 }

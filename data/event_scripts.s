@@ -1149,3 +1149,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CeruleanWoodsNW/scripts.inc"
 
 	.include "data/maps/GrottoMaster/scripts.inc"
+
+	.include "data/maps/CeruleanCity/scripts.inc"

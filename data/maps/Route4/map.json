@@ -42,6 +42,11 @@
       "direction": "up",
       "offset": 60,
       "map": "MAP_CERULEAN_WOODS_NW"
+    },
+    {
+      "direction": "right",
+      "offset": -44,
+      "map": "MAP_CERULEAN_CITY"
     }
   ],
   "object_events": [

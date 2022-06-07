@@ -930,8 +930,9 @@
 
 // New Key Items
 #define ITEM_GROTTO_LIST 758
+#define ITEM_ROPE 759
 
-#define ITEMS_COUNT 759
+#define ITEMS_COUNT 760
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // Range of berries given out by various NPCS

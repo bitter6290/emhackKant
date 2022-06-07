@@ -3797,3 +3797,8 @@ static const u8 sGrottoListDesc[] = _(
     "A list of hidden\n"
     "places in the Kanto\n"
     "region.");
+
+static const u8 sRopeDesc[] = _(
+    "A rope for climbing\n"
+    "down steep slopes\n"
+    "and pits.");

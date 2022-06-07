@@ -639,7 +639,8 @@
     "NewMap1",
     "ViridianCity",
     "PewterCity",
-    "CeladonCity"
+    "CeladonCity",
+    "CeruleanCity"
   ],
   "gMapGroup_NewRoutes": [
     "Route1",

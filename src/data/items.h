@@ -10018,4 +10018,26 @@ const struct Item gItems[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
+    [ITEM_GROTTO_LIST] =
+    {
+        .name = _("Grotto List"),
+        .itemId = ITEM_GROTTO_LIST,
+        .price = 0,
+        .description = sGrottoListDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+    [ITEM_ROPE] =
+    {
+        .name = _("Rope"),
+        .itemId = ITEM_ROPE,
+        .price = 0,
+        .description = sRopeDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
 };

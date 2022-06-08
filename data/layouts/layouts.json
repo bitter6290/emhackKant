@@ -4960,6 +4960,46 @@
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/CeruleanCity/border.bin",
       "blockdata_filepath": "data/layouts/CeruleanCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_LAW_OFFICE",
+      "name": "ViridianLawOffice_Layout",
+      "width": 14,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MossdeepGameCorner",
+      "border_filepath": "data/layouts/ViridianLawOffice/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianLawOffice/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE5",
+      "name": "Route5_Layout",
+      "width": 24,
+      "height": 48,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/Route5/border.bin",
+      "blockdata_filepath": "data/layouts/Route5/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFFRON_HILL",
+      "name": "SaffronHill_Layout",
+      "width": 20,
+      "height": 48,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/SaffronHill/border.bin",
+      "blockdata_filepath": "data/layouts/SaffronHill/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFFRON_CITY",
+      "name": "SaffronCity_Layout",
+      "width": 44,
+      "height": 52,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/SaffronCity/border.bin",
+      "blockdata_filepath": "data/layouts/SaffronCity/map.bin"
     }
   ]
 }

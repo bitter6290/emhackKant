@@ -22,6 +22,21 @@
       "direction": "left",
       "offset": -44,
       "map": "MAP_CERULEAN_WOODS_NW"
+    },
+    {
+      "direction": "down",
+      "offset": 0,
+      "map": "MAP_ROUTE5"
+    },
+    {
+      "direction": "left",
+      "offset": 72,
+      "map": "MAP_CERULEAN_MEADOW"
+    },
+    {
+      "direction": "down",
+      "offset": 24,
+      "map": "MAP_SAFFRON_HILL"
     }
   ],
   "object_events": [

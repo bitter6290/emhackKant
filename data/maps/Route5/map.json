@@ -1,9 +1,9 @@
 {
-  "id": "MAP_CERULEAN_WOODS_NW",
-  "name": "CeruleanWoodsNW",
-  "layout": "LAYOUT_CERULEAN_WOODS_NW",
-  "music": "MUS_RG_VIRIDIAN_FOREST",
-  "region_map_section": "MAPSEC_CERULEAN_CITY",
+  "id": "MAP_ROUTE5",
+  "name": "Route5",
+  "layout": "LAYOUT_ROUTE5",
+  "music": "MUS_RG_ROUTE3",
+  "region_map_section": "MAPSEC_ROUTE_5",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
@@ -15,18 +15,18 @@
   "connections": [
     {
       "direction": "left",
-      "offset": 56,
-      "map": "MAP_MT_MOON_OVERWORLD"
+      "offset": 0,
+      "map": "MAP_CERULEAN_MEADOW"
     },
     {
-      "direction": "down",
-      "offset": -60,
-      "map": "MAP_ROUTE4"
-    },
-    {
-      "direction": "right",
-      "offset": 44,
+      "direction": "up",
+      "offset": 0,
       "map": "MAP_CERULEAN_CITY"
+    },
+    {
+      "direction": "left",
+      "offset": -28,
+      "map": "MAP_ROUTE4"
     }
   ],
   "object_events": [

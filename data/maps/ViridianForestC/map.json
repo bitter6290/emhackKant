@@ -66,6 +66,13 @@
       "elevation": 0,
       "dest_map": "MAP_DEEP_VIR_FOREST1",
       "dest_warp_id": 0
+    },
+    {
+      "x": 17,
+      "y": 94,
+      "elevation": 0,
+      "dest_map": "MAP_DEEP_VIR_FOREST1",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

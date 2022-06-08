@@ -27,6 +27,21 @@
       "direction": "left",
       "offset": 20,
       "map": "MAP_CELADON_RANGE"
+    },
+    {
+      "direction": "right",
+      "offset": 0,
+      "map": "MAP_ROUTE5"
+    },
+    {
+      "direction": "right",
+      "offset": -72,
+      "map": "MAP_CERULEAN_CITY"
+    },
+    {
+      "direction": "right",
+      "offset": 48,
+      "map": "MAP_SAFFRON_CITY"
     }
   ],
   "object_events": [

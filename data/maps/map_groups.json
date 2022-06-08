@@ -640,13 +640,15 @@
     "ViridianCity",
     "PewterCity",
     "CeladonCity",
-    "CeruleanCity"
+    "CeruleanCity",
+    "SaffronCity"
   ],
   "gMapGroup_NewRoutes": [
     "Route1",
     "Route2",
     "Route3",
-    "Route4"
+    "Route4",
+    "Route5"
   ],
   "gMapGroup_NewOuter": [
     "ViridianPlainE",
@@ -669,7 +671,8 @@
     "CeruleanMeadowNW",
     "CeladonRange",
     "CeruleanMeadow",
-    "CeruleanWoodsNW"
+    "CeruleanWoodsNW",
+    "SaffronHill"
   ],
   "gMapGroup_NewIndoor": [
     "PalletPlayerHouse_1F",
@@ -695,7 +698,8 @@
     "DeepVirForest6"
   ],
   "gMapGroup_NewUrban": [
-    "ViridianHouseC2"
+    "ViridianHouseC2",
+    "ViridianLawOffice"
   ],
   "gMapGroup_NewGym": [
     "ViridianGym_1F"

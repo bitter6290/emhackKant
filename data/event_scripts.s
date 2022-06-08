@@ -1151,3 +1151,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/GrottoMaster/scripts.inc"
 
 	.include "data/maps/CeruleanCity/scripts.inc"
+
+	.include "data/maps/ViridianLawOffice/scripts.inc"
+
+	.include "data/maps/Route5/scripts.inc"
+
+	.include "data/maps/SaffronHill/scripts.inc"
+
+	.include "data/maps/SaffronCity/scripts.inc"

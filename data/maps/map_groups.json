@@ -648,7 +648,9 @@
     "Route2",
     "Route3",
     "Route4",
-    "Route5"
+    "Route5",
+    "Route6",
+    "Route7"
   ],
   "gMapGroup_NewOuter": [
     "ViridianPlainE",
@@ -672,7 +674,9 @@
     "CeladonRange",
     "CeruleanMeadow",
     "CeruleanWoodsNW",
-    "SaffronHill"
+    "SaffronHill",
+    "CeladonSeaport",
+    "SaffronCoast"
   ],
   "gMapGroup_NewIndoor": [
     "PalletPlayerHouse_1F",
@@ -709,6 +713,7 @@
   ],
   "gMapGroup_NewOcean": [
     "CeladonSeaW",
-    "CyclingRoadN"
+    "CyclingRoadN",
+    "CeladonSeaE"
   ]
 }

@@ -2031,6 +2031,12 @@ void TryToApplyMimicry(u8 battlerId, bool8 various)
     case STATUS_FIELD_PSYCHIC_TERRAIN:
         moveType = TYPE_PSYCHIC;
         break;
+    case STATUS_FIELD_ROCKY_TERRAIN:
+        moveType = TYPE_ROCK;
+        break;
+    case STATUS_FIELD_DARK_TERRAIN:
+        moveType = TYPE_DARK;
+        break;
     default:
         moveType = 0;
         break;
@@ -2082,6 +2088,8 @@ enum
     ENDTURN_MISTY_TERRAIN,
     ENDTURN_GRASSY_TERRAIN,
     ENDTURN_PSYCHIC_TERRAIN,
+    ENDTURN_ROCKY_TERRAIN,
+    ENDTURN_DARK_TERRAIN,
     ENDTURN_ION_DELUGE,
     ENDTURN_FAIRY_LOCK,
     ENDTURN_RETALIATE,
@@ -2479,6 +2487,28 @@ u8 DoFieldEndTurnEffects(void)
                 gFieldStatuses &= ~STATUS_FIELD_PSYCHIC_TERRAIN;
                 TryToRevertMimicry();
                 BattleScriptExecute(BattleScript_PsychicTerrainEnds);
+                effect++;
+            }
+            gBattleStruct->turnCountersTracker++;
+            break;
+        case ENDTURN_ROCKY_TERRAIN:
+            if (gFieldStatuses & STATUS_FIELD_ROCKY_TERRAIN
+              && (!(gFieldStatuses & STATUS_FIELD_TERRAIN_PERMANENT) && --gFieldTimers.terrainTimer == 0))
+            {
+                gFieldStatuses &= ~STATUS_FIELD_ROCKY_TERRAIN;
+                TryToRevertMimicry();
+                BattleScriptExecute(BattleScript_RockyTerrainEnds);
+                effect++;
+            }
+            gBattleStruct->turnCountersTracker++;
+            break;
+        case ENDTURN_DARK_TERRAIN:
+            if (gFieldStatuses & STATUS_FIELD_DARK_TERRAIN
+              && (!(gFieldStatuses & STATUS_FIELD_TERRAIN_PERMANENT) && --gFieldTimers.terrainTimer == 0))
+            {
+                gFieldStatuses &= ~STATUS_FIELD_DARK_TERRAIN;
+                TryToRevertMimicry();
+                BattleScriptExecute(BattleScript_DarkTerrainEnds);
                 effect++;
             }
             gBattleStruct->turnCountersTracker++;
@@ -4545,6 +4575,14 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
             {
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
                 BattleScriptPushCursorAndCallback(BattleScript_AnnounceAirLockCloudNine);
+                effect++;
+            }
+            break;
+        case ABILITY_ASTRAL_LOCK:
+            if (!gSpecialStatuses[battler].switchInAbilityDone)
+            {
+                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                BattleScriptPushCursorAndCallback(BattleScript_AnnounceAstralLock);
                 effect++;
             }
             break;
@@ -8482,6 +8520,8 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
         MulModifier(&modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8) ? UQ_4_12(1.3) : UQ_4_12(1.5));
     if (gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN && moveType == TYPE_DRAGON && IsBattlerGrounded(battlerDef) && !(gStatuses3[battlerDef] & STATUS3_SEMI_INVULNERABLE))
         MulModifier(&modifier, UQ_4_12(0.5));
+    if (gFieldStatuses & STATUS_FIELD_DARK_TERRAIN && (moveType == TYPE_BUG || moveType == TYPE_DARK || moveType == TYPE_GHOST) && IsBattlerGrounded(battlerDef) && !(gStatuses3[battlerDef] & STATUS3_SEMI_INVULNERABLE))
+        MulModifier(&modifier, UQ_4_12(1.28));
     if (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN && moveType == TYPE_ELECTRIC && IsBattlerGrounded(battlerAtk) && !(gStatuses3[battlerAtk] & STATUS3_SEMI_INVULNERABLE))
         MulModifier(&modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8) ? UQ_4_12(1.3) : UQ_4_12(1.5));
     if (gFieldStatuses & STATUS_FIELD_PSYCHIC_TERRAIN && moveType == TYPE_PSYCHIC && IsBattlerGrounded(battlerAtk) && !(gStatuses3[battlerAtk] & STATUS3_SEMI_INVULNERABLE))
@@ -9071,6 +9111,11 @@ static void MulByTypeEffectiveness(u16 *modifier, u16 move, u8 moveType, u8 batt
         if (defType == TYPE_FLYING && mod >= UQ_4_12(2.0))
             mod = UQ_4_12(1.0);
     }
+    if (WEATHER_HAS_EFFECT && gBattleWeather & B_WEATHER_STRONG_WINDS)
+    {
+        if (defType == TYPE_ROCK && mod >= UQ_4_12(2.0))
+            mod = UQ_4_12(1.5);
+    }
 
     MulModifier(modifier, mod);
 }
@@ -9182,7 +9227,7 @@ u16 CalcPartyMonTypeEffectivenessMultiplier(u16 move, u16 speciesDef, u16 abilit
         if (gBaseStats[speciesDef].type2 != gBaseStats[speciesDef].type1)
             MulByTypeEffectiveness(&modifier, move, moveType, 0, gBaseStats[speciesDef].type2, 0, FALSE);
 
-        if (moveType == TYPE_GROUND && abilityDef == ABILITY_LEVITATE && !(gFieldStatuses & STATUS_FIELD_GRAVITY))
+        if ((moveType == TYPE_GROUND || move == MOVE_VOLCANIC_FLOW) && abilityDef == ABILITY_LEVITATE && !(gFieldStatuses & STATUS_FIELD_GRAVITY))
             modifier = UQ_4_12(0.0);
         if (abilityDef == ABILITY_WONDER_GUARD && modifier <= UQ_4_12(1.0) && gBattleMoves[move].power)
             modifier = UQ_4_12(0.0);

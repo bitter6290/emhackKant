@@ -1677,10 +1677,13 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move)
     // Check Wonder Skin.
     if (defAbility == ABILITY_WONDER_SKIN && gBattleMoves[move].power == 0)
         moveAcc = 50;
+    //Dark Terrain accuracy boost
+    if ((gBattleMoves[move].type == TYPE_DARK || gBattleMoves[move].type == TYPE_BUG || gBattleMoves[move].type == TYPE_GHOST) && (gFieldStatuses & STATUS_FIELD_DARK_TERRAIN))
+		moveAcc = moveAcc + 10;
 
     calc = gAccuracyStageRatios[buff].dividend * moveAcc;
     calc /= gAccuracyStageRatios[buff].divisor;
-
+    
     if (atkAbility == ABILITY_COMPOUND_EYES)
         calc = (calc * 130) / 100; // 1.3 compound eyes boost
     else if (atkAbility == ABILITY_VICTORY_STAR)
@@ -7464,6 +7467,14 @@ static void HandleTerrainMove(u32 moveEffect)
     case EFFECT_PSYCHIC_TERRAIN:
         statusFlag = STATUS_FIELD_PSYCHIC_TERRAIN, timer = &gFieldTimers.terrainTimer;
         gBattleCommunication[MULTISTRING_CHOOSER] = 3;
+        break;
+    case EFFECT_ROCKY_TERRAIN:
+        statusFlag = STATUS_FIELD_ROCKY_TERRAIN, timer = &gFieldTimers.terrainTimer;
+        gBattleCommunication[MULTISTRING_CHOOSER] = 4;
+        break;
+    case EFFECT_DARK_TERRAIN:
+        statusFlag = STATUS_FIELD_DARK_TERRAIN, timer = &gFieldTimers.terrainTimer;
+        gBattleCommunication[MULTISTRING_CHOOSER] = 5;
         break;
     }
 

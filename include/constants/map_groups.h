@@ -608,6 +608,8 @@
 #define MAP_ROUTE3 (2 | (35 << 8))
 #define MAP_ROUTE4 (3 | (35 << 8))
 #define MAP_ROUTE5 (4 | (35 << 8))
+#define MAP_ROUTE6 (5 | (35 << 8))
+#define MAP_ROUTE7 (6 | (35 << 8))
 
 // gMapGroup_NewOuter
 #define MAP_VIRIDIAN_PLAIN_E   (0 | (36 << 8))
@@ -632,6 +634,8 @@
 #define MAP_CERULEAN_MEADOW    (19 | (36 << 8))
 #define MAP_CERULEAN_WOODS_NW  (20 | (36 << 8))
 #define MAP_SAFFRON_HILL       (21 | (36 << 8))
+#define MAP_CELADON_SEAPORT    (22 | (36 << 8))
+#define MAP_SAFFRON_COAST      (23 | (36 << 8))
 
 // gMapGroup_NewIndoor
 #define MAP_PALLET_PLAYER_HOUSE_1F      (0 | (37 << 8))
@@ -669,6 +673,7 @@
 // gMapGroup_NewOcean
 #define MAP_CELADON_SEA_W  (0 | (43 << 8))
 #define MAP_CYCLING_ROAD_N (1 | (43 << 8))
+#define MAP_CELADON_SEA_E  (2 | (43 << 8))
 
 #define MAP_GROUPS_COUNT 44
 

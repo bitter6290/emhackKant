@@ -44,6 +44,7 @@
 #define ITEMEFFECT_BATTLER_MOVE_END             8 // move end effects for just the battler, not whole field
 
 #define WEATHER_HAS_EFFECT ((!IsAbilityOnField(ABILITY_CLOUD_NINE) && !IsAbilityOnField(ABILITY_AIR_LOCK)))
+#define TERRAIN_HAS_EFFECT ((!IsAbilityOnField(ABILITY_ASTRAL_LOCK)))
 
 #define IS_WHOLE_SIDE_ALIVE(battler)((IsBattlerAlive(battler) && IsBattlerAlive(BATTLE_PARTNER(battler))))
 

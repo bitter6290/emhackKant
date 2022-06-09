@@ -1,0 +1,44 @@
+{
+  "id": "MAP_ROUTE6",
+  "name": "Route6",
+  "layout": "LAYOUT_ROUTE6",
+  "music": "MUS_RG_ROUTE3",
+  "region_map_section": "MAPSEC_ROUTE_6",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "direction": "up",
+      "offset": 0,
+      "map": "MAP_SAFFRON_CITY"
+    },
+    {
+      "direction": "left",
+      "offset": -16,
+      "map": "MAP_SAFFRON_COAST"
+    },
+    {
+      "direction": "left",
+      "offset": 20,
+      "map": "MAP_CELADON_SEA_E"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

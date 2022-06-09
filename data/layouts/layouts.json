@@ -4854,7 +4854,7 @@
     {
       "id": "LAYOUT_CELADON_CITY",
       "name": "CeladonCity_Layout",
-      "width": 52,
+      "width": 56,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lilycove",
@@ -5000,6 +5000,56 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/SaffronCity/border.bin",
       "blockdata_filepath": "data/layouts/SaffronCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE6",
+      "name": "Route6_Layout",
+      "width": 20,
+      "height": 44,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Route6/border.bin",
+      "blockdata_filepath": "data/layouts/Route6/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE7",
+      "name": "Route7_Layout",
+      "width": 36,
+      "height": 28,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Route7/border.bin",
+      "blockdata_filepath": "data/layouts/Route7/map.bin"
+    },
+    {
+      "id": "LAYOUT_CELADON_SEAPORT",
+      "name": "CeladonSeaport_Layout",
+      "width": 36,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/CeladonSeaport/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonSeaport/map.bin"
+    },
+    {
+      "id": "LAYOUT_CELADON_SEA_E",
+      "name": "CeladonSeaE_Layout",
+      "width": 72,
+      "height": 84,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/CeladonSeaE/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonSeaE/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFFRON_COAST",
+      "name": "SaffronCoast_Layout",
+      "width": 36,
+      "height": 36,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/SaffronCoast/border.bin",
+      "blockdata_filepath": "data/layouts/SaffronCoast/map.bin"
     }
   ]
 }

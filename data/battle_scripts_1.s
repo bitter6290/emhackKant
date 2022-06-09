@@ -2219,6 +2219,8 @@ BattleScript_EffectMistyTerrain:
 BattleScript_EffectGrassyTerrain:
 BattleScript_EffectElectricTerrain:
 BattleScript_EffectPsychicTerrain:
+BattleScript_EffectRockyTerrain:
+BattleScript_EffectDarkTerrain:
 	attackcanceler
 	attackstring
 	ppreduce
@@ -6463,6 +6465,18 @@ BattleScript_PsychicTerrainEnds::
 	waitmessage B_WAIT_TIME_LONG
 	playanimation BS_ATTACKER, B_ANIM_RESTORE_BG
 	end2
+	
+BattleScript_RockyTerrainEnds::
+	printstring STRINGID_ROCKYTERRAINENDS
+	waitmessage B_WAIT_TIME_LONG
+	playanimation BS_ATTACKER, B_ANIM_RESTORE_BG
+	end2
+	
+BattleScript_DarkTerrainEnds::
+	printstring STRINGID_DARKTERRAINENDS
+	waitmessage B_WAIT_TIME_LONG
+	playanimation BS_ATTACKER, B_ANIM_RESTORE_BG
+	end2
 
 BattleScript_MudSportEnds::
 	printstring STRINGID_MUDSPORTENDS
@@ -8165,6 +8179,24 @@ BattleScript_PsychicSurgeActivates::
 	call BattleScript_TerrainSeedLoop
 	end3
 
+BattleScript_RockySurgeActivates::
+	pause B_WAIT_TIME_SHORT
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_TERRAINBECOMESROCKY
+	waitmessage B_WAIT_TIME_LONG
+	playanimation BS_SCRIPTING, B_ANIM_RESTORE_BG
+	call BattleScript_TerrainSeedLoop
+	end3
+
+BattleScript_DarkSurgeActivates::
+	pause B_WAIT_TIME_SHORT
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_TERRAINBECOMESDARK
+	waitmessage B_WAIT_TIME_LONG
+	playanimation BS_SCRIPTING, B_ANIM_RESTORE_BG
+	call BattleScript_TerrainSeedLoop
+	end3
+
 BattleScript_BadDreamsActivates::
 	setbyte gBattlerTarget, 0
 	call BattleScript_AbilityPopUp
@@ -9221,6 +9253,13 @@ BattleScript_AnnounceAirLockCloudNine::
 	printstring STRINGID_AIRLOCKACTIVATES
 	waitmessage B_WAIT_TIME_LONG
 	call BattleScript_WeatherFormChanges
+	end3
+	
+BattleScript_AnnounceAstralLock::
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_TERRAINLOCK
+	waitmessage B_WAIT_TIME_LONG
+	jumpifabilitypresent ABILITY_MIMICRY, BattleScript_ApplyMimicry
 	end3
 
 BattleScript_QuickClawActivation::

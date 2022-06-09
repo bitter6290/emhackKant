@@ -756,4 +756,10 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_GLACIAL_LANCE] = _("GlacialLance"),
     [MOVE_ASTRAL_BARRAGE] = _("AstrlBarrage"),
     [MOVE_EERIE_SPELL] = _("Eerie Spell"),
+    [MOVE_ROCKY_TERRAIN] = _("RockyTerrain"),
+    [MOVE_DARK_TERRAIN] = _("Dark Terrain"),
+    [MOVE_CLEANSING_WATER] = _("CleanWater"),
+    [MOVE_VOLCANIC_FLOW] = _("VolcanicFlow"),
+    [MOVE_SCORCHED_EARTH] = _("Scorch Earth"),
+    [MOVE_RESISTANCE] = _("ResistCharge"),
 };

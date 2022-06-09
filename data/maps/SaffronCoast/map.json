@@ -1,0 +1,59 @@
+{
+  "id": "MAP_SAFFRON_COAST",
+  "name": "SaffronCoast",
+  "layout": "LAYOUT_SAFFRON_COAST",
+  "music": "MUS_RG_ROUTE3",
+  "region_map_section": "MAPSEC_SAFFRON_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "direction": "down",
+      "offset": -36,
+      "map": "MAP_CELADON_SEA_E"
+    },
+    {
+      "direction": "left",
+      "offset": 12,
+      "map": "MAP_CELADON_SEAPORT"
+    },
+    {
+      "direction": "right",
+      "offset": 16,
+      "map": "MAP_ROUTE6"
+    },
+    {
+      "direction": "right",
+      "offset": -36,
+      "map": "MAP_SAFFRON_CITY"
+    },
+    {
+      "direction": "up",
+      "offset": 0,
+      "map": "MAP_ROUTE7"
+    },
+    {
+      "direction": "left",
+      "offset": -28,
+      "map": "MAP_CELADON_CITY"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

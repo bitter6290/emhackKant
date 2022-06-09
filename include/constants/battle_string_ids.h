@@ -609,8 +609,14 @@
 #define STRINGID_NEUTRALIZINGGASOVER                  607
 #define STRINGID_TARGETTOOHEAVY                       608
 #define STRINGID_PKMNTOOKTARGETHIGH                   609
+//custom
+#define STRINGID_ROCKYTERRAINENDS					  610
+#define STRINGID_DARKTERRAINENDS					  611
+#define STRINGID_TERRAINBECOMESROCKY				  612
+#define STRINGID_TERRAINBECOMESDARK					  613
+#define STRINGID_TERRAINLOCK						  614
 
-#define BATTLESTRINGS_COUNT                           610
+#define BATTLESTRINGS_COUNT                           615
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,

@@ -1159,3 +1159,13 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SaffronHill/scripts.inc"
 
 	.include "data/maps/SaffronCity/scripts.inc"
+
+	.include "data/maps/Route6/scripts.inc"
+
+	.include "data/maps/Route7/scripts.inc"
+
+	.include "data/maps/CeladonSeaport/scripts.inc"
+
+	.include "data/maps/CeladonSeaE/scripts.inc"
+
+	.include "data/maps/SaffronCoast/scripts.inc"

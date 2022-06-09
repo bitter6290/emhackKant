@@ -32,6 +32,21 @@
       "direction": "up",
       "offset": 0,
       "map": "MAP_CELADON_RANGE"
+    },
+    {
+      "direction": "right",
+      "offset": 0,
+      "map": "MAP_ROUTE7"
+    },
+    {
+      "direction": "down",
+      "offset": 20,
+      "map": "MAP_CELADON_SEAPORT"
+    },
+    {
+      "direction": "right",
+      "offset": 28,
+      "map": "MAP_SAFFRON_COAST"
     }
   ],
   "object_events": [

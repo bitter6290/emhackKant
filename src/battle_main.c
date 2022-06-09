@@ -4442,7 +4442,9 @@ u32 GetBattlerTotalSpeedStat(u8 battlerId)
     {
         speed = (speed * 110) / 100;
     }
-
+    // rocky terrain speed drop
+    if (IsBattlerTerrainAffected(battlerId, STATUS_FIELD_ROCKY_TERRAIN) && !(gBattleMons[battlerId].type1 == TYPE_ROCK || gBattleMons[battlerId].type2 == TYPE_ROCK))
+		speed = (speed * 80) / 100;
     // item effects
     if (holdEffect == HOLD_EFFECT_MACHO_BRACE || holdEffect == HOLD_EFFECT_POWER_ITEM)
         speed /= 2;
@@ -5346,6 +5348,10 @@ void SetTypeBeforeUsingMove(u16 move, u8 battlerAtk)
                 gBattleStruct->dynamicMoveType = TYPE_FAIRY | F_DYNAMIC_TYPE_2;
             else if (gFieldStatuses & STATUS_FIELD_PSYCHIC_TERRAIN)
                 gBattleStruct->dynamicMoveType = TYPE_PSYCHIC | F_DYNAMIC_TYPE_2;
+            else if (gFieldStatuses & STATUS_FIELD_ROCKY_TERRAIN)
+                gBattleStruct->dynamicMoveType = TYPE_ROCK | F_DYNAMIC_TYPE_2;
+            else if (gFieldStatuses & STATUS_FIELD_DARK_TERRAIN)
+                gBattleStruct->dynamicMoveType = TYPE_DARK | F_DYNAMIC_TYPE_2;
             else //failsafe
                 gBattleStruct->dynamicMoveType = TYPE_NORMAL | F_DYNAMIC_TYPE_2;
         }

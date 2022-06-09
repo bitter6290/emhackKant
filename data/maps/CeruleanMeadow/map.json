@@ -42,6 +42,11 @@
       "direction": "right",
       "offset": 48,
       "map": "MAP_SAFFRON_CITY"
+    },
+    {
+      "direction": "down",
+      "offset": -12,
+      "map": "MAP_ROUTE7"
     }
   ],
   "object_events": [

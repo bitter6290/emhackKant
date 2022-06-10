@@ -27,6 +27,21 @@
       "direction": "left",
       "offset": 44,
       "map": "MAP_CELADON_SEA_W"
+    },
+    {
+      "direction": "right",
+      "offset": 0,
+      "map": "MAP_CELADON_SEAPORT"
+    },
+    {
+      "direction": "right",
+      "offset": 24,
+      "map": "MAP_CELADON_SEA_E"
+    },
+    {
+      "direction": "left",
+      "offset": 0,
+      "map": "MAP_CELADON_SEA_W"
     }
   ],
   "object_events": [

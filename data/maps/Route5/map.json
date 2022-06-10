@@ -27,6 +27,16 @@
       "direction": "left",
       "offset": -28,
       "map": "MAP_ROUTE4"
+    },
+    {
+      "direction": "down",
+      "offset": 0,
+      "map": "MAP_SAFFRON_CITY"
+    },
+    {
+      "direction": "right",
+      "offset": 0,
+      "map": "MAP_SAFFRON_HILL"
     }
   ],
   "object_events": [

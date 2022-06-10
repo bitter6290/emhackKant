@@ -22,6 +22,21 @@
       "direction": "up",
       "offset": 0,
       "map": "MAP_CELADON_SEAPORT"
+    },
+    {
+      "direction": "up",
+      "offset": 35,
+      "map": "MAP_SAFFRON_COAST"
+    },
+    {
+      "direction": "right",
+      "offset": -20,
+      "map": "MAP_ROUTE6"
+    },
+    {
+      "direction": "right",
+      "offset": 24,
+      "map": "MAP_VERMILION_CITY"
     }
   ],
   "object_events": [

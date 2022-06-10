@@ -37,6 +37,11 @@
       "direction": "down",
       "offset": 24,
       "map": "MAP_SAFFRON_HILL"
+    },
+    {
+      "direction": "down",
+      "offset": 44,
+      "map": "MAP_SAFFRON_DRYLANDS"
     }
   ],
   "object_events": [

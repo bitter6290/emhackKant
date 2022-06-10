@@ -15,7 +15,7 @@
   "connections": [
     {
       "direction": "up",
-      "offset": -20,
+      "offset": -21,
       "map": "MAP_CELADON_CITY"
     },
     {
@@ -27,6 +27,11 @@
       "direction": "down",
       "offset": 0,
       "map": "MAP_CELADON_SEA_E"
+    },
+    {
+      "direction": "right",
+      "offset": -12,
+      "map": "MAP_SAFFRON_COAST"
     }
   ],
   "object_events": [

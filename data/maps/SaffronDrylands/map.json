@@ -1,9 +1,9 @@
 {
-  "id": "MAP_SAFFRON_HILL",
-  "name": "SaffronHill",
-  "layout": "LAYOUT_SAFFRON_HILL",
-  "music": "MUS_RG_ROUTE3",
-  "region_map_section": "MAPSEC_ROUTE_5",
+  "id": "MAP_SAFFRON_DRYLANDS",
+  "name": "SaffronDrylands",
+  "layout": "LAYOUT_SAFFRON_DRYLANDS",
+  "music": "MUS_LILYCOVE_MUSEUM",
+  "region_map_section": "MAPSEC_SAFFRON_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
@@ -16,22 +16,27 @@
     {
       "direction": "left",
       "offset": 0,
-      "map": "MAP_ROUTE5"
+      "map": "MAP_SAFFRON_HILL"
+    },
+    {
+      "direction": "left",
+      "offset": 48,
+      "map": "MAP_SAFFRON_CITY"
     },
     {
       "direction": "up",
-      "offset": -24,
+      "offset": -44,
       "map": "MAP_CERULEAN_CITY"
     },
     {
-      "direction": "right",
+      "direction": "down",
       "offset": 0,
-      "map": "MAP_SAFFRON_DRYLANDS"
+      "map": "MAP_ROUTE8"
     },
     {
-      "direction": "down",
-      "offset": -24,
-      "map": "MAP_SAFFRON_CITY"
+      "direction": "up",
+      "offset": 7,
+      "map": "MAP_SAFFRON_DRYLANDS_N"
     }
   ],
   "object_events": [

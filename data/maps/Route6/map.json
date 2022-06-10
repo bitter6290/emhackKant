@@ -27,6 +27,11 @@
       "direction": "left",
       "offset": 20,
       "map": "MAP_CELADON_SEA_E"
+    },
+    {
+      "direction": "down",
+      "offset": 0,
+      "map": "MAP_VERMILION_CITY"
     }
   ],
   "object_events": [

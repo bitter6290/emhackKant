@@ -641,7 +641,8 @@
     "PewterCity",
     "CeladonCity",
     "CeruleanCity",
-    "SaffronCity"
+    "SaffronCity",
+    "VermilionCity"
   ],
   "gMapGroup_NewRoutes": [
     "Route1",
@@ -650,7 +651,8 @@
     "Route4",
     "Route5",
     "Route6",
-    "Route7"
+    "Route7",
+    "Route8"
   ],
   "gMapGroup_NewOuter": [
     "ViridianPlainE",
@@ -676,7 +678,9 @@
     "CeruleanWoodsNW",
     "SaffronHill",
     "CeladonSeaport",
-    "SaffronCoast"
+    "SaffronCoast",
+    "SaffronDrylands",
+    "SaffronDrylandsN"
   ],
   "gMapGroup_NewIndoor": [
     "PalletPlayerHouse_1F",

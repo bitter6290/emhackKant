@@ -1169,3 +1169,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CeladonSeaE/scripts.inc"
 
 	.include "data/maps/SaffronCoast/scripts.inc"
+	
+	.include "data/maps/SaffronDrylands/scripts.inc"
+	
+	.include "data/maps/SaffronDrylandsN/scripts.inc"
+	
+	.include "data/maps/Route8/scripts.inc"
+	
+	.include "data/maps/VermilionCity/scripts.inc"

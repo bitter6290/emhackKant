@@ -612,6 +612,7 @@
 #define MAP_ROUTE6 (5 | (35 << 8))
 #define MAP_ROUTE7 (6 | (35 << 8))
 #define MAP_ROUTE8 (7 | (35 << 8))
+#define MAP_ROUTE9 (8 | (35 << 8))
 
 // gMapGroup_NewOuter
 #define MAP_VIRIDIAN_PLAIN_E   (0 | (36 << 8))

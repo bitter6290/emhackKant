@@ -1177,3 +1177,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route8/scripts.inc"
 	
 	.include "data/maps/VermilionCity/scripts.inc"
+
+	.include "data/maps/Route9/scripts.inc"

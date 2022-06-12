@@ -5084,12 +5084,22 @@
     {
       "id": "LAYOUT_SAFFRON_DRYLANDS_N",
       "name": "SaffronDrylandsN_Layout",
-      "width": 44,
-      "height": 48,
+      "width": 48,
+      "height": 44,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/SaffronDrylandsN/border.bin",
       "blockdata_filepath": "data/layouts/SaffronDrylandsN/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE9",
+      "name": "Route9_Layout",
+      "width": 24,
+      "height": 52,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route9/border.bin",
+      "blockdata_filepath": "data/layouts/Route9/map.bin"
     }
   ]
 }

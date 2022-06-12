@@ -1,9 +1,9 @@
 {
-  "id": "MAP_SAFFRON_DRYLANDS_N",
-  "name": "SaffronDrylandsN",
-  "layout": "LAYOUT_SAFFRON_DRYLANDS_N",
-  "music": "MUS_LILYCOVE_MUSEUM",
-  "region_map_section": "MAPSEC_SAFFRON_CITY",
+  "id": "MAP_ROUTE9",
+  "name": "Route9",
+  "layout": "LAYOUT_ROUTE9",
+  "music": "MUS_RG_ROUTE11",
+  "region_map_section": "MAPSEC_ROUTE_9",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
@@ -14,19 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
-      "offset": -8,
+      "direction": "left",
+      "offset": -48,
       "map": "MAP_SAFFRON_DRYLANDS"
     },
     {
       "direction": "left",
-      "offset": -28,
-      "map": "MAP_CERULEAN_CITY"
-    },
-    {
-      "direction": "up",
-      "offset": 0,
-      "map": "MAP_ROUTE9"
+      "offset": 28,
+      "map": "MAP_ROUTE8"
     }
   ],
   "object_events": [

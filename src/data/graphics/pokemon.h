@@ -6694,9 +6694,21 @@ const u8 gMonFootprint_Calyrex[] = INCBIN_U8("graphics/pokemon/calyrex/footprint
 
 //custom mons
 
-const u32 gMonFrontPic_ShinxKanto[] = INCBIN_U32("graphics/pokemon/shinxkanto/anim_front.4bpp.lz");
-const u32 gMonPalette_ShinxKanto[] = INCBIN_U32("graphics/pokemon/shinxkanto/normal.gbapal.lz");
-const u32 gMonBackPic_ShinxKanto[] = INCBIN_U32("graphics/pokemon/shinxkanto/back.4bpp.lz");
-const u32 gMonShinyPalette_ShinxKanto[] = INCBIN_U32("graphics/pokemon/shinxkanto/shiny.gbapal.lz");
-const u8 gMonIcon_ShinxKanto[] = INCBIN_U8("graphics/pokemon/shinxkanto/icon.4bpp");
-const u8 gMonFootprint_ShinxKanto[] = INCBIN_U8("graphics/pokemon/shinxkanto/footprint.1bpp");
+const u32 gMonFrontPic_ShinxKanto[] = INCBIN_U32("graphics/pokemon/kantonian_shinx/anim_front.4bpp.lz");
+const u32 gMonPalette_ShinxKanto[] = INCBIN_U32("graphics/pokemon/kantonian_shinx/normal.gbapal.lz");
+const u32 gMonBackPic_ShinxKanto[] = INCBIN_U32("graphics/pokemon/kantonian_shinx/back.4bpp.lz");
+const u32 gMonShinyPalette_ShinxKanto[] = INCBIN_U32("graphics/pokemon/kantonian_shinx/shiny.gbapal.lz");
+const u8 gMonIcon_ShinxKanto[] = INCBIN_U8("graphics/pokemon/kantonian_shinx/icon.4bpp");
+const u8 gMonFootprint_ShinxKanto[] = INCBIN_U8("graphics/pokemon/kantonian_shinx/footprint.1bpp");
+const u32 gMonStillFrontPic_LuxioKanto[] = INCBIN_U32("graphics/pokemon/kantonian_luxio/front.4bpp.lz"); 
+const u32 gMonPalette_LuxioKanto[] = INCBIN_U32("graphics/pokemon/kantonian_luxio/normal.gbapal.lz"); 
+const u32 gMonBackPic_LuxioKanto[] = INCBIN_U32("graphics/pokemon/kantonian_luxio/back.4bpp.lz"); 
+const u32 gMonShinyPalette_LuxioKanto[] = INCBIN_U32("graphics/pokemon/kantonian_luxio/shiny.gbapal.lz"); 
+const u8 gMonIcon_LuxioKanto[] = INCBIN_U8("graphics/pokemon/kantonian_luxio/icon.4bpp"); 
+const u8 gMonFootprint_LuxioKanto[] = INCBIN_U8("graphics/pokemon/kantonian_luxio/footprint.1bpp");
+const u32 gMonStillFrontPic_LuxrayKanto[] = INCBIN_U32("graphics/pokemon/kantonian_luxray/front.4bpp.lz");
+const u32 gMonPalette_LuxrayKanto[] = INCBIN_U32("graphics/pokemon/kantonian_luxray/normal.gbapal.lz");
+const u32 gMonBackPic_LuxrayKanto[] = INCBIN_U32("graphics/pokemon/kantonian_luxray/back.4bpp.lz");
+const u32 gMonShinyPalette_LuxrayKanto[] = INCBIN_U32("graphics/pokemon/kantonian_luxray/shiny.gbapal.lz");
+const u8 gMonIcon_LuxrayKanto[] = INCBIN_U8("graphics/pokemon/kantonian_luxray/icon.4bpp");
+const u8 gMonFootprint_LuxrayKanto[] = INCBIN_U8("graphics/pokemon/kantonian_luxray/footprint.1bpp");

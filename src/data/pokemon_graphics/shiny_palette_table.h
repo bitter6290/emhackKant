@@ -1274,6 +1274,8 @@ const struct CompressedSpritePalette gMonShinyPaletteTable[] =
     
     //custom mons
     SPECIES_SHINY_PAL(SHINX_KANTO, gMonShinyPalette_ShinxKanto),
+    SPECIES_SHINY_PAL(LUXIO_KANTO, gMonShinyPalette_LuxioKanto),
+    SPECIES_SHINY_PAL(LUXRAY_KANTO, gMonShinyPalette_LuxrayKanto),
 
     SPECIES_SHINY_PAL(EGG, gMonPalette_Egg),
 };

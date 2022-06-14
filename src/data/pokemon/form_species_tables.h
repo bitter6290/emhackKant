@@ -1020,3 +1020,19 @@ static const u16 sCalyrexFormSpeciesIdTable[] = {
     SPECIES_CALYREX_SHADOW_RIDER,
     FORM_SPECIES_END,
 };
+
+static const u16 sShinxFormSpeciesIdTable[] = {
+    SPECIES_SHINX,
+    SPECIES_SHINX_KANTO,
+    FORM_SPECIES_END,
+};
+static const u16 sLuxioFormSpeciesIdTable[] = {
+    SPECIES_LUXIO,
+    SPECIES_LUXIO_KANTO,
+    FORM_SPECIES_END,
+};
+static const u16 sLuxrayFormSpeciesIdTable[] = {
+    SPECIES_LUXRAY,
+    SPECIES_LUXRAY_KANTO,
+    FORM_SPECIES_END,
+};

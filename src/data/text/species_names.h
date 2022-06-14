@@ -1276,4 +1276,6 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_CALYREX_SHADOW_RIDER] = _("Calyrex"),
     // Custom mons
     [SPECIES_SHINX_KANTO] = _("Shinx"),
+    [SPECIES_LUXIO_KANTO] = _("Luxio"),
+    [SPECIES_LUXRAY_KANTO] = _("Luxray"),
 };

@@ -6769,6 +6769,20 @@ extern const u32 gMonShinyPalette_ShinxKanto[];
 extern const u32 gMonStillFrontPic_ShinxKanto[];
 extern const u8 gMonIcon_ShinxKanto[];
 extern const u8 gMonFootprint_ShinxKanto[];
+extern const u32 gMonFrontPic_LuxioKanto[];
+extern const u32 gMonPalette_LuxioKanto[];
+extern const u32 gMonBackPic_LuxioKanto[];
+extern const u32 gMonShinyPalette_LuxioKanto[];
+extern const u32 gMonStillFrontPic_LuxioKanto[];
+extern const u8 gMonIcon_LuxioKanto[];
+extern const u8 gMonFootprint_LuxioKanto[];
+extern const u32 gMonFrontPic_LuxrayKanto[];
+extern const u32 gMonPalette_LuxrayKanto[];
+extern const u32 gMonBackPic_LuxrayKanto[];
+extern const u32 gMonShinyPalette_LuxrayKanto[];
+extern const u32 gMonStillFrontPic_LuxrayKanto[];
+extern const u8 gMonIcon_LuxrayKanto[];
+extern const u8 gMonFootprint_LuxrayKanto[];
 
 // trainer sprites
 extern const u32 gTrainerFrontPic_Hiker[];

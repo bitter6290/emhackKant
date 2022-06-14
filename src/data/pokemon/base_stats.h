@@ -30374,12 +30374,12 @@ const struct BaseStats gBaseStats[] =
     //Custom mons
     [SPECIES_SHINX_KANTO] =
     {
-        .baseHP        = 43,
+        .baseHP        = 49,
         .baseAttack    = 60,
         .baseDefense   = 39,
-        .baseSpeed     = 32,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 39,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 35,
         .type1 = TYPE_ELECTRIC,
         .type2 = TYPE_FIRE,
         .catchRate = 235,
@@ -30397,6 +30397,62 @@ const struct BaseStats gBaseStats[] =
             .abilities = {ABILITY_NONE, ABILITY_INTIMIDATE, ABILITY_GUTS},
         #endif
         .bodyColor = BODY_COLOR_RED,
+        .noFlip = FALSE,
+        .flags = FLAG_GENDER_DIFFERENCE,
+    },
+    [SPECIES_LUXIO_KANTO] =
+    {
+        .baseHP        = 65,
+        .baseAttack    = 74,
+        .baseDefense   = 60,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 64,
+        .type1 = TYPE_ELECTRIC,
+        .type2 = TYPE_FIRE,
+        .catchRate = 120,
+        .expYield = 127,
+        .evYield_Attack    = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = 100,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroup1 = EGG_GROUP_FIELD,
+        .eggGroup2 = EGG_GROUP_FIELD,
+        #ifdef BATTLE_ENGINE
+            .abilities = {ABILITY_VOLT_ABSORB, ABILITY_INTIMIDATE, ABILITY_GUTS},
+        #else
+            .abilities = {ABILITY_NONE, ABILITY_INTIMIDATE, ABILITY_GUTS},
+        #endif
+        .bodyColor = BODY_COLOR_RED,
+        .noFlip = FALSE,
+        .flags = FLAG_GENDER_DIFFERENCE,
+    },
+    [SPECIES_LUXRAY_KANTO] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 105,
+        .baseDefense   = 93,
+        .baseSpeed     = 83,
+        .baseSpAttack  = 77,
+        .baseSpDefense = 83,
+        .type1 = TYPE_ELECTRIC,
+        .type2 = TYPE_FIRE,
+        .catchRate = 45,
+        .expYield = 235,
+        .evYield_Attack    = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = 70,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroup1 = EGG_GROUP_FIELD,
+        .eggGroup2 = EGG_GROUP_FIELD,
+        #ifdef BATTLE_ENGINE
+            .abilities = {ABILITY_VOLT_ABSORB, ABILITY_INTIMIDATE, ABILITY_GUTS},
+        #else
+            .abilities = {ABILITY_NONE, ABILITY_INTIMIDATE, ABILITY_GUTS},
+        #endif
+        .bodyColor = BODY_COLOR_BLACK,
         .noFlip = FALSE,
         .flags = FLAG_GENDER_DIFFERENCE,
     },

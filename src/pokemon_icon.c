@@ -1239,6 +1239,8 @@ const u8 *const gMonIconTable[] =
     [SPECIES_CALYREX_SHADOW_RIDER] = gMonIcon_CalyrexShadowRider,
 //custom mons
     [SPECIES_SHINX_KANTO] = gMonIcon_ShinxKanto,
+    [SPECIES_LUXIO_KANTO] = gMonIcon_ShinxKanto,
+    [SPECIES_LUXRAY_KANTO] = gMonIcon_ShinxKanto,
     [SPECIES_EGG] = gMonIcon_Egg,
 };
 

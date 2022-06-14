@@ -516,4 +516,8 @@ const u16 *const gFormSpeciesIdTables[NUM_SPECIES] =
     // Calyrex
     [SPECIES_CALYREX_ICE_RIDER] = sCalyrexFormSpeciesIdTable,
     [SPECIES_CALYREX_SHADOW_RIDER] = sCalyrexFormSpeciesIdTable,
+    // Custom
+    [SPECIES_SHINX] = sShinxFormSpeciesIdTable,
+    [SPECIES_LUXIO] = sLuxioFormSpeciesIdTable,
+    [SPECIES_LUXRAY] = sLuxrayFormSpeciesIdTable,
 };

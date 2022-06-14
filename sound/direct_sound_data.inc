@@ -4311,6 +4311,15 @@ Cry_CalyrexShadowRider::
 	.align 2
 Cry_ShinxKanto::
 	.incbin "sound/direct_sound_samples/cries/shinx.bin"
+	
+	.align 2
+Cry_LuxioKanto::
+	.incbin "sound/direct_sound_samples/cries/luxio.bin"
+	
+	.align 2
+Cry_LuxrayKanto::
+	.incbin "sound/direct_sound_samples/cries/luxray.bin"
+
 
 	.align 2
 DirectSoundWaveData_register_noise::

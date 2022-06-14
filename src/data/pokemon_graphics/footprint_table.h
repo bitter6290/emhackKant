@@ -901,5 +901,7 @@ const u8 *const gMonFootprintTable[] =
     [SPECIES_CALYREX] = gMonFootprint_Calyrex,
     //custom mons
     [SPECIES_SHINX_KANTO] = gMonFootprint_ShinxKanto,
+    [SPECIES_LUXIO_KANTO] = gMonFootprint_LuxioKanto,
+    [SPECIES_LUXRAY_KANTO] = gMonFootprint_LuxrayKanto,
     [SPECIES_EGG] = gMonFootprint_Bulbasaur,
 };

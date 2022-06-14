@@ -1273,6 +1273,8 @@ gCryTable::
 	cry Cry_CalyrexShadowRider
 	@ Custom mons
 	cry Cry_ShinxKanto
+	cry Cry_LuxioKanto
+	cry Cry_LuxrayKanto
 
 	.align 2
 gCryTable_Reverse::

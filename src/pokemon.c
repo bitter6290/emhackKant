@@ -1593,6 +1593,8 @@ static const u16 sSpeciesToNationalPokedexNum[NUM_SPECIES - 1] =
     [SPECIES_CALYREX_SHADOW_RIDER - 1] = NATIONAL_DEX_CALYREX,
     //Custom mons
     [SPECIES_SHINX_KANTO - 1] = NATIONAL_DEX_SHINX,
+    [SPECIES_LUXIO_KANTO - 1] = NATIONAL_DEX_LUXIO,
+    [SPECIES_LUXRAY_KANTO - 1] = NATIONAL_DEX_LUXRAY,
 };
 
 // Assigns all Hoenn Dex Indexes to a National Dex Index
@@ -2802,6 +2804,10 @@ static const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_ARCEUS_DRAGON - 1]   = ANIM_CIRCULAR_VIBRATE,
     [SPECIES_ARCEUS_DARK - 1]     = ANIM_CIRCULAR_VIBRATE,
     [SPECIES_ARCEUS_FAIRY - 1]    = ANIM_CIRCULAR_VIBRATE,
+	//Custom
+	[SPECIES_SHINX_KANTO - 1]         = ANIM_V_STRETCH,
+	[SPECIES_LUXIO_KANTO - 1]         = ANIM_V_STRETCH,
+    [SPECIES_LUXRAY_KANTO - 1]        = ANIM_GLOW_YELLOW,
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =

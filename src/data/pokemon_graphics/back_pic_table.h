@@ -1275,6 +1275,8 @@ const struct CompressedSpriteSheet gMonBackPicTable[] =
     //custom mons
     
     SPECIES_SPRITE(SHINX_KANTO, gMonBackPic_ShinxKanto),
+    SPECIES_SPRITE(LUXIO_KANTO, gMonBackPic_LuxioKanto),
+    SPECIES_SPRITE(LUXRAY_KANTO, gMonBackPic_LuxrayKanto),
 
     SPECIES_SPRITE(EGG, gMonFrontPic_Egg),
 };

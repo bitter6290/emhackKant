@@ -642,7 +642,8 @@
     "CeladonCity",
     "CeruleanCity",
     "SaffronCity",
-    "VermilionCity"
+    "VermilionCity",
+    "LavenderTown"
   ],
   "gMapGroup_NewRoutes": [
     "Route1",
@@ -653,7 +654,10 @@
     "Route6",
     "Route7",
     "Route8",
-    "Route9"
+    "Route9",
+    "Route10",
+    "Route11",
+    "Route12"
   ],
   "gMapGroup_NewOuter": [
     "ViridianPlainE",
@@ -708,7 +712,9 @@
   ],
   "gMapGroup_NewUrban": [
     "ViridianHouseC2",
-    "ViridianLawOffice"
+    "ViridianLawOffice",
+    "ViridianApartments",
+    "ViridianApartments1FNW"
   ],
   "gMapGroup_NewGym": [
     "ViridianGym_1F"

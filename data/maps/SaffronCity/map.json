@@ -42,6 +42,16 @@
       "direction": "left",
       "offset": 36,
       "map": "MAP_SAFFRON_COAST"
+    },
+    {
+      "direction": "right",
+      "offset": -48,
+      "map": "MAP_SAFFRON_DRYLANDS"
+    },
+    {
+      "direction": "right",
+      "offset": 28,
+      "map": "MAP_ROUTE8"
     }
   ],
   "object_events": [

@@ -138,11 +138,11 @@
       "dest_warp_id": 0
     },
     {
-      "x": 27,
+      "x": 29,
       "y": 32,
       "elevation": 0,
-      "dest_map": "MAP_VIRIDIAN_CITY",
-      "dest_warp_id": 0
+      "dest_map": "MAP_VIRIDIAN_LAW_OFFICE",
+      "dest_warp_id": 1
     },
     {
       "x": 34,

@@ -1179,3 +1179,15 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/VermilionCity/scripts.inc"
 
 	.include "data/maps/Route9/scripts.inc"
+
+	.include "data/maps/ViridianApartments/scripts.inc"
+
+	.include "data/maps/ViridianApartments1FNW/scripts.inc"
+
+	.include "data/maps/Route10/scripts.inc"
+
+	.include "data/maps/Route11/scripts.inc"
+
+	.include "data/maps/LavenderTown/scripts.inc"
+
+	.include "data/maps/Route12/scripts.inc"

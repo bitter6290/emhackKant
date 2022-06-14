@@ -602,17 +602,21 @@
 #define MAP_CERULEAN_CITY  (4 | (34 << 8))
 #define MAP_SAFFRON_CITY   (5 | (34 << 8))
 #define MAP_VERMILION_CITY (6 | (34 << 8))
+#define MAP_LAVENDER_TOWN  (7 | (34 << 8))
 
 // gMapGroup_NewRoutes
-#define MAP_ROUTE1 (0 | (35 << 8))
-#define MAP_ROUTE2 (1 | (35 << 8))
-#define MAP_ROUTE3 (2 | (35 << 8))
-#define MAP_ROUTE4 (3 | (35 << 8))
-#define MAP_ROUTE5 (4 | (35 << 8))
-#define MAP_ROUTE6 (5 | (35 << 8))
-#define MAP_ROUTE7 (6 | (35 << 8))
-#define MAP_ROUTE8 (7 | (35 << 8))
-#define MAP_ROUTE9 (8 | (35 << 8))
+#define MAP_ROUTE1  (0 | (35 << 8))
+#define MAP_ROUTE2  (1 | (35 << 8))
+#define MAP_ROUTE3  (2 | (35 << 8))
+#define MAP_ROUTE4  (3 | (35 << 8))
+#define MAP_ROUTE5  (4 | (35 << 8))
+#define MAP_ROUTE6  (5 | (35 << 8))
+#define MAP_ROUTE7  (6 | (35 << 8))
+#define MAP_ROUTE8  (7 | (35 << 8))
+#define MAP_ROUTE9  (8 | (35 << 8))
+#define MAP_ROUTE10 (9 | (35 << 8))
+#define MAP_ROUTE11 (10 | (35 << 8))
+#define MAP_ROUTE12 (11 | (35 << 8))
 
 // gMapGroup_NewOuter
 #define MAP_VIRIDIAN_PLAIN_E   (0 | (36 << 8))
@@ -666,8 +670,10 @@
 #define MAP_DEEP_VIR_FOREST6 (5 | (39 << 8))
 
 // gMapGroup_NewUrban
-#define MAP_VIRIDIAN_HOUSE_C2   (0 | (40 << 8))
-#define MAP_VIRIDIAN_LAW_OFFICE (1 | (40 << 8))
+#define MAP_VIRIDIAN_HOUSE_C2       (0 | (40 << 8))
+#define MAP_VIRIDIAN_LAW_OFFICE     (1 | (40 << 8))
+#define MAP_VIRIDIAN_APARTMENTS     (2 | (40 << 8))
+#define MAP_VIRIDIAN_APARTMENTS1FNW (3 | (40 << 8))
 
 // gMapGroup_NewGym
 #define MAP_VIRIDIAN_GYM_1F (0 | (41 << 8))

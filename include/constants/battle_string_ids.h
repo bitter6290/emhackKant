@@ -609,14 +609,19 @@
 #define STRINGID_NEUTRALIZINGGASOVER                  607
 #define STRINGID_TARGETTOOHEAVY                       608
 #define STRINGID_PKMNTOOKTARGETHIGH                   609
+#define STRINGID_PKMNINSNAPTRAP                       610
+#define STRINGID_METEORBEAMCHARGING                   611
+#define STRINGID_HEATUPBEAK                           612
+#define STRINGID_COURTCHANGE                          613
 //custom
-#define STRINGID_ROCKYTERRAINENDS					  610
-#define STRINGID_DARKTERRAINENDS					  611
-#define STRINGID_TERRAINBECOMESROCKY				  612
-#define STRINGID_TERRAINBECOMESDARK					  613
-#define STRINGID_TERRAINLOCK						  614
+#define STRINGID_ROCKYTERRAINENDS					  614
+#define STRINGID_DARKTERRAINENDS					  615
+#define STRINGID_TERRAINBECOMESROCKY				  616
+#define STRINGID_TERRAINBECOMESDARK					  617
+#define STRINGID_TERRAINLOCK						  618
 
-#define BATTLESTRINGS_COUNT                           615
+#define BATTLESTRINGS_COUNT                           619
+
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,
@@ -673,6 +678,7 @@
 #define B_MSG_TURN1_GEOMANCY       9
 #define B_MSG_TURN1_FREEZE_SHOCK   10
 #define B_MSG_TURN1_SKY_DROP       11
+#define B_MSG_TURN1_METEOR_BEAM    12
 
 // gMoveWeatherChangeStringIds
 #define B_MSG_STARTED_RAIN      0

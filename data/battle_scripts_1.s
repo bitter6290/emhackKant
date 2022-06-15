@@ -411,6 +411,10 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectHit                     @ EFFECT_BEAK_BLAST
 	.4byte BattleScript_EffectCourtChange             @ EFFECT_COURT_CHANGE
 	.4byte BattleScript_EffectSteelBeam               @ EFFECT_STEEL_BEAM
+	.4byte BattleScript_EffectRockyTerrain			  @ EFFECT_ROCKY_TERRAIN
+	.4byte BattleScript_EffectDarkTerrain			  @ EFFECT_DARK_TERRAIN
+	.4byte BattleScript_EffectResistance			  @ EFFECT_RESISTANCE
+	.4byte BattleScript_EffectPureWater				  @ EFFECT_PURE_WATER
 
 BattleScript_EffectSteelBeam::
 	attackcanceler
@@ -9673,3 +9677,35 @@ BattleScript_MagicianActivates::
 	call BattleScript_AbilityPopUp
 	call BattleScript_ItemSteal
 	return
+	
+	
+BattleScript_EffectResistance::
+	goto BattleScript_EffectHit
+	
+BattleScript_EffectPureWater::
+	attackcanceler
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	attackstring
+	ppreduce
+	critcalc
+	damagecalc
+	adjustdamage
+	attackanimation
+	waitanimation
+	effectivenesssound
+	hitanimation BS_TARGET
+	waitstate
+	healthbarupdate BS_TARGET
+	datahpupdate BS_TARGET
+	critmessage
+	waitmessage B_WAIT_TIME_LONG
+	resultmessage
+	waitmessage B_WAIT_TIME_LONG
+	seteffectwithchance
+	tryfaintmon BS_TARGET
+	normalisebuffs
+	printstring STRINGID_STATCHANGESGONE
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_MoveEnd
+
+	

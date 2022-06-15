@@ -685,7 +685,8 @@
     "CeladonSeaport",
     "SaffronCoast",
     "SaffronDrylands",
-    "SaffronDrylandsN"
+    "SaffronDrylandsN",
+    "LavenderCoast"
   ],
   "gMapGroup_NewIndoor": [
     "PalletPlayerHouse_1F",
@@ -720,7 +721,8 @@
     "ViridianGym_1F"
   ],
   "gMapGroup_NewCave": [
-    "PewterCave1F"
+    "PewterCave1F",
+    "PewterCave2F"
   ],
   "gMapGroup_NewOcean": [
     "CeladonSeaW",

@@ -1956,6 +1956,7 @@ const struct BattleAnimBackground gBattleAnimBackgroundTable[] =
     [BG_GRASSY_TERRAIN]            = {gBattleAnimBgImage_GrassyTerrain,           gBattleAnimBgPalette_GrassyTerrain,           gBattleAnimBgTilemap_GrassyTerrain},
     [BG_MISTY_TERRAIN]             = {gBattleAnimBgImage_MistyTerrain,            gBattleAnimBgPalette_MistyTerrain,            gBattleAnimBgTilemap_MistyTerrain},
     [BG_PSYCHIC_TERRAIN]           = {gBattleAnimBgImage_PsychicTerrain,          gBattleAnimBgPalette_PsychicTerrain,          gBattleAnimBgTilemap_PsychicTerrain},
+    [BG_DARK_TERRAIN]         	   = {gBattleAnimBgImage_DarkTerrain,    	      gBattleAnimBgPalette_DarkTerrain,      	    gBattleAnimBgTilemap_DarkTerrain}, 
     [BG_FOCUS_BLAST]               = {gBattleAnimBgImage_FocusBlast,              gBattleAnimBgPalette_FocusBlast,              gBattleAnimBgTilemap_FocusBlast},
     [BG_GUNK_SHOT]                 = {gBattleAnimBgImage_FocusBlast,              gBattleAnimBgPalette_GunkShot,                gBattleAnimBgTilemap_FocusBlast},
     [BG_HYDRO_CANNON]              = {gBattleAnimBgImage_HydroCannon,             gBattleAnimBgPalette_HydroCannon,             gBattleAnimBgTilemap_HydroCannon},

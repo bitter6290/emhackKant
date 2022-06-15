@@ -4398,15 +4398,15 @@ Cry_ArbokMega::
 	
 	.align 2
 Cry_Fauvantic::
-	.incbin "sound/direct_sound_samples/cries/leafeon.bin"
+	.incbin "sound/direct_sound_samples/cries/espeon.bin"
 
 	.align 2
 Cry_Florestic::
-	.incbin "sound/direct_sound_samples/cries/glaceon.bin"
+	.incbin "sound/direct_sound_samples/cries/leafeon.bin"
 	
 	.align 2
 Cry_Terrantic::
-	.incbin "sound/direct_sound_samples/cries/flareon.bin"
+	.incbin "sound/direct_sound_samples/cries/glaceon.bin"
 	
 	.align 2
 Cry_Aureatic::

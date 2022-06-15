@@ -5147,7 +5147,7 @@
       "width": 24,
       "height": 28,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/LavenderTown/border.bin",
       "blockdata_filepath": "data/layouts/LavenderTown/map.bin"
     },
@@ -5160,6 +5160,26 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route12/border.bin",
       "blockdata_filepath": "data/layouts/Route12/map.bin"
+    },
+    {
+      "id": "LAYOUT_PEWTER_CAVE2F",
+      "name": "PewterCave2F_Layout",
+      "width": 50,
+      "height": 45,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/PewterCave2F/border.bin",
+      "blockdata_filepath": "data/layouts/PewterCave2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAVENDER_COAST",
+      "name": "LavenderCoast_Layout",
+      "width": 84,
+      "height": 36,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/LavenderCoast/border.bin",
+      "blockdata_filepath": "data/layouts/LavenderCoast/map.bin"
     }
   ]
 }

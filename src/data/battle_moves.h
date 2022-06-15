@@ -11680,8 +11680,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     },
     [MOVE_CLEANSING_WATER] =
     {
-        .effect = EFFECT_HAZE,
-        .power = 75,
+        .effect = EFFECT_PURE_WATER,
+        .power = 55,
         .type = TYPE_WATER,
         .accuracy = 85,
         .pp = 5,
@@ -11693,12 +11693,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     },
     [MOVE_VOLCANIC_FLOW] =
     {
-        .effect = EFFECT_HIT,
-        .power = 95,
+        .effect = EFFECT_BURN_HIT,
+        .power = 105,
         .type = TYPE_FIRE,
         .accuracy = 90,
         .pp = 10,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 20,
         .target = MOVE_TARGET_BOTH,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,

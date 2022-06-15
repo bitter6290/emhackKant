@@ -396,6 +396,7 @@
 #define ANIM_TAG_PRIMAL_PARTICLES           (ANIM_SPRITES_START + 384)
 #define ANIM_TAG_STEEL_BEAM                 (ANIM_SPRITES_START + 385)
 
+
 // battlers
 #define ANIM_ATTACKER    0
 #define ANIM_TARGET      1
@@ -497,6 +498,7 @@
 #define BG_AURA_SPHERE 77
 #define BG_STEEL_BEAM_OPPONENT 78
 #define BG_STEEL_BEAM_PLAYER 79
+#define BG_DARK_TERRAIN 80
 
 // table ids for general animations (gBattleAnims_General)
 #define B_ANIM_CASTFORM_CHANGE          0

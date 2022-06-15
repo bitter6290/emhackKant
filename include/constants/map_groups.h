@@ -645,6 +645,7 @@
 #define MAP_SAFFRON_COAST      (23 | (36 << 8))
 #define MAP_SAFFRON_DRYLANDS   (24 | (36 << 8))
 #define MAP_SAFFRON_DRYLANDS_N (25 | (36 << 8))
+#define MAP_LAVENDER_COAST     (26 | (36 << 8))
 
 // gMapGroup_NewIndoor
 #define MAP_PALLET_PLAYER_HOUSE_1F      (0 | (37 << 8))
@@ -680,6 +681,7 @@
 
 // gMapGroup_NewCave
 #define MAP_PEWTER_CAVE1F (0 | (42 << 8))
+#define MAP_PEWTER_CAVE2F (1 | (42 << 8))
 
 // gMapGroup_NewOcean
 #define MAP_CELADON_SEA_W  (0 | (43 << 8))

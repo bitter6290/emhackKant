@@ -10033,6 +10033,12 @@ extern const u32 gUsePokeblockGraph_Tilemap[];
 extern const u16 gUsePokeblockGraph_Pal[];
 extern const u16 gUsePokeblockNatureWin_Pal[];
 
+// Custom
+
+extern const u32 gBattleAnimBgImage_DarkTerrain[];
+extern const u32 gBattleAnimBgPalette_DarkTerrain[];
+extern const u32 gBattleAnimBgTilemap_DarkTerrain[];
+
 // Berry blender
 extern const u32 gBerryBlenderPlayerArrow_Gfx[];
 extern const u32 gBerryBlenderStart_Gfx[];

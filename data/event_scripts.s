@@ -1191,3 +1191,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/LavenderTown/scripts.inc"
 
 	.include "data/maps/Route12/scripts.inc"
+
+	.include "data/maps/PewterCave2F/scripts.inc"
+
+	.include "data/maps/LavenderCoast/scripts.inc"

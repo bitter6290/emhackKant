@@ -24866,3 +24866,12 @@ Special_CriticalCaptureBallThrow:
 	createvisualtask AnimTask_IsBallBlockedByTrainer, 2
 	jumpreteq -1, BallThrowTrainerBlock
 	goto BallThrowEnd
+
+
+
+Move_PureWater:
+	createvisualtask AnimTask_CreateSurfWave, 2, ANIM_SURF_PAL_SURF
+	delay 24
+	panse SE_M_SURF, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +2, 0
+	waitforvisualfinish
+	end

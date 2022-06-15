@@ -1277,6 +1277,34 @@ const struct CompressedSpriteSheet gMonBackPicTable[] =
     SPECIES_SPRITE(SHINX_KANTO, gMonBackPic_ShinxKanto),
     SPECIES_SPRITE(LUXIO_KANTO, gMonBackPic_LuxioKanto),
     SPECIES_SPRITE(LUXRAY_KANTO, gMonBackPic_LuxrayKanto),
+    SPECIES_SPRITE(LITWICK_KANTO, gMonBackPic_LitwickKanto),
+    SPECIES_SPRITE(LAMPENT_KANTO, gMonBackPic_LampentKanto),
+    SPECIES_SPRITE(CHANDELURE_KANTO, gMonBackPic_ChandelureKanto),
+    SPECIES_SPRITE(SANDILE_KANTO, gMonBackPic_SandileKanto),
+    SPECIES_SPRITE(KROKOROK_KANTO, gMonBackPic_KrokorokKanto),
+    SPECIES_SPRITE(MORADILE, gMonBackPic_Moradile),
+    SPECIES_SPRITE(TIMBURR_KANTO, gMonBackPic_TimburrKanto),
+    SPECIES_SPRITE(GURDURR_KANTO, gMonBackPic_GurdurrKanto),
+    SPECIES_SPRITE(CONKELDURR_KANTO, gMonBackPic_ConkeldurrKanto),
+    SPECIES_SPRITE(TORKOAL_KANTO, gMonBackPic_TorkoalKanto),
+    SPECIES_SPRITE(SLIGGOO_HISUI, gMonBackPic_SliggooHisui),
+    SPECIES_SPRITE(GOODRA_HISUI, gMonBackPic_GoodraHisui),
+    SPECIES_SPRITE(GROWLITHE_HISUI, gMonBackPic_GrowlitheHisui),
+    SPECIES_SPRITE(ARCANINE_HISUI, gMonBackPic_ArcanineHisui),
+    SPECIES_SPRITE(KRICKETON, gMonBackPic_Kricketon),
+    SPECIES_SPRITE(KRICKALLOUS, gMonBackPic_Krickallous),
+    SPECIES_SPRITE(LEDENNA, gMonBackPic_Ledenna),
+    SPECIES_SPRITE(FAUVANTIC, gMonBackPic_Fauvantic),
+    SPECIES_SPRITE(FLORESTIC, gMonBackPic_Florestic),
+    SPECIES_SPRITE(TERRANTIC, gMonBackPic_Terrantic),
+    SPECIES_SPRITE(AUREATIC, gMonBackPic_Aureatic),
+    SPECIES_SPRITE(ALOOBAT, gMonBackPic_Aloobat),
+    
+	//custom megas
+	
+    SPECIES_SPRITE(ARBOK_MEGA, gMonBackPic_ArbokMega),
+
+	//egg
 
     SPECIES_SPRITE(EGG, gMonFrontPic_Egg),
 };

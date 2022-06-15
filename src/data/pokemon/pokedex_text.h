@@ -5348,3 +5348,49 @@ const u8 gCalyrexPokedexText[] = _(
     "providing healing and blessings. It\n"
     "reigned over the Galar region in times\n"
     "of yore.");
+
+const u8 gKricketonPokedexText[] = _(
+	"This Pokémon has risen to the head of its\n"
+	"clan, directing it to produce music\n"
+	"known throughout its native forests.");
+
+const u8 gKrickallousPokedexText[] = _(
+	"Driven by an intense rage stemming\n"
+	"from its rejection as clan leader,\n"
+	"this Pokémon hunts alone and broods for\n"
+	"days on end in the shade of the forest.");
+
+const u8 gLedennaPokedexText[] = _(
+	"The antennae on this Pokémon's head allow\n"
+	"it to harness psychic powers,\n"
+	"supplementing the energy it draws from\n"
+	"the night sky.");
+
+const u8 gAloobatPokedexText[] = _(
+	"This Pokémon evolved when its mating\n"
+	"season ended. It's less social now,\n"
+	"but its sonic abilities are stronger.");
+	
+const u8 gFauvanticPokedexText[] = _(
+	"This Pokémon is the guardian spirit\n"
+	"of Kanto's forest creatures. It\n"
+	"manipulates unwary passers-by, who\n"
+	"become its prey.");
+	
+const u8 gFloresticPokedexText[] = _(
+	"The guardian spirit of the plants and\n"
+	"trees that make up Kanto's forests, this\n"
+	"Pokémon is vain and spends most of its\n"
+	"time tending to its appearance.");
+	
+const u8 gTerranticPokedexText[] = _(
+	"The guardian spirit of the soil feeding\n"
+	"Kanto's forests, this Pokémon has a\n"
+	"fearsome temper and causes tremors at\n"
+	"the smallest provocation.");
+	
+const u8 gAureaticPokedexText[] = _(
+	"The steward of Kanto's forests, this\n"
+	"Pokémon is said to ensure that light\n"
+	"reaches every corner of the region's\n"
+	"woods.");

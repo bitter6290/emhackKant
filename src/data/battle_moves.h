@@ -5433,7 +5433,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_POISON_TAIL] =
     {
         .effect = EFFECT_POISON_HIT,
-        .power = 50,
+        .power = 55,
         .type = TYPE_POISON,
         .accuracy = 100,
         .pp = 25,
@@ -6419,9 +6419,9 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
             .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_SHEER_FORCE_BOOST,
         #endif
         .effect = EFFECT_FLINCH_HIT,
-        .power = 75,
+        .power = 80,
         .type = TYPE_FLYING,
-        .accuracy = 95,
+        .accuracy = 100,
         .secondaryEffectChance = 30,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,

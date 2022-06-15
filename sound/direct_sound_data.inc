@@ -4320,6 +4320,98 @@ Cry_LuxioKanto::
 Cry_LuxrayKanto::
 	.incbin "sound/direct_sound_samples/cries/luxray.bin"
 
+	.align 2
+Cry_LitwickKanto::
+	.incbin "sound/direct_sound_samples/cries/litwick.bin"
+
+	.align 2
+Cry_LampentKanto::
+	.incbin "sound/direct_sound_samples/cries/lampent.bin"
+	
+	.align 2
+Cry_ChandelureKanto::
+	.incbin "sound/direct_sound_samples/cries/chandelure.bin"
+	
+	.align 2
+Cry_SandileKanto::
+	.incbin "sound/direct_sound_samples/cries/sandile.bin"
+	
+	.align 2
+Cry_KrokorokKanto::
+	.incbin "sound/direct_sound_samples/cries/krokorok.bin"
+	
+	.align 2
+Cry_Moradile::
+	.incbin "sound/direct_sound_samples/cries/krookodile.bin"
+	
+	.align 2
+Cry_TimburrKanto::
+	.incbin "sound/direct_sound_samples/cries/timburr.bin"
+	
+	.align 2
+Cry_GurdurrKanto::
+	.incbin "sound/direct_sound_samples/cries/gurdurr.bin"
+	
+	.align 2
+Cry_ConkeldurrKanto::
+	.incbin "sound/direct_sound_samples/cries/conkeldurr.bin"
+	
+	.align 2
+Cry_TorkoalKanto::
+	.incbin "sound/direct_sound_samples/cries/torkoal.bin"
+	
+	.align 2
+Cry_SliggooHisui::
+	.incbin "sound/direct_sound_samples/cries/sliggoo.bin"
+	
+	.align 2
+Cry_GoodraHisui::
+	.incbin "sound/direct_sound_samples/cries/goodra.bin"
+	
+	.align 2
+Cry_GrowlitheHisui::
+	.incbin "sound/direct_sound_samples/cries/growlithe.bin"
+	
+	.align 2
+Cry_ArcanineHisui::
+	.incbin "sound/direct_sound_samples/cries/arcanine.bin"
+	
+	.align 2
+Cry_Kricketon::
+	.incbin "sound/direct_sound_samples/cries/kricketune.bin"
+	
+	.align 2
+Cry_Krickallous::
+	.incbin "sound/direct_sound_samples/cries/kricketune.bin"
+	
+	.align 2
+Cry_Ledenna::
+	.incbin "sound/direct_sound_samples/cries/ledian.bin"
+	
+	.align 2
+Cry_Aloobat::
+	.incbin "sound/direct_sound_samples/cries/swoobat.bin"
+	
+	.align 2
+Cry_ArbokMega::
+	.incbin "sound/direct_sound_samples/cries/arbok.bin"
+	
+	.align 2
+Cry_Fauvantic::
+	.incbin "sound/direct_sound_samples/cries/leafeon.bin"
+
+	.align 2
+Cry_Florestic::
+	.incbin "sound/direct_sound_samples/cries/glaceon.bin"
+	
+	.align 2
+Cry_Terrantic::
+	.incbin "sound/direct_sound_samples/cries/flareon.bin"
+	
+	.align 2
+Cry_Aureatic::
+	.incbin "sound/direct_sound_samples/cries/flareon.bin"
+
 
 	.align 2
 DirectSoundWaveData_register_noise::

@@ -1275,6 +1275,29 @@ gCryTable::
 	cry Cry_ShinxKanto
 	cry Cry_LuxioKanto
 	cry Cry_LuxrayKanto
+	cry Cry_LitwickKanto
+	cry Cry_LampentKanto
+	cry Cry_ChandelureKanto
+	cry Cry_SandileKanto
+	cry Cry_KrokorokKanto
+	cry Cry_Moradile
+	cry Cry_TimburrKanto
+	cry Cry_GurdurrKanto
+	cry Cry_ConkeldurrKanto
+	cry Cry_TorkoalKanto
+	cry Cry_SliggooHisui
+	cry Cry_GoodraHisui
+	cry Cry_GrowlitheHisui
+	cry Cry_ArcanineHisui
+	cry Cry_Kricketon
+	cry Cry_Krickallous
+	cry Cry_Ledenna
+	cry Cry_Aloobat
+	cry Cry_ArbokMega
+	cry Cry_Fauvantic
+	cry Cry_Florestic
+	cry Cry_Terrantic
+	cry Cry_Aureatic
 
 	.align 2
 gCryTable_Reverse::
@@ -2551,3 +2574,28 @@ gCryTable_Reverse::
 	cry_reverse Cry_CalyrexShadowRider
 	@ Custom mons
 	cry_reverse Cry_ShinxKanto
+	cry_reverse Cry_LuxioKanto
+	cry_reverse Cry_LuxrayKanto
+	cry_reverse Cry_LitwickKanto
+	cry_reverse Cry_LampentKanto
+	cry_reverse Cry_ChandelureKanto
+	cry_reverse Cry_SandileKanto
+	cry_reverse Cry_KrokorokKanto
+	cry_reverse Cry_Moradile
+	cry_reverse Cry_TimburrKanto
+	cry_reverse Cry_GurdurrKanto
+	cry_reverse Cry_ConkeldurrKanto
+	cry_reverse Cry_TorkoalKanto
+	cry_reverse Cry_SliggooHisui
+	cry_reverse Cry_GoodraHisui
+	cry_reverse Cry_GrowlitheHisui
+	cry_reverse Cry_ArcanineHisui
+	cry_reverse Cry_Kricketon
+	cry_reverse Cry_Krickallous
+	cry_reverse Cry_Ledenna
+	cry_reverse Cry_Aloobat
+	cry_reverse Cry_ArbokMega
+	cry_reverse Cry_Fauvantic
+	cry_reverse Cry_Florestic
+	cry_reverse Cry_Terrantic
+	cry_reverse Cry_Aureatic

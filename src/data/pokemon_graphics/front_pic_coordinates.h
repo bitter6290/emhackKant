@@ -6120,6 +6120,122 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = MON_COORDS_SIZE(64,64),
         .y_offset = 13,
     },
+     [SPECIES_LITWICK_KANTO] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_LAMPENT_KANTO] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_CHANDELURE_KANTO] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_SANDILE_KANTO] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_KROKOROK_KANTO] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_MORADILE] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_TIMBURR_KANTO] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_GURDURR_KANTO] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_CONKELDURR_KANTO] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_TORKOAL_KANTO] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_SLIGGOO_HISUI] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_GOODRA_HISUI] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_GROWLITHE_HISUI] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_ARCANINE_HISUI] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_KRICKETON] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_KRICKALLOUS] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_LEDENNA] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_FAUVANTIC] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_FLORESTIC] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_TERRANTIC] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_AUREATIC] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_ALOOBAT] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_ARBOK_MEGA] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+
     // Egg
     [SPECIES_EGG] =
     {

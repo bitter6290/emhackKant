@@ -26,39 +26,45 @@ Route2_Stop_1:
 Route2_Stop_2:
 	playse SE_PIN
 	getplayerxy VAR_RESULT, VAR_TEMP_1
-	compare VAR_RESULT, 14
-	goto_if_gt Route2_Stop_5
 	compare VAR_TEMP_1, 50
-	goto_if_gt Route2_Stop_15
+	goto_if_gt Route2_Stop_5
+	compare VAR_RESULT, 12
+	goto_if_gt Route2_Stop_11
 	applymovement 1, ExclamLeft
 Route2_Stop_4:
 	waitmovement 0
 	msgbox Route2_Stop_Text_0
 	msgbox Route2_GruntMessage1
-	compare VAR_TEMP_1, 50
-	goto_if_gt Route2_Stop_9
-	applymovement OBJ_EVENT_ID_PLAYER, Route2_RetreatUp
-Route2_Stop_8:
-	waitmovement OBJ_EVENT_ID_PLAYER
+	goto Route2_AmbiRetreat
 	goto Route2_Stop_1
 
 Route2_Stop_5:
-	compare VAR_TEMP_1, 50
-	goto_if_gt Route2_Stop_12
-	applymovement 1, ExclamRight
+	compare VAR_RESULT, 14
+	goto_if_gt Route2_Stop_8
+	applymovement 2, ExclamLeft
 	goto Route2_Stop_4
 
-Route2_Stop_9:
-	applymovement OBJ_EVENT_ID_PLAYER, Route2_PlayerRetreats
-	goto Route2_Stop_8
-
-Route2_Stop_12:
+Route2_Stop_8:
 	applymovement 2, ExclamRight
 	goto Route2_Stop_4
 
-Route2_Stop_15:
-	applymovement 2, ExclamLeft
+Route2_Stop_11:
+	applymovement 1, ExclamRight
 	goto Route2_Stop_4
+
+
+Route2_AmbiRetreat::
+	compare VAR_TEMP_1, 50
+	goto_if_gt Route2_AmbiRetreat_2
+	applymovement OBJ_EVENT_ID_PLAYER, Route2_RetreatUp
+Route2_AmbiRetreat_1:
+	waitmovement OBJ_EVENT_ID_PLAYER
+	release
+	end
+
+Route2_AmbiRetreat_2:
+	applymovement OBJ_EVENT_ID_PLAYER, Route2_PlayerRetreats
+	goto Route2_AmbiRetreat_1
 
 
 Route2_HikerMessage::
@@ -102,6 +108,11 @@ Route2_Stop_Text_0:
 Route2_HikerMessage_Text_0:
 	.string "Go through here if you really want. I\n"
 	.string "won't stop you.$"
+
+Route2_GruntMessageToll::
+	.string "Hey! If you wanna go through, you have\n"
+	.string "to pay the fee! It'll be 100$ to get\l"
+	.string "through!$"
 
 Route2_GruntMessage1::
 	.string "We're gonna be setting up a tollbooth\n"

@@ -19304,3 +19304,25 @@ static const struct LevelUpMove sLuxrayKantoLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+static const struct LevelUpMove sLitwickKantoLevelUpLearnset[] = {};
+static const struct LevelUpMove sLampentKantoLevelUpLearnset[] = {};
+static const struct LevelUpMove sChandelureKantoLevelUpLearnset[] = {};
+static const struct LevelUpMove sSandileKantoLevelUpLearnset[] = {};
+static const struct LevelUpMove sKrokorokKantoLevelUpLearnset[] = {};
+static const struct LevelUpMove sMoradileLevelUpLearnset[] = {};
+static const struct LevelUpMove sTimburrKantoLevelUpLearnset[] = {};
+static const struct LevelUpMove sGurdurrKantoLevelUpLearnset[] = {};
+static const struct LevelUpMove sConkeldurrKantoLevelUpLearnset[] = {};
+static const struct LevelUpMove sTorkoalKantoLevelUpLearnset[] = {};
+static const struct LevelUpMove sSliggooHisuiLevelUpLearnset[] = {};
+static const struct LevelUpMove sGoodraHisuiLevelUpLearnset[] = {};
+static const struct LevelUpMove sGrowlitheHisuiLevelUpLearnset[] = {};
+static const struct LevelUpMove sArcanineHisuiLevelUpLearnset[] = {};
+static const struct LevelUpMove sKricketonLevelUpLearnset[] = {};
+static const struct LevelUpMove sKrickallousLevelUpLearnset[] = {};
+static const struct LevelUpMove sLedennaLevelUpLearnset[] = {};
+static const struct LevelUpMove sFauvanticLevelUpLearnset[] = {};
+static const struct LevelUpMove sFloresticLevelUpLearnset[] = {};
+static const struct LevelUpMove sTerranticLevelUpLearnset[] = {};
+static const struct LevelUpMove sAureaticLevelUpLearnset[] = {};
+static const struct LevelUpMove sAloobatLevelUpLearnset[] = {};

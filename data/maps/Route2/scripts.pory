@@ -14,17 +14,17 @@ lock
 if(var(VAR_STORY_PROGRESS)<15){
 playse(SE_PIN)
 getplayerxy(VAR_RESULT,VAR_TEMP_1)
-if(var(VAR_RESULT)>14){
 if(var(VAR_TEMP_1)>50){
+if(var(VAR_RESULT)>14){
 applymovement(2,ExclamRight)
 }
 else{
-applymovement(1,ExclamRight)
+applymovement(2,ExclamLeft)
 }
 }
 else{
-if(var(VAR_TEMP_1)>50){
-applymovement(2,ExclamLeft)
+if(var(VAR_RESULT)>12){
+applymovement(1,ExclamRight)
 }
 else{
 applymovement(1,ExclamLeft)
@@ -33,6 +33,13 @@ applymovement(1,ExclamLeft)
 waitmovement(0)
 msgbox("Hey!")
 msgbox(Route2_GruntMessage1)
+goto(Route2_AmbiRetreat)
+}
+release
+end
+}
+
+script Route2_AmbiRetreat{
 if(var(VAR_TEMP_1)>50){
 applymovement(OBJ_EVENT_ID_PLAYER,Route2_PlayerRetreats)
 }
@@ -40,7 +47,6 @@ else{
 applymovement(OBJ_EVENT_ID_PLAYER,Route2_RetreatUp)
 }
 waitmovement(OBJ_EVENT_ID_PLAYER)
-}
 release
 end
 }
@@ -50,6 +56,10 @@ lock
 msgbox(format("Go through here if you really want. I won't stop you."))
 release
 end
+}
+
+text Route2_GruntMessageToll{
+format("Hey! If you wanna go through, you have to pay the fee! It'll be 100$ to get through!")
 }
 
 text Route2_GruntMessage1{

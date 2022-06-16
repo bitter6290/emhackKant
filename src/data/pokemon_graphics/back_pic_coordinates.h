@@ -6152,7 +6152,7 @@ const struct MonCoords gMonBackPicCoords[] =
     },
     [SPECIES_TIMBURR_KANTO] =
     {
-        .size = MON_COORDS_SIZE(64, 40),
+        .size = MON_COORDS_SIZE(48, 40),
         .y_offset = 15,
     },
     [SPECIES_GURDURR_KANTO] =

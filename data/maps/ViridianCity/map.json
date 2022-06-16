@@ -134,8 +134,8 @@
       "x": 15,
       "y": 23,
       "elevation": 0,
-      "dest_map": "MAP_VIRIDIAN_CITY",
-      "dest_warp_id": 0
+      "dest_map": "MAP_VIRIDIAN_APARTMENTS",
+      "dest_warp_id": 4
     },
     {
       "x": 29,

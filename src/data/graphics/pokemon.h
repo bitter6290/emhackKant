@@ -6694,7 +6694,7 @@ const u8 gMonFootprint_Calyrex[] = INCBIN_U8("graphics/pokemon/calyrex/footprint
 
 //custom mons
 
-const u32 gMonFrontPic_ShinxKanto[] = INCBIN_U32("graphics/pokemon/kantonian_shinx/anim_front.4bpp.lz");
+const u32 gMonFrontPic_ShinxKanto[] = INCBIN_U32("graphics/pokemon/kantonian_shinx/front.4bpp.lz");
 const u32 gMonPalette_ShinxKanto[] = INCBIN_U32("graphics/pokemon/kantonian_shinx/normal.gbapal.lz");
 const u32 gMonBackPic_ShinxKanto[] = INCBIN_U32("graphics/pokemon/kantonian_shinx/back.4bpp.lz");
 const u32 gMonShinyPalette_ShinxKanto[] = INCBIN_U32("graphics/pokemon/kantonian_shinx/shiny.gbapal.lz");

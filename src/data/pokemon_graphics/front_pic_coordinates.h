@@ -6122,12 +6122,12 @@ const struct MonCoords gMonFrontPicCoords[] =
     },
      [SPECIES_LITWICK_KANTO] =
      {
-     .size = MON_COORDS_SIZE(64,64),
+     .size = MON_COORDS_SIZE(32,40),
      .y_offset = 6,
      },
      [SPECIES_LAMPENT_KANTO] =
      {
-     .size = MON_COORDS_SIZE(64,64),
+     .size = MON_COORDS_SIZE(56,48),
      .y_offset = 6,
      },
      [SPECIES_CHANDELURE_KANTO] =
@@ -6137,12 +6137,12 @@ const struct MonCoords gMonFrontPicCoords[] =
      },
      [SPECIES_SANDILE_KANTO] =
      {
-     .size = MON_COORDS_SIZE(64,64),
+     .size = MON_COORDS_SIZE(48,32),
      .y_offset = 6,
      },
      [SPECIES_KROKOROK_KANTO] =
      {
-     .size = MON_COORDS_SIZE(64,64),
+     .size = MON_COORDS_SIZE(64,56),
      .y_offset = 6,
      },
      [SPECIES_MORADILE] =

@@ -898,6 +898,16 @@ gCryTable::
 	cry Cry_Glastrier
 	cry Cry_Spectrier
 	cry Cry_Calyrex
+	@ Customs
+	cry Cry_Kricketon
+	cry Cry_Krickallous
+	cry Cry_Ledenna
+	cry Cry_Aloobat
+	cry Cry_ArbokMega
+	cry Cry_Fauvantic
+	cry Cry_Florestic
+	cry Cry_Terrantic
+	cry Cry_Aureatic
 	@ Megas
 	cry Cry_VenusaurMega
 	cry Cry_CharizardMegaX
@@ -1289,15 +1299,6 @@ gCryTable::
 	cry Cry_GoodraHisui
 	cry Cry_GrowlitheHisui
 	cry Cry_ArcanineHisui
-	cry Cry_Kricketon
-	cry Cry_Krickallous
-	cry Cry_Ledenna
-	cry Cry_Aloobat
-	cry Cry_ArbokMega
-	cry Cry_Fauvantic
-	cry Cry_Florestic
-	cry Cry_Terrantic
-	cry Cry_Aureatic
 
 	.align 2
 gCryTable_Reverse::
@@ -2199,6 +2200,16 @@ gCryTable_Reverse::
 	cry_reverse Cry_Glastrier
 	cry_reverse Cry_Spectrier
 	cry_reverse Cry_Calyrex
+	@ Customs
+	cry_reverse Cry_Kricketon
+	cry_reverse Cry_Krickallous
+	cry_reverse Cry_Ledenna
+	cry_reverse Cry_Aloobat
+	cry_reverse Cry_ArbokMega
+	cry_reverse Cry_Fauvantic
+	cry_reverse Cry_Florestic
+	cry_reverse Cry_Terrantic
+	cry_reverse Cry_Aureatic
 	@ Megas
 	cry_reverse Cry_VenusaurMega
 	cry_reverse Cry_CharizardMegaX
@@ -2590,12 +2601,3 @@ gCryTable_Reverse::
 	cry_reverse Cry_GoodraHisui
 	cry_reverse Cry_GrowlitheHisui
 	cry_reverse Cry_ArcanineHisui
-	cry_reverse Cry_Kricketon
-	cry_reverse Cry_Krickallous
-	cry_reverse Cry_Ledenna
-	cry_reverse Cry_Aloobat
-	cry_reverse Cry_ArbokMega
-	cry_reverse Cry_Fauvantic
-	cry_reverse Cry_Florestic
-	cry_reverse Cry_Terrantic
-	cry_reverse Cry_Aureatic

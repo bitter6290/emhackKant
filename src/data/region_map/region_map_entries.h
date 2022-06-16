@@ -198,6 +198,16 @@ static const u8 sMapName_MarineCave[] = _("MARINE CAVE");
 static const u8 sMapName_TerraCave[] = _("TERRA CAVE");
 static const u8 sMapName_DesertUnderpass[] = _("DESERT UNDERPASS");
 static const u8 sMapName_TrainerHill[] = _("TRAINER HILL");
+static const u8 sMapName_ViridianField[] = _("VIRIDIAN PLAIN");
+static const u8 sMapName_CeladonBay[] = _("CELADON BAY");
+static const u8 sMapName_ViridianDeepwoods[] = _("VIRIDIAN GROVE");
+static const u8 sMapName_HiddenGrotto[] = _("HIDDEN GROTTO");
+static const u8 sMapName_NightmareRange[] = _("NIGHTMARE RANGE");
+static const u8 sMapName_PewterRange[] = _("PEWTER RANGE");
+static const u8 sMapName_CeladonSea[] = _("CELADON SEA");
+static const u8 sMapName_CinnabarSea[] = _("CINNABAR SEA");
+static const u8 sMapName_PewterCave[] = _("PEWTER CAVE");
+
 
 const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_LITTLEROOT_TOWN]            = { 4, 11, 1, 1, sMapName_LittlerootTown},
@@ -412,7 +422,17 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_DESERT_UNDERPASS]           = { 2,  0, 1, 1, sMapName_DesertUnderpass},
     [MAPSEC_ALTERING_CAVE]              = { 6,  8, 1, 1, sMapName_AlteringCave},
     [MAPSEC_NAVEL_ROCK]                 = { 0,  0, 1, 1, sMapName_NavelRock},
-    [MAPSEC_TRAINER_HILL]               = { 8,  4, 1, 1, sMapName_TrainerHill}
+    [MAPSEC_TRAINER_HILL]               = { 0,  0, 1, 1, sMapName_TrainerHill},
+    [MAPSEC_VIRIDIAN_FIELD]               = { 0,  0, 1, 1, sMapName_ViridianField},
+    [MAPSEC_CELADON_BAY]               = { 0,  0, 1, 1, sMapName_CeladonBay},
+    [MAPSEC_VIRIDIAN_DEEPWOODS]               = { 0,  0, 1, 1, sMapName_ViridianDeepwoods},
+    [MAPSEC_HIDDEN_GROTTO]               = { 0,  0, 1, 1, sMapName_HiddenGrotto},
+    [MAPSEC_NIGHTMARE_RANGE]               = { 0,  0, 1, 1, sMapName_NightmareRange},
+    [MAPSEC_PEWTER_RANGE]               = { 0,  0, 1, 1, sMapName_PewterRange},
+    [MAPSEC_CELADON_SEA]               = { 0,  0, 1, 1, sMapName_CeladonSea},
+    [MAPSEC_CINNABAR_SEA]               = { 0,  0, 1, 1, sMapName_CinnabarSea},
+    [MAPSEC_PEWTER_CAVE]               = { 0,  0, 1, 1, sMapName_PewterCave},
+    
 };
 
 #endif //GUARD_DATA_REGION_MAP_REGION_MAP_ENTRIES_H

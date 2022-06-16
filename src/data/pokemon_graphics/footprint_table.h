@@ -900,8 +900,14 @@ const u8 *const gMonFootprintTable[] =
     [SPECIES_SPECTRIER] = gMonFootprint_Spectrier,
     [SPECIES_CALYREX] = gMonFootprint_Calyrex,
     //custom mons
-    [SPECIES_SHINX_KANTO] = gMonFootprint_ShinxKanto,
-    [SPECIES_LUXIO_KANTO] = gMonFootprint_LuxioKanto,
-    [SPECIES_LUXRAY_KANTO] = gMonFootprint_LuxrayKanto,
+    [SPECIES_KRICKETON] = gMonFootprint_Kricketon,
+    [SPECIES_KRICKALLOUS] = gMonFootprint_Krickallous,
+    [SPECIES_LEDENNA] = gMonFootprint_Ledenna,
+    [SPECIES_FAUVANTIC] = gMonFootprint_Fauvantic,
+    [SPECIES_FLORESTIC] = gMonFootprint_Florestic,
+    [SPECIES_TERRANTIC] = gMonFootprint_Terrantic,
+    [SPECIES_AUREATIC] = gMonFootprint_Aureatic,
+    [SPECIES_ALOOBAT] = gMonFootprint_Aloobat,
+    [SPECIES_ARBOK_MEGA] = gMonFootprint_ArbokMega,
     [SPECIES_EGG] = gMonFootprint_Bulbasaur,
 };

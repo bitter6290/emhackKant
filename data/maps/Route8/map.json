@@ -27,6 +27,11 @@
       "direction": "right",
       "offset": -28,
       "map": "MAP_ROUTE9"
+    },
+    {
+      "direction": "down",
+      "offset": -24,
+      "map": "MAP_VERMILION_PLAIN"
     }
   ],
   "object_events": [

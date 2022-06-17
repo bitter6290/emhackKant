@@ -32,6 +32,11 @@
       "direction": "right",
       "offset": 12,
       "map": "MAP_ROUTE10"
+    },
+    {
+      "direction": "right",
+      "offset": -52,
+      "map": "MAP_CHARTREUSE_CITY"
     }
   ],
   "object_events": [

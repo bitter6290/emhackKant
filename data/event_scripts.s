@@ -1199,3 +1199,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/ChartreuseCity/scripts.inc"
 
 	.include "data/maps/CeruleanWoods/scripts.inc"
+
+	.include "data/maps/VermilionPlain/scripts.inc"

@@ -22,6 +22,16 @@
       "direction": "down",
       "offset": 52,
       "map": "MAP_ROUTE11"
+    },
+    {
+      "direction": "right",
+      "offset": 40,
+      "map": "MAP_CHARTREUSE_CITY"
+    },
+    {
+      "direction": "left",
+      "offset": 20,
+      "map": "MAP_CERULEAN_WOODS_NW"
     }
   ],
   "object_events": [

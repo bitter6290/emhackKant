@@ -1,0 +1,64 @@
+{
+  "id": "MAP_VERMILION_PLAIN",
+  "name": "VermilionPlain",
+  "layout": "LAYOUT_VERMILION_PLAIN",
+  "music": "MUS_GSC_ROUTE38",
+  "region_map_section": "MAPSEC_VERMILION_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "direction": "down",
+      "offset": -20,
+      "map": "MAP_VERMILION_CITY"
+    },
+    {
+      "direction": "left",
+      "offset": 0,
+      "map": "MAP_ROUTE6"
+    },
+    {
+      "direction": "up",
+      "offset": -20,
+      "map": "MAP_SAFFRON_CITY"
+    },
+    {
+      "direction": "up",
+      "offset": 24,
+      "map": "MAP_ROUTE8"
+    },
+    {
+      "direction": "right",
+      "offset": -52,
+      "map": "MAP_ROUTE9"
+    },
+    {
+      "direction": "right",
+      "offset": 0,
+      "map": "MAP_LAVENDER_TOWN"
+    },
+    {
+      "direction": "right",
+      "offset": 28,
+      "map": "MAP_ROUTE12"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

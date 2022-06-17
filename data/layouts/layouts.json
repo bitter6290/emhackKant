@@ -5200,6 +5200,16 @@
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/CeruleanWoods/border.bin",
       "blockdata_filepath": "data/layouts/CeruleanWoods/map.bin"
+    },
+    {
+      "id": "LAYOUT_VERMILION_PLAIN",
+      "name": "VermilionPlain_Layout",
+      "width": 80,
+      "height": 44,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/VermilionPlain/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionPlain/map.bin"
     }
   ]
 }

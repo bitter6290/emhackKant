@@ -648,6 +648,7 @@
 #define MAP_SAFFRON_DRYLANDS_N (25 | (36 << 8))
 #define MAP_LAVENDER_COAST     (26 | (36 << 8))
 #define MAP_CERULEAN_WOODS     (27 | (36 << 8))
+#define MAP_VERMILION_PLAIN    (28 | (36 << 8))
 
 // gMapGroup_NewIndoor
 #define MAP_PALLET_PLAYER_HOUSE_1F      (0 | (37 << 8))

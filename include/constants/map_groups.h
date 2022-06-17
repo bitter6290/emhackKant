@@ -595,14 +595,15 @@
 #define MAP_PALLET_PLAYER_HOUSE                    (3 | (33 << 8))
 
 // gMapGroup_NewCities
-#define MAP_NEW_MAP1       (0 | (34 << 8))
-#define MAP_VIRIDIAN_CITY  (1 | (34 << 8))
-#define MAP_PEWTER_CITY    (2 | (34 << 8))
-#define MAP_CELADON_CITY   (3 | (34 << 8))
-#define MAP_CERULEAN_CITY  (4 | (34 << 8))
-#define MAP_SAFFRON_CITY   (5 | (34 << 8))
-#define MAP_VERMILION_CITY (6 | (34 << 8))
-#define MAP_LAVENDER_TOWN  (7 | (34 << 8))
+#define MAP_NEW_MAP1        (0 | (34 << 8))
+#define MAP_VIRIDIAN_CITY   (1 | (34 << 8))
+#define MAP_PEWTER_CITY     (2 | (34 << 8))
+#define MAP_CELADON_CITY    (3 | (34 << 8))
+#define MAP_CERULEAN_CITY   (4 | (34 << 8))
+#define MAP_SAFFRON_CITY    (5 | (34 << 8))
+#define MAP_VERMILION_CITY  (6 | (34 << 8))
+#define MAP_LAVENDER_TOWN   (7 | (34 << 8))
+#define MAP_CHARTREUSE_CITY (8 | (34 << 8))
 
 // gMapGroup_NewRoutes
 #define MAP_ROUTE1  (0 | (35 << 8))
@@ -646,6 +647,7 @@
 #define MAP_SAFFRON_DRYLANDS   (24 | (36 << 8))
 #define MAP_SAFFRON_DRYLANDS_N (25 | (36 << 8))
 #define MAP_LAVENDER_COAST     (26 | (36 << 8))
+#define MAP_CERULEAN_WOODS     (27 | (36 << 8))
 
 // gMapGroup_NewIndoor
 #define MAP_PALLET_PLAYER_HOUSE_1F      (0 | (37 << 8))

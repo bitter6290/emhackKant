@@ -1,9 +1,9 @@
 {
-  "id": "MAP_ROUTE11",
-  "name": "Route11",
-  "layout": "LAYOUT_ROUTE11",
-  "music": "MUS_RG_ROUTE11",
-  "region_map_section": "MAPSEC_ROUTE_11",
+  "id": "MAP_CERULEAN_WOODS",
+  "name": "CeruleanWoods",
+  "layout": "LAYOUT_CERULEAN_WOODS",
+  "music": "MUS_RG_CREDITS",
+  "region_map_section": "MAPSEC_CERULEAN_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
@@ -16,22 +16,12 @@
     {
       "direction": "down",
       "offset": 0,
-      "map": "MAP_SAFFRON_DRYLANDS_N"
-    },
-    {
-      "direction": "left",
-      "offset": 0,
       "map": "MAP_CERULEAN_CITY"
     },
     {
-      "direction": "right",
-      "offset": -24,
-      "map": "MAP_CHARTREUSE_CITY"
-    },
-    {
-      "direction": "up",
-      "offset": -52,
-      "map": "MAP_CERULEAN_WOODS"
+      "direction": "down",
+      "offset": 52,
+      "map": "MAP_ROUTE11"
     }
   ],
   "object_events": [

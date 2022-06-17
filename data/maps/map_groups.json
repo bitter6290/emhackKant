@@ -643,7 +643,8 @@
     "CeruleanCity",
     "SaffronCity",
     "VermilionCity",
-    "LavenderTown"
+    "LavenderTown",
+    "ChartreuseCity"
   ],
   "gMapGroup_NewRoutes": [
     "Route1",
@@ -686,7 +687,8 @@
     "SaffronCoast",
     "SaffronDrylands",
     "SaffronDrylandsN",
-    "LavenderCoast"
+    "LavenderCoast",
+    "CeruleanWoods"
   ],
   "gMapGroup_NewIndoor": [
     "PalletPlayerHouse_1F",

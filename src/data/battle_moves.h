@@ -11678,7 +11678,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = 0,
         .split = SPLIT_STATUS,
     },
-    [MOVE_CLEANSING_WATER] =
+    [MOVE_PURE_WATER] =
     {
         .effect = EFFECT_PURE_WATER,
         .power = 55,

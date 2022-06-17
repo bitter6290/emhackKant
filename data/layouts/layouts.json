@@ -5127,7 +5127,7 @@
       "width": 24,
       "height": 80,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route10/border.bin",
       "blockdata_filepath": "data/layouts/Route10/map.bin"
     },
@@ -5180,6 +5180,26 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/LavenderCoast/border.bin",
       "blockdata_filepath": "data/layouts/LavenderCoast/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHARTREUSE_CITY",
+      "name": "ChartreuseCity_Layout",
+      "width": 36,
+      "height": 64,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/ChartreuseCity/border.bin",
+      "blockdata_filepath": "data/layouts/ChartreuseCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_CERULEAN_WOODS",
+      "name": "CeruleanWoods_Layout",
+      "width": 100,
+      "height": 64,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/CeruleanWoods/border.bin",
+      "blockdata_filepath": "data/layouts/CeruleanWoods/map.bin"
     }
   ]
 }

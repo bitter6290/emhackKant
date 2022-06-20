@@ -7,8 +7,11 @@ PalletOakLab_OakDialogue::
 	faceplayer
 	compare VAR_STORY_PROGRESS, 0
 	goto_if_eq PalletOakLab_OakDialogue_2
+	compare VAR_STORY_PROGRESS, 15
+	goto_if_lt PalletOakLab_OakDialogue_3
+	compare VAR_STORY_PROGRESS, 15
+	goto_if_eq PalletOakLab_OakDialogue_4
 PalletOakLab_OakDialogue_1:
-	msgbox PalletOakLab_OakDialogue_Text_7
 	release
 	end
 
@@ -35,6 +38,14 @@ PalletOakLab_OakDialogue_2:
 	waitfanfare
 	giveitem ITEM_POKE_BALL, 10
 	giveitem ITEM_POTION, 5
+	goto PalletOakLab_OakDialogue_1
+
+PalletOakLab_OakDialogue_3:
+	msgbox PalletOakLab_OakDialogue_Text_7
+	goto PalletOakLab_OakDialogue_1
+
+PalletOakLab_OakDialogue_4:
+	msgbox PalletOakLab_OakDialogue_Text_8
 	goto PalletOakLab_OakDialogue_1
 
 
@@ -254,6 +265,10 @@ PalletOakLab_OakDialogue_Text_7:
 	.string "Pokédex, it will benefit you and me\l"
 	.string "alike. Your new research could help me\l"
 	.string "make marvels again.$"
+
+PalletOakLab_OakDialogue_Text_8:
+	.string "Ah, {PLAYER}! I'm glad to see you here\n"
+	.string "in one piece!$"
 
 PalletOakLab_ChooseBulbasaur_Text_0:
 	.string "This ball contains a Pokémon... but it\n"

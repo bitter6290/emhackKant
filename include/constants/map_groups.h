@@ -661,6 +661,7 @@
 #define MAP_PEWTER_MINE_SOUTH_HOUSE     (7 | (37 << 8))
 #define MAP_PEWTER_MINE_NORTH_HOUSE     (8 | (37 << 8))
 #define MAP_CELADON_POKEMON_CENTER1F    (9 | (37 << 8))
+#define MAP_PEWTER_POKE_MART            (10 | (37 << 8))
 
 // gMapGroup_NewGrotto
 #define MAP_GROTTO_MASTER (0 | (38 << 8))

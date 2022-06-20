@@ -1201,3 +1201,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CeruleanWoods/scripts.inc"
 
 	.include "data/maps/VermilionPlain/scripts.inc"
+
+	.include "data/maps/PewterPokeMart/scripts.inc"

@@ -6763,11 +6763,14 @@ extern const u8 gMonFootprint_Calyrex[];
 // custom mons
 
 extern const u32 gMonFrontPic_ShinxKanto[];
+extern const u32 gMonFrontPic_ShinxKantoF[];
 extern const u32 gMonPalette_ShinxKanto[];
 extern const u32 gMonBackPic_ShinxKanto[];
+extern const u32 gMonBackPic_ShinxKantoF[];
 extern const u32 gMonShinyPalette_ShinxKanto[];
 extern const u32 gMonStillFrontPic_ShinxKanto[];
 extern const u8 gMonIcon_ShinxKanto[];
+extern const u8 gMonIcon_ShinxKantoF[];
 extern const u8 gMonFootprint_ShinxKanto[];
 extern const u32 gMonFrontPic_LuxioKanto[];
 extern const u32 gMonPalette_LuxioKanto[];

@@ -6695,10 +6695,13 @@ const u8 gMonFootprint_Calyrex[] = INCBIN_U8("graphics/pokemon/calyrex/footprint
 //custom mons
 
 const u32 gMonFrontPic_ShinxKanto[] = INCBIN_U32("graphics/pokemon/kantonian_shinx/front.4bpp.lz");
+const u32 gMonFrontPic_ShinxKantoF[] = INCBIN_U32("graphics/pokemon/kantonian_shinx/frontf.4bpp.lz");
 const u32 gMonPalette_ShinxKanto[] = INCBIN_U32("graphics/pokemon/kantonian_shinx/normal.gbapal.lz");
 const u32 gMonBackPic_ShinxKanto[] = INCBIN_U32("graphics/pokemon/kantonian_shinx/back.4bpp.lz");
+const u32 gMonBackPic_ShinxKantoF[] = INCBIN_U32("graphics/pokemon/kantonian_shinx/backf.4bpp.lz");
 const u32 gMonShinyPalette_ShinxKanto[] = INCBIN_U32("graphics/pokemon/kantonian_shinx/shiny.gbapal.lz");
 const u8 gMonIcon_ShinxKanto[] = INCBIN_U8("graphics/pokemon/kantonian_shinx/icon.4bpp");
+const u8 gMonIcon_ShinxKantoF[] = INCBIN_U8("graphics/pokemon/kantonian_shinx/iconf.4bpp");
 const u8 gMonFootprint_ShinxKanto[] = INCBIN_U8("graphics/pokemon/kantonian_shinx/footprint.1bpp");
 const u32 gMonFrontPic_LuxioKanto[] = INCBIN_U32("graphics/pokemon/kantonian_luxio/front.4bpp.lz"); 
 const u32 gMonPalette_LuxioKanto[] = INCBIN_U32("graphics/pokemon/kantonian_luxio/normal.gbapal.lz"); 

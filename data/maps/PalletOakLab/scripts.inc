@@ -268,7 +268,9 @@ PalletOakLab_OakDialogue_Text_7:
 
 PalletOakLab_OakDialogue_Text_8:
 	.string "Ah, {PLAYER}! I'm glad to see you here\n"
-	.string "in one piece!$"
+	.string "in one piece! When Morgan told me about\l"
+	.string "the explosion, I thought you might\l"
+	.string "have been hurt.$"
 
 PalletOakLab_ChooseBulbasaur_Text_0:
 	.string "This ball contains a Pokémon... but it\n"

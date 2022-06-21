@@ -1490,3 +1490,11 @@ bool8 MetatileBehavior_IsRockStairs(u8 metatileBehavior)
     else
         return FALSE;
 }
+
+bool8 MetatileBehavior_IsRopePit(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_ROPE_PIT)
+        return TRUE;
+    else
+        return FALSE;
+}

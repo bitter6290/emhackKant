@@ -9708,4 +9708,36 @@ BattleScript_EffectPureWater::
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
+BattleScript_EffectVictoryDance:
+	attackcanceler
+	attackstring
+	ppreduce
+	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_ATK, MAX_STAT_STAGE, BattleScript_VictoryDanceDoMoveAnim
+	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_DEF, MAX_STAT_STAGE, BattleScript_VictoryDanceDoMoveAnim
+	jumpifstat BS_ATTACKER, CMP_EQUAL, STAT_SPEED, MAX_STAT_STAGE, BattleScript_CantRaiseMultipleStats
+BattleScript_VictoryDanceDoMoveAnim::
+	attackanimation
+	waitanimation
+	setbyte sSTAT_ANIM_PLAYED, FALSE
+	playstatchangeanimation BS_ATTACKER, BIT_SPATK | BIT_SPDEF | BIT_SPEED, 0
+	setstatchanger STAT_ATK, 1, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_ALLOW_PTR, BattleScript_VictoryDanceTrySpDef
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_VictoryDanceTrySpDef
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_VictoryDanceTrySpDef::
+	setstatchanger STAT_DEF, 1, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_ALLOW_PTR, BattleScript_VictoryDanceTrySpeed
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_VictoryDanceTrySpeed
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_VictoryDanceTrySpeed::
+	setstatchanger STAT_SPEED, 1, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_ALLOW_PTR, BattleScript_VictoryDanceEnd
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_VictoryDanceEnd
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_VictoryDanceEnd::
+	goto BattleScript_MoveEnd
+
 	

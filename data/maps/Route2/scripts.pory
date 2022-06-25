@@ -109,7 +109,7 @@ end
 }
 
 text Route2_GruntMessageToll{
-format("If you wanna go through, you have to pay the fee! \l50$ to get through!")
+format("If you wanna go through, you have to pay the fee!\lThat'll be 50!")
 }
 
 text Route2_GruntMessage1{

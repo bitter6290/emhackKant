@@ -27,6 +27,21 @@
       "direction": "left",
       "offset": -24,
       "map": "MAP_CELADON_SEA_E"
+    },
+    {
+      "direction": "up",
+      "offset": 20,
+      "map": "MAP_VERMILION_PLAIN"
+    },
+    {
+      "direction": "right",
+      "offset": 0,
+      "map": "MAP_ROUTE15"
+    },
+    {
+      "direction": "right",
+      "offset": 20,
+      "map": "MAP_FUCHSIA_SWAMP"
     }
   ],
   "object_events": [

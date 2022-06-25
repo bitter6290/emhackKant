@@ -27,7 +27,7 @@ script PewterMineNorthHouse_Morgan{
 		msgbox(format("Are you... {PLAYER}?\nSo Oak must have sent you."))
 		applymovement(1,PewterMineNorthHouse_MorganSide)
 		waitmovement(1)
-		msgbox(format("I'm Morgan, his assistant.\nAs you might have guessed, I got trapped in here when the fighting started."))
+		msgbox(format("I'm Morgan, his assistant.\nAs you might have guessed, I got trapped in here when the fighting started. And just my luck, I had left my Pokémon at the Pokémon Center to rest..."))
 		msgbox(format("Incidentally, that sound just now..."))
 		waitmessage
 		delay(30)
@@ -40,7 +40,7 @@ script PewterMineNorthHouse_Morgan{
 		playse(SE_PIN)
 		applymovement(1,PewterMine_Exclam)
 		waitmovement(1)
-		msgbox(format("Oh! And if you have time, come back to the lab and tell Oak what you saw. He'll be interested in hearing the story from you, too.\lAfter all, I spent the whole time in here..."))
+		msgbox(format("Oh! And if you have time, come back to the lab and tell Oak what you saw. He'll be interested in hearing the story from you, too, given that you were out there to see it."))
 		applymovement(1,PewterMineNorthHouse_MorganSouth)
 		waitmovement(1)
 		playse(SE_DOOR)

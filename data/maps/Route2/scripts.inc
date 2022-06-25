@@ -181,7 +181,7 @@ Route2_HikerMessage_Text_0:
 Route2_GruntMessageToll::
 	.string "If you wanna go through, you have to\n"
 	.string "pay the fee!\l"
-	.string "50$ to get through!$"
+	.string "That'll be 50!$"
 
 Route2_GruntMessage1::
 	.string "We're gonna be setting up a tollbooth\n"

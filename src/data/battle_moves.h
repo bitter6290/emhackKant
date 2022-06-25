@@ -11714,7 +11714,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
         .split = SPLIT_SPECIAL,
     },
     [MOVE_RESISTANCE] =
@@ -11728,6 +11728,40 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .target = MOVE_TARGET_USER,
         .priority = 4,
         .flags = 0,
+        .split = SPLIT_STATUS,
+    },
+    [MOVE_RAGING_FURY] =
+    {
+        #if B_UPDATED_MOVE_DATA >= GEN_5
+            .power = 120,
+            .pp = 10,
+        #elif B_UPDATED_MOVE_DATA == GEN_4
+            .power = 120,
+            .pp = 15,
+        #else
+            .power = 90,
+            .pp = 15,
+        #endif
+        .effect = EFFECT_RAMPAGE,
+        .type = TYPE_FIRE,
+        .accuracy = 100,
+        .secondaryEffectChance = 100,
+        .target = MOVE_TARGET_RANDOM,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+        .split = SPLIT_PHYSICAL,
+    },
+    [MOVE_VICTORY_DANCE] =
+    {
+        .effect = EFFECT_VICTORY_DANCE,
+        .power = 0,
+        .type = TYPE_FIGHTING,
+        .accuracy = 0,
+        .pp = 20,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_USER,
+        .priority = 0,
+        .flags = FLAG_SNATCH_AFFECTED | FLAG_DANCE,
         .split = SPLIT_STATUS,
     },
 };

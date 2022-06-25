@@ -32,6 +32,11 @@
       "direction": "down",
       "offset": 0,
       "map": "MAP_VERMILION_CITY"
+    },
+    {
+      "direction": "right",
+      "offset": 0,
+      "map": "MAP_VERMILION_PLAIN"
     }
   ],
   "object_events": [

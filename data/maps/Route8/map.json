@@ -32,6 +32,11 @@
       "direction": "down",
       "offset": -24,
       "map": "MAP_VERMILION_PLAIN"
+    },
+    {
+      "direction": "down",
+      "offset": 56,
+      "map": "MAP_LAVENDER_TOWN"
     }
   ],
   "object_events": [

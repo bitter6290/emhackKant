@@ -17,6 +17,21 @@
       "direction": "left",
       "offset": 8,
       "map": "MAP_LAVENDER_TOWN"
+    },
+    {
+      "direction": "left",
+      "offset": -44,
+      "map": "MAP_ROUTE9"
+    },
+    {
+      "direction": "down",
+      "offset": -24,
+      "map": "MAP_ROUTE12"
+    },
+    {
+      "direction": "down",
+      "offset": 0,
+      "map": "MAP_SEKANTO_SEA_N"
     }
   ],
   "object_events": [

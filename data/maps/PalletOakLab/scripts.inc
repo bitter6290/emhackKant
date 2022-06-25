@@ -2,6 +2,17 @@ PalletOakLab_MapScripts::
 	.byte 0
 
 
+OakLab_OnLoad::
+	compare VAR_STORY_PROGRESS, 15
+	goto_if_lt OakLab_OnLoad_2
+OakLab_OnLoad_1:
+	end
+
+OakLab_OnLoad_2:
+	setflag FLAG_TEMP_3
+	goto OakLab_OnLoad_1
+
+
 PalletOakLab_OakDialogue::
 	lock
 	faceplayer
@@ -46,6 +57,19 @@ PalletOakLab_OakDialogue_3:
 
 PalletOakLab_OakDialogue_4:
 	msgbox PalletOakLab_OakDialogue_Text_8
+	msgbox PalletOakLab_OakDialogue_Text_9
+	delay 45
+	playse SE_PIN
+	applymovement 4, Exclam
+	waitmovement 4
+	msgbox PalletOakLab_OakDialogue_Text_10
+	delay 15
+	msgbox PalletOakLab_OakDialogue_Text_11
+	applymovement 4, OakLabTurns
+	waitmovement 4
+	msgbox PalletOakLab_OakDialogue_Text_12
+	msgbox PalletOakLab_OakDialogue_Text_13
+	addvar VAR_STORY_PROGRESS, 1
 	goto PalletOakLab_OakDialogue_1
 
 
@@ -211,6 +235,12 @@ Exclam:
 	emote_exclamation_mark
 	step_end
 
+OakLabTurns:
+	face_left
+	delay_16
+	face_down
+	step_end
+
 PalletOakLab_OakDialogue_Text_0:
 	.string "Ah, {PLAYER}!$"
 
@@ -269,8 +299,51 @@ PalletOakLab_OakDialogue_Text_7:
 PalletOakLab_OakDialogue_Text_8:
 	.string "Ah, {PLAYER}! I'm glad to see you here\n"
 	.string "in one piece! When Morgan told me about\l"
-	.string "the explosion, I thought you might\l"
-	.string "have been hurt.$"
+	.string "the explosion, I was worried sick.\l"
+	.string "Needless to say, I had no idea I'd be\l"
+	.string "sending you into the middle of a brawl.\l"
+	.string "It was shameful of me to be so\l"
+	.string "careless.$"
+
+PalletOakLab_OakDialogue_Text_9:
+	.string "At the same time, however, I must know\n"
+	.string "what happened in Pewter City. If it is\l"
+	.string "not too much to ask, I must request\l"
+	.string "that you tell me all that you saw.$"
+
+PalletOakLab_OakDialogue_Text_10:
+	.string "Two groups of uniformed grunts were\n"
+	.string "fighting over the mine?$"
+
+PalletOakLab_OakDialogue_Text_11:
+	.string "So things have gotten that bad...\n"
+	.string "And you say that you got involved in\l"
+	.string "the fighting!? What were you thinking,\l"
+	.string "{PLAYER}?$"
+
+PalletOakLab_OakDialogue_Text_12:
+	.string "Ah... Of course, it is quite impressive\n"
+	.string "that you won. All the same, though, do\l"
+	.string "yourself a favor and avoid associating\l"
+	.string "with Team Rocket at all costs. They will\l"
+	.string "promise you many things, but all they\l"
+	.string "truly desire is to increase their own\l"
+	.string "power. Too many young trainers have\l"
+	.string "heeded their call only to fall in over\l"
+	.string "their heads. I pray that the same does\l"
+	.string "not happen to you.$"
+
+PalletOakLab_OakDialogue_Text_13:
+	.string "For the moment, though, I'm glad to have\n"
+	.string "you and Morgan both back here. If you\l"
+	.string "are feeling confident in your abilities,\l"
+	.string "then I would suggest that you begin to\l"
+	.string "visit Kanto's Gyms as your next step.\l"
+	.string "If you're able to defeat them, they'll\l"
+	.string "teach you their signature techniques\l"
+	.string "and allow you to reach new places. The\l"
+	.string "benefits to your research will be\l"
+	.string "immense.$"
 
 PalletOakLab_ChooseBulbasaur_Text_0:
 	.string "This ball contains a Pokémon... but it\n"

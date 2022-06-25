@@ -1,5 +1,13 @@
 mapscripts PalletOakLab_MapScripts{}
 
+
+script OakLab_OnLoad{
+	if(var(VAR_STORY_PROGRESS)<15){
+	setflag(FLAG_TEMP_3)
+	}
+	end
+}
+
 script PalletOakLab_OakDialogue{
 lock
 faceplayer
@@ -31,7 +39,20 @@ elif(var(VAR_STORY_PROGRESS)<15){
 msgbox(format("I have nothing more for you right now... These last five years have been hard even for me.\lBut if you fill out the pages of the Pokédex, it will benefit you and me alike. Your new research could help me make marvels again."))
 }
 elif(var(VAR_STORY_PROGRESS)==15){
-msgbox(format("Ah, {PLAYER}! I'm glad to see you here in one piece! When Morgan told me about the explosion, I thought you might have been hurt. "))
+msgbox(format("Ah, {PLAYER}! I'm glad to see you here in one piece! When Morgan told me about the explosion, I was worried sick.\lNeedless to say, I had no idea I'd be sending you into the middle of a brawl. It was shameful of me to be so careless."))
+msgbox(format("At the same time, however, I must know what happened in Pewter City. If it is not too much to ask, I must request that you tell me all that you saw."))
+delay(45)
+playse(SE_PIN)
+applymovement(4,Exclam)
+waitmovement(4)
+msgbox(format("Two groups of uniformed grunts were fighting over the mine?"))
+delay(15)
+msgbox(format("So things have gotten that bad...\nAnd you say that you got involved in the fighting!? What were you thinking, {PLAYER}?"))
+applymovement(4, OakLabTurns)
+waitmovement(4)
+msgbox(format("Ah... Of course, it is quite impressive that you won. All the same, though, do yourself a favor and avoid associating with Team Rocket at all costs. They will promise you many things, but all they truly desire is to increase their own power. Too many young trainers have heeded their call only to fall in over their heads. I pray that the same does not happen to you."))
+msgbox(format("For the moment, though, I'm glad to have you and Morgan both back here. If you are feeling confident in your abilities, then I would suggest that you begin to visit Kanto's Gyms as your next step. If you're able to defeat them, they'll teach you their signature techniques and allow you to reach new places. The benefits to your research will be immense."))
+addvar(VAR_STORY_PROGRESS,1)
 }
 release
 end
@@ -159,4 +180,9 @@ end
 }
 movement Exclam{
 emote_exclamation_mark
+}
+movement OakLabTurns{
+face_left
+delay_16
+face_down
 }

@@ -98,7 +98,9 @@ PewterMineNorthHouse_Morgan_Text_2:
 	.string "I'm Morgan, his assistant.\n"
 	.string "As you might have guessed, I got\l"
 	.string "trapped in here when the fighting\l"
-	.string "started.$"
+	.string "started. And just my luck, I had left my\l"
+	.string "Pokémon at the Pokémon Center to\l"
+	.string "rest...$"
 
 PewterMineNorthHouse_Morgan_Text_3:
 	.string "Incidentally, that sound just now...$"
@@ -116,6 +118,5 @@ PewterMineNorthHouse_Morgan_Text_6:
 	.string "Oh! And if you have time, come back to\n"
 	.string "the lab and tell Oak what you saw. He'll\l"
 	.string "be interested in hearing the story\l"
-	.string "from you, too.\l"
-	.string "After all, I spent the whole time in\l"
-	.string "here...$"
+	.string "from you, too, given that you were out\l"
+	.string "there to see it.$"

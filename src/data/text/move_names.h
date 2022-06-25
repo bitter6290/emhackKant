@@ -758,8 +758,10 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_EERIE_SPELL] = _("Eerie Spell"),
     [MOVE_ROCKY_TERRAIN] = _("RockyTerrain"),
     [MOVE_DARK_TERRAIN] = _("Dark Terrain"),
-    [MOVE_PURE_WATER] = _("PureWater"),
+    [MOVE_PURE_WATER] = _("Pure Water"),
     [MOVE_VOLCANIC_FLOW] = _("VolcanicFlow"),
     [MOVE_SCORCHED_EARTH] = _("Scorch Earth"),
-    [MOVE_RESISTANCE] = _("ResistCharge"),
+    [MOVE_RESISTANCE] = _("Resistance"),
+    [MOVE_RAGING_FURY] = _("RagingFury"),
+    [MOVE_VICTORY_DANCE] = _("VictoryDance")
 };

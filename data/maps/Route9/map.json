@@ -32,6 +32,16 @@
       "direction": "up",
       "offset": 0,
       "map": "MAP_ROUTE10"
+    },
+    {
+      "direction": "right",
+      "offset": 44,
+      "map": "MAP_LAVENDER_COAST"
+    },
+    {
+      "direction": "down",
+      "offset": -80,
+      "map": "MAP_VERMILION_PLAIN"
     }
   ],
   "object_events": [

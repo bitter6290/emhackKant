@@ -658,7 +658,10 @@
     "Route9",
     "Route10",
     "Route11",
-    "Route12"
+    "Route12",
+    "Route13",
+    "Route14",
+    "Route15"
   ],
   "gMapGroup_NewOuter": [
     "ViridianPlainE",
@@ -689,7 +692,8 @@
     "SaffronDrylandsN",
     "LavenderCoast",
     "CeruleanWoods",
-    "VermilionPlain"
+    "VermilionPlain",
+    "FuchsiaSwamp"
   ],
   "gMapGroup_NewIndoor": [
     "PalletPlayerHouse_1F",
@@ -731,6 +735,7 @@
   "gMapGroup_NewOcean": [
     "CeladonSeaW",
     "CyclingRoadN",
-    "CeladonSeaE"
+    "CeladonSeaE",
+    "SEKantoSeaN"
   ]
 }

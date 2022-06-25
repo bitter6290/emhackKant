@@ -27,6 +27,21 @@
       "direction": "left",
       "offset": 0,
       "map": "MAP_VERMILION_PLAIN"
+    },
+    {
+      "direction": "down",
+      "offset": 0,
+      "map": "MAP_ROUTE12"
+    },
+    {
+      "direction": "right",
+      "offset": -8,
+      "map": "MAP_LAVENDER_COAST"
+    },
+    {
+      "direction": "up",
+      "offset": -56,
+      "map": "MAP_ROUTE8"
     }
   ],
   "object_events": [

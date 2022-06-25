@@ -3740,4 +3740,12 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_GLACIAL_LANCE - 1] = sGlacialLanceDescription,
     [MOVE_ASTRAL_BARRAGE - 1] = sAstralBarrageDescription,
     [MOVE_EERIE_SPELL - 1] = sEerieSpellDescription,
+    [MOVE_PURE_WATER - 1] = sNotDoneYetDescription,
+    [MOVE_VOLCANIC_FLOW - 1] = sNotDoneYetDescription,
+    [MOVE_DARK_TERRAIN - 1] = sNotDoneYetDescription,
+    [MOVE_ROCKY_TERRAIN - 1] = sNotDoneYetDescription,
+    [MOVE_RESISTANCE - 1] = sNotDoneYetDescription,
+    [MOVE_SCORCHED_EARTH - 1] = sNotDoneYetDescription,
+    [MOVE_RAGING_FURY - 1] = sNotDoneYetDescription,
+    [MOVE_VICTORY_DANCE - 1] = sNotDoneYetDescription,
 };

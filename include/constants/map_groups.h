@@ -618,6 +618,9 @@
 #define MAP_ROUTE10 (9 | (35 << 8))
 #define MAP_ROUTE11 (10 | (35 << 8))
 #define MAP_ROUTE12 (11 | (35 << 8))
+#define MAP_ROUTE13 (12 | (35 << 8))
+#define MAP_ROUTE14 (13 | (35 << 8))
+#define MAP_ROUTE15 (14 | (35 << 8))
 
 // gMapGroup_NewOuter
 #define MAP_VIRIDIAN_PLAIN_E   (0 | (36 << 8))
@@ -649,6 +652,7 @@
 #define MAP_LAVENDER_COAST     (26 | (36 << 8))
 #define MAP_CERULEAN_WOODS     (27 | (36 << 8))
 #define MAP_VERMILION_PLAIN    (28 | (36 << 8))
+#define MAP_FUCHSIA_SWAMP      (29 | (36 << 8))
 
 // gMapGroup_NewIndoor
 #define MAP_PALLET_PLAYER_HOUSE_1F      (0 | (37 << 8))
@@ -691,6 +695,7 @@
 #define MAP_CELADON_SEA_W  (0 | (43 << 8))
 #define MAP_CYCLING_ROAD_N (1 | (43 << 8))
 #define MAP_CELADON_SEA_E  (2 | (43 << 8))
+#define MAP_SEKANTO_SEA_N  (3 | (43 << 8))
 
 #define MAP_GROUPS_COUNT 44
 

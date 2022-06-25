@@ -1203,3 +1203,13 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/VermilionPlain/scripts.inc"
 
 	.include "data/maps/PewterPokeMart/scripts.inc"
+
+	.include "data/maps/Route13/scripts.inc"
+
+	.include "data/maps/Route14/scripts.inc"
+
+	.include "data/maps/Route15/scripts.inc"
+
+	.include "data/maps/FuchsiaSwamp/scripts.inc"
+
+	.include "data/maps/SEKantoSeaN/scripts.inc"

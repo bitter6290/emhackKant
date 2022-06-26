@@ -33,9 +33,10 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("Caleb"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = 0,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = ARRAY_COUNT(sParty_Sawyer1),
         .party = {.NoItemDefaultMoves = sParty_Sawyer1},
+        .scalingCoeff = 11
     },
 
     [TRAINER_GRUNT_AQUA_HIDEOUT_1] =
@@ -50,7 +51,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = ARRAY_COUNT(sParty_GruntAquaHideout1),
         .party = {.NoItemDefaultMoves = sParty_GruntAquaHideout1},
-        .scalingCoeff = 10
+        .scalingCoeff = 11
     },
 
     [TRAINER_GRUNT_AQUA_HIDEOUT_2] =
@@ -65,11 +66,66 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = ARRAY_COUNT(sParty_GruntAquaHideout2),
         .party = {.NoItemDefaultMoves = sParty_GruntAquaHideout2},
-        .scalingCoeff = 10
+        .scalingCoeff = 11
     },
 
     [TRAINER_GRUNT_AQUA_HIDEOUT_3] =
-        .scalingCoeff = 8
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = TRAINER_PIC_ARENA_TYCOON_GRETA,
+        .trainerName = _("Amy"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .partySize = ARRAY_COUNT(sParty_GruntAquaHideout3),
+        .party = {.NoItemDefaultMoves = sParty_GruntAquaHideout3},
+        .scalingCoeff = 11
+    },
+
+    [TRAINER_GRUNT_AQUA_HIDEOUT_4] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_CAMPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerName = _("Tim"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_GruntAquaHideout4),
+        .party = {.NoItemDefaultMoves = sParty_GruntAquaHideout4},
+        .scalingCoeff = 10
+    },
+
+    [TRAINER_GRUNT_SEAFLOOR_CAVERN_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_PICNICKER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerName = _("Charlotte"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_GruntSeafloorCavern1),
+        .party = {.NoItemDefaultMoves = sParty_GruntSeafloorCavern1},
+        .scalingCoeff = 10
+    },
+
+    [TRAINER_GRUNT_SEAFLOOR_CAVERN_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerName = _("GRUNT"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_GruntSeafloorCavern2),
+        .party = {.NoItemDefaultMoves = sParty_GruntSeafloorCavern2},
     },
 
     [TRAINER_GRUNT_SEAFLOOR_CAVERN_3] =

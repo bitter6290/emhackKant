@@ -71,6 +71,32 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntSeafloorCavern1[] =
     }
 };
 
+static const struct TrainerMonNoItemDefaultMoves sParty_GruntSeafloorCavern2[] = {
+    {
+    .iv = 70,
+    .lvl = 15,
+    .species = SPECIES_DIGLETT,
+    },
+    {
+    .iv = 80,
+    .lvl = 16,
+    .species = SPECIES_GEODUDE,
+    },
+    {
+    .iv = 75,
+    .lvl = 17,
+    .species = SPECIES_DEERLING_SPRING,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_GruntSeafloorCavern3[] = {
+    {
+    .iv = 0,
+    .lvl = 36,
+    .species = SPECIES_ZUBAT,
+    }
+};
+
 static const struct TrainerMonNoItemDefaultMoves sParty_Gabrielle1[] = {
     {
     .iv = 0,

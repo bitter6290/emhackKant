@@ -96,7 +96,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = ARRAY_COUNT(sParty_GruntAquaHideout4),
         .party = {.NoItemDefaultMoves = sParty_GruntAquaHideout4},
-        .scalingCoeff = 10
+        .scalingCoeff = 9
     },
 
     [TRAINER_GRUNT_SEAFLOOR_CAVERN_1] =
@@ -111,21 +111,22 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = ARRAY_COUNT(sParty_GruntSeafloorCavern1),
         .party = {.NoItemDefaultMoves = sParty_GruntSeafloorCavern1},
-        .scalingCoeff = 10
+        .scalingCoeff = 9
     },
 
     [TRAINER_GRUNT_SEAFLOOR_CAVERN_2] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_POKEFAN_M,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_POKEFAN_M,
+        .trainerName = _("Charles"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = ARRAY_COUNT(sParty_GruntSeafloorCavern2),
         .party = {.NoItemDefaultMoves = sParty_GruntSeafloorCavern2},
+        .scalingCoeff = 9
     },
 
     [TRAINER_GRUNT_SEAFLOOR_CAVERN_3] =

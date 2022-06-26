@@ -71,8 +71,9 @@ VFW_EventScript_BTim_Text_1:
 
 VFW_EventScript_BTim_Text_2:
 	.string "To tell the truth, I was lost in this\n"
-	.string "forest when I found this Pikachu. But I\l"
-	.string "haven't found another once since...$"
+	.string "forest when I found my Pikachu.\l"
+	.string "But I haven't found another once\l"
+	.string "since...$"
 
 VFW_GrottoMasterSign_Text_0:
 	.string "Even if there's only one way through an\n"

@@ -1,1 +1,9 @@
-mapscripts Route3_MapScripts {}
+mapscripts Route3_MapScripts {
+	MAP_SCRIPT_ON_LOAD: Route3_OnLoad
+}
+
+script Route3_OnLoad{
+if(var(VAR_STORY_PROGRESS)>15){
+setflag(FLAG_TEMP_3)
+}
+}

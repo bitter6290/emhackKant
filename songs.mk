@@ -2339,3 +2339,6 @@ $(MID_SUBDIR)/mus_hg_obtain_b_points.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_hg_win_minigame.s: %.s: %.mid
 	$(MID) $< $@ -E -R0 -G229 -V091 -p5
+
+$(MID_SUBDIR)/mus_game_corner_jazz_1.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G191 -v100 -

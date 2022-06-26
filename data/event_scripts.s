@@ -1213,3 +1213,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/FuchsiaSwamp/scripts.inc"
 
 	.include "data/maps/SEKantoSeaN/scripts.inc"
+
+	.include "data/maps/PewterCave3F/scripts.inc"

@@ -1,4 +1,6 @@
-mapscripts PalletOakLab_MapScripts{}
+mapscripts PalletOakLab_MapScripts{
+	MAP_SCRIPT_ON_LOAD: OakLab_OnLoad
+}
 
 
 script OakLab_OnLoad{

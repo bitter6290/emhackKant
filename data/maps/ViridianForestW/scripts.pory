@@ -16,7 +16,7 @@ end
 
 script VFW_EventScript_BTim{
 	trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_4,format("I'll show you the rare Pokémon I found last week!"),format("Stumbled into defeat..."))
-	msgbox(format("To tell the truth, I was lost in this forest when I found this Pikachu. But I haven't found another once since..."), MSGBOX_AUTOCLOSE)
+	msgbox(format("To tell the truth, I was lost in this forest when I found my Pikachu.\lBut I haven't found another once since..."), MSGBOX_AUTOCLOSE)
 	end
 }
 script VFW_GrottoMasterSign{

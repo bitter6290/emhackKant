@@ -1,4 +1,5 @@
 PalletOakLab_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, OakLab_OnLoad
 	.byte 0
 
 

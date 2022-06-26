@@ -5197,7 +5197,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_SKY_UPPERCUT] =
     {
         .effect = EFFECT_SKY_UPPERCUT,
-        .power = 85,
+        .power = 75,
         .type = TYPE_FIGHTING,
         .accuracy = 90,
         .pp = 15,
@@ -11763,5 +11763,18 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .priority = 0,
         .flags = FLAG_SNATCH_AFFECTED | FLAG_DANCE,
         .split = SPLIT_STATUS,
+    },
+    [MOVE_SOARING_KICK] =
+    {
+        .effect = EFFECT_SKY_UPPERCUT,
+        .power = 85,
+        .type = TYPE_FIGHTING,
+        .accuracy = 85,
+        .pp = 15,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_HIGH_CRIT | FLAG_DMG_IN_AIR,
+        .split = SPLIT_PHYSICAL,
     },
 };

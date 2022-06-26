@@ -44,7 +44,8 @@
     "gMapGroup_NewUrban",
     "gMapGroup_NewGym",
     "gMapGroup_NewCave",
-    "gMapGroup_NewOcean"
+    "gMapGroup_NewOcean",
+    "gMapGroup_NewMartCenter"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -699,14 +700,9 @@
     "PalletPlayerHouse_1F",
     "PalletPlayerHouseB1F",
     "PalletOakLab",
-    "ViridianPokemonCenter1F",
     "ViridianPlainEFarmInside",
-    "PewterPokemonCenter1F",
-    "ViridianPokeMart",
     "PewterMineSouthHouse",
-    "PewterMineNorthHouse",
-    "CeladonPokemonCenter1F",
-    "PewterPokeMart"
+    "PewterMineNorthHouse"
   ],
   "gMapGroup_NewGrotto": [
     "GrottoMaster"
@@ -730,12 +726,20 @@
   ],
   "gMapGroup_NewCave": [
     "PewterCave1F",
-    "PewterCave2F"
+    "PewterCave2F",
+    "PewterCave3F"
   ],
   "gMapGroup_NewOcean": [
     "CeladonSeaW",
     "CyclingRoadN",
     "CeladonSeaE",
     "SEKantoSeaN"
+  ],
+  "gMapGroup_NewMartCenter": [
+    "ViridianPokemonCenter1F",
+    "ViridianPokeMart",
+    "PewterPokemonCenter1F",
+    "PewterPokeMart",
+    "CeladonPokemonCenter1F"
   ]
 }

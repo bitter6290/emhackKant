@@ -9,6 +9,12 @@ setflag(FLAG_TEMP_3)
 end
 }
 
+script Route4_Artist{
+lock
+release
+end
+}
+
 script Route4_Hiker{
 lock
 msgbox(format("Over or through, over or through, over or through..."))

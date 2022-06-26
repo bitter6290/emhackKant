@@ -658,14 +658,9 @@
 #define MAP_PALLET_PLAYER_HOUSE_1F      (0 | (37 << 8))
 #define MAP_PALLET_PLAYER_HOUSE_B1F     (1 | (37 << 8))
 #define MAP_PALLET_OAK_LAB              (2 | (37 << 8))
-#define MAP_VIRIDIAN_POKEMON_CENTER1F   (3 | (37 << 8))
-#define MAP_VIRIDIAN_PLAIN_EFARM_INSIDE (4 | (37 << 8))
-#define MAP_PEWTER_POKEMON_CENTER1F     (5 | (37 << 8))
-#define MAP_VIRIDIAN_POKE_MART          (6 | (37 << 8))
-#define MAP_PEWTER_MINE_SOUTH_HOUSE     (7 | (37 << 8))
-#define MAP_PEWTER_MINE_NORTH_HOUSE     (8 | (37 << 8))
-#define MAP_CELADON_POKEMON_CENTER1F    (9 | (37 << 8))
-#define MAP_PEWTER_POKE_MART            (10 | (37 << 8))
+#define MAP_VIRIDIAN_PLAIN_EFARM_INSIDE (3 | (37 << 8))
+#define MAP_PEWTER_MINE_SOUTH_HOUSE     (4 | (37 << 8))
+#define MAP_PEWTER_MINE_NORTH_HOUSE     (5 | (37 << 8))
 
 // gMapGroup_NewGrotto
 #define MAP_GROTTO_MASTER (0 | (38 << 8))
@@ -690,6 +685,7 @@
 // gMapGroup_NewCave
 #define MAP_PEWTER_CAVE1F (0 | (42 << 8))
 #define MAP_PEWTER_CAVE2F (1 | (42 << 8))
+#define MAP_PEWTER_CAVE3F (2 | (42 << 8))
 
 // gMapGroup_NewOcean
 #define MAP_CELADON_SEA_W  (0 | (43 << 8))
@@ -697,6 +693,13 @@
 #define MAP_CELADON_SEA_E  (2 | (43 << 8))
 #define MAP_SEKANTO_SEA_N  (3 | (43 << 8))
 
-#define MAP_GROUPS_COUNT 44
+// gMapGroup_NewMartCenter
+#define MAP_VIRIDIAN_POKEMON_CENTER1F (0 | (44 << 8))
+#define MAP_VIRIDIAN_POKE_MART        (1 | (44 << 8))
+#define MAP_PEWTER_POKEMON_CENTER1F   (2 | (44 << 8))
+#define MAP_PEWTER_POKE_MART          (3 | (44 << 8))
+#define MAP_CELADON_POKEMON_CENTER1F  (4 | (44 << 8))
+
+#define MAP_GROUPS_COUNT 45
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

@@ -415,6 +415,8 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectDarkTerrain			  @ EFFECT_DARK_TERRAIN
 	.4byte BattleScript_EffectResistance			  @ EFFECT_RESISTANCE
 	.4byte BattleScript_EffectPureWater				  @ EFFECT_PURE_WATER
+	.4byte BattleScript_EffectVictoryDance			  @ EFFECT_VICTORY_DANCE
+	.4byte BattleScript_EffectGust					  @ EFFECT_SKY_UPPERCUT
 
 BattleScript_EffectSteelBeam::
 	attackcanceler
@@ -9739,5 +9741,7 @@ BattleScript_VictoryDanceTrySpeed::
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_VictoryDanceEnd::
 	goto BattleScript_MoveEnd
+	
+BattleScript_EffectSkyUppercut:
 
 	

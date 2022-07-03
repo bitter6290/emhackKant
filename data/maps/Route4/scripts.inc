@@ -14,6 +14,12 @@ Route4_OnLoad_2:
 	goto Route4_OnLoad_1
 
 
+Route4_Artist::
+	lock
+	release
+	end
+
+
 Route4_Hiker::
 	lock
 	msgbox Route4_Hiker_Text_0

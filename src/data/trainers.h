@@ -117,7 +117,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_GRUNT_SEAFLOOR_CAVERN_2] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_POKEFAN_M,
+        .trainerClass = TRAINER_CLASS_POKEFAN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_POKEFAN_M,
         .trainerName = _("Charles"),

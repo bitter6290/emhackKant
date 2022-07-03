@@ -12,3 +12,14 @@ Route3_OnLoad_1:
 	setflag FLAG_TEMP_3
 	return
 
+
+Route3_Grunts::
+	lock
+	msgbox Route3_EarlyGrunt
+	release
+	end
+
+
+Route3_EarlyGrunt::
+	.string "Don't even try to get through! We have\n"
+	.string "this place surrounded!$"

@@ -683,15 +683,17 @@
 #define MAP_VIRIDIAN_GYM_1F (0 | (41 << 8))
 
 // gMapGroup_NewCave
-#define MAP_PEWTER_CAVE1F (0 | (42 << 8))
-#define MAP_PEWTER_CAVE2F (1 | (42 << 8))
-#define MAP_PEWTER_CAVE3F (2 | (42 << 8))
+#define MAP_PEWTER_CAVE1F    (0 | (42 << 8))
+#define MAP_PEWTER_CAVE2F    (1 | (42 << 8))
+#define MAP_PEWTER_CAVE3F    (2 | (42 << 8))
+#define MAP_MT_MOON_INSIDE1F (3 | (42 << 8))
 
 // gMapGroup_NewOcean
 #define MAP_CELADON_SEA_W  (0 | (43 << 8))
 #define MAP_CYCLING_ROAD_N (1 | (43 << 8))
 #define MAP_CELADON_SEA_E  (2 | (43 << 8))
 #define MAP_SEKANTO_SEA_N  (3 | (43 << 8))
+#define MAP_SEKANTO_SEA_C  (4 | (43 << 8))
 
 // gMapGroup_NewMartCenter
 #define MAP_VIRIDIAN_POKEMON_CENTER1F (0 | (44 << 8))

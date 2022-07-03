@@ -1598,6 +1598,7 @@ SECTIONS {
         sound/songs/midi/mus_hg_obtain_castle_points.o(.rodata);
         sound/songs/midi/mus_hg_obtain_b_points.o(.rodata);
         sound/songs/midi/mus_hg_win_minigame.o(.rodata);
+        sound/songs/midi/mus_game_corner_jazz_1.o(.rodata);
     } =0
 
     lib_rodata :

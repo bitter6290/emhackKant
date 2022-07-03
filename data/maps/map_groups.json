@@ -727,13 +727,15 @@
   "gMapGroup_NewCave": [
     "PewterCave1F",
     "PewterCave2F",
-    "PewterCave3F"
+    "PewterCave3F",
+    "MtMoonInside1F"
   ],
   "gMapGroup_NewOcean": [
     "CeladonSeaW",
     "CyclingRoadN",
     "CeladonSeaE",
-    "SEKantoSeaN"
+    "SEKantoSeaN",
+    "SEKantoSeaC"
   ],
   "gMapGroup_NewMartCenter": [
     "ViridianPokemonCenter1F",

@@ -13220,6 +13220,105 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_SAFFRON_DRYLANDS",
+          "base_label": "gSaffronDrylands0",
+          "land_mons": {
+            "encounter_rate": 12,
+            "mons": [
+              {
+                "min_level": 16,
+                "max_level": 20,
+                "species": "SPECIES_SANDSHREW"
+              },
+              {
+                "min_level": 16,
+                "max_level": 20,
+                "species": "SPECIES_ZIGZAGOON"
+              },
+              {
+                "min_level": 15,
+                "max_level": 20,
+                "species": "SPECIES_FLETCHLING"
+              },
+              {
+                "min_level": 15,
+                "max_level": 19,
+                "species": "SPECIES_EKANS"
+              },
+              {
+                "min_level": 15,
+                "max_level": 19,
+                "species": "SPECIES_TANGELA"
+              },
+              {
+                "min_level": 15,
+                "max_level": 19,
+                "species": "SPECIES_GEODUDE"
+              },
+              {
+                "min_level": 14,
+                "max_level": 18,
+                "species": "SPECIES_DEDENNE"
+              },
+              {
+                "min_level": 15,
+                "max_level": 19,
+                "species": "SPECIES_GLIGAR"
+              },
+              {
+                "min_level": 16,
+                "max_level": 21,
+                "species": "SPECIES_ZIGZAGOON"
+              },
+              {
+                "min_level": 16,
+                "max_level": 21,
+                "species": "SPECIES_SANDSHREW"
+              },
+              {
+                "min_level": 17,
+                "max_level": 25,
+                "species": "SPECIES_GRAVELER"
+              },
+              {
+                "min_level": 20,
+                "max_level": 22,
+                "species": "SPECIES_GLIGAR"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          }
         }
       ]
     },

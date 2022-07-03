@@ -41,8 +41,8 @@ elif(var(VAR_STORY_PROGRESS)<15){
 msgbox(format("I have nothing more for you right now... These last five years have been hard even for me.\lBut if you fill out the pages of the Pokédex, it will benefit you and me alike. Your new research could help me make marvels again."))
 }
 elif(var(VAR_STORY_PROGRESS)==15){
-msgbox(format("Ah, {PLAYER}! I'm glad to see you here in one piece! When Morgan told me about the explosion, I was worried sick.\lNeedless to say, I had no idea I'd be sending you into the middle of a brawl. It was shameful of me to be so careless."))
-msgbox(format("At the same time, however, I must know what happened in Pewter City. If it is not too much to ask, I must request that you tell me all that you saw."))
+msgbox(format("Ah, {PLAYER}! What a relief to see you! When Morgan told me about the explosion, I almost fainted in fear.\lI'm glad to see that you made it out in one piece."))
+msgbox(format("You must tell me everything. "))
 delay(45)
 playse(SE_PIN)
 applymovement(4,Exclam)

@@ -5227,7 +5227,7 @@
       "width": 24,
       "height": 60,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/Route13/border.bin",
       "blockdata_filepath": "data/layouts/Route13/map.bin"
     },
@@ -5247,7 +5247,7 @@
       "width": 64,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/Route15/border.bin",
       "blockdata_filepath": "data/layouts/Route15/map.bin"
     },
@@ -5257,7 +5257,7 @@
       "width": 64,
       "height": 60,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/FuchsiaSwamp/border.bin",
       "blockdata_filepath": "data/layouts/FuchsiaSwamp/map.bin"
     },
@@ -5280,6 +5280,26 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/PewterCave3F/border.bin",
       "blockdata_filepath": "data/layouts/PewterCave3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEKANTO_SEA_C",
+      "name": "SEKantoSeaC_Layout",
+      "width": 84,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/SEKantoSeaC/border.bin",
+      "blockdata_filepath": "data/layouts/SEKantoSeaC/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_MOON_INSIDE1F",
+      "name": "MtMoonInside1F_Layout",
+      "width": 80,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/MtMoonInside1F/border.bin",
+      "blockdata_filepath": "data/layouts/MtMoonInside1F/map.bin"
     }
   ]
 }

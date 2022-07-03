@@ -1215,3 +1215,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SEKantoSeaN/scripts.inc"
 
 	.include "data/maps/PewterCave3F/scripts.inc"
+
+	.include "data/maps/SEKantoSeaC/scripts.inc"
+
+	.include "data/maps/MtMoonInside1F/scripts.inc"

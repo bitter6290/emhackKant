@@ -9742,6 +9742,5 @@ BattleScript_VictoryDanceTrySpeed::
 BattleScript_VictoryDanceEnd::
 	goto BattleScript_MoveEnd
 	
-BattleScript_EffectSkyUppercut:
 
 	

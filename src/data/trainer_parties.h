@@ -85,7 +85,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntSeafloorCavern2[] =
     {
     .iv = 75,
     .lvl = 17,
-    .species = SPECIES_DEERLING_SPRING,
+    .species = SPECIES_DEERLING_AUTUMN,
     }
 };
 

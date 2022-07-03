@@ -7,3 +7,15 @@ if(var(VAR_STORY_PROGRESS)>15){
 setflag(FLAG_TEMP_3)
 }
 }
+
+script Route3_Grunts{
+lock
+msgbox(Route3_EarlyGrunt)
+release
+end
+}
+
+
+text Route3_EarlyGrunt{
+format("Don't even try to get through! We have this place surrounded!")
+}

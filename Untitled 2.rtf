@@ -1,0 +1,847 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 const u32 gMonStillFrontPic_LitwickKanto[] = INCBIN_U32("graphics/pokemon/kantonian_litwick/front.4bpp.lz");\
+const u32 gMonPalette_LitwickKanto[] = INCBIN_U32("graphics/pokemon/kantonian_litwick/normal.gbapal.lz");\
+const u32 gMonBackPic_LitwickKanto[] = INCBIN_U32("graphics/pokemon/kantonian_litwick/back.4bpp.lz");\
+const u32 gMonShinyPalette_LitwickKanto[] = INCBIN_U32("graphics/pokemon/kantonian_litwick/shiny.gbapal.lz");\
+const u8 gMonIcon_LitwickKanto[] = INCBIN_U8("graphics/pokemon/kantonian_litwick/icon.4bpp");\
+const u8 gMonFootprint_LitwickKanto[] = INCBIN_U8("graphics/pokemon/kantonian_litwick/footprint.1bpp");\
+const u32 gMonStillFrontPic_LampentKanto[] = INCBIN_U32("graphics/pokemon/kantonian_lampent/front.4bpp.lz");\
+const u32 gMonPalette_LampentKanto[] = INCBIN_U32("graphics/pokemon/kantonian_lampent/normal.gbapal.lz");\
+const u32 gMonBackPic_LampentKanto[] = INCBIN_U32("graphics/pokemon/kantonian_lampent/back.4bpp.lz");\
+const u32 gMonShinyPalette_LampentKanto[] = INCBIN_U32("graphics/pokemon/kantonian_lampent/shiny.gbapal.lz");\
+const u8 gMonIcon_LampentKanto[] = INCBIN_U8("graphics/pokemon/kantonian_lampent/icon.4bpp");\
+const u8 gMonFootprint_LampentKanto[] = INCBIN_U8("graphics/pokemon/kantonian_lampent/footprint.1bpp");\
+const u32 gMonStillFrontPic_ChandelureKanto[] = INCBIN_U32("graphics/pokemon/kantonian_chandelure/front.4bpp.lz");\
+const u32 gMonPalette_ChandelureKanto[] = INCBIN_U32("graphics/pokemon/kantonian_chandelure/normal.gbapal.lz");\
+const u32 gMonBackPic_ChandelureKanto[] = INCBIN_U32("graphics/pokemon/kantonian_chandelure/back.4bpp.lz");\
+const u32 gMonShinyPalette_ChandelureKanto[] = INCBIN_U32("graphics/pokemon/kantonian_chandelure/shiny.gbapal.lz");\
+const u8 gMonIcon_ChandelureKanto[] = INCBIN_U8("graphics/pokemon/kantonian_chandelure/icon.4bpp");\
+const u8 gMonFootprint_ChandelureKanto[] = INCBIN_U8("graphics/pokemon/kantonian_chandelure/footprint.1bpp");\
+const u32 gMonStillFrontPic_SandileKanto[] = INCBIN_U32("graphics/pokemon/kantonian_sandile/front.4bpp.lz");\
+const u32 gMonPalette_SandileKanto[] = INCBIN_U32("graphics/pokemon/kantonian_sandile/normal.gbapal.lz");\
+const u32 gMonBackPic_SandileKanto[] = INCBIN_U32("graphics/pokemon/kantonian_sandile/back.4bpp.lz");\
+const u32 gMonShinyPalette_SandileKanto[] = INCBIN_U32("graphics/pokemon/kantonian_sandile/shiny.gbapal.lz");\
+const u8 gMonIcon_SandileKanto[] = INCBIN_U8("graphics/pokemon/kantonian_sandile/icon.4bpp");\
+const u8 gMonFootprint_SandileKanto[] = INCBIN_U8("graphics/pokemon/kantonian_sandile/footprint.1bpp");\
+const u32 gMonStillFrontPic_KrokorokKanto[] = INCBIN_U32("graphics/pokemon/kantonian_krokorok/front.4bpp.lz");\
+const u32 gMonPalette_KrokorokKanto[] = INCBIN_U32("graphics/pokemon/kantonian_krokorok/normal.gbapal.lz");\
+const u32 gMonBackPic_KrokorokKanto[] = INCBIN_U32("graphics/pokemon/kantonian_krokorok/back.4bpp.lz");\
+const u32 gMonShinyPalette_KrokorokKanto[] = INCBIN_U32("graphics/pokemon/kantonian_krokorok/shiny.gbapal.lz");\
+const u8 gMonIcon_KrokorokKanto[] = INCBIN_U8("graphics/pokemon/kantonian_krokorok/icon.4bpp");\
+const u8 gMonFootprint_KrokorokKanto[] = INCBIN_U8("graphics/pokemon/kantonian_krokorok/footprint.1bpp");\
+const u32 gMonStillFrontPic_Moradile[] = INCBIN_U32("graphics/pokemon/moradile/front.4bpp.lz");\
+const u32 gMonPalette_Moradile[] = INCBIN_U32("graphics/pokemon/moradile/normal.gbapal.lz");\
+const u32 gMonBackPic_Moradile[] = INCBIN_U32("graphics/pokemon/moradile/back.4bpp.lz");\
+const u32 gMonShinyPalette_Moradile[] = INCBIN_U32("graphics/pokemon/moradile/shiny.gbapal.lz");\
+const u8 gMonIcon_Moradile[] = INCBIN_U8("graphics/pokemon/moradile/icon.4bpp");\
+const u8 gMonFootprint_Moradile[] = INCBIN_U8("graphics/pokemon/moradile/footprint.1bpp");\
+const u32 gMonStillFrontPic_TimburrKanto[] = INCBIN_U32("graphics/pokemon/kantonian_timburr/front.4bpp.lz");\
+const u32 gMonPalette_TimburrKanto[] = INCBIN_U32("graphics/pokemon/kantonian_timburr/normal.gbapal.lz");\
+const u32 gMonBackPic_TimburrKanto[] = INCBIN_U32("graphics/pokemon/kantonian_timburr/back.4bpp.lz");\
+const u32 gMonShinyPalette_TimburrKanto[] = INCBIN_U32("graphics/pokemon/kantonian_timburr/shiny.gbapal.lz");\
+const u8 gMonIcon_TimburrKanto[] = INCBIN_U8("graphics/pokemon/kantonian_timburr/icon.4bpp");\
+const u8 gMonFootprint_TimburrKanto[] = INCBIN_U8("graphics/pokemon/kantonian_timburr/footprint.1bpp");\
+const u32 gMonStillFrontPic_GurdurrKanto[] = INCBIN_U32("graphics/pokemon/kantonian_gurdurr/front.4bpp.lz");\
+const u32 gMonPalette_GurdurrKanto[] = INCBIN_U32("graphics/pokemon/kantonian_gurdurr/normal.gbapal.lz");\
+const u32 gMonBackPic_GurdurrKanto[] = INCBIN_U32("graphics/pokemon/kantonian_gurdurr/back.4bpp.lz");\
+const u32 gMonShinyPalette_GurdurrKanto[] = INCBIN_U32("graphics/pokemon/kantonian_gurdurr/shiny.gbapal.lz");\
+const u8 gMonIcon_GurdurrKanto[] = INCBIN_U8("graphics/pokemon/kantonian_gurdurr/icon.4bpp");\
+const u8 gMonFootprint_GurdurrKanto[] = INCBIN_U8("graphics/pokemon/kantonian_gurdurr/footprint.1bpp");\
+const u32 gMonStillFrontPic_ConkeldurrKanto[] = INCBIN_U32("graphics/pokemon/kantonian_conkeldurr/front.4bpp.lz");\
+const u32 gMonPalette_ConkeldurrKanto[] = INCBIN_U32("graphics/pokemon/kantonian_conkeldurr/normal.gbapal.lz");\
+const u32 gMonBackPic_ConkeldurrKanto[] = INCBIN_U32("graphics/pokemon/kantonian_conkeldurr/back.4bpp.lz");\
+const u32 gMonShinyPalette_ConkeldurrKanto[] = INCBIN_U32("graphics/pokemon/kantonian_conkeldurr/shiny.gbapal.lz");\
+const u8 gMonIcon_ConkeldurrKanto[] = INCBIN_U8("graphics/pokemon/kantonian_conkeldurr/icon.4bpp");\
+const u8 gMonFootprint_ConkeldurrKanto[] = INCBIN_U8("graphics/pokemon/kantonian_conkeldurr/footprint.1bpp");\
+const u32 gMonStillFrontPic_TorkoalKanto[] = INCBIN_U32("graphics/pokemon/kantonian_torkoal/front.4bpp.lz");\
+const u32 gMonPalette_TorkoalKanto[] = INCBIN_U32("graphics/pokemon/kantonian_torkoal/normal.gbapal.lz");\
+const u32 gMonBackPic_TorkoalKanto[] = INCBIN_U32("graphics/pokemon/kantonian_torkoal/back.4bpp.lz");\
+const u32 gMonShinyPalette_TorkoalKanto[] = INCBIN_U32("graphics/pokemon/kantonian_torkoal/shiny.gbapal.lz");\
+const u8 gMonIcon_TorkoalKanto[] = INCBIN_U8("graphics/pokemon/kantonian_torkoal/icon.4bpp");\
+const u8 gMonFootprint_TorkoalKanto[] = INCBIN_U8("graphics/pokemon/kantonian_torkoal/footprint.1bpp");\
+const u32 gMonStillFrontPic_SliggooHisui[] = INCBIN_U32("graphics/pokemon/hisuian_sliggoo/front.4bpp.lz");\
+const u32 gMonPalette_SliggooHisui[] = INCBIN_U32("graphics/pokemon/hisuian_sliggoo/normal.gbapal.lz");\
+const u32 gMonBackPic_SliggooHisui[] = INCBIN_U32("graphics/pokemon/hisuian_sliggoo/back.4bpp.lz");\
+const u32 gMonShinyPalette_SliggooHisui[] = INCBIN_U32("graphics/pokemon/hisuian_sliggoo/shiny.gbapal.lz");\
+const u8 gMonIcon_SliggooHisui[] = INCBIN_U8("graphics/pokemon/hisuian_sliggoo/icon.4bpp");\
+const u8 gMonFootprint_SliggooHisui[] = INCBIN_U8("graphics/pokemon/hisuian_sliggoo/footprint.1bpp");\
+const u32 gMonStillFrontPic_GoodraHisui[] = INCBIN_U32("graphics/pokemon/hisuian_goodra/front.4bpp.lz");\
+const u32 gMonPalette_GoodraHisui[] = INCBIN_U32("graphics/pokemon/hisuian_goodra/normal.gbapal.lz");\
+const u32 gMonBackPic_GoodraHisui[] = INCBIN_U32("graphics/pokemon/hisuian_goodra/back.4bpp.lz");\
+const u32 gMonShinyPalette_GoodraHisui[] = INCBIN_U32("graphics/pokemon/hisuian_goodra/shiny.gbapal.lz");\
+const u8 gMonIcon_GoodraHisui[] = INCBIN_U8("graphics/pokemon/hisuian_goodra/icon.4bpp");\
+const u8 gMonFootprint_GoodraHisui[] = INCBIN_U8("graphics/pokemon/hisuian_goodra/footprint.1bpp");\
+const u32 gMonStillFrontPic_GrowlitheHisui[] = INCBIN_U32("graphics/pokemon/hisuian_growlithe/front.4bpp.lz");\
+const u32 gMonPalette_GrowlitheHisui[] = INCBIN_U32("graphics/pokemon/hisuian_growlithe/normal.gbapal.lz");\
+const u32 gMonBackPic_GrowlitheHisui[] = INCBIN_U32("graphics/pokemon/hisuian_growlithe/back.4bpp.lz");\
+const u32 gMonShinyPalette_GrowlitheHisui[] = INCBIN_U32("graphics/pokemon/hisuian_growlithe/shiny.gbapal.lz");\
+const u8 gMonIcon_GrowlitheHisui[] = INCBIN_U8("graphics/pokemon/hisuian_growlithe/icon.4bpp");\
+const u8 gMonFootprint_GrowlitheHisui[] = INCBIN_U8("graphics/pokemon/hisuian_growlithe/footprint.1bpp");\
+const u32 gMonStillFrontPic_ArcanineHisui[] = INCBIN_U32("graphics/pokemon/hisuian_arcanine/front.4bpp.lz");\
+const u32 gMonPalette_ArcanineHisui[] = INCBIN_U32("graphics/pokemon/hisuian_arcanine/normal.gbapal.lz");\
+const u32 gMonBackPic_ArcanineHisui[] = INCBIN_U32("graphics/pokemon/hisuian_arcanine/back.4bpp.lz");\
+const u32 gMonShinyPalette_ArcanineHisui[] = INCBIN_U32("graphics/pokemon/hisuian_arcanine/shiny.gbapal.lz");\
+const u8 gMonIcon_ArcanineHisui[] = INCBIN_U8("graphics/pokemon/hisuian_arcanine/icon.4bpp");\
+const u8 gMonFootprint_ArcanineHisui[] = INCBIN_U8("graphics/pokemon/hisuian_arcanine/footprint.1bpp");\
+const u32 gMonStillFrontPic_Kricketon[] = INCBIN_U32("graphics/pokemon/kricketon/front.4bpp.lz");\
+const u32 gMonPalette_Kricketon[] = INCBIN_U32("graphics/pokemon/kricketon/normal.gbapal.lz");\
+const u32 gMonBackPic_Kricketon[] = INCBIN_U32("graphics/pokemon/kricketon/back.4bpp.lz");\
+const u32 gMonShinyPalette_Kricketon[] = INCBIN_U32("graphics/pokemon/kricketon/shiny.gbapal.lz");\
+const u8 gMonIcon_Kricketon[] = INCBIN_U8("graphics/pokemon/kricketon/icon.4bpp");\
+const u8 gMonFootprint_Kricketon[] = INCBIN_U8("graphics/pokemon/kricketon/footprint.1bpp");\
+const u32 gMonStillFrontPic_Krickallous[] = INCBIN_U32("graphics/pokemon/krickallous/front.4bpp.lz");\
+const u32 gMonPalette_Krickallous[] = INCBIN_U32("graphics/pokemon/krickallous/normal.gbapal.lz");\
+const u32 gMonBackPic_Krickallous[] = INCBIN_U32("graphics/pokemon/krickallous/back.4bpp.lz");\
+const u32 gMonShinyPalette_Krickallous[] = INCBIN_U32("graphics/pokemon/krickallous/shiny.gbapal.lz");\
+const u8 gMonIcon_Krickallous[] = INCBIN_U8("graphics/pokemon/krickallous/icon.4bpp");\
+const u8 gMonFootprint_Krickallous[] = INCBIN_U8("graphics/pokemon/krickallous/footprint.1bpp");\
+const u32 gMonStillFrontPic_Ledenna[] = INCBIN_U32("graphics/pokemon/ledenna/front.4bpp.lz");\
+const u32 gMonPalette_Ledenna[] = INCBIN_U32("graphics/pokemon/ledenna/normal.gbapal.lz");\
+const u32 gMonBackPic_Ledenna[] = INCBIN_U32("graphics/pokemon/ledenna/back.4bpp.lz");\
+const u32 gMonShinyPalette_Ledenna[] = INCBIN_U32("graphics/pokemon/ledenna/shiny.gbapal.lz");\
+const u8 gMonIcon_Ledenna[] = INCBIN_U8("graphics/pokemon/ledenna/icon.4bpp");\
+const u8 gMonFootprint_Ledenna[] = INCBIN_U8("graphics/pokemon/ledenna/footprint.1bpp");\
+const u32 gMonStillFrontPic_Fauvantic[] = INCBIN_U32("graphics/pokemon/fauvantic/front.4bpp.lz");\
+const u32 gMonPalette_Fauvantic[] = INCBIN_U32("graphics/pokemon/fauvantic/normal.gbapal.lz");\
+const u32 gMonBackPic_Fauvantic[] = INCBIN_U32("graphics/pokemon/fauvantic/back.4bpp.lz");\
+const u32 gMonShinyPalette_Fauvantic[] = INCBIN_U32("graphics/pokemon/fauvantic/shiny.gbapal.lz");\
+const u8 gMonIcon_Fauvantic[] = INCBIN_U8("graphics/pokemon/fauvantic/icon.4bpp");\
+const u8 gMonFootprint_Fauvantic[] = INCBIN_U8("graphics/pokemon/fauvantic/footprint.1bpp");\
+const u32 gMonStillFrontPic_Florestic[] = INCBIN_U32("graphics/pokemon/florestic/front.4bpp.lz");\
+const u32 gMonPalette_Florestic[] = INCBIN_U32("graphics/pokemon/florestic/normal.gbapal.lz");\
+const u32 gMonBackPic_Florestic[] = INCBIN_U32("graphics/pokemon/florestic/back.4bpp.lz");\
+const u32 gMonShinyPalette_Florestic[] = INCBIN_U32("graphics/pokemon/florestic/shiny.gbapal.lz");\
+const u8 gMonIcon_Florestic[] = INCBIN_U8("graphics/pokemon/florestic/icon.4bpp");\
+const u8 gMonFootprint_Florestic[] = INCBIN_U8("graphics/pokemon/florestic/footprint.1bpp");\
+const u32 gMonStillFrontPic_Terrantic[] = INCBIN_U32("graphics/pokemon/terrantic/front.4bpp.lz");\
+const u32 gMonPalette_Terrantic[] = INCBIN_U32("graphics/pokemon/terrantic/normal.gbapal.lz");\
+const u32 gMonBackPic_Terrantic[] = INCBIN_U32("graphics/pokemon/terrantic/back.4bpp.lz");\
+const u32 gMonShinyPalette_Terrantic[] = INCBIN_U32("graphics/pokemon/terrantic/shiny.gbapal.lz");\
+const u8 gMonIcon_Terrantic[] = INCBIN_U8("graphics/pokemon/terrantic/icon.4bpp");\
+const u8 gMonFootprint_Terrantic[] = INCBIN_U8("graphics/pokemon/terrantic/footprint.1bpp");\
+const u32 gMonStillFrontPic_Aureatic[] = INCBIN_U32("graphics/pokemon/aureatic/front.4bpp.lz");\
+const u32 gMonPalette_Aureatic[] = INCBIN_U32("graphics/pokemon/aureatic/normal.gbapal.lz");\
+const u32 gMonBackPic_Aureatic[] = INCBIN_U32("graphics/pokemon/aureatic/back.4bpp.lz");\
+const u32 gMonShinyPalette_Aureatic[] = INCBIN_U32("graphics/pokemon/aureatic/shiny.gbapal.lz");\
+const u8 gMonIcon_Aureatic[] = INCBIN_U8("graphics/pokemon/aureatic/icon.4bpp");\
+const u8 gMonFootprint_Aureatic[] = INCBIN_U8("graphics/pokemon/aureatic/footprint.1bpp");\
+const u32 gMonStillFrontPic_Aloobat[] = INCBIN_U32("graphics/pokemon/aloobat/front.4bpp.lz");\
+const u32 gMonPalette_Aloobat[] = INCBIN_U32("graphics/pokemon/aloobat/normal.gbapal.lz");\
+const u32 gMonBackPic_Aloobat[] = INCBIN_U32("graphics/pokemon/aloobat/back.4bpp.lz");\
+const u32 gMonShinyPalette_Aloobat[] = INCBIN_U32("graphics/pokemon/aloobat/shiny.gbapal.lz");\
+const u8 gMonIcon_Aloobat[] = INCBIN_U8("graphics/pokemon/aloobat/icon.4bpp");\
+const u8 gMonFootprint_Aloobat[] = INCBIN_U8("graphics/pokemon/aloobat/footprint.1bpp");\
+const u32 gMonStillFrontPic_MegaArbok[] = INCBIN_U32("graphics/pokemon/mega_arbok/front.4bpp.lz");\
+const u32 gMonPalette_MegaArbok[] = INCBIN_U32("graphics/pokemon/mega_arbok/normal.gbapal.lz");\
+const u32 gMonBackPic_MegaArbok[] = INCBIN_U32("graphics/pokemon/mega_arbok/back.4bpp.lz");\
+const u32 gMonShinyPalette_MegaArbok[] = INCBIN_U32("graphics/pokemon/mega_arbok/shiny.gbapal.lz");\
+const u8 gMonIcon_MegaArbok[] = INCBIN_U8("graphics/pokemon/mega_arbok/icon.4bpp");\
+const u8 gMonFootprint_MegaArbok[] = INCBIN_U8("graphics/pokemon/mega_arbok/footprint.1bpp");\
+\
+For front_pic_anims.h\
+ANIM_CMD(LITWICK_KANTO),\
+ANIM_CMD(LAMPENT_KANTO),\
+ANIM_CMD(CHANDELURE_KANTO),\
+ANIM_CMD(SANDILE_KANTO),\
+ANIM_CMD(KROKOROK_KANTO),\
+ANIM_CMD(MORADILE),\
+ANIM_CMD(TIMBURR_KANTO),\
+ANIM_CMD(GURDURR_KANTO),\
+ANIM_CMD(CONKELDURR_KANTO),\
+ANIM_CMD(TORKOAL_KANTO),\
+ANIM_CMD(SLIGGOO_HISUI),\
+ANIM_CMD(GOODRA_HISUI),\
+ANIM_CMD(GROWLITHE_HISUI),\
+ANIM_CMD(ARCANINE_HISUI),\
+ANIM_CMD(KRICKETON),\
+ANIM_CMD(KRICKALLOUS),\
+ANIM_CMD(LEDENNA),\
+ANIM_CMD(FAUVANTIC),\
+ANIM_CMD(FLORESTIC),\
+ANIM_CMD(TERRANTIC),\
+ANIM_CMD(AUREATIC),\
+ANIM_CMD(ALOOBAT),\
+ANIM_CMD(ARBOK_MEGA),\
+\
+\
+For front_pic_coordinates.h\
+     [SPECIES_LITWICK_KANTO] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_LAMPENT_KANTO] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_CHANDELURE_KANTO] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_SANDILE_KANTO] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_KROKOROK_KANTO] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_MORADILE] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_TIMBURR_KANTO] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_GURDURR_KANTO] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_CONKELDURR_KANTO] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_TORKOAL_KANTO] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_SLIGGOO_HISUI] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_GOODRA_HISUI] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_GROWLITHE_HISUI] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_ARCANINE_HISUI] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_KRICKETON] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_KRICKALLOUS] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_LEDENNA] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_FAUVANTIC] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_FLORESTIC] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_TERRANTIC] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_AUREATIC] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_ALOOBAT] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+     [SPECIES_ARBOK_MEGA] =\
+     \{\
+     .size = MON_COORDS_SIZE(64,64),\
+     .y_offset = 6,\
+     \},\
+\
+\
+For front_pic_table.h\
+     SPECIES_SPRITE(LITWICK_KANTO, gMonFrontPic_LitwickKanto),\
+     SPECIES_SPRITE(LAMPENT_KANTO, gMonFrontPic_LampentKanto),\
+     SPECIES_SPRITE(CHANDELURE_KANTO, gMonFrontPic_ChandelureKanto),\
+     SPECIES_SPRITE(SANDILE_KANTO, gMonFrontPic_SandileKanto),\
+     SPECIES_SPRITE(KROKOROK_KANTO, gMonFrontPic_KrokorokKanto),\
+     SPECIES_SPRITE(MORADILE, gMonFrontPic_Moradile),\
+     SPECIES_SPRITE(TIMBURR_KANTO, gMonFrontPic_TimburrKanto),\
+     SPECIES_SPRITE(GURDURR_KANTO, gMonFrontPic_GurdurrKanto),\
+     SPECIES_SPRITE(CONKELDURR_KANTO, gMonFrontPic_ConkeldurrKanto),\
+     SPECIES_SPRITE(TORKOAL_KANTO, gMonFrontPic_TorkoalKanto),\
+     SPECIES_SPRITE(SLIGGOO_HISUI, gMonFrontPic_SliggooHisui),\
+     SPECIES_SPRITE(GOODRA_HISUI, gMonFrontPic_GoodraHisui),\
+     SPECIES_SPRITE(GROWLITHE_HISUI, gMonFrontPic_GrowlitheHisui),\
+     SPECIES_SPRITE(ARCANINE_HISUI, gMonFrontPic_ArcanineHisui),\
+     SPECIES_SPRITE(KRICKETON, gMonFrontPic_Kricketon),\
+     SPECIES_SPRITE(KRICKALLOUS, gMonFrontPic_Krickallous),\
+     SPECIES_SPRITE(LEDENNA, gMonFrontPic_Ledenna),\
+     SPECIES_SPRITE(FAUVANTIC, gMonFrontPic_Fauvantic),\
+     SPECIES_SPRITE(FLORESTIC, gMonFrontPic_Florestic),\
+     SPECIES_SPRITE(TERRANTIC, gMonFrontPic_Terrantic),\
+     SPECIES_SPRITE(AUREATIC, gMonFrontPic_Aureatic),\
+     SPECIES_SPRITE(ALOOBAT, gMonFrontPic_Aloobat),\
+     SPECIES_SPRITE(ARBOK_MEGA, gMonFrontPic_ArbokMega),\
+\
+\
+For level_up_learnset_pointers.h\
+     [SPECIES_LITWICK_KANTO] = sLitwickKantoLevelUpLearnset,\
+     [SPECIES_LAMPENT_KANTO] = sLampentKantoLevelUpLearnset,\
+     [SPECIES_CHANDELURE_KANTO] = sChandelureKantoLevelUpLearnset,\
+     [SPECIES_SANDILE_KANTO] = sSandileKantoLevelUpLearnset,\
+     [SPECIES_KROKOROK_KANTO] = sKrokorokKantoLevelUpLearnset,\
+     [SPECIES_MORADILE] = sMoradileLevelUpLearnset,\
+     [SPECIES_TIMBURR_KANTO] = sTimburrKantoLevelUpLearnset,\
+     [SPECIES_GURDURR_KANTO] = sGurdurrKantoLevelUpLearnset,\
+     [SPECIES_CONKELDURR_KANTO] = sConkeldurrKantoLevelUpLearnset,\
+     [SPECIES_TORKOAL_KANTO] = sTorkoalKantoLevelUpLearnset,\
+     [SPECIES_SLIGGOO_HISUI] = sSliggooHisuiLevelUpLearnset,\
+     [SPECIES_GOODRA_HISUI] = sGoodraHisuiLevelUpLearnset,\
+     [SPECIES_GROWLITHE_HISUI] = sGrowlitheHisuiLevelUpLearnset,\
+     [SPECIES_ARCANINE_HISUI] = sArcanineHisuiLevelUpLearnset,\
+     [SPECIES_KRICKETON] = sKricketonLevelUpLearnset,\
+     [SPECIES_KRICKALLOUS] = sKrickallousLevelUpLearnset,\
+     [SPECIES_LEDENNA] = sLedennaLevelUpLearnset,\
+     [SPECIES_FAUVANTIC] = sFauvanticLevelUpLearnset,\
+     [SPECIES_FLORESTIC] = sFloresticLevelUpLearnset,\
+     [SPECIES_TERRANTIC] = sTerranticLevelUpLearnset,\
+     [SPECIES_AUREATIC] = sAureaticLevelUpLearnset,\
+     [SPECIES_ALOOBAT] = sAloobatLevelUpLearnset,\
+     [SPECIES_ARBOK_MEGA] = sArbokMegaLevelUpLearnset,\
+\
+\
+For level_up_learnsets.h\
+static const struct LevelUpMove sLitwickKantoLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sLampentKantoLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sChandelureKantoLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sSandileKantoLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sKrokorokKantoLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sMoradileLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sTimburrKantoLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sGurdurrKantoLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sConkeldurrKantoLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sTorkoalKantoLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sSliggooHisuiLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sGoodraHisuiLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sGrowlitheHisuiLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sArcanineHisuiLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sKricketonLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sKrickallousLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sLedennaLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sFauvanticLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sFloresticLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sTerranticLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sAureaticLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sAloobatLevelUpLearnset[] = \{\};\
+static const struct LevelUpMove sArbokMegaLevelUpLearnset[] = \{\};\
+\
+\
+For palette.h\
+     SPECIES_PAL(LITWICK_KANTO, gMonPalette_LitwickKanto),\
+     SPECIES_PAL(LAMPENT_KANTO, gMonPalette_LampentKanto),\
+     SPECIES_PAL(CHANDELURE_KANTO, gMonPalette_ChandelureKanto),\
+     SPECIES_PAL(SANDILE_KANTO, gMonPalette_SandileKanto),\
+     SPECIES_PAL(KROKOROK_KANTO, gMonPalette_KrokorokKanto),\
+     SPECIES_PAL(MORADILE, gMonPalette_Moradile),\
+     SPECIES_PAL(TIMBURR_KANTO, gMonPalette_TimburrKanto),\
+     SPECIES_PAL(GURDURR_KANTO, gMonPalette_GurdurrKanto),\
+     SPECIES_PAL(CONKELDURR_KANTO, gMonPalette_ConkeldurrKanto),\
+     SPECIES_PAL(TORKOAL_KANTO, gMonPalette_TorkoalKanto),\
+     SPECIES_PAL(SLIGGOO_HISUI, gMonPalette_SliggooHisui),\
+     SPECIES_PAL(GOODRA_HISUI, gMonPalette_GoodraHisui),\
+     SPECIES_PAL(GROWLITHE_HISUI, gMonPalette_GrowlitheHisui),\
+     SPECIES_PAL(ARCANINE_HISUI, gMonPalette_ArcanineHisui),\
+     SPECIES_PAL(KRICKETON, gMonPalette_Kricketon),\
+     SPECIES_PAL(KRICKALLOUS, gMonPalette_Krickallous),\
+     SPECIES_PAL(LEDENNA, gMonPalette_Ledenna),\
+     SPECIES_PAL(FAUVANTIC, gMonPalette_Fauvantic),\
+     SPECIES_PAL(FLORESTIC, gMonPalette_Florestic),\
+     SPECIES_PAL(TERRANTIC, gMonPalette_Terrantic),\
+     SPECIES_PAL(AUREATIC, gMonPalette_Aureatic),\
+     SPECIES_PAL(ALOOBAT, gMonPalette_Aloobat),\
+     SPECIES_PAL(ARBOK_MEGA, gMonPalette_ArbokMega),\
+\
+\
+For pokemon_icon.h\
+     [SPECIES_LITWICK_KANTO] = gMonIcon_LitwickKanto,\
+     [SPECIES_LAMPENT_KANTO] = gMonIcon_LampentKanto,\
+     [SPECIES_CHANDELURE_KANTO] = gMonIcon_ChandelureKanto,\
+     [SPECIES_SANDILE_KANTO] = gMonIcon_SandileKanto,\
+     [SPECIES_KROKOROK_KANTO] = gMonIcon_KrokorokKanto,\
+     [SPECIES_MORADILE] = gMonIcon_Moradile,\
+     [SPECIES_TIMBURR_KANTO] = gMonIcon_TimburrKanto,\
+     [SPECIES_GURDURR_KANTO] = gMonIcon_GurdurrKanto,\
+     [SPECIES_CONKELDURR_KANTO] = gMonIcon_ConkeldurrKanto,\
+     [SPECIES_TORKOAL_KANTO] = gMonIcon_TorkoalKanto,\
+     [SPECIES_SLIGGOO_HISUI] = gMonIcon_SliggooHisui,\
+     [SPECIES_GOODRA_HISUI] = gMonIcon_GoodraHisui,\
+     [SPECIES_GROWLITHE_HISUI] = gMonIcon_GrowlitheHisui,\
+     [SPECIES_ARCANINE_HISUI] = gMonIcon_ArcanineHisui,\
+     [SPECIES_KRICKETON] = gMonIcon_Kricketon,\
+     [SPECIES_KRICKALLOUS] = gMonIcon_Krickallous,\
+     [SPECIES_LEDENNA] = gMonIcon_Ledenna,\
+     [SPECIES_FAUVANTIC] = gMonIcon_Fauvantic,\
+     [SPECIES_FLORESTIC] = gMonIcon_Florestic,\
+     [SPECIES_TERRANTIC] = gMonIcon_Terrantic,\
+     [SPECIES_AUREATIC] = gMonIcon_Aureatic,\
+     [SPECIES_ALOOBAT] = gMonIcon_Aloobat,\
+     [SPECIES_ARBOK_MEGA] = gMonIcon_ArbokMega,\
+\
+\
+For shiny_palette_table.h\
+     SPECIES_SHINY_PAL(LITWICK_KANTO, gMonShinyPalette_LitwickKanto),\
+     SPECIES_SHINY_PAL(LAMPENT_KANTO, gMonShinyPalette_LampentKanto),\
+     SPECIES_SHINY_PAL(CHANDELURE_KANTO, gMonShinyPalette_ChandelureKanto),\
+     SPECIES_SHINY_PAL(SANDILE_KANTO, gMonShinyPalette_SandileKanto),\
+     SPECIES_SHINY_PAL(KROKOROK_KANTO, gMonShinyPalette_KrokorokKanto),\
+     SPECIES_SHINY_PAL(MORADILE, gMonShinyPalette_Moradile),\
+     SPECIES_SHINY_PAL(TIMBURR_KANTO, gMonShinyPalette_TimburrKanto),\
+     SPECIES_SHINY_PAL(GURDURR_KANTO, gMonShinyPalette_GurdurrKanto),\
+     SPECIES_SHINY_PAL(CONKELDURR_KANTO, gMonShinyPalette_ConkeldurrKanto),\
+     SPECIES_SHINY_PAL(TORKOAL_KANTO, gMonShinyPalette_TorkoalKanto),\
+     SPECIES_SHINY_PAL(SLIGGOO_HISUI, gMonShinyPalette_SliggooHisui),\
+     SPECIES_SHINY_PAL(GOODRA_HISUI, gMonShinyPalette_GoodraHisui),\
+     SPECIES_SHINY_PAL(GROWLITHE_HISUI, gMonShinyPalette_GrowlitheHisui),\
+     SPECIES_SHINY_PAL(ARCANINE_HISUI, gMonShinyPalette_ArcanineHisui),\
+     SPECIES_SHINY_PAL(KRICKETON, gMonShinyPalette_Kricketon),\
+     SPECIES_SHINY_PAL(KRICKALLOUS, gMonShinyPalette_Krickallous),\
+     SPECIES_SHINY_PAL(LEDENNA, gMonShinyPalette_Ledenna),\
+     SPECIES_SHINY_PAL(FAUVANTIC, gMonShinyPalette_Fauvantic),\
+     SPECIES_SHINY_PAL(FLORESTIC, gMonShinyPalette_Florestic),\
+     SPECIES_SHINY_PAL(TERRANTIC, gMonShinyPalette_Terrantic),\
+     SPECIES_SHINY_PAL(AUREATIC, gMonShinyPalette_Aureatic),\
+     SPECIES_SHINY_PAL(ALOOBAT, gMonShinyPalette_Aloobat),\
+     SPECIES_SHINY_PAL(ARBOK_MEGA, gMonShinyPalette_ArbokMega),\
+\
+\
+For palette.h\
+     [SPECIES_LITWICK_KANTO - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_LAMPENT_KANTO - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_CHANDELURE_KANTO - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_SANDILE_KANTO - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_KROKOROK_KANTO - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_MORADILE - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_TIMBURR_KANTO - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_GURDURR_KANTO - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_CONKELDURR_KANTO - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_TORKOAL_KANTO - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_SLIGGOO_HISUI - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_GOODRA_HISUI - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_GROWLITHE_HISUI - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_ARCANINE_HISUI - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_KRICKETON - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_KRICKALLOUS - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_LEDENNA - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_FAUVANTIC - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_FLORESTIC - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_TERRANTIC - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_AUREATIC - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_ALOOBAT - 1] = NATIONAL_DEX_BULBASAUR\
+     [SPECIES_ARBOK_MEGA - 1] = NATIONAL_DEX_BULBASAUR\
+\
+static const union AnimCmd sAnim_LITWICK_KANTO_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_LAMPENT_KANTO_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_CHANDELURE_KANTO_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_SANDILE_KANTO_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_KROKOROK_KANTO_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_MORADILE_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_TIMBURR_KANTO_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_GURDURR_KANTO_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_CONKELDURR_KANTO_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_TORKOAL_KANTO_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_SLIGGOO_HISUI_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_GOODRA_HISUI_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_GROWLITHE_HISUI_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_ARCANINE_HISUI_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_KRICKETON_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_KRICKALLOUS_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_LEDENNA_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_FAUVANTIC_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_FLORESTIC_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_TERRANTIC_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_AUREATIC_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_ALOOBAT_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+static const union AnimCmd sAnim_ARBOK_MEGA_1[] =\
+\{\
+    ANIMCMD_FRAME(0, 1),\
+    ANIMCMD_END,\
+\};\
+\
+For pokemon.c\
+    HOENN_TO_NATIONAL(BULBASAUR),\
+    HOENN_TO_NATIONAL(IVYSAUR),\
+    HOENN_TO_NATIONAL(VENUSAUR),\
+    HOENN_TO_NATIONAL(CHARMANDER),\
+    HOENN_TO_NATIONAL(CHARMELEON),\
+    HOENN_TO_NATIONAL(CHARIZARD),\
+    HOENN_TO_NATIONAL(SQUIRTLE),\
+    HOENN_TO_NATIONAL(WARTORTLE),\
+    HOENN_TO_NATIONAL(BLASTOISE),\
+    HOENN_TO_NATIONAL(PIDGEY),\
+    HOENN_TO_NATIONAL(PIDGEOTTO),\
+    HOENN_TO_NATIONAL(PIDGEOT),\
+    HOENN_TO_NATIONAL(RATATTA),\
+    HOENN_TO_NATIONAL(RATICATE),\
+    HOENN_TO_NATIONAL(SHINX),\
+    HOENN_TO_NATIONAL(LUXIO),\
+    HOENN_TO_NATIONAL(LUXRAY),\
+    HOENN_TO_NATIONAL(SANDSHREW),\
+    HOENN_TO_NATIONAL(SANDSLASH),\
+    HOENN_TO_NATIONAL(NIDORAN_F),\
+    HOENN_TO_NATIONAL(NIDORINA),\
+    HOENN_TO_NATIONAL(NIDOQUEEN),\
+    HOENN_TO_NATIONAL(NIDORAN_M),\
+    HOENN_TO_NATIONAL(NIDORINO),\
+    HOENN_TO_NATIONAL(NIDOKING),\
+    HOENN_TO_NATIONAL(FAUVANTIC),\
+    HOENN_TO_NATIONAL(FLORESTIC),\
+    HOENN_TO_NATIONAL(TERRANTIC),\
+    HOENN_TO_NATIONAL(AUREATIC),\
+\
+For pokedex.h\
+    HOENN_DEX_BULBASAUR,\
+    HOENN_DEX_IVYSAUR,\
+    HOENN_DEX_VENUSAUR,\
+    HOENN_DEX_CHARMANDER,\
+    HOENN_DEX_CHARMELEON,\
+    HOENN_DEX_CHARIZARD,\
+    HOENN_DEX_SQUIRTLE,\
+    HOENN_DEX_WARTORTLE,\
+    HOENN_DEX_BLASTOISE,\
+    HOENN_DEX_PIDGEY,\
+    HOENN_DEX_PIDGEOTTO,\
+    HOENN_DEX_PIDGEOT,\
+    HOENN_DEX_RATATTA,\
+    HOENN_DEX_RATICATE,\
+    HOENN_DEX_SHINX,\
+    HOENN_DEX_LUXIO,\
+    HOENN_DEX_LUXRAY,\
+    HOENN_DEX_SANDSHREW,\
+    HOENN_DEX_SANDSLASH,\
+    HOENN_DEX_NIDORAN_F,\
+    HOENN_DEX_NIDORINA,\
+    HOENN_DEX_NIDOQUEEN,\
+    HOENN_DEX_NIDORAN_M,\
+    HOENN_DEX_NIDORINO,\
+    HOENN_DEX_NIDOKING,\
+    HOENN_DEX_FAUVANTIC,\
+    HOENN_DEX_FLORESTIC,\
+    HOENN_DEX_TERRANTIC,\
+    HOENN_DEX_AUREATIC,\
+\
+\
+    [SPECIES_LITWICK_KANTO] = gMonFootprint_LitwickKanto,\
+    [SPECIES_LAMPENT_KANTO] = gMonFootprint_LampentKanto,\
+    [SPECIES_CHANDELURE_KANTO] = gMonFootprint_ChandelureKanto,\
+    [SPECIES_SANDILE_KANTO] = gMonFootprint_SandileKanto,\
+    [SPECIES_KROKOROK_KANTO] = gMonFootprint_KrokorokKanto,\
+    [SPECIES_MORADILE] = gMonFootprint_Moradile,\
+    [SPECIES_TIMBURR_KANTO] = gMonFootprint_TimburrKanto,\
+    [SPECIES_GURDURR_KANTO] = gMonFootprint_GurdurrKanto,\
+    [SPECIES_CONKELDURR_KANTO] = gMonFootprint_ConkeldurrKanto,\
+    [SPECIES_TORKOAL_KANTO] = gMonFootprint_TorkoalKanto,\
+    [SPECIES_SLIGGOO_HISUI] = gMonFootprint_SliggooHisui,\
+    [SPECIES_GOODRA_HISUI] = gMonFootprint_GoodraHisui,\
+    [SPECIES_GROWLITHE_HISUI] = gMonFootprint_GrowlitheHisui,\
+    [SPECIES_ARCANINE_HISUI] = gMonFootprint_ArcanineHisui,\
+    [SPECIES_KRICKETON] = gMonFootprint_Kricketon,\
+    [SPECIES_KRICKALLOUS] = gMonFootprint_Krickallous,\
+    [SPECIES_LEDENNA] = gMonFootprint_Ledenna,\
+    [SPECIES_FAUVANTIC] = gMonFootprint_Fauvantic,\
+    [SPECIES_FLORESTIC] = gMonFootprint_Florestic,\
+    [SPECIES_TERRANTIC] = gMonFootprint_Terrantic,\
+    [SPECIES_AUREATIC] = gMonFootprint_Aureatic,\
+    [SPECIES_ALOOBAT] = gMonFootprint_Aloobat,\
+    [SPECIES_ARBOK_MEGA] = gMonFootprint_ArbokMega,\
+\
+\
+\
+    HOENN_TO_NATIONAL(BULBASAUR),\
+    HOENN_TO_NATIONAL(IVYSAUR),\
+    HOENN_TO_NATIONAL(VENUSAUR),\
+    HOENN_TO_NATIONAL(CHARMANDER),\
+    HOENN_TO_NATIONAL(CHARMELEON),\
+    HOENN_TO_NATIONAL(CHARIZARD),\
+    HOENN_TO_NATIONAL(SQUIRTLE),\
+    HOENN_TO_NATIONAL(WARTORTLE),\
+    HOENN_TO_NATIONAL(BLASTOISE),\
+    HOENN_TO_NATIONAL(PIDGEY),\
+    HOENN_TO_NATIONAL(PIDGEOTTO),\
+    HOENN_TO_NATIONAL(PIDGEOT),\
+    HOENN_TO_NATIONAL(CATERPIE),\
+    HOENN_TO_NATIONAL(METAPOD),\
+    HOENN_TO_NATIONAL(BUTTERFREE),\
+    HOENN_TO_NATIONAL(WEEDLE),\
+    HOENN_TO_NATIONAL(KAKUNA),\
+    HOENN_TO_NATIONAL(BEEDRILL),\
+    HOENN_TO_NATIONAL(RATTATA),\
+    HOENN_TO_NATIONAL(RATICATE),\
+    HOENN_TO_NATIONAL(SPEAROW),\
+    HOENN_TO_NATIONAL(FEAROW),\
+    HOENN_TO_NATIONAL(SHINX),\
+    HOENN_TO_NATIONAL(LUXIO),\
+    HOENN_TO_NATIONAL(LUXRAY),\
+    HOENN_TO_NATIONAL(ZUBAT),\
+    HOENN_TO_NATIONAL(GOLBAT),\
+    HOENN_TO_NATIONAL(CROBAT),\
+    HOENN_TO_NATIONAL(SANDSHREW),\
+    HOENN_TO_NATIONAL(SANDSLASH),\
+    HOENN_TO_NATIONAL(BELLSPROUT),\
+    HOENN_TO_NATIONAL(WEEPINBELL),\
+    HOENN_TO_NATIONAL(VICTREEBEL),\
+    HOENN_TO_NATIONAL(PICHU),\
+    HOENN_TO_NATIONAL(PIKACHU),\
+    HOENN_TO_NATIONAL(RAICHU),\
+    HOENN_TO_NATIONAL(MURKROW),\
+    HOENN_TO_NATIONAL(HONCHKROW),\
+    HOENN_TO_NATIONAL(VOLTORB),\
+    HOENN_TO_NATIONAL(ELECTRODE),\
+    HOENN_TO_NATIONAL(NIDORAN_F),\
+    HOENN_TO_NATIONAL(NIDORINA),\
+    HOENN_TO_NATIONAL(NIDOQUEEN),\
+    HOENN_TO_NATIONAL(NIDORAN_M),\
+    HOENN_TO_NATIONAL(NIDORINO),\
+    HOENN_TO_NATIONAL(NIDOKING),\
+    HOENN_TO_NATIONAL(GEODUDE),\
+    HOENN_TO_NATIONAL(GRAVELER),\
+    HOENN_TO_NATIONAL(GOLEM),\
+    HOENN_TO_NATIONAL(MAGNEMITE),\
+    HOENN_TO_NATIONAL(MAGNETON),\
+    HOENN_TO_NATIONAL(MAGNEZONE),\
+    HOENN_TO_NATIONAL(ODDISH),\
+    HOENN_TO_NATIONAL(GLOOM),\
+    HOENN_TO_NATIONAL(VILEPLUME),\
+    HOENN_TO_NATIONAL(ABRA),\
+    HOENN_TO_NATIONAL(KADABRA),\
+    HOENN_TO_NATIONAL(ALAKAZAM),\
+    HOENN_TO_NATIONAL(MACHOP),\
+    HOENN_TO_NATIONAL(MACHOKE),\
+    HOENN_TO_NATIONAL(MACHAMP),\
+    HOENN_TO_NATIONAL(DROWZEE),\
+    HOENN_TO_NATIONAL(HYPNO),\
+    HOENN_TO_NATIONAL(EKANS),\
+    HOENN_TO_NATIONAL(ARBOK),\
+    HOENN_TO_NATIONAL(MANKEY),\
+    HOENN_TO_NATIONAL(PRIMEAPE),\
+    HOENN_TO_NATIONAL(PONYTA),\
+    HOENN_TO_NATIONAL(RAPIDASH),\
+    HOENN_TO_NATIONAL(MAREEP),\
+    HOENN_TO_NATIONAL(FLAAFFY),\
+    HOENN_TO_NATIONAL(AMPHAROS),\
+    HOENN_TO_NATIONAL(TANGELA),\
+    HOENN_TO_NATIONAL(TANGROWTH),\
+    HOENN_TO_NATIONAL(AZURILL),\
+    HOENN_TO_NATIONAL(MARILL),\
+    HOENN_TO_NATIONAL(AZUMARILL),\
+    HOENN_TO_NATIONAL(IGGLYBUFF),\
+    HOENN_TO_NATIONAL(JIGGLYPUFF),\
+    HOENN_TO_NATIONAL(WIGGLYTUFF),\
+    HOENN_TO_NATIONAL(VOLBEAT),\
+    HOENN_TO_NATIONAL(ILLUMISE),\
+    HOENN_TO_NATIONAL(HOOTHOOT),\
+    HOENN_TO_NATIONAL(NOCTOWL),\
+    HOENN_TO_NATIONAL(GASTLY),\
+    HOENN_TO_NATIONAL(HAUNTER),\
+    HOENN_TO_NATIONAL(GENGAR),\
+    HOENN_TO_NATIONAL(BIDOOF),\
+    HOENN_TO_NATIONAL(BIBAREL),\
+    HOENN_TO_NATIONAL(PARAS),\
+    HOENN_TO_NATIONAL(PARASECT),\
+    HOENN_TO_NATIONAL(BUDEW),\
+    HOENN_TO_NATIONAL(ROSELIA),\
+    HOENN_TO_NATIONAL(ROSERADE),\
+    HOENN_TO_NATIONAL(LOTAD),\
+    HOENN_TO_NATIONAL(LOMBRE),\
+    HOENN_TO_NATIONAL(LUDICOLO),\
+    HOENN_TO_NATIONAL(SEEDOT),\
+    HOENN_TO_NATIONAL(NUZLEAF),\
+    HOENN_TO_NATIONAL(SHIFTRY),\
+    HOENN_TO_NATIONAL(FOONGUS),\
+    HOENN_TO_NATIONAL(AMOONGUSS),\
+    HOENN_TO_NATIONAL(ROGGENROLA),\
+    HOENN_TO_NATIONAL(BOLDORE),\
+    HOENN_TO_NATIONAL(GIGALITH),\
+    HOENN_TO_NATIONAL(ROLYCOLY),\
+    HOENN_TO_NATIONAL(CARKOL),\
+    HOENN_TO_NATIONAL(COALOSSAL),\
+    HOENN_TO_NATIONAL(RALTS),\
+    HOENN_TO_NATIONAL(KIRLIA),\
+    HOENN_TO_NATIONAL(GARDEVOIR),\
+    HOENN_TO_NATIONAL(ABSOL),\
+    HOENN_TO_NATIONAL(GALLADE),\
+    HOENN_TO_NATIONAL(MEOWTH),\
+    HOENN_TO_NATIONAL(PERSIAN),\
+    HOENN_TO_NATIONAL(PERRZERKER),\
+    HOENN_TO_NATIONAL(ELECTRIKE),\
+    HOENN_TO_NATIONAL(MANECTRIC),\
+    HOENN_TO_NATIONAL(SANDILE),\
+    HOENN_TO_NATIONAL(KROKOROK),\
+    HOENN_TO_NATIONAL(MORADILE),\
+    HOENN_TO_NATIONAL(SHUPPET),\
+    HOENN_TO_NATIONAL(BANETTE),\
+    HOENN_TO_NATIONAL(DUSKULL),\
+    HOENN_TO_NATIONAL(DUSCLOPS),\
+    HOENN_TO_NATIONAL(DUSKNOIR),\
+    HOENN_TO_NATIONAL(PHANTUMP),\
+    HOENN_TO_NATIONAL(TREVENANT),\
+    HOENN_TO_NATIONAL(PUMPKABOO),\
+    HOENN_TO_NATIONAL(GOURGEIST),\
+    HOENN_TO_NATIONAL(MIMIKYU),\
+    HOENN_TO_NATIONAL(SPINARAK),\
+    HOENN_TO_NATIONAL(ARIADOS),\
+    HOENN_TO_NATIONAL(DEWPIDER),\
+    HOENN_TO_NATIONAL(ARAQUANID),\
+    HOENN_TO_NATIONAL(PINSIR),\
+    HOENN_TO_NATIONAL(HERACROSS),\
+    HOENN_TO_NATIONAL(MILTANK),\
+    HOENN_TO_NATIONAL(ELEKID),\
+    HOENN_TO_NATIONAL(ELECTABUZZ),\
+    HOENN_TO_NATIONAL(ELECTIVIRE),\
+    HOENN_TO_NATIONAL(MAGBY),\
+    HOENN_TO_NATIONAL(MAGMAR),\
+    HOENN_TO_NATIONAL(MAGMORTAR),\
+    HOENN_TO_NATIONAL(ARTICUNO),\
+    HOENN_TO_NATIONAL(ZAPDOS),\
+    HOENN_TO_NATIONAL(MOLTRES),\
+    HOENN_TO_NATIONAL(DRATINI),\
+    HOENN_TO_NATIONAL(DRAGONAIR),\
+    HOENN_TO_NATIONAL(DRAGONITE),\
+    HOENN_TO_NATIONAL(LARVITAR),\
+    HOENN_TO_NATIONAL(PUPITAR),\
+    HOENN_TO_NATIONAL(TYRANITAR),\
+    HOENN_TO_NATIONAL(BAGON),\
+    HOENN_TO_NATIONAL(SHELGON),\
+    HOENN_TO_NATIONAL(SALAMENCE),\
+    HOENN_TO_NATIONAL(BELDUM),\
+    HOENN_TO_NATIONAL(METANG),\
+    HOENN_TO_NATIONAL(METAGROSS),\
+    HOENN_TO_NATIONAL(GIBLE),\
+    HOENN_TO_NATIONAL(GABITE),\
+    HOENN_TO_NATIONAL(GARCHOMP),\
+    HOENN_TO_NATIONAL(DREEPY),\
+    HOENN_TO_NATIONAL(DRAKLOAK),\
+    HOENN_TO_NATIONAL(DRAGAPULT),\
+    HOENN_TO_NATIONAL(FAUVANTIC),\
+    HOENN_TO_NATIONAL(FLORESTIC),\
+    HOENN_TO_NATIONAL(TERRANTIC),\
+    HOENN_TO_NATIONAL(AUREATIC),\
+\
+}

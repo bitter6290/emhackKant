@@ -604,6 +604,7 @@
 #define MAP_VERMILION_CITY  (6 | (34 << 8))
 #define MAP_LAVENDER_TOWN   (7 | (34 << 8))
 #define MAP_CHARTREUSE_CITY (8 | (34 << 8))
+#define MAP_FUCHSIA_CITY    (9 | (34 << 8))
 
 // gMapGroup_NewRoutes
 #define MAP_ROUTE1  (0 | (35 << 8))
@@ -621,6 +622,7 @@
 #define MAP_ROUTE13 (12 | (35 << 8))
 #define MAP_ROUTE14 (13 | (35 << 8))
 #define MAP_ROUTE15 (14 | (35 << 8))
+#define MAP_ROUTE16 (15 | (35 << 8))
 
 // gMapGroup_NewOuter
 #define MAP_VIRIDIAN_PLAIN_E   (0 | (36 << 8))
@@ -689,11 +691,13 @@
 #define MAP_MT_MOON_INSIDE1F (3 | (42 << 8))
 
 // gMapGroup_NewOcean
-#define MAP_CELADON_SEA_W  (0 | (43 << 8))
-#define MAP_CYCLING_ROAD_N (1 | (43 << 8))
-#define MAP_CELADON_SEA_E  (2 | (43 << 8))
-#define MAP_SEKANTO_SEA_N  (3 | (43 << 8))
-#define MAP_SEKANTO_SEA_C  (4 | (43 << 8))
+#define MAP_CELADON_SEA_W     (0 | (43 << 8))
+#define MAP_CYCLING_ROAD_N    (1 | (43 << 8))
+#define MAP_CELADON_SEA_E     (2 | (43 << 8))
+#define MAP_SEKANTO_SEA_N     (3 | (43 << 8))
+#define MAP_SEKANTO_SEA_C     (4 | (43 << 8))
+#define MAP_VERMILION_ESTUARY (5 | (43 << 8))
+#define MAP_CYCLING_ROAD_S    (6 | (43 << 8))
 
 // gMapGroup_NewMartCenter
 #define MAP_VIRIDIAN_POKEMON_CENTER1F (0 | (44 << 8))

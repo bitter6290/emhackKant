@@ -19,11 +19,6 @@
       "map": "MAP_VERMILION_CITY"
     },
     {
-      "direction": "up",
-      "offset": -12,
-      "map": "MAP_VERMILION_PLAIN"
-    },
-    {
       "direction": "right",
       "offset": -16,
       "map": "MAP_ROUTE12"

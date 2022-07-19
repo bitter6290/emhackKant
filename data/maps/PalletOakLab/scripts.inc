@@ -298,19 +298,14 @@ PalletOakLab_OakDialogue_Text_7:
 	.string "make marvels again.$"
 
 PalletOakLab_OakDialogue_Text_8:
-	.string "Ah, {PLAYER}! I'm glad to see you here\n"
-	.string "in one piece! When Morgan told me about\l"
-	.string "the explosion, I was worried sick.\l"
-	.string "Needless to say, I had no idea I'd be\l"
-	.string "sending you into the middle of a brawl.\l"
-	.string "It was shameful of me to be so\l"
-	.string "careless.$"
+	.string "Ah, {PLAYER}! What a relief to see\n"
+	.string "you! When Morgan told me about the\l"
+	.string "explosion, I almost fainted in fear.\l"
+	.string "I'm glad to see that you made it out in\l"
+	.string "one piece.$"
 
 PalletOakLab_OakDialogue_Text_9:
-	.string "At the same time, however, I must know\n"
-	.string "what happened in Pewter City. If it is\l"
-	.string "not too much to ask, I must request\l"
-	.string "that you tell me all that you saw.$"
+	.string "You must tell me everything.$"
 
 PalletOakLab_OakDialogue_Text_10:
 	.string "Two groups of uniformed grunts were\n"

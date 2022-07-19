@@ -37,6 +37,11 @@
       "direction": "down",
       "offset": -12,
       "map": "MAP_ROUTE14"
+    },
+    {
+      "direction": "left",
+      "offset": 20,
+      "map": "MAP_VERMILION_ESTUARY"
     }
   ],
   "object_events": [

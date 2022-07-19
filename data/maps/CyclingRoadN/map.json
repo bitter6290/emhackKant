@@ -39,9 +39,9 @@
       "map": "MAP_CELADON_SEA_E"
     },
     {
-      "direction": "left",
+      "direction": "down",
       "offset": 0,
-      "map": "MAP_CELADON_SEA_W"
+      "map": "MAP_CYCLING_ROAD_S"
     }
   ],
   "object_events": [

@@ -30,7 +30,12 @@
     },
     {
       "direction": "right",
-      "offset": 0,
+      "offset": 64,
+      "map": "MAP_CYCLING_ROAD_S"
+    },
+    {
+      "direction": "right",
+      "offset": -44,
       "map": "MAP_CYCLING_ROAD_N"
     }
   ],

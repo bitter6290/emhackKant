@@ -5237,7 +5237,7 @@
       "width": 76,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/Route14/border.bin",
       "blockdata_filepath": "data/layouts/Route14/map.bin"
     },
@@ -5267,7 +5267,7 @@
       "width": 84,
       "height": 64,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/SEKantoSeaN/border.bin",
       "blockdata_filepath": "data/layouts/SEKantoSeaN/map.bin"
     },
@@ -5300,6 +5300,46 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/MtMoonInside1F/border.bin",
       "blockdata_filepath": "data/layouts/MtMoonInside1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_VERMILION_ESTUARY",
+      "name": "VermilionEstuary_Layout",
+      "width": 36,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/VermilionEstuary/border.bin",
+      "blockdata_filepath": "data/layouts/VermilionEstuary/map.bin"
+    },
+    {
+      "id": "LAYOUT_CYCLING_ROAD_S",
+      "name": "CyclingRoadS_Layout",
+      "width": 80,
+      "height": 22,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/CyclingRoadS/border.bin",
+      "blockdata_filepath": "data/layouts/CyclingRoadS/map.bin"
+    },
+    {
+      "id": "LAYOUT_FUCHSIA_CITY",
+      "name": "FuchsiaCity_Layout",
+      "width": 36,
+      "height": 44,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/FuchsiaCity/border.bin",
+      "blockdata_filepath": "data/layouts/FuchsiaCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE16",
+      "name": "Route16_Layout",
+      "width": 20,
+      "height": 44,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route16/border.bin",
+      "blockdata_filepath": "data/layouts/Route16/map.bin"
     }
   ]
 }

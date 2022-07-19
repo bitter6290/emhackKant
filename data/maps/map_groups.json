@@ -645,7 +645,8 @@
     "SaffronCity",
     "VermilionCity",
     "LavenderTown",
-    "ChartreuseCity"
+    "ChartreuseCity",
+    "FuchsiaCity"
   ],
   "gMapGroup_NewRoutes": [
     "Route1",
@@ -662,7 +663,8 @@
     "Route12",
     "Route13",
     "Route14",
-    "Route15"
+    "Route15",
+    "Route16"
   ],
   "gMapGroup_NewOuter": [
     "ViridianPlainE",
@@ -735,7 +737,9 @@
     "CyclingRoadN",
     "CeladonSeaE",
     "SEKantoSeaN",
-    "SEKantoSeaC"
+    "SEKantoSeaC",
+    "VermilionEstuary",
+    "CyclingRoadS"
   ],
   "gMapGroup_NewMartCenter": [
     "ViridianPokemonCenter1F",

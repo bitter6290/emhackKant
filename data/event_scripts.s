@@ -1219,3 +1219,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SEKantoSeaC/scripts.inc"
 
 	.include "data/maps/MtMoonInside1F/scripts.inc"
+
+	.include "data/maps/VermilionEstuary/scripts.inc"
+
+	.include "data/maps/CyclingRoadS/scripts.inc"
+
+	.include "data/maps/FuchsiaCity/scripts.inc"
+
+	.include "data/maps/Route16/scripts.inc"

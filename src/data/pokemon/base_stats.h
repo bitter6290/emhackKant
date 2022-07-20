@@ -30426,7 +30426,6 @@ const struct BaseStats gBaseStats[] =
         #endif
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
-        .flags = FLAG_GENDER_DIFFERENCE,
     },
     
     [SPECIES_LUXRAY_KANTO] =
@@ -30455,7 +30454,6 @@ const struct BaseStats gBaseStats[] =
         #endif
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = FALSE,
-        .flags = FLAG_GENDER_DIFFERENCE,
     },
 
     [SPECIES_LITWICK_KANTO] =

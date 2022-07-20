@@ -117,6 +117,5 @@ PewterMineNorthHouse_Morgan_Text_5:
 PewterMineNorthHouse_Morgan_Text_6:
 	.string "Oh! And if you have time, come back to\n"
 	.string "the lab and tell Oak what you saw. He'll\l"
-	.string "be interested in hearing the story\l"
-	.string "from you, too, given that you were out\l"
-	.string "there to see it.$"
+	.string "want to hear it from your perspective,\l"
+	.string "too.$"

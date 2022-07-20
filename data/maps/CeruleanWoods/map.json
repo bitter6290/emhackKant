@@ -32,6 +32,11 @@
       "direction": "left",
       "offset": 20,
       "map": "MAP_CERULEAN_WOODS_NW"
+    },
+    {
+      "direction": "right",
+      "offset": -4,
+      "map": "MAP_ROUTE16"
     }
   ],
   "object_events": [

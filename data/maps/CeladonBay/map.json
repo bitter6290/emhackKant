@@ -2,7 +2,7 @@
   "id": "MAP_CELADON_BAY",
   "name": "CeladonBay",
   "layout": "LAYOUT_CELADON_BAY",
-  "music": "MUS_RG_ROUTE3",
+  "music": "MUS_DP_VALOR_LAKEFRONT_DAY",
   "region_map_section": "MAPSEC_CELADON_BAY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

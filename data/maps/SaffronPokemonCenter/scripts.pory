@@ -1,0 +1,18 @@
+mapscripts SaffronPokemonCenter_MapScripts {
+	map_script MAP_SCRIPT_ON_TRANSITION: Saffron_PokemonCenter1F_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
+
+
+script Saffron_PokemonCenter1F_OnTransition{
+	setrespawn(HEAL_LOCATION_SAFFRON_CITY)
+	end
+}
+script Saffron_PokemonCenter1F_EventScript_Nurse{
+	setvar(VAR_0x800B,1)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	waitbuttonpress
+	release
+	end
+	}

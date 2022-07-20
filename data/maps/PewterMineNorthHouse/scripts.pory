@@ -40,7 +40,7 @@ script PewterMineNorthHouse_Morgan{
 		playse(SE_PIN)
 		applymovement(1,PewterMine_Exclam)
 		waitmovement(1)
-		msgbox(format("Oh! And if you have time, come back to the lab and tell Oak what you saw. He'll be interested in hearing the story from you, too, given that you were out there to see it."))
+		msgbox(format("Oh! And if you have time, come back to the lab and tell Oak what you saw. He'll want to hear it from your perspective, too."))
 		applymovement(1,PewterMineNorthHouse_MorganSouth)
 		waitmovement(1)
 		playse(SE_DOOR)

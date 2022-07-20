@@ -1229,3 +1229,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route16/scripts.inc"
 
 	.include "data/maps/MtMoonInsideB1f/scripts.inc"
+
+	.include "data/maps/CeruleanPokemonCenter1F/scripts.inc"
+
+	.include "data/maps/CeruleanPokeMart/scripts.inc"
+
+	.include "data/maps/SaffronPokemonCenter/scripts.inc"

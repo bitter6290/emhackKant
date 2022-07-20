@@ -20,12 +20,12 @@
     },
     {
       "direction": "left",
-      "offset": 32,
+      "offset": 28,
       "map": "MAP_SAFFRON_DRYLANDS"
     },
     {
       "direction": "left",
-      "offset": -12,
+      "offset": -16,
       "map": "MAP_SAFFRON_DRYLANDS_N"
     },
     {

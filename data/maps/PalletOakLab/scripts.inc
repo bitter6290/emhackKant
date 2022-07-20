@@ -70,6 +70,7 @@ PalletOakLab_OakDialogue_4:
 	waitmovement 4
 	msgbox PalletOakLab_OakDialogue_Text_12
 	msgbox PalletOakLab_OakDialogue_Text_13
+	msgbox PalletOakLab_OakDialogue_Text_14
 	addvar VAR_STORY_PROGRESS, 1
 	goto PalletOakLab_OakDialogue_1
 
@@ -312,34 +313,27 @@ PalletOakLab_OakDialogue_Text_10:
 	.string "fighting over the mine?$"
 
 PalletOakLab_OakDialogue_Text_11:
-	.string "So things have gotten that bad...\n"
-	.string "And you say that you got involved in\l"
-	.string "the fighting!? What were you thinking,\l"
-	.string "{PLAYER}?$"
+	.string "So things have gotten that bad...$"
 
 PalletOakLab_OakDialogue_Text_12:
-	.string "Ah... Of course, it is quite impressive\n"
-	.string "that you won. All the same, though, do\l"
-	.string "yourself a favor and avoid associating\l"
-	.string "with Team Rocket at all costs. They will\l"
-	.string "promise you many things, but all they\l"
-	.string "truly desire is to increase their own\l"
-	.string "power. Too many young trainers have\l"
-	.string "heeded their call only to fall in over\l"
-	.string "their heads. I pray that the same does\l"
-	.string "not happen to you.$"
+	.string "Listen, {PLAYER}. I'm sure that your\n"
+	.string "brief run-in with Team Rocket has\l"
+	.string "filled you with confidence. As it\l"
+	.string "should, as a newly minted trainer!$"
 
 PalletOakLab_OakDialogue_Text_13:
-	.string "For the moment, though, I'm glad to have\n"
-	.string "you and Morgan both back here. If you\l"
-	.string "are feeling confident in your abilities,\l"
-	.string "then I would suggest that you begin to\l"
-	.string "visit Kanto's Gyms as your next step.\l"
-	.string "If you're able to defeat them, they'll\l"
-	.string "teach you their signature techniques\l"
-	.string "and allow you to reach new places. The\l"
-	.string "benefits to your research will be\l"
-	.string "immense.$"
+	.string "But there are more serious things to\n"
+	.string "worry about. Do not let yourself be\l"
+	.string "convinced that you can handle Team\l"
+	.string "Rocket. Hundreds of young trainers\l"
+	.string "like you have felt the same, only to\l"
+	.string "become ripples in a vast sea of grunts.$"
+
+PalletOakLab_OakDialogue_Text_14:
+	.string "I could not bear if the same were to\n"
+	.string "happen to you. Keep your wits about\l"
+	.string "you, complete your Pokédex, and stay\l"
+	.string "well away from the likes of them!$"
 
 PalletOakLab_ChooseBulbasaur_Text_0:
 	.string "This ball contains a Pokémon... but it\n"

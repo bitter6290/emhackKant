@@ -5125,7 +5125,7 @@
       "id": "LAYOUT_ROUTE10",
       "name": "Route10_Layout",
       "width": 24,
-      "height": 80,
+      "height": 76,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route10/border.bin",
@@ -5185,7 +5185,7 @@
       "id": "LAYOUT_CHARTREUSE_CITY",
       "name": "ChartreuseCity_Layout",
       "width": 36,
-      "height": 64,
+      "height": 68,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/ChartreuseCity/border.bin",
@@ -5350,6 +5350,36 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/MtMoonInsideB1f/border.bin",
       "blockdata_filepath": "data/layouts/MtMoonInsideB1f/map.bin"
+    },
+    {
+      "id": "LAYOUT_CERULEAN_POKEMON_CENTER1F",
+      "name": "CeruleanPokemonCenter1F_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/CeruleanPokemonCenter1F/border.bin",
+      "blockdata_filepath": "data/layouts/CeruleanPokemonCenter1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_CERULEAN_POKE_MART",
+      "name": "CeruleanPokeMart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/CeruleanPokeMart/border.bin",
+      "blockdata_filepath": "data/layouts/CeruleanPokeMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFFRON_POKEMON_CENTER",
+      "name": "SaffronPokemonCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/SaffronPokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/SaffronPokemonCenter/map.bin"
     }
   ]
 }

@@ -100,7 +100,7 @@
       "x": 30,
       "y": 66,
       "elevation": 0,
-      "dest_map": "MAP_CERULEAN_CITY",
+      "dest_map": "MAP_CERULEAN_POKE_MART",
       "dest_warp_id": 0
     },
     {
@@ -121,8 +121,8 @@
       "x": 26,
       "y": 57,
       "elevation": 0,
-      "dest_map": "MAP_CERULEAN_CITY",
-      "dest_warp_id": 0
+      "dest_map": "MAP_CERULEAN_POKEMON_CENTER1F",
+      "dest_warp_id": 1
     },
     {
       "x": 15,

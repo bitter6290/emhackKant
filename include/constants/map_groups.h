@@ -706,6 +706,9 @@
 #define MAP_PEWTER_POKEMON_CENTER1F   (2 | (44 << 8))
 #define MAP_PEWTER_POKE_MART          (3 | (44 << 8))
 #define MAP_CELADON_POKEMON_CENTER1F  (4 | (44 << 8))
+#define MAP_CERULEAN_POKEMON_CENTER1F (5 | (44 << 8))
+#define MAP_CERULEAN_POKE_MART        (6 | (44 << 8))
+#define MAP_SAFFRON_POKEMON_CENTER    (7 | (44 << 8))
 
 #define MAP_GROUPS_COUNT 45
 

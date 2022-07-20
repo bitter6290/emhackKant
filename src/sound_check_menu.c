@@ -1592,6 +1592,8 @@ static void DestroyWindow(u8 windowId) // sub_080E9750
     X(MUS_HG_OBTAIN_CASTLE_POINTS     , "MUS-HG-OBTAIN-CASTLE-POINTS"     ) \
     X(MUS_HG_OBTAIN_B_POINTS          , "MUS-HG-OBTAIN-B-POINTS"          ) \
     X(MUS_HG_WIN_MINIGAME             , "MUS-HG-WIN-MINIGAME"             ) \
+    X(MUS_GAME_CORNER_JAZZ_1		  , "MUS-GAME-CORNER-JAZZ-1"		  ) \
+    X(MUS_SM_TRAINER				  , "MUS-SM-TRAINER"				  ) \
 
 #define SOUND_LIST_SE \
     X(SE_STOP                  , "STOP"                     ) \

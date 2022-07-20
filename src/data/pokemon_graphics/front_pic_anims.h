@@ -14805,22 +14805,22 @@ static const union AnimCmd *const sAnims_PICHU_SPIKY_EARED[] ={
 
 static const union AnimCmd *const sAnims_SHINX_KANTO[] ={
     sAnim_GeneralFrame0,
-    sAnim_NONE_1,
+    sAnim_SHINX_KANTO_1,
 };
 
 static const union AnimCmd *const sAnims_LUXIO_KANTO[] ={
     sAnim_GeneralFrame0,
-    sAnim_NONE_1,
+    sAnim_LUXIO_KANTO_1,
 };
 
 static const union AnimCmd *const sAnims_LUXRAY_KANTO[] ={
     sAnim_GeneralFrame0,
-    sAnim_NONE_1,
+    sAnim_LUXRAY_KANTO_1,
 };
 
 static const union AnimCmd *const sAnims_LITWICK_KANTO[] ={
     sAnim_GeneralFrame0,
-    sAnim_NONE_1,
+    sAnim_LITWICK_KANTO_1,
 };
 static const union AnimCmd *const sAnims_LAMPENT_KANTO[] ={
     sAnim_GeneralFrame0,

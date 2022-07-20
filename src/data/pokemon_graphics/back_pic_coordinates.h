@@ -6113,12 +6113,12 @@ const struct MonCoords gMonBackPicCoords[] =
     [SPECIES_LUXIO_KANTO] =
     {
         .size = MON_COORDS_SIZE(64, 64),
-        .y_offset = 8,
+        .y_offset = 4,
     },
     [SPECIES_LUXRAY_KANTO] =
     {
         .size = MON_COORDS_SIZE(64, 64),
-        .y_offset = 8,
+        .y_offset = 0,
     },
     [SPECIES_LITWICK_KANTO] =
     {

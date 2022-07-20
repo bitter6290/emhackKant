@@ -1355,7 +1355,7 @@
 #define SPECIES_CALYREX_ICE_RIDER            FORMS_START + 307
 #define SPECIES_CALYREX_SHADOW_RIDER         FORMS_START + 308
 
-// Custom Kantonian Forms
+// Custom Kantonian/Hisuian Forms
 
 #define SPECIES_SHINX_KANTO					 FORMS_START + 309
 #define SPECIES_LUXIO_KANTO					 FORMS_START + 310

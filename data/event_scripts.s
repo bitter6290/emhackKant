@@ -1227,3 +1227,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/FuchsiaCity/scripts.inc"
 
 	.include "data/maps/Route16/scripts.inc"
+
+	.include "data/maps/MtMoonInsideB1f/scripts.inc"

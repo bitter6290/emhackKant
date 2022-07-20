@@ -6112,32 +6112,32 @@ const struct MonCoords gMonFrontPicCoords[] =
     },
     [SPECIES_LUXIO_KANTO] =
     {
-        .size = MON_COORDS_SIZE(48,48),
-        .y_offset = 13,
+        .size = MON_COORDS_SIZE(48, 48),
+        .y_offset = 10,
     },
     [SPECIES_LUXRAY_KANTO] =
     {
-        .size = MON_COORDS_SIZE(64,64),
-        .y_offset = 13,
+        .size = MON_COORDS_SIZE(64, 64),
+        .y_offset = 2,
     },
      [SPECIES_LITWICK_KANTO] =
      {
-     .size = MON_COORDS_SIZE(32,40),
+     .size = MON_COORDS_SIZE(32, 40),
      .y_offset = 6,
      },
      [SPECIES_LAMPENT_KANTO] =
      {
-     .size = MON_COORDS_SIZE(56,48),
+     .size = MON_COORDS_SIZE(56, 48),
      .y_offset = 6,
      },
      [SPECIES_CHANDELURE_KANTO] =
      {
-     .size = MON_COORDS_SIZE(64,64),
+     .size = MON_COORDS_SIZE(64, 64),
      .y_offset = 6,
      },
      [SPECIES_SANDILE_KANTO] =
      {
-     .size = MON_COORDS_SIZE(48,32),
+     .size = MON_COORDS_SIZE(48, 32),
      .y_offset = 6,
      },
      [SPECIES_KROKOROK_KANTO] =

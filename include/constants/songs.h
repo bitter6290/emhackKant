@@ -945,9 +945,10 @@
 #define MUS_HG_OBTAIN_B_POINTS            897 // Received Battle Points!
 #define MUS_HG_WIN_MINIGAME               898 // Cleared Wobbuffet Pop!
 #define MUS_GAME_CORNER_JAZZ_1			  899 // Game corner 1
+#define MUS_SM_TRAINER					  900 // Sun and Moon trainer battle theme
 
 
-#define HG_MUSIC_END                      MUS_GAME_CORNER_JAZZ_1
+#define HG_MUSIC_END                      MUS_SM_TRAINER
 
 #define SONGS_END                         HG_MUSIC_END
 

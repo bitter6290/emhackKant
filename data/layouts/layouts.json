@@ -5340,6 +5340,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route16/border.bin",
       "blockdata_filepath": "data/layouts/Route16/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_MOON_INSIDE_B1F",
+      "name": "MtMoonInsideB1f_Layout",
+      "width": 60,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/MtMoonInsideB1f/border.bin",
+      "blockdata_filepath": "data/layouts/MtMoonInsideB1f/map.bin"
     }
   ]
 }

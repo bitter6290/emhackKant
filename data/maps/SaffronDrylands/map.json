@@ -45,7 +45,7 @@
     },
     {
       "direction": "right",
-      "offset": -32,
+      "offset": -28,
       "map": "MAP_ROUTE10"
     }
   ],

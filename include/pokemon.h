@@ -237,7 +237,7 @@ struct BaseStats
 struct BattleMove
 {
     u16 effect;
-    u8 power;
+    u16 power;  //higher than 255 for z moves
     u8 type;
     u8 accuracy;
     u8 pp;
@@ -247,6 +247,8 @@ struct BattleMove
     u32 flags;
     u8 split;
     u8 argument;
+    u8 zMovePower;
+    u8 zMoveEffect;
 };
 
 #define SPINDA_SPOT_WIDTH 16

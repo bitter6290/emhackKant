@@ -14,6 +14,7 @@
 #include "constants/maps.h"
 #include "constants/pokemon.h"
 #include "constants/easy_chat.h"
+#include "constants/trainer_hill.h"
 #include "constants/expansion_branches.h"
 
 // free saveblock 1 defines
@@ -33,6 +34,8 @@
                                         // saveblock2 total: 1236 bytes
 
                                         //grand total: 3082
+#include "constants/trainer_hill.h"
+#include "constants/expansion_branches.h"
 
 // Prevent cross-jump optimization.
 #define BLOCK_CROSS_JUMP asm("");

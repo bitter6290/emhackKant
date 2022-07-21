@@ -22,6 +22,11 @@
       "direction": "up",
       "offset": 12,
       "map": "MAP_FUCHSIA_SWAMP"
+    },
+    {
+      "direction": "left",
+      "offset": -24,
+      "map": "MAP_FUCHSIA_CITY"
     }
   ],
   "object_events": [

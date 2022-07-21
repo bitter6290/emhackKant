@@ -42,6 +42,11 @@
       "direction": "up",
       "offset": -56,
       "map": "MAP_ROUTE8"
+    },
+    {
+      "direction": "down",
+      "offset": 24,
+      "map": "MAP_SEKANTO_SEA_N"
     }
   ],
   "object_events": [

@@ -655,6 +655,7 @@
 #define MAP_CERULEAN_WOODS     (27 | (36 << 8))
 #define MAP_VERMILION_PLAIN    (28 | (36 << 8))
 #define MAP_FUCHSIA_SWAMP      (29 | (36 << 8))
+#define MAP_CHARTREUSE_WOODS   (30 | (36 << 8))
 
 // gMapGroup_NewIndoor
 #define MAP_PALLET_PLAYER_HOUSE_1F      (0 | (37 << 8))
@@ -682,7 +683,8 @@
 #define MAP_VIRIDIAN_APARTMENTS1FNW (3 | (40 << 8))
 
 // gMapGroup_NewGym
-#define MAP_VIRIDIAN_GYM_1F (0 | (41 << 8))
+#define MAP_VIRIDIAN_GYM_1F  (0 | (41 << 8))
+#define MAP_VIRIDIAN_GYM_B1F (1 | (41 << 8))
 
 // gMapGroup_NewCave
 #define MAP_PEWTER_CAVE1F      (0 | (42 << 8))

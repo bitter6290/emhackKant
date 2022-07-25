@@ -696,7 +696,8 @@
     "LavenderCoast",
     "CeruleanWoods",
     "VermilionPlain",
-    "FuchsiaSwamp"
+    "FuchsiaSwamp",
+    "ChartreuseWoods"
   ],
   "gMapGroup_NewIndoor": [
     "PalletPlayerHouse_1F",
@@ -724,7 +725,8 @@
     "ViridianApartments1FNW"
   ],
   "gMapGroup_NewGym": [
-    "ViridianGym_1F"
+    "ViridianGym_1F",
+    "ViridianGym_B1F"
   ],
   "gMapGroup_NewCave": [
     "PewterCave1F",

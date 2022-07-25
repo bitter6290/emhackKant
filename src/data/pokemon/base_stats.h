@@ -30867,11 +30867,11 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_LEDENNA] =
     {
         .baseHP        = 70,
-        .baseAttack    = 50,
+        .baseAttack    = 40,
         .baseDefense   = 70,
         .baseSpeed     = 103,
         .baseSpAttack  = 97,
-        .baseSpDefense = 118,
+        .baseSpDefense = 130,
         .type1 = TYPE_BUG,
         .type2 = TYPE_FLYING,
         .catchRate = 65,

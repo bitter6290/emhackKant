@@ -5054,7 +5054,7 @@
     {
       "id": "LAYOUT_SAFFRON_DRYLANDS",
       "name": "SaffronDrylands_Layout",
-      "width": 56,
+      "width": 72,
       "height": 76,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
@@ -5064,7 +5064,7 @@
     {
       "id": "LAYOUT_ROUTE8",
       "name": "Route8_Layout",
-      "width": 56,
+      "width": 72,
       "height": 24,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
@@ -5084,7 +5084,7 @@
     {
       "id": "LAYOUT_SAFFRON_DRYLANDS_N",
       "name": "SaffronDrylandsN_Layout",
-      "width": 48,
+      "width": 64,
       "height": 44,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lilycove",
@@ -5134,7 +5134,7 @@
     {
       "id": "LAYOUT_ROUTE11",
       "name": "Route11_Layout",
-      "width": 48,
+      "width": 64,
       "height": 28,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lilycove",
@@ -5194,7 +5194,7 @@
     {
       "id": "LAYOUT_CERULEAN_WOODS",
       "name": "CeruleanWoods_Layout",
-      "width": 100,
+      "width": 116,
       "height": 64,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lilycove",
@@ -5204,7 +5204,7 @@
     {
       "id": "LAYOUT_VERMILION_PLAIN",
       "name": "VermilionPlain_Layout",
-      "width": 80,
+      "width": 96,
       "height": 44,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
@@ -5234,7 +5234,7 @@
     {
       "id": "LAYOUT_ROUTE14",
       "name": "Route14_Layout",
-      "width": 76,
+      "width": 92,
       "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fortree",
@@ -5244,7 +5244,7 @@
     {
       "id": "LAYOUT_ROUTE15",
       "name": "Route15_Layout",
-      "width": 64,
+      "width": 80,
       "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fortree",
@@ -5254,7 +5254,7 @@
     {
       "id": "LAYOUT_FUCHSIA_SWAMP",
       "name": "FuchsiaSwamp_Layout",
-      "width": 64,
+      "width": 80,
       "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fortree",
@@ -5380,6 +5380,26 @@
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/SaffronPokemonCenter/border.bin",
       "blockdata_filepath": "data/layouts/SaffronPokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHARTREUSE_WOODS",
+      "name": "ChartreuseWoods_Layout",
+      "width": 68,
+      "height": 72,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/ChartreuseWoods/border.bin",
+      "blockdata_filepath": "data/layouts/ChartreuseWoods/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_GYM_B1F",
+      "name": "ViridianGym_B1F_Layout",
+      "width": 52,
+      "height": 22,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/ViridianGym_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianGym_B1F/map.bin"
     }
   ]
 }

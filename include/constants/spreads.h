@@ -1,0 +1,50 @@
+#ifndef GUARD_CONSTANTS_TRAINER_SPREADS_H
+#define GUARD_CONSTANTS_TRAINER_SPREADS_H
+
+//EV spreads
+
+#define SPREAD_40_EV             		     0
+#define SPREAD_0_EV			          		 1
+#define SPREAD_20_EV		         		 2
+#define SPREAD_60_EV		         		 3
+#define SPREAD_80_EV		        		 4
+#define SPREAD_FAST_PHYSICAL_SWEEPER_A		 5
+#define SPREAD_FAST_PHYSICAL_SWEEPER_S		 6
+#define SPREAD_FAST_SPECIAL_SWEEPER_A		 7
+#define SPREAD_FAST_SPECIAL_SWEEPER_S		 8
+#define SPREAD_BULKY_PHYSICAL_SWEEPER		 9
+#define SPREAD_BULKY_SPECIAL_SWEEPER		 10
+#define SPREAD_PHYSICALLY_DEFENSIVE_PH		 11
+#define SPREAD_PHYSICALLY_DEFENSIVE_SP		 12
+#define SPREAD_SPECIALLY_DEFENSIVE_PH		 13
+#define SPREAD_SPECIALLY_DEFENSIVE_SP		 14
+#define SPREAD_BULKY_UTILITY_SP				 15
+#define SPREAD_BULKY_UTILITY_PH				 16
+#define SPREAD_SLOW_PHYSDEF					 17
+#define SPREAD_SLOW_SPDEF					 18
+#define SPREAD_SLOW_ATTACK					 19
+#define SPREAD_SLOW_SPATK					 20
+
+
+//IV spreads
+
+#define SPREAD_16_IV						 0
+#define SPREAD_0_IV							 1
+#define SPREAD_8_IV							 2
+#define SPREAD_24_IV						 3
+#define SPREAD_31_IV						 4
+#define SPREAD_LOW_ATTACK					 5
+#define SPREAD_HP_GRASS						 6
+#define SPREAD_HP_GRASS_LA					 7
+#define SPREAD_HP_FLYING					 8
+#define SPREAD_HP_FLYING_LA					 9
+#define SPREAD_HP_FIRE						 10
+#define SPREAD_HP_FIRE_LA					 11
+#define SPREAD_HP_ICE						 12
+#define SPREAD_HP_ICE_LA				 	 13
+#define SPREAD_SLOW							 14
+#define SPREAD_SLOW_LA						 15
+
+#define NUM_IV_SPREADS						 SPREAD_SLOW_LA
+
+#endif  // GUARD_CONSTANTS_TRAINER_SPREADS

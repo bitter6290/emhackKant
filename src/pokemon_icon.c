@@ -2462,7 +2462,7 @@ const u8 gMonIconPaletteIndices[] =
     [SPECIES_CALYREX_SHADOW_RIDER] = 0,
 	//custom mons
     [SPECIES_SHINX_KANTO] = 0,
-    [SPECIES_LUXIO_KANTO] = 0,
+    [SPECIES_LUXIO_KANTO] = 1,
     [SPECIES_LUXRAY_KANTO] = 0,
     [SPECIES_SANDILE_KANTO] = 1,
     [SPECIES_KROKOROK_KANTO] = 1,

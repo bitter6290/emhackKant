@@ -1235,3 +1235,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CeruleanPokeMart/scripts.inc"
 
 	.include "data/maps/SaffronPokemonCenter/scripts.inc"
+
+	.include "data/maps/ChartreuseWoods/scripts.inc"
+
+	.include "data/maps/ViridianGym_B1F/scripts.inc"

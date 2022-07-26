@@ -11987,6 +11987,5 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_MayLinkPlaceholder),
         .party = {.NoItemDefaultMoves = sParty_MayLinkPlaceholder},
     },
-    [TRAINER_BROCK_1] =
 
 };

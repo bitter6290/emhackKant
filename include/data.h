@@ -88,8 +88,9 @@ struct Trainer
     /*0x18*/ bool8 doubleBattle;
     /*0x1C*/ u32 aiFlags;
     /*0x20*/ unsigned int partySize:4;
-    /*0x22*/ unsigned int scalingCoeff:4;
-    /*0x24*/ union TrainerMonPtr party;
+    		 unsigned int scalingCoeff:4;
+    /*0x21*/ u8 evCoeff;
+    /*0x22*/ union TrainerMonPtr party;
 };
 
 #define TRAINER_ENCOUNTER_MUSIC(trainer)((gTrainers[trainer].encounterMusic_gender & 0x7F))

@@ -234,7 +234,19 @@ const struct TrainerEVSpread gEvSets[] = {
 	},
 	.nature = NATURE_QUIET
 	},
-
+	[SPREAD_FAST_MIXED_SWEEPER] =
+	{
+	.EVs = 
+	{
+		0,
+		168,
+		0,
+		168,
+		168,
+		0
+	},
+	.nature = NATURE_LONELY
+	}
 };
 const u8 gIvSets[][6] = {
 	[SPREAD_16_IV] = {16},

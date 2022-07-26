@@ -3,6 +3,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Sawyer1[] = {
     .iv = 90,
     .lvl = 12,
     .species = SPECIES_SHINX_KANTO,
+    .ability = 1
     }
 };
 
@@ -11,6 +12,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntAquaHideout1[] = {
     .iv = 90,
     .lvl = 12,
     .species = SPECIES_ZUBAT,
+    .ability = 0
     }
 };
 
@@ -19,11 +21,13 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntAquaHideout2[] = {
     .iv = 100,
     .lvl = 14,
     .species = SPECIES_SHINX_KANTO,
+    .ability = 1
     },
     {
     .iv = 100,
     .lvl = 14,
     .species = SPECIES_DROWZEE,
+    .ability = 2
     }
 };
 
@@ -32,11 +36,13 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntAquaHideout3[] = {
     .iv = 100,
     .lvl = 14,
     .species = SPECIES_ZUBAT,
+    .ability = 0
     },
     {
     .iv = 100,
     .lvl = 14,
     .species = SPECIES_RATTATA,
+    .ability = 2
     }
 };
 
@@ -45,16 +51,19 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntAquaHideout4[] = {
     .iv = 80,
     .lvl = 9,
     .species = SPECIES_CATERPIE,
+    .ability = 0
     },
     {
     .iv = 80,
     .lvl = 10,
     .species = SPECIES_KAKUNA,
+    .ability = 0
     },
     {
     .iv = 80,
     .lvl = 9,
     .species = SPECIES_PIKACHU,
+    .ability = 2
     }
 };
 
@@ -67,7 +76,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntSeafloorCavern1[] =
     {
     .iv = 80,
     .lvl = 11,
-    .species = SPECIES_SHINX_KANTO,
+    .species = SPECIES_NIDORAN_F,
     }
 };
 
@@ -76,16 +85,19 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntSeafloorCavern2[] =
     .iv = 70,
     .lvl = 15,
     .species = SPECIES_DIGLETT,
+    .ability = 1
     },
     {
     .iv = 80,
     .lvl = 16,
     .species = SPECIES_GEODUDE,
+    .ability = 1
     },
     {
     .iv = 75,
     .lvl = 17,
     .species = SPECIES_DEERLING_AUTUMN,
+    .ability = 2
     }
 };
 
@@ -12464,3 +12476,98 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayLinkPlaceholder[] = {
     }
 };
 
+static const struct TrainerMonItemCustomMoves sParty_Brock1[] = {
+	{
+	.iv = 0,
+	.lvl = 18,
+	.species = SPECIES_ONIX,
+	.ability = 1,
+	.spreadIv = SPREAD_16_IV,
+	.spreadEv = SPREAD_FAST_PHYSICAL_SWEEPER_S,
+	.heldItem = ITEM_PASSHO_BERRY,
+	.moves = {MOVE_STEALTH_ROCK, MOVE_SAND_TOMB, MOVE_BREAKING_SWIPE, MOVE_SMACK_DOWN}
+	},
+	{
+	.iv = 0,
+	.lvl = 17,
+	.species = SPECIES_GEODUDE,
+	.ability = 1,
+	.spreadIv = SPREAD_16_IV,
+	.spreadEv = SPREAD_BULKY_PHYSICAL_SWEEPER,
+	.heldItem = ITEM_POISON_BARB,
+	.moves = {MOVE_ROCK_TOMB, MOVE_BULLDOZE, MOVE_FLING, MOVE_ROCK_SMASH}
+	},
+	{
+	.iv = 0,
+	.lvl = 17,
+	.species = SPECIES_GROWLITHE_HISUI,
+	.ability = 0,
+	.spreadIv = SPREAD_16_IV,
+	.spreadEv = SPREAD_FAST_MIXED_SWEEPER,
+	.heldItem = ITEM_PASSHO_BERRY,
+	.moves = {MOVE_FIRE_FANG, MOVE_ROCK_TOMB, MOVE_SNARL, MOVE_DOUBLE_KICK}
+	},
+	{
+	.iv = 0,
+	.lvl = 16,
+	.species = SPECIES_ARCHEN,
+	.ability = 0,
+	.spreadIv = SPREAD_16_IV,
+	.spreadEv = SPREAD_FAST_PHYSICAL_SWEEPER_S,
+	.heldItem = ITEM_BERRY_JUICE,
+	.moves = {MOVE_ROCK_THROW, MOVE_WING_ATTACK, MOVE_QUICK_ATTACK, MOVE_STEEL_WING}
+	}
+};
+
+static const struct TrainerMonItemCustomMoves sParty_Brock2[] = {
+	{
+	.iv = 0,
+	.lvl = 30,
+	.species = SPECIES_STEELIX,
+	.ability = 1,
+	.spreadIv = SPREAD_24_IV,
+	.spreadEv = SPREAD_BULKY_PHYSICAL_SWEEPER,
+	.heldItem = ITEM_PASSHO_BERRY,
+	.moves = {MOVE_STEALTH_ROCK, MOVE_ROAR, MOVE_ROCK_SLIDE, MOVE_IRON_HEAD}
+	},
+	{
+	.iv = 0,
+	.lvl = 29,
+	.species = SPECIES_GRAVELER,
+	.ability = 1,
+	.spreadIv = SPREAD_24_IV,
+	.spreadEv = SPREAD_BULKY_PHYSICAL_SWEEPER,
+	.heldItem = ITEM_IAPAPA_BERRY,
+	.moves = {MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_CURSE, MOVE_HAMMER_ARM}
+	},
+	{
+	.iv = 0,
+	.lvl = 29,
+	.species = SPECIES_GROWLITHE_HISUI,
+	.ability = 0,
+	.spreadIv = SPREAD_24_IV,
+	.spreadEv = SPREAD_FAST_MIXED_SWEEPER,
+	.heldItem = ITEM_PASSHO_BERRY,
+	.moves = {MOVE_FIRE_FANG, MOVE_ROCK_TOMB, MOVE_SNARL, MOVE_DOUBLE_KICK}
+	},
+	{
+	.iv = 0,
+	.lvl = 28,
+	.species = SPECIES_ARCHEN,
+	.ability = 0,
+	.spreadIv = SPREAD_24_IV,
+	.spreadEv = SPREAD_FAST_PHYSICAL_SWEEPER_S,
+	.heldItem = ITEM_BERRY_JUICE,
+	.moves = {MOVE_ROCK_THROW, MOVE_WING_ATTACK, MOVE_QUICK_ATTACK, MOVE_STEEL_WING}
+	},
+	{
+	.iv = 0,
+	.lvl = 28,
+	.species = SPECIES_SLIGGOO_HISUI,
+	.ability = 0,
+	.spreadIv = SPREAD_24_IV,
+	.spreadEv = SPREAD_FAST_PHYSICAL_SWEEPER_S,
+	.heldItem = ITEM_BERRY_JUICE,
+	.moves = {MOVE_ROCK_THROW, MOVE_WING_ATTACK, MOVE_QUICK_ATTACK, MOVE_STEEL_WING}
+	}
+};

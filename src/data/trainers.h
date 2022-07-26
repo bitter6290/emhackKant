@@ -1,12 +1,5 @@
 const struct Trainer gTrainers[] = {
-//scalingLevels:
-//0 = 1/2 Wild Pokemon?
-//1 = 5/8
-//2 = 11/16 Default
-//3 = 3/4 Strong trainers
-//4 = 13/16 Notable trainers
-//5 = 7/8
-//If player is lower level than target, then will be reversed
+
 
 
     [TRAINER_NONE] =
@@ -21,7 +14,8 @@ const struct Trainer gTrainers[] = {
         .aiFlags = 0,
         .partySize = 0,
         .party = {.NoItemDefaultMoves = NULL},
-        .scalingCoeff = 0
+        .scalingCoeff = 0,
+        .evCoeff = 0,
     },
 
     [TRAINER_SAWYER_1] =
@@ -36,7 +30,8 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = ARRAY_COUNT(sParty_Sawyer1),
         .party = {.NoItemDefaultMoves = sParty_Sawyer1},
-        .scalingCoeff = 11
+        .scalingCoeff = 11,
+        .evCoeff = 255,
     },
 
     [TRAINER_GRUNT_AQUA_HIDEOUT_1] =
@@ -51,7 +46,8 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = ARRAY_COUNT(sParty_GruntAquaHideout1),
         .party = {.NoItemDefaultMoves = sParty_GruntAquaHideout1},
-        .scalingCoeff = 11
+        .scalingCoeff = 11,
+        .evCoeff = 255,
     },
 
     [TRAINER_GRUNT_AQUA_HIDEOUT_2] =
@@ -66,7 +62,8 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = ARRAY_COUNT(sParty_GruntAquaHideout2),
         .party = {.NoItemDefaultMoves = sParty_GruntAquaHideout2},
-        .scalingCoeff = 11
+        .scalingCoeff = 11,
+        .evCoeff = 255,
     },
 
     [TRAINER_GRUNT_AQUA_HIDEOUT_3] =
@@ -81,7 +78,8 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = ARRAY_COUNT(sParty_GruntAquaHideout3),
         .party = {.NoItemDefaultMoves = sParty_GruntAquaHideout3},
-        .scalingCoeff = 11
+        .scalingCoeff = 11,
+        .evCoeff = 255,
     },
 
     [TRAINER_GRUNT_AQUA_HIDEOUT_4] =
@@ -96,7 +94,8 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = ARRAY_COUNT(sParty_GruntAquaHideout4),
         .party = {.NoItemDefaultMoves = sParty_GruntAquaHideout4},
-        .scalingCoeff = 9
+        .scalingCoeff = 9,
+        .evCoeff = 255,
     },
 
     [TRAINER_GRUNT_SEAFLOOR_CAVERN_1] =
@@ -111,7 +110,8 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = ARRAY_COUNT(sParty_GruntSeafloorCavern1),
         .party = {.NoItemDefaultMoves = sParty_GruntSeafloorCavern1},
-        .scalingCoeff = 9
+        .scalingCoeff = 9,
+        .evCoeff = 255,
     },
 
     [TRAINER_GRUNT_SEAFLOOR_CAVERN_2] =
@@ -126,7 +126,8 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = ARRAY_COUNT(sParty_GruntSeafloorCavern2),
         .party = {.NoItemDefaultMoves = sParty_GruntSeafloorCavern2},
-        .scalingCoeff = 9
+        .scalingCoeff = 9,
+        .evCoeff = 255,
     },
 
     [TRAINER_GRUNT_SEAFLOOR_CAVERN_3] =
@@ -11986,5 +11987,6 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_MayLinkPlaceholder),
         .party = {.NoItemDefaultMoves = sParty_MayLinkPlaceholder},
     },
+    [TRAINER_BROCK_1] =
 
 };

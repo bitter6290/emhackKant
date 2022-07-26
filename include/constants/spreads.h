@@ -24,6 +24,7 @@
 #define SPREAD_SLOW_SPDEF					 18
 #define SPREAD_SLOW_ATTACK					 19
 #define SPREAD_SLOW_SPATK					 20
+#define SPREAD_FAST_MIXED_SWEEPER			 21
 
 
 //IV spreads

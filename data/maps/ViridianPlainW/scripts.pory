@@ -6,3 +6,13 @@ msgbox("Viridian Seaside Cottages\lSeeking new tenants!")
 release
 end
 }
+
+script ViridianPlainW_TM01{
+lock
+msgbox("Found TM01: Charm!")
+setflag(FLAG_TM01_CHARM)
+playfanfare(MUS_DP_OBTAIN_ITEM)
+waitfanfare
+release
+end
+}

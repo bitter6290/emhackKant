@@ -9,5 +9,18 @@ ViridianPlainW_SeasideCottageSign::
 	end
 
 
+ViridianPlainW_TM01::
+	lock
+	msgbox ViridianPlainW_TM01_Text_0
+	setflag FLAG_TM01_CHARM
+	playfanfare MUS_DP_OBTAIN_ITEM
+	waitfanfare
+	release
+	end
+
+
 ViridianPlainW_SeasideCottageSign_Text_0:
 	.string "Viridian Seaside Cottages\lSeeking new tenants!$"
+
+ViridianPlainW_TM01_Text_0:
+	.string "Found TM01: Charm!$"

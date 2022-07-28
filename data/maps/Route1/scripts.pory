@@ -1,2 +1,12 @@
 mapscripts Route1_MapScripts{
 }
+
+text Route1_Lass1{
+	format("Hey, {PLAYER}! How's it going?")
+}
+text Route1_Lass2{
+	format("Ooh, you got a Pokémon? What a surprise!")
+}
+text Route1_Lass3{
+	format("Well, now that we both have Pokémon, why don't we try them out?")
+}

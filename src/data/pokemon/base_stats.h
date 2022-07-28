@@ -30430,9 +30430,9 @@ const struct BaseStats gBaseStats[] =
     
     [SPECIES_LUXRAY_KANTO] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 105,
-        .baseDefense   = 93,
+        .baseHP        = 75,
+        .baseAttack    = 115,
+        .baseDefense   = 88,
         .baseSpeed     = 83,
         .baseSpAttack  = 77,
         .baseSpDefense = 83,
@@ -30476,7 +30476,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_MINERAL,
         .eggGroup2 = EGG_GROUP_MINERAL,
         #if P_UPDATED_ABILITIES >= GEN_6
-            .abilities = {ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_INFILTRATOR},
+            .abilities = {ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_FIRE_CORE},
         #else
             .abilities = {ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_SHADOW_TAG},
         #endif
@@ -30504,7 +30504,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_MINERAL,
         .eggGroup2 = EGG_GROUP_MINERAL,
         #if P_UPDATED_ABILITIES >= GEN_6
-            .abilities = {ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_INFILTRATOR},
+            .abilities = {ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_FIRE_CORE},
         #else
             .abilities = {ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_SHADOW_TAG},
         #endif
@@ -30532,7 +30532,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_MINERAL,
         .eggGroup2 = EGG_GROUP_MINERAL,
         #if P_UPDATED_ABILITIES >= GEN_6
-            .abilities = {ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_INFILTRATOR},
+            .abilities = {ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_FIRE_CORE},
         #else
             .abilities = {ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_SHADOW_TAG},
         #endif

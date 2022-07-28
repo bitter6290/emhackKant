@@ -1239,3 +1239,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/ChartreuseWoods/scripts.inc"
 
 	.include "data/maps/ViridianGym_B1F/scripts.inc"
+
+	.include "data/maps/BurgundyCoastline/scripts.inc"

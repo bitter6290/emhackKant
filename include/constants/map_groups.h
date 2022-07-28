@@ -656,6 +656,7 @@
 #define MAP_VERMILION_PLAIN    (28 | (36 << 8))
 #define MAP_FUCHSIA_SWAMP      (29 | (36 << 8))
 #define MAP_CHARTREUSE_WOODS   (30 | (36 << 8))
+#define MAP_BURGUNDY_COASTLINE (31 | (36 << 8))
 
 // gMapGroup_NewIndoor
 #define MAP_PALLET_PLAYER_HOUSE_1F      (0 | (37 << 8))

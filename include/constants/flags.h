@@ -2107,9 +2107,19 @@
 #define TRAINER_FLAGS_START                                         0x800
 #define TRAINER_FLAGS_END                                           (TRAINER_FLAGS_START + MAX_TRAINERS_COUNT - 1) // 0x1400
 
+// TM Flags
+// With TMs being reusable, there's no reason to represent them as items that take up a whole byte.
+
+#define TMHM_FLAGS											(TRAINER_FLAGS_END + 1) //0x1401
+
+#define FLAG_TM01_CHARM									(TMHM_FLAGS + 0x0)
+
+
+#define TMHM_FLAGS_END												(TMHM_FLAGS + FLAG_TM01_CHARM)
+
 // System Flags
 
-#define SYSTEM_FLAGS                                   (TRAINER_FLAGS_END + 1) // 0x860
+#define SYSTEM_FLAGS                                   (TMHM_FLAGS_END + 1) // 0x860
 
 #define FLAG_SYS_POKEMON_GET                         (SYSTEM_FLAGS + 0x0) // FLAG_0x860
 #define FLAG_SYS_POKEDEX_GET                         (SYSTEM_FLAGS + 0x1)

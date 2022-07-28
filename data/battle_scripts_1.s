@@ -418,6 +418,7 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectResistance			  @ EFFECT_RESISTANCE
 	.4byte BattleScript_EffectPureWater				  @ EFFECT_PURE_WATER
 	.4byte BattleScript_EffectVictoryDance			  @ EFFECT_VICTORY_DANCE
+	.4byte BattleScript_EffectHit					  @ EFFECT_PRESSURE_POINT
 
 
 BattleScript_EffectSteelBeam::
@@ -9877,6 +9878,7 @@ BattleScript_VictoryDanceTrySpeed::
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_VictoryDanceEnd::
 	goto BattleScript_MoveEnd
+	
 	
 
 	

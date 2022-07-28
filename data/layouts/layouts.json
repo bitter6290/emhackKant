@@ -5400,6 +5400,16 @@
       "secondary_tileset": "gTileset_MeteorFalls",
       "border_filepath": "data/layouts/ViridianGym_B1F/border.bin",
       "blockdata_filepath": "data/layouts/ViridianGym_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_BURGUNDY_COASTLINE",
+      "name": "BurgundyCoastline_Layout",
+      "width": 20,
+      "height": 124,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/BurgundyCoastline/border.bin",
+      "blockdata_filepath": "data/layouts/BurgundyCoastline/map.bin"
     }
   ]
 }

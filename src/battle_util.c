@@ -8675,7 +8675,7 @@ static u32 CalcAttackStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, b
     }
     else
     {
-        if (IS_MOVE_PHYSICAL(move))
+        if (IS_MOVE_PHYSICAL(move) || (moveType == TYPE_FIRE && GetBattlerAbility(battlerAtk) == ABILITY_FIRE_CORE))
         {
             atkStat = gBattleMons[battlerAtk].attack;
             atkStage = gBattleMons[battlerAtk].statStages[STAT_ATK];
@@ -8864,7 +8864,7 @@ static u32 CalcDefenseStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, 
         spDef = gBattleMons[battlerDef].spDefense;
     }
 
-    if (gBattleMoves[move].effect == EFFECT_PSYSHOCK || IS_MOVE_PHYSICAL(move)) // uses defense stat instead of sp.def
+    if (gBattleMoves[move].effect == EFFECT_PSYSHOCK || (IS_MOVE_PHYSICAL(move) && gBattleMoves[move].effect != EFFECT_PRESSUREPOINT)) // uses defense stat instead of sp.def
     {
         defStat = def;
         defStage = gBattleMons[battlerDef].statStages[STAT_DEF];

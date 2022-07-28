@@ -50,6 +50,7 @@ PalletOakLab_OakDialogue_2:
 	waitfanfare
 	giveitem ITEM_POKE_BALL, 10
 	giveitem ITEM_POTION, 5
+	giveitem ITEM_TM_CASE, 1
 	goto PalletOakLab_OakDialogue_1
 
 PalletOakLab_OakDialogue_3:

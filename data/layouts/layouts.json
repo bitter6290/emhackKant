@@ -5387,7 +5387,7 @@
       "width": 68,
       "height": 72,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/ChartreuseWoods/border.bin",
       "blockdata_filepath": "data/layouts/ChartreuseWoods/map.bin"
     },

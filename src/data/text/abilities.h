@@ -257,6 +257,7 @@ static const u8 sAsOneShadowRiderDescription[] = _("Unnerve and Grim Neigh.");
 static const u8 sRockySurgeDescription[] = _("Field becomes rocky");
 static const u8 sShadeSurgeDescription[] = _("Field becomes dark.");
 static const u8 sAstralLockDescription[] = _("Negates terrain.");
+static const u8 sFireCoreDescription[] = _("All Fire moves use Attack.");
 
 #if B_EXPANDED_ABILITY_NAMES == TRUE
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
@@ -532,6 +533,7 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_ROCKY_SURGE] = _("Rocky Surge"),
     [ABILITY_SHADE_SURGE] = _("Shade Surge"),
     [ABILITY_ASTRAL_LOCK] = _("Astral Lock"),
+    [ABILITY_FIRE_CORE] = _("Fire Core"),
 };
 #else   // 12 characters
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
@@ -807,6 +809,7 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_ROCKY_SURGE] = _("Rocky Surge"),
     [ABILITY_SHADE_SURGE] = _("Shade Surge"),
     [ABILITY_ASTRAL_LOCK] = _("Astral Lock"),
+    [ABILITY_FIRE_CORE] = _("Fire Core"),
 };
 #endif
 
@@ -1083,4 +1086,5 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
     [ABILITY_ROCKY_SURGE] = sRockySurgeDescription,
     [ABILITY_SHADE_SURGE] = sShadeSurgeDescription,
     [ABILITY_ASTRAL_LOCK] = sAstralLockDescription,
+    [ABILITY_FIRE_CORE] = sFireCoreDescription,
 };

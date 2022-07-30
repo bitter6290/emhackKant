@@ -419,6 +419,10 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectPureWater				  @ EFFECT_PURE_WATER
 	.4byte BattleScript_EffectVictoryDance			  @ EFFECT_VICTORY_DANCE
 	.4byte BattleScript_EffectHit					  @ EFFECT_PRESSURE_POINT
+	.4byte BattleScript_EffectPoisonHit				  @ EFFECT_BARB_BARRAGE
+	.4byte BattleScript_EffectBurnHit				  @ EFFECT_INFERNAL_PARADE
+	.4byte BattleScript_EffectFreezeHit				  @ EFFECT_BITTER_MALICE
+	.4byte BattleScript_EffectChloroblast			  @ EFFECT_CHLOROBLAST
 
 
 BattleScript_EffectSteelBeam::
@@ -9847,7 +9851,7 @@ BattleScript_EffectPureWater::
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
-BattleScript_EffectVictoryDance:
+BattleScript_EffectVictoryDance::
 	attackcanceler
 	attackstring
 	ppreduce
@@ -9879,6 +9883,37 @@ BattleScript_VictoryDanceTrySpeed::
 BattleScript_VictoryDanceEnd::
 	goto BattleScript_MoveEnd
 	
+BattleScript_EffectChloroblast::
+	attackcanceler
+	setmoveeffect MOVE_EFFECT_RECOIL_33 | MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	attackstring
+	ppreduce
+	critcalc
+	damagecalc
+	adjustdamage
+	attackanimation
+	waitanimation
+	effectivenesssound
+	hitanimation BS_TARGET
+	waitstate
+	healthbarupdate BS_TARGET
+	datahpupdate BS_TARGET
+	critmessage
+	waitmessage B_WAIT_TIME_LONG
+	resultmessage
+	waitmessage B_WAIT_TIME_LONG
+	tryfaintmon BS_TARGET
+	seteffectwithchance
+	setbyte sSTAT_ANIM_PLAYED, FALSE
+	playstatchangeanimation BS_ATTACKER, BIT_SPEED, STAT_CHANGE_CANT_PREVENT | STAT_CHANGE_NEGATIVE
+	setstatchanger STAT_SPEED, 1, TRUE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN | STAT_BUFF_ALLOW_PTR, BattleScript_ChloroblastEnd
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_ChloroblastEnd
+	printfromtable gStatDownStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_ChloroblastEnd::	
+	goto BattleScript_MoveEnd
 	
 
 	

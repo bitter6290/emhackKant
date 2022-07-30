@@ -6190,6 +6190,111 @@ const struct MonCoords gMonFrontPicCoords[] =
      .size = MON_COORDS_SIZE(64,64),
      .y_offset = 6,
      },
+     [SPECIES_VOLTORB_HISUI] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_ELECTRODE_HISUI] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_QWILFISH_HISUI] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_LILLIGANT_HISUI] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_SNEASEL_HISUI] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_AVALUGG_HISUI] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_ZORUA_HISUI] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_ZOROARK_HISUI] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_BRAVIARY_HISUI] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_DECIDUEYE_HISUI] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_TYPHLOSION_HISUI] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_SAMUROTT_HISUI] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_BASCULEGION_M] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_ENAMORUS_THERIAN] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_WYRDEER] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_KLEAVOR] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_URSALUNA] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_BASCULEGION] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_SNEASLER] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_OVERQWIL] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_ENAMORUS] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
      [SPECIES_KRICKETON] =
      {
      .size = MON_COORDS_SIZE(64,64),

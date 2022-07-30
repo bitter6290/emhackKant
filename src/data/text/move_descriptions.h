@@ -2978,6 +2978,18 @@ static const u8 sEerieSpellDescription[] = _(
     "Attacks with psychic power.\n"
     "Foe's last move has 3 PP cut.");
 
+static const u8 sVictoryDanceDescription[] = _(
+    "Dances to raise Atk\n"
+    "Def and Speed.");
+
+static const u8 sBoltKickDescription[] = _(
+    "A kick with a high critical-\n"
+    "hit ratio. May paralyze.");
+
+static const u8 sFrostKickDescription[] = _(
+    "A kick with a high critical-\n"
+    "hit ratio. May freeze.");
+
 static const u8 sNotDoneYetDescription[] = _(
     "Not done yet.");
 
@@ -3747,5 +3759,23 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_RESISTANCE - 1] = sNotDoneYetDescription,
     [MOVE_SCORCHED_EARTH - 1] = sNotDoneYetDescription,
     [MOVE_RAGING_FURY - 1] = sNotDoneYetDescription,
-    [MOVE_VICTORY_DANCE - 1] = sNotDoneYetDescription,
+    [MOVE_VICTORY_DANCE - 1] = sVictoryDanceDescription,
+    [MOVE_BOLT_KICK - 1] = sBoltKickDescription,
+    [MOVE_FROST_KICK - 1] = sFrostKickDescription,
+    [MOVE_PRESSURE_POINT - 1] = sNotDoneYetDescription,
+    [MOVE_BARB_BARRAGE - 1] = sNotDoneYetDescription,
+    [MOVE_BITTER_MALICE - 1] = sNotDoneYetDescription,
+    [MOVE_BLEAKWIND_STORM - 1] = sNotDoneYetDescription,
+    [MOVE_CHLOROBLAST - 1] = sNotDoneYetDescription,
+    [MOVE_ESPER_WING - 1] = sNotDoneYetDescription,
+    [MOVE_HEADLONG_RUSH - 1] = sNotDoneYetDescription,
+    [MOVE_INFERNAL_PARADE - 1] = sNotDoneYetDescription,
+    [MOVE_MOUNTAIN_GALE - 1] = sNotDoneYetDescription,
+    [MOVE_PSYSHIELD_BASH - 1] = sNotDoneYetDescription,
+    [MOVE_SANDSEAR_STORM - 1] = sNotDoneYetDescription,
+    [MOVE_SPRINGTIDE_STORM - 1] = sNotDoneYetDescription,
+    [MOVE_STONE_AXE - 1] = sNotDoneYetDescription,
+    [MOVE_TRIPLE_ARROWS - 1] = sNotDoneYetDescription,
+    [MOVE_WAVE_CRASH - 1] = sNotDoneYetDescription,
+    [MOVE_WILDBOLT_STORM - 1] = sNotDoneYetDescription,
 };

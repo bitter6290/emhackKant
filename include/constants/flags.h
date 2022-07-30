@@ -2112,10 +2112,22 @@
 
 #define TMHM_FLAGS											(TRAINER_FLAGS_END + 1) //0x1401
 
-#define FLAG_TM01_CHARM									(TMHM_FLAGS + 0x0)
+#define FLAG_TM01_RETURN									(TMHM_FLAGS + 0x0)
+#define FLAG_TM02_FLARE_BLITZ								(TMHM_FLAGS + 0x1)
+#define FLAG_TM03_AQUA_TAIL									(TMHM_FLAGS + 0x2)
+#define FLAG_TM04_WOOD_HAMMER								(TMHM_FLAGS + 0x3)
+#define FLAG_TM05_WILD_CHARGE								(TMHM_FLAGS + 0x4)
+#define FLAG_TM06_ICICLE_CRASH								(TMHM_FLAGS + 0x5)
+#define FLAG_TM07_HAMMER_ARM								(TMHM_FLAGS + 0x6)
+#define FLAG_TM08_POISON_JAB								(TMHM_FLAGS + 0x7)
+#define FLAG_TM09_HIGH_HORSEPOWER							(TMHM_FLAGS + 0x8)
+#define FLAG_TM10_BRAVE_BIRD								(TMHM_FLAGS + 0x9)
+#define FLAG_TM11_ZEN_HEADBUTT								(TMHM_FLAGS + 0xA)
+#define FLAG_TM12_X_SCISSOR									(TMHM_FLAGS + 0xB)
+#define FLAG_TM99_TOXIC										(TMHM_FLAGS + 0xC)
 
 
-#define TMHM_FLAGS_END												(TMHM_FLAGS + FLAG_TM01_CHARM)
+#define TMHM_FLAGS_END												(TMHM_FLAGS + FLAG_TM99_TOXIC)
 
 // System Flags
 

@@ -763,7 +763,25 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_SCORCHED_EARTH] = _("Scorch Earth"),
     [MOVE_RESISTANCE] = _("Resistance"),
     [MOVE_RAGING_FURY] = _("RagingFury"),
-    [MOVE_VICTORY_DANCE] = _("VictoryDance")
+    [MOVE_VICTORY_DANCE] = _("VictoryDance"),
+    [MOVE_BOLT_KICK] = _("Bolt Kick"),
+    [MOVE_FROST_KICK] = _("Frost Kick"),
+    [MOVE_PRESSURE_POINT] = _("PressurPoint"),
+    [MOVE_BARB_BARRAGE] = _("Barb Barrage"),
+    [MOVE_BITTER_MALICE] = _("BitterMalice"),
+    [MOVE_BLEAKWIND_STORM] = _("Bleak Storm"),
+    [MOVE_CHLOROBLAST] = _("Chloroblast"),
+    [MOVE_ESPER_WING] = _("Esper Wing"),
+    [MOVE_HEADLONG_RUSH] = _("HeadlongRush"),
+    [MOVE_INFERNAL_PARADE] = _("Hell-Parade"),
+    [MOVE_MOUNTAIN_GALE] = _("MountainGale"),
+	[MOVE_PSYSHIELD_BASH] = _("Shield Bash"),
+	[MOVE_SANDSEAR_STORM] = _("SearingStorm"),
+	[MOVE_STONE_AXE] = _("Stone Axe"),
+	[MOVE_TRIPLE_ARROWS] = _("TripleArrows"),
+	[MOVE_WAVE_CRASH] = _("Wave Crash"),
+	[MOVE_WILDBOLT_STORM] = ("Wild Storm"),
+	
 };
 
 static const u8 sText_Breakneck_Blitz[] = _("Breakneck Blitz");

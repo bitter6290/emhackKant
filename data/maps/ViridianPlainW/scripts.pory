@@ -9,8 +9,8 @@ end
 
 script ViridianPlainW_TM01{
 lock
-msgbox("Found TM01: Charm!")
-setflag(FLAG_TM01_CHARM)
+msgbox("Found TM99: Toxic!")
+setflag(FLAG_TM99_TOXIC)
 playfanfare(MUS_DP_OBTAIN_ITEM)
 waitfanfare
 release

@@ -779,6 +779,34 @@ gBattleAnims_Moves::
 	.4byte Move_GLACIAL_LANCE
 	.4byte Move_ASTRAL_BARRAGE
 	.4byte Move_EERIE_SPELL
+@@@@@@@@@@@@ NEW/PLA @@@@@@@@@@@@
+	.4byte Move_ROCKY_TERRAIN
+	.4byte Move_DARK_TERRAIN
+	.4byte Move_PURE_WATER
+	.4byte Move_VOLCANIC_FLOW
+	.4byte Move_SCORCHED_EARTH
+	.4byte Move_RESISTANCE
+	.4byte Move_RAGING_FURY
+	.4byte Move_VICTORY_DANCE
+	.4byte Move_SOARING_KICK
+	.4byte Move_BOLT_KICK
+	.4byte Move_FROST_KICK
+	.4byte Move_PRESSURE_POINT
+	.4byte Move_BARB_BARRAGE
+	.4byte Move_BITTER_MALICE
+	.4byte Move_BLEAKWIND_STORM
+	.4byte Move_CHLOROBLAST
+	.4byte Move_ESPER_WING
+	.4byte Move_HEADLONG_RUSH
+	.4byte Move_INFERNAL_PARADE
+	.4byte Move_MOUNTAIN_GALE
+	.4byte Move_PSYSHIELD_BASH
+	.4byte Move_SANDSEAR_STORM
+	.4byte Move_SPRINGTIDE_STORM
+	.4byte Move_STONE_AXE
+	.4byte Move_TRIPLE_ARROWS
+	.4byte Move_WAVE_CRASH
+	.4byte Move_WILDBOLT_STORM
 @@@@ Z MOVES
 	.4byte Move_BREAKNECK_BLITZ
 	.4byte Move_ALL_OUT_PUMMELING
@@ -22237,6 +22265,7 @@ SweetScentEffect:
 	delay 2
 	return
 
+Move_CHLOROBLAST:
 Move_HYPER_BEAM:
 	loadspritegfx ANIM_TAG_ORBS
 	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, 1, 4, 0, 16, RGB_BLACK
@@ -30606,9 +30635,62 @@ SoulStealingSevenStarStrikeExplosion:
 	delay 0x6
 	return
 	
-Move_PureWater:
+Move_PURE_WATER:
 	createvisualtask AnimTask_CreateSurfWave, 2, ANIM_SURF_PAL_SURF
 	delay 24
 	panse SE_M_SURF, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +2, 0
 	waitforvisualfinish
 	end
+
+Move_ROCKY_TERRAIN:
+end @to do
+Move_DARK_TERRAIN:
+end @to do
+Move_VOLCANIC_FLOW:
+end @to do
+Move_SCORCHED_EARTH:
+end @to do
+Move_RESISTANCE:
+end @to do
+Move_RAGING_FURY:
+end @to do
+Move_VICTORY_DANCE:
+end @to do
+Move_SOARING_KICK:
+end @to do
+Move_BOLT_KICK:
+end @to do
+Move_FROST_KICK:
+end @to do
+Move_PRESSURE_POINT:
+end @to do
+Move_BARB_BARRAGE:
+end @to do
+Move_BITTER_MALICE:
+end @to do
+Move_BLEAKWIND_STORM:
+end @to do
+@Move_CHLOROBLAST:
+@end @to do
+Move_ESPER_WING:
+end @to do
+Move_HEADLONG_RUSH:
+end @to do
+Move_INFERNAL_PARADE:
+end @to do
+Move_MOUNTAIN_GALE:
+end @to do
+Move_PSYSHIELD_BASH:
+end @to do
+Move_SANDSEAR_STORM:
+end @to do
+Move_SPRINGTIDE_STORM:
+end @to do
+Move_STONE_AXE:
+end @to do
+Move_TRIPLE_ARROWS:
+end @to do
+Move_WAVE_CRASH:
+end @to do
+Move_WILDBOLT_STORM:
+end @to do

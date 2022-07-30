@@ -17,6 +17,11 @@
       "direction": "left",
       "offset": 0,
       "map": "MAP_CHARTREUSE_CITY"
+    },
+    {
+      "direction": "right",
+      "offset": -52,
+      "map": "MAP_BURGUNDY_COASTLINE"
     }
   ],
   "object_events": [

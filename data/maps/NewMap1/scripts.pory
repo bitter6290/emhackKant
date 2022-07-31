@@ -1,9 +1,10 @@
 mapscripts NewMap1_MapScripts{
-	MAP_SCRIPT_ON_LOAD: NewMap1_OnLoad
+	MAP_SCRIPT_ON_TRANSITION: NewMap1_OnResume
 }
 
-script NewMap1_OnLoad{
+script NewMap1_OnResume{
 	setrespawn(HEAL_LOCATION_PALLET_TOWN)
+	removeobject(1)
 	setflag(FLAG_TEMP_5)
 	end
 }
@@ -15,8 +16,14 @@ msgbox(format("Oak: {PLAYER}!"))
 playse(SE_PIN)
 applymovement(OBJ_EVENT_ID_PLAYER,DownExclam)
 waitmovement(OBJ_EVENT_ID_PLAYER)
+if(var(VAR_STORY_PROGRESS)==0){
 msgbox(format("Oak: You can't go out without a Pokémon!" 
 	"\lIf you want to talk about leaving Pallet Town, come to my lab."))
+}
+else{
+msgbox(format("Oak: It's too dangerous to go out without a Pokémon!"
+	"\lTake one from my lab before you go out!"))
+}
 applymovement(OBJ_EVENT_ID_PLAYER,Pallet_PlayerRetreat)
 waitmovement(OBJ_EVENT_ID_PLAYER)
 }
@@ -25,9 +32,9 @@ msgbox(format("Oak: {PLAYER}!"))
 playse(SE_PIN)
 applymovement(OBJ_EVENT_ID_PLAYER,DownExclam)
 waitmovement(OBJ_EVENT_ID_PLAYER)
-clearflag(FLAG_TEMP_5)
-showobjectat(1,MAP_NEW_MAP1)
 getplayerxy(VAR_RESULT,VAR_TEMP_1)
+clearflag(FLAG_TEMP_5)
+addobject(1)
 if(var(VAR_RESULT)==11){
 applymovement(1,Pallet_OakStepLeft)
 waitmovement(1)
@@ -38,7 +45,6 @@ msgbox(format("Since you're leaving town... I would like to ask you one small fa
 msgbox(format("Thank you, {PLAYER}."))
 applymovement(1,Pallet_OakDown)
 waitmovement(1)
-setflag(FLAG_TEMP_5)
 removeobject(1)
 addvar(VAR_STORY_PROGRESS,1)
 }
@@ -60,10 +66,10 @@ walk_left
 step_end
 }
 movement Pallet_OakUp{
-walk_up*6
+walk_up*5
 step_end
 }
 movement Pallet_OakDown{
-walk_down*6
+walk_down*5
 step_end
 }

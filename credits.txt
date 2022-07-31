@@ -1,0 +1,25 @@
+Decomp base: PRET
+
+Expansion base: RomHack-Hideout
+
+Additional scripting resources:
+Ghoulslash
+LOuroboros
+DizzyEgg
+TheXaman
+
+Graphics:
+Mak
+Loafus022
+Sopita_Yorita
+lennybitao
+Travis
+IDesbas/Angy
+PorousMist326
+leParagon
+Megax Rocker
+Vent
+Cesare_CBass
+Frander04
+
+Music base: CyanSMP64/Furret

@@ -200,6 +200,7 @@ u8 TrySpawnObjectEventTemplate(struct ObjectEventTemplate *objectEventTemplate, 
 
 
 
+
 void MovementType_None(struct Sprite *);
 void MovementType_LookAround(struct Sprite *);
 void MovementType_WanderAround(struct Sprite *);

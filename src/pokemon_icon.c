@@ -1277,6 +1277,8 @@ const u8 *const gMonIconTable[] =
     [SPECIES_SNEASLER] = gMonIcon_Sneasler,
     [SPECIES_OVERQWIL] = gMonIcon_Overqwil,
     [SPECIES_ENAMORUS] = gMonIcon_Enamorus,
+    [SPECIES_DIALGA_ORIGIN] = gMonIcon_DialgaOrigin,
+    [SPECIES_PALKIA_ORIGIN] = gMonIcon_PalkiaOrigin,
     
      [SPECIES_KRICKETON] = gMonIcon_Kricketon,
      [SPECIES_KRICKALLOUS] = gMonIcon_Krickallous,
@@ -2498,6 +2500,8 @@ const u8 gMonIconPaletteIndices[] =
     [SPECIES_OVERQWIL] = 2,
     [SPECIES_ENAMORUS] = 1,
     [SPECIES_ENAMORUS_THERIAN] = 1,
+    [SPECIES_DIALGA_ORIGIN] = 0,
+    [SPECIES_PALKIA_ORIGIN] = 2,
     [SPECIES_EGG] = 1,
 };
 

@@ -5410,6 +5410,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/BurgundyCoastline/border.bin",
       "blockdata_filepath": "data/layouts/BurgundyCoastline/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_MOON_INSIDE_B2F",
+      "name": "MtMoonInsideB2f_Layout",
+      "width": 70,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/MtMoonInsideB2f/border.bin",
+      "blockdata_filepath": "data/layouts/MtMoonInsideB2f/map.bin"
     }
   ]
 }

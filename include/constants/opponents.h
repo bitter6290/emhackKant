@@ -856,6 +856,10 @@
 #define TRAINER_LEAF                        852
 #define TRAINER_BRENDAN_PLACEHOLDER         853
 #define TRAINER_MAY_PLACEHOLDER             854
+#define TRAINER_BROCK_1						855
+#define TRAINER_BROCK_2						856
+#define TRAINER_BROCK_3						857
+#define TRAINER_BROCK_4						858
 
 //New trainers
 
@@ -864,7 +868,7 @@
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT                      855
+#define TRAINERS_COUNT                      859
 #define MAX_TRAINERS_COUNT                  3072
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_H

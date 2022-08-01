@@ -580,12 +580,9 @@ gStdScripts_End::
 	.include "data/maps/ViridianPlainW/scripts.inc"
 	.include "data/maps/ViridianComplex/scripts.inc"
 	.include "data/maps/ViridianHill/scripts.inc"
-	.include "data/maps/ViridianPlainNW/scripts.inc"
 	.include "data/maps/ViridianPlainW_N/scripts.inc"
 	.include "data/maps/ViridianForestW/scripts.inc"
 	.include "data/maps/PalletPlayerHouseB1F/scripts.inc"
-	.include "data/maps/PalletPlayerHouse/scripts.inc"
-	.include "data/maps/PalletProtagHouse/scripts.inc"
 	.include "data/maps/PalletPlayerHouse_1F/scripts.inc"
 	.include "data/maps/PalletOakLab/scripts.inc"
 
@@ -1241,3 +1238,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/ViridianGym_B1F/scripts.inc"
 
 	.include "data/maps/BurgundyCoastline/scripts.inc"
+
+	.include "data/maps/MtMoonInsideB2f/scripts.inc"

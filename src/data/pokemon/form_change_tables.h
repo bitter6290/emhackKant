@@ -43,6 +43,18 @@ FORM_ITEM_USE_TIME:
 #define DAY    0
 #define NIGHT  1
 
+static const struct FormChange sDialgaFormChangeTable[] = {
+    {FORM_ITEM_HOLD, SPECIES_DIALGA, ITEM_NONE},
+    {FORM_ITEM_HOLD, SPECIES_DIALGA_ORIGIN, ITEM_ADAMANT_ORB},
+    {FORM_CHANGE_END},
+};
+
+static const struct FormChange sPalkiaFormChangeTable[] = {
+    {FORM_ITEM_HOLD, SPECIES_PALKIA, ITEM_NONE},
+    {FORM_ITEM_HOLD, SPECIES_PALKIA_ORIGIN, ITEM_LUSTROUS_ORB},
+    {FORM_CHANGE_END},
+};
+
 static const struct FormChange sGiratinaFormChangeTable[] = {
     {FORM_ITEM_HOLD, SPECIES_GIRATINA, ITEM_NONE},
     {FORM_ITEM_HOLD, SPECIES_GIRATINA_ORIGIN, ITEM_GRISEOUS_ORB},
@@ -180,6 +192,16 @@ static const struct FormChange sSilvallyFormChangeTable[] = {
     {FORM_ITEM_HOLD_ABILITY, SPECIES_SILVALLY_DRAGON,   ITEM_DRAGON_MEMORY,   ABILITY_RKS_SYSTEM},
     {FORM_ITEM_HOLD_ABILITY, SPECIES_SILVALLY_DARK,     ITEM_DARK_MEMORY,     ABILITY_RKS_SYSTEM},
     {FORM_ITEM_HOLD_ABILITY, SPECIES_SILVALLY_FAIRY,    ITEM_FAIRY_MEMORY,    ABILITY_RKS_SYSTEM},
+    {FORM_CHANGE_END},
+};
+
+static const struct FormChange sEnamorusFormChangeTable[] = {
+    {FORM_ITEM_USE, SPECIES_ENAMORUS_THERIAN, ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_END},
+};
+
+static const struct FormChange sEnamorusTherianFormChangeTable[] = {
+    {FORM_ITEM_USE, SPECIES_ENAMORUS, ITEM_REVEAL_GLASS},
     {FORM_CHANGE_END},
 };
 

@@ -9509,6 +9509,16 @@ static const union AnimCmd sAnim_ENAMORUS_1[] =
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
+static const union AnimCmd sAnim_DIALGA_ORIGIN_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_PALKIA_ORIGIN_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
 
 static const union AnimCmd sAnim_KRICKETON_1[] =
 {
@@ -15099,6 +15109,17 @@ static const union AnimCmd *const sAnims_OVERQWIL[] ={
     sAnim_NONE_1,
 };
 
+static const union AnimCmd *const sAnims_DIALGA_ORIGIN[] ={
+    sAnim_GeneralFrame0,
+    sAnim_NONE_1,
+};
+
+
+static const union AnimCmd *const sAnims_PALKIA_ORIGIN[] ={
+    sAnim_GeneralFrame0,
+    sAnim_NONE_1,
+};
+
 
 static const union AnimCmd *const sAnims_ENAMORUS[] ={
     sAnim_GeneralFrame0,
@@ -16404,6 +16425,8 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(AUREATIC),
 	ANIM_CMD(ALOOBAT),
 	ANIM_CMD(ARBOK_MEGA),
+	ANIM_CMD(DIALGA_ORIGIN),
+	ANIM_CMD(PALKIA_ORIGIN),
 };
 
 #undef ANIM_CMD

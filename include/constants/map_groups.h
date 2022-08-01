@@ -590,9 +590,6 @@
 
 // gMapGroup_IndoorRoute124
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
-#define MAP_VIRIDIAN_PLAIN_NW                      (1 | (33 << 8))
-#define MAP_PALLET_PROTAG_HOUSE                    (2 | (33 << 8))
-#define MAP_PALLET_PLAYER_HOUSE                    (3 | (33 << 8))
 
 // gMapGroup_NewCities
 #define MAP_NEW_MAP1        (0 | (34 << 8))
@@ -693,6 +690,7 @@
 #define MAP_PEWTER_CAVE3F      (2 | (42 << 8))
 #define MAP_MT_MOON_INSIDE1F   (3 | (42 << 8))
 #define MAP_MT_MOON_INSIDE_B1F (4 | (42 << 8))
+#define MAP_MT_MOON_INSIDE_B2F (5 | (42 << 8))
 
 // gMapGroup_NewOcean
 #define MAP_CELADON_SEA_W     (0 | (43 << 8))

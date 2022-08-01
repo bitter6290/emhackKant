@@ -25,7 +25,10 @@ NewMap1_OakStopsPlayer_2:
 	playse SE_PIN
 	applymovement OBJ_EVENT_ID_PLAYER, DownExclam
 	waitmovement OBJ_EVENT_ID_PLAYER
-	msgbox NewMap1_OakStopsPlayer_Text_1
+	compare VAR_STORY_PROGRESS, 0
+	goto_if_eq NewMap1_OakStopsPlayer_7
+	msgbox NewMap1_OakStopsPlayer_Text_2
+NewMap1_OakStopsPlayer_6:
 	applymovement OBJ_EVENT_ID_PLAYER, Pallet_PlayerRetreat
 	waitmovement OBJ_EVENT_ID_PLAYER
 	goto NewMap1_OakStopsPlayer_1
@@ -39,12 +42,12 @@ NewMap1_OakStopsPlayer_3:
 	clearflag FLAG_TEMP_5
 	addobject 1
 	compare VAR_RESULT, 11
-	goto_if_eq NewMap1_OakStopsPlayer_7
-NewMap1_OakStopsPlayer_6:
+	goto_if_eq NewMap1_OakStopsPlayer_11
+NewMap1_OakStopsPlayer_10:
 	applymovement 1, Pallet_OakUp
 	waitmovement 1
-	msgbox NewMap1_OakStopsPlayer_Text_2
 	msgbox NewMap1_OakStopsPlayer_Text_3
+	msgbox NewMap1_OakStopsPlayer_Text_4
 	applymovement 1, Pallet_OakDown
 	waitmovement 1
 	removeobject 1
@@ -52,9 +55,13 @@ NewMap1_OakStopsPlayer_6:
 	goto NewMap1_OakStopsPlayer_1
 
 NewMap1_OakStopsPlayer_7:
+	msgbox NewMap1_OakStopsPlayer_Text_1
+	goto NewMap1_OakStopsPlayer_6
+
+NewMap1_OakStopsPlayer_11:
 	applymovement 1, Pallet_OakStepLeft
 	waitmovement 1
-	goto NewMap1_OakStopsPlayer_6
+	goto NewMap1_OakStopsPlayer_10
 
 
 DownExclam::
@@ -96,6 +103,11 @@ NewMap1_OakStopsPlayer_Text_1:
 	.string "Pallet Town, come to my lab.$"
 
 NewMap1_OakStopsPlayer_Text_2:
+	.string "Oak: It's too dangerous to go out\n"
+	.string "without a Pokémon!\l"
+	.string "Take one from my lab before you go out!$"
+
+NewMap1_OakStopsPlayer_Text_3:
 	.string "Since you're leaving town... I would like\n"
 	.string "to ask you one small favor.\l"
 	.string "Morgan, one of my assistants, left a day\l"
@@ -108,5 +120,5 @@ NewMap1_OakStopsPlayer_Text_2:
 	.string "here, and the roads in between ought\l"
 	.string "to be easy to navigate.$"
 
-NewMap1_OakStopsPlayer_Text_3:
+NewMap1_OakStopsPlayer_Text_4:
 	.string "Thank you, {PLAYER}.$"

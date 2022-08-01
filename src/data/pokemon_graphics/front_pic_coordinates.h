@@ -6295,6 +6295,16 @@ const struct MonCoords gMonFrontPicCoords[] =
      .size = MON_COORDS_SIZE(64,64),
      .y_offset = 6,
      },
+     [SPECIES_DIALGA_ORIGIN] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
+     [SPECIES_PALKIA_ORIGIN] =
+     {
+     .size = MON_COORDS_SIZE(64,64),
+     .y_offset = 6,
+     },
      [SPECIES_KRICKETON] =
      {
      .size = MON_COORDS_SIZE(64,64),

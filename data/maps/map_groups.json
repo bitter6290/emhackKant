@@ -631,10 +631,7 @@
     "Route119_House"
   ],
   "gMapGroup_IndoorRoute124": [
-    "Route124_DivingTreasureHuntersHouse",
-    "ViridianPlainNW",
-    "PalletProtagHouse",
-    "PalletPlayerHouse"
+    "Route124_DivingTreasureHuntersHouse"
   ],
   "gMapGroup_NewCities": [
     "NewMap1",
@@ -734,7 +731,8 @@
     "PewterCave2F",
     "PewterCave3F",
     "MtMoonInside1F",
-    "MtMoonInsideB1f"
+    "MtMoonInsideB1f",
+    "MtMoonInsideB2f"
   ],
   "gMapGroup_NewOcean": [
     "CeladonSeaW",

@@ -93,9 +93,9 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = ARRAY_COUNT(sParty_GruntAquaHideout4),
-        .party = {.NoItemDefaultMoves = sParty_GruntAquaHideout4},
+        .party = {.ItemCustomMoves = sParty_GruntAquaHideout4},
         .scalingCoeff = 9,
-        .evCoeff = 255,
+        .evCoeff = 16,
     },
 
     [TRAINER_GRUNT_SEAFLOOR_CAVERN_1] =
@@ -111,7 +111,7 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_GruntSeafloorCavern1),
         .party = {.NoItemDefaultMoves = sParty_GruntSeafloorCavern1},
         .scalingCoeff = 9,
-        .evCoeff = 255,
+        .evCoeff = 16,
     },
 
     [TRAINER_GRUNT_SEAFLOOR_CAVERN_2] =
@@ -127,7 +127,7 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_GruntSeafloorCavern2),
         .party = {.NoItemDefaultMoves = sParty_GruntSeafloorCavern2},
         .scalingCoeff = 9,
-        .evCoeff = 255,
+        .evCoeff = 32,
     },
 
     [TRAINER_GRUNT_SEAFLOOR_CAVERN_3] =
@@ -11991,7 +11991,7 @@ const struct Trainer gTrainers[] = {
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_RED,
         .trainerName = _("Brock"),
         .items = {ITEM_POTION, ITEM_POTION, ITEM_NONE, ITEM_NONE},
@@ -11999,6 +11999,45 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = ARRAY_COUNT(sParty_Brock1),
         .party = {.ItemCustomMoves = sParty_Brock1},
+    },
+    [TRAINER_BROCK_2] = 
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
+        .trainerClass = TRAINER_CLASS_LEADER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_RED,
+        .trainerName = _("Brock"),
+        .items = {ITEM_POTION, ITEM_POTION, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .partySize = ARRAY_COUNT(sParty_Brock1),
+        .party = {.ItemCustomMoves = sParty_Brock2},
+    },
+    [TRAINER_BROCK_3] = 
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
+        .trainerClass = TRAINER_CLASS_LEADER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_RED,
+        .trainerName = _("Brock"),
+        .items = {ITEM_POTION, ITEM_POTION, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .partySize = ARRAY_COUNT(sParty_Brock1),
+        .party = {.ItemCustomMoves = sParty_Brock3},
+    },
+    [TRAINER_BROCK_4] = 
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
+        .trainerClass = TRAINER_CLASS_LEADER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_RED,
+        .trainerName = _("Brock"),
+        .items = {ITEM_POTION, ITEM_POTION, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .partySize = ARRAY_COUNT(sParty_Brock1),
+        .party = {.ItemCustomMoves = sParty_Brock4},
     },
 
 };

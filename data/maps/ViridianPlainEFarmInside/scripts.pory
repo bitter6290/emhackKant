@@ -3,7 +3,7 @@ mapscripts ViridianPlainEFarmInside_MapScripts {}
 script ViridianPlainEFarmInside_Farmer{
 lock
 faceplayer
-msgbox(format("Why, hello!\nI'm the owner of this farm here.\lI don't have much to offer you yet. At least, not until my fence is fixed!\lSpeaking of the fence, make sure you steer clear of my herd.\lThey get quite the temper once they're out in the wild!"))
+msgbox(format("Why, hello!\nI'm the owner of this farm here.\lI don't have much to offer you yet. At least, not until my fence is fixed!\lSpeaking of the fence, make sure you steer clear of my herd.\lThey get quite the temper once they've been out for too long!"))
 release
 end
 }

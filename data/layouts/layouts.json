@@ -4492,16 +4492,6 @@
       "blockdata_filepath": "data/layouts/ViridianHill/map.bin"
     },
     {
-      "id": "LAYOUT_VIRIDIAN_PLAIN_NW",
-      "name": "ViridianPlainNW_Layout",
-      "width": 1,
-      "height": 1,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/ViridianPlainNW/border.bin",
-      "blockdata_filepath": "data/layouts/ViridianPlainNW/map.bin"
-    },
-    {
       "id": "LAYOUT_VIRIDIAN_PLAIN_W_N",
       "name": "ViridianPlainW_N_Layout",
       "width": 32,
@@ -4520,26 +4510,6 @@
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/ViridianForestW/border.bin",
       "blockdata_filepath": "data/layouts/ViridianForestW/map.bin"
-    },
-    {
-      "id": "LAYOUT_PALLET_PROTAG_HOUSE",
-      "name": "PalletProtagHouse_Layout",
-      "width": 1,
-      "height": 1,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/PalletProtagHouse/border.bin",
-      "blockdata_filepath": "data/layouts/PalletProtagHouse/map.bin"
-    },
-    {
-      "id": "LAYOUT_PALLET_PLAYER_HOUSE",
-      "name": "PalletPlayerHouse_Layout",
-      "width": 1,
-      "height": 1,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/PalletPlayerHouse/border.bin",
-      "blockdata_filepath": "data/layouts/PalletPlayerHouse/map.bin"
     },
     {
       "id": "LAYOUT_PALLET_PLAYER_HOUSE_1F",
@@ -5384,8 +5354,8 @@
     {
       "id": "LAYOUT_CHARTREUSE_WOODS",
       "name": "ChartreuseWoods_Layout",
-      "width": 68,
-      "height": 72,
+      "width": 72,
+      "height": 68,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/ChartreuseWoods/border.bin",

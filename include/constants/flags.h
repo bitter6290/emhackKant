@@ -2125,6 +2125,16 @@
 #define FLAG_TM11_ZEN_HEADBUTT								(TMHM_FLAGS + 0xA)
 #define FLAG_TM12_X_SCISSOR									(TMHM_FLAGS + 0xB)
 #define FLAG_TM99_TOXIC										(TMHM_FLAGS + 0xC)
+#define FLAG_HM01_ROCK_SMASH								(FLAG_TM99_TOXIC + 0x1)
+#define FLAG_HM02_CUT										(FLAG_TM99_TOXIC + 0x2)
+#define FLAG_HM03_STRENGTH									(FLAG_TM99_TOXIC + 0x3)
+#define FLAG_HM04_SURF										(FLAG_TM99_TOXIC + 0x4)
+#define FLAG_HM05_EXPLOSION									(FLAG_TM99_TOXIC + 0x5)
+#define FLAG_HM06_FLY										(FLAG_TM99_TOXIC + 0x6)
+#define FLAG_HM07_WHIRLPOOL									(FLAG_TM99_TOXIC + 0x7)
+#define FLAG_HM08_WATERFALL									(FLAG_TM99_TOXIC + 0x8)
+#define FLAG_HM09_DIVE										(FLAG_TM99_TOXIC + 0x9)
+#define FLAG_HM10_FLASH										(FLAG_TM99_TOXIC + 0xA)
 
 
 #define TMHM_FLAGS_END												(TMHM_FLAGS + FLAG_TM99_TOXIC)
@@ -2142,19 +2152,19 @@
 #define FLAG_SYS_HIPSTER_MEET                        (SYSTEM_FLAGS + 0x6)
 
 // Badges
-#define FLAG_BADGE01_GET                             (SYSTEM_FLAGS + 0x7)
-#define FLAG_BADGE02_GET                             (SYSTEM_FLAGS + 0x8)
-#define FLAG_BADGE03_GET                             (SYSTEM_FLAGS + 0x9)
-#define FLAG_BADGE04_GET                             (SYSTEM_FLAGS + 0xA)
-#define FLAG_BADGE05_GET                             (SYSTEM_FLAGS + 0xB)
-#define FLAG_BADGE06_GET                             (SYSTEM_FLAGS + 0xC)
-#define FLAG_BADGE07_GET                             (SYSTEM_FLAGS + 0xD)
-#define FLAG_BADGE08_GET                             (SYSTEM_FLAGS + 0xE)
-#define FLAG_BADGE09_GET                             (SYSTEM_FLAGS + 0xF)
-#define FLAG_BADGE10_GET                             (SYSTEM_FLAGS + 0x10)
-#define FLAG_BADGE11_GET                             (SYSTEM_FLAGS + 0x11)
-#define FLAG_BADGE12_GET                             (SYSTEM_FLAGS + 0x12)
-#define FLAG_BADGE13_GET                             (SYSTEM_FLAGS + 0x13)
+#define FLAG_BADGE01_GET                             (SYSTEM_FLAGS + 0x7) //Brock
+#define FLAG_BADGE02_GET                             (SYSTEM_FLAGS + 0x8) //Misty
+#define FLAG_BADGE03_GET                             (SYSTEM_FLAGS + 0x9) //Wattson
+#define FLAG_BADGE04_GET                             (SYSTEM_FLAGS + 0xA) //Yvonne
+#define FLAG_BADGE05_GET                             (SYSTEM_FLAGS + 0xB) //Poison
+#define FLAG_BADGE06_GET                             (SYSTEM_FLAGS + 0xC) //Sabrina
+#define FLAG_BADGE07_GET                             (SYSTEM_FLAGS + 0xD) //Steel
+#define FLAG_BADGE08_GET                             (SYSTEM_FLAGS + 0xE) //Soren
+#define FLAG_BADGE09_GET                             (SYSTEM_FLAGS + 0xF) //Fairy
+#define FLAG_BADGE10_GET                             (SYSTEM_FLAGS + 0x10) //Valeria
+#define FLAG_BADGE11_GET                             (SYSTEM_FLAGS + 0x11) //Erica
+#define FLAG_BADGE12_GET                             (SYSTEM_FLAGS + 0x12) //Blaine
+#define FLAG_BADGE13_GET                             (SYSTEM_FLAGS + 0x13) //Blue
 #define NUM_BADGES                                   (1 + FLAG_BADGE13_GET - FLAG_BADGE01_GET)
 
 // Towns and Cities

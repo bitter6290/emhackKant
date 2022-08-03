@@ -25,10 +25,21 @@ NewMap1_OakStopsPlayer_2:
 	playse SE_PIN
 	applymovement OBJ_EVENT_ID_PLAYER, DownExclam
 	waitmovement OBJ_EVENT_ID_PLAYER
-	compare VAR_STORY_PROGRESS, 0
+	getplayerxy VAR_RESULT, VAR_TEMP_1
+	clearflag FLAG_TEMP_5
+	addobject 1
+	compare VAR_RESULT, 11
 	goto_if_eq NewMap1_OakStopsPlayer_7
-	msgbox NewMap1_OakStopsPlayer_Text_2
 NewMap1_OakStopsPlayer_6:
+	applymovement 1, Pallet_OakUp
+	waitmovement 1
+	compare VAR_STORY_PROGRESS, 0
+	goto_if_eq NewMap1_OakStopsPlayer_13
+	msgbox NewMap1_OakStopsPlayer_Text_2
+NewMap1_OakStopsPlayer_12:
+	applymovement 1, Pallet_OakDown
+	waitmovement 1
+	removeobject 1
 	applymovement OBJ_EVENT_ID_PLAYER, Pallet_PlayerRetreat
 	waitmovement OBJ_EVENT_ID_PLAYER
 	goto NewMap1_OakStopsPlayer_1
@@ -42,8 +53,8 @@ NewMap1_OakStopsPlayer_3:
 	clearflag FLAG_TEMP_5
 	addobject 1
 	compare VAR_RESULT, 11
-	goto_if_eq NewMap1_OakStopsPlayer_11
-NewMap1_OakStopsPlayer_10:
+	goto_if_eq NewMap1_OakStopsPlayer_10
+NewMap1_OakStopsPlayer_9:
 	applymovement 1, Pallet_OakUp
 	waitmovement 1
 	msgbox NewMap1_OakStopsPlayer_Text_3
@@ -55,13 +66,18 @@ NewMap1_OakStopsPlayer_10:
 	goto NewMap1_OakStopsPlayer_1
 
 NewMap1_OakStopsPlayer_7:
-	msgbox NewMap1_OakStopsPlayer_Text_1
-	goto NewMap1_OakStopsPlayer_6
-
-NewMap1_OakStopsPlayer_11:
 	applymovement 1, Pallet_OakStepLeft
 	waitmovement 1
-	goto NewMap1_OakStopsPlayer_10
+	goto NewMap1_OakStopsPlayer_6
+
+NewMap1_OakStopsPlayer_10:
+	applymovement 1, Pallet_OakStepLeft
+	waitmovement 1
+	goto NewMap1_OakStopsPlayer_9
+
+NewMap1_OakStopsPlayer_13:
+	msgbox NewMap1_OakStopsPlayer_Text_1
+	goto NewMap1_OakStopsPlayer_12
 
 
 DownExclam::

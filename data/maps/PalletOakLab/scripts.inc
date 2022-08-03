@@ -71,7 +71,6 @@ PalletOakLab_OakDialogue_4:
 	waitmovement 4
 	msgbox PalletOakLab_OakDialogue_Text_12
 	msgbox PalletOakLab_OakDialogue_Text_13
-	msgbox PalletOakLab_OakDialogue_Text_14
 	addvar VAR_STORY_PROGRESS, 1
 	goto PalletOakLab_OakDialogue_1
 
@@ -234,7 +233,7 @@ PalletOakLab_ScientistTalks_2:
 	goto PalletOakLab_ScientistTalks_1
 
 
-Exclam:
+Exclam::
 	emote_exclamation_mark
 	step_end
 
@@ -283,9 +282,9 @@ PalletOakLab_OakDialogue_Text_4:
 
 PalletOakLab_OakDialogue_Text_5:
 	.string "You'll also need to be equipped for your\n"
-	.string "journey. These items will be crucial for\l"
-	.string "you as you traverse Kanto. Use them\l"
-	.string "well.$"
+	.string "journey. These items will be invaluable\l"
+	.string "for you as you traverse Kanto. Use\l"
+	.string "them well.$"
 
 PalletOakLab_OakDialogue_Text_6:
 	.string "You obtained the Running Shoes!$"
@@ -300,8 +299,8 @@ PalletOakLab_OakDialogue_Text_7:
 	.string "make marvels again.$"
 
 PalletOakLab_OakDialogue_Text_8:
-	.string "Ah, {PLAYER}! What a relief to see\n"
-	.string "you! When Morgan told me about the\l"
+	.string "Ah, {PLAYER}! What a relief to see you\n"
+	.string "here! When Morgan told me about the\l"
 	.string "explosion, I almost fainted in fear.\l"
 	.string "I'm glad to see that you made it out in\l"
 	.string "one piece.$"
@@ -317,24 +316,18 @@ PalletOakLab_OakDialogue_Text_11:
 	.string "So things have gotten that bad...$"
 
 PalletOakLab_OakDialogue_Text_12:
-	.string "Listen, {PLAYER}. I'm sure that your\n"
-	.string "brief run-in with Team Rocket has\l"
-	.string "filled you with confidence. As it\l"
-	.string "should, as a newly minted trainer!$"
+	.string "Listen, {PLAYER}. I'm impressed that\n"
+	.string "you could stand up to Team Rocket,\l"
+	.string "even just this once. But there are\l"
+	.string "bigger things afoot here.$"
 
 PalletOakLab_OakDialogue_Text_13:
-	.string "But there are more serious things to\n"
-	.string "worry about. Do not let yourself be\l"
-	.string "convinced that you can handle Team\l"
-	.string "Rocket. Hundreds of young trainers\l"
-	.string "like you have felt the same, only to\l"
-	.string "become ripples in a vast sea of grunts.$"
-
-PalletOakLab_OakDialogue_Text_14:
-	.string "I could not bear if the same were to\n"
-	.string "happen to you. Keep your wits about\l"
-	.string "you, complete your Pokédex, and stay\l"
-	.string "well away from the likes of them!$"
+	.string "Keep your eye on your task and finish\n"
+	.string "your survey. And never think for a\l"
+	.string "second of dealing with Team Rocket!\l"
+	.string "If you want a bigger challenge, you can\l"
+	.string "start collecting Gym badges. Anything\l"
+	.string "but those grunts!$"
 
 PalletOakLab_ChooseBulbasaur_Text_0:
 	.string "This ball contains a Pokémon... but it\n"

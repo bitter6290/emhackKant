@@ -33,14 +33,14 @@
       "x": 6,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_VIRIDIAN_PLAIN_EFARM_INSIDE",
+      "dest_map": "MAP_VIRIDIAN_PLAIN_E",
       "dest_warp_id": 0
     },
     {
       "x": 7,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_VIRIDIAN_PLAIN_EFARM_INSIDE",
+      "dest_map": "MAP_VIRIDIAN_PLAIN_E",
       "dest_warp_id": 0
     }
   ],

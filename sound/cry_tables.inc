@@ -898,6 +898,14 @@ gCryTable::
 	cry Cry_Glastrier
 	cry Cry_Spectrier
 	cry Cry_Calyrex
+	@ Hisuians
+	cry Cry_Wyrdeer
+	cry Cry_Kleavor
+	cry Cry_Ursaluna
+	cry Cry_Basculegion
+	cry Cry_Sneasler
+	cry Cry_Overqwil
+	cry Cry_Enamorus
 	@ Customs
 	cry Cry_Kricketon
 	cry Cry_Krickallous
@@ -2200,6 +2208,14 @@ gCryTable_Reverse::
 	cry_reverse Cry_Glastrier
 	cry_reverse Cry_Spectrier
 	cry_reverse Cry_Calyrex
+	@ Hisuians
+	cry_reverse Cry_Wyrdeer
+	cry_reverse Cry_Kleavor
+	cry_reverse Cry_Ursaluna
+	cry_reverse Cry_Basculegion
+	cry_reverse Cry_Sneasler
+	cry_reverse Cry_Overqwil
+	cry_reverse Cry_Enamorus
 	@ Customs
 	cry_reverse Cry_Kricketon
 	cry_reverse Cry_Krickallous

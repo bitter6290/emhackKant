@@ -17,5 +17,5 @@ ViridianPlainEFarmInside_Farmer_Text_0:
 	.string "least, not until my fence is fixed!\l"
 	.string "Speaking of the fence, make sure you\l"
 	.string "steer clear of my herd.\l"
-	.string "They get quite the temper once they're\l"
-	.string "out in the wild!$"
+	.string "They get quite the temper once they've\l"
+	.string "been out for too long!$"

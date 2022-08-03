@@ -16,6 +16,15 @@ msgbox(format("Oak: {PLAYER}!"))
 playse(SE_PIN)
 applymovement(OBJ_EVENT_ID_PLAYER,DownExclam)
 waitmovement(OBJ_EVENT_ID_PLAYER)
+getplayerxy(VAR_RESULT,VAR_TEMP_1)
+clearflag(FLAG_TEMP_5)
+addobject(1)
+if(var(VAR_RESULT)==11){
+applymovement(1,Pallet_OakStepLeft)
+waitmovement(1)
+}
+applymovement(1,Pallet_OakUp)
+waitmovement(1)
 if(var(VAR_STORY_PROGRESS)==0){
 msgbox(format("Oak: You can't go out without a Pokémon!" 
 	"\lIf you want to talk about leaving Pallet Town, come to my lab."))
@@ -24,9 +33,13 @@ else{
 msgbox(format("Oak: It's too dangerous to go out without a Pokémon!"
 	"\lTake one from my lab before you go out!"))
 }
+applymovement(1,Pallet_OakDown)
+waitmovement(1)
+removeobject(1)
 applymovement(OBJ_EVENT_ID_PLAYER,Pallet_PlayerRetreat)
 waitmovement(OBJ_EVENT_ID_PLAYER)
 }
+
 elif(var(VAR_STORY_PROGRESS)==2){
 msgbox(format("Oak: {PLAYER}!"))
 playse(SE_PIN)

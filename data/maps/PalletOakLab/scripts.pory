@@ -29,7 +29,7 @@ setflag(FLAG_SYS_POKEDEX_GET)
 special(SetUnlockedPokedexFlags)
 setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
 setvar(VAR_STORY_PROGRESS,1)
-msgbox(format("You'll also need to be equipped for your journey. These items will be crucial for you as you traverse Kanto. Use them well."))
+msgbox(format("You'll also need to be equipped for your journey. These items will be invaluable for you as you traverse Kanto. Use them well."))
 setflag(FLAG_SYS_B_DASH)
 playfanfare(MUS_OBTAIN_ITEM)
 message(format("You obtained the Running Shoes!"))
@@ -42,7 +42,7 @@ elif(var(VAR_STORY_PROGRESS)<15){
 msgbox(format("I have nothing more for you right now... These last five years have been hard even for me.\lBut if you fill out the pages of the Pokédex, it will benefit you and me alike. Your new research could help me make marvels again."))
 }
 elif(var(VAR_STORY_PROGRESS)==15){
-msgbox(format("Ah, {PLAYER}! What a relief to see you! When Morgan told me about the explosion, I almost fainted in fear.\lI'm glad to see that you made it out in one piece."))
+msgbox(format("Ah, {PLAYER}! What a relief to see you here! When Morgan told me about the explosion, I almost fainted in fear.\lI'm glad to see that you made it out in one piece."))
 msgbox(format("You must tell me everything. "))
 delay(45)
 playse(SE_PIN)
@@ -53,9 +53,8 @@ delay(15)
 msgbox(format("So things have gotten that bad..."))
 applymovement(4, OakLabTurns)
 waitmovement(4)
-msgbox(format("Listen, {PLAYER}. I'm sure that your brief run-in with Team Rocket has filled you with confidence. As it should, as a newly minted trainer!"))
-msgbox(format("But there are more serious things to worry about. Do not let yourself be convinced that you can handle Team Rocket. Hundreds of young trainers like you have felt the same, only to become ripples in a vast sea of grunts."))
-msgbox(format("I could not bear if the same were to happen to you. Keep your wits about you, complete your Pokédex, and stay well away from the likes of them!"))
+msgbox(format("Listen, {PLAYER}. I'm impressed that you could stand up to Team Rocket, even just this once. But there are bigger things afoot here."))
+msgbox(format("Keep your eye on your task and finish your survey. And never think for a second of dealing with Team Rocket!\lIf you want a bigger challenge, you can start collecting Gym badges. Anything but those grunts!"))
 addvar(VAR_STORY_PROGRESS,1)
 }
 release
@@ -182,7 +181,7 @@ msgbox(format("I'm not the only scientist working for Oak. Right now, there are 
 release
 end
 }
-movement Exclam{
+movement(global) Exclam{
 emote_exclamation_mark
 }
 movement OakLabTurns{

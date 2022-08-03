@@ -1835,6 +1835,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
     s32 i, j;
     u8 monsCount;
     u8 baseCoeff;
+    u8 evBuf[6];
         
     //find party max level for dynamic leveling
 	u8 maxLevel = 0;
@@ -1908,9 +1909,11 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 CreateMon(&party[i], partyData[i].species, (baseCoeff*partyData[i].lvl + gTrainers[trainerNum].scalingCoeff * maxLevel + 8) >> 4, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 SetMonData(&party[i], MON_DATA_ABILITY_NUM, &partyData[i].ability);
                 // Set EVs and IVs from premade spreads
+                
                 for (j = 0; j < 6; j++)
                 {
-                    SetMonData(&party[i], MON_DATA_HP_EV + j, &gEvSets[partyData[i].spreadEv].EVs[j]);
+                	evBuf[j] = (gEvSets[partyData[i].spreadEv].EVs[j] * gTrainers[trainerNum].evCoeff) >> 8;
+                    SetMonData(&party[i], MON_DATA_HP_EV + j, &evBuf[j]);
                     SetMonData(&party[i], MON_DATA_HP_IV + j, &gIvSets[partyData[i].spreadIv][j]);
                 }
                 break;
@@ -1934,7 +1937,8 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 // Set EVs and IVs from premade spreads
                 for (j = 0; j < 6; j++)
                 {
-                    SetMonData(&party[i], MON_DATA_HP_EV + j, &gEvSets[partyData[i].spreadEv].EVs[j]);
+                	evBuf[j] = (gEvSets[partyData[i].spreadEv].EVs[j] * gTrainers[trainerNum].evCoeff) >> 8;
+                    SetMonData(&party[i], MON_DATA_HP_EV + j, &evBuf[j]);
                     SetMonData(&party[i], MON_DATA_HP_IV + j, &gIvSets[partyData[i].spreadIv][j]);
                 }
 
@@ -1965,7 +1969,8 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 // Set EVs and IVs from premade spreads
                 for (j = 0; j < 6; j++)
                 {
-                    SetMonData(&party[i], MON_DATA_HP_EV + j, &gEvSets[partyData[i].spreadEv].EVs[j]);
+                	evBuf[j] = (gEvSets[partyData[i].spreadEv].EVs[j] * gTrainers[trainerNum].evCoeff) >> 8;
+                    SetMonData(&party[i], MON_DATA_HP_EV + j, &evBuf[j]);
                     SetMonData(&party[i], MON_DATA_HP_IV + j, &gIvSets[partyData[i].spreadIv][j]);
                 }
                 
@@ -1994,7 +1999,8 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 // Set EVs and IVs from premade spreads
                 for (j = 0; j < 6; j++)
                 {
-                    SetMonData(&party[i], MON_DATA_HP_EV + j, &gEvSets[partyData[i].spreadEv].EVs[j]);
+                	evBuf[j] = (gEvSets[partyData[i].spreadEv].EVs[j] * gTrainers[trainerNum].evCoeff) >> 8;
+                    SetMonData(&party[i], MON_DATA_HP_EV + j, &evBuf[j]);
                     SetMonData(&party[i], MON_DATA_HP_IV + j, &gIvSets[partyData[i].spreadIv][j]);
                 }
 
@@ -5427,6 +5433,8 @@ void SetTypeBeforeUsingMove(u16 move, u8 battlerAtk)
         gBattleStruct->dynamicMoveType = ((NUMBER_OF_MON_TYPES - 4) * typeBits) / 63 + 1;
         if (gBattleStruct->dynamicMoveType >= TYPE_MYSTERY)
             gBattleStruct->dynamicMoveType++;
+        if(gBattleStruct->dynamicMoveType == TYPE_DRAGON)
+        	gBattleStruct->dynamicMoveType == TYPE_FAIRY;
         gBattleStruct->dynamicMoveType |= F_DYNAMIC_TYPE_1 | F_DYNAMIC_TYPE_2;
     }
     else if (gBattleMoves[move].effect == EFFECT_CHANGE_TYPE_ON_ITEM)

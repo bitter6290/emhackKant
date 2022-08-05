@@ -538,3 +538,11 @@ gSpecials::
 	def_special SetTotemBoost
 	def_special TrySpecialOverworldEvo
 	def_special GetObjectPosition
+	def_special CountRotomInParty
+	def_special GetRotomState
+	def_special RotomForgetSpecialMove
+	def_special ChangeRotomForm
+	def_special TeachRotomMove
+	def_special IsSelectedMonRotom
+	def_special DoesRotomKnowSpecialMove
+	def_special GetRotomNewSpecialMove

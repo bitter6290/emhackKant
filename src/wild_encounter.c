@@ -42,6 +42,7 @@ enum {
     WILD_AREA_WATER,
     WILD_AREA_ROCKS,
     WILD_AREA_FISHING,
+    WILD_AREA_DOUBLE_LAND,
 };
 
 #define WILD_CHECK_REPEL    (1 << 0)
@@ -207,6 +208,28 @@ static u8 ChooseWildMonIndex_Land(void)
         return 10;
     else
         return 11;
+}
+
+static u8 ChooseWildMonIndex_DoubleLand(void)
+{
+    u8 rand = Random() % ENCOUNTER_CHANCE_DOUBLE_LAND_MONS_TOTAL;
+
+    if (rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_0)
+        return 0;
+    else if (rand >= ENCOUNTER_CHANCE_DOUBLE_LAND_MONS_SLOT_0 && rand < ENCOUNTER_CHANCE_DOUBLE_LAND_MONS_SLOT_1)
+        return 1;
+    else if (rand >= ENCOUNTER_CHANCE_DOUBLE_LAND_MONS_SLOT_1 && rand < ENCOUNTER_CHANCE_DOUBLE_LAND_MONS_SLOT_2)
+        return 2;
+    else if (rand >= ENCOUNTER_CHANCE_DOUBLE_LAND_MONS_SLOT_2 && rand < ENCOUNTER_CHANCE_DOUBLE_LAND_MONS_SLOT_3)
+        return 3;
+    else if (rand >= ENCOUNTER_CHANCE_DOUBLE_LAND_MONS_SLOT_3 && rand < ENCOUNTER_CHANCE_DOUBLE_LAND_MONS_SLOT_4)
+        return 4;
+    else if (rand >= ENCOUNTER_CHANCE_DOUBLE_LAND_MONS_SLOT_4 && rand < ENCOUNTER_CHANCE_DOUBLE_LAND_MONS_SLOT_5)
+        return 5;
+    else if (rand >= ENCOUNTER_CHANCE_DOUBLE_LAND_MONS_SLOT_5 && rand < ENCOUNTER_CHANCE_DOUBLE_LAND_MONS_SLOT_6)
+        return 6;
+    else
+        return 7;
 }
 
 // ROCK_WILD_COUNT / WATER_WILD_COUNT
@@ -434,7 +457,6 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, u8 ar
             break;
         if (TryGetAbilityInfluencedWildMonIndex(wildMonInfo->wildPokemon, TYPE_WATER, ABILITY_STORM_DRAIN, &wildMonIndex))
             break;
-
         wildMonIndex = ChooseWildMonIndex_Land();
         break;
     case WILD_AREA_WATER:
@@ -456,6 +478,20 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, u8 ar
     case WILD_AREA_ROCKS:
         wildMonIndex = ChooseWildMonIndex_WaterRock();
         break;
+    case WILD_AREA_DOUBLE_LAND:
+        if (TryGetAbilityInfluencedWildMonIndex(wildMonInfo->wildPokemon, TYPE_STEEL, ABILITY_MAGNET_PULL, &wildMonIndex))
+            break;
+        if (TryGetAbilityInfluencedWildMonIndex(wildMonInfo->wildPokemon, TYPE_ELECTRIC, ABILITY_STATIC, &wildMonIndex))
+            break;
+        if (TryGetAbilityInfluencedWildMonIndex(wildMonInfo->wildPokemon, TYPE_ELECTRIC, ABILITY_LIGHTNING_ROD, &wildMonIndex))
+            break;
+        if (TryGetAbilityInfluencedWildMonIndex(wildMonInfo->wildPokemon, TYPE_FIRE, ABILITY_FLASH_FIRE, &wildMonIndex))
+            break;
+        if (TryGetAbilityInfluencedWildMonIndex(wildMonInfo->wildPokemon, TYPE_GRASS, ABILITY_HARVEST, &wildMonIndex))
+            break;
+        if (TryGetAbilityInfluencedWildMonIndex(wildMonInfo->wildPokemon, TYPE_WATER, ABILITY_STORM_DRAIN, &wildMonIndex))
+            break;
+        wildMonIndex = ChooseWildMonIndex_DoubleLand();
     }
 
     level = ChooseWildMonLevel(&wildMonInfo->wildPokemon[wildMonIndex]);
@@ -639,10 +675,12 @@ bool8 StandardWildEncounter(u16 currMetaTileBehavior, u16 previousMetaTileBehavi
                 // try a regular wild land encounter
                 if (TryGenerateWildMon(gWildMonHeaders[headerId].landMonsInfo, WILD_AREA_LAND, WILD_CHECK_REPEL | WILD_CHECK_KEEN_EYE) == TRUE)
                 {
-                    if (TryDoDoubleWildBattle())
+                    if (TryDoDoubleWildBattle() || ((MetatileBehavior_IsDoubleGrass(currMetaTileBehavior) == TRUE) && gWildMonHeaders[headerId].doubleLandMonsInfo != NULL))
                     {
-                        struct Pokemon mon1 = gEnemyParty[0];
-                        TryGenerateWildMon(gWildMonHeaders[headerId].landMonsInfo, WILD_AREA_LAND, WILD_CHECK_KEEN_EYE);
+                    	struct Pokemon mon1;
+                        TryGenerateWildMon(gWildMonHeaders[headerId].doubleLandMonsInfo, WILD_AREA_DOUBLE_LAND, WILD_CHECK_KEEN_EYE);                    	
+                    	mon1 = gEnemyParty[0];
+                        TryGenerateWildMon(gWildMonHeaders[headerId].doubleLandMonsInfo, WILD_AREA_DOUBLE_LAND, WILD_CHECK_KEEN_EYE);
                         gEnemyParty[1] = mon1;
                         BattleSetup_StartDoubleWildBattle();
                     }

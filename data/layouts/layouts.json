@@ -5390,6 +5390,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/MtMoonInsideB2f/border.bin",
       "blockdata_filepath": "data/layouts/MtMoonInsideB2f/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_GYM_B2F",
+      "name": "ViridianGymB2F_Layout",
+      "width": 52,
+      "height": 22,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/ViridianGymB2F/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianGymB2F/map.bin"
     }
   ]
 }

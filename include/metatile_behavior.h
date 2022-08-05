@@ -162,5 +162,6 @@ bool8 MetatileBehavior_IsSidewaysStairsLeftSideAny(u8 metatileBehavior);
 bool8 MetatileBehavior_IsRockClimbable(u8 metatileBehavior);
 
 bool8 MetatileBehavior_IsRopePit(u8 metatileBehavior);
+bool8 MetatileBehavior_IsDoubleGrass(u8 metatileBehavior);
 
 #endif // GUARD_METATILE_BEHAVIOR_H

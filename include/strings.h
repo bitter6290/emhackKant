@@ -3307,4 +3307,11 @@ extern const u8 gText_FontSmall[];
 extern const u8 gText_FontShort[];
 extern const u8 gText_TMCase_Blue[];
 
+// rotom change
+extern const u8 gText_MicrowaveOven[];
+extern const u8 gText_WashingMachine[];
+extern const u8 gText_Refrigerator[];
+extern const u8 gText_ElectricFan[];
+extern const u8 gText_Lawnmower[];
+extern const u8 gText_Recall[];
 #endif // GUARD_STRINGS_H

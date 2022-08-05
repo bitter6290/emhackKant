@@ -15,6 +15,7 @@ static const u8 sTileBitAttributes[NUM_METATILE_BEHAVIORS] =
     [MB_DEEP_SAND]                       = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,
     [MB_SHORT_GRASS]                     = TILE_FLAG_UNUSED,
     [MB_CAVE]                            = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,
+    [MB_DOUBLE_GRASS]					 = TILE_FLAG_HAS_ENCOUNTERS,
     [MB_LONG_GRASS_SOUTH_EDGE]           = TILE_FLAG_UNUSED,
     [MB_NO_RUNNING]                      = TILE_FLAG_UNUSED,
     [MB_INDOOR_ENCOUNTER]                = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,
@@ -1494,6 +1495,14 @@ bool8 MetatileBehavior_IsRockStairs(u8 metatileBehavior)
 bool8 MetatileBehavior_IsRopePit(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_ROPE_PIT)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsDoubleGrass(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_DOUBLE_GRASS)
         return TRUE;
     else
         return FALSE;

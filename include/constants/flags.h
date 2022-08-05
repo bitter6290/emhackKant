@@ -658,9 +658,9 @@
 #define FLAG_PEWTER_MINE_DONE  0x268 // Unused Flag
 #define FLAG_HAS_GROTTO_LIST  0x269 // Unused Flag
 #define FLAG_CHAPTER_0_DONE  0x26A // Unused Flag
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
-#define FLAG_UNUSED_0x26C  0x26C // Unused Flag
-#define FLAG_UNUSED_0x26D  0x26D // Unused Flag
+#define FLAG_CHAPTER_1_DONE  0x26B // Unused Flag
+#define FLAG_CHAPTER_2_DONE  0x26C // Unused Flag
+#define FLAG_CHAPTER_3_DONE  0x26D // Unused Flag
 #define FLAG_UNUSED_0x26E  0x26E // Unused Flag
 #define FLAG_UNUSED_0x26F  0x26F // Unused Flag
 #define FLAG_UNUSED_0x270  0x270 // Unused Flag
@@ -2124,7 +2124,7 @@
 #define FLAG_TM10_BRAVE_BIRD								(TMHM_FLAGS + 0x9)
 #define FLAG_TM11_ZEN_HEADBUTT								(TMHM_FLAGS + 0xA)
 #define FLAG_TM12_X_SCISSOR									(TMHM_FLAGS + 0xB)
-#define FLAG_TM99_TOXIC										(TMHM_FLAGS + 0xC)
+#define FLAG_TM99_TOXIC										(TMHM_FLAGS + 0x62)
 #define FLAG_HM01_ROCK_SMASH								(FLAG_TM99_TOXIC + 0x1)
 #define FLAG_HM02_CUT										(FLAG_TM99_TOXIC + 0x2)
 #define FLAG_HM03_STRENGTH									(FLAG_TM99_TOXIC + 0x3)

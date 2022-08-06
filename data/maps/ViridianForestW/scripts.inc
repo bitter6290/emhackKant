@@ -56,11 +56,9 @@ VFW_HikerFirst_Text_1:
 	.string "plants here, one that should help you\l"
 	.string "to keep your bearings and avoid\l"
 	.string "running in circles.\l"
-	.string "Your party should be prepared, too. I've\l"
-	.string "heard that a new Fire-type Pokémon\l"
-	.string "was spotted in the fields southeast of\l"
-	.string "here, and it'll keep the bugs away from\l"
-	.string "you for sure!$"
+	.string "Your party should be prepared, too.\l"
+	.string "Make sure you have something to keep\l"
+	.string "the bugs away!$"
 
 VFW_EventScript_BTim_Text_0:
 	.string "I'll show you the rare Pokémon I found\n"

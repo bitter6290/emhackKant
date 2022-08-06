@@ -939,7 +939,7 @@ IVs: 0 Atk
 - Fiery Dance  
 - Roost  
 
-Ledian @ Choice Specs  
+Ledenna @ Choice Specs  
 Ability: Swarm  
 Level: 41  
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -985,9 +985,15 @@ Adamant Nature
 - Cross Poison  
 - Roost  
 
-Larvesta  
+Larvesta @ Eviolite  
 Ability: Flame Body  
 Level: 30  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Flame Charge  
+- Bug Bite  
+- Secret Power  
+- Will-O-Wisp  
 
 Ledian @ Eviolite  
 Ability: Swarm  

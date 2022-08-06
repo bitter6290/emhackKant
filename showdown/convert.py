@@ -96,7 +96,7 @@ def convertSets(path):
             while i[nameEnd] != ' ' or i[nameEnd-4:nameEnd] == 'Tapu':
                 nameEnd += 1
             firstNameEnd = nameEnd
-            sets[curSet]["party"][curMon]["name"] = "SPECIES_"+i[0:nameEnd].upper().replace('-','_').replace(' ','_')
+            sets[curSet]["party"][curMon]["name"] = "SPECIES_"+i[0:nameEnd].upper().replace('-','_').replace(' ','_').replace('_MEGA','')
             if(sets[curSet]["party"][curMon]["name"][len(sets[curSet]["party"][curMon]["name"])-5:] == "ALOLA"):
                sets[curSet]["party"][curMon]["name"] = sets[curSet]["party"][curMon]["name"] + 'N'
             elif(sets[curSet]["party"][curMon]["name"][len(sets[curSet]["party"][curMon]["name"])-5:] == "GALAR"):
@@ -153,6 +153,10 @@ def convertSets(path):
                         curStat = curStat + i[cursor]
                         cursor += 1
                     curEvs[evOrder.index(curStat)] = int(curEv)
+                    if curEvs[evOrder.index(curStat)] > 200:
+                        curEvs[evOrder.index(curStat)] = 252
+                    if 100 > curEvs[evOrder.index(curStat)] > 0:
+                        curEvs[evOrder.index(curStat)] = 4
                     cursor += 3
                 step += 1
                 continue
@@ -166,7 +170,7 @@ def convertSets(path):
             elif i == 'IVs: 0 Atk, 0 Spe  \n': sets[curSet]["party"][curMon]["spreadIv"] = "SPREAD_SLOW_LA"
             else: sets[curSet]["party"][curMon]["spreadIv"] = "SPREAD_31_IV" 
             if evstoKey(curEvs,curNature) in spreads.keys(): sets[curSet]["party"][curMon]["spreadEv"] = spreads[evstoKey(curEvs,curNature)]
-            else: print("Need spread for EVs "+str(curEvs) + ", nature "+curNature)
+            else: raise Exception("Need spread for EVs "+str(curEvs) + ", nature "+curNature)
             step += 1
             if i[0:3] == "IVs": continue
         if step == 6:

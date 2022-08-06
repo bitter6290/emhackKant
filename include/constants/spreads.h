@@ -25,6 +25,13 @@
 #define SPREAD_SLOW_ATTACK					 19
 #define SPREAD_SLOW_SPATK					 20
 #define SPREAD_FAST_MIXED_SWEEPER			 21
+#define SPREAD_MIXED_PH_SLOW_LONELY			 22
+#define SPREAD_MIXED_PH_FAST_HASTY			 23
+#define SPREAD_SPDEF_4SPA					 24
+#define SPREAD_PHYSDEF_4SPA					 25
+#define SPREAD_ATK_SPD_CAREFUL				 26
+#define SPREAD_ATK_SPD_ADAMANT				 27
+#define SPREAD_BOTH_DEF_4SPA				 28
 
 
 //IV spreads
@@ -43,8 +50,12 @@
 #define SPREAD_HP_FIRE_LA					 11
 #define SPREAD_HP_ICE						 12
 #define SPREAD_HP_ICE_LA				 	 13
-#define SPREAD_SLOW							 14
-#define SPREAD_SLOW_LA						 15
+#define SPREAD_HP_BUG						 14
+#define SPREAD_HP_BUG_LA					 15
+#define SPREAD_HP_STEEL						 16
+#define SPREAD_HP_STEEL_LA					 17
+#define SPREAD_SLOW							 18
+#define SPREAD_SLOW_LA						 19
 
 #define NUM_IV_SPREADS						 SPREAD_SLOW_LA
 

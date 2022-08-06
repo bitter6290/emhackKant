@@ -246,6 +246,97 @@ const struct TrainerEVSpread gEvSets[] = {
 		0
 	},
 	.nature = NATURE_LONELY
+	},
+	[SPREAD_MIXED_PH_SLOW_LONELY] =
+	{
+	.EVs =
+	{
+		252,
+		252,
+		0,
+		0,
+		4,
+		0
+	},
+	.nature = NATURE_LONELY
+	},
+	[SPREAD_MIXED_PH_FAST_HASTY] =
+	{
+	.EVs =
+	{
+		0,
+		252,
+		0,
+		252,
+		4,
+		0
+	},
+	.nature = NATURE_HASTY
+	},
+	[SPREAD_SPDEF_4SPA] =
+	{
+	.EVs =
+	{
+		252,
+		0,
+		0,
+		0,
+		4,
+		252
+	},
+	.nature = NATURE_CALM
+	},
+	[SPREAD_PHYSDEF_4SPA] =
+	{
+	.EVs =
+	{
+		252,
+		0,
+		252,
+		0,
+		4,
+		0
+	},
+	.nature = NATURE_BOLD
+	},
+	[SPREAD_ATK_SPD_CAREFUL] =
+	{
+	.EVs =
+	{
+		0,
+		252,
+		0,
+		4,
+		0,
+		252
+	},
+	.nature = NATURE_CAREFUL
+	},
+	[SPREAD_ATK_SPD_ADAMANT] =
+	{
+	.EVs =
+	{
+		0,
+		252,
+		0,
+		4,
+		0,
+		252
+	},
+	.nature = NATURE_ADAMANT
+	},
+	[SPREAD_BOTH_DEF_4SPA] =
+	{
+	.EVs =
+	{
+		0,
+		0,
+		252,
+		0,
+		4,
+		252
+	},
+	.nature = NATURE_BOLD
 	}
 };
 const u8 gIvSets[][6] = {
@@ -334,6 +425,42 @@ const u8 gIvSets[][6] = {
 		31,
 		31,
 		31
+	},
+	[SPREAD_HP_BUG] =
+	{
+		31,
+		30,
+		30,
+		31,
+		31,
+		30
+	},
+	[SPREAD_HP_BUG_LA] =
+	{
+		31,
+		0,
+		30,
+		31,
+		31,
+		30
+	},
+	[SPREAD_HP_STEEL] =
+	{
+		31,
+		31,
+		31,
+		31,
+		31,
+		30
+	},
+	[SPREAD_HP_STEEL_LA] =
+	{
+		31,
+		1,
+		31,
+		31,
+		31,
+		30
 	},
 	[SPREAD_SLOW] =
 	{

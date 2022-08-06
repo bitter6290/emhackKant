@@ -43,6 +43,7 @@ MAKER_CODE  := 01
 REVISION    := 0
 MODERN      ?= 0
 
+
 ifeq (modern,$(MAKECMDGOALS))
   MODERN := 1
 endif
@@ -151,7 +152,7 @@ MAKEFLAGS += --no-print-directory
 # Secondary expansion is required for dependency variables in object rules.
 .SECONDEXPANSION:
 
-.PHONY: all rom clean compare tidy tools mostlyclean clean-tools $(TOOLDIRS) libagbsyscall modern tidymodern tidynonmodern
+.PHONY: all rom clean compare tidy tools mostlyclean clean-tools $(TOOLDIRS) libagbsyscall modern tidymodern tidynonmodern showdown
 
 infoshell = $(foreach line, $(shell $1 | sed "s/ /__SPACE__/g"), $(info $(subst __SPACE__, ,$(line))))
 
@@ -422,7 +423,7 @@ endif
 $(OBJ_DIR)/ld_script.ld: $(LD_SCRIPT) $(LD_SCRIPT_DEPS)
 	cd $(OBJ_DIR) && sed "s#tools/#../../tools/#g" ../../$(LD_SCRIPT) > ld_script.ld
 
-$(ELF): $(OBJ_DIR)/ld_script.ld $(OBJS) libagbsyscall
+$(ELF): showdown $(OBJ_DIR)/ld_script.ld $(OBJS) libagbsyscall
 	@echo "cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T ld_script.ld -o ../../$@ <objects> <lib>"
 	@cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T ld_script.ld -o ../../$@ $(OBJS_REL) $(LIB)
 	$(FIX) $@ -t"$(TITLE)" -c$(GAME_CODE) -m$(MAKER_CODE) -r$(REVISION) --silent
@@ -436,6 +437,9 @@ modern: all
 libagbsyscall:
 	@$(MAKE) -C libagbsyscall TOOLCHAIN=$(TOOLCHAIN) MODERN=$(MODERN)
 
+showdown:
+	python3 showdown/convert.py
+	
 ###################
 ### Symbol file ###
 ###################

@@ -1,8 +1,8 @@
 mapscripts ViridianLawOffice_MapScripts {}
 script ViridianLawOffice_Counter{
 lock
-msgbox(format("Welcome to Viridian Law Office! Are you here to request our services?"))
-msgbox(format("No? Well, if you know anyone in the clinic down the street, make sure you send them here!"))
+msgbox(format("Welcome to Viridian Law Offices! Are you here to request our services?"))
+msgbox(format("No? Well, if anyone you know lands in the clinic, you know what to do!"))
 release
 end
 }

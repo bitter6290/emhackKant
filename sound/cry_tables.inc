@@ -2599,6 +2599,7 @@ gCryTable_Reverse::
 	@ Calyrex
 	cry_reverse Cry_CalyrexIceRider
 	cry_reverse Cry_CalyrexShadowRider
+	@ Hisuian mons
 	@ Custom mons
 	cry_reverse Cry_ShinxKanto
 	cry_reverse Cry_LuxioKanto

@@ -28,7 +28,7 @@
       "flag": "2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M",
       "x": 49,
       "y": 2,
       "elevation": 3,
@@ -41,7 +41,7 @@
       "flag": "3"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
       "x": 45,
       "y": 11,
       "elevation": 3,

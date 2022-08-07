@@ -31,9 +31,9 @@ static void UpdateEruptionLaunchRockPos(struct Sprite *);
 static void AnimEruptionFallingRock_Step(struct Sprite *);
 static void AnimWillOWispOrb_Step(struct Sprite *);
 static void AnimWillOWispFire(struct Sprite *);
-static void AnimTask_MoveHeatWaveTargets_Step(u8 taskId);
-static void AnimLavaPlumeOrbitScatter(struct Sprite *sprite);
-static void AnimLavaPlumeOrbitScatterStep(struct Sprite *sprite);
+static void AnimTask_MoveHeatWaveTargets_Step(u8);
+static void AnimLavaPlumeOrbitScatter(struct Sprite *);
+static void AnimLavaPlumeOrbitScatterStep(struct Sprite *);
 
 static const union AnimCmd sAnim_FireSpiralSpread_0[] =
 {
@@ -1071,6 +1071,32 @@ static void UpdateEruptionLaunchRockPos(struct Sprite *sprite)
         sprite->invisible = TRUE;
 }
 
+
+#undef IDX_ACTIVE_SPRITES
+#undef tState
+#undef tTimer1
+#undef tTimer2
+#undef tTimer3
+#undef tAttackerY
+#undef tAttackerSide
+#undef tActiveSprites
+#undef tAttackerSpriteId
+#undef sSpeedDelay
+#undef sLaunchStage
+#undef sX
+#undef sY
+#undef sSpeedX
+#undef sSpeedY
+#undef sTaskId
+#undef sActiveSpritesIdx
+
+#define sState       data[0]
+#define sBounceTimer data[1]
+#define sBounceDir   data[2]
+#define sEndTimer    data[3]
+#define sFallDelay   data[6]
+#define sTargetY     data[7]
+
 void AnimEruptionFallingRock(struct Sprite *sprite)
 {
     sprite->x = gBattleAnimArgs[0];
@@ -1128,6 +1154,13 @@ static void AnimEruptionFallingRock_Step(struct Sprite *sprite)
         break;
     }
 }
+
+#undef sState
+#undef sBounceTimer
+#undef sBounceDir
+#undef sEndTimer
+#undef sFallDelay
+#undef sTargetY
 
 void AnimWillOWispOrb(struct Sprite *sprite)
 {

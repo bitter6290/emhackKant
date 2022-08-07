@@ -21,16 +21,21 @@ end
 }
 script Viridian_GymBlocker{
 lock
+if(var(VAR_STORY_PROGRESS) < 14){
 msgbox(format("Soren left a few days ago to conduct inspections at the Pewter Mine.\lSadly, I can't let you in the gym right now!"))
 }
+else{
+msgbox(format("Soren is overseeing the repair efforts at Pewter Mine right now.\lHe'll be happy to take challengers when he's done!"))
+}
+release
+end
+}
 
-raw `
-Viridian_Berries:
-	.2byte ITEM_ORAN_BERRY
-	.2byte ITEM_PECHA_BERRY
-	.2byte ITEM_CHESTO_BERRY
-	.2byte ITEM_CHERI_BERRY
-	.2byte ITEM_NONE
-	release
-	end
-`
+
+mart Viridian_Berries{
+	 ITEM_ORAN_BERRY
+	 ITEM_PECHA_BERRY
+	 ITEM_CHESTO_BERRY
+	 ITEM_CHERI_BERRY
+	 ITEM_NONE
+}

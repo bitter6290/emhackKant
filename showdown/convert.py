@@ -50,6 +50,20 @@ def getAbilityNumber(speci,abi):
         if abiFile[i].replace('\t','').replace(' ','') == "[SPECIES_"+speci+"]=\n":
             specOffset = i
             break
+        elif abiFile[i].replace('\t','').replace(' ','').startswith("[SPECIES_"+speci+"]="):
+            cursor = 0
+            while abiFile[i][cursor] != '=':
+                cursor += 1
+            refStart = cursor + 2
+            while abiFile[i][cursor] not in ['(',',']:
+                cursor += 1
+            refEnd = cursor
+            refSearch = abiFile[i][refStart:refEnd]
+            for j in range(len(abiFile)):
+                if abiFile[j].startswith("#define "+refSearch):
+                    specOffset = j
+                    break
+            break
     for i in range(specOffset,specOffset+60):
         if abiFile[i].replace('\t','').replace(' ','')[0:11] == ".abilities=":
             abiSet = abiFile[i].replace('\t','').replace(' ','').replace('\n','').replace('},','')[12:].split(',')

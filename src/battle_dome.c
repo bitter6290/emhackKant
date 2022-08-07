@@ -73,6 +73,10 @@ struct TourneyTreeLineSection
 #define tMode               data[2]
 #define tPrevTaskId         data[3]
 
+#define EFFECTIVENESS_MODE_GOOD     0
+#define EFFECTIVENESS_MODE_BAD      1
+#define EFFECTIVENESS_MODE_AI_VS_AI 2
+
 // This file's functions.
 static u8 GetDomeTrainerMonIvs(u16 trainerId);
 static void SwapDomeTrainers(int id1, int id2, u16 *statsArray);
@@ -2735,14 +2739,13 @@ static int SelectOpponentMonsFromParty(int *partyMovePoints, bool8 allowRandom)
 #define TYPE_x2     40
 #define TYPE_x4     80
 
-// arg2 is either 2, a personality, or an OTID
-static int GetTypeEffectivenessPoints(int move, int targetSpecies, int arg2)
+static int GetTypeEffectivenessPoints(int move, int targetSpecies, int mode)
 {
     int defType1, defType2, defAbility, moveType;
     int i = 0;
     int typePower = TYPE_x1;
 
-    if (move == MOVE_NONE || move == 0xFFFF || gBattleMoves[move].power == 0)
+    if (move == MOVE_NONE || move == MOVE_UNAVAILABLE || gBattleMoves[move].power == 0)
         return 0;
 
     defType1 = gBaseStats[targetSpecies].type1;
@@ -2752,8 +2755,15 @@ static int GetTypeEffectivenessPoints(int move, int targetSpecies, int arg2)
 
     if (defAbility == ABILITY_LEVITATE && moveType == TYPE_GROUND)
     {
-        if (arg2 == 1)
+        // They likely meant to return here, as 8 is the number of points normally used in this mode for moves with no effect.
+        // Because there's no return the value instead gets interpreted by the switch, and the number of points becomes 0.
+        if (mode == EFFECTIVENESS_MODE_BAD)
+        {
             typePower = 8;
+        #ifdef BUGFIX
+            return;
+        #endif
+        }
     }
     else
     {
@@ -2764,18 +2774,19 @@ static int GetTypeEffectivenessPoints(int move, int targetSpecies, int arg2)
         if (defType2 != defType1)
             typePower = (typeEffectiveness2 * typePower) / 10;
 
-        if (defAbility == ABILITY_WONDER_GUARD && typeEffectiveness1 != 20 && typeEffectiveness2 != 20)
+        if (defAbility == ABILITY_WONDER_GUARD && typeEffectiveness1 != TYPE_x1 && typeEffectiveness2 != TYPE_x1)
             typePower = 0;
     }
 
-    switch (arg2)
+    switch (mode)
     {
-    case 0:
+    case EFFECTIVENESS_MODE_GOOD:
+        // Weights moves that more effective.
         switch (typePower)
         {
-        case TYPE_x0_50:
-        case TYPE_x0_25:
         case TYPE_x0:
+        case TYPE_x0_25:
+        case TYPE_x0_50:
         default:
             typePower = 0;
             break;
@@ -2790,21 +2801,23 @@ static int GetTypeEffectivenessPoints(int move, int targetSpecies, int arg2)
             break;
         }
         break;
-    case 1:
+    case EFFECTIVENESS_MODE_BAD:
+        // Weights moves that are less effective.
+        // Odd that there's no limit on this being used, even the Frontier Brain could end up using this.
         switch (typePower)
         {
-        default:
-        case TYPE_x1:
-            typePower = 0;
+        case TYPE_x0:
+            typePower = 8;
             break;
         case TYPE_x0_25:
             typePower = 4;
             break;
-        case TYPE_x0:
-            typePower = 8;
-            break;
         case TYPE_x0_50:
             typePower = 2;
+            break;
+        default:
+        case TYPE_x1:
+            typePower = 0;
             break;
         case TYPE_x2:
             typePower = -2;
@@ -2814,7 +2827,9 @@ static int GetTypeEffectivenessPoints(int move, int targetSpecies, int arg2)
             break;
         }
         break;
-    case 2:
+    case EFFECTIVENESS_MODE_AI_VS_AI:
+        // Used as part of calculating the winner in a battle between two AIs.
+        // Weights moves that are more effective much more strongly in both directions.
         switch (typePower)
         {
         case TYPE_x0:

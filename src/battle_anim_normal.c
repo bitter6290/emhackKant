@@ -804,7 +804,7 @@ void AnimTask_InvertScreenColor(u8 taskId)
     u32 selectedPalettes = 0;
 
     if (gBattleAnimArgs[0] & 0x1)
-        selectedPalettes = GetBattleBgPalettesMask(1, 0, 0, 0, 0, 0, 0);
+        selectedPalettes = GetBattleBgPalettesMask(TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE);
     if (gBattleAnimArgs[0] & 0x2)
         selectedPalettes |= (0x10000 << gBattleAnimAttacker);
     if (gBattleAnimArgs[0] & 0x4)

@@ -375,15 +375,9 @@ static const u16 sIgnoreMoldBreakerMoves[] =
     MOVE_MOONGEIST_BEAM,
     MOVE_SUNSTEEL_STRIKE,
     MOVE_PHOTON_GEYSER,
-    #ifdef MOVE_LIGHT_THAT_BURNS_THE_SKY
     MOVE_LIGHT_THAT_BURNS_THE_SKY,
-    #endif
-    #ifdef MOVE_MENACING_MOONRAZE_MAELSTROM
     MOVE_MENACING_MOONRAZE_MAELSTROM,
-    #endif
-    #ifdef MOVE_SEARING_SUNRAZE_SMASH
     MOVE_SEARING_SUNRAZE_SMASH,
-    #endif
 };
 
 static const u16 sInstructBannedMoves[] =
@@ -606,7 +600,7 @@ bool32 AtMaxHp(u8 battlerId)
 bool32 IsBattlerTrapped(u8 battler, bool8 checkSwitch)
 {
     u8 holdEffect = AI_DATA->holdEffects[battler];
-    if (IS_BATTLER_OF_TYPE(battler, TYPE_GHOST)
+    if ((B_GHOSTS_ESCAPE >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
       || (checkSwitch && holdEffect == HOLD_EFFECT_SHED_SHELL)
       || (!checkSwitch && GetBattlerAbility(battler) == ABILITY_RUN_AWAY)
       || (!checkSwitch && holdEffect == HOLD_EFFECT_CAN_ALWAYS_RUN))
@@ -617,7 +611,7 @@ bool32 IsBattlerTrapped(u8 battler, bool8 checkSwitch)
     {
         if (gBattleMons[battler].status2 & (STATUS2_ESCAPE_PREVENTION | STATUS2_WRAPPED)
           || IsAbilityPreventingEscape(battler)
-          || gStatuses3[battler] & (STATUS3_ROOTED)    // TODO: sky drop target in air
+          || gStatuses3[battler] & (STATUS3_ROOTED | STATUS3_SKY_DROPPED)
           || (gFieldStatuses & STATUS_FIELD_FAIRY_LOCK))
             return TRUE;
     }
@@ -2469,13 +2463,13 @@ bool32 ShouldPivot(u8 battlerAtk, u8 battlerDef, u16 defAbility, u16 move, u8 mo
 
                     if (!IS_MOVE_STATUS(move) && (shouldSwitch
                      || (AtMaxHp(battlerDef) && (AI_DATA->holdEffects[battlerDef] == HOLD_EFFECT_FOCUS_SASH
-                      || defAbility == ABILITY_STURDY || defAbility == ABILITY_MULTISCALE || defAbility == ABILITY_SHADOW_SHIELD))))
+                      || (defAbility == ABILITY_STURDY && B_STURDY >= GEN_5) || defAbility == ABILITY_MULTISCALE || defAbility == ABILITY_SHADOW_SHIELD))))
                         return PIVOT;   // pivot to break sash/sturdy/multiscale
                 }
                 else if (!hasStatBoost)
                 {
                     if (!IS_MOVE_STATUS(move) && (AtMaxHp(battlerDef) && (AI_DATA->holdEffects[battlerDef] == HOLD_EFFECT_FOCUS_SASH
-                      || defAbility == ABILITY_STURDY || defAbility == ABILITY_MULTISCALE || defAbility == ABILITY_SHADOW_SHIELD)))
+                      || (defAbility == ABILITY_STURDY && B_STURDY >= GEN_5) || defAbility == ABILITY_MULTISCALE || defAbility == ABILITY_SHADOW_SHIELD)))
                         return PIVOT;   // pivot to break sash/sturdy/multiscale
 
                     if (shouldSwitch)

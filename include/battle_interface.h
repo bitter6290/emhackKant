@@ -91,7 +91,7 @@ void HideMegaTriggerSprite(void);
 void DestroyMegaTriggerSprite(void);
 u32 CreateMegaIndicatorSprite(u32 battlerId, u32 which);
 void DestroyMegaIndicatorSprite(u32 healthboxSpriteId);
-u8 CreatePartyStatusSummarySprites(u8 battler, struct HpAndStatus *partyInfo, u8 arg2, bool8 isBattleStart);
+u8 CreatePartyStatusSummarySprites(u8 battler, struct HpAndStatus *partyInfo, bool8 skipPlayer, bool8 isBattleStart);
 void Task_HidePartyStatusSummary(u8 taskId);
 void UpdateHealthboxAttribute(u8 healthboxSpriteId, struct Pokemon *mon, u8 elementId);
 s32 MoveBattleBar(u8 battler, u8 healthboxSpriteId, u8 whichBar, u8 arg3);

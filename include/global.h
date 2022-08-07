@@ -34,6 +34,7 @@
                                         // saveblock2 total: 1236 bytes
 
                                         //grand total: 3082
+
 #include "constants/trainer_hill.h"
 #include "constants/expansion_branches.h"
 
@@ -1059,7 +1060,7 @@ struct SaveBlock1
     #endif
     /*0x3???*/ u8 dexSeen[NUM_DEX_FLAG_BYTES];
     /*0x3???*/ u8 dexCaught[NUM_DEX_FLAG_BYTES];
-    /*0x3???*/ u32 trainerHillTimes[4];
+    /*0x3???*/ u32 trainerHillTimes[NUM_TRAINER_HILL_MODES];
     /*0x3???*/ struct RamScript ramScript;
     /*0x3???*/ struct RecordMixingGift recordMixingGift;
     /*0x3???*/ LilycoveLady lilycoveLady;

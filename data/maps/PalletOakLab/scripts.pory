@@ -53,7 +53,7 @@ delay(15)
 msgbox(format("So things have gotten that bad..."))
 applymovement(4, OakLabTurns)
 waitmovement(4)
-msgbox(format("Listen, {PLAYER}. I'm impressed that you could stand up to Team Rocket, even just this once. But there are bigger things afoot here."))
+msgbox(format("Listen, {PLAYER}. I'm impressed that you helped fight off Team Rocket, even just this once. But there are bigger things afoot here."))
 msgbox(format("Keep your eye on your task and finish your survey. And never think for a second of dealing with Team Rocket!\lIf you want a bigger challenge, you can start collecting Gym badges. Anything but those grunts!"))
 addvar(VAR_STORY_PROGRESS,1)
 }

@@ -174,10 +174,10 @@ const struct TrainerEVSpread gEvSets[] = {
 	.EVs = 
 	{
 		252,
-		0,
+		4,
 		0,
 		252,
-		4,
+		0,
 		0
 	},
 	.nature = NATURE_JOLLY
@@ -345,6 +345,24 @@ const u8 gIvSets[][6] = {
 	[SPREAD_8_IV] = {8},
 	[SPREAD_24_IV] = {24},
 	[SPREAD_31_IV] = {31},
+	[SPREAD_SLOW] =
+	{
+		31,
+		31,
+		31,
+		0,
+		31,
+		31
+	},
+	[SPREAD_SLOW_LA] =
+	{
+		31,
+		0,
+		31,
+		0,
+		31,
+		31
+	},
 	[SPREAD_LOW_ATTACK] = 
 	{
 		31,
@@ -462,22 +480,58 @@ const u8 gIvSets[][6] = {
 		31,
 		30
 	},
-	[SPREAD_SLOW] =
+	[SPREAD_HP_GROUND] =
 	{
 		31,
 		31,
 		31,
+		31,
+		30,
+		30
+	},
+	[SPREAD_HP_GROUND_LA] =
+	{
+		31,
 		0,
 		31,
+		31,
+		30,
+		30
+	},
+	[SPREAD_HP_ROCK] =
+	{
+		31,
+		31,
+		30,
+		30,
+		31,
+		30
+	},
+	[SPREAD_HP_ROCK_LA] =
+	{
+		31,
+		1,
+		30,
+		30,
+		31,
+		30
+	},
+	[SPREAD_HP_WATER] =
+	{
+		31,
+		30,
+		30,
+		31,
+		30,
 		31
 	},
-	[SPREAD_SLOW_LA] =
+	[SPREAD_HP_WATER_LA] =
 	{
 		31,
 		0,
+		30,
 		31,
-		0,
-		31,
+		30,
 		31
-	}
+	},
 };

@@ -316,18 +316,22 @@ PalletOakLab_OakDialogue_Text_11:
 	.string "So things have gotten that bad...$"
 
 PalletOakLab_OakDialogue_Text_12:
-	.string "Listen, {PLAYER}. I'm impressed that\n"
-	.string "you could stand up to Team Rocket,\l"
-	.string "even just this once. But there are\l"
-	.string "bigger things afoot here.$"
+	.string "Listen, {PLAYER}. It's quite\n"
+	.string "impressive for a new Trainer to go\l"
+	.string "toe-to-toe with Team Rocket and\l"
+	.string "survive. But there are bigger things\l"
+	.string "afoot here.$"
 
 PalletOakLab_OakDialogue_Text_13:
 	.string "Keep your eye on your task and finish\n"
 	.string "your survey. And never think for a\l"
 	.string "second of dealing with Team Rocket!\l"
 	.string "If you want a bigger challenge, you can\l"
-	.string "start collecting Gym badges. Anything\l"
-	.string "but those grunts!$"
+	.string "start collecting Gym badges. Viridian\l"
+	.string "City is the closest one, although Soren\l"
+	.string "must be quite busy right now.\l"
+	.string "I encourage you to challenge all ten,\l"
+	.string "although it'll be quite the feat!$"
 
 PalletOakLab_ChooseBulbasaur_Text_0:
 	.string "This ball contains a Pokémon... but it\n"

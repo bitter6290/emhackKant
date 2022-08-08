@@ -27,18 +27,25 @@ Viridian_BerrySeller_2:
 
 Viridian_GymBlocker::
 	lock
+	compare VAR_STORY_PROGRESS, 14
+	goto_if_lt Viridian_GymBlocker_2
+	msgbox Viridian_GymBlocker_Text_1
+Viridian_GymBlocker_1:
+	release
+	end
+
+Viridian_GymBlocker_2:
 	msgbox Viridian_GymBlocker_Text_0
-	return
+	goto Viridian_GymBlocker_1
 
 
+	.align 2
 Viridian_Berries:
 	.2byte ITEM_ORAN_BERRY
 	.2byte ITEM_PECHA_BERRY
 	.2byte ITEM_CHESTO_BERRY
 	.2byte ITEM_CHERI_BERRY
 	.2byte ITEM_NONE
-	release
-	end
 
 ViridianGymSign_Text_0:
 	.string "Viridian City Gym\l"
@@ -57,3 +64,9 @@ Viridian_GymBlocker_Text_0:
 	.string "inspections at the Pewter Mine.\l"
 	.string "Sadly, I can't let you in the gym right\l"
 	.string "now!$"
+
+Viridian_GymBlocker_Text_1:
+	.string "Soren is overseeing the repair efforts\n"
+	.string "at Pewter Mine right now.\l"
+	.string "He'll be happy to take challengers when\l"
+	.string "he's done!$"

@@ -53,8 +53,8 @@ delay(15)
 msgbox(format("So things have gotten that bad..."))
 applymovement(4, OakLabTurns)
 waitmovement(4)
-msgbox(format("Listen, {PLAYER}. I'm impressed that you helped fight off Team Rocket, even just this once. But there are bigger things afoot here."))
-msgbox(format("Keep your eye on your task and finish your survey. And never think for a second of dealing with Team Rocket!\lIf you want a bigger challenge, you can start collecting Gym badges. Anything but those grunts!"))
+msgbox(format("Listen, {PLAYER}. It's quite impressive for a new Trainer to go toe-to-toe with Team Rocket and survive. But there are bigger things afoot here."))
+msgbox(format("Keep your eye on your task and finish your survey. And never think for a second of dealing with Team Rocket!\lIf you want a bigger challenge, you can start collecting Gym badges. Viridian City is the closest one, although Soren must be quite busy right now.\lI encourage you to challenge all ten, although it'll be quite the feat!"))
 addvar(VAR_STORY_PROGRESS,1)
 }
 release

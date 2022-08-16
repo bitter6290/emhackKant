@@ -5244,8 +5244,8 @@
     {
       "id": "LAYOUT_PEWTER_CAVE3F",
       "name": "PewterCave3F_Layout",
-      "width": 40,
-      "height": 40,
+      "width": 90,
+      "height": 55,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/PewterCave3F/border.bin",

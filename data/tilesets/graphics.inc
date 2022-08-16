@@ -1749,3 +1749,23 @@ gTilesetPalettes_cycling::
 	.align 2
 gTilesetTiles_cycling::
 	.incbin "data/tilesets/secondary/cycling/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_FuchsiaSwamp::
+	.incbin "data/tilesets/secondary/fuchsiaswamp/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/fuchsiaswamp/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/fuchsiaswamp/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/fuchsiaswamp/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/fuchsiaswamp/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/fuchsiaswamp/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/fuchsiaswamp/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/fuchsiaswamp/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/fuchsiaswamp/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/fuchsiaswamp/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/fuchsiaswamp/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/fuchsiaswamp/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/fuchsiaswamp/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_FuchsiaSwamp::
+	.incbin "data/tilesets/secondary/fuchsiaswamp/tiles.4bpp.lz"

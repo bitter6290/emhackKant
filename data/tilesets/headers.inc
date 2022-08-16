@@ -841,3 +841,14 @@ gTileset_cycling::
 	.4byte gMetatiles_cycling
 	.4byte gMetatileAttributes_cycling
 	.4byte NULL
+
+	.align 2
+gTileset_FuchsiaSwamp::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_FuchsiaSwamp
+	.4byte gTilesetPalettes_FuchsiaSwamp
+	.4byte gMetatiles_FuchsiaSwamp
+	.4byte gMetatileAttributes_FuchsiaSwamp
+	.4byte NULL

@@ -565,3 +565,11 @@ gMetatiles_cycling::
 	.align 1
 gMetatileAttributes_cycling::
 	.incbin "data/tilesets/secondary/cycling/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_FuchsiaSwamp::
+	.incbin "data/tilesets/secondary/fuchsiaswamp/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_FuchsiaSwamp::
+	.incbin "data/tilesets/secondary/fuchsiaswamp/metatile_attributes.bin"

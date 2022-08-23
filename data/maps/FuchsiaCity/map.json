@@ -24,14 +24,14 @@
       "map": "MAP_VERMILION_ESTUARY"
     },
     {
-      "direction": "up",
-      "offset": -59,
-      "map": "MAP_CELADON_SEA_E"
-    },
-    {
       "direction": "left",
       "offset": 0,
       "map": "MAP_CYCLING_ROAD_S"
+    },
+    {
+      "direction": "up",
+      "offset": -59,
+      "map": "MAP_CELADON_SEA_E_S"
     }
   ],
   "object_events": [

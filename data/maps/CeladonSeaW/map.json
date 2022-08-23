@@ -37,6 +37,11 @@
       "direction": "right",
       "offset": -44,
       "map": "MAP_CYCLING_ROAD_N"
+    },
+    {
+      "direction": "down",
+      "offset": -32,
+      "map": "MAP_CINNABAR_SEA_E"
     }
   ],
   "object_events": [

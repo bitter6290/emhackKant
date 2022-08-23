@@ -25,13 +25,18 @@
     },
     {
       "direction": "left",
-      "offset": -64,
+      "offset": -80,
       "map": "MAP_CELADON_SEA_E"
     },
     {
       "direction": "down",
       "offset": -12,
       "map": "MAP_FUCHSIA_CITY"
+    },
+    {
+      "direction": "left",
+      "offset": 4,
+      "map": "MAP_CELADON_SEA_E_S"
     }
   ],
   "object_events": [

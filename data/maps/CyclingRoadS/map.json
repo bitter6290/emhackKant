@@ -21,7 +21,7 @@
     {
       "direction": "up",
       "offset": 21,
-      "map": "MAP_CELADON_SEA_E"
+      "map": "MAP_CELADON_SEA_E_S"
     },
     {
       "direction": "left",
@@ -32,6 +32,11 @@
       "direction": "right",
       "offset": 0,
       "map": "MAP_FUCHSIA_CITY"
+    },
+    {
+      "direction": "left",
+      "offset": -24,
+      "map": "MAP_CINNABAR_SEA_E"
     }
   ],
   "object_events": [

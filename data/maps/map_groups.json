@@ -695,7 +695,8 @@
     "VermilionPlain",
     "FuchsiaSwamp",
     "ChartreuseWoods",
-    "BurgundyCoastline"
+    "BurgundyCoastline",
+    "CeruleanRangeW"
   ],
   "gMapGroup_NewIndoor": [
     "PalletPlayerHouse_1F",
@@ -742,7 +743,9 @@
     "SEKantoSeaN",
     "SEKantoSeaC",
     "VermilionEstuary",
-    "CyclingRoadS"
+    "CyclingRoadS",
+    "CeladonSeaE_S",
+    "CinnabarSeaE"
   ],
   "gMapGroup_NewMartCenter": [
     "ViridianPokemonCenter1F",

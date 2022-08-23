@@ -42,6 +42,11 @@
       "direction": "right",
       "offset": -42,
       "map": "MAP_VIRIDIAN_COAST"
+    },
+    {
+      "direction": "down",
+      "offset": 40,
+      "map": "MAP_CINNABAR_SEA_E"
     }
   ],
   "object_events": [

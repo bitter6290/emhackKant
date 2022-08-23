@@ -654,6 +654,7 @@
 #define MAP_FUCHSIA_SWAMP      (29 | (36 << 8))
 #define MAP_CHARTREUSE_WOODS   (30 | (36 << 8))
 #define MAP_BURGUNDY_COASTLINE (31 | (36 << 8))
+#define MAP_CERULEAN_RANGE_W   (32 | (36 << 8))
 
 // gMapGroup_NewIndoor
 #define MAP_PALLET_PLAYER_HOUSE_1F      (0 | (37 << 8))
@@ -701,6 +702,8 @@
 #define MAP_SEKANTO_SEA_C     (4 | (43 << 8))
 #define MAP_VERMILION_ESTUARY (5 | (43 << 8))
 #define MAP_CYCLING_ROAD_S    (6 | (43 << 8))
+#define MAP_CELADON_SEA_E_S   (7 | (43 << 8))
+#define MAP_CINNABAR_SEA_E    (8 | (43 << 8))
 
 // gMapGroup_NewMartCenter
 #define MAP_VIRIDIAN_POKEMON_CENTER1F (0 | (44 << 8))

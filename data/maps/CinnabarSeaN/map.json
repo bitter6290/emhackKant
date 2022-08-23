@@ -29,9 +29,14 @@
       "map": "MAP_VIRIDIAN_PLAIN_E"
     },
     {
-      "direction": "right",
-      "offset": -100,
+      "direction": "up",
+      "offset": 96,
       "map": "MAP_VIRIDIAN_COAST"
+    },
+    {
+      "direction": "right",
+      "offset": 0,
+      "map": "MAP_CINNABAR_SEA_E"
     }
   ],
   "object_events": [

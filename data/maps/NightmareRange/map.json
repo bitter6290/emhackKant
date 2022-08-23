@@ -42,6 +42,11 @@
       "direction": "right",
       "offset": 20,
       "map": "MAP_PEWTER_RANGE"
+    },
+    {
+      "direction": "right",
+      "offset": -36,
+      "map": "MAP_CERULEAN_RANGE_W"
     }
   ],
   "object_events": [

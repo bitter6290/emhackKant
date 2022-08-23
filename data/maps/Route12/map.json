@@ -30,12 +30,12 @@
     },
     {
       "direction": "left",
-      "offset": 16,
+      "offset": 32,
       "map": "MAP_ROUTE15"
     },
     {
       "direction": "left",
-      "offset": 36,
+      "offset": 52,
       "map": "MAP_FUCHSIA_SWAMP"
     },
     {

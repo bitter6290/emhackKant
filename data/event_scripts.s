@@ -1243,3 +1243,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/MtMoonInsideB2f/scripts.inc"
 
 	.include "data/maps/ViridianGymB2F/scripts.inc"
+
+	.include "data/maps/CeladonSeaE_S/scripts.inc"
+
+	.include "data/maps/CinnabarSeaE/scripts.inc"
+
+	.include "data/maps/CeruleanRangeW/scripts.inc"

@@ -20,12 +20,12 @@
     },
     {
       "direction": "right",
-      "offset": -56,
+      "offset": -72,
       "map": "MAP_SEKANTO_SEA_N"
     },
     {
       "direction": "left",
-      "offset": 40,
+      "offset": 64,
       "map": "MAP_ROUTE14"
     },
     {

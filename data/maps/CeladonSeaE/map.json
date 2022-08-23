@@ -35,23 +35,23 @@
     },
     {
       "direction": "right",
-      "offset": 24,
+      "offset": 40,
       "map": "MAP_VERMILION_CITY"
     },
     {
-      "direction": "down",
-      "offset": 59,
-      "map": "MAP_FUCHSIA_CITY"
-    },
-    {
       "direction": "right",
-      "offset": 64,
+      "offset": 80,
       "map": "MAP_VERMILION_ESTUARY"
     },
     {
       "direction": "down",
       "offset": -21,
       "map": "MAP_CYCLING_ROAD_S"
+    },
+    {
+      "direction": "down",
+      "offset": 0,
+      "map": "MAP_CELADON_SEA_E_S"
     }
   ],
   "object_events": [

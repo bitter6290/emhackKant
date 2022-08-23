@@ -42,6 +42,16 @@
       "direction": "right",
       "offset": 20,
       "map": "MAP_CELADON_SEA_W"
+    },
+    {
+      "direction": "down",
+      "offset": -96,
+      "map": "MAP_CINNABAR_SEA_N"
+    },
+    {
+      "direction": "down",
+      "offset": 0,
+      "map": "MAP_CINNABAR_SEA_E"
     }
   ],
   "object_events": [

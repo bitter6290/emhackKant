@@ -42,6 +42,16 @@
       "direction": "down",
       "offset": 0,
       "map": "MAP_CYCLING_ROAD_S"
+    },
+    {
+      "direction": "left",
+      "offset": 124,
+      "map": "MAP_CINNABAR_SEA_E"
+    },
+    {
+      "direction": "right",
+      "offset": 108,
+      "map": "MAP_CELADON_SEA_E_S"
     }
   ],
   "object_events": [

@@ -10,7 +10,7 @@
 #include "palette.h"
 #include "constants/rgb.h"
 
-static void SpriteCB_Sparkle_Dummy(struct Sprite* sprite);
+static void SpriteCB_Sparkle_Dummy(struct Sprite *sprite);
 
 static void Task_Sparkles_SpiralUpward_Init(u8 taskId);
 static void Task_Sparkles_SpiralUpward(u8 taskId);
@@ -58,7 +58,7 @@ static const struct OamData sOamData_EvoSparkle =
     .y = DISPLAY_HEIGHT,
     .affineMode = ST_OAM_AFFINE_OFF,
     .objMode = ST_OAM_OBJ_NORMAL,
-    .mosaic = 0,
+    .mosaic = FALSE,
     .bpp = ST_OAM_4BPP,
     .shape = SPRITE_SHAPE(8x8),
     .x = 0,
@@ -112,8 +112,12 @@ static void SetEvoSparklesMatrices(void)
         SetOamMatrix(20 + i, sEvoSparkleMatrices[i], 0, 0, sEvoSparkleMatrices[i]);
     }
 }
+#define sSpeed     data[3]
+#define sAmplitude data[5]
+#define sTrigIdx   data[6]
+#define sTimer     data[7]
 
-static void SpriteCB_Sparkle_SpiralUpward(struct Sprite* sprite)
+static void SpriteCB_Sparkle_SpiralUpward(struct Sprite *sprite)
 {
     if (sprite->y > 8)
     {
@@ -153,7 +157,7 @@ static void CreateSparkle_SpiralUpward(u8 arg0)
     }
 }
 
-static void SpriteCB_Sparkle_ArcDown(struct Sprite* sprite)
+static void SpriteCB_Sparkle_ArcDown(struct Sprite *sprite)
 {
     if (sprite->y < 88)
     {
@@ -182,7 +186,7 @@ static void CreateSparkle_ArcDown(u8 arg0)
     }
 }
 
-static void SpriteCB_Sparkle_CircleInward(struct Sprite* sprite)
+static void SpriteCB_Sparkle_CircleInward(struct Sprite *sprite)
 {
     if (sprite->data[5] > 8)
     {
@@ -211,7 +215,7 @@ static void CreateSparkle_CircleInward(u8 arg0, u8 arg1)
     }
 }
 
-static void SpriteCB_Sparkle_Spray(struct Sprite* sprite)
+static void SpriteCB_Sparkle_Spray(struct Sprite *sprite)
 {
     if (!(sprite->data[7] & 3))
         sprite->y++;
@@ -478,7 +482,7 @@ static void Task_Sparkles_SprayAndFlashTrade(u8 taskId)
 #undef tTimer
 #undef tSpecies
 
-static void SpriteCB_EvolutionMonSprite(struct Sprite* sprite)
+static void SpriteCB_EvolutionMonSprite(struct Sprite *sprite)
 {
 
 }

@@ -1,7 +1,8 @@
 #ifndef GUARD_CONSTANTS_POKEDEX_H
 #define GUARD_CONSTANTS_POKEDEX_H
 
-// National Pokedex order
+#include "constants/pokemon_config.h"
+// National Pokedex order. Gen 4+ mons and forms are not disabled by P_NEW_POKEMON to keep pokedex_orders.h clean.
 enum {
     NATIONAL_DEX_NONE,
     // Kanto
@@ -933,7 +934,11 @@ enum {
 
 #define KANTO_DEX_COUNT     NATIONAL_DEX_MEW
 #define JOHTO_DEX_COUNT     NATIONAL_DEX_CELEBI
+#if P_NEW_POKEMON == TRUE
+#define NATIONAL_DEX_COUNT  NATIONAL_DEX_CALYREX
+#else
 #define NATIONAL_DEX_COUNT  NATIONAL_DEX_AUREATIC
+#endif
 #define POKEMON_SLOTS_NUMBER (NATIONAL_DEX_COUNT + 1)
 
 // Hoenn Pokedex order
@@ -990,7 +995,9 @@ enum {
     HOENN_DEX_GOLEM,
     HOENN_DEX_MAGNEMITE,
     HOENN_DEX_MAGNETON,
+#if P_NEW_POKEMON == TRUE
     HOENN_DEX_MAGNEZONE,
+#endif
     HOENN_DEX_ODDISH,
     HOENN_DEX_GLOOM,
     HOENN_DEX_VILEPLUME,
@@ -1050,8 +1057,8 @@ enum {
     HOENN_DEX_RALTS,
     HOENN_DEX_KIRLIA,
     HOENN_DEX_GARDEVOIR,
-    HOENN_DEX_ABSOL,
     HOENN_DEX_GALLADE,
+    HOENN_DEX_ABSOL,
     HOENN_DEX_MEOWTH,
     HOENN_DEX_PERSIAN,
     HOENN_DEX_PERRSERKER,
@@ -1064,7 +1071,9 @@ enum {
     HOENN_DEX_BANETTE,
     HOENN_DEX_DUSKULL,
     HOENN_DEX_DUSCLOPS,
+#if P_NEW_POKEMON == TRUE
     HOENN_DEX_DUSKNOIR,
+#endif
     HOENN_DEX_PHANTUMP,
     HOENN_DEX_TREVENANT,
     HOENN_DEX_PUMPKABOO,

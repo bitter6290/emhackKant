@@ -43,6 +43,8 @@ FORM_ITEM_USE_TIME:
 #define DAY    0
 #define NIGHT  1
 
+#if P_NEW_POKEMON == TRUE
+
 static const struct FormChange sDialgaFormChangeTable[] = {
     {FORM_ITEM_HOLD, SPECIES_DIALGA, ITEM_NONE},
     {FORM_ITEM_HOLD, SPECIES_DIALGA_ORIGIN, ITEM_ADAMANT_ORB},
@@ -194,6 +196,7 @@ static const struct FormChange sSilvallyFormChangeTable[] = {
     {FORM_ITEM_HOLD_ABILITY, SPECIES_SILVALLY_FAIRY,    ITEM_FAIRY_MEMORY,    ABILITY_RKS_SYSTEM},
     {FORM_CHANGE_END},
 };
+#endif
 
 static const struct FormChange sEnamorusFormChangeTable[] = {
     {FORM_ITEM_USE, SPECIES_ENAMORUS_THERIAN, ITEM_REVEAL_GLASS},

@@ -193,7 +193,7 @@ static const struct OamData sOamData_ResultsTextWindow =
     .y = 0,
     .affineMode = ST_OAM_AFFINE_OFF,
     .objMode = ST_OAM_OBJ_NORMAL,
-    .mosaic = 0,
+    .mosaic = FALSE,
     .bpp = ST_OAM_4BPP,
     .shape = SPRITE_SHAPE(64x32),
     .x = 0,
@@ -239,7 +239,7 @@ static const struct OamData sOamData_Confetti =
     .y = 0,
     .affineMode = ST_OAM_AFFINE_OFF,
     .objMode = ST_OAM_OBJ_NORMAL,
-    .mosaic = 0,
+    .mosaic = FALSE,
     .bpp = ST_OAM_4BPP,
     .shape = SPRITE_SHAPE(8x8),
     .x = 0,
@@ -362,7 +362,7 @@ static const struct OamData sOamData_WirelessIndicatorWindow =
     .y = 0,
     .affineMode = ST_OAM_AFFINE_OFF,
     .objMode = ST_OAM_OBJ_NORMAL,
-    .mosaic = 0,
+    .mosaic = FALSE,
     .bpp = ST_OAM_4BPP,
     .shape = SPRITE_SHAPE(16x16),
     .x = 0,
@@ -889,11 +889,10 @@ static void Task_ShowWinnerMonBanner(u8 taskId)
         species = gContestMons[i].species;
         personality = gContestMons[i].personality;
         otId = gContestMons[i].otId;
-        HandleLoadSpecialPokePic(
-            &gMonFrontPicTable[species],
-            gMonSpritesGfxPtr->sprites.ptr[B_POSITION_OPPONENT_LEFT],
-            species,
-            personality);
+        HandleLoadSpecialPokePic(TRUE,
+                                gMonSpritesGfxPtr->sprites.ptr[B_POSITION_OPPONENT_LEFT],
+                                species,
+                                personality);
 
         pokePal = GetMonSpritePalStructFromOtIdPersonality(species, otId, personality);
         LoadCompressedSpritePalette(pokePal);
@@ -1177,7 +1176,7 @@ static s32 DrawResultsTextWindow(const u8 *text, u8 spriteId)
         spriteTilePtrs[0] = (u8 *)(sprite->oam.tileNum * 32 + OBJ_VRAM0);
 
         for (i = 1; i < (int)ARRAY_COUNT(spriteTilePtrs); i++)
-            spriteTilePtrs[i] = (void*)(gSprites[sprite->data[i - 1]].oam.tileNum * 32 + OBJ_VRAM0);
+            spriteTilePtrs[i] = (void *)(gSprites[sprite->data[i - 1]].oam.tileNum * 32 + OBJ_VRAM0);
 
         for (i = 0; i < (int)ARRAY_COUNT(spriteTilePtrs); i++)
             CpuFill32(0, spriteTilePtrs[i], 0x400);
@@ -2105,7 +2104,7 @@ static void Task_StartContest(u8 taskId)
 
 void StartContest(void)
 {
-    ScriptContext2_Enable();
+    LockPlayerFieldControls();
     CreateTask(Task_StartContest, 10);
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
 }
@@ -2126,7 +2125,7 @@ static void Task_StartShowContestResults(u8 taskId)
 
 void ShowContestResults(void)
 {
-    ScriptContext2_Enable();
+    LockPlayerFieldControls();
     CreateTask(Task_StartShowContestResults, 10);
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
 }
@@ -2139,7 +2138,7 @@ void GetContestPlayerId(void)
 void ContestLinkTransfer(u8 category)
 {
     u8 newTaskId;
-    ScriptContext2_Enable();
+    LockPlayerFieldControls();
     newTaskId = CreateTask(Task_LinkContest_Init, 0);
     SetTaskFuncWithFollowupFunc(newTaskId, Task_LinkContest_Init, Task_StartCommunication);
     gTasks[newTaskId].data[9] = category;
@@ -2241,8 +2240,8 @@ void Task_LinkContest_FinalizeConnection(u8 taskId)
 
         DestroyTask(taskId);
         SetDynamicWarp(0, gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum, WARP_ID_NONE);
-        ScriptContext2_Disable();
-        EnableBothScriptContexts();
+        UnlockPlayerFieldControls();
+        ScriptContext_Enable();
     }
 }
 
@@ -2257,8 +2256,8 @@ static void Task_LinkContest_WaitDisconnect(u8 taskId)
     if (!gReceivedRemoteLinkPlayers)
     {
         DestroyTask(taskId);
-        ScriptContext2_Disable();
-        EnableBothScriptContexts();
+        UnlockPlayerFieldControls();
+        ScriptContext_Enable();
     }
 }
 
@@ -2564,7 +2563,7 @@ void ShowContestEntryMonPic(void)
         taskId = CreateTask(Task_ShowContestEntryMonPic, 0x50);
         gTasks[taskId].data[0] = 0;
         gTasks[taskId].data[1] = species;
-        HandleLoadSpecialPokePic(&gMonFrontPicTable[species], gMonSpritesGfxPtr->sprites.ptr[B_POSITION_OPPONENT_LEFT], species, personality);
+        HandleLoadSpecialPokePic(TRUE, gMonSpritesGfxPtr->sprites.ptr[B_POSITION_OPPONENT_LEFT], species, personality);
 
         palette = GetMonSpritePalStructFromOtIdPersonality(species, otId, personality);
         LoadCompressedSpritePalette(palette);
@@ -2612,7 +2611,7 @@ static void Task_ShowContestEntryMonPic(u8 taskId)
         break;
     case 1:
         task->data[5] = CreateWindowFromRect(10, 3, 8, 8);
-        SetStandardWindowBorderStyle(task->data[5], 1);
+        SetStandardWindowBorderStyle(task->data[5], TRUE);
         task->data[0]++;
         break;
     case 2:
@@ -2699,7 +2698,7 @@ static void Task_LinkContestWaitForConnection(u8 taskId)
     default:
         if (IsLinkTaskFinished() == 1)
         {
-            EnableBothScriptContexts();
+            ScriptContext_Enable();
             DestroyTask(taskId);
         }
         break;

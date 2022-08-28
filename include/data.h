@@ -69,6 +69,11 @@ struct TrainerMonItemCustomMoves
     /*0x10*/ u16 moves[MAX_MON_MOVES];
 };
 
+#define NO_ITEM_DEFAULT_MOVES(party) { .NoItemDefaultMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = 0
+#define NO_ITEM_CUSTOM_MOVES(party) { .NoItemCustomMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET
+#define ITEM_DEFAULT_MOVES(party) { .ItemDefaultMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_HELD_ITEM
+#define ITEM_CUSTOM_MOVES(party) { .ItemCustomMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM
+
 union TrainerMonPtr
 {
     const struct TrainerMonNoItemDefaultMoves *NoItemDefaultMoves;
@@ -83,14 +88,14 @@ struct Trainer
     /*0x01*/ u8 trainerClass;
     /*0x02*/ u8 encounterMusic_gender; // last bit is gender
     /*0x03*/ u8 trainerPic;
-    /*0x04*/ u8 trainerName[12];
+    /*0x04*/ u8 trainerName[TRAINER_NAME_LENGTH + 1];
     /*0x10*/ u16 items[MAX_TRAINER_ITEMS];
     /*0x18*/ bool8 doubleBattle;
     /*0x1C*/ u32 aiFlags;
-    /*0x20*/ unsigned int partySize:4;
-    		 unsigned int scalingCoeff:4;
-    /*0x21*/ u8 evCoeff;
-    /*0x22*/ union TrainerMonPtr party;
+    /*0x20*/ u8 partySize;
+    /*0x21*/ u8 scalingCoeff;
+    /*0x22*/ u8 evCoeff;
+    /*0x23*/ union TrainerMonPtr party;
 };
 
 #define TRAINER_ENCOUNTER_MUSIC(trainer)((gTrainers[trainer].encounterMusic_gender & 0x7F))

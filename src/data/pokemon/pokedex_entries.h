@@ -4644,6 +4644,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 2,
     },
 
+#if P_NEW_POKEMON == TRUE
     [NATIONAL_DEX_TURTWIG] =
     {
         .categoryName = _("Tiny Leaf"),
@@ -10875,4 +10876,5 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+#endif
 };

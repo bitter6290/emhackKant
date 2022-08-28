@@ -1,5 +1,6 @@
 const struct FormChange *const gFormChangeTablePointers[NUM_SPECIES] = 
 {
+#if P_NEW_POKEMON == TRUE
 	[SPECIES_DIALGA] = sDialgaFormChangeTable,
 	[SPECIES_DIALGA_ORIGIN] = sDialgaFormChangeTable,
 	[SPECIES_PALKIA] = sPalkiaFormChangeTable,
@@ -65,4 +66,5 @@ const struct FormChange *const gFormChangeTablePointers[NUM_SPECIES] =
     [SPECIES_SILVALLY_WATER] = sSilvallyFormChangeTable,
     [SPECIES_ENAMORUS] = sEnamorusFormChangeTable,
     [SPECIES_ENAMORUS_THERIAN] = sEnamorusTherianFormChangeTable,
+#endif
 };

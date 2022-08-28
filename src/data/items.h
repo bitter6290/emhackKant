@@ -1371,10 +1371,11 @@ const struct Item gItems[] =
         .name = _("Exp.Candy XS"),
         .itemId = ITEM_EXP_CANDY_XS,
         .price = 20,
+        .holdEffectParam = EXP_100,
         .description = sExpCandyXSDesc,
         .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse, // Todo
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
         .flingPower = 30,
     },
 
@@ -1383,10 +1384,11 @@ const struct Item gItems[] =
         .name = _("Exp.Candy S"),
         .itemId = ITEM_EXP_CANDY_S,
         .price = 240,
+        .holdEffectParam = EXP_800,
         .description = sExpCandyXSDesc,
         .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse, // Todo
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
         .flingPower = 30,
     },
 
@@ -1395,10 +1397,11 @@ const struct Item gItems[] =
         .name = _("Exp.Candy M"),
         .itemId = ITEM_EXP_CANDY_M,
         .price = 1000,
+        .holdEffectParam = EXP_3000,
         .description = sExpCandyMDesc,
         .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse, // Todo
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
         .flingPower = 30,
     },
 
@@ -1407,10 +1410,11 @@ const struct Item gItems[] =
         .name = _("Exp.Candy L"),
         .itemId = ITEM_EXP_CANDY_L,
         .price = 3000,
+        .holdEffectParam = EXP_10000,
         .description = sExpCandyLDesc,
         .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse, // Todo
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
         .flingPower = 30,
     },
 
@@ -1419,10 +1423,11 @@ const struct Item gItems[] =
         .name = _("Exp.Candy XL"),
         .itemId = ITEM_EXP_CANDY_XL,
         .price = 10000,
+        .holdEffectParam = EXP_30000,
         .description = sExpCandyXLDesc,
         .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse, // Todo
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
         .flingPower = 30,
     },
 
@@ -3186,14 +3191,9 @@ const struct Item gItems[] =
         .holdEffectParam = 0,
         .description = sRedNectarDesc,
         .pocket = POCKET_ITEMS,
-        #ifdef POKEMON_EXPANSION
-            .type = ITEM_USE_PARTY_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_FormChange_ConsumedOnUse,
-            .secondaryId = FORM_ITEM_USE,
-        #else
-            .type = ITEM_USE_BAG_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        #endif
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange_ConsumedOnUse,
+        .secondaryId = FORM_ITEM_USE,
         .flingPower = 10,
     },
 
@@ -3205,14 +3205,9 @@ const struct Item gItems[] =
         .holdEffectParam = 0,
         .description = sYellowNectarDesc,
         .pocket = POCKET_ITEMS,
-        #ifdef POKEMON_EXPANSION
-            .type = ITEM_USE_PARTY_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_FormChange_ConsumedOnUse,
-            .secondaryId = FORM_ITEM_USE,
-        #else
-            .type = ITEM_USE_BAG_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        #endif
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange_ConsumedOnUse,
+        .secondaryId = FORM_ITEM_USE,
         .flingPower = 10,
     },
 
@@ -3224,14 +3219,9 @@ const struct Item gItems[] =
         .holdEffectParam = 0,
         .description = sPinkNectarDesc,
         .pocket = POCKET_ITEMS,
-        #ifdef POKEMON_EXPANSION
-            .type = ITEM_USE_PARTY_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_FormChange_ConsumedOnUse,
-            .secondaryId = FORM_ITEM_USE,
-        #else
-            .type = ITEM_USE_BAG_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        #endif
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange_ConsumedOnUse,
+        .secondaryId = FORM_ITEM_USE,
         .flingPower = 10,
     },
 
@@ -3243,14 +3233,9 @@ const struct Item gItems[] =
         .holdEffectParam = 0,
         .description = sPurpleNectarDesc,
         .pocket = POCKET_ITEMS,
-        #ifdef POKEMON_EXPANSION
-            .type = ITEM_USE_PARTY_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_FormChange_ConsumedOnUse,
-            .secondaryId = FORM_ITEM_USE,
-        #else
-            .type = ITEM_USE_BAG_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        #endif
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange_ConsumedOnUse,
+        .secondaryId = FORM_ITEM_USE,
         .flingPower = 10,
     },
 
@@ -5310,7 +5295,7 @@ const struct Item gItems[] =
         .itemId = ITEM_SOUL_DEW,
         .price = 0,
         .holdEffect = HOLD_EFFECT_SOUL_DEW,
-        #if defined(BATTLE_ENGINE) && B_SOUL_DEW_BOOST >= GEN_7
+        #if B_SOUL_DEW_BOOST >= GEN_7
             .holdEffectParam = 20,
         #else
             .holdEffectParam = 50,
@@ -7021,7 +7006,7 @@ const struct Item gItems[] =
         .name = _("Sitrus Berry"),
         .itemId = ITEM_SITRUS_BERRY,
         .price = 20,
-        #if defined(BATTLE_ENGINE) && I_SITRUS_BERRY_HEAL >= GEN_4
+        #if I_SITRUS_BERRY_HEAL >= GEN_4
             .holdEffect = HOLD_EFFECT_RESTORE_PCT_HP,
             .holdEffectParam = 25,
         #else
@@ -7037,9 +7022,9 @@ const struct Item gItems[] =
         .flingPower = 10,
     },
 
-#if defined(BATTLE_ENGINE) && B_CONFUSE_BERRIES_HEAL >= GEN_8
+#if B_CONFUSE_BERRIES_HEAL >= GEN_8
     #define CONFUSE_BERRY_HEAL_FRACTION 3
-#elif defined(BATTLE_ENGINE) && B_CONFUSE_BERRIES_HEAL == GEN_7
+#elif B_CONFUSE_BERRIES_HEAL == GEN_7
     #define CONFUSE_BERRY_HEAL_FRACTION 2
 #else
     #define CONFUSE_BERRY_HEAL_FRACTION 8
@@ -7921,7 +7906,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        #if (defined BATTLE_ENGINE && B_UPDATED_MOVE_DATA >= GEN_5)
+        #if B_UPDATED_MOVE_DATA >= GEN_5
             .flingPower = 25,
         #else
             .flingPower = 10,
@@ -7937,7 +7922,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        #if (defined BATTLE_ENGINE && B_UPDATED_MOVE_DATA >= GEN_6)
+        #if B_UPDATED_MOVE_DATA >= GEN_6
             .flingPower = 60,
         #else
             .flingPower = 10,
@@ -7977,7 +7962,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        #if (defined BATTLE_ENGINE && B_UPDATED_MOVE_DATA >= GEN_6)
+        #if B_UPDATED_MOVE_DATA >= GEN_6
             .flingPower = 90,
         #else
             .flingPower = 95,
@@ -7993,7 +7978,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        #if (defined BATTLE_ENGINE && B_UPDATED_MOVE_DATA >= GEN_6)
+        #if B_UPDATED_MOVE_DATA >= GEN_6
             .flingPower = 110,
         #else
             .flingPower = 120,
@@ -8057,7 +8042,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        #if (defined BATTLE_ENGINE && B_UPDATED_MOVE_DATA >= GEN_5)
+        #if B_UPDATED_MOVE_DATA >= GEN_5
             .flingPower = 75,
         #else
             .flingPower = 60,
@@ -8121,7 +8106,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        #if (defined BATTLE_ENGINE && B_UPDATED_MOVE_DATA >= GEN_6)
+        #if B_UPDATED_MOVE_DATA >= GEN_6
             .flingPower = 90,
         #else
             .flingPower = 95,
@@ -8137,7 +8122,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        #if (defined BATTLE_ENGINE && B_UPDATED_MOVE_DATA >= GEN_6)
+        #if B_UPDATED_MOVE_DATA >= GEN_6
             .flingPower = 110,
         #else
             .flingPower = 120,
@@ -8177,7 +8162,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        #if (defined BATTLE_ENGINE && B_UPDATED_MOVE_DATA >= GEN_4)
+        #if B_UPDATED_MOVE_DATA >= GEN_4
             .flingPower = 80,
         #else
             .flingPower = 60,
@@ -8265,7 +8250,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        #if (defined BATTLE_ENGINE && B_UPDATED_MOVE_DATA >= GEN_6)
+        #if B_UPDATED_MOVE_DATA >= GEN_6
             .flingPower = 90,
         #else
             .flingPower = 95,
@@ -8305,7 +8290,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        #if (defined BATTLE_ENGINE && B_UPDATED_MOVE_DATA >= GEN_6)
+        #if B_UPDATED_MOVE_DATA >= GEN_6
             .flingPower = 110,
         #else
             .flingPower = 120,
@@ -8321,7 +8306,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        #if (defined BATTLE_ENGINE && B_UPDATED_MOVE_DATA >= GEN_6)
+        #if B_UPDATED_MOVE_DATA >= GEN_6
             .flingPower = 60,
         #else
             .flingPower = 50,
@@ -8409,7 +8394,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        #if (defined BATTLE_ENGINE && B_UPDATED_MOVE_DATA >= GEN_6)
+        #if B_UPDATED_MOVE_DATA >= GEN_6
             .flingPower = 60,
         #else
             .flingPower = 40,
@@ -8461,7 +8446,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        #if (defined BATTLE_ENGINE && B_UPDATED_MOVE_DATA >= GEN_6)
+        #if B_UPDATED_MOVE_DATA >= GEN_6
             .flingPower = 130,
         #else
             .flingPower = 140,
@@ -9041,7 +9026,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        #if (defined BATTLE_ENGINE && B_UPDATED_MOVE_DATA >= GEN_4)
+        #if B_UPDATED_MOVE_DATA >= GEN_4
             .flingPower = 90,
         #else
             .flingPower = 70,
@@ -9058,7 +9043,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        #if (defined BATTLE_ENGINE && B_UPDATED_MOVE_DATA >= GEN_6)
+        #if B_UPDATED_MOVE_DATA >= GEN_6
             .flingPower = 90,
         #else
             .flingPower = 95,
@@ -9101,7 +9086,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        #if (defined BATTLE_ENGINE && B_UPDATED_MOVE_DATA >= GEN_4)
+        #if B_UPDATED_MOVE_DATA >= GEN_4
             .flingPower = 20,
         #else
             .flingPower = 40,
@@ -9131,7 +9116,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        #if (defined BATTLE_ENGINE && B_UPDATED_MOVE_DATA >= GEN_4)
+        #if B_UPDATED_MOVE_DATA >= GEN_4
             .flingPower = 80,
         #else
             .flingPower = 60,
@@ -9210,14 +9195,9 @@ const struct Item gItems[] =
         .price = 0,
         .description = sGracideaDesc,
         .pocket = POCKET_KEY_ITEMS,
-        #ifdef POKEMON_EXPANSION
-            .type = ITEM_USE_PARTY_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_FormChange,
-            .secondaryId = FORM_ITEM_USE_TIME,
-        #else
-            .type = ITEM_USE_BAG_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        #endif
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange,
+        .secondaryId = FORM_ITEM_USE_TIME,
     },
 
     [ITEM_REVEAL_GLASS] =
@@ -9227,14 +9207,9 @@ const struct Item gItems[] =
         .price = 0,
         .description = sRevealGlassDesc,
         .pocket = POCKET_KEY_ITEMS,
-        #ifdef POKEMON_EXPANSION
-            .type = ITEM_USE_PARTY_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_FormChange,
-            .secondaryId = FORM_ITEM_USE,
-        #else
-            .type = ITEM_USE_BAG_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        #endif
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange,
+        .secondaryId = FORM_ITEM_USE,
     },
 
     [ITEM_DNA_SPLICERS] =
@@ -9244,14 +9219,9 @@ const struct Item gItems[] =
         .price = 0,
         .description = sDNASplicersDesc,
         .pocket = POCKET_KEY_ITEMS,
-        #ifdef POKEMON_EXPANSION
-            .type = ITEM_USE_PARTY_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_FormChange,
-            .secondaryId = FORM_ITEM_USE,
-        #else
-            .type = ITEM_USE_BAG_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        #endif
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange,
+        .secondaryId = FORM_ITEM_USE,
     },
 
     [ITEM_ZYGARDE_CUBE] =
@@ -9273,14 +9243,9 @@ const struct Item gItems[] =
         .price = 0,
         .description = sPrisonBottleDesc,
         .pocket = POCKET_KEY_ITEMS,
-        #ifdef POKEMON_EXPANSION
-            .type = ITEM_USE_PARTY_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_FormChange,
-            .secondaryId = FORM_ITEM_USE,
-        #else
-            .type = ITEM_USE_BAG_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        #endif
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange,
+        .secondaryId = FORM_ITEM_USE,
     },
 
     [ITEM_N_SOLARIZER] =
@@ -9290,14 +9255,9 @@ const struct Item gItems[] =
         .price = 0,
         .description = sNSolarizerDesc,
         .pocket = POCKET_KEY_ITEMS,
-        #ifdef POKEMON_EXPANSION
-            .type = ITEM_USE_PARTY_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_FormChange,
-            .secondaryId = FORM_ITEM_USE,
-        #else
-            .type = ITEM_USE_BAG_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        #endif
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange,
+        .secondaryId = FORM_ITEM_USE,
     },
 
     [ITEM_N_LUNARIZER] =
@@ -9307,14 +9267,9 @@ const struct Item gItems[] =
         .price = 0,
         .description = sNLunarizerDesc,
         .pocket = POCKET_KEY_ITEMS,
-        #ifdef POKEMON_EXPANSION
-            .type = ITEM_USE_PARTY_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_FormChange,
-            .secondaryId = FORM_ITEM_USE,
-        #else
-            .type = ITEM_USE_BAG_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        #endif
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange,
+        .secondaryId = FORM_ITEM_USE,
     },
 
     [ITEM_REINS_OF_UNITY] =
@@ -9324,14 +9279,9 @@ const struct Item gItems[] =
         .price = 0,
         .description = sReinsOfUnityDesc,
         .pocket = POCKET_KEY_ITEMS,
-        #ifdef POKEMON_EXPANSION
-            .type = ITEM_USE_PARTY_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_FormChange,
-            .secondaryId = FORM_ITEM_USE,
-        #else
-            .type = ITEM_USE_BAG_MENU,
-            .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        #endif
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange,
+        .secondaryId = FORM_ITEM_USE,
     },
 
 // Battle Mechanic Key Items

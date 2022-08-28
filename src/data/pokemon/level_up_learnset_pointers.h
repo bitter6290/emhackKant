@@ -387,6 +387,7 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_JIRACHI] = sJirachiLevelUpLearnset,
     [SPECIES_DEOXYS] = sDeoxysLevelUpLearnset,
     [SPECIES_CHIMECHO] = sChimechoLevelUpLearnset,
+#if P_NEW_POKEMON == TRUE
     [SPECIES_TURTWIG] = sTurtwigLevelUpLearnset,
     [SPECIES_GROTLE] = sGrotleLevelUpLearnset,
     [SPECIES_TORTERRA] = sTorterraLevelUpLearnset,
@@ -1009,6 +1010,7 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_PIKACHU_WORLD_CAP] = sPikachuLevelUpLearnset,
     // Pichu
     [SPECIES_PICHU_SPIKY_EARED] = sPichuLevelUpLearnset,
+#endif
     // Unown
     [SPECIES_UNOWN_B] = sUnownLevelUpLearnset,
     [SPECIES_UNOWN_C] = sUnownLevelUpLearnset,
@@ -1045,6 +1047,7 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_DEOXYS_ATTACK] = sDeoxysAttackLevelUpLearnset,
     [SPECIES_DEOXYS_DEFENSE] = sDeoxysDefenseLevelUpLearnset,
     [SPECIES_DEOXYS_SPEED] = sDeoxysSpeedLevelUpLearnset,
+#if P_NEW_POKEMON == TRUE
     // Burmy
     [SPECIES_BURMY_SANDY_CLOAK] = sBurmyLevelUpLearnset,
     [SPECIES_BURMY_TRASH_CLOAK] = sBurmyLevelUpLearnset,
@@ -1323,4 +1326,5 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
      [SPECIES_AUREATIC] = sAureaticLevelUpLearnset,
      [SPECIES_ALOOBAT] = sAloobatLevelUpLearnset,
 
+#endif
 };

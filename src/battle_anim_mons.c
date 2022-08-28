@@ -1,6 +1,7 @@
 #include "global.h"
 #include "battle.h"
 #include "battle_anim.h"
+#include "battle_interface.h"
 #include "bg.h"
 #include "contest.h"
 #include "data.h"
@@ -134,10 +135,10 @@ u8 GetBattlerSpriteCoord(u8 battlerId, u8 coordType)
     {
     case BATTLER_COORD_X:
     case BATTLER_COORD_X_2:
-        retVal = sBattlerCoords[IS_DOUBLE_BATTLE()][GetBattlerPosition(battlerId)].x;
+        retVal = sBattlerCoords[WhichBattleCoords(battlerId)][GetBattlerPosition(battlerId)].x;
         break;
     case BATTLER_COORD_Y:
-        retVal = sBattlerCoords[IS_DOUBLE_BATTLE()][GetBattlerPosition(battlerId)].y;
+        retVal = sBattlerCoords[WhichBattleCoords(battlerId)][GetBattlerPosition(battlerId)].y;
         break;
     case BATTLER_COORD_Y_PIC_OFFSET:
     case BATTLER_COORD_Y_PIC_OFFSET_DEFAULT:
@@ -278,7 +279,7 @@ u8 GetBattlerSpriteFinal_Y(u8 battlerId, u16 species, bool8 a3)
         offset = GetBattlerYDelta(battlerId, species);
         offset -= GetBattlerElevation(battlerId, species);
     }
-    y = offset + sBattlerCoords[IS_DOUBLE_BATTLE()][GetBattlerPosition(battlerId)].y;
+    y = offset + sBattlerCoords[WhichBattleCoords(battlerId)][GetBattlerPosition(battlerId)].y;
     if (a3)
     {
         if (GetBattlerSide(battlerId) == B_SIDE_PLAYER)
@@ -412,7 +413,7 @@ u8 GetAnimBattlerSpriteId(u8 animBattler)
     }
 }
 
-void StoreSpriteCallbackInData6(struct Sprite *sprite, void (*callback)(struct Sprite*))
+void StoreSpriteCallbackInData6(struct Sprite *sprite, void (*callback)(struct Sprite *))
 {
     sprite->data[6] = (u32)(callback) & 0xffff;
     sprite->data[7] = (u32)(callback) >> 16;
@@ -493,7 +494,7 @@ static void TranslateSpriteInWavePattern(struct Sprite *sprite)
         sprite->y2 = Cos(sprite->sCirclePosY, sprite->sAmplitude);
         sprite->sCirclePosX += sprite->sCircleSpeedX;
         sprite->sCirclePosY += sprite->sCircleSpeedY;
-        
+
         if (sprite->sCirclePosX >= 0x100)
             sprite->sCirclePosX -= 0x100;
         else if (sprite->sCirclePosX < 0)
@@ -1618,7 +1619,7 @@ void TranslateAnimSpriteToTargetMonLocation(struct Sprite *sprite)
 
 void AnimThrowProjectile(struct Sprite *sprite)
 {
-    InitSpritePosToAnimAttacker(sprite, 1);
+    InitSpritePosToAnimAttacker(sprite, TRUE);
     if (GetBattlerSide(gBattleAnimAttacker))
         gBattleAnimArgs[2] = -gBattleAnimArgs[2];
     sprite->data[0] = gBattleAnimArgs[4];
@@ -2145,8 +2146,7 @@ u8 CreateAdditionalMonSpriteForMoveAnim(u16 species, bool8 isBackpic, u8 id, s16
     if (!isBackpic)
     {
         LoadCompressedPalette(GetMonSpritePalFromSpeciesAndPersonality(species, trainerId, personality), (palette * 0x10) + 0x100, 0x20);
-        LoadSpecialPokePic(&gMonFrontPicTable[species],
-                           gMonSpritesGfxPtr->buffer,
+        LoadSpecialPokePic(gMonSpritesGfxPtr->buffer,
                            species,
                            personality,
                            TRUE);
@@ -2154,8 +2154,7 @@ u8 CreateAdditionalMonSpriteForMoveAnim(u16 species, bool8 isBackpic, u8 id, s16
     else
     {
         LoadCompressedPalette(GetMonSpritePalFromSpeciesAndPersonality(species, trainerId, personality), (palette * 0x10) + 0x100, 0x20);
-        LoadSpecialPokePic(&gMonBackPicTable[species],
-                           gMonSpritesGfxPtr->buffer,
+        LoadSpecialPokePic(gMonSpritesGfxPtr->buffer,
                            species,
                            personality,
                            FALSE);
@@ -2441,7 +2440,7 @@ void AnimTask_AttackerPunchWithTrace(u8 taskId)
 
     dest = (task->tPaletteNum + 16) * 16;
     src = (gSprites[task->tBattlerSpriteId].oam.paletteNum + 0x10) * 0x10;
-    
+
     // Set trace's priority based on battler's subpriority
     task->tPriority = GetBattlerSpriteSubpriority(gBattleAnimAttacker);
     if (task->tPriority == 20 || task->tPriority == 40)

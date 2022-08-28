@@ -1930,6 +1930,7 @@ Cry_Jirachi::
 Cry_Deoxys::
 	.incbin "sound/direct_sound_samples/cries/deoxys.bin"
 
+.if P_NEW_POKEMON == TRUE
 	.align 2
 Cry_Turtwig::
 	.incbin "sound/direct_sound_samples/cries/turtwig.bin"
@@ -4440,6 +4441,7 @@ Cry_Terrantic::
 Cry_Aureatic::
 	.incbin "sound/direct_sound_samples/cries/flareon.bin"
 
+.endif
 
 	.align 2
 DirectSoundWaveData_register_noise::

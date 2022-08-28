@@ -2990,8 +2990,9 @@ static const u8 sFrostKickDescription[] = _(
     "A kick with a high critical-\n"
     "hit ratio. May freeze.");
 
-static const u8 sNotDoneYetDescription[] = _(
-    "Not done yet.");
+const u8 gNotDoneYetDescription[] = _(
+    "This move can't be used. Its\n"
+    "effect is in development.");
 
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
@@ -3752,30 +3753,30 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_GLACIAL_LANCE - 1] = sGlacialLanceDescription,
     [MOVE_ASTRAL_BARRAGE - 1] = sAstralBarrageDescription,
     [MOVE_EERIE_SPELL - 1] = sEerieSpellDescription,
-    [MOVE_PURE_WATER - 1] = sNotDoneYetDescription,
-    [MOVE_VOLCANIC_FLOW - 1] = sNotDoneYetDescription,
-    [MOVE_DARK_TERRAIN - 1] = sNotDoneYetDescription,
-    [MOVE_ROCKY_TERRAIN - 1] = sNotDoneYetDescription,
-    [MOVE_RESISTANCE - 1] = sNotDoneYetDescription,
-    [MOVE_SCORCHED_EARTH - 1] = sNotDoneYetDescription,
-    [MOVE_RAGING_FURY - 1] = sNotDoneYetDescription,
+    [MOVE_PURE_WATER - 1] = gNotDoneYetDescription,
+    [MOVE_VOLCANIC_FLOW - 1] = gNotDoneYetDescription,
+    [MOVE_DARK_TERRAIN - 1] = gNotDoneYetDescription,
+    [MOVE_ROCKY_TERRAIN - 1] = gNotDoneYetDescription,
+    [MOVE_RESISTANCE - 1] = gNotDoneYetDescription,
+    [MOVE_SCORCHED_EARTH - 1] = gNotDoneYetDescription,
+    [MOVE_RAGING_FURY - 1] = gNotDoneYetDescription,
     [MOVE_VICTORY_DANCE - 1] = sVictoryDanceDescription,
     [MOVE_BOLT_KICK - 1] = sBoltKickDescription,
     [MOVE_FROST_KICK - 1] = sFrostKickDescription,
-    [MOVE_PRESSURE_POINT - 1] = sNotDoneYetDescription,
-    [MOVE_BARB_BARRAGE - 1] = sNotDoneYetDescription,
-    [MOVE_BITTER_MALICE - 1] = sNotDoneYetDescription,
-    [MOVE_BLEAKWIND_STORM - 1] = sNotDoneYetDescription,
-    [MOVE_CHLOROBLAST - 1] = sNotDoneYetDescription,
-    [MOVE_ESPER_WING - 1] = sNotDoneYetDescription,
-    [MOVE_HEADLONG_RUSH - 1] = sNotDoneYetDescription,
-    [MOVE_INFERNAL_PARADE - 1] = sNotDoneYetDescription,
-    [MOVE_MOUNTAIN_GALE - 1] = sNotDoneYetDescription,
-    [MOVE_PSYSHIELD_BASH - 1] = sNotDoneYetDescription,
-    [MOVE_SANDSEAR_STORM - 1] = sNotDoneYetDescription,
-    [MOVE_SPRINGTIDE_STORM - 1] = sNotDoneYetDescription,
-    [MOVE_STONE_AXE - 1] = sNotDoneYetDescription,
-    [MOVE_TRIPLE_ARROWS - 1] = sNotDoneYetDescription,
-    [MOVE_WAVE_CRASH - 1] = sNotDoneYetDescription,
-    [MOVE_WILDBOLT_STORM - 1] = sNotDoneYetDescription,
+    [MOVE_PRESSURE_POINT - 1] = gNotDoneYetDescription,
+    [MOVE_BARB_BARRAGE - 1] = gNotDoneYetDescription,
+    [MOVE_BITTER_MALICE - 1] = gNotDoneYetDescription,
+    [MOVE_BLEAKWIND_STORM - 1] = gNotDoneYetDescription,
+    [MOVE_CHLOROBLAST - 1] = gNotDoneYetDescription,
+    [MOVE_ESPER_WING - 1] = gNotDoneYetDescription,
+    [MOVE_HEADLONG_RUSH - 1] = gNotDoneYetDescription,
+    [MOVE_INFERNAL_PARADE - 1] = gNotDoneYetDescription,
+    [MOVE_MOUNTAIN_GALE - 1] = gNotDoneYetDescription,
+    [MOVE_PSYSHIELD_BASH - 1] = gNotDoneYetDescription,
+    [MOVE_SANDSEAR_STORM - 1] = gNotDoneYetDescription,
+    [MOVE_SPRINGTIDE_STORM - 1] = gNotDoneYetDescription,
+    [MOVE_STONE_AXE - 1] = gNotDoneYetDescription,
+    [MOVE_TRIPLE_ARROWS - 1] = gNotDoneYetDescription,
+    [MOVE_WAVE_CRASH - 1] = gNotDoneYetDescription,
+    [MOVE_WILDBOLT_STORM - 1] = gNotDoneYetDescription,
 };

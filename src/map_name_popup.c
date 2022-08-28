@@ -14,6 +14,7 @@
 #include "text.h"
 #include "constants/layouts.h"
 #include "constants/region_map_sections.h"
+#include "constants/battle_frontier.h"
 #include "constants/weather.h"
 
 // enums
@@ -192,7 +193,7 @@ static const u8 gText_PyramidFloor6[] = _("PYRAMID FLOOR 6");
 static const u8 gText_PyramidFloor7[] = _("PYRAMID FLOOR 7");
 static const u8 gText_Pyramid[] = _("PYRAMID");
 
-static const u8 * const gBattlePyramid_MapHeaderStrings[] =
+static const u8 *const sBattlePyramid_MapHeaderStrings[FRONTIER_STAGES_PER_CHALLENGE + 1] =
 {
     gText_PyramidFloor1,
     gText_PyramidFloor2,
@@ -309,19 +310,19 @@ static void ShowMapNamePopUpWindow(void)
     u8 mapDisplayHeader[24];
     u8 *withoutPrefixPtr;
     u8 x;
-    const u8* mapDisplayHeaderSource;
+    const u8 *mapDisplayHeaderSource;
 
     if (InBattlePyramid())
     {
         if (gMapHeader.mapLayoutId == LAYOUT_BATTLE_FRONTIER_BATTLE_PYRAMID_TOP)
         {
             withoutPrefixPtr = &(mapDisplayHeader[3]);
-            mapDisplayHeaderSource = gBattlePyramid_MapHeaderStrings[7];
+            mapDisplayHeaderSource = sBattlePyramid_MapHeaderStrings[FRONTIER_STAGES_PER_CHALLENGE];
         }
         else
         {
             withoutPrefixPtr = &(mapDisplayHeader[3]);
-            mapDisplayHeaderSource = gBattlePyramid_MapHeaderStrings[gSaveBlock2Ptr->frontier.curChallengeBattleNum];
+            mapDisplayHeaderSource = sBattlePyramid_MapHeaderStrings[gSaveBlock2Ptr->frontier.curChallengeBattleNum];
         }
         StringCopy(withoutPrefixPtr, mapDisplayHeaderSource);
     }

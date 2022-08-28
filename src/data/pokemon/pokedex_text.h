@@ -2320,6 +2320,7 @@ const u8 gChimechoPokedexText[] = _(
     "themselves using seven different and\n"
     "distinguishing cries.");
 
+#if P_NEW_POKEMON == TRUE
 const u8 gTurtwigPokedexText[] = _(
     "The shell on its back is made of soil. \n"
     "On a very healthy Turtwig, the shell \n"
@@ -5380,8 +5381,8 @@ const u8 gFauvanticPokedexText[] = _(
 const u8 gFloresticPokedexText[] = _(
 	"The guardian spirit of the plants and\n"
 	"trees that make up Kanto's forests, this\n"
-	"Pokémon is vain and spends most of its\n"
-	"time tending to its appearance.");
+	"Pokémon obsessively seeks out new\n"
+	"plants and seeds to preserve.");
 	
 const u8 gTerranticPokedexText[] = _(
 	"The guardian spirit of the soil feeding\n"
@@ -5394,3 +5395,4 @@ const u8 gAureaticPokedexText[] = _(
 	"Pokémon is said to ensure that light\n"
 	"reaches every corner of the region's\n"
 	"woods.");
+#endif

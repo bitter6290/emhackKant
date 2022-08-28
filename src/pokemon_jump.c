@@ -2614,7 +2614,7 @@ static const struct OamData sOamData_JumpMon =
     .y = 0,
     .affineMode = ST_OAM_AFFINE_OFF,
     .objMode = ST_OAM_OBJ_NORMAL,
-    .mosaic = 0,
+    .mosaic = FALSE,
     .bpp = ST_OAM_4BPP,
     .shape = SPRITE_SHAPE(64x64),
     .x = 0,
@@ -2631,7 +2631,7 @@ static const struct OamData sOamData_Vine16x32 =
     .y = 0,
     .affineMode = ST_OAM_AFFINE_OFF,
     .objMode = ST_OAM_OBJ_NORMAL,
-    .mosaic = 0,
+    .mosaic = FALSE,
     .bpp = ST_OAM_4BPP,
     .shape = SPRITE_SHAPE(16x32),
     .x = 0,
@@ -2648,7 +2648,7 @@ static const struct OamData sOamData_Vine32x32 =
     .y = 0,
     .affineMode = ST_OAM_AFFINE_OFF,
     .objMode = ST_OAM_OBJ_NORMAL,
-    .mosaic = 0,
+    .mosaic = FALSE,
     .bpp = ST_OAM_4BPP,
     .shape = SPRITE_SHAPE(32x32),
     .x = 0,
@@ -2665,7 +2665,7 @@ static const struct OamData sOamData_Vine32x16 =
     .y = 0,
     .affineMode = ST_OAM_AFFINE_OFF,
     .objMode = ST_OAM_OBJ_NORMAL,
-    .mosaic = 0,
+    .mosaic = FALSE,
     .bpp = ST_OAM_4BPP,
     .shape = SPRITE_SHAPE(32x16),
     .x = 0,
@@ -2819,7 +2819,7 @@ static const struct OamData sOamData_Star =
     .y = 0,
     .affineMode = ST_OAM_AFFINE_OFF,
     .objMode = ST_OAM_OBJ_NORMAL,
-    .mosaic = 0,
+    .mosaic = FALSE,
     .bpp = ST_OAM_4BPP,
     .shape = SPRITE_SHAPE(16x16),
     .x = 0,
@@ -2906,11 +2906,10 @@ static void CreateJumpMonSprite(struct PokemonJumpGfx *jumpGfx, struct PokemonJu
 
     if (buffer && unusedBuffer)
     {
-        HandleLoadSpecialPokePic(
-            &gMonFrontPicTable[monInfo->species],
-            buffer,
-            monInfo->species,
-            monInfo->personality);
+        HandleLoadSpecialPokePic(TRUE,
+                                buffer,
+                                monInfo->species,
+                                monInfo->personality);
 
         spriteSheet.data = buffer;
         spriteSheet.tag = multiplayerId;
@@ -3949,7 +3948,7 @@ static void InitDigitPrinters(void)
         .xDelta = 8,
         .x = 108,
         .y = 6,
-        .spriteSheet = (void*) &sSpriteSheet_Digits,
+        .spriteSheet = (void *) &sSpriteSheet_Digits,
         .spritePal = &sSpritePalette_Digits,
     };
 
@@ -4389,7 +4388,7 @@ static void Task_ShowPokemonJumpRecords(u8 taskId)
         {
             RemoveWindow(tWindowId);
             DestroyTask(taskId);
-            EnableBothScriptContexts();
+            ScriptContext_Enable();
         }
         break;
     }

@@ -1,4 +1,4 @@
-static const struct TrainerMonItemCustomMoves sParty_brock4[] = {
+static const struct TrainerMonItemCustomMoves sParty_Brock4[] = {
 	{
 	.iv = 0,
 	.lvl = 54,
@@ -60,7 +60,7 @@ static const struct TrainerMonItemCustomMoves sParty_brock4[] = {
 	.moves = {MOVE_EARTHQUAKE, MOVE_STONE_EDGE, MOVE_FIRE_PUNCH, MOVE_THUNDER_PUNCH},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_brock3[] = {
+static const struct TrainerMonItemCustomMoves sParty_Brock3[] = {
 	{
 	.iv = 0,
 	.lvl = 42,
@@ -112,7 +112,7 @@ static const struct TrainerMonItemCustomMoves sParty_brock3[] = {
 	.moves = {MOVE_ACID_ARMOR, MOVE_THUNDERBOLT, MOVE_TOXIC, MOVE_MUD_SHOT},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_brock2[] = {
+static const struct TrainerMonItemCustomMoves sParty_Brock2[] = {
 	{
 	.iv = 0,
 	.lvl = 30,
@@ -164,7 +164,7 @@ static const struct TrainerMonItemCustomMoves sParty_brock2[] = {
 	.moves = {MOVE_ICE_BEAM, MOVE_THUNDERBOLT, MOVE_REST, MOVE_ACID_ARMOR},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_brock1[] = {
+static const struct TrainerMonItemCustomMoves sParty_Brock1[] = {
 	{
 	.iv = 0,
 	.lvl = 18,
@@ -206,7 +206,7 @@ static const struct TrainerMonItemCustomMoves sParty_brock1[] = {
 	.moves = {MOVE_ROCK_THROW, MOVE_WING_ATTACK, MOVE_QUICK_ATTACK, MOVE_STEEL_WING},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_soren4[] = {
+static const struct TrainerMonItemCustomMoves sParty_Soren4[] = {
 	{
 	.iv = 0,
 	.lvl = 52,
@@ -268,7 +268,7 @@ static const struct TrainerMonItemCustomMoves sParty_soren4[] = {
 	.moves = {MOVE_RECOVER, MOVE_EARTH_POWER, MOVE_TOXIC, MOVE_LEECH_SEED},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_soren3[] = {
+static const struct TrainerMonItemCustomMoves sParty_Soren3[] = {
 	{
 	.iv = 0,
 	.lvl = 40,
@@ -320,7 +320,7 @@ static const struct TrainerMonItemCustomMoves sParty_soren3[] = {
 	.moves = {MOVE_ENERGY_BALL, MOVE_ANCIENT_POWER, MOVE_SYNTHESIS, MOVE_TOXIC},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_soren2[] = {
+static const struct TrainerMonItemCustomMoves sParty_Soren2[] = {
 	{
 	.iv = 0,
 	.lvl = 29,
@@ -372,7 +372,7 @@ static const struct TrainerMonItemCustomMoves sParty_soren2[] = {
 	.moves = {MOVE_MEGA_DRAIN, MOVE_BRINE, MOVE_SYNTHESIS, MOVE_CONFUSE_RAY},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_soren1[] = {
+static const struct TrainerMonItemCustomMoves sParty_Soren1[] = {
 	{
 	.iv = 0,
 	.lvl = 17,
@@ -612,7 +612,7 @@ static const struct TrainerMonItemCustomMoves sParty_Valeria1[] = {
 	.moves = {MOVE_SCREECH, MOVE_FEINT_ATTACK, MOVE_SAND_ATTACK, MOVE_CHARM},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_misty4[] = {
+static const struct TrainerMonItemCustomMoves sParty_Misty4[] = {
 	{
 	.iv = 0,
 	.lvl = 53,
@@ -674,7 +674,7 @@ static const struct TrainerMonItemCustomMoves sParty_misty4[] = {
 	.moves = {MOVE_SCALD, MOVE_TELEPORT, MOVE_LIGHT_SCREEN, MOVE_REFLECT},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_misty3[] = {
+static const struct TrainerMonItemCustomMoves sParty_Misty3[] = {
 	{
 	.iv = 0,
 	.lvl = 41,
@@ -726,7 +726,7 @@ static const struct TrainerMonItemCustomMoves sParty_misty3[] = {
 	.moves = {MOVE_FLAMETHROWER, MOVE_SCALD, MOVE_FUTURE_SIGHT, MOVE_SLACK_OFF},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_misty2[] = {
+static const struct TrainerMonItemCustomMoves sParty_Misty2[] = {
 	{
 	.iv = 0,
 	.lvl = 28,
@@ -778,7 +778,7 @@ static const struct TrainerMonItemCustomMoves sParty_misty2[] = {
 	.moves = {MOVE_SCALD, MOVE_PSYSHOCK, MOVE_TELEPORT, MOVE_SLACK_OFF},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_misty1[] = {
+static const struct TrainerMonItemCustomMoves sParty_Misty1[] = {
 	{
 	.iv = 0,
 	.lvl = 17,
@@ -820,7 +820,7 @@ static const struct TrainerMonItemCustomMoves sParty_misty1[] = {
 	.moves = {MOVE_MAGIC_COAT, MOVE_BUBBLE_BEAM, MOVE_MUD_SHOT, MOVE_SLACK_OFF},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_yvonne4[] = {
+static const struct TrainerMonItemCustomMoves sParty_Yvonne4[] = {
 	{
 	.iv = 0,
 	.lvl = 52,
@@ -882,7 +882,7 @@ static const struct TrainerMonItemCustomMoves sParty_yvonne4[] = {
 	.moves = {MOVE_BUG_BUZZ, MOVE_AIR_SLASH, MOVE_U_TURN, MOVE_SHADOW_BALL},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_yvonne3[] = {
+static const struct TrainerMonItemCustomMoves sParty_Yvonne3[] = {
 	{
 	.iv = 0,
 	.lvl = 40,
@@ -934,7 +934,7 @@ static const struct TrainerMonItemCustomMoves sParty_yvonne3[] = {
 	.moves = {MOVE_BUG_BUZZ, MOVE_PSYCHIC, MOVE_ANCIENT_POWER, MOVE_AIR_SLASH},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_yvonne2[] = {
+static const struct TrainerMonItemCustomMoves sParty_Yvonne2[] = {
 	{
 	.iv = 0,
 	.lvl = 29,
@@ -986,7 +986,7 @@ static const struct TrainerMonItemCustomMoves sParty_yvonne2[] = {
 	.moves = {MOVE_AIR_SLASH, MOVE_SHADOW_BALL, MOVE_BUG_BUZZ, MOVE_ROOST},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_yvonne1[] = {
+static const struct TrainerMonItemCustomMoves sParty_Yvonne1[] = {
 	{
 	.iv = 0,
 	.lvl = 18,
@@ -1028,7 +1028,7 @@ static const struct TrainerMonItemCustomMoves sParty_yvonne1[] = {
 	.moves = {MOVE_BUG_BUZZ, MOVE_AIR_SLASH, MOVE_ANCIENT_POWER, MOVE_ROOST},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_wattson4[] = {
+static const struct TrainerMonItemCustomMoves sParty_WattsonNew4[] = {
 	{
 	.iv = 0,
 	.lvl = 54,
@@ -1090,7 +1090,7 @@ static const struct TrainerMonItemCustomMoves sParty_wattson4[] = {
 	.moves = {MOVE_BOLT_BEAK, MOVE_OUTRAGE, MOVE_HIGH_HORSEPOWER, MOVE_ROCK_SLIDE},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_wattson3[] = {
+static const struct TrainerMonItemCustomMoves sParty_WattsonNew3[] = {
 	{
 	.iv = 0,
 	.lvl = 42,
@@ -1142,7 +1142,7 @@ static const struct TrainerMonItemCustomMoves sParty_wattson3[] = {
 	.moves = {MOVE_THUNDER_WAVE, MOVE_THUNDERBOLT, MOVE_HYDRO_PUMP, MOVE_VOLT_SWITCH},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_wattson2[] = {
+static const struct TrainerMonItemCustomMoves sParty_WattsonNew2[] = {
 	{
 	.iv = 0,
 	.lvl = 30,
@@ -1194,7 +1194,7 @@ static const struct TrainerMonItemCustomMoves sParty_wattson2[] = {
 	.moves = {MOVE_INFESTATION, MOVE_THUNDERBOLT, MOVE_TOXIC, MOVE_PROTECT},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_wattson1[] = {
+static const struct TrainerMonItemCustomMoves sParty_WattsonNew1[] = {
 	{
 	.iv = 0,
 	.lvl = 18,
@@ -1236,7 +1236,7 @@ static const struct TrainerMonItemCustomMoves sParty_wattson1[] = {
 	.moves = {MOVE_ELECTROWEB, MOVE_THUNDERBOLT, MOVE_BUG_BUZZ, MOVE_PROTECT},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_erica4[] = {
+static const struct TrainerMonItemCustomMoves sParty_Erica4[] = {
 	{
 	.iv = 0,
 	.lvl = 54,
@@ -1298,7 +1298,7 @@ static const struct TrainerMonItemCustomMoves sParty_erica4[] = {
 	.moves = {MOVE_BODY_PRESS, MOVE_SPIKES, MOVE_IRON_DEFENSE, MOVE_LEECH_SEED},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_erica3[] = {
+static const struct TrainerMonItemCustomMoves sParty_Erica3[] = {
 	{
 	.iv = 0,
 	.lvl = 42,
@@ -1350,7 +1350,7 @@ static const struct TrainerMonItemCustomMoves sParty_erica3[] = {
 	.moves = {MOVE_GYRO_BALL, MOVE_LEECH_SEED, MOVE_SPIKES, MOVE_THUNDER_WAVE},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_erica2[] = {
+static const struct TrainerMonItemCustomMoves sParty_Erica2[] = {
 	{
 	.iv = 0,
 	.lvl = 29,
@@ -1402,7 +1402,7 @@ static const struct TrainerMonItemCustomMoves sParty_erica2[] = {
 	.moves = {MOVE_SPIKES, MOVE_BULLET_SEED, MOVE_TOXIC, MOVE_CURSE},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_erica1[] = {
+static const struct TrainerMonItemCustomMoves sParty_Erica1[] = {
 	{
 	.iv = 0,
 	.lvl = 17,
@@ -1444,7 +1444,7 @@ static const struct TrainerMonItemCustomMoves sParty_erica1[] = {
 	.moves = {MOVE_SPIKES, MOVE_ENDEAVOR, MOVE_BULLET_SEED, MOVE_THUNDER_WAVE},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_leo4[] = {
+static const struct TrainerMonItemCustomMoves sParty_Leo4[] = {
 	{
 	.iv = 0,
 	.lvl = 51,
@@ -1506,7 +1506,7 @@ static const struct TrainerMonItemCustomMoves sParty_leo4[] = {
 	.moves = {MOVE_MOONBLAST, MOVE_HYPER_VOICE, MOVE_ICE_BEAM, MOVE_PROTECT},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_leo3[] = {
+static const struct TrainerMonItemCustomMoves sParty_Leo3[] = {
 	{
 	.iv = 0,
 	.lvl = 40,
@@ -1558,7 +1558,7 @@ static const struct TrainerMonItemCustomMoves sParty_leo3[] = {
 	.moves = {MOVE_PLAY_ROUGH, MOVE_FLAMETHROWER, MOVE_WILL_O_WISP, MOVE_PROTECT},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_leo2[] = {
+static const struct TrainerMonItemCustomMoves sParty_Leo2[] = {
 	{
 	.iv = 0,
 	.lvl = 28,
@@ -1610,7 +1610,7 @@ static const struct TrainerMonItemCustomMoves sParty_leo2[] = {
 	.moves = {MOVE_HEAT_WAVE, MOVE_PLAY_ROUGH, MOVE_PROTECT, MOVE_WILL_O_WISP},
 	},
 };
-static const struct TrainerMonItemCustomMoves sParty_leo1[] = {
+static const struct TrainerMonItemCustomMoves sParty_Leo1[] = {
 	{
 	.iv = 0,
 	.lvl = 18,

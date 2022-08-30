@@ -1277,6 +1277,38 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     // Calyrex
     [SPECIES_CALYREX_ICE_RIDER] = _("Calyrex"),
     [SPECIES_CALYREX_SHADOW_RIDER] = _("Calyrex"),
+    // Hisuian mons
+    [SPECIES_WYRDEER] = _("Wyrdeer"),
+    [SPECIES_URSALUNA] = _("Ursaluna"),
+    [SPECIES_BASCULEGION] = _("Basclegion"),
+    [SPECIES_KLEAVOR] = _("Kleavor"),
+    [SPECIES_OVERQWIL] = _("Overqwil"),
+    [SPECIES_SNEASLER] = _("Sneasler"),
+    [SPECIES_ENAMORUS] = _("Enamorus"),
+    // Hisuian forms
+	[SPECIES_SLIGGOO_HISUI] = _("Sliggoo"),
+	[SPECIES_GOODRA_HISUI] = _("Goodra"),
+	[SPECIES_GROWLITHE_HISUI] = _("Growlithe"),
+	[SPECIES_ARCANINE_HISUI] = _("Arcanine"),
+	[SPECIES_VOLTORB_HISUI] = _("Voltorb"),
+	[SPECIES_ELECTRODE_HISUI] = _("Electrode"),
+	[SPECIES_QWILFISH_HISUI] = _("Qwilfish"),
+	[SPECIES_LILLIGANT_HISUI] = _("Lilligant"),
+	[SPECIES_SNEASEL_HISUI] = _("Sneasel"),
+	[SPECIES_AVALUGG_HISUI] = _("Avalugg"),
+	[SPECIES_ZORUA_HISUI] = _("Zorua"),
+	[SPECIES_ZOROARK_HISUI] = _("Zoroark"),
+	[SPECIES_BRAVIARY_HISUI] = _("Braviary"),
+	[SPECIES_DECIDUEYE_HISUI] = _("Decidueye"),
+	[SPECIES_TYPHLOSION_HISUI] = _("Typhlosion"),
+	[SPECIES_SAMUROTT_HISUI] = _("Samurott"),
+	[SPECIES_BASCULIN_WHITE_STRIPED] = _("Basculin"),
+
+	[SPECIES_BASCULEGION_M] = _("Basclegion"),
+	[SPECIES_ENAMORUS_THERIAN] = _("Enamorus"),
+
+	[SPECIES_DIALGA_ORIGIN] = _("Dialga"),
+	[SPECIES_PALKIA_ORIGIN] = _("Palkia"),
     // Custom mons
     [SPECIES_SHINX_KANTO] = _("Shinx"),
     [SPECIES_LUXIO_KANTO] = _("Luxio"),
@@ -1291,10 +1323,6 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
      [SPECIES_GURDURR_KANTO] = _("Gurdurr"),
      [SPECIES_CONKELDURR_KANTO] = _("Conkeldurr"),
      [SPECIES_TORKOAL_KANTO] = _("Torkoal"),
-     [SPECIES_SLIGGOO_HISUI] = _("Sliggoo"),
-     [SPECIES_GOODRA_HISUI] = _("Goodra"),
-     [SPECIES_GROWLITHE_HISUI] = _("Growlithe"),
-     [SPECIES_ARCANINE_HISUI] = _("Arcanine"),
      [SPECIES_KRICKETON] = _("Kricketon"),
      [SPECIES_KRICKALLOUS] = _("Krickalous"),
      [SPECIES_LEDENNA] = _("Ledenna"),
@@ -1303,6 +1331,8 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
      [SPECIES_TERRANTIC] = _("Terrantic"),
      [SPECIES_AUREATIC] = _("Aureatic"),
      [SPECIES_ALOOBAT] = _("Aloobat"),
+     [SPECIES_POLTENDULA] = _("Poltendula"),
      [SPECIES_ARBOK_MEGA] = _("Arbok"),
+     [SPECIES_PORYGON_X] = _("Porygon"),
 #endif
 };

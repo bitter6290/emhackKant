@@ -10788,6 +10788,8 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+    
+// Custom mons
     [NATIONAL_DEX_KRICKETON] =
     {
         .categoryName = _("Conductor"),
@@ -10799,6 +10801,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+    
     [NATIONAL_DEX_KRICKALLOUS] =
     {
         .categoryName = _("Bitter"),
@@ -10810,6 +10813,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+    
     [NATIONAL_DEX_LEDENNA] =
     {
         .categoryName = _("Five Star"),
@@ -10821,6 +10825,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+    
     [NATIONAL_DEX_ALOOBAT] =
     {
         .categoryName = _("Departing"),
@@ -10832,6 +10837,14 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+    
+    [NATIONAL_DEX_POLTENDULA] =
+    {
+    	.categoryName = _("Timekeeper"),
+    	.height = 17,
+    	.weight = 2022,
+    },
+    
     [NATIONAL_DEX_FAUVANTIC] =
     {
         .categoryName = _("ForestSpirit"),
@@ -10843,6 +10856,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+    
     [NATIONAL_DEX_FLORESTIC] =
     {
         .categoryName = _("ForestSpirit"),
@@ -10854,6 +10868,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+    
     [NATIONAL_DEX_TERRANTIC] =
     {
         .categoryName = _("ForestSpirit"),
@@ -10865,12 +10880,98 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+    
     [NATIONAL_DEX_AUREATIC] =
     {
         .categoryName = _("Sun Spirit"),
         .height = 11,
         .weight = 560,
         .description = gAureaticPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    
+// Hisuian mons
+    [NATIONAL_DEX_WYRDEER] =
+    {
+        .categoryName = _("Big Horn"),
+        .height = 18,
+        .weight = 951,
+        .description = gWyrdeerPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_KLEAVOR] =
+    {
+        .categoryName = _("Axe"),
+        .height = 18,
+        .weight = 890,
+        .description = gKleavorPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_URSALUNA] =
+    {
+        .categoryName = _("Peat"),
+        .height = 24,
+        .weight = 2900,
+        .description = gUrsalunaPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_BASCULEGION] =
+    {
+        .categoryName = _("Big Fish"),
+        .height = 30,
+        .weight = 1100,
+        .description = gBasculegionPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_SNEASLER] =
+    {
+        .categoryName = _("Free Climb"),
+        .height = 13,
+        .weight = 430,
+        .description = gSneaslerPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_OVERQWIL] =
+    {
+        .categoryName = _("Pin Cluster"),
+        .height = 25,
+        .weight = 605,
+        .description = gOverqwilPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_ENAMORUS] =
+    {
+        .categoryName = _("Love-Hate"),
+        .height = 16,
+        .weight = 480,
+        .description = gEnamorusPokedexText,
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,

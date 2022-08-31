@@ -32,7 +32,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brock4[] = {
 	{
 	.iv = 0,
 	.lvl = 52,
-	.species = SPECIES_ARCANINE_HISUI,
+	.species = SPECIES_ARCANINE_HISUIAN,
 	.heldItem = ITEM_ASSAULT_VEST,
 	.ability = 0,
 	.spreadEv = SPREAD_FAST_PHYSICAL_SWEEPER_S,
@@ -42,7 +42,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brock4[] = {
 	{
 	.iv = 0,
 	.lvl = 51,
-	.species = SPECIES_GOODRA_HISUI,
+	.species = SPECIES_GOODRA_HISUIAN,
 	.heldItem = ITEM_LEFTOVERS,
 	.ability = 1,
 	.spreadEv = SPREAD_BULKY_SPECIAL_SWEEPER,
@@ -94,7 +94,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brock3[] = {
 	{
 	.iv = 0,
 	.lvl = 41,
-	.species = SPECIES_ARCANINE_HISUI,
+	.species = SPECIES_ARCANINE_HISUIAN,
 	.heldItem = ITEM_EXPERT_BELT,
 	.ability = 0,
 	.spreadEv = SPREAD_FAST_PHYSICAL_SWEEPER_S,
@@ -104,7 +104,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brock3[] = {
 	{
 	.iv = 0,
 	.lvl = 40,
-	.species = SPECIES_SLIGGOO_HISUI,
+	.species = SPECIES_SLIGGOO_HISUIAN,
 	.heldItem = ITEM_LEFTOVERS,
 	.ability = 1,
 	.spreadEv = SPREAD_SPDEF_4SPA,
@@ -146,7 +146,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brock2[] = {
 	{
 	.iv = 0,
 	.lvl = 28,
-	.species = SPECIES_ARCANINE_HISUI,
+	.species = SPECIES_ARCANINE_HISUIAN,
 	.heldItem = ITEM_LEFTOVERS,
 	.ability = 0,
 	.spreadEv = SPREAD_FAST_PHYSICAL_SWEEPER_S,
@@ -156,7 +156,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brock2[] = {
 	{
 	.iv = 0,
 	.lvl = 28,
-	.species = SPECIES_SLIGGOO_HISUI,
+	.species = SPECIES_SLIGGOO_HISUIAN,
 	.heldItem = ITEM_LEFTOVERS,
 	.ability = 0,
 	.spreadEv = SPREAD_BULKY_SPECIAL_SWEEPER,
@@ -188,7 +188,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brock1[] = {
 	{
 	.iv = 0,
 	.lvl = 16,
-	.species = SPECIES_GROWLITHE_HISUI,
+	.species = SPECIES_GROWLITHE_HISUIAN,
 	.heldItem = ITEM_PASSHO_BERRY,
 	.ability = 0,
 	.spreadEv = SPREAD_MIXED_PH_SLOW_LONELY,

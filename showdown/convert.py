@@ -115,6 +115,8 @@ def convertSets(path):
                sets[curSet]["party"][curMon]["name"] = sets[curSet]["party"][curMon]["name"] + 'N'
             elif(sets[curSet]["party"][curMon]["name"][len(sets[curSet]["party"][curMon]["name"])-5:] == "GALAR"):
                sets[curSet]["party"][curMon]["name"] = sets[curSet]["party"][curMon]["name"] + 'IAN'
+            elif(sets[curSet]["party"][curMon]["name"][len(sets[curSet]["party"][curMon]["name"])-5:] == "HISUI"):
+               sets[curSet]["party"][curMon]["name"] = sets[curSet]["party"][curMon]["name"] + 'AN'
             if i[firstNameEnd+1] not in ["@","("]:
                 step += 1
                 continue

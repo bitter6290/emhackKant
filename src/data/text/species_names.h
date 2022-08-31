@@ -899,6 +899,13 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_GLASTRIER] = _("Glastrier"),
     [SPECIES_SPECTRIER] = _("Spectrier"),
     [SPECIES_CALYREX] = _("Calyrex"),
+    [SPECIES_WYRDEER] = _("Wyrdeer"),
+    [SPECIES_KLEAVOR] = _("Kleavor"),
+    [SPECIES_URSALUNA] = _("Ursaluna"),
+    [SPECIES_BASCULEGION] = _("Bsculegion"),
+    [SPECIES_SNEASLER] = _("Sneasler"),
+    [SPECIES_OVERQWIL] = _("Overqwil"),
+    [SPECIES_ENAMORUS] = _("Enamorus"),
 
     // Megas
     [SPECIES_VENUSAUR_MEGA] = _("Venusaur"),
@@ -994,6 +1001,24 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_YAMASK_GALARIAN] = _("Yamask"),
     [SPECIES_STUNFISK_GALARIAN] = _("Stunfisk"),
 
+//Hisuian Forms
+    [SPECIES_GROWLITHE_HISUIAN] = _("Growlithe"),
+    [SPECIES_ARCANINE_HISUIAN] = _("Arcanine"),
+    [SPECIES_VOLTORB_HISUIAN] = _("Voltorb"),
+    [SPECIES_ELECTRODE_HISUIAN] = _("Electrode"),
+    [SPECIES_TYPHLOSION_HISUIAN] = _("Typhlosion"),
+    [SPECIES_QWILFISH_HISUIAN] = _("Qwilfish"),
+    [SPECIES_SNEASEL_HISUIAN] = _("Sneasel"),
+    [SPECIES_SAMUROTT_HISUIAN] = _("Samurott"),
+    [SPECIES_LILLIGANT_HISUIAN] = _("Lilligant"),
+    [SPECIES_ZORUA_HISUIAN] = _("Zorua"),
+    [SPECIES_ZOROARK_HISUIAN] = _("Zoroark"),
+    [SPECIES_BRAVIARY_HISUIAN] = _("Braviary"),
+    [SPECIES_SLIGGOO_HISUIAN] = _("Sliggoo"),
+    [SPECIES_GOODRA_HISUIAN] = _("Goodra"),
+    [SPECIES_AVALUGG_HISUIAN] = _("Avalugg"),
+    [SPECIES_DECIDUEYE_HISUIAN] = _("Decidueye"),
+
     // Cosplay Pikachu
     [SPECIES_PIKACHU_COSPLAY] = _("Pikachu"),
     [SPECIES_PIKACHU_ROCK_STAR] = _("Pikachu"),
@@ -1068,7 +1093,9 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_ROTOM_FROST] = _("Rotom"),
     [SPECIES_ROTOM_MOW] = _("Rotom"),
     [SPECIES_ROTOM_WASH] = _("Rotom"),
-    // Giratina
+    // Origin Forme
+    [SPECIES_DIALGA_ORIGIN] = _("Dialga"),
+    [SPECIES_PALKIA_ORIGIN] = _("Palkia"),
     [SPECIES_GIRATINA_ORIGIN] = _("Giratina"),
     // Shaymin
     [SPECIES_SHAYMIN_SKY] = _("Shaymin"),
@@ -1092,6 +1119,7 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_ARCEUS_FAIRY] = _("Arceus"),
     // Basculin
     [SPECIES_BASCULIN_BLUE_STRIPED] = _("Basculin"),
+    [SPECIES_BASCULIN_WHITE_STRIPED] = _("Basculin"),
     // Darmanitan
     [SPECIES_DARMANITAN_ZEN_MODE] = _("Darmanitan"),
     [SPECIES_DARMANITAN_ZEN_MODE_GALARIAN] = _("Darmanitan"),
@@ -1107,6 +1135,7 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_TORNADUS_THERIAN] = _("Tornadus"),
     [SPECIES_THUNDURUS_THERIAN] = _("Thundurus"),
     [SPECIES_LANDORUS_THERIAN] = _("Landorus"),
+    [SPECIES_ENAMORUS_THERIAN] = _("Enamorus"),
     // Kyurem
     [SPECIES_KYUREM_BLACK] = _("Kyurem"),
     [SPECIES_KYUREM_WHITE] = _("Kyurem"),
@@ -1277,38 +1306,6 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     // Calyrex
     [SPECIES_CALYREX_ICE_RIDER] = _("Calyrex"),
     [SPECIES_CALYREX_SHADOW_RIDER] = _("Calyrex"),
-    // Hisuian mons
-    [SPECIES_WYRDEER] = _("Wyrdeer"),
-    [SPECIES_URSALUNA] = _("Ursaluna"),
-    [SPECIES_BASCULEGION] = _("Basclegion"),
-    [SPECIES_KLEAVOR] = _("Kleavor"),
-    [SPECIES_OVERQWIL] = _("Overqwil"),
-    [SPECIES_SNEASLER] = _("Sneasler"),
-    [SPECIES_ENAMORUS] = _("Enamorus"),
-    // Hisuian forms
-	[SPECIES_SLIGGOO_HISUI] = _("Sliggoo"),
-	[SPECIES_GOODRA_HISUI] = _("Goodra"),
-	[SPECIES_GROWLITHE_HISUI] = _("Growlithe"),
-	[SPECIES_ARCANINE_HISUI] = _("Arcanine"),
-	[SPECIES_VOLTORB_HISUI] = _("Voltorb"),
-	[SPECIES_ELECTRODE_HISUI] = _("Electrode"),
-	[SPECIES_QWILFISH_HISUI] = _("Qwilfish"),
-	[SPECIES_LILLIGANT_HISUI] = _("Lilligant"),
-	[SPECIES_SNEASEL_HISUI] = _("Sneasel"),
-	[SPECIES_AVALUGG_HISUI] = _("Avalugg"),
-	[SPECIES_ZORUA_HISUI] = _("Zorua"),
-	[SPECIES_ZOROARK_HISUI] = _("Zoroark"),
-	[SPECIES_BRAVIARY_HISUI] = _("Braviary"),
-	[SPECIES_DECIDUEYE_HISUI] = _("Decidueye"),
-	[SPECIES_TYPHLOSION_HISUI] = _("Typhlosion"),
-	[SPECIES_SAMUROTT_HISUI] = _("Samurott"),
-	[SPECIES_BASCULIN_WHITE_STRIPED] = _("Basculin"),
-
-	[SPECIES_BASCULEGION_M] = _("Basclegion"),
-	[SPECIES_ENAMORUS_THERIAN] = _("Enamorus"),
-
-	[SPECIES_DIALGA_ORIGIN] = _("Dialga"),
-	[SPECIES_PALKIA_ORIGIN] = _("Palkia"),
     // Custom mons
     [SPECIES_SHINX_KANTO] = _("Shinx"),
     [SPECIES_LUXIO_KANTO] = _("Luxio"),

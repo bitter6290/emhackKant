@@ -10893,7 +10893,6 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
     
-// Hisuian mons
     [NATIONAL_DEX_WYRDEER] =
     {
         .categoryName = _("Big Horn"),

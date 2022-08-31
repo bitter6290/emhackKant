@@ -33,6 +33,8 @@ const struct FormChange *const gFormChangeTablePointers[NUM_SPECIES] =
     [SPECIES_THUNDURUS_THERIAN] = sThundurusTherianFormChangeTable,
     [SPECIES_LANDORUS] = sLandorusFormChangeTable,
     [SPECIES_LANDORUS_THERIAN] = sLandorusTherianFormChangeTable,
+    [SPECIES_ENAMORUS] = sEnamorusFormChangeTable,
+    [SPECIES_ENAMORUS_THERIAN] = sEnamorusTherianFormChangeTable,
     [SPECIES_KELDEO] = sKeldeoFormChangeTable,
     [SPECIES_KELDEO_RESOLUTE] = sKeldeoResoluteFormChangeTable,
     [SPECIES_GENESECT] = sGenesectFormChangeTable, 
@@ -64,7 +66,5 @@ const struct FormChange *const gFormChangeTablePointers[NUM_SPECIES] =
     [SPECIES_SILVALLY_ROCK] = sSilvallyFormChangeTable,
     [SPECIES_SILVALLY_STEEL] = sSilvallyFormChangeTable,
     [SPECIES_SILVALLY_WATER] = sSilvallyFormChangeTable,
-    [SPECIES_ENAMORUS] = sEnamorusFormChangeTable,
-    [SPECIES_ENAMORUS_THERIAN] = sEnamorusTherianFormChangeTable,
 #endif
 };

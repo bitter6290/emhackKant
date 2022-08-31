@@ -1162,6 +1162,8 @@ static void DrawPartyMonIcons(void)
     }
 }
 
+#include "data/tmhm_moves.h"
+
 static void TintPartyMonIcons(u8 tm)
 {
     u8 i;
@@ -1170,7 +1172,7 @@ static void TintPartyMonIcons(u8 tm)
     for (i = 0; i < gPlayerPartyCount; i++)
     {
         species = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES);
-        if (!CanSpeciesLearnTMHM(species, tm))
+        if (!CanLearnTeachableMove(species, sTMHMMoves[tm]))
         {
             gSprites[spriteIdData[i]].oam.paletteNum = 7 + spriteIdPalette[i];
         }

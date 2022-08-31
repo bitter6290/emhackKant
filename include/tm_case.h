@@ -1,3 +1,4 @@
+#include "constants/items.h"
 #ifndef GUARD_TM_CASE_H
 #define GUARD_TM_CASE_H
 

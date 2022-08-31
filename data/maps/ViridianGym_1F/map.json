@@ -30,7 +30,7 @@
   ],
   "warp_events": [
     {
-      "x": 7,
+      "x": 8,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_CITY",
@@ -40,22 +40,22 @@
       "x": 3,
       "y": 19,
       "elevation": 0,
-      "dest_map": "MAP_VIRIDIAN_GYM_1F",
-      "dest_warp_id": 0
+      "dest_map": "MAP_VIRIDIAN_GYM_B1F",
+      "dest_warp_id": 1
     },
     {
       "x": 3,
       "y": 3,
       "elevation": 0,
-      "dest_map": "MAP_VIRIDIAN_GYM_1F",
+      "dest_map": "MAP_VIRIDIAN_GYM_B1F",
       "dest_warp_id": 0
     },
     {
       "x": 10,
       "y": 19,
       "elevation": 0,
-      "dest_map": "MAP_VIRIDIAN_GYM_1F",
-      "dest_warp_id": 0
+      "dest_map": "MAP_VIRIDIAN_GYM_B1F",
+      "dest_warp_id": 2
     }
   ],
   "coord_events": [

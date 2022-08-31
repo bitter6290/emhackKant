@@ -908,11 +908,12 @@ gCryTable::
 	cry Cry_Overqwil
 	cry Cry_Enamorus
 	@ Customs
+	cry Cry_Moradile
 	cry Cry_Kricketon
 	cry Cry_Krickallous
 	cry Cry_Ledenna
 	cry Cry_Aloobat
-	cry Cry_ArbokMega
+	cry Cry_Poltendula
 	cry Cry_Fauvantic
 	cry Cry_Florestic
 	cry Cry_Terrantic
@@ -1008,6 +1009,23 @@ gCryTable::
 	cry Cry_Darmanitan
 	cry Cry_Yamask
 	cry Cry_Stunfisk
+	@ Hisuian Forms
+	cry Cry_Growlithe
+	cry Cry_Arcanine
+	cry Cry_Voltorb
+	cry Cry_Electrode
+	cry Cry_Typhlosion
+	cry Cry_Qwilfish
+	cry Cry_Sneasel
+	cry Cry_Samurott
+	cry Cry_Lilligant
+	cry Cry_Zorua
+	cry Cry_Zoroark
+	cry Cry_Braviary
+	cry Cry_Sliggoo
+	cry Cry_Goodra
+	cry Cry_Avalugg
+	cry Cry_Decidueye
 	@ Misc Forms
 	@ Cosplay Pikachu
 	cry Cry_Pikachu
@@ -1081,7 +1099,9 @@ gCryTable::
 	cry Cry_Rotom
 	cry Cry_Rotom
 	cry Cry_Rotom
-	@ Giratina
+	@ Origin Forme
+	cry Cry_Dialga
+	cry Cry_Palkia
 	cry Cry_Giratina
 	@ Shaymin
 	cry Cry_ShayminSky
@@ -1104,6 +1124,7 @@ gCryTable::
 	cry Cry_Arceus
 	cry Cry_Arceus
 	@ Basculin
+	cry Cry_Basculin
 	cry Cry_Basculin
 	@ Darmanitan
 	cry Cry_Darmanitan
@@ -1291,23 +1312,21 @@ gCryTable::
 	cry Cry_CalyrexIceRider
 	cry Cry_CalyrexShadowRider
 	@ Custom mons
-	cry Cry_ShinxKanto
-	cry Cry_LuxioKanto
-	cry Cry_LuxrayKanto
-	cry Cry_LitwickKanto
-	cry Cry_LampentKanto
-	cry Cry_ChandelureKanto
-	cry Cry_SandileKanto
-	cry Cry_KrokorokKanto
-	cry Cry_Moradile
-	cry Cry_TimburrKanto
-	cry Cry_GurdurrKanto
-	cry Cry_ConkeldurrKanto
-	cry Cry_TorkoalKanto
-	cry Cry_SliggooHisui
-	cry Cry_GoodraHisui
-	cry Cry_GrowlitheHisui
-	cry Cry_ArcanineHisui
+	cry Cry_Shinx
+	cry Cry_Luxio
+	cry Cry_Luxray
+	cry Cry_Litwick
+	cry Cry_Lampent
+	cry Cry_Chandelure
+	cry Cry_Sandile
+	cry Cry_Krokorok
+	cry Cry_Timburr
+	cry Cry_Gurdurr
+	cry Cry_Conkeldurr
+	cry Cry_Torkoal
+	cry Cry_Sandygast
+	cry Cry_Arbok
+	cry Cry_PorygonZ
 .else
 	@ Unown
 	cry Cry_Unown
@@ -2266,6 +2285,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Florestic
 	cry_reverse Cry_Terrantic
 	cry_reverse Cry_Aureatic
+
 	@ Megas
 	cry_reverse Cry_VenusaurMega
 	cry_reverse Cry_CharizardMegaX
@@ -2357,6 +2377,23 @@ gCryTable_Reverse::
 	cry_reverse Cry_Darmanitan
 	cry_reverse Cry_Yamask
 	cry_reverse Cry_Stunfisk
+	@ Hisuian Forms
+	cry_reverse Cry_Growlithe
+	cry_reverse Cry_Arcanine
+	cry_reverse Cry_Voltorb
+	cry_reverse Cry_Electrode
+	cry_reverse Cry_Typhlosion
+	cry_reverse Cry_Qwilfish
+	cry_reverse Cry_Sneasel
+	cry_reverse Cry_Samurott
+	cry_reverse Cry_Lilligant
+	cry_reverse Cry_Zorua
+	cry_reverse Cry_Zoroark
+	cry_reverse Cry_Braviary
+	cry_reverse Cry_Sliggoo
+	cry_reverse Cry_Goodra
+	cry_reverse Cry_Avalugg
+	cry_reverse Cry_Decidueye
 	@ Misc Forms
 	@ Cosplay Pikachu
 	cry_reverse Cry_Pikachu
@@ -2430,7 +2467,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Rotom
 	cry_reverse Cry_Rotom
 	cry_reverse Cry_Rotom
-	@ Giratina
+	@ Origin Forme
+	cry_reverse Cry_Dialga
+	cry_reverse Cry_Palkia
 	cry_reverse Cry_Giratina
 	@ Shaymin
 	cry_reverse Cry_ShayminSky
@@ -2454,6 +2493,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Arceus
 	@ Basculin
 	cry_reverse Cry_Basculin
+	cry_reverse Cry_Basculin
 	@ Darmanitan
 	cry_reverse Cry_Darmanitan
 	cry_reverse Cry_Darmanitan
@@ -2469,6 +2509,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_TornadusTherian
 	cry_reverse Cry_ThundurusTherian
 	cry_reverse Cry_LandorusTherian
+	cry_reverse Cry_Bulbasaur //Cry_EnamorusTherian
 	@ Kyurem
 	cry_reverse Cry_KyuremWhite
 	cry_reverse Cry_KyuremBlack
@@ -2654,10 +2695,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_GurdurrKanto
 	cry_reverse Cry_ConkeldurrKanto
 	cry_reverse Cry_TorkoalKanto
-	cry_reverse Cry_SliggooHisui
-	cry_reverse Cry_GoodraHisui
-	cry_reverse Cry_GrowlitheHisui
-	cry_reverse Cry_ArcanineHisui
+	cry_reverse Cry_Sliggoo
+	cry_reverse Cry_Goodra
+	cry_reverse Cry_Growlithe
+	cry_reverse Cry_Arcanine
 .else
 	@ Unown
 	cry_reverse Cry_Unown

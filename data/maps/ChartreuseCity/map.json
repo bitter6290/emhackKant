@@ -37,6 +37,11 @@
       "direction": "right",
       "offset": 0,
       "map": "MAP_CHARTREUSE_WOODS"
+    },
+    {
+      "direction": "up",
+      "offset": 0,
+      "map": "MAP_ROUTE16"
     }
   ],
   "object_events": [

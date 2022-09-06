@@ -19,11 +19,6 @@
       "map": "MAP_VERMILION_CITY"
     },
     {
-      "direction": "left",
-      "offset": 0,
-      "map": "MAP_ROUTE6"
-    },
-    {
       "direction": "up",
       "offset": -20,
       "map": "MAP_SAFFRON_CITY"
@@ -32,11 +27,6 @@
       "direction": "up",
       "offset": 24,
       "map": "MAP_ROUTE8"
-    },
-    {
-      "direction": "right",
-      "offset": -52,
-      "map": "MAP_ROUTE9"
     },
     {
       "direction": "right",

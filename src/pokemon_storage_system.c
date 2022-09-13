@@ -1669,13 +1669,16 @@ static void FieldTask_ReturnToPcMenu(void)
     MainCallback vblankCb = gMain.vblankCallback;
 
     SetVBlankCallback(NULL);
-    if (!FlagGet(FLAG_SYS_PC_FROM_DEBUG_MENU)) {
+    if (!FlagGet(DEBUG_FLAG_PC_FROM_DEBUG_MENU))
+    {
         taskId = CreateTask(Task_PCMainMenu, 80);
         gTasks[taskId].tState = 0;
         gTasks[taskId].tSelectedOption = sPreviousBoxOption;
         Task_PCMainMenu(taskId);
-    } else {
-        FlagClear(FLAG_SYS_PC_FROM_DEBUG_MENU);
+    }
+    else
+    {
+        FlagClear(DEBUG_FLAG_PC_FROM_DEBUG_MENU);
         ScriptContext_Enable();
     }
     SetVBlankCallback(vblankCb);
@@ -6898,9 +6901,7 @@ static void ReshowDisplayMon(void)
 
 void SetMonFormPSS(struct BoxPokemon *boxMon)
 {
-    u16 targetSpecies = GetFormChangeTargetSpeciesBoxMon(boxMon, FORM_ITEM_HOLD_ABILITY, 0);
-    if (targetSpecies == SPECIES_NONE)
-        targetSpecies = GetFormChangeTargetSpeciesBoxMon(boxMon, FORM_ITEM_HOLD, 0);
+    u16 targetSpecies = GetFormChangeTargetSpeciesBoxMon(boxMon, FORM_ITEM_HOLD, 0);
     if (targetSpecies != SPECIES_NONE)
     {
         SetBoxMonData(boxMon, MON_DATA_SPECIES, &targetSpecies);

@@ -4291,6 +4291,7 @@ static const u16 sMarowakTeachableLearnset[] = {
 static const u16 sHitmonleeTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
+    MOVE_BOLT_KICK,
     MOVE_BULK_UP,
     MOVE_DOUBLE_TEAM,
     MOVE_EARTHQUAKE,
@@ -5142,6 +5143,7 @@ static const u16 sJynxTeachableLearnset[] = {
 
 static const u16 sElectabuzzTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_BOLT_KICK,
     MOVE_BRICK_BREAK,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
@@ -12844,6 +12846,7 @@ static const u16 sMedititeTeachableLearnset[] = {
 
 static const u16 sMedichamTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_BOLT_KICK,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_CALM_MIND,
@@ -12969,6 +12972,7 @@ static const u16 sManectricTeachableLearnset[] = {
 
 static const u16 sPlusleTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_BOLT_KICK,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
     MOVE_FLASH,
@@ -13010,6 +13014,7 @@ static const u16 sPlusleTeachableLearnset[] = {
 
 static const u16 sMinunTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_BOLT_KICK,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
     MOVE_FLASH,
@@ -13978,6 +13983,7 @@ static const u16 sZangooseTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
+    MOVE_BOLT_KICK,
     MOVE_BRICK_BREAK,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
@@ -16398,6 +16404,7 @@ static const u16 sMonfernoTeachableLearnset[] = {
 static const u16 sInfernapeTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_BOLT_KICK,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_CALM_MIND,
@@ -19142,6 +19149,7 @@ static const u16 sTangrowthTeachableLearnset[] = {
 
 static const u16 sElectivireTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_BOLT_KICK,
     MOVE_BRICK_BREAK,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
@@ -21821,6 +21829,7 @@ static const u16 sThrohTeachableLearnset[] = {
 
 static const u16 sSawkTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_BOLT_KICK,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_DIG,
@@ -24387,6 +24396,7 @@ static const u16 sMienfooTeachableLearnset[] = {
 static const u16 sMienshaoTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_BOLT_KICK,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_CALM_MIND,
@@ -28922,6 +28932,7 @@ static const u16 sSteeneeTeachableLearnset[] = {
 
 static const u16 sTsareenaTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_BOLT_KICK,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
     MOVE_FRUSTRATION,
@@ -30172,6 +30183,7 @@ static const u16 sBlacephalonTeachableLearnset[] = {
 
 static const u16 sZeraoraTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
+    MOVE_BOLT_KICK,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_CALM_MIND,
@@ -31211,6 +31223,7 @@ static const u16 sMorgremTeachableLearnset[] = {
 
 static const u16 sGrimmsnarlTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_BOLT_KICK,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_FACADE,

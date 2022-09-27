@@ -37,7 +37,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brock4[] = {
 	.ability = 0,
 	.spreadEv = SPREAD_FAST_PHYSICAL_SWEEPER_S,
 	.spreadIv = SPREAD_31_IV,
-	.moves = {MOVE_FLARE_BLITZ, MOVE_CLOSE_COMBAT, MOVE_EXTREME_SPEED, MOVE_PLAY_ROUGH},
+	.moves = {MOVE_FLARE_BLITZ, MOVE_STONE_EDGE, MOVE_EXTREME_SPEED, MOVE_PLAY_ROUGH},
 	},
 	{
 	.iv = 0,
@@ -314,7 +314,7 @@ static const struct TrainerMonItemCustomMoves sParty_Soren3[] = {
 	.lvl = 40,
 	.species = SPECIES_LILEEP,
 	.heldItem = ITEM_EVIOLITE,
-	.ability = 0,
+	.ability = 2,
 	.spreadEv = SPREAD_SPDEF_4SPA,
 	.spreadIv = SPREAD_LOW_ATTACK,
 	.moves = {MOVE_ENERGY_BALL, MOVE_ANCIENT_POWER, MOVE_SYNTHESIS, MOVE_TOXIC},

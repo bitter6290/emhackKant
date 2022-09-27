@@ -5384,7 +5384,7 @@
     {
       "id": "LAYOUT_MT_MOON_INSIDE_B2F",
       "name": "MtMoonInsideB2f_Layout",
-      "width": 70,
+      "width": 74,
       "height": 50,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",

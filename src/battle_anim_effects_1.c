@@ -332,6 +332,17 @@ static const union AffineAnimCmd * const sSmallCloudSpriteAffineAnimTable[] =
     sSmallCloudsVariant2,
 };
 
+static const union AffineAnimCmd sPressurePoint[] =
+{
+	AFFINEANIMCMD_FRAME(256,256,0,0),
+	AFFINEANIMCMD_END
+};
+
+static const union AffineAnimCmd * const sPressurePointAnimTable[] =
+{
+    sPressurePoint,
+};
+
 const struct SpriteTemplate gWorrySeedSpriteTemplate =
 {
     .tileTag = ANIM_TAG_WORRY_SEED,

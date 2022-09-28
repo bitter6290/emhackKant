@@ -25,7 +25,7 @@ struct ConnectionFlags
     u8 east:1;
 };
 
-EWRAM_DATA static u16 gBackupMapData[MAX_MAP_DATA_SIZE] = {0};
+EWRAM_DATA static u16 sBackupMapData[MAX_MAP_DATA_SIZE] = {0};
 EWRAM_DATA struct MapHeader gMapHeader = {0};
 EWRAM_DATA struct Camera gCamera = {0};
 EWRAM_DATA static struct ConnectionFlags gMapConnectionFlags = {0};
@@ -87,14 +87,14 @@ void InitMapFromSavedGame(void)
 
 void InitBattlePyramidMap(bool8 setPlayerPosition)
 {
-    CpuFastFill(MAPGRID_UNDEFINED << 16 | MAPGRID_UNDEFINED, gBackupMapData, sizeof(gBackupMapData));
-    GenerateBattlePyramidFloorLayout(gBackupMapData, setPlayerPosition);
+    CpuFastFill16(MAPGRID_UNDEFINED, sBackupMapData, sizeof(sBackupMapData));
+    GenerateBattlePyramidFloorLayout(sBackupMapData, setPlayerPosition);
 }
 
 void InitTrainerHillMap(void)
 {
-    CpuFastFill(MAPGRID_UNDEFINED << 16 | MAPGRID_UNDEFINED, gBackupMapData, sizeof(gBackupMapData));
-    GenerateTrainerHillFloorLayout(gBackupMapData);
+    CpuFastFill16(MAPGRID_UNDEFINED, sBackupMapData, sizeof(sBackupMapData));
+    GenerateTrainerHillFloorLayout(sBackupMapData);
 }
 
 static void InitMapLayoutData(struct MapHeader *mapHeader)
@@ -103,8 +103,8 @@ static void InitMapLayoutData(struct MapHeader *mapHeader)
     int width;
     int height;
     mapLayout = mapHeader->mapLayout;
-    CpuFastFill16(MAPGRID_UNDEFINED, gBackupMapData, sizeof(gBackupMapData));
-    gBackupMapLayout.map = gBackupMapData;
+    CpuFastFill16(MAPGRID_UNDEFINED, sBackupMapData, sizeof(sBackupMapData));
+    gBackupMapLayout.map = sBackupMapData;
     width = mapLayout->width + MAP_OFFSET_W;
     gBackupMapLayout.width = width;
     height = mapLayout->height + MAP_OFFSET_H;
@@ -436,7 +436,7 @@ void SaveMapView(void)
     for (i = y; i < y + MAP_OFFSET_H; i++)
     {
         for (j = x; j < x + MAP_OFFSET_W; j++)
-            *mapView++ = gBackupMapData[width * i + j];
+            *mapView++ = sBackupMapData[width * i + j];
     }
 }
 
@@ -491,8 +491,8 @@ static void LoadSavedMapView(void)
 
             for (j = x; j < x + MAP_OFFSET_W; j++)
             {
-                if (!SkipCopyingMetatileFromSavedMap(&gBackupMapData[j + width * i], width, yMode))
-                    gBackupMapData[j + width * i] = *mapView;
+                if (!SkipCopyingMetatileFromSavedMap(&sBackupMapData[j + width * i], width, yMode))
+                    sBackupMapData[j + width * i] = *mapView;
                 mapView++;
             }
         }
@@ -554,7 +554,7 @@ static void MoveMapViewToBackup(u8 direction)
             desti = width * (y + y0);
             srci = (y + r8) * MAP_OFFSET_W + r9;
             src = &mapView[srci + i];
-            dest = &gBackupMapData[x0 + desti + j];
+            dest = &sBackupMapData[x0 + desti + j];
             *dest = *src;
             i++;
             j++;
@@ -753,7 +753,7 @@ static int IsPosInConnectingMap(struct MapConnection *connection, int x, int y)
     return FALSE;
 }
 
-struct MapConnection *GetConnectionAtCoords(s16 x, s16 y)
+struct MapConnection *GetMapConnectionAtPos(s16 x, s16 y)
 {
     int count;
     struct MapConnection *connection;
@@ -860,12 +860,13 @@ static void CopyTilesetToVramUsingHeap(struct Tileset const *tileset, u16 numTil
     }
 }
 
-static void FieldmapPaletteDummy(u16 offset, u16 size)
+// Below two are dummied functions from FRLG, used to tint the overworld palettes for the Quest Log
+static void ApplyGlobalTintToPaletteEntries(u16 offset, u16 size)
 {
 
 }
 
-static void FieldmapUnkDummy(void)
+static void ApplyGlobalTintToPaletteSlot(u8 slot, u8 count)
 {
 
 }
@@ -880,17 +881,17 @@ void LoadTilesetPalette(struct Tileset const *tileset, u16 destOffset, u16 size)
         {
             LoadPalette(&black, destOffset, 2);
             LoadPalette(((u16 *)tileset->palettes) + 1, destOffset + 1, size - 2);
-            FieldmapPaletteDummy(destOffset + 1, (size - 2) >> 1);
+            ApplyGlobalTintToPaletteEntries(destOffset + 1, (size - 2) >> 1);
         }
         else if (tileset->isSecondary == TRUE)
         {
             LoadPalette(((u16 *)tileset->palettes) + (NUM_PALS_IN_PRIMARY * 16), destOffset, size);
-            FieldmapPaletteDummy(destOffset, size >> 1);
+            ApplyGlobalTintToPaletteEntries(destOffset, size >> 1);
         }
         else
         {
             LoadCompressedPalette((u32 *)tileset->palettes, destOffset, size);
-            FieldmapPaletteDummy(destOffset, size >> 1);
+            ApplyGlobalTintToPaletteEntries(destOffset, size >> 1);
         }
     }
 }

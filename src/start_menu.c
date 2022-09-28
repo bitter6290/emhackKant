@@ -331,7 +331,7 @@ static void BuildNormalStartMenu(void)
 }
 
 static void BuildDebugStartMenu(void)
-{    
+{
     AddStartMenuAction(MENU_ACTION_DEBUG);
     if (FlagGet(FLAG_SYS_POKEDEX_GET) == TRUE)
         AddStartMenuAction(MENU_ACTION_POKEDEX);
@@ -768,6 +768,7 @@ static bool8 StartMenuDebugCallback(void)
     HideStartMenuDebug(); // Hide start menu without enabling movement
 
 #if DEBUG_SYSTEM_ENABLE == TRUE
+    FreezeObjectEvents();
     Debug_ShowMainMenu();
 #endif
 

@@ -1884,7 +1884,7 @@ static u8 TrySelectBias_Regular(void)
     {
         s16 rval = Random() & 0xff;
         s16 value = sBiasProbabilities_Regular[whichBias][sSlotMachine->machineId];
-        
+
         // Boost odds of BIAS_POWER if it's a lucky game.
         if (whichBias == 0 && sSlotMachine->luckyGame == TRUE)
         {
@@ -3672,7 +3672,7 @@ static void ReelTime_CheckExplode(struct Task *task)
         if (sSlotMachine->reelTimeDraw)
         {
             if (sSlotMachine->reelTimeSpinsLeft <= task->tExplodeChecks)
-                task->tState++; // RT_TASK_LAND 
+                task->tState++; // RT_TASK_LAND
         }
         else if (task->tExplodeChecks > 3)
         {
@@ -5311,7 +5311,7 @@ static const u8 sSpecialDrawOdds[NUM_SLOT_MACHINE_IDS][MAX_BET] = {
 };
 
 static const u8 sBiasProbabilities_Special[][NUM_SLOT_MACHINE_IDS] = {
-    { 
+    {
         // Probabilities for BIAS_STRAIGHT_7
         [SLOT_MACHINE_UNLUCKIEST] = 25,
         [SLOT_MACHINE_UNLUCKIER]  = 25,
@@ -5320,7 +5320,7 @@ static const u8 sBiasProbabilities_Special[][NUM_SLOT_MACHINE_IDS] = {
         [SLOT_MACHINE_LUCKIER]    = 40,
         [SLOT_MACHINE_LUCKIEST]   = 50
     },
-    { 
+    {
         // Probabilities for BIAS_REELTIME
         [SLOT_MACHINE_UNLUCKIEST] = 25,
         [SLOT_MACHINE_UNLUCKIER]  = 25,
@@ -5329,7 +5329,7 @@ static const u8 sBiasProbabilities_Special[][NUM_SLOT_MACHINE_IDS] = {
         [SLOT_MACHINE_LUCKIER]    = 35,
         [SLOT_MACHINE_LUCKIEST]   = 35
     },
-    { 
+    {
         // Probabilities for BIAS_MIXED_7
         [SLOT_MACHINE_UNLUCKIEST] = 25,
         [SLOT_MACHINE_UNLUCKIER]  = 25,
@@ -5341,7 +5341,7 @@ static const u8 sBiasProbabilities_Special[][NUM_SLOT_MACHINE_IDS] = {
 };
 
 static const u8 sBiasProbabilities_Regular[][NUM_SLOT_MACHINE_IDS] = {
-    { 
+    {
         // Probabilities for BIAS_POWER
         [SLOT_MACHINE_UNLUCKIEST] = 20,
         [SLOT_MACHINE_UNLUCKIER]  = 25,
@@ -5350,7 +5350,7 @@ static const u8 sBiasProbabilities_Regular[][NUM_SLOT_MACHINE_IDS] = {
         [SLOT_MACHINE_LUCKIER]    = 25,
         [SLOT_MACHINE_LUCKIEST]   = 25
     },
-    { 
+    {
         // Probabilities for BIAS_AZURILL
         [SLOT_MACHINE_UNLUCKIEST] = 12,
         [SLOT_MACHINE_UNLUCKIER]  = 15,
@@ -5359,7 +5359,7 @@ static const u8 sBiasProbabilities_Regular[][NUM_SLOT_MACHINE_IDS] = {
         [SLOT_MACHINE_LUCKIER]    = 19,
         [SLOT_MACHINE_LUCKIEST]   = 22
     },
-    { 
+    {
         // Probabilities for BIAS_LOTAD
         [SLOT_MACHINE_UNLUCKIEST] = 25,
         [SLOT_MACHINE_UNLUCKIER]  = 25,
@@ -5368,7 +5368,7 @@ static const u8 sBiasProbabilities_Regular[][NUM_SLOT_MACHINE_IDS] = {
         [SLOT_MACHINE_LUCKIER]    = 30,
         [SLOT_MACHINE_LUCKIEST]   = 40
     },
-    { 
+    {
         // Probabilities for BIAS_CHERRY
         [SLOT_MACHINE_UNLUCKIEST] = 25,
         [SLOT_MACHINE_UNLUCKIER]  = 25,
@@ -5377,7 +5377,7 @@ static const u8 sBiasProbabilities_Regular[][NUM_SLOT_MACHINE_IDS] = {
         [SLOT_MACHINE_LUCKIER]    = 15,
         [SLOT_MACHINE_LUCKIEST]   = 15
     },
-    { 
+    {
         // Probabilities for BIAS_REPLAY
         [SLOT_MACHINE_UNLUCKIEST] = 40,
         [SLOT_MACHINE_UNLUCKIER]  = 40,

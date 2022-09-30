@@ -13681,6 +13681,11 @@ static void Cmd_settypetoterrain(void)
     case STATUS_FIELD_PSYCHIC_TERRAIN:
         terrainType = TYPE_PSYCHIC;
         break;
+    case STATUS_FIELD_DARK_TERRAIN:
+    	terrainType = TYPE_DARK;
+    	break;
+    case STATUS_FIELD_ROCKY_TERRAIN:
+    	terrainType = TYPE_ROCK;
     default:
         terrainType = sTerrainToType[gBattleTerrain];
         break;

@@ -30655,7 +30655,42 @@ Move_PURE_WATER:
 Move_ROCKY_TERRAIN:
 end @to do
 Move_DARK_TERRAIN:
-end @to do
+	loadspritegfx ANIM_TAG_ORBS @Recover Ball
+	loadspritegfx ANIM_TAG_GREEN_SPARKLE @Green Star
+	loadspritegfx ANIM_TAG_BLACK_BALL_2 @Black color
+	playsewithpan SE_M_HEAL_BELL, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+	waitforvisualfinish
+	delay 30
+	createvisualtask AnimTask_BlendMonInAndOut, 5, ANIM_ATTACKER, RGB(27, 0, 13), 12, 5, 1
+	delay 4
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+	playsewithpan SE_M_REVERSAL, SOUND_PAN_ATTACKER
+	createsprite gPsychicTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 0
+	createsprite gPsychicTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 42
+	createsprite gPsychicTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 84
+	createsprite gPsychicTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 126
+	createsprite gPsychicTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 168
+	createsprite gPsychicTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 210
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, ANIM_PAL_BG, 3, 0, 4, RGB(27, 0, 13)
+	delay 52
+	setarg 7, 0xFFFF
+	playsewithpan SE_M_ATTRACT, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 0
+	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 32
+	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 64
+	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 96
+	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 128
+	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 160
+	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 192
+	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 224
+	loopsewithpan SE_M_SUPERSONIC, SOUND_PAN_TARGET, 0xa, 0x3
+	waitforvisualfinish
+	delay 4
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, ANIM_PAL_BG, 3, 4, 0, RGB(27, 0, 13)
+	waitforvisualfinish
+	end
 Move_VOLCANIC_FLOW:
 end @to do
 Move_SCORCHED_EARTH:

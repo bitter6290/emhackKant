@@ -1251,3 +1251,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CinnabarSeaE/scripts.inc"
 
 	.include "data/maps/CeruleanRangeW/scripts.inc"
+
+	.include "data/maps/ERangeNW/scripts.inc"

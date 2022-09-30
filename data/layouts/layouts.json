@@ -5430,6 +5430,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/CeruleanRangeW/border.bin",
       "blockdata_filepath": "data/layouts/CeruleanRangeW/map.bin"
+    },
+    {
+      "id": "LAYOUT_ERANGE_NW",
+      "name": "ERangeNW_Layout",
+      "width": 44,
+      "height": 76,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/ERangeNW/border.bin",
+      "blockdata_filepath": "data/layouts/ERangeNW/map.bin"
     }
   ]
 }

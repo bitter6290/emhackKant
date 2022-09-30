@@ -696,7 +696,8 @@
     "FuchsiaSwamp",
     "ChartreuseWoods",
     "BurgundyCoastline",
-    "CeruleanRangeW"
+    "CeruleanRangeW",
+    "ERangeNW"
   ],
   "gMapGroup_NewIndoor": [
     "PalletPlayerHouse_1F",

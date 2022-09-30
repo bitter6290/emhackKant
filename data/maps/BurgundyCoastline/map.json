@@ -15,7 +15,7 @@
   "connections": [
     {
       "direction": "left",
-      "offset": 52,
+      "offset": 56,
       "map": "MAP_CHARTREUSE_WOODS"
     }
   ],

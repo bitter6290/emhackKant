@@ -1,9 +1,9 @@
 {
-  "id": "MAP_CHARTREUSE_WOODS",
-  "name": "ChartreuseWoods",
-  "layout": "LAYOUT_CHARTREUSE_WOODS",
-  "music": "MUS_DP_ETERNA_FOREST",
-  "region_map_section": "MAPSEC_OLDALE_TOWN",
+  "id": "MAP_ERANGE_NW",
+  "name": "ERangeNW",
+  "layout": "LAYOUT_ERANGE_NW",
+  "music": "MUS_DP_MT_CORONET",
+  "region_map_section": "MAPSEC_EVER_GRANDE_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
@@ -16,17 +16,22 @@
     {
       "direction": "left",
       "offset": 0,
+      "map": "MAP_ROUTE10"
+    },
+    {
+      "direction": "up",
+      "offset": -24,
       "map": "MAP_CHARTREUSE_CITY"
     },
     {
-      "direction": "right",
-      "offset": -56,
-      "map": "MAP_BURGUNDY_COASTLINE"
+      "direction": "down",
+      "offset": -24,
+      "map": "MAP_ROUTE9"
     },
     {
-      "direction": "down",
-      "offset": -12,
-      "map": "MAP_ERANGE_NW"
+      "direction": "up",
+      "offset": 12,
+      "map": "MAP_CHARTREUSE_WOODS"
     }
   ],
   "object_events": [

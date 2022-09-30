@@ -655,6 +655,7 @@
 #define MAP_CHARTREUSE_WOODS   (30 | (36 << 8))
 #define MAP_BURGUNDY_COASTLINE (31 | (36 << 8))
 #define MAP_CERULEAN_RANGE_W   (32 | (36 << 8))
+#define MAP_ERANGE_NW          (33 | (36 << 8))
 
 // gMapGroup_NewIndoor
 #define MAP_PALLET_PLAYER_HOUSE_1F      (0 | (37 << 8))

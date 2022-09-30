@@ -317,6 +317,7 @@ static void PutMonIconOnLvlUpBanner(void);
 static void DrawLevelUpBannerText(void);
 static void SpriteCB_MonIconOnLvlUpBanner(struct Sprite *sprite);
 static bool32 CriticalCapture(u32 odds);
+static void BestowItem(u32 battlerAtk, u32 battlerDef);
 
 static void Cmd_attackcanceler(void);
 static void Cmd_accuracycheck(void);
@@ -5095,6 +5096,15 @@ static bool32 TryKnockOffBattleScript(u32 battlerDef)
     return FALSE;
 }
 
+#define SYMBIOSIS_CHECK(battler, ally)                                                                                               \
+    GetBattlerAbility(ally) == ABILITY_SYMBIOSIS                   \
+    && gBattleMons[battler].item == ITEM_NONE                      \
+    && gBattleMons[ally].item != ITEM_NONE                         \
+    && CanBattlerGetOrLoseItem(battler, gBattleMons[ally].item)    \
+    && CanBattlerGetOrLoseItem(ally, gBattleMons[ally].item)       \
+    && gBattleMons[battler].hp != 0                                \
+    && gBattleMons[ally].hp != 0
+
 static u32 GetNextTarget(u32 moveTarget)
 {
     u32 i;
@@ -5759,13 +5769,11 @@ static void Cmd_moveend(void)
                 switch (gBattleMons[i].species)
                 {
                 case SPECIES_CASTFORM:
-                case SPECIES_CHERRIM:
-#ifdef POKEMON_EXPANSION
                 case SPECIES_CASTFORM_RAINY:
                 case SPECIES_CASTFORM_SNOWY:
                 case SPECIES_CASTFORM_SUNNY:
+                case SPECIES_CHERRIM:
                 case SPECIES_CHERRIM_SUNSHINE:
-#endif
                     effect = TryWeatherFormChange(i);
                     if (effect)
                     {
@@ -5773,6 +5781,26 @@ static void Cmd_moveend(void)
                         gBattleScripting.battler = i;
                         gBattleStruct->formToChangeInto = effect - 1;
                     }
+                }
+            }
+            gBattleScripting.moveendState++;
+            break;
+        case MOVEEND_SYMBIOSIS:
+            for (i = 0; i < gBattlersCount; i++)
+            {
+                if ((gSpecialStatuses[i].berryReduced
+                #if B_SYMBIOSIS_GEMS >= GEN_7
+                    || gSpecialStatuses[i].gemBoost
+                #endif
+                    ) && SYMBIOSIS_CHECK(i, BATTLE_PARTNER(i)))
+                {
+                    BestowItem(BATTLE_PARTNER(i), i);
+                    gLastUsedAbility = gBattleMons[BATTLE_PARTNER(i)].ability;
+                    gBattleScripting.battler = gBattlerAbility = BATTLE_PARTNER(i);
+                    gBattlerAttacker = i;
+                    BattleScriptPushCursor();
+                    gBattlescriptCurrInstr = BattleScript_SymbiosisActivates;
+                    effect = TRUE;
                 }
             }
             gBattleScripting.moveendState++;
@@ -7255,6 +7283,49 @@ static bool32 TryCheekPouch(u32 battlerId, u32 itemId)
     return FALSE;
 }
 
+// Used by Bestow and Symbiosis to take an item from one battler and give to another.
+static void BestowItem(u32 battlerAtk, u32 battlerDef)
+{
+    gLastUsedItem = gBattleMons[battlerAtk].item;
+
+    gActiveBattler = battlerAtk;
+    gBattleMons[battlerAtk].item = ITEM_NONE;
+    BtlController_EmitSetMonData(BUFFER_A, REQUEST_HELDITEM_BATTLE, 0, sizeof(gBattleMons[battlerAtk].item), &gBattleMons[battlerAtk].item);
+    MarkBattlerForControllerExec(battlerAtk);
+    CheckSetUnburden(battlerAtk);
+
+    gActiveBattler = battlerDef;
+    gBattleMons[battlerDef].item = gLastUsedItem;
+    BtlController_EmitSetMonData(BUFFER_A, REQUEST_HELDITEM_BATTLE, 0, sizeof(gBattleMons[battlerDef].item), &gBattleMons[battlerDef].item);
+    MarkBattlerForControllerExec(battlerDef);
+    gBattleResources->flags->flags[battlerDef] &= ~RESOURCE_FLAG_UNBURDEN;
+}
+
+// Called by Cmd_removeitem. itemId represents the item that was removed, not being given.
+static bool32 TrySymbiosis(u32 battler, u32 itemId)
+{
+    if (!gBattleStruct->itemStolen[gBattlerPartyIndexes[battler]].stolen
+        && gBattleStruct->changedItems[battler] == ITEM_NONE
+        && GetBattlerHoldEffect(battler, TRUE) != HOLD_EFFECT_EJECT_BUTTON
+        && GetBattlerHoldEffect(battler, TRUE) != HOLD_EFFECT_EJECT_PACK
+    #if B_SYMBIOSIS_GEMS >= GEN_7
+        && !(gSpecialStatuses[battler].gemBoost)
+    #endif
+        && gCurrentMove != MOVE_FLING //Fling and damage-reducing berries are handled separately.
+        && !gSpecialStatuses[battler].berryReduced
+        && SYMBIOSIS_CHECK(battler, BATTLE_PARTNER(battler)))
+    {
+        BestowItem(BATTLE_PARTNER(battler), battler);
+        gLastUsedAbility = gBattleMons[BATTLE_PARTNER(battler)].ability;
+        gBattleScripting.battler = gBattlerAbility = BATTLE_PARTNER(battler);
+        gBattlerAttacker = battler;
+        BattleScriptPush(gBattlescriptCurrInstr + 2);
+        gBattlescriptCurrInstr = BattleScript_SymbiosisActivates;
+        return TRUE;
+    }
+    return FALSE;
+}
+
 static void Cmd_removeitem(void)
 {
     u16 itemId = 0;
@@ -7273,7 +7344,7 @@ static void Cmd_removeitem(void)
     MarkBattlerForControllerExec(gActiveBattler);
 
     ClearBattlerItemEffectHistory(gActiveBattler);
-    if (!TryCheekPouch(gActiveBattler, itemId))
+    if (!TryCheekPouch(gActiveBattler, itemId) && !TrySymbiosis(gActiveBattler, itemId))
         gBattlescriptCurrInstr += 2;
 }
 
@@ -7968,6 +8039,38 @@ static bool32 CourtChangeSwapSideStatuses(void)
     SWAP(sideTimerPlayer->stickyWebBattlerSide, sideTimerOpp->stickyWebBattlerSide, temp);
 }
 
+static bool32 CanTeleport(u8 battlerId)
+{
+    struct Pokemon* party = NULL;
+    u32 species, count, i;
+
+    if (GetBattlerSide(battlerId) == B_SIDE_PLAYER)
+        party = gPlayerParty;
+    else
+        party = gEnemyParty;
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        species = GetMonData(&party[i], MON_DATA_SPECIES2);
+        if (species != SPECIES_NONE && species != SPECIES_EGG && GetMonData(&party[i], MON_DATA_HP) != 0)
+            count++;
+    }
+
+    switch (GetBattlerSide(battlerId))
+    {
+    case B_SIDE_OPPONENT:
+        if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+            return FALSE;
+        break;
+    case B_SIDE_PLAYER:
+        if (count == 1 || (count <= 2 && gBattleTypeFlags & BATTLE_TYPE_DOUBLE))
+            return FALSE;
+        break;
+    }
+
+    return TRUE;
+}
+
 static void Cmd_various(void)
 {
     struct Pokemon *mon;
@@ -8099,8 +8202,7 @@ static void Cmd_various(void)
             gBattlescriptCurrInstr += 8;
         return;
     case VARIOUS_TRACE_ABILITY:
-        gBattleMons[gActiveBattler].ability = gBattleStruct->tracedAbility[gActiveBattler];
-        RecordAbilityBattle(gActiveBattler, gBattleMons[gActiveBattler].ability);
+        gBattleMons[gActiveBattler].ability = gBattleStruct->overwrittenAbilities[gActiveBattler] = gBattleStruct->tracedAbility[gActiveBattler];
         break;
     case VARIOUS_TRY_ILLUSION_OFF:
         if (GetIllusionMonPtr(gActiveBattler) != NULL)
@@ -8575,7 +8677,7 @@ static void Cmd_various(void)
             if (gBattleMons[gBattlerTarget].ability == ABILITY_NEUTRALIZING_GAS)
                 gSpecialStatuses[gBattlerTarget].neutralizingGasRemoved = TRUE;
 
-            gBattleMons[gBattlerTarget].ability = ABILITY_SIMPLE;
+            gBattleMons[gBattlerTarget].ability = gBattleStruct->overwrittenAbilities[gBattlerTarget] = ABILITY_SIMPLE;
             gBattlescriptCurrInstr += 7;
         }
         return;
@@ -8593,7 +8695,7 @@ static void Cmd_various(void)
         }
         else
         {
-            gBattleMons[gBattlerTarget].ability = gBattleMons[gBattlerAttacker].ability;
+            gBattleMons[gBattlerTarget].ability = gBattleStruct->overwrittenAbilities[gBattlerTarget] = gBattleMons[gBattlerAttacker].ability;
             gBattlescriptCurrInstr += 7;
         }
         return;
@@ -9063,20 +9165,7 @@ static void Cmd_various(void)
         }
         else
         {
-            gLastUsedItem = gBattleMons[gBattlerAttacker].item;
-
-            gActiveBattler = gBattlerAttacker;
-            gBattleMons[gActiveBattler].item = ITEM_NONE;
-            BtlController_EmitSetMonData(BUFFER_A, REQUEST_HELDITEM_BATTLE, 0, sizeof(gBattleMons[gActiveBattler].item), &gBattleMons[gActiveBattler].item);
-            MarkBattlerForControllerExec(gActiveBattler);
-            CheckSetUnburden(gBattlerAttacker);
-
-            gActiveBattler = gBattlerTarget;
-            gBattleMons[gActiveBattler].item = gLastUsedItem;
-            BtlController_EmitSetMonData(BUFFER_A, REQUEST_HELDITEM_BATTLE, 0, sizeof(gBattleMons[gActiveBattler].item), &gBattleMons[gActiveBattler].item);
-            MarkBattlerForControllerExec(gActiveBattler);
-            gBattleResources->flags->flags[gBattlerTarget] &= ~RESOURCE_FLAG_UNBURDEN;
-
+            BestowItem(gBattlerAttacker, gBattlerTarget);
             gBattlescriptCurrInstr += 7;
         }
         return;
@@ -9805,6 +9894,27 @@ static void Cmd_various(void)
         break;
     case VARIOUS_SWAP_SIDE_STATUSES:
         CourtChangeSwapSideStatuses();
+        break;
+    case VARIOUS_TRY_SYMBIOSIS: //called by Bestow, Fling, and Bug Bite, which don't work with Cmd_removeitem.
+        if (SYMBIOSIS_CHECK(gActiveBattler, BATTLE_PARTNER(gActiveBattler)))
+        {
+            BestowItem(BATTLE_PARTNER(gActiveBattler), gActiveBattler);
+            gLastUsedAbility = gBattleMons[BATTLE_PARTNER(gActiveBattler)].ability;
+            gBattleScripting.battler = gBattlerAbility = BATTLE_PARTNER(gActiveBattler);
+            gBattlerAttacker = gActiveBattler;
+            BattleScriptPushCursor();
+            gBattlescriptCurrInstr = BattleScript_SymbiosisActivates;
+            return;
+        }
+        break;
+    case VARIOUS_CAN_TELEPORT:
+        gBattleCommunication[0] = CanTeleport(gActiveBattler);
+        break;
+    case VARIOUS_GET_BATTLER_SIDE:
+        if (GetBattlerSide(gActiveBattler) == B_SIDE_PLAYER)
+            gBattleCommunication[0] = B_SIDE_PLAYER;
+        else
+            gBattleCommunication[0] = B_SIDE_OPPONENT;
         break;
     } // End of switch (gBattlescriptCurrInstr[2])
 
@@ -11406,7 +11516,8 @@ static void Cmd_transformdataexecution(void)
 
         for (i = 0; i < offsetof(struct BattlePokemon, pp); i++)
             battleMonAttacker[i] = battleMonTarget[i];
-
+        
+        gBattleStruct->overwrittenAbilities[gBattlerAttacker] = GetBattlerAbility(gBattlerTarget);
         for (i = 0; i < MAX_MON_MOVES; i++)
         {
             if (gBattleMoves[gBattleMons[gBattlerAttacker].moves[i]].pp < 5)
@@ -12930,7 +13041,7 @@ static void Cmd_trycopyability(void)
     else
     {
         gBattleScripting.abilityPopupOverwrite = gBattleMons[gBattlerAttacker].ability;
-        gBattleMons[gBattlerAttacker].ability = defAbility;
+        gBattleMons[gBattlerAttacker].ability = gBattleStruct->overwrittenAbilities[gBattlerAttacker] = defAbility;
         gLastUsedAbility = defAbility;
         gBattlescriptCurrInstr += 5;
     }
@@ -13096,8 +13207,8 @@ static void Cmd_tryswapabilities(void)
     else
     {
         u16 abilityAtk = gBattleMons[gBattlerAttacker].ability;
-        gBattleMons[gBattlerAttacker].ability = gBattleMons[gBattlerTarget].ability;
-        gBattleMons[gBattlerTarget].ability = abilityAtk;
+        gBattleMons[gBattlerAttacker].ability = gBattleStruct->overwrittenAbilities[gBattlerAttacker] = gBattleMons[gBattlerTarget].ability;
+        gBattleMons[gBattlerTarget].ability = gBattleStruct->overwrittenAbilities[gBattlerTarget] = abilityAtk;
 
         gBattlescriptCurrInstr += 5;
     }
@@ -14487,7 +14598,7 @@ static void Cmd_tryworryseed(void)
     }
     else
     {
-        gBattleMons[gBattlerTarget].ability = ABILITY_INSOMNIA;
+        gBattleMons[gBattlerTarget].ability = gBattleStruct->overwrittenAbilities[gBattlerTarget] = ABILITY_INSOMNIA;
         gBattlescriptCurrInstr += 5;
     }
 }

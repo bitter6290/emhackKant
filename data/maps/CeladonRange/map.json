@@ -98,6 +98,20 @@
       "elevation": 0,
       "dest_map": "MAP_CELADON_RANGE",
       "dest_warp_id": 0
+    },
+    {
+      "x": 28,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_CELADON_RANGE",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 19,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_CELADON_RANGE",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

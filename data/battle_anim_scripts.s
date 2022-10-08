@@ -30653,7 +30653,42 @@ Move_PURE_WATER:
 	end
 
 Move_ROCKY_TERRAIN:
-end @to do
+	loadspritegfx ANIM_TAG_ORBS @Recover Ball
+	loadspritegfx ANIM_TAG_GREEN_SPARKLE @Green Star
+	loadspritegfx ANIM_TAG_ROCKS @Black color
+	playsewithpan SE_M_HEAL_BELL, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+	waitforvisualfinish
+	delay 30
+	createvisualtask AnimTask_BlendMonInAndOut, 5, ANIM_ATTACKER, RGB(20, 10, 5), 12, 5, 1
+	delay 4
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+	playsewithpan SE_M_REVERSAL, SOUND_PAN_ATTACKER
+	createsprite gRockyTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 0
+	createsprite gRockyTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 42
+	createsprite gRockyTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 84
+	createsprite gRockyTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 126
+	createsprite gRockyTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 168
+	createsprite gRockyTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 210
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, ANIM_PAL_BG, 3, 0, 4, RGB(20, 10, 5)
+	delay 52
+	setarg 7, 0xFFFF
+	playsewithpan SE_M_ATTRACT, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+	createsprite gRockyTerrainStarTemplate, ANIM_TARGET, 2, 0
+	createsprite gRockyTerrainStarTemplate, ANIM_TARGET, 2, 32
+	createsprite gRockyTerrainStarTemplate, ANIM_TARGET, 2, 64
+	createsprite gRockyTerrainStarTemplate, ANIM_TARGET, 2, 96
+	createsprite gRockyTerrainStarTemplate, ANIM_TARGET, 2, 128
+	createsprite gRockyTerrainStarTemplate, ANIM_TARGET, 2, 160
+	createsprite gRockyTerrainStarTemplate, ANIM_TARGET, 2, 192
+	createsprite gRockyTerrainStarTemplate, ANIM_TARGET, 2, 224
+	loopsewithpan SE_M_SUPERSONIC, SOUND_PAN_TARGET, 0xa, 0x3
+	waitforvisualfinish
+	delay 4
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, ANIM_PAL_BG, 3, 4, 0, RGB(20, 10, 5)
+	waitforvisualfinish
+	end
 Move_DARK_TERRAIN:
 	loadspritegfx ANIM_TAG_ORBS @Recover Ball
 	loadspritegfx ANIM_TAG_GREEN_SPARKLE @Green Star
@@ -30662,33 +30697,33 @@ Move_DARK_TERRAIN:
 	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
 	waitforvisualfinish
 	delay 30
-	createvisualtask AnimTask_BlendMonInAndOut, 5, ANIM_ATTACKER, RGB(27, 0, 13), 12, 5, 1
+	createvisualtask AnimTask_BlendMonInAndOut, 5, ANIM_ATTACKER, RGB(5,6,7), 12, 5, 1
 	delay 4
 	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
 	playsewithpan SE_M_REVERSAL, SOUND_PAN_ATTACKER
-	createsprite gPsychicTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 0
-	createsprite gPsychicTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 42
-	createsprite gPsychicTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 84
-	createsprite gPsychicTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 126
-	createsprite gPsychicTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 168
-	createsprite gPsychicTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 210
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, ANIM_PAL_BG, 3, 0, 4, RGB(27, 0, 13)
+	createsprite gDarkTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 0
+	createsprite gDarkTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 42
+	createsprite gDarkTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 84
+	createsprite gDarkTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 126
+	createsprite gDarkTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 168
+	createsprite gDarkTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 210
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, ANIM_PAL_BG, 3, 0, 4, RGB(4,5,6)
 	delay 52
 	setarg 7, 0xFFFF
 	playsewithpan SE_M_ATTRACT, SOUND_PAN_ATTACKER
 	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
-	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 0
-	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 32
-	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 64
-	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 96
-	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 128
-	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 160
-	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 192
-	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 224
+	createsprite gDarkTerrainStarTemplate, ANIM_TARGET, 2, 0
+	createsprite gDarkTerrainStarTemplate, ANIM_TARGET, 2, 32
+	createsprite gDarkTerrainStarTemplate, ANIM_TARGET, 2, 64
+	createsprite gDarkTerrainStarTemplate, ANIM_TARGET, 2, 96
+	createsprite gDarkTerrainStarTemplate, ANIM_TARGET, 2, 128
+	createsprite gDarkTerrainStarTemplate, ANIM_TARGET, 2, 160
+	createsprite gDarkTerrainStarTemplate, ANIM_TARGET, 2, 192
+	createsprite gDarkTerrainStarTemplate, ANIM_TARGET, 2, 224
 	loopsewithpan SE_M_SUPERSONIC, SOUND_PAN_TARGET, 0xa, 0x3
 	waitforvisualfinish
 	delay 4
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, ANIM_PAL_BG, 3, 4, 0, RGB(27, 0, 13)
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, ANIM_PAL_BG, 3, 4, 0, RGB(4,5,6)
 	waitforvisualfinish
 	end
 Move_VOLCANIC_FLOW:

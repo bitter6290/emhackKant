@@ -694,6 +694,7 @@
 #define MAP_MT_MOON_INSIDE1F   (3 | (42 << 8))
 #define MAP_MT_MOON_INSIDE_B1F (4 | (42 << 8))
 #define MAP_MT_MOON_INSIDE_B2F (5 | (42 << 8))
+#define MAP_GIANT_PIT1F        (6 | (42 << 8))
 
 // gMapGroup_NewOcean
 #define MAP_CELADON_SEA_W     (0 | (43 << 8))

@@ -1253,3 +1253,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CeruleanRangeW/scripts.inc"
 
 	.include "data/maps/ERangeNW/scripts.inc"
+
+	.include "data/maps/GiantPit1F/scripts.inc"

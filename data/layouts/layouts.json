@@ -5440,6 +5440,16 @@
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/ERangeNW/border.bin",
       "blockdata_filepath": "data/layouts/ERangeNW/map.bin"
+    },
+    {
+      "id": "LAYOUT_GIANT_PIT1F",
+      "name": "GiantPit1F_Layout",
+      "width": 65,
+      "height": 65,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GiantPit1F/border.bin",
+      "blockdata_filepath": "data/layouts/GiantPit1F/map.bin"
     }
   ]
 }

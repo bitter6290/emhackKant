@@ -4111,6 +4111,30 @@ const struct SpriteTemplate gSteelBeamSpikeShardTemplate =
 
 //custom
 
+
+//rocky terrain
+const struct SpriteTemplate gRockyTerrainOrbsTemplate =
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_ROCKS,
+    .oam = &gOamData_AffineNormal_ObjBlend_16x16,
+    .anims = gPowerAbsorptionOrbAnimTable,
+    .images = NULL,
+    .affineAnims = gPowerAbsorptionOrbAffineAnimTable,
+    .callback = AnimOrbitFast
+};
+
+const struct SpriteTemplate gRockyTerrainStarTemplate =
+{
+    .tileTag = ANIM_TAG_GREEN_SPARKLE,
+    .paletteTag = ANIM_TAG_ROCKS,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gMoonlightSparkleAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimOrbitScatter
+};
+
 //dark terrain
 const struct SpriteTemplate gDarkTerrainOrbsTemplate =
 {

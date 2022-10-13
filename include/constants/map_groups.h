@@ -592,16 +592,17 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
 
 // gMapGroup_NewCities
-#define MAP_NEW_MAP1        (0 | (34 << 8))
-#define MAP_VIRIDIAN_CITY   (1 | (34 << 8))
-#define MAP_PEWTER_CITY     (2 | (34 << 8))
-#define MAP_CELADON_CITY    (3 | (34 << 8))
-#define MAP_CERULEAN_CITY   (4 | (34 << 8))
-#define MAP_SAFFRON_CITY    (5 | (34 << 8))
-#define MAP_VERMILION_CITY  (6 | (34 << 8))
-#define MAP_LAVENDER_TOWN   (7 | (34 << 8))
-#define MAP_CHARTREUSE_CITY (8 | (34 << 8))
-#define MAP_FUCHSIA_CITY    (9 | (34 << 8))
+#define MAP_NEW_MAP1              (0 | (34 << 8))
+#define MAP_VIRIDIAN_CITY         (1 | (34 << 8))
+#define MAP_PEWTER_CITY           (2 | (34 << 8))
+#define MAP_CELADON_CITY          (3 | (34 << 8))
+#define MAP_CERULEAN_CITY         (4 | (34 << 8))
+#define MAP_SAFFRON_CITY          (5 | (34 << 8))
+#define MAP_VERMILION_CITY        (6 | (34 << 8))
+#define MAP_LAVENDER_TOWN         (7 | (34 << 8))
+#define MAP_CHARTREUSE_CITY       (8 | (34 << 8))
+#define MAP_FUCHSIA_CITY          (9 | (34 << 8))
+#define MAP_COBALT_CITY_OVERWORLD (10 | (34 << 8))
 
 // gMapGroup_NewRoutes
 #define MAP_ROUTE1  (0 | (35 << 8))
@@ -656,6 +657,7 @@
 #define MAP_BURGUNDY_COASTLINE (31 | (36 << 8))
 #define MAP_CERULEAN_RANGE_W   (32 | (36 << 8))
 #define MAP_ERANGE_NW          (33 | (36 << 8))
+#define MAP_ARGENT_WOODS       (34 | (36 << 8))
 
 // gMapGroup_NewIndoor
 #define MAP_PALLET_PLAYER_HOUSE_1F      (0 | (37 << 8))

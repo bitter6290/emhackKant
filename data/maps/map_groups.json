@@ -643,7 +643,8 @@
     "VermilionCity",
     "LavenderTown",
     "ChartreuseCity",
-    "FuchsiaCity"
+    "FuchsiaCity",
+    "CobaltCityOverworld"
   ],
   "gMapGroup_NewRoutes": [
     "Route1",
@@ -697,7 +698,8 @@
     "ChartreuseWoods",
     "BurgundyCoastline",
     "CeruleanRangeW",
-    "ERangeNW"
+    "ERangeNW",
+    "ArgentWoods"
   ],
   "gMapGroup_NewIndoor": [
     "PalletPlayerHouse_1F",

@@ -5450,6 +5450,26 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/GiantPit1F/border.bin",
       "blockdata_filepath": "data/layouts/GiantPit1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_COBALT_CITY_OVERWORLD",
+      "name": "CobaltCityOverworld_Layout",
+      "width": 32,
+      "height": 36,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/CobaltCityOverworld/border.bin",
+      "blockdata_filepath": "data/layouts/CobaltCityOverworld/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARGENT_WOODS",
+      "name": "ArgentWoods_Layout",
+      "width": 52,
+      "height": 76,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/ArgentWoods/border.bin",
+      "blockdata_filepath": "data/layouts/ArgentWoods/map.bin"
     }
   ]
 }

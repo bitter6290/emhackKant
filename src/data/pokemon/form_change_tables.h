@@ -43,20 +43,8 @@ FORM_BATTLE_END:
 #define DAY    1
 #define NIGHT  2
 
-#if P_NEW_POKEMON == TRUE
 
-static const struct FormChange sDialgaFormChangeTable[] = {
-    {FORM_ITEM_HOLD, SPECIES_DIALGA, ITEM_NONE},
-    {FORM_ITEM_HOLD, SPECIES_DIALGA_ORIGIN, ITEM_ADAMANT_ORB},
-    {FORM_CHANGE_END},
-};
-
-static const struct FormChange sPalkiaFormChangeTable[] = {
-    {FORM_ITEM_HOLD, SPECIES_PALKIA, ITEM_NONE},
-    {FORM_ITEM_HOLD, SPECIES_PALKIA_ORIGIN, ITEM_LUSTROUS_ORB},
-    {FORM_CHANGE_END},
-};
-
+#if P_GEN_4_POKEMON == TRUE
 static const struct FormChange sGiratinaFormChangeTable[] = {
     {FORM_ITEM_HOLD, SPECIES_GIRATINA, ITEM_NONE},
     {FORM_ITEM_HOLD, SPECIES_GIRATINA_ORIGIN, ITEM_GRISEOUS_ORB},
@@ -107,7 +95,9 @@ static const struct FormChange sArceusFormChangeTable[] = {
     {FORM_ITEM_HOLD, SPECIES_ARCEUS_FAIRY,    ITEM_FAIRIUM_Z,    ABILITY_MULTITYPE},
     {FORM_CHANGE_END},
 };
+#endif
 
+#if P_GEN_5_POKEMON == TRUE
 static const struct FormChange sTornadusFormChangeTable[] = {
     {FORM_ITEM_USE, SPECIES_TORNADUS_THERIAN, ITEM_REVEAL_GLASS},
     {FORM_ITEM_USE, SPECIES_TORNADUS, ITEM_REVEAL_GLASS},
@@ -140,13 +130,23 @@ static const struct FormChange sGenesectFormChangeTable[] = {
     {FORM_ITEM_HOLD, SPECIES_GENESECT_CHILL_DRIVE, ITEM_CHILL_DRIVE},
     {FORM_CHANGE_END},
 };
+#endif
+
+#if P_GEN_6_POKEMON == TRUE
+static const struct FormChange sXerneasFormChangeTable[] = {
+    {FORM_BATTLE_BEGIN, SPECIES_XERNEAS_ACTIVE},
+    {FORM_BATTLE_END,   SPECIES_XERNEAS,      },
+    {FORM_CHANGE_END},
+};
 
 static const struct FormChange sHoopaFormChangeTable[] = {
     {FORM_ITEM_USE, SPECIES_HOOPA_UNBOUND, ITEM_PRISON_BOTTLE, SPECIES_HOOPA},
     // {FORM_WITHDRAW, SPECIES_HOOPA},
     {FORM_CHANGE_END},
 };
+#endif
 
+#if P_GEN_7_POKEMON == TRUE
 static const struct FormChange sOricorioFormChangeTable[] = {
     {FORM_ITEM_USE, SPECIES_ORICORIO,         ITEM_RED_NECTAR},
     {FORM_ITEM_USE, SPECIES_ORICORIO_POM_POM, ITEM_YELLOW_NECTAR},
@@ -178,12 +178,7 @@ static const struct FormChange sSilvallyFormChangeTable[] = {
 };
 #endif
 
-static const struct FormChange sXerneasFormChangeTable[] = {
-    {FORM_BATTLE_BEGIN, SPECIES_XERNEAS_ACTIVE},
-    {FORM_BATTLE_END,   SPECIES_XERNEAS,      },
-    {FORM_CHANGE_END},
-};
-
+#if P_GEN_8_POKEMON == TRUE
 static const struct FormChange sZacianFormChangeTable[] = {
     {FORM_BATTLE_BEGIN, SPECIES_ZACIAN_CROWNED_SWORD, ITEM_RUSTED_SWORD, MOVE_IRON_HEAD,      MOVE_BEHEMOTH_BLADE},
     {FORM_BATTLE_END,   SPECIES_ZACIAN,               ITEM_RUSTED_SWORD, MOVE_BEHEMOTH_BLADE, MOVE_IRON_HEAD},
@@ -201,6 +196,20 @@ static const struct FormChange sEnamorusFormChangeTable[] = {
     {FORM_ITEM_USE, SPECIES_ENAMORUS_THERIAN, ITEM_REVEAL_GLASS},
     {FORM_CHANGE_END},
 };
+
+static const struct FormChange sDialgaFormChangeTable[] = {
+    {FORM_ITEM_HOLD, SPECIES_DIALGA, ITEM_NONE},
+    {FORM_ITEM_HOLD, SPECIES_DIALGA_ORIGIN, ITEM_ADAMANT_ORB},
+    {FORM_CHANGE_END},
+};
+
+static const struct FormChange sPalkiaFormChangeTable[] = {
+    {FORM_ITEM_HOLD, SPECIES_PALKIA, ITEM_NONE},
+    {FORM_ITEM_HOLD, SPECIES_PALKIA_ORIGIN, ITEM_LUSTROUS_ORB},
+    {FORM_CHANGE_END},
+};
+
+#endif
 
 #undef WHEN_LEARNED
 #undef WHEN_FORGOTTEN

@@ -436,6 +436,16 @@ Careful Nature
 - Thunder Wave  
 - Spirit Break  
 
+Krickallous @ Terrain Extender  
+Ability: Shade Surge
+Level: 52
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Hypnosis  
+- U-turn  
+- Hammer Arm  
+- Sticky Web  
+
 Houndoom @ Life Orb  
 Ability: Unnerve
 Level: 54
@@ -456,16 +466,6 @@ Jolly Nature
 - Ice Shard  
 - Knock Off  
 - Poison Jab  
-
-Krickallous @ Terrain Extender  
-Ability: Shade Surge
-Level: 52
-EVs: 252 HP / 252 Atk / 4 SpD  
-Adamant Nature  
-- Hypnosis  
-- U-turn  
-- Hammer Arm  
-- Sticky Web  
 
 Gyarados @ Gyaradosite  
 Ability: Intimidate
@@ -533,7 +533,7 @@ Jolly Nature
 - Protect  
 
 Sneasel @ Choice Band  
-Ability: Pickpocket
+Ability: Inner Focus
 Level: 40
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
@@ -1554,14 +1554,14 @@ Brave Nature
 - Diamond Storm  
 - Trick  
 
-Claydol @ Wiki Berry  
-Ability: Levitate  
+Poltendula @ Wiki Berry  
+Ability: Stasis  
 Level: 52  
 EVs: 252 HP / 4 Def / 252 SpD  
 Sassy Nature  
 IVs: 0 Atk  
-- Ice Beam  
-- Earth Power  
+- Shadow Ball 
+- Will-O-Wisp  
 - Trick Room  
 - Protect  
 

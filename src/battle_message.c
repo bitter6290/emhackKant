@@ -759,6 +759,9 @@ static const u8 sText_HeatingUpBeak[] = _("{B_ATK_NAME_WITH_PREFIX} started\nhea
 static const u8 sText_CourtChange[] = _("{B_ATK_NAME_WITH_PREFIX} swapped the battle\neffects affecting each side!");
 //custom
 static const u8 sText_AstralLockActivates[] = _("The effects of terrain\ndisappeared.");
+static const u8 sText_StasisActivates[] = _("All field effects are extended\nfor 1 turn!");
+static const u8 sText_AccelerateActivates[] = _("All field effects are shortened\nby 1 turn!");
+//affection
 static const u8 sText_AttackerExpelledThePoison[] = _("{B_ATK_NAME_WITH_PREFIX} managed to\nexpel the poison!");
 static const u8 sText_AttackerShookItselfAwake[] = _("{B_ATK_NAME_WITH_PREFIX} shook itself awake!");
 static const u8 sText_AttackerBrokeThroughParalysis[] = _("{B_ATK_NAME_WITH_PREFIX} gathered all its energy\nto overcome its paralysis!");
@@ -1392,6 +1395,8 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_PKMNTOOKTARGETHIGH - BATTLESTRINGS_TABLE_START] = sText_PkmnTookTargetHigh,
     [STRINGID_TARGETTOOHEAVY - BATTLESTRINGS_TABLE_START] = sText_TargetTooHeavy,
     [STRINGID_TERRAINLOCK - BATTLESTRINGS_TABLE_START] = sText_AstralLockActivates,
+    [STRINGID_STASISACTIVATES - BATTLESTRINGS_TABLE_START] = sText_StasisActivates,
+    [STRINGID_ACCELERATEACTIVATES - BATTLESTRINGS_TABLE_START] = sText_AccelerateActivates,
 };
 
 const u16 gZEffectStringIds[] =

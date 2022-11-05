@@ -662,7 +662,8 @@
     "Route13",
     "Route14",
     "Route15",
-    "Route16"
+    "Route16",
+    "Route22"
   ],
   "gMapGroup_NewOuter": [
     "ViridianPlainE",
@@ -699,7 +700,8 @@
     "BurgundyCoastline",
     "CeruleanRangeW",
     "ERangeNW",
-    "ArgentWoods"
+    "ArgentWoods",
+    "KanjohCoastE"
   ],
   "gMapGroup_NewIndoor": [
     "PalletPlayerHouse_1F",
@@ -724,7 +726,8 @@
     "ViridianHouseC2",
     "ViridianLawOffice",
     "ViridianApartments",
-    "ViridianApartments1FNW"
+    "ViridianApartments1FNW",
+    "ViridianApartments1FNE"
   ],
   "gMapGroup_NewGym": [
     "ViridianGym_1F",

@@ -1309,6 +1309,7 @@ const u8 *const gMonIconTable[] =
      [SPECIES_GURDURR_KANTO] = gMonIcon_GurdurrKanto,
      [SPECIES_CONKELDURR_KANTO] = gMonIcon_ConkeldurrKanto,
      [SPECIES_TORKOAL_KANTO] = gMonIcon_TorkoalKanto,
+     [SPECIES_SANDYGAST_KANTO] = gMonIcon_QuestionMark, //gMonIcon_SandygastKanto,
     
      [SPECIES_KRICKETON] = gMonIcon_Kricketon,
      [SPECIES_KRICKALLOUS] = gMonIcon_Krickallous,
@@ -1318,7 +1319,27 @@ const u8 *const gMonIconTable[] =
      [SPECIES_TERRANTIC] = gMonIcon_Terrantic,
      [SPECIES_AUREATIC] = gMonIcon_Aureatic,
      [SPECIES_ALOOBAT] = gMonIcon_Aloobat,
+     [SPECIES_POLTENDULA] = gMonIcon_QuestionMark, //gMonIcon_Poltendula
+     
      [SPECIES_ARBOK_MEGA] = gMonIcon_ArbokMega,
+     [SPECIES_PORYGON_NORMAL] = gMonIcon_QuestionMark, //gMonIcon_PorygonXNormal
+     [SPECIES_PORYGON_FIRE] = gMonIcon_QuestionMark,
+     [SPECIES_PORYGON_WATER] = gMonIcon_QuestionMark,
+     [SPECIES_PORYGON_GRASS] = gMonIcon_QuestionMark,
+     [SPECIES_PORYGON_ELECTRIC] = gMonIcon_QuestionMark,
+     [SPECIES_PORYGON_ICE] = gMonIcon_QuestionMark,
+     [SPECIES_PORYGON_FIGHTING] = gMonIcon_QuestionMark,
+     [SPECIES_PORYGON_POISON] = gMonIcon_QuestionMark,
+     [SPECIES_PORYGON_GROUND] = gMonIcon_QuestionMark,
+     [SPECIES_PORYGON_BUG] = gMonIcon_QuestionMark,
+     [SPECIES_PORYGON_FLYING] = gMonIcon_QuestionMark,
+     [SPECIES_PORYGON_ROCK] = gMonIcon_QuestionMark,
+     [SPECIES_PORYGON_PSYCHIC] = gMonIcon_QuestionMark,
+     [SPECIES_PORYGON_GHOST] = gMonIcon_QuestionMark,
+     [SPECIES_PORYGON_DRAGON] = gMonIcon_QuestionMark,
+     [SPECIES_PORYGON_DARK] = gMonIcon_QuestionMark,
+     [SPECIES_PORYGON_STEEL] = gMonIcon_QuestionMark,
+     [SPECIES_PORYGON_FAIRY] = gMonIcon_QuestionMark,
 #endif
     [SPECIES_EGG] = gMonIcon_Egg,
 };

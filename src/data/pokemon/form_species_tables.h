@@ -1162,4 +1162,54 @@ static const u16 sLuxrayFormSpeciesIdTable[] = {
     SPECIES_LUXRAY_KANTO,
     FORM_SPECIES_END,
 };
+static const u16 sTorkoalFormSpeciesIdTable[] = {
+	SPECIES_TORKOAL,
+	SPECIES_TORKOAL_KANTO,
+	FORM_SPECIES_END,
+};
+static const u16 sTimburrFormSpeciesIdTable[] = {
+	SPECIES_TIMBURR,
+	SPECIES_TIMBURR_KANTO,
+	FORM_SPECIES_END,
+};
+static const u16 sGurdurrFormSpeciesIdTable[] = {
+	SPECIES_GURDURR,
+	SPECIES_GURDURR_KANTO,
+	FORM_SPECIES_END,
+};
+static const u16 sConkeldurrFormSpeciesIdTable[] = {
+	SPECIES_CONKELDURR,
+	SPECIES_CONKELDURR_KANTO,
+	FORM_SPECIES_END,
+};
+static const u16 sSandileFormSpeciesIdTable[] = {
+	SPECIES_SANDILE,
+	SPECIES_SANDILE_KANTO,
+	FORM_SPECIES_END,
+};
+static const u16 sKrokorokFormSpeciesIdTable[] = {
+	SPECIES_KROKOROK,
+	SPECIES_KROKOROK_KANTO,
+	FORM_SPECIES_END,
+};
+static const u16 sLitwickFormSpeciesIdTable[] = {
+	SPECIES_LITWICK,
+	SPECIES_LITWICK_KANTO,
+	FORM_SPECIES_END,
+};
+static const u16 sLampentFormSpeciesIdTable[] = {
+	SPECIES_LAMPENT,
+	SPECIES_LAMPENT_KANTO,
+	FORM_SPECIES_END,
+};
+static const u16 sChandelureFormSpeciesIdTable[] = {
+	SPECIES_CHANDELURE,
+	SPECIES_CHANDELURE_KANTO,
+	FORM_SPECIES_END,
+};
+static const u16 sSandygastFormSpeciesIdTable[] = {
+	SPECIES_SANDYGAST,
+	SPECIES_SANDYGAST_KANTO,
+	FORM_SPECIES_END,
+};
 #endif

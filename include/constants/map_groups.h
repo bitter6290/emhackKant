@@ -621,6 +621,7 @@
 #define MAP_ROUTE14 (13 | (35 << 8))
 #define MAP_ROUTE15 (14 | (35 << 8))
 #define MAP_ROUTE16 (15 | (35 << 8))
+#define MAP_ROUTE22 (16 | (35 << 8))
 
 // gMapGroup_NewOuter
 #define MAP_VIRIDIAN_PLAIN_E   (0 | (36 << 8))
@@ -658,6 +659,7 @@
 #define MAP_CERULEAN_RANGE_W   (32 | (36 << 8))
 #define MAP_ERANGE_NW          (33 | (36 << 8))
 #define MAP_ARGENT_WOODS       (34 | (36 << 8))
+#define MAP_KANJOH_COAST_E     (35 | (36 << 8))
 
 // gMapGroup_NewIndoor
 #define MAP_PALLET_PLAYER_HOUSE_1F      (0 | (37 << 8))
@@ -683,6 +685,7 @@
 #define MAP_VIRIDIAN_LAW_OFFICE     (1 | (40 << 8))
 #define MAP_VIRIDIAN_APARTMENTS     (2 | (40 << 8))
 #define MAP_VIRIDIAN_APARTMENTS1FNW (3 | (40 << 8))
+#define MAP_VIRIDIAN_APARTMENTS1FNE (4 | (40 << 8))
 
 // gMapGroup_NewGym
 #define MAP_VIRIDIAN_GYM_1F  (0 | (41 << 8))

@@ -1357,7 +1357,27 @@ const struct CompressedSpritePalette gMonPaletteTable[] =
      SPECIES_PAL(TERRANTIC, gMonPalette_Terrantic),
      SPECIES_PAL(AUREATIC, gMonPalette_Aureatic),
      SPECIES_PAL(ALOOBAT, gMonPalette_Aloobat),
+     SPECIES_PAL(SANDYGAST_KANTO, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(POLTENDULA, gMonPalette_CircledQuestionMark),
      SPECIES_PAL(ARBOK_MEGA, gMonPalette_ArbokMega),
+     SPECIES_PAL(PORYGON_NORMAL, gMonPalette_CircledQuestionMark), //gMonIcon_PorygonXNormal
+     SPECIES_PAL(PORYGON_FIRE, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(PORYGON_WATER, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(PORYGON_GRASS, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(PORYGON_ELECTRIC, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(PORYGON_ICE, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(PORYGON_FIGHTING, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(PORYGON_POISON, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(PORYGON_GROUND, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(PORYGON_BUG, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(PORYGON_FLYING, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(PORYGON_ROCK, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(PORYGON_PSYCHIC, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(PORYGON_GHOST, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(PORYGON_DRAGON, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(PORYGON_DARK, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(PORYGON_STEEL, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(PORYGON_FAIRY, gMonPalette_CircledQuestionMark),
 
 
 #endif

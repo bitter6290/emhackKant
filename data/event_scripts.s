@@ -1259,3 +1259,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CobaltCityOverworld/scripts.inc"
 
 	.include "data/maps/ArgentWoods/scripts.inc"
+
+	.include "data/maps/ViridianApartments1FNE/scripts.inc"
+
+	.include "data/maps/Route22/scripts.inc"
+
+	.include "data/maps/KanjohCoastE/scripts.inc"

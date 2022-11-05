@@ -46,6 +46,8 @@ def evstoKey(evIn,natureIn):
 
 
 def getAbilityNumber(speci,abi):
+#    print(speci)
+#    print(abi)
     for i in range(len(abiFile)):
         if abiFile[i].replace('\t','').replace(' ','') == "[SPECIES_"+speci+"]=\n":
             specOffset = i
@@ -214,4 +216,5 @@ def convertSets(path):
 
 for sdIn in os.listdir("showdown"):
     if sdIn.endswith('.sd'):
+        print(sdIn)
         convertSets("showdown/"+sdIn)

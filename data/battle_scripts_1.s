@@ -415,6 +415,7 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectSteelBeam               @ EFFECT_STEEL_BEAM
 	.4byte BattleScript_EffectExtremeEvoboost         @ EFFECT_EXTREME_EVOBOOST
 	.4byte BattleScript_EffectTerrainHit              @ EFFECT_DAMAGE_SET_TERRAIN
+		@ Custom
 	.4byte BattleScript_EffectRockyTerrain			  @ EFFECT_ROCKY_TERRAIN
 	.4byte BattleScript_EffectDarkTerrain			  @ EFFECT_DARK_TERRAIN
 	.4byte BattleScript_EffectResistance			  @ EFFECT_RESISTANCE
@@ -425,6 +426,8 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectBurnHit				  @ EFFECT_INFERNAL_PARADE
 	.4byte BattleScript_EffectFreezeHit				  @ EFFECT_BITTER_MALICE
 	.4byte BattleScript_EffectChloroblast			  @ EFFECT_CHLOROBLAST
+	.4byte BattleScript_EffectAttackerSpdDown2Hit	  @ EFFECT_ATTACKER_SPD_DOWN_2_HIT
+	.4byte BattleScript_EffectSpecialAttackDownHit    @ EFFECT_SKITTER_SMACK
 
 
 BattleScript_AffectionBasedEndurance::
@@ -9603,6 +9606,12 @@ BattleScript_AnnounceAstralLock::
 	jumpifabilitypresent ABILITY_MIMICRY, BattleScript_ApplyMimicry
 	end3
 
+BattleScript_StasisActivates::
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_STASISACTIVATES
+	waitstate
+	end3
+
 BattleScript_QuickClawActivation::
 	printstring STRINGID_EMPTYSTRING3
 	waitmessage 1
@@ -9960,19 +9969,19 @@ BattleScript_EffectVictoryDance::
 	attackstring
 	ppreduce
 	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_ATK, MAX_STAT_STAGE, BattleScript_VictoryDanceDoMoveAnim
-	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_DEF, MAX_STAT_STAGE, BattleScript_VictoryDanceDoMoveAnim
+	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_DEF, MAX_STAT_STAGE, BattleScript_VictoryDanceTryDef
 	jumpifstat BS_ATTACKER, CMP_EQUAL, STAT_SPEED, MAX_STAT_STAGE, BattleScript_CantRaiseMultipleStats
 BattleScript_VictoryDanceDoMoveAnim::
 	attackanimation
 	waitanimation
 	setbyte sSTAT_ANIM_PLAYED, FALSE
-	playstatchangeanimation BS_ATTACKER, BIT_SPATK | BIT_SPDEF | BIT_SPEED, 0
+	playstatchangeanimation BS_ATTACKER, BIT_ATK | BIT_DEF | BIT_SPEED, 0
 	setstatchanger STAT_ATK, 1, FALSE
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_VictoryDanceTrySpDef
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_VictoryDanceTrySpDef
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_VictoryDanceTryDef
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_VictoryDanceTryDef
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
-BattleScript_VictoryDanceTrySpDef::
+BattleScript_VictoryDanceTryDef::
 	setstatchanger STAT_DEF, 1, FALSE
 	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_VictoryDanceTrySpeed
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_VictoryDanceTrySpeed
@@ -10019,6 +10028,9 @@ BattleScript_EffectChloroblast::
 BattleScript_ChloroblastEnd::	
 	goto BattleScript_MoveEnd
 	
+BattleScript_EffectAttackerSpdDown2Hit::
+	setmoveeffect MOVE_EFFECT_SP_DEF_MINUS_2 | MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN
+	goto BattleScript_EffectHit
 
 BattleScript_SymbiosisActivates::
 	call BattleScript_AbilityPopUp

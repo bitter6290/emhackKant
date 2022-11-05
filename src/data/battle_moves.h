@@ -12901,8 +12901,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
 
     [MOVE_SKITTER_SMACK] =
     {
-        .effect = EFFECT_SPECIAL_ATTACK_DOWN_HIT,
-        .power = 70,
+        .effect = EFFECT_SKITTER_SMACK,
+        .power = 60,
         .type = TYPE_BUG,
         .accuracy = 90,
         .pp = 10,
@@ -13734,6 +13734,36 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .zMoveEffect = Z_EFFECT_SPATK_UP_1,
         .flags = 0,
         .split = SPLIT_STATUS,
+    },
+    [MOVE_STRANGE_SYMPHONY] =
+    {
+        .effect = EFFECT_SPECIAL_ATTACK_DOWN_HIT,
+        .power = 60,
+        .type = TYPE_BUG,
+        .accuracy = 95,
+        .pp = 15,
+        .secondaryEffectChance = 100,
+        .target = MOVE_TARGET_BOTH,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_SHEER_FORCE_BOOST | FLAG_SOUND,
+        .split = SPLIT_SPECIAL,
+        .zMovePower = 110,
+        .zMoveEffect = Z_EFFECT_NONE,
+    },
+    [MOVE_ECTOBLAST] =
+    {
+    	.effect = EFFECT_ATTACKER_SPD_DOWN_2_HIT,
+    	.power = 100,
+    	.type = TYPE_GHOST,
+    	.accuracy = 95,
+    	.pp = 5,
+    	.secondaryEffectChance = 100,
+    	.target = MOVE_TARGET_SELECTED,
+    	.priority = 0,
+    	.flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_BALLISTIC,
+    	.split = SPLIT_SPECIAL,
+    	.zMovePower = 165,
+    	.zMoveEffect = Z_EFFECT_NONE,
     },
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =

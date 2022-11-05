@@ -48,6 +48,11 @@
       "direction": "right",
       "offset": -36,
       "map": "MAP_CERULEAN_RANGE_W"
+    },
+    {
+      "direction": "up",
+      "offset": 52,
+      "map": "MAP_COBALT_CITY_OVERWORLD"
     }
   ],
   "object_events": [

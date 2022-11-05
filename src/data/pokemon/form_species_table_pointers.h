@@ -596,5 +596,15 @@ const u16 *const gFormSpeciesIdTables[NUM_SPECIES] =
     [SPECIES_SHINX] = sShinxFormSpeciesIdTable,
     [SPECIES_LUXIO] = sLuxioFormSpeciesIdTable,
     [SPECIES_LUXRAY] = sLuxrayFormSpeciesIdTable,
+    [SPECIES_TORKOAL] = sTorkoalFormSpeciesIdTable,
+    [SPECIES_TIMBURR] = sTimburrFormSpeciesIdTable,
+    [SPECIES_GURDURR] = sGurdurrFormSpeciesIdTable,
+    [SPECIES_CONKELDURR] = sConkeldurrFormSpeciesIdTable,
+    [SPECIES_SANDILE] = sSandileFormSpeciesIdTable,
+    [SPECIES_KROKOROK] = sKrokorokFormSpeciesIdTable,
+    [SPECIES_LITWICK] = sLitwickFormSpeciesIdTable,
+    [SPECIES_LAMPENT] = sLampentFormSpeciesIdTable,
+    [SPECIES_CHANDELURE] = sChandelureFormSpeciesIdTable,
+    [SPECIES_SANDYGAST] = sSandygastFormSpeciesIdTable,
 #endif
 };

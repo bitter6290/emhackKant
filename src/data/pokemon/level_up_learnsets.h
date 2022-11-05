@@ -19940,4 +19940,14 @@ static const struct LevelUpMove sAloobatLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 1, MOVE_HEART_STAMP),
 	LEVEL_UP_END
 };
+static const struct LevelUpMove sSandygastKantoLevelUpLearnset [] = {
+	LEVEL_UP_MOVE( 1, MOVE_SAND_TOMB),
+	LEVEL_UP_END	
+};
+static const struct LevelUpMove sPoltendulaLevelUpLearnset [] = {
+	LEVEL_UP_MOVE( 1, MOVE_GEAR_GRIND),
+	LEVEL_UP_MOVE( 40, MOVE_SHADOW_BALL),
+	LEVEL_UP_MOVE( 70, MOVE_TRICK_ROOM),
+	LEVEL_UP_END
+};
 #endif

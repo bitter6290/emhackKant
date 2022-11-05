@@ -1350,6 +1350,7 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
      [SPECIES_GURDURR_KANTO] = sGurdurrKantoLevelUpLearnset,
      [SPECIES_CONKELDURR_KANTO] = sConkeldurrKantoLevelUpLearnset,
      [SPECIES_TORKOAL_KANTO] = sTorkoalKantoLevelUpLearnset,
+     [SPECIES_SANDYGAST_KANTO] = sSandygastKantoLevelUpLearnset,
      
      [SPECIES_KRICKETON] = sKricketonLevelUpLearnset,
      [SPECIES_KRICKALLOUS] = sKrickallousLevelUpLearnset,
@@ -1359,5 +1360,6 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
      [SPECIES_TERRANTIC] = sTerranticLevelUpLearnset,
      [SPECIES_AUREATIC] = sAureaticLevelUpLearnset,
      [SPECIES_ALOOBAT] = sAloobatLevelUpLearnset,
+     [SPECIES_POLTENDULA] = sPoltendulaLevelUpLearnset,
 #endif
 };

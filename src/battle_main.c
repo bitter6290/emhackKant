@@ -4624,10 +4624,10 @@ s8 GetMovePriority(u32 battlerId, u16 move)
         gProtectStructs[battlerId].pranksterElevated = 1;
         priority++;
     }
-    else if (gBattleMoves[move].effect == EFFECT_GRASSY_GLIDE && gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN && IsBattlerGrounded(battlerId))
+    else if ((gBattleMoves[move].effect == EFFECT_GRASSY_GLIDE && gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN && IsBattlerGrounded(battlerId)) || (gBattleMoves[move].effect == EFFECT_SKITTER_SMACK && gFieldStatuses & STATUS_FIELD_DARK_TERRAIN && IsBattlerGrounded(battlerId)))
     {
         priority++;
-    }
+	}
     else if (ability == ABILITY_TRIAGE)
     {
         switch (gBattleMoves[move].effect)

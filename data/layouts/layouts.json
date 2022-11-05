@@ -4485,7 +4485,7 @@
       "id": "LAYOUT_VIRIDIAN_HILL",
       "name": "ViridianHill_Layout",
       "width": 12,
-      "height": 8,
+      "height": 10,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fallarbor",
       "border_filepath": "data/layouts/ViridianHill/border.bin",
@@ -5470,6 +5470,36 @@
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/ArgentWoods/border.bin",
       "blockdata_filepath": "data/layouts/ArgentWoods/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_APARTMENTS1FNE",
+      "name": "ViridianApartments1FNE_Layout",
+      "width": 7,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/ViridianApartments1FNE/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianApartments1FNE/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE22",
+      "name": "Route22_Layout",
+      "width": 104,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route22/border.bin",
+      "blockdata_filepath": "data/layouts/Route22/map.bin"
+    },
+    {
+      "id": "LAYOUT_KANJOH_COAST_E",
+      "name": "KanjohCoastE_Layout",
+      "width": 92,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/KanjohCoastE/border.bin",
+      "blockdata_filepath": "data/layouts/KanjohCoastE/map.bin"
     }
   ]
 }

@@ -33,6 +33,11 @@
       "direction": "right",
       "offset": 0,
       "map": "MAP_ROUTE1"
+    },
+    {
+      "direction": "left",
+      "offset": -10,
+      "map": "MAP_KANJOH_COAST_E"
     }
   ],
   "object_events": [

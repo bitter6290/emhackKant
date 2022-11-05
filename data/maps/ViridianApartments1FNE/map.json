@@ -1,0 +1,42 @@
+{
+  "id": "MAP_VIRIDIAN_APARTMENTS1FNE",
+  "name": "ViridianApartments1FNE",
+  "layout": "LAYOUT_VIRIDIAN_APARTMENTS1FNE",
+  "music": "MUS_RG_PEWTER",
+  "region_map_section": "MAPSEC_VIRIDIAN_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "use_varied_weather": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_VIRIDIAN_APARTMENTS",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_VIRIDIAN_APARTMENTS",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

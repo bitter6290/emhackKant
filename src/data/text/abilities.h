@@ -536,6 +536,8 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_SHADE_SURGE] = _("Shade Surge"),
     [ABILITY_ASTRAL_LOCK] = _("Astral Lock"),
     [ABILITY_FIRE_CORE] = _("Fire Core"),
+    [ABILITY_STASIS] = _("Stasis"),
+    [ABILITY_ACCELERATE] = _("Accelerate"),
 };
 #else   // 12 characters
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =

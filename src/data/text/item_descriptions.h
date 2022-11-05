@@ -3802,3 +3802,9 @@ static const u8 sRopeDesc[] = _(
     "A rope for climbing\n"
     "down steep slopes\n"
     "and pits.");
+    
+static const u8 sCinnabarDriveDesc[] = _(
+	"An odd drive\n"
+	"that can be held by\n"
+	"Porygon-Z.");
+

@@ -1359,7 +1359,26 @@ const struct CompressedSpriteSheet gMonFrontPicTable[] =
 	 SPECIES_SPRITE(TORKOAL_KANTO, gMonFrontPic_TorkoalKanto),
      
 	 SPECIES_SPRITE(ARBOK_MEGA, gMonFrontPic_ArbokMega),
-	 SPECIES_SPRITE(PORYGON_X, gMonFrontPic_PorygonZ), //todo
+	 SPECIES_SPRITE(SANDYGAST_KANTO, gMonFrontPic_CircledQuestionMark),
+	 SPECIES_SPRITE(POLTENDULA, gMonFrontPic_CircledQuestionMark),
+     SPECIES_SPRITE(PORYGON_NORMAL, gMonFrontPic_CircledQuestionMark), //gMonIcon_PorygonXNormal
+     SPECIES_SPRITE(PORYGON_FIRE, gMonFrontPic_CircledQuestionMark),
+     SPECIES_SPRITE(PORYGON_WATER, gMonFrontPic_CircledQuestionMark),
+     SPECIES_SPRITE(PORYGON_GRASS, gMonFrontPic_CircledQuestionMark),
+     SPECIES_SPRITE(PORYGON_ELECTRIC, gMonFrontPic_CircledQuestionMark),
+     SPECIES_SPRITE(PORYGON_ICE, gMonFrontPic_CircledQuestionMark),
+     SPECIES_SPRITE(PORYGON_FIGHTING, gMonFrontPic_CircledQuestionMark),
+     SPECIES_SPRITE(PORYGON_POISON, gMonFrontPic_CircledQuestionMark),
+     SPECIES_SPRITE(PORYGON_GROUND, gMonFrontPic_CircledQuestionMark),
+     SPECIES_SPRITE(PORYGON_BUG, gMonFrontPic_CircledQuestionMark),
+     SPECIES_SPRITE(PORYGON_FLYING, gMonFrontPic_CircledQuestionMark),
+     SPECIES_SPRITE(PORYGON_ROCK, gMonFrontPic_CircledQuestionMark),
+     SPECIES_SPRITE(PORYGON_PSYCHIC, gMonFrontPic_CircledQuestionMark),
+     SPECIES_SPRITE(PORYGON_GHOST, gMonFrontPic_CircledQuestionMark),
+     SPECIES_SPRITE(PORYGON_DRAGON, gMonFrontPic_CircledQuestionMark),
+     SPECIES_SPRITE(PORYGON_DARK, gMonFrontPic_CircledQuestionMark),
+     SPECIES_SPRITE(PORYGON_STEEL, gMonFrontPic_CircledQuestionMark),
+     SPECIES_SPRITE(PORYGON_FAIRY, gMonFrontPic_CircledQuestionMark),
 	
 #endif
     SPECIES_SPRITE(EGG, gMonFrontPic_Egg),

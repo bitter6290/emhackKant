@@ -306,7 +306,7 @@
 #define EVO_DARK_SCROLL                   37     // interacts with Scroll of Darkness
 #define EVO_WATER_SCROLL                  38     // interacts with Scroll of Waters
 
-#define EVOS_PER_MON 10
+#define EVOS_PER_MON 18
 
 // Evolution 'modes,' for GetEvolutionTargetSpecies
 #define EVO_MODE_NORMAL            0

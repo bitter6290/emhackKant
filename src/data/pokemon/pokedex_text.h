@@ -5384,7 +5384,7 @@ const u8 gFauvanticPokedexText[] = _(
 	"This Pokémon is the guardian spirit\n"
 	"of Kanto's forest creatures. It\n"
 	"manipulates unwary passers-by, who\n"
-	"become prey for it and its flock.");
+	"become prey for its flock.");
 	
 const u8 gFloresticPokedexText[] = _(
 	"The guardian spirit of the plants and\n"

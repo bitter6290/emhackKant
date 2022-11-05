@@ -4200,6 +4200,28 @@ static bool32 TryChangeBattleTerrain(u32 battler, u32 statusFlag, u8 *timer)
     return FALSE;
 }
 
+static bool32 TryChangeFieldTimer(bool8 isLengthening, u8 *timer)
+{
+	if(isLengthening){
+		if(*timer == 0)
+			return FALSE;
+		else
+		{
+			*timer++;
+			return TRUE;
+		}
+	}
+	else{
+		if(*timer < 2)
+			return FALSE;
+		else
+		{
+			*timer--;
+			return TRUE;
+		}
+	}
+}
+
 static bool32 ShouldChangeFormHpBased(u32 battler)
 {
     // Ability,     form >, form <=, hp divided
@@ -4840,6 +4862,20 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
             {
                 TryToApplyMimicry(battler, FALSE);
                 effect++;
+            }
+            break;
+        case ABILITY_STASIS:
+            if (!gSpecialStatuses[battler].switchInAbilityDone)
+            {
+            	if(TryChangeFieldTimer(TRUE, &gFieldTimers.terrainTimer) || TryChangeFieldTimer(TRUE, &gFieldTimers.waterSportTimer)
+            	 || TryChangeFieldTimer(TRUE, &gFieldTimers.mudSportTimer) || TryChangeFieldTimer(TRUE, &gFieldTimers.wonderRoomTimer)
+            	 || TryChangeFieldTimer(TRUE, &gFieldTimers.magicRoomTimer) || TryChangeFieldTimer(TRUE, &gFieldTimers.trickRoomTimer)
+            	 || TryChangeFieldTimer(TRUE, &gFieldTimers.gravityTimer))
+            	{
+            		BattleScriptPushCursorAndCallback(BattleScript_StasisActivates);
+            		effect++;
+            	}
+				gSpecialStatuses[battler].switchInAbilityDone = TRUE;
             }
             break;
 #if B_WEATHER_FORMS < GEN_5

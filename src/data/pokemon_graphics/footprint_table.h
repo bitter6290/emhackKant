@@ -918,6 +918,7 @@ const u8 *const gMonFootprintTable[] =
     [SPECIES_AUREATIC] = gMonFootprint_Aureatic,
     [SPECIES_ALOOBAT] = gMonFootprint_Aloobat,
     [SPECIES_ARBOK_MEGA] = gMonFootprint_ArbokMega,
+    [SPECIES_POLTENDULA] = gMonFootprint_Cofagrigus,
 #endif
     [SPECIES_EGG] = gMonFootprint_Bulbasaur,
 };

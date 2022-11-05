@@ -9614,11 +9614,22 @@ static const union AnimCmd sAnim_ALOOBAT_1[] =
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
+static const union AnimCmd sAnim_SANDYGAST_KANTO_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_POLTENDULA_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
 static const union AnimCmd sAnim_ARBOK_MEGA_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
+
 
 
 static const union AnimCmd *const sAnims_NONE[] =
@@ -16307,6 +16318,14 @@ static const union AnimCmd *const sAnims_ALOOBAT[] ={
     sAnim_GeneralFrame0,
     sAnim_NONE_1,
 };
+static const union AnimCmd *const sAnims_SANDYGAST_KANTO[] ={
+    sAnim_GeneralFrame0,
+    sAnim_NONE_1,
+};
+static const union AnimCmd *const sAnims_POLTENDULA[] ={
+    sAnim_GeneralFrame0,
+    sAnim_NONE_1,
+};
 static const union AnimCmd *const sAnims_ARBOK_MEGA[] ={
     sAnim_GeneralFrame0,
     sAnim_NONE_1,
@@ -17601,6 +17620,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(GURDURR_KANTO),
 	ANIM_CMD(CONKELDURR_KANTO),
 	ANIM_CMD(TORKOAL_KANTO),
+	ANIM_CMD(SANDYGAST_KANTO),
 	
 	ANIM_CMD(KRICKETON),
 	ANIM_CMD(KRICKALLOUS),
@@ -17610,6 +17630,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(TERRANTIC),
 	ANIM_CMD(AUREATIC),
 	ANIM_CMD(ALOOBAT),
+	ANIM_CMD(POLTENDULA),
 	ANIM_CMD(ARBOK_MEGA),
 	
 #endif

@@ -4207,7 +4207,7 @@ static bool32 TryChangeFieldTimer(bool8 isLengthening, u8 *timer)
 			return FALSE;
 		else
 		{
-			*timer++;
+			(*timer)++;
 			return TRUE;
 		}
 	}
@@ -4216,7 +4216,7 @@ static bool32 TryChangeFieldTimer(bool8 isLengthening, u8 *timer)
 			return FALSE;
 		else
 		{
-			*timer--;
+			(*timer)--;
 			return TRUE;
 		}
 	}
@@ -4873,6 +4873,20 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
             	 || TryChangeFieldTimer(TRUE, &gFieldTimers.gravityTimer))
             	{
             		BattleScriptPushCursorAndCallback(BattleScript_StasisActivates);
+            		effect++;
+            	}
+				gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+            }
+            break;
+        case ABILITY_ACCELERATE:
+            if (!gSpecialStatuses[battler].switchInAbilityDone)
+            {
+            	if(TryChangeFieldTimer(FALSE, &gFieldTimers.terrainTimer) || TryChangeFieldTimer(FALSE, &gFieldTimers.waterSportTimer)
+            	 || TryChangeFieldTimer(FALSE, &gFieldTimers.mudSportTimer) || TryChangeFieldTimer(FALSE, &gFieldTimers.wonderRoomTimer)
+            	 || TryChangeFieldTimer(FALSE, &gFieldTimers.magicRoomTimer) || TryChangeFieldTimer(FALSE, &gFieldTimers.trickRoomTimer)
+            	 || TryChangeFieldTimer(FALSE, &gFieldTimers.gravityTimer))
+            	{
+            		BattleScriptPushCursorAndCallback(BattleScript_AccelerateActivates);
             		effect++;
             	}
 				gSpecialStatuses[battler].switchInAbilityDone = TRUE;

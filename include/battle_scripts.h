@@ -372,6 +372,7 @@ extern const u8 BattleScript_AnnounceAirLockCloudNine[];
 extern const u8 BattleScript_AnnounceAstralLock[];
 extern const u8 BattleScript_BattlerAbilityStatRaiseOnSwitchIn[];
 extern const u8 BattleScript_StasisActivates[];
+extern const u8 BattleScript_AccelerateActivates[];
 extern const u8 BattleScript_CottonDownActivates[];
 extern const u8 BattleScript_BallFetch[];
 extern const u8 BattleScript_SandSpitActivates[];

@@ -23,12 +23,12 @@ faceplayer
 playse(SE_PIN)
 applymovement(2,Exclam)
 waitmovement(2)
-release
-msgbox(format("Ah! Who are you? You don't have the look of a hiker about you.\lThese roads are dangerous, you know. Take some of these and you'll be better prepared."))
+msgbox(format("Ah! Who are you? You don't look like a hiker to me.\lIf you didn't know, the roads ahead are pretty dangerous for new Trainers. Take some of these and you'll be better prepared."))
 giveitem(ITEM_REPEL,5)
 setvar(VAR_STORY_PROGRESS,17)
 }
 else{
+faceplayer
 msgbox(format("I've taken this route plenty of times before, but it's a real Morton's choice.\lYou're either lost in a cave or dealing with those blasted rocks!"))
 }
 release

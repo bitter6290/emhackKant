@@ -497,7 +497,7 @@ EVs: 252 HP / 4 SpD / 252 Atk
 Adamant Nature  
 - Darkest Lariat  
 - X-Scissor  
-- Perish Song  
+- Return  
 - Protect  
 
 Houndoom @ Choice Scarf  
@@ -618,7 +618,7 @@ IVs: 0 Atk
 - Will-O-Wisp  
 
 Purrloin @ Black Glasses  
-Ability: Limber
+Ability: Prankster
 Level: 17
 EVs: 252 HP / 4 Def / 252 SpD  
 Careful Nature  
@@ -637,7 +637,7 @@ EVs: 248 HP / 252 SpA / 8 SpD
 Modest Nature  
 - Flip Turn  
 - Hydro Pump  
-- Hidden Power [Flying]  
+- Whirlpool  
 - Perish Song  
 
 Blastoise-Mega @ Blastoisinite  

@@ -485,7 +485,7 @@ static const struct TrainerMonItemCustomMoves sParty_Valeria3[] = {
 	.ability = 2,
 	.spreadEv = SPREAD_BULKY_PHYSICAL_SWEEPER,
 	.spreadIv = SPREAD_31_IV,
-	.moves = {MOVE_DARKEST_LARIAT, MOVE_X_SCISSOR, MOVE_PERISH_SONG, MOVE_PROTECT},
+	.moves = {MOVE_DARKEST_LARIAT, MOVE_X_SCISSOR, MOVE_RETURN, MOVE_PROTECT},
 	},
 	{
 	.iv = 0,
@@ -606,7 +606,7 @@ static const struct TrainerMonItemCustomMoves sParty_Valeria1[] = {
 	.lvl = 17,
 	.species = SPECIES_PURRLOIN,
 	.heldItem = ITEM_BLACK_GLASSES,
-	.ability = 0,
+	.ability = 2,
 	.spreadEv = SPREAD_SPECIALLY_DEFENSIVE_PH,
 	.spreadIv = SPREAD_31_IV,
 	.moves = {MOVE_SCREECH, MOVE_FEINT_ATTACK, MOVE_SAND_ATTACK, MOVE_CHARM},
@@ -620,8 +620,8 @@ static const struct TrainerMonItemCustomMoves sParty_Misty4[] = {
 	.heldItem = ITEM_DAMP_ROCK,
 	.ability = 2,
 	.spreadEv = SPREAD_BULKY_SPECIAL_SWEEPER,
-	.spreadIv = SPREAD_HP_FLYING,
-	.moves = {MOVE_FLIP_TURN, MOVE_HYDRO_PUMP, MOVE_HIDDEN_POWER, MOVE_PERISH_SONG},
+	.spreadIv = SPREAD_31_IV,
+	.moves = {MOVE_FLIP_TURN, MOVE_HYDRO_PUMP, MOVE_WHIRLPOOL, MOVE_PERISH_SONG},
 	},
 	{
 	.iv = 0,

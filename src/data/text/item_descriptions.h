@@ -3803,6 +3803,11 @@ static const u8 sRopeDesc[] = _(
     "down steep slopes\n"
     "and pits.");
     
+static const u8 sArbokiteDesc[] = _(
+    "This stone enables\n"
+    "Arbok to Mega\n"
+    "Evolve in battle.");
+    
 static const u8 sCinnabarDriveDesc[] = _(
 	"An odd drive\n"
 	"that can be held by\n"

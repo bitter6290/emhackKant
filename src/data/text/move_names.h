@@ -786,9 +786,12 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_RESISTANCE] = _("Resistance"),
     [MOVE_RAGING_FURY] = _("Raging Fury"),
     [MOVE_VICTORY_DANCE] = _("Victory Dance"),
+    [MOVE_SOARING_KICK] = _("Soaring Kick"),
     [MOVE_BOLT_KICK] = _("Bolt Kick"),
     [MOVE_FROST_KICK] = _("Frost Kick"),
     [MOVE_PRESSURE_POINT] = _("Pressure Point"),
+    [MOVE_STRANGE_SYMPHONY] = _("Strange Symphony"),
+    [MOVE_ECTOBLAST] = _("Ectoblast"),
 };
 #else
 // 12 letters
@@ -1559,21 +1562,23 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_VICTORY_DANCE] = _("VictoryDance"),
     [MOVE_BOLT_KICK] = _("Bolt Kick"),
     [MOVE_FROST_KICK] = _("Frost Kick"),
+    [MOVE_SOARING_KICK] = _("Soaring Kick"),
     [MOVE_PRESSURE_POINT] = _("PressurPoint"),
     [MOVE_BARB_BARRAGE] = _("Barb Barrage"),
     [MOVE_BITTER_MALICE] = _("BitterMalice"),
     [MOVE_BLEAKWIND_STORM] = _("Bleak Storm"),
+    [MOVE_WILDBOLT_STORM] = _("Wild Storm"),
+    [MOVE_SPRINGTIDE_STORM] = _("Spring Storm"),
+	[MOVE_SANDSEAR_STORM] = _("SearingStorm"),
     [MOVE_CHLOROBLAST] = _("Chloroblast"),
     [MOVE_ESPER_WING] = _("Esper Wing"),
     [MOVE_HEADLONG_RUSH] = _("HeadlongRush"),
     [MOVE_INFERNAL_PARADE] = _("Hell-Parade"),
     [MOVE_MOUNTAIN_GALE] = _("MountainGale"),
 	[MOVE_PSYSHIELD_BASH] = _("Shield Bash"),
-	[MOVE_SANDSEAR_STORM] = _("SearingStorm"),
 	[MOVE_STONE_AXE] = _("Stone Axe"),
 	[MOVE_TRIPLE_ARROWS] = _("TripleArrows"),
 	[MOVE_WAVE_CRASH] = _("Wave Crash"),
-	[MOVE_WILDBOLT_STORM] = ("Wild Storm"),
     [MOVE_DIRE_CLAW] = _("Dire Claw"),
     [MOVE_POWER_SHIFT] = _("Power Shift"),
     [MOVE_MYSTICAL_POWER] = _("MystcalPower"),
@@ -1581,6 +1586,8 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_CEASELESS_EDGE] = _("CeaslessEdge"),
     [MOVE_LUNAR_BLESSING] = _("LunarBlessng"),
     [MOVE_TAKE_HEART] = _("Take Heart"),
+    [MOVE_STRANGE_SYMPHONY] = _("StrangeSong"),
+    [MOVE_ECTOBLAST] = _("Ectoblast"),
 };
 #endif
 

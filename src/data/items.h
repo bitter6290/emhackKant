@@ -3863,7 +3863,7 @@ const struct Item gItems[] =
 
     [ITEM_VENUSAURITE] =
     {
-        .name = _("Venusaurite"),
+        .name = _("Venusaurite X"),
         .itemId = ITEM_VENUSAURITE,
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
@@ -3902,7 +3902,7 @@ const struct Item gItems[] =
 
     [ITEM_BLASTOISINITE] =
     {
-        .name = _("Blastoisinite"),
+        .name = _("Blastoisite X"),
         .itemId = ITEM_BLASTOISINITE,
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
@@ -9874,6 +9874,42 @@ const struct Item gItems[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
+	[ITEM_ARBOKITE] = 
+	{
+		.name = _("Arbokite"), 
+		.itemId = ITEM_ARBOKITE, 
+		.price = 0, 
+		.holdEffect = HOLD_EFFECT_MEGA_STONE, 
+		.description = sArbokiteDesc, 
+		.pocket = POCKET_ITEMS, 
+		.type = ITEM_USE_BAG_MENU, 
+		.fieldUseFunc = ItemUseOutOfBattle_CannotUse, 
+		.flingPower = 80, 
+	},
+	[ITEM_BLASTOISINITE_Y] = 
+	{
+		.name = _("Blastoisite Y"), 
+		.itemId = ITEM_BLASTOISINITE_Y, 
+		.price = 0, 
+		.holdEffect = HOLD_EFFECT_MEGA_STONE, 
+		.description = sBlastoisiniteDesc, 
+		.pocket = POCKET_ITEMS, 
+		.type = ITEM_USE_BAG_MENU, 
+		.fieldUseFunc = ItemUseOutOfBattle_CannotUse, 
+		.flingPower = 80, 
+	},
+	[ITEM_VENUSAURITE_Y] = 
+	{
+		.name = _("Venusaurite Y"), 
+		.itemId = ITEM_VENUSAURITE_Y, 
+		.price = 0, 
+		.holdEffect = HOLD_EFFECT_MEGA_STONE, 
+		.description = sVenusauriteDesc, 
+		.pocket = POCKET_ITEMS, 
+		.type = ITEM_USE_BAG_MENU, 
+		.fieldUseFunc = ItemUseOutOfBattle_CannotUse, 
+		.flingPower = 80, 
+	},
 	[ITEM_CINNABAR_DRIVE] = 
 	{
 		.name = _("CD Normal"), 

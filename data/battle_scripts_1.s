@@ -9611,6 +9611,12 @@ BattleScript_StasisActivates::
 	printstring STRINGID_STASISACTIVATES
 	waitstate
 	end3
+	
+BattleScript_AccelerateActivates::
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_ACCELERATEACTIVATES
+	waitstate
+	end3
 
 BattleScript_QuickClawActivation::
 	printstring STRINGID_EMPTYSTRING3

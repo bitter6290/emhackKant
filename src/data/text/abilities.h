@@ -258,8 +258,8 @@ static const u8 sRockySurgeDescription[] = _("Field becomes rocky");
 static const u8 sShadeSurgeDescription[] = _("Field becomes dark.");
 static const u8 sAstralLockDescription[] = _("Negates terrain.");
 static const u8 sFireCoreDescription[] = _("All Fire moves use Attack.");
-static const u8 sAccelerateDescription[] = ("Shortens field effects.");
-static const u8 sStasisDescription[] = ("Lengthens field effects.");
+static const u8 sAccelerateDescription[] = _("Shortens field effects.");
+static const u8 sStasisDescription[] = _("Lengthens field effects.");
 
 #if B_EXPANDED_ABILITY_NAMES == TRUE
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =

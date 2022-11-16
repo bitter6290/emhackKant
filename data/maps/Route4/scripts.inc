@@ -24,6 +24,7 @@ Route4_Hiker::
 	lock
 	compare VAR_STORY_PROGRESS, 16
 	goto_if_eq Route4_Hiker_2
+	faceplayer
 	msgbox Route4_Hiker_Text_2
 Route4_Hiker_1:
 	release
@@ -35,7 +36,6 @@ Route4_Hiker_2:
 	playse SE_PIN
 	applymovement 2, Exclam
 	waitmovement 2
-	release
 	msgbox Route4_Hiker_Text_1
 	giveitem ITEM_REPEL, 5
 	setvar VAR_STORY_PROGRESS, 17
@@ -47,9 +47,10 @@ Route4_Hiker_Text_0:
 	.string "or through...$"
 
 Route4_Hiker_Text_1:
-	.string "Ah! Who are you? You don't have the look\n"
-	.string "of a hiker about you.\l"
-	.string "These roads are dangerous, you know.\l"
+	.string "Ah! Who are you? You don't look like a\n"
+	.string "hiker to me.\l"
+	.string "If you didn't know, the roads ahead are\l"
+	.string "pretty dangerous for new Trainers.\l"
 	.string "Take some of these and you'll be better\l"
 	.string "prepared.$"
 

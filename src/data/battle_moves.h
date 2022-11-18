@@ -13677,7 +13677,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     },
     [MOVE_PURE_WATER] =
     {
-        .effect = EFFECT_PURE_WATER,
+        .effect = EFFECT_FREEZY_FROST,
         .power = 55,
         .type = TYPE_WATER,
         .accuracy = 85,

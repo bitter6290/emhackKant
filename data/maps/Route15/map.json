@@ -15,11 +15,6 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "left",
-      "offset": 0,
-      "map": "MAP_VERMILION_CITY"
-    },
-    {
       "direction": "right",
       "offset": -32,
       "map": "MAP_ROUTE12"

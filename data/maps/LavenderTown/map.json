@@ -10,6 +10,7 @@
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
+  "use_varied_weather": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
@@ -17,11 +18,6 @@
       "direction": "up",
       "offset": 0,
       "map": "MAP_ROUTE9"
-    },
-    {
-      "direction": "up",
-      "offset": -72,
-      "map": "MAP_ROUTE8"
     },
     {
       "direction": "left",

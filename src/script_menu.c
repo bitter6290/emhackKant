@@ -90,9 +90,11 @@ static u16 GetLengthWithExpandedPlayerName(const u8 *str)
     return length;
 }
 
-static void DrawMultichoiceMenuCustom(u8 left, u8 top, u8 multichoiceId, u8 ignoreBPress, u8 cursorPos, const struct MenuAction *actions, int count)
+static void DrawMultichoiceMenuInternal(u8 left, u8 top, u8 multichoiceId, bool8 ignoreBPress, u8 cursorPos, const struct MenuAction *actions, int count)
 {
-    int i, windowId, width = 0;
+    int i;
+    u8 windowId;
+    int width = 0;
     u8 newWidth;
 
     for (i = 0; i < count; i++)
@@ -110,29 +112,34 @@ static void DrawMultichoiceMenuCustom(u8 left, u8 top, u8 multichoiceId, u8 igno
     InitMultichoiceCheckWrap(ignoreBPress, count, windowId, multichoiceId);
 }
 
-static void DrawMultichoiceMenu(u8 left, u8 top, u8 multichoiceId, u8 ignoreBPress, u8 cursorPos)
+static void DrawMultichoiceMenu(u8 left, u8 top, u8 multichoiceId, bool8 ignoreBPress, u8 cursorPos)
 {
-    DrawMultichoiceMenuCustom(left, top, multichoiceId, ignoreBPress, cursorPos, sMultichoiceLists[multichoiceId].list, sMultichoiceLists[multichoiceId].count);
+    DrawMultichoiceMenuInternal(left, top, multichoiceId, ignoreBPress, cursorPos, sMultichoiceLists[multichoiceId].list, sMultichoiceLists[multichoiceId].count);
 }
 
+#if I_REPEL_LURE_MENU == TRUE
 void TryDrawRepelMenu(void)
 {
     static const u16 repelItems[] = {ITEM_REPEL, ITEM_SUPER_REPEL, ITEM_MAX_REPEL};
-    struct MenuAction menuItems[4] = {NULL};
-    int i, count = 0;
+    struct MenuAction menuItems[ARRAY_COUNT(repelItems) + 1] = {NULL};
+    int i, count = 0, menuPos = 0;
 
     for (i = 0; i < ARRAY_COUNT(repelItems); i++)
     {
         if (CheckBagHasItem(repelItems[i], 1))
         {
             VarSet(VAR_0x8004 + count, repelItems[i]);
+        #if VAR_LAST_REPEL_LURE_USED != 0
+            if (VarGet(VAR_LAST_REPEL_LURE_USED) == repelItems[i])
+                menuPos = count;
+        #endif
             menuItems[count].text = ItemId_GetName(repelItems[i]);
             count++;
         }
     }
 
     if (count > 1)
-        DrawMultichoiceMenuCustom(0, 0, 0, FALSE, 0, menuItems, count);
+        DrawMultichoiceMenuInternal(0, 0, 0, FALSE, menuPos, menuItems, count);
 
     gSpecialVar_Result = (count > 1);
 }
@@ -141,7 +148,47 @@ void HandleRepelMenuChoice(void)
 {
     gSpecialVar_0x8004 = VarGet(VAR_0x8004 + gSpecialVar_Result); // Get item Id;
     VarSet(VAR_REPEL_STEP_COUNT, ItemId_GetHoldEffectParam(gSpecialVar_0x8004));
+#if VAR_LAST_REPEL_LURE_USED != 0
+    VarSet(VAR_LAST_REPEL_LURE_USED, gSpecialVar_0x8004);
+#endif
 }
+
+void TryDrawLureMenu(void)
+{
+    static const u16 lureItems[] = {ITEM_LURE, ITEM_SUPER_LURE, ITEM_MAX_LURE};
+    struct MenuAction menuItems[ARRAY_COUNT(lureItems) + 1] = {NULL};
+    int i, count = 0, menuPos = 0;
+
+
+    for (i = 0; i < ARRAY_COUNT(lureItems); i++)
+    {
+        if (CheckBagHasItem(lureItems[i], 1))
+        {
+            VarSet(VAR_0x8004 + count, lureItems[i]);
+        #if VAR_LAST_REPEL_LURE_USED != 0
+            if (VarGet(VAR_LAST_REPEL_LURE_USED) == lureItems[i])
+                menuPos = count;
+        #endif
+            menuItems[count].text = ItemId_GetName(lureItems[i]);
+            count++;
+        }
+    }
+
+    if (count > 1)
+        DrawMultichoiceMenuInternal(0, 0, 0, FALSE, menuPos, menuItems, count);
+
+    gSpecialVar_Result = (count > 1);
+}
+
+void HandleLureMenuChoice(void)
+{
+    gSpecialVar_0x8004 = VarGet(VAR_0x8004 + gSpecialVar_Result); // Get item Id;
+    VarSet(VAR_REPEL_STEP_COUNT, ItemId_GetHoldEffectParam(gSpecialVar_0x8004) | REPEL_LURE_MASK);
+#if VAR_LAST_REPEL_LURE_USED != 0
+    VarSet(VAR_LAST_REPEL_LURE_USED, gSpecialVar_0x8004);
+#endif
+}
+#endif //I_REPEL_LURE_MENU == TRUE
 
 #define tLeft           data[0]
 #define tTop            data[1]

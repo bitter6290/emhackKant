@@ -14,54 +14,54 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_VIRIDIAN_FOREST_W",
       "offset": 0,
-      "map": "MAP_VIRIDIAN_FOREST_W"
+      "direction": "down"
     },
     {
-      "direction": "left",
+      "map": "MAP_PEWTER_CITY",
       "offset": 0,
-      "map": "MAP_PEWTER_CITY"
+      "direction": "left"
     },
     {
-      "direction": "up",
+      "map": "MAP_NIGHTMARE_RANGE",
       "offset": -60,
-      "map": "MAP_NIGHTMARE_RANGE"
+      "direction": "up"
     },
     {
-      "direction": "down",
+      "map": "MAP_VIRIDIAN_FOREST_C",
       "offset": 32,
-      "map": "MAP_VIRIDIAN_FOREST_C"
+      "direction": "down"
     },
     {
-      "direction": "up",
+      "map": "MAP_PEWTER_RANGE",
       "offset": 24,
-      "map": "MAP_PEWTER_RANGE"
+      "direction": "up"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE4",
       "offset": 100,
-      "map": "MAP_ROUTE4"
+      "direction": "up"
     },
     {
-      "direction": "down",
+      "map": "MAP_VIRIDIAN_FOREST_NW",
       "offset": 60,
-      "map": "MAP_VIRIDIAN_FOREST_NW"
+      "direction": "down"
     },
     {
-      "direction": "down",
+      "map": "MAP_VIRIDIAN_FOREST_NW",
       "offset": 60,
-      "map": "MAP_VIRIDIAN_FOREST_NW"
+      "direction": "down"
     },
     {
-      "direction": "right",
+      "map": "MAP_CERULEAN_MEADOW_NW",
       "offset": 0,
-      "map": "MAP_CERULEAN_MEADOW_NW"
+      "direction": "right"
     },
     {
-      "direction": "down",
+      "map": "MAP_CELADON_RANGE",
       "offset": 100,
-      "map": "MAP_CELADON_RANGE"
+      "direction": "down"
     }
   ],
   "object_events": [

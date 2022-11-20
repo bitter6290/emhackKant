@@ -10,44 +10,43 @@
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
-  "use_varied_weather": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_VIRIDIAN_CITY",
       "offset": 0,
-      "map": "MAP_VIRIDIAN_CITY"
+      "direction": "down"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE2",
       "offset": 0,
-      "map": "MAP_ROUTE2"
+      "direction": "right"
     },
     {
-      "direction": "up",
+      "map": "MAP_PEWTER_MINE",
       "offset": 8,
-      "map": "MAP_PEWTER_MINE"
+      "direction": "up"
     },
     {
-      "direction": "up",
+      "map": "MAP_PEWTER_CITY",
       "offset": 28,
-      "map": "MAP_PEWTER_CITY"
+      "direction": "up"
     },
     {
-      "direction": "up",
+      "map": "MAP_INDIGO_RANGE",
       "offset": -92,
-      "map": "MAP_INDIGO_RANGE"
+      "direction": "up"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE2",
       "offset": 0,
-      "map": "MAP_ROUTE2"
+      "direction": "right"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE22",
       "offset": 80,
-      "map": "MAP_ROUTE22"
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -61,5 +60,6 @@
   ],
   "bg_events": [
 
-  ]
+  ],
+  "use_varied_weather": false
 }

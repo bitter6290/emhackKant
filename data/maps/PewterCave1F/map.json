@@ -22,28 +22,28 @@
       "y": 48,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_CITY",
-      "dest_warp_id": 7
+      "dest_warp_id": "7"
     },
     {
       "x": 4,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_CAVE2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 32,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_CAVE2F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 43,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_CAVE1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

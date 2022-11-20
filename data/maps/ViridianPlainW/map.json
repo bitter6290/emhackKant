@@ -10,34 +10,33 @@
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
-  "use_varied_weather": false,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "map": "MAP_ROUTE1",
       "offset": -7,
-      "map": "MAP_ROUTE1"
+      "direction": "right"
     },
     {
-      "direction": "right",
+      "map": "MAP_NEW_MAP1",
       "offset": 31,
-      "map": "MAP_NEW_MAP1"
+      "direction": "right"
     },
     {
-      "direction": "up",
+      "map": "MAP_VIRIDIAN_PLAIN_W_N",
       "offset": 0,
-      "map": "MAP_VIRIDIAN_PLAIN_W_N"
+      "direction": "up"
     },
     {
-      "direction": "down",
+      "map": "MAP_CINNABAR_SEA_N",
       "offset": 0,
-      "map": "MAP_CINNABAR_SEA_N"
+      "direction": "down"
     },
     {
-      "direction": "left",
+      "map": "MAP_KANJOH_COAST_E",
       "offset": -17,
-      "map": "MAP_KANJOH_COAST_E"
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -74,28 +73,28 @@
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_PLAIN_W",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 9,
       "y": 20,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_PLAIN_W",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 10,
       "y": 27,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_PLAIN_W",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 10,
       "y": 35,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_PLAIN_W",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -110,5 +109,6 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "ViridianPlainW_SeasideCottageSign"
     }
-  ]
+  ],
+  "use_varied_weather": false
 }

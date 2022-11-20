@@ -14,24 +14,24 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
+      "map": "MAP_ROUTE1",
       "offset": 0,
-      "map": "MAP_ROUTE1"
+      "direction": "up"
     },
     {
-      "direction": "right",
+      "map": "MAP_VIRIDIAN_PLAIN_E",
       "offset": -38,
-      "map": "MAP_VIRIDIAN_PLAIN_E"
+      "direction": "right"
     },
     {
-      "direction": "left",
+      "map": "MAP_VIRIDIAN_PLAIN_W",
       "offset": -31,
-      "map": "MAP_VIRIDIAN_PLAIN_W"
+      "direction": "left"
     },
     {
-      "direction": "down",
+      "map": "MAP_CINNABAR_SEA_N",
       "offset": -32,
-      "map": "MAP_CINNABAR_SEA_N"
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -55,21 +55,21 @@
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_PALLET_PLAYER_HOUSE_1F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 11,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_PALLET_OAK_LAB",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 16,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_NEW_MAP1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

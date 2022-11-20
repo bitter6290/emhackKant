@@ -14,44 +14,44 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_DEEP_VIR_FOREST2",
       "offset": 0,
-      "map": "MAP_DEEP_VIR_FOREST2"
+      "direction": "down"
     },
     {
-      "direction": "left",
+      "map": "MAP_DEEP_VIR_FOREST3",
       "offset": 0,
-      "map": "MAP_DEEP_VIR_FOREST3"
+      "direction": "left"
     },
     {
-      "direction": "right",
+      "map": "MAP_DEEP_VIR_FOREST5",
       "offset": 0,
-      "map": "MAP_DEEP_VIR_FOREST5"
+      "direction": "right"
     },
     {
-      "direction": "up",
+      "map": "MAP_DEEP_VIR_FOREST4",
       "offset": 0,
-      "map": "MAP_DEEP_VIR_FOREST4"
+      "direction": "up"
     },
     {
-      "direction": "up",
+      "map": "MAP_DEEP_VIR_FOREST3",
       "offset": 40,
-      "map": "MAP_DEEP_VIR_FOREST3"
+      "direction": "up"
     },
     {
-      "direction": "down",
+      "map": "MAP_DEEP_VIR_FOREST5",
       "offset": -20,
-      "map": "MAP_DEEP_VIR_FOREST5"
+      "direction": "down"
     },
     {
-      "direction": "left",
+      "map": "MAP_DEEP_VIR_FOREST2",
       "offset": -20,
-      "map": "MAP_DEEP_VIR_FOREST2"
+      "direction": "left"
     },
     {
-      "direction": "right",
+      "map": "MAP_DEEP_VIR_FOREST4",
       "offset": 40,
-      "map": "MAP_DEEP_VIR_FOREST4"
+      "direction": "right"
     }
   ],
   "object_events": [

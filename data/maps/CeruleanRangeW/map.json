@@ -14,19 +14,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_PEWTER_RANGE",
       "offset": 0,
-      "map": "MAP_PEWTER_RANGE"
+      "direction": "down"
     },
     {
-      "direction": "left",
+      "map": "MAP_NIGHTMARE_RANGE",
       "offset": 36,
-      "map": "MAP_NIGHTMARE_RANGE"
+      "direction": "left"
     },
     {
-      "direction": "down",
+      "map": "MAP_MT_MOON_OVERWORLD",
       "offset": 76,
-      "map": "MAP_MT_MOON_OVERWORLD"
+      "direction": "down"
     }
   ],
   "object_events": [

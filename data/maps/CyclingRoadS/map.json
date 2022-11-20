@@ -14,29 +14,29 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
+      "map": "MAP_CYCLING_ROAD_N",
       "offset": 0,
-      "map": "MAP_CYCLING_ROAD_N"
+      "direction": "up"
     },
     {
-      "direction": "up",
+      "map": "MAP_CELADON_SEA_E_S",
       "offset": 21,
-      "map": "MAP_CELADON_SEA_E_S"
+      "direction": "up"
     },
     {
-      "direction": "left",
+      "map": "MAP_CELADON_SEA_W",
       "offset": -64,
-      "map": "MAP_CELADON_SEA_W"
+      "direction": "left"
     },
     {
-      "direction": "right",
+      "map": "MAP_FUCHSIA_CITY",
       "offset": 0,
-      "map": "MAP_FUCHSIA_CITY"
+      "direction": "right"
     },
     {
-      "direction": "left",
+      "map": "MAP_CINNABAR_SEA_E",
       "offset": -24,
-      "map": "MAP_CINNABAR_SEA_E"
+      "direction": "left"
     }
   ],
   "object_events": [

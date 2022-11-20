@@ -14,19 +14,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "map": "MAP_ROUTE13",
       "offset": -64,
-      "map": "MAP_ROUTE13"
+      "direction": "right"
     },
     {
-      "direction": "up",
+      "map": "MAP_FUCHSIA_SWAMP",
       "offset": 12,
-      "map": "MAP_FUCHSIA_SWAMP"
+      "direction": "up"
     },
     {
-      "direction": "left",
+      "map": "MAP_FUCHSIA_CITY",
       "offset": -24,
-      "map": "MAP_FUCHSIA_CITY"
+      "direction": "left"
     }
   ],
   "object_events": [

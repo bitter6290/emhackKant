@@ -14,39 +14,39 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "left",
+      "map": "MAP_PEWTER_RANGE",
       "offset": -32,
-      "map": "MAP_PEWTER_RANGE"
+      "direction": "left"
     },
     {
-      "direction": "down",
+      "map": "MAP_ROUTE3",
       "offset": -100,
-      "map": "MAP_ROUTE3"
+      "direction": "down"
     },
     {
-      "direction": "down",
+      "map": "MAP_CERULEAN_MEADOW_NW",
       "offset": 24,
-      "map": "MAP_CERULEAN_MEADOW_NW"
+      "direction": "down"
     },
     {
-      "direction": "up",
+      "map": "MAP_MT_MOON_OVERWORLD",
       "offset": 0,
-      "map": "MAP_MT_MOON_OVERWORLD"
+      "direction": "up"
     },
     {
-      "direction": "down",
+      "map": "MAP_CERULEAN_MEADOW",
       "offset": 64,
-      "map": "MAP_CERULEAN_MEADOW"
+      "direction": "down"
     },
     {
-      "direction": "up",
+      "map": "MAP_CERULEAN_WOODS_NW",
       "offset": 60,
-      "map": "MAP_CERULEAN_WOODS_NW"
+      "direction": "up"
     },
     {
-      "direction": "right",
+      "map": "MAP_CERULEAN_CITY",
       "offset": -44,
-      "map": "MAP_CERULEAN_CITY"
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -122,21 +122,21 @@
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_ROUTE4",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 7,
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_MT_MOON_INSIDE1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 31,
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_MT_MOON_INSIDE1F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

@@ -10,44 +10,43 @@
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
-  "use_varied_weather": false,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "left",
+      "map": "MAP_NEW_MAP1",
       "offset": 38,
-      "map": "MAP_NEW_MAP1"
+      "direction": "left"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE1",
       "offset": 0,
-      "map": "MAP_ROUTE1"
+      "direction": "left"
     },
     {
-      "direction": "up",
+      "map": "MAP_VIRIDIAN_COMPLEX",
       "offset": 10,
-      "map": "MAP_VIRIDIAN_COMPLEX"
+      "direction": "up"
     },
     {
-      "direction": "up",
+      "map": "MAP_VIRIDIAN_CITY",
       "offset": -44,
-      "map": "MAP_VIRIDIAN_CITY"
+      "direction": "up"
     },
     {
-      "direction": "down",
+      "map": "MAP_CINNABAR_SEA_N",
       "offset": -56,
-      "map": "MAP_CINNABAR_SEA_N"
+      "direction": "down"
     },
     {
-      "direction": "right",
+      "map": "MAP_VIRIDIAN_COAST",
       "offset": -42,
-      "map": "MAP_VIRIDIAN_COAST"
+      "direction": "right"
     },
     {
-      "direction": "down",
+      "map": "MAP_CINNABAR_SEA_E",
       "offset": 40,
-      "map": "MAP_CINNABAR_SEA_E"
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -71,14 +70,14 @@
       "y": 28,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_PLAIN_EFARM_INSIDE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 36,
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_PLAIN_E",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -86,5 +85,6 @@
   ],
   "bg_events": [
 
-  ]
+  ],
+  "use_varied_weather": false
 }

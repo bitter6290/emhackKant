@@ -10,7 +10,6 @@
   "allow_cycling": true,
   "allow_escaping": true,
   "allow_running": true,
-  "use_varied_weather": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
@@ -37,5 +36,6 @@
   ],
   "bg_events": [
 
-  ]
+  ],
+  "use_varied_weather": false
 }

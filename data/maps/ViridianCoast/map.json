@@ -14,44 +14,44 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "left",
+      "map": "MAP_VIRIDIAN_PLAIN_E",
       "offset": 42,
-      "map": "MAP_VIRIDIAN_PLAIN_E"
+      "direction": "left"
     },
     {
-      "direction": "left",
+      "map": "MAP_VIRIDIAN_COMPLEX",
       "offset": 0,
-      "map": "MAP_VIRIDIAN_COMPLEX"
+      "direction": "left"
     },
     {
-      "direction": "up",
+      "map": "MAP_VIRIDIAN_FOREST_W",
       "offset": -28,
-      "map": "MAP_VIRIDIAN_FOREST_W"
+      "direction": "up"
     },
     {
-      "direction": "up",
+      "map": "MAP_VIRIDIAN_FOREST_C",
       "offset": 4,
-      "map": "MAP_VIRIDIAN_FOREST_C"
+      "direction": "up"
     },
     {
-      "direction": "right",
+      "map": "MAP_CELADON_BAY",
       "offset": -60,
-      "map": "MAP_CELADON_BAY"
+      "direction": "right"
     },
     {
-      "direction": "right",
+      "map": "MAP_CELADON_SEA_W",
       "offset": 20,
-      "map": "MAP_CELADON_SEA_W"
+      "direction": "right"
     },
     {
-      "direction": "down",
+      "map": "MAP_CINNABAR_SEA_N",
       "offset": -96,
-      "map": "MAP_CINNABAR_SEA_N"
+      "direction": "down"
     },
     {
-      "direction": "down",
+      "map": "MAP_CINNABAR_SEA_E",
       "offset": 0,
-      "map": "MAP_CINNABAR_SEA_E"
+      "direction": "down"
     }
   ],
   "object_events": [

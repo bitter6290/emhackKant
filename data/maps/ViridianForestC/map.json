@@ -14,34 +14,34 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "left",
+      "map": "MAP_VIRIDIAN_FOREST_W",
       "offset": 0,
-      "map": "MAP_VIRIDIAN_FOREST_W"
+      "direction": "left"
     },
     {
-      "direction": "down",
+      "map": "MAP_VIRIDIAN_COMPLEX",
       "offset": -34,
-      "map": "MAP_VIRIDIAN_COMPLEX"
+      "direction": "down"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE3",
       "offset": -32,
-      "map": "MAP_ROUTE3"
+      "direction": "up"
     },
     {
-      "direction": "down",
+      "map": "MAP_VIRIDIAN_COAST",
       "offset": -4,
-      "map": "MAP_VIRIDIAN_COAST"
+      "direction": "down"
     },
     {
-      "direction": "right",
+      "map": "MAP_CELADON_BAY",
       "offset": 40,
-      "map": "MAP_CELADON_BAY"
+      "direction": "right"
     },
     {
-      "direction": "right",
+      "map": "MAP_VIRIDIAN_FOREST_NW",
       "offset": 0,
-      "map": "MAP_VIRIDIAN_FOREST_NW"
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -65,14 +65,14 @@
       "y": 95,
       "elevation": 0,
       "dest_map": "MAP_DEEP_VIR_FOREST1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 17,
       "y": 94,
       "elevation": 0,
       "dest_map": "MAP_DEEP_VIR_FOREST1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

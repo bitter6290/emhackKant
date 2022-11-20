@@ -10,44 +10,43 @@
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
-  "use_varied_weather": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
+      "map": "MAP_ROUTE3",
       "offset": -100,
-      "map": "MAP_ROUTE3"
+      "direction": "up"
     },
     {
-      "direction": "up",
+      "map": "MAP_CERULEAN_MEADOW_NW",
       "offset": 24,
-      "map": "MAP_CERULEAN_MEADOW_NW"
+      "direction": "up"
     },
     {
-      "direction": "left",
+      "map": "MAP_VIRIDIAN_FOREST_NW",
       "offset": 0,
-      "map": "MAP_VIRIDIAN_FOREST_NW"
+      "direction": "left"
     },
     {
-      "direction": "down",
+      "map": "MAP_CELADON_CITY",
       "offset": 0,
-      "map": "MAP_CELADON_CITY"
+      "direction": "down"
     },
     {
-      "direction": "right",
+      "map": "MAP_CERULEAN_MEADOW",
       "offset": -20,
-      "map": "MAP_CERULEAN_MEADOW"
+      "direction": "right"
     },
     {
-      "direction": "left",
+      "map": "MAP_CELADON_BAY",
       "offset": 40,
-      "map": "MAP_CELADON_BAY"
+      "direction": "left"
     },
     {
-      "direction": "down",
+      "map": "MAP_ROUTE7",
       "offset": 56,
-      "map": "MAP_ROUTE7"
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -84,35 +83,35 @@
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_CELADON_RANGE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 54,
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_CELADON_RANGE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 60,
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_CELADON_RANGE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 28,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_CELADON_RANGE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 19,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_CELADON_RANGE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -120,5 +119,6 @@
   ],
   "bg_events": [
 
-  ]
+  ],
+  "use_varied_weather": false
 }

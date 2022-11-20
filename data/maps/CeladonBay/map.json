@@ -10,39 +10,38 @@
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
-  "use_varied_weather": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "left",
+      "map": "MAP_VIRIDIAN_COAST",
       "offset": 60,
-      "map": "MAP_VIRIDIAN_COAST"
+      "direction": "left"
     },
     {
-      "direction": "left",
+      "map": "MAP_VIRIDIAN_FOREST_C",
       "offset": -40,
-      "map": "MAP_VIRIDIAN_FOREST_C"
+      "direction": "left"
     },
     {
-      "direction": "up",
+      "map": "MAP_VIRIDIAN_FOREST_NW",
       "offset": 0,
-      "map": "MAP_VIRIDIAN_FOREST_NW"
+      "direction": "up"
     },
     {
-      "direction": "right",
+      "map": "MAP_CELADON_CITY",
       "offset": -4,
-      "map": "MAP_CELADON_CITY"
+      "direction": "right"
     },
     {
-      "direction": "down",
+      "map": "MAP_CELADON_SEA_W",
       "offset": 0,
-      "map": "MAP_CELADON_SEA_W"
+      "direction": "down"
     },
     {
-      "direction": "right",
+      "map": "MAP_CYCLING_ROAD_N",
       "offset": 36,
-      "map": "MAP_CYCLING_ROAD_N"
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -56,5 +55,6 @@
   ],
   "bg_events": [
 
-  ]
+  ],
+  "use_varied_weather": false
 }

@@ -14,34 +14,34 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "left",
+      "map": "MAP_SAFFRON_DRYLANDS",
       "offset": -48,
-      "map": "MAP_SAFFRON_DRYLANDS"
+      "direction": "left"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE8",
       "offset": 28,
-      "map": "MAP_ROUTE8"
+      "direction": "left"
     },
     {
-      "direction": "down",
+      "map": "MAP_LAVENDER_TOWN",
       "offset": 0,
-      "map": "MAP_LAVENDER_TOWN"
+      "direction": "down"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE10",
       "offset": 0,
-      "map": "MAP_ROUTE10"
+      "direction": "up"
     },
     {
-      "direction": "right",
+      "map": "MAP_LAVENDER_COAST",
       "offset": 44,
-      "map": "MAP_LAVENDER_COAST"
+      "direction": "right"
     },
     {
-      "direction": "down",
+      "map": "MAP_VERMILION_PLAIN",
       "offset": -96,
-      "map": "MAP_VERMILION_PLAIN"
+      "direction": "down"
     }
   ],
   "object_events": [

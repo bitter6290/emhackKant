@@ -14,34 +14,34 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
+      "map": "MAP_CELADON_SEA_E",
       "offset": 0,
-      "map": "MAP_CELADON_SEA_E"
+      "direction": "up"
     },
     {
-      "direction": "right",
+      "map": "MAP_VERMILION_ESTUARY",
       "offset": -4,
-      "map": "MAP_VERMILION_ESTUARY"
+      "direction": "right"
     },
     {
-      "direction": "right",
+      "map": "MAP_VERMILION_CITY",
       "offset": -44,
-      "map": "MAP_VERMILION_CITY"
+      "direction": "right"
     },
     {
-      "direction": "left",
+      "map": "MAP_CYCLING_ROAD_N",
       "offset": -108,
-      "map": "MAP_CYCLING_ROAD_N"
+      "direction": "left"
     },
     {
-      "direction": "down",
+      "map": "MAP_CYCLING_ROAD_S",
       "offset": -21,
-      "map": "MAP_CYCLING_ROAD_S"
+      "direction": "down"
     },
     {
-      "direction": "down",
+      "map": "MAP_FUCHSIA_CITY",
       "offset": 59,
-      "map": "MAP_FUCHSIA_CITY"
+      "direction": "down"
     }
   ],
   "object_events": [

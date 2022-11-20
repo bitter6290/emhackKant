@@ -10,54 +10,53 @@
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
-  "use_varied_weather": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
+      "map": "MAP_ROUTE5",
       "offset": 0,
-      "map": "MAP_ROUTE5"
+      "direction": "up"
     },
     {
-      "direction": "left",
+      "map": "MAP_CERULEAN_MEADOW",
       "offset": -48,
-      "map": "MAP_CERULEAN_MEADOW"
+      "direction": "left"
     },
     {
-      "direction": "up",
+      "map": "MAP_SAFFRON_HILL",
       "offset": 24,
-      "map": "MAP_SAFFRON_HILL"
+      "direction": "up"
     },
     {
-      "direction": "down",
+      "map": "MAP_ROUTE6",
       "offset": 0,
-      "map": "MAP_ROUTE6"
+      "direction": "down"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE7",
       "offset": 8,
-      "map": "MAP_ROUTE7"
+      "direction": "left"
     },
     {
-      "direction": "left",
+      "map": "MAP_SAFFRON_COAST",
       "offset": 36,
-      "map": "MAP_SAFFRON_COAST"
+      "direction": "left"
     },
     {
-      "direction": "right",
+      "map": "MAP_SAFFRON_DRYLANDS",
       "offset": -48,
-      "map": "MAP_SAFFRON_DRYLANDS"
+      "direction": "right"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE8",
       "offset": 28,
-      "map": "MAP_ROUTE8"
+      "direction": "right"
     },
     {
-      "direction": "down",
+      "map": "MAP_VERMILION_PLAIN",
       "offset": 20,
-      "map": "MAP_VERMILION_PLAIN"
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -69,182 +68,182 @@
       "y": 19,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 6,
       "y": 42,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 12,
       "y": 43,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 18,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 28,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 34,
       "y": 33,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 32,
       "y": 41,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 37,
       "y": 43,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 32,
       "y": 43,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 21,
       "y": 43,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 16,
       "y": 43,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 26,
       "y": 41,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 16,
       "y": 24,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 10,
       "y": 24,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 37,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 29,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 23,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 35,
       "y": 25,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 24,
       "y": 34,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 23,
       "y": 34,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 15,
       "y": 32,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 9,
       "y": 32,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 20,
       "y": 41,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 37,
       "y": 41,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 13,
       "y": 41,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_POKEMON_CENTER",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 10,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -252,5 +251,6 @@
   ],
   "bg_events": [
 
-  ]
+  ],
+  "use_varied_weather": false
 }

@@ -14,19 +14,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "map": "MAP_PEWTER_MINE",
       "offset": 0,
-      "map": "MAP_PEWTER_MINE"
+      "direction": "right"
     },
     {
-      "direction": "down",
+      "map": "MAP_INDIGO_WOODS_E",
       "offset": 92,
-      "map": "MAP_INDIGO_WOODS_E"
+      "direction": "down"
     },
     {
-      "direction": "up",
+      "map": "MAP_NIGHTMARE_RANGE",
       "offset": 88,
-      "map": "MAP_NIGHTMARE_RANGE"
+      "direction": "up"
     }
   ],
   "object_events": [

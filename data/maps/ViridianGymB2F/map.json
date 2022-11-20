@@ -22,7 +22,7 @@
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_GYM_B1F",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     }
   ],
   "coord_events": [

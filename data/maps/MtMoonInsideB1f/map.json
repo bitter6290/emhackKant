@@ -10,7 +10,6 @@
   "allow_cycling": true,
   "allow_escaping": true,
   "allow_running": true,
-  "use_varied_weather": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
@@ -48,49 +47,49 @@
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_MT_MOON_INSIDE1F",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 22,
       "y": 35,
       "elevation": 0,
       "dest_map": "MAP_MT_MOON_INSIDE1F",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     },
     {
       "x": 8,
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_MT_MOON_INSIDE_B2F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 18,
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_MT_MOON_INSIDE_B2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 11,
       "y": 46,
       "elevation": 0,
       "dest_map": "MAP_MT_MOON_INSIDE_B2F",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 48,
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_MT_MOON_INSIDE_B2F",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     },
     {
       "x": 54,
       "y": 27,
       "elevation": 0,
       "dest_map": "MAP_MT_MOON_INSIDE_B1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -98,5 +97,6 @@
   ],
   "bg_events": [
 
-  ]
+  ],
+  "use_varied_weather": false
 }

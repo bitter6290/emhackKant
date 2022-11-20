@@ -14,24 +14,24 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_ROUTE4",
       "offset": 0,
-      "map": "MAP_ROUTE4"
+      "direction": "down"
     },
     {
-      "direction": "left",
+      "map": "MAP_PEWTER_RANGE",
       "offset": 0,
-      "map": "MAP_PEWTER_RANGE"
+      "direction": "left"
     },
     {
-      "direction": "right",
+      "map": "MAP_CERULEAN_WOODS_NW",
       "offset": -56,
-      "map": "MAP_CERULEAN_WOODS_NW"
+      "direction": "right"
     },
     {
-      "direction": "up",
+      "map": "MAP_CERULEAN_RANGE_W",
       "offset": -76,
-      "map": "MAP_CERULEAN_RANGE_W"
+      "direction": "up"
     }
   ],
   "object_events": [

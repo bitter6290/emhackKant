@@ -10,54 +10,53 @@
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
-  "use_varied_weather": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_ROUTE1",
       "offset": 20,
-      "map": "MAP_ROUTE1"
+      "direction": "down"
     },
     {
-      "direction": "down",
+      "map": "MAP_VIRIDIAN_PLAIN_E",
       "offset": 44,
-      "map": "MAP_VIRIDIAN_PLAIN_E"
+      "direction": "down"
     },
     {
-      "direction": "right",
+      "map": "MAP_VIRIDIAN_COMPLEX",
       "offset": 0,
-      "map": "MAP_VIRIDIAN_COMPLEX"
+      "direction": "right"
     },
     {
-      "direction": "down",
+      "map": "MAP_VIRIDIAN_PLAIN_W_N",
       "offset": -12,
-      "map": "MAP_VIRIDIAN_PLAIN_W_N"
+      "direction": "down"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE2",
       "offset": 28,
-      "map": "MAP_ROUTE2"
+      "direction": "up"
     },
     {
-      "direction": "left",
+      "map": "MAP_VIRIDIAN_HILL",
       "offset": 32,
-      "map": "MAP_VIRIDIAN_HILL"
+      "direction": "left"
     },
     {
-      "direction": "up",
+      "map": "MAP_VIRIDIAN_FOREST_W",
       "offset": 56,
-      "map": "MAP_VIRIDIAN_FOREST_W"
+      "direction": "up"
     },
     {
-      "direction": "up",
+      "map": "MAP_INDIGO_WOODS_E",
       "offset": 0,
-      "map": "MAP_INDIGO_WOODS_E"
+      "direction": "up"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE22",
       "offset": 0,
-      "map": "MAP_ROUTE22"
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -120,84 +119,84 @@
       "y": 32,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_POKEMON_CENTER1F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 45,
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_POKE_MART",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 23,
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_HOUSE_C2",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 15,
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_APARTMENTS",
-      "dest_warp_id": 4
+      "dest_warp_id": "4"
     },
     {
       "x": 29,
       "y": 32,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_LAW_OFFICE",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 34,
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 34,
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 45,
       "y": 32,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 46,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_GYM_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 8,
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 40,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 28,
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_VIRIDIAN_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -212,5 +211,6 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "NULL"
     }
-  ]
+  ],
+  "use_varied_weather": false
 }

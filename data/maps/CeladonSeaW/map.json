@@ -14,34 +14,34 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
+      "map": "MAP_CELADON_BAY",
       "offset": 0,
-      "map": "MAP_CELADON_BAY"
+      "direction": "up"
     },
     {
-      "direction": "left",
+      "map": "MAP_VIRIDIAN_COAST",
       "offset": -20,
-      "map": "MAP_VIRIDIAN_COAST"
+      "direction": "left"
     },
     {
-      "direction": "left",
+      "map": "MAP_VIRIDIAN_COAST",
       "offset": -20,
-      "map": "MAP_VIRIDIAN_COAST"
+      "direction": "left"
     },
     {
-      "direction": "right",
+      "map": "MAP_CYCLING_ROAD_S",
       "offset": 64,
-      "map": "MAP_CYCLING_ROAD_S"
+      "direction": "right"
     },
     {
-      "direction": "right",
+      "map": "MAP_CYCLING_ROAD_N",
       "offset": -44,
-      "map": "MAP_CYCLING_ROAD_N"
+      "direction": "right"
     },
     {
-      "direction": "down",
+      "map": "MAP_CINNABAR_SEA_E",
       "offset": -32,
-      "map": "MAP_CINNABAR_SEA_E"
+      "direction": "down"
     }
   ],
   "object_events": [

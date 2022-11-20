@@ -10,7 +10,6 @@
   "allow_cycling": true,
   "allow_escaping": true,
   "allow_running": true,
-  "use_varied_weather": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
@@ -23,7 +22,7 @@
       "y": 38,
       "elevation": 0,
       "dest_map": "MAP_NIGHTMARE_RANGE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -31,5 +30,6 @@
   ],
   "bg_events": [
 
-  ]
+  ],
+  "use_varied_weather": false
 }

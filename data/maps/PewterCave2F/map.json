@@ -10,7 +10,6 @@
   "allow_cycling": true,
   "allow_escaping": true,
   "allow_running": true,
-  "use_varied_weather": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
@@ -74,63 +73,63 @@
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_CAVE1F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 32,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_CAVE1F",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 21,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_CAVE2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 14,
       "y": 35,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_CAVE2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 37,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_CAVE2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 5,
       "y": 28,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_CAVE2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 16,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_CAVE2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 13,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_CAVE2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 36,
       "y": 31,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_CAVE2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -138,5 +137,6 @@
   ],
   "bg_events": [
 
-  ]
+  ],
+  "use_varied_weather": false
 }

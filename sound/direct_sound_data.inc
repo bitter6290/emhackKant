@@ -4400,66 +4400,6 @@ Cry_EnamorusTherian::
 	@ Custom mons
 	
 	.align 2
-Cry_ShinxKanto::
-	.incbin "sound/direct_sound_samples/cries/shinx.bin"
-	
-	.align 2
-Cry_LuxioKanto::
-	.incbin "sound/direct_sound_samples/cries/luxio.bin"
-	
-	.align 2
-Cry_LuxrayKanto::
-	.incbin "sound/direct_sound_samples/cries/luxray.bin"
-
-	.align 2
-Cry_LitwickKanto::
-	.incbin "sound/direct_sound_samples/cries/litwick.bin"
-
-	.align 2
-Cry_LampentKanto::
-	.incbin "sound/direct_sound_samples/cries/lampent.bin"
-	
-	.align 2
-Cry_ChandelureKanto::
-	.incbin "sound/direct_sound_samples/cries/chandelure.bin"
-	
-	.align 2
-Cry_SandileKanto::
-	.incbin "sound/direct_sound_samples/cries/sandile.bin"
-	
-	.align 2
-Cry_KrokorokKanto::
-	.incbin "sound/direct_sound_samples/cries/krokorok.bin"
-	
-	.align 2
-Cry_Moradile::
-	.incbin "sound/direct_sound_samples/cries/krookodile.bin"
-	
-	.align 2
-Cry_TimburrKanto::
-	.incbin "sound/direct_sound_samples/cries/timburr.bin"
-	
-	.align 2
-Cry_GurdurrKanto::
-	.incbin "sound/direct_sound_samples/cries/gurdurr.bin"
-	
-	.align 2
-Cry_ConkeldurrKanto::
-	.incbin "sound/direct_sound_samples/cries/conkeldurr.bin"
-	
-	.align 2
-Cry_TorkoalKanto::
-	.incbin "sound/direct_sound_samples/cries/torkoal.bin"
-	
-	.align 2
-Cry_SliggooHisui::
-	.incbin "sound/direct_sound_samples/cries/sliggoo.bin"
-	
-	.align 2
-Cry_GoodraHisui::
-	.incbin "sound/direct_sound_samples/cries/goodra.bin"
-	
-	.align 2
 Cry_Kricketon::
 	.incbin "sound/direct_sound_samples/cries/kricketune.bin"
 	

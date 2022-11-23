@@ -1342,7 +1342,7 @@ gCryTable::
 	cry Cry_Unown //Cry_Overqwil
 	cry Cry_Unown //Cry_Enamorus
 	@ Customs
-	cry Cry_Moradile
+	cry Cry_Krookodile //Cry_Moradile
 	cry Cry_Kricketon
 	cry Cry_Krickallous
 	cry Cry_Ledenna
@@ -2105,7 +2105,30 @@ gCryTable::
 	cry Cry_Torkoal
 	cry Cry_Sandygast
 	cry Cry_Arbok
+	cry Cry_Blastoise
+	cry Cry_Venusaur
 	cry Cry_PorygonZ
+	cry Cry_PorygonZ
+	cry Cry_PorygonZ
+	cry Cry_PorygonZ
+	cry Cry_PorygonZ
+	cry Cry_PorygonZ
+	cry Cry_PorygonZ
+	cry Cry_PorygonZ
+	cry Cry_PorygonZ
+	cry Cry_PorygonZ
+	cry Cry_PorygonZ
+	cry Cry_PorygonZ
+	cry Cry_PorygonZ
+	cry Cry_PorygonZ
+	cry Cry_PorygonZ
+	cry Cry_PorygonZ
+	cry Cry_PorygonZ
+	cry Cry_PorygonZ
+	cry Cry_Pikachu
+	cry Cry_Cubone
+	cry Cry_Exeggcute
+	cry Cry_Koffing
 .else
 	@ Cramorant
 	cry Cry_Unown
@@ -3490,11 +3513,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Unown //Cry_Overqwil
 	cry_reverse Cry_Unown //Cry_Enamorus
 	@ Customs
+	cry_reverse Cry_Krookodile //Cry_Moradile
 	cry_reverse Cry_Kricketon
 	cry_reverse Cry_Krickallous
 	cry_reverse Cry_Ledenna
 	cry_reverse Cry_Aloobat
-	cry_reverse Cry_ArbokMega
+	cry_reverse Cry_Poltendula
 	cry_reverse Cry_Fauvantic
 	cry_reverse Cry_Florestic
 	cry_reverse Cry_Terrantic
@@ -4199,25 +4223,46 @@ gCryTable_Reverse::
 	@ Calyrex
 	cry_reverse Cry_CalyrexIceRider
 	cry_reverse Cry_CalyrexShadowRider
-	@ Hisuian mons
 	@ Custom mons
-	cry_reverse Cry_ShinxKanto
-	cry_reverse Cry_LuxioKanto
-	cry_reverse Cry_LuxrayKanto
-	cry_reverse Cry_LitwickKanto
-	cry_reverse Cry_LampentKanto
-	cry_reverse Cry_ChandelureKanto
-	cry_reverse Cry_SandileKanto
-	cry_reverse Cry_KrokorokKanto
-	cry_reverse Cry_Moradile
-	cry_reverse Cry_TimburrKanto
-	cry_reverse Cry_GurdurrKanto
-	cry_reverse Cry_ConkeldurrKanto
-	cry_reverse Cry_TorkoalKanto
-	cry_reverse Cry_Sliggoo
-	cry_reverse Cry_Goodra
-	cry_reverse Cry_Growlithe
-	cry_reverse Cry_Arcanine
+	cry_reverse Cry_Shinx
+	cry_reverse Cry_Luxio
+	cry_reverse Cry_Luxray
+	cry_reverse Cry_Litwick
+	cry_reverse Cry_Lampent
+	cry_reverse Cry_Chandelure
+	cry_reverse Cry_Sandile
+	cry_reverse Cry_Krokorok
+	cry_reverse Cry_Timburr
+	cry_reverse Cry_Gurdurr
+	cry_reverse Cry_Conkeldurr
+	cry_reverse Cry_Torkoal
+	cry_reverse Cry_Sandygast
+	@ Custom megas
+	cry_reverse Cry_Arbok
+	cry_reverse Cry_BlastoiseMega
+	cry_reverse Cry_VenusaurMega
+	cry_reverse Cry_PorygonZ
+	cry_reverse Cry_PorygonZ
+	cry_reverse Cry_PorygonZ
+	cry_reverse Cry_PorygonZ
+	cry_reverse Cry_PorygonZ
+	cry_reverse Cry_PorygonZ
+	cry_reverse Cry_PorygonZ
+	cry_reverse Cry_PorygonZ
+	cry_reverse Cry_PorygonZ
+	cry_reverse Cry_PorygonZ
+	cry_reverse Cry_PorygonZ
+	cry_reverse Cry_PorygonZ
+	cry_reverse Cry_PorygonZ
+	cry_reverse Cry_PorygonZ
+	cry_reverse Cry_PorygonZ
+	cry_reverse Cry_PorygonZ
+	cry_reverse Cry_PorygonZ
+	cry_reverse Cry_PorygonZ
+	cry_reverse Cry_Pikachu
+	cry_reverse Cry_Cubone
+	cry_reverse Cry_Exeggcute
+	cry_reverse Cry_Koffing
 .else
 	cry_reverse Cry_Unown
 	cry_reverse Cry_Unown

@@ -1380,6 +1380,10 @@ const struct CompressedSpriteSheet gMonFrontPicTable[] =
      SPECIES_SPRITE(PORYGON_STEEL, gMonFrontPic_CircledQuestionMark),
      SPECIES_SPRITE(PORYGON_FAIRY, gMonFrontPic_CircledQuestionMark),
 	
+     SPECIES_SPRITE(PIKACHU_ALOLAN, gMonFrontPic_Pikachu),
+     SPECIES_SPRITE(CUBONE_ALOLAN, gMonFrontPic_Cubone),
+     SPECIES_SPRITE(EXEGGCUTE_ALOLAN, gMonFrontPic_Exeggcute),
+     SPECIES_SPRITE(KOFFING_GALARIAN, gMonFrontPic_Koffing),
 #endif
     SPECIES_SPRITE(EGG, gMonFrontPic_Egg),
 };

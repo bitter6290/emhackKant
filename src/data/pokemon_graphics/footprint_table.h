@@ -919,6 +919,11 @@ const u8 *const gMonFootprintTable[] =
     [SPECIES_ALOOBAT] = gMonFootprint_Aloobat,
     [SPECIES_ARBOK_MEGA] = gMonFootprint_ArbokMega,
     [SPECIES_POLTENDULA] = gMonFootprint_Cofagrigus,
+    
+    [SPECIES_PIKACHU_ALOLAN] = gMonFootprint_Pikachu,
+    [SPECIES_CUBONE_ALOLAN] = gMonFootprint_Cubone,
+    [SPECIES_EXEGGCUTE_ALOLAN] = gMonFootprint_Exeggcute,
+    [SPECIES_KOFFING_GALARIAN] = gMonFootprint_Koffing,
 #endif
     [SPECIES_EGG] = gMonFootprint_Bulbasaur,
 };

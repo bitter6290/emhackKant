@@ -44,10 +44,11 @@ ivSpreads[2**30-1] = "SPREAD_31_IV"
 def evstoKey(evIn,natureIn):
     return str(natureIn)+str(evIn[0]+253*evIn[1]+253**2*evIn[2]+253**3*evIn[3]+253**4*evIn[4]+253**5*evIn[5])
 
-
 def getAbilityNumber(speci,abi):
 #    print(speci)
 #    print(abi)
+    if speci in abilityOverrides.keys():
+        return abilityOverrides[speci].index(abi)
     for i in range(len(abiFile)):
         if abiFile[i].replace('\t','').replace(' ','') == "[SPECIES_"+speci+"]=\n":
             specOffset = i
@@ -72,7 +73,10 @@ def getAbilityNumber(speci,abi):
             break
     return abiSet.index(abi)
 
-overrides = {}
+abilityOverrides = {
+	"CUBONE":["ABILITY_ROCK_HEAD","ABILITY_LIGHTNING_ROD","ABILITY_BATTLE_ARMOR"],
+	"PIKACHU":["ABILITY_STATIC","ABILITY_NONE","ABILITY_LIGHTNING_ROD"],
+}
 
 evOrder = ["HP","Atk","Def","Spe","SpA","SpD"]
 numerals = ['0','1','2','3','4','5','6','7','8','9']

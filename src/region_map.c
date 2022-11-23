@@ -40,10 +40,17 @@
 
 #define MAP_WIDTH 26
 #define MAP_HEIGHT 20
-#define MAPCURSOR_X_MIN 1
-#define MAPCURSOR_Y_MIN 2
+#define MAPCURSOR_X_MIN 0
+#define MAPCURSOR_Y_MIN 0
 #define MAPCURSOR_X_MAX (MAPCURSOR_X_MIN + MAP_WIDTH - 1)
 #define MAPCURSOR_Y_MAX (MAPCURSOR_Y_MIN + MAP_HEIGHT - 1)
+
+#if MAPCURSOR_X_MIN == 0
+	#define MAP_X_MIN_0
+#endif
+#if MAPCURSOR_Y_MIN == 0
+	#define MAP_Y_MIN_0
+#endif
 
 #define FLYDESTICON_RED_OUTLINE 6
 
@@ -951,7 +958,16 @@ void PokedexAreaScreen_UpdateRegionMapVariablesAndVideoRegs(s16 x, s16 y)
 
 static u16 GetMapSecIdAt(u16 x, u16 y)
 {
-    if (y < MAPCURSOR_Y_MIN || y > MAPCURSOR_Y_MAX || x < MAPCURSOR_X_MIN || x > MAPCURSOR_X_MAX)
+    if (
+	#ifndef MAP_Y_MIN_0
+    	y < MAPCURSOR_Y_MIN || 
+	#endif
+	y > MAPCURSOR_Y_MAX || 
+	#ifndef MAP_X_MIN_0
+		x < MAPCURSOR_X_MIN || 
+	#endif
+	x > MAPCURSOR_X_MAX
+	)
     {
         return MAPSEC_NONE;
     }

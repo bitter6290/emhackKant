@@ -909,6 +909,82 @@
         .flags = SPECIES_FLAG_MYTHICAL,                 \
     }
 
+#define CUBONE_BASE_STATS																\
+    {																					\
+        .baseHP        = 50,															\
+        .baseAttack    = 50,															\
+        .baseDefense   = 95,															\
+        .baseSpeed     = 35,															\
+        .baseSpAttack  = 40,															\
+        .baseSpDefense = 50,															\
+        .type1 = TYPE_GROUND,															\
+        .type2 = TYPE_GROUND,															\
+        .catchRate = 190,																\
+        .expYield = 64,																	\
+        .evYield_Defense   = 1,															\
+        .itemRare = ITEM_THICK_CLUB,													\
+        .genderRatio = PERCENT_FEMALE(50),												\
+        .eggCycles = 20,																\
+        .friendship = 70,																\
+        .growthRate = GROWTH_MEDIUM_FAST,												\
+        .eggGroup1 = EGG_GROUP_MONSTER,													\
+        .eggGroup2 = EGG_GROUP_MONSTER,													\
+        .abilities = {ABILITY_ROCK_HEAD, ABILITY_LIGHTNING_ROD, ABILITY_BATTLE_ARMOR},	\
+        .bodyColor = BODY_COLOR_BROWN,													\
+        .noFlip = FALSE,																\
+    }
+
+#define EXEGGCUTE_BASE_STATS												\			
+    {																		\
+        .baseHP        = 60,												\
+        .baseAttack    = 40,												\
+        .baseDefense   = 80,												\
+        .baseSpeed     = 40,												\
+        .baseSpAttack  = 60,												\
+        .baseSpDefense = 45,												\
+        .type1 = TYPE_GRASS,												\
+        .type2 = TYPE_PSYCHIC,												\
+        .catchRate = 90,													\
+        .expYield = 65,														\
+        .evYield_Defense   = 1,												\
+        .itemRare = ITEM_PSYCHIC_SEED,										\
+        .genderRatio = PERCENT_FEMALE(50),									\
+        .eggCycles = 20,													\
+        .friendship = 70,													\
+        .growthRate = GROWTH_SLOW,											\
+        .eggGroup1 = EGG_GROUP_GRASS,										\
+        .eggGroup2 = EGG_GROUP_GRASS,										\
+        .abilities = {ABILITY_CHLOROPHYLL, ABILITY_NONE, ABILITY_HARVEST},	\
+        .bodyColor = BODY_COLOR_PINK,										\
+        .noFlip = FALSE,													\
+    }
+    
+#define KOFFING_BASE_STATS															\
+    {																				\
+        .baseHP        = 40,														\
+        .baseAttack    = 65,														\
+        .baseDefense   = 95,														\
+        .baseSpeed     = 35,														\
+        .baseSpAttack  = 60,														\
+        .baseSpDefense = 45,														\
+        .type1 = TYPE_POISON,														\
+        .type2 = TYPE_POISON,														\
+        .catchRate = 190,															\
+        .expYield = 68,																\
+        .evYield_Defense   = 1,														\
+        .itemRare = ITEM_SMOKE_BALL,												\
+        .genderRatio = PERCENT_FEMALE(50),											\
+        .eggCycles = 20,															\
+        .friendship = 70,															\
+        .growthRate = GROWTH_MEDIUM_FAST,											\
+        .eggGroup1 = EGG_GROUP_AMORPHOUS,											\
+        .eggGroup2 = EGG_GROUP_AMORPHOUS,											\
+        .abilities = {ABILITY_LEVITATE, ABILITY_NEUTRALIZING_GAS, ABILITY_STENCH},	\
+        .bodyColor = BODY_COLOR_PURPLE,												\
+        .noFlip = FALSE,															\
+    }
+    
+    
 const struct BaseStats gBaseStats[] =
 {
     [SPECIES_NONE] = {0},
@@ -3471,30 +3547,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_EXEGGCUTE] =
-    {
-        .baseHP        = 60,
-        .baseAttack    = 40,
-        .baseDefense   = 80,
-        .baseSpeed     = 40,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 45,
-        .type1 = TYPE_GRASS,
-        .type2 = TYPE_PSYCHIC,
-        .catchRate = 90,
-        .expYield = 65,
-        .evYield_Defense   = 1,
-        .itemRare = ITEM_PSYCHIC_SEED,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 20,
-        .friendship = 70,
-        .growthRate = GROWTH_SLOW,
-        .eggGroup1 = EGG_GROUP_GRASS,
-        .eggGroup2 = EGG_GROUP_GRASS,
-        .abilities = {ABILITY_CHLOROPHYLL, ABILITY_NONE, ABILITY_HARVEST},
-        .bodyColor = BODY_COLOR_PINK,
-        .noFlip = FALSE,
-    },
+    [SPECIES_EXEGGCUTE] = EXEGGCUTE_BASE_STATS,
 
     [SPECIES_EXEGGUTOR] =
     {
@@ -3524,30 +3577,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_CUBONE] =
-    {
-        .baseHP        = 50,
-        .baseAttack    = 50,
-        .baseDefense   = 95,
-        .baseSpeed     = 35,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 50,
-        .type1 = TYPE_GROUND,
-        .type2 = TYPE_GROUND,
-        .catchRate = 190,
-        .expYield = 64,
-        .evYield_Defense   = 1,
-        .itemRare = ITEM_THICK_CLUB,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 20,
-        .friendship = 70,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroup1 = EGG_GROUP_MONSTER,
-        .eggGroup2 = EGG_GROUP_MONSTER,
-        .abilities = {ABILITY_ROCK_HEAD, ABILITY_LIGHTNING_ROD, ABILITY_BATTLE_ARMOR},
-        .bodyColor = BODY_COLOR_BROWN,
-        .noFlip = FALSE,
-    },
+    [SPECIES_CUBONE] = CUBONE_BASE_STATS,
 
     [SPECIES_MAROWAK] =
     {
@@ -3647,30 +3677,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_KOFFING] =
-    {
-        .baseHP        = 40,
-        .baseAttack    = 65,
-        .baseDefense   = 95,
-        .baseSpeed     = 35,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 45,
-        .type1 = TYPE_POISON,
-        .type2 = TYPE_POISON,
-        .catchRate = 190,
-        .expYield = 68,
-        .evYield_Defense   = 1,
-        .itemRare = ITEM_SMOKE_BALL,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 20,
-        .friendship = 70,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroup1 = EGG_GROUP_AMORPHOUS,
-        .eggGroup2 = EGG_GROUP_AMORPHOUS,
-        .abilities = {ABILITY_LEVITATE, ABILITY_NEUTRALIZING_GAS, ABILITY_STENCH},
-        .bodyColor = BODY_COLOR_PURPLE,
-        .noFlip = FALSE,
-    },
+    [SPECIES_KOFFING] = KOFFING_BASE_STATS,
 
     [SPECIES_WEEZING] =
     {
@@ -27931,6 +27938,10 @@ const struct BaseStats gBaseStats[] =
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },
+    [SPECIES_PIKACHU_ALOLAN] = PIKACHU_BASE_STATS(PERCENT_FEMALE(50),FLIP),
+    [SPECIES_CUBONE_ALOLAN] = CUBONE_BASE_STATS,
+    [SPECIES_EXEGGCUTE_ALOLAN] = EXEGGCUTE_BASE_STATS,
+    [SPECIES_KOFFING_GALARIAN] = KOFFING_BASE_STATS,
 
 #endif
 };

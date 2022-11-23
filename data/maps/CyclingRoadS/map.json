@@ -24,11 +24,6 @@
       "direction": "up"
     },
     {
-      "map": "MAP_CELADON_SEA_W",
-      "offset": -64,
-      "direction": "left"
-    },
-    {
       "map": "MAP_FUCHSIA_CITY",
       "offset": 0,
       "direction": "right"

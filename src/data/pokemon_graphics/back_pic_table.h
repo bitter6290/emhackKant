@@ -1378,6 +1378,11 @@ const struct CompressedSpriteSheet gMonBackPicTable[] =
     SPECIES_SPRITE(PORYGON_DARK, gMonBackPic_CircledQuestionMark),
     SPECIES_SPRITE(PORYGON_STEEL, gMonBackPic_CircledQuestionMark),
     SPECIES_SPRITE(PORYGON_FAIRY, gMonBackPic_CircledQuestionMark),
+    
+    SPECIES_SPRITE(PIKACHU_ALOLAN, gMonBackPic_Pikachu),
+    SPECIES_SPRITE(CUBONE_ALOLAN, gMonBackPic_Cubone),
+    SPECIES_SPRITE(EXEGGCUTE_ALOLAN, gMonBackPic_Exeggcute),
+    SPECIES_SPRITE(KOFFING_GALARIAN, gMonBackPic_Koffing),
 	
     
 	//custom megas

@@ -1381,5 +1381,10 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
      [SPECIES_PORYGON_DARK] = _("Porygon-Z"),
      [SPECIES_PORYGON_STEEL] = _("Porygon-Z"),
      [SPECIES_PORYGON_FAIRY] = _("Porygon-Z"),
+     
+    [SPECIES_PIKACHU_ALOLAN] = _("Pikachu"),
+    [SPECIES_CUBONE_ALOLAN] = _("Cubone"),
+    [SPECIES_EXEGGCUTE_ALOLAN] = _("Exeggcute"),
+    [SPECIES_KOFFING_GALARIAN] = _("Koffing"),
 #endif
 };

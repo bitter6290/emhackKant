@@ -1474,6 +1474,11 @@ const struct MonCoords gMonBackPicCoords[] =
     [SPECIES_PORYGON_DARK]			= { .size = MON_COORDS_SIZE(64,64), .y_offset = 10 },
     [SPECIES_PORYGON_STEEL]			= { .size = MON_COORDS_SIZE(64,64), .y_offset = 10 },
     [SPECIES_PORYGON_FAIRY]			= { .size = MON_COORDS_SIZE(64,64), .y_offset = 10 },
+    
+    [SPECIES_PIKACHU_ALOLAN]        = PIKACHU_BACK_PIC_COORDS,
+    [SPECIES_CUBONE_ALOLAN]         = { .size = MON_COORDS_SIZE(56, 48), .y_offset = 10 },
+    [SPECIES_EXEGGCUTE_ALOLAN]      = { .size = MON_COORDS_SIZE(64, 32), .y_offset = 18 },
+    [SPECIES_KOFFING_GALARIAN]      = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  3 },
 
 #endif
     [SPECIES_EGG]                          = { .size = MON_COORDS_SIZE(24, 24), .y_offset = 20 },

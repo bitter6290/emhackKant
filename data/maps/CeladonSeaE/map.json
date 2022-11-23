@@ -44,11 +44,6 @@
       "direction": "right"
     },
     {
-      "map": "MAP_CYCLING_ROAD_S",
-      "offset": -21,
-      "direction": "down"
-    },
-    {
       "map": "MAP_CELADON_SEA_E_S",
       "offset": 0,
       "direction": "down"

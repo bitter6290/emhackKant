@@ -1,14 +1,6 @@
 {
   "map_sections": [
     {
-      "map_section": "MAPSEC_LITTLEROOT_TOWN",
-      "name": "LITTLEROOT TOWN",
-      "x": 4,
-      "y": 11,
-      "width": 1,
-      "height": 1
-    },
-    {
       "map_section": "MAPSEC_OLDALE_TOWN",
       "name": "OLDALE TOWN",
       "x": 4,
@@ -707,89 +699,89 @@
     {
       "map_section": "MAPSEC_PALLET_TOWN",
       "name": "PALLET TOWN",
-      "x": 0,
-      "y": 0,
+      "x": 7,
+      "y": 14,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_VIRIDIAN_CITY",
       "name": "VIRIDIAN CITY",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 6,
+      "y": 11,
+      "width": 2,
       "height": 1
     },
     {
       "map_section": "MAPSEC_PEWTER_CITY",
       "name": "PEWTER CITY",
-      "x": 0,
-      "y": 0,
+      "x": 7,
+      "y": 7,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_CERULEAN_CITY",
       "name": "CERULEAN CITY",
-      "x": 0,
-      "y": 0,
+      "x": 14,
+      "y": 5,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
       "map_section": "MAPSEC_LAVENDER_TOWN",
       "name": "LAVENDER TOWN",
-      "x": 0,
-      "y": 0,
+      "x": 18,
+      "y": 11,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_VERMILION_CITY",
       "name": "VERMILION CITY",
-      "x": 0,
-      "y": 0,
+      "x": 14,
+      "y": 13,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_CELADON_CITY",
       "name": "CELADON CITY",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 11,
+      "y": 10,
+      "width": 2,
       "height": 1
     },
     {
       "map_section": "MAPSEC_FUCHSIA_CITY",
       "name": "FUCHSIA CITY",
-      "x": 0,
-      "y": 0,
+      "x": 14,
+      "y": 16,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
       "map_section": "MAPSEC_CINNABAR_ISLAND",
       "name": "CINNABAR ISLAND",
-      "x": 0,
-      "y": 0,
+      "x": 8,
+      "y": 18,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_INDIGO_PLATEAU",
       "name": "INDIGO PLATEAU",
-      "x": 0,
-      "y": 0,
+      "x": 3,
+      "y": 8,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_SAFFRON_CITY",
       "name": "SAFFRON CITY",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 14,
+      "y": 10,
+      "width": 2,
       "height": 1
     },
     {

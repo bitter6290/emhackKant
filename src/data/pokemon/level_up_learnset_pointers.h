@@ -1361,5 +1361,9 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
      [SPECIES_AUREATIC] = sAureaticLevelUpLearnset,
      [SPECIES_ALOOBAT] = sAloobatLevelUpLearnset,
      [SPECIES_POLTENDULA] = sPoltendulaLevelUpLearnset,
+     [SPECIES_PIKACHU_ALOLAN] = sPikachuLevelUpLearnset,
+     [SPECIES_CUBONE_ALOLAN] = sCuboneLevelUpLearnset,
+     [SPECIES_EXEGGCUTE_ALOLAN] = sExeggcuteLevelUpLearnset,
+     [SPECIES_KOFFING_GALARIAN] = sKoffingLevelUpLearnset,
 #endif
 };

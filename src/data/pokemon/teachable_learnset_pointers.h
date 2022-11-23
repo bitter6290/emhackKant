@@ -1335,4 +1335,10 @@ const u16 *const gTeachableLearnsets[NUM_SPECIES] =
     // Enamorus
     [SPECIES_ENAMORUS_THERIAN] = sEnamorusTeachableLearnset,
 #endif
+#if P_NEW_POKEMON == TRUE
+	[SPECIES_PIKACHU_ALOLAN] = sPikachuTeachableLearnset,
+	[SPECIES_CUBONE_ALOLAN] = sCuboneTeachableLearnset,
+	[SPECIES_EXEGGCUTE_ALOLAN] = sExeggcuteTeachableLearnset,
+	[SPECIES_KOFFING_GALARIAN] = sKoffingTeachableLearnset,
+#endif
 };

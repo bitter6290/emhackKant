@@ -27,6 +27,11 @@
       "map": "MAP_KANJOH_COAST_E",
       "offset": 0,
       "direction": "down"
+    },
+    {
+      "map": "MAP_INDIGO_WOODS_E",
+      "offset": 104,
+      "direction": "up"
     }
   ],
   "object_events": [

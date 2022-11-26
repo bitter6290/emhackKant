@@ -340,11 +340,51 @@ const struct TrainerEVSpread gEvSets[] = {
 	}
 };
 const u8 gIvSets[][6] = {
-	[SPREAD_16_IV] = {16},
-	[SPREAD_0_IV] = {0},
-	[SPREAD_8_IV] = {8},
-	[SPREAD_24_IV] = {24},
-	[SPREAD_31_IV] = {31},
+	[SPREAD_16_IV] = 
+	{
+		16,
+		16,
+		16,
+		16,
+		16,
+		16
+	},
+	[SPREAD_0_IV] = 
+	{
+		0,
+		0,
+		0,
+		0,
+		0,
+		0
+	},
+	[SPREAD_8_IV] = 
+	{
+		8,
+		8,
+		8,
+		8,
+		8,
+		8
+	},
+	[SPREAD_24_IV] = 
+	{
+		24,
+		24,
+		24,
+		24,
+		24,
+		24
+	},
+	[SPREAD_31_IV] = 
+	{
+		31,
+		31,
+		31,
+		31,
+		31,
+		31
+	},
 	[SPREAD_SLOW] =
 	{
 		31,

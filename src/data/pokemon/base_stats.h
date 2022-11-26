@@ -934,7 +934,7 @@
         .noFlip = FALSE,																\
     }
 
-#define EXEGGCUTE_BASE_STATS												\			
+#define EXEGGCUTE_BASE_STATS												\
     {																		\
         .baseHP        = 60,												\
         .baseAttack    = 40,												\

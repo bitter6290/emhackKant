@@ -1884,6 +1884,10 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
     u8 baseCoeff;
     u8 evBuf[6];
     u16 ball;
+    u16 evoCheck;
+    u16 levelBuf;
+    u16 evMultBuf;
+    u16 updateSpeciesNameBuf;
         
     //find party max level for dynamic leveling
 	u8 maxLevel = 0;
@@ -1951,7 +1955,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
  				{
    			 		personalityValue = Random32();
    				}
-   				while (*&gEvSets[partyData[i].spreadEv].nature != GetNatureFromPersonality(personalityValue));
+   				while (gEvSets[partyData[i].spreadEv].nature != GetNatureFromPersonality(personalityValue));
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
                 CreateMon(&party[i], partyData[i].species, (baseCoeff*partyData[i].lvl + gTrainers[trainerNum].scalingCoeff * maxLevel + 8) >> 4, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 SetMonData(&party[i], MON_DATA_ABILITY_NUM, &partyData[i].ability);
@@ -1959,10 +1963,19 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 
                 for (j = 0; j < 6; j++)
                 {
-                	evBuf[j] = gEvSets[partyData[i].spreadEv].EVs[j] / (255 / gTrainers[trainerNum].evCoeff);
-                    SetMonData(&party[i], MON_DATA_HP_EV + j, &evBuf[j]);
+                	evMultBuf = gEvSets[partyData[i].spreadEv].EVs[j];
+                	evMultBuf *= gTrainers[trainerNum].evCoeff;
+                	evMultBuf += gEvSets[partyData[i].spreadEv].EVs[j];
+                	evMultBuf = evMultBuf >> 8;
+                    SetMonData(&party[i], MON_DATA_HP_EV + j, &evMultBuf);
                     SetMonData(&party[i], MON_DATA_HP_IV + j, &gIvSets[partyData[i].spreadIv][j]);
                 }
+                if (gTrainers[trainerNum].doEvoMon) 
+                {
+                updateSpeciesNameBuf = TryEvolveMon(&party[i]);
+                SetMonData(&party[i],MON_DATA_NICKNAME,gSpeciesNames[updateSpeciesNameBuf]);
+                }
+                CalculateMonStats(&party[i]);
                 break;
             }
             case F_TRAINER_PARTY_CUSTOM_MOVESET:
@@ -1977,15 +1990,18 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
  				{
    			 		personalityValue = Random32();
    				}
-   				while (*&gEvSets[partyData[i].spreadEv].nature != GetNatureFromPersonality(personalityValue));
+   				while (gEvSets[partyData[i].spreadEv].nature != GetNatureFromPersonality(personalityValue));
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
                 CreateMon(&party[i], partyData[i].species, (baseCoeff*partyData[i].lvl + gTrainers[trainerNum].scalingCoeff * maxLevel + 8) >> 4, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 SetMonData(&party[i], MON_DATA_ABILITY_NUM, &partyData[i].ability);                
                 // Set EVs and IVs from premade spreads
                 for (j = 0; j < 6; j++)
                 {
-                	evBuf[j] = (gEvSets[partyData[i].spreadEv].EVs[j] * gTrainers[trainerNum].evCoeff) >> 8;
-                    SetMonData(&party[i], MON_DATA_HP_EV + j, &evBuf[j]);
+                	evMultBuf = gEvSets[partyData[i].spreadEv].EVs[j];
+                	evMultBuf *= gTrainers[trainerNum].evCoeff;
+                	evMultBuf += gEvSets[partyData[i].spreadEv].EVs[j];
+                	evMultBuf = evMultBuf >> 8;
+                    SetMonData(&party[i], MON_DATA_HP_EV + j, &evMultBuf);
                     SetMonData(&party[i], MON_DATA_HP_IV + j, &gIvSets[partyData[i].spreadIv][j]);
                 }
 
@@ -1994,6 +2010,12 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                     SetMonData(&party[i], MON_DATA_MOVE1 + j, &partyData[i].moves[j]);
                     SetMonData(&party[i], MON_DATA_PP1 + j, &gBattleMoves[partyData[i].moves[j]].pp);
                 }
+                if (gTrainers[trainerNum].doEvoMon) 
+                {
+                updateSpeciesNameBuf = TryEvolveMon(&party[i]);
+                SetMonData(&party[i],MON_DATA_NICKNAME,gSpeciesNames[updateSpeciesNameBuf]);
+                }
+                CalculateMonStats(&party[i]);
                 break;
             }
             case F_TRAINER_PARTY_HELD_ITEM:
@@ -2008,7 +2030,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
  				{
    			 		personalityValue = Random32();
    				}
-   				while (*&gEvSets[partyData[i].spreadEv].nature != GetNatureFromPersonality(personalityValue));
+   				while (gEvSets[partyData[i].spreadEv].nature != GetNatureFromPersonality(personalityValue));
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
                 CreateMon(&party[i], partyData[i].species, (baseCoeff*partyData[i].lvl + gTrainers[trainerNum].scalingCoeff * maxLevel + 8) >> 4, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 SetMonData(&party[i], MON_DATA_ABILITY_NUM, &partyData[i].ability);
@@ -2016,12 +2038,21 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 // Set EVs and IVs from premade spreads
                 for (j = 0; j < 6; j++)
                 {
-                	evBuf[j] = (gEvSets[partyData[i].spreadEv].EVs[j] * gTrainers[trainerNum].evCoeff) >> 8;
-                    SetMonData(&party[i], MON_DATA_HP_EV + j, &evBuf[j]);
+                	evMultBuf = gEvSets[partyData[i].spreadEv].EVs[j];
+                	evMultBuf *= gTrainers[trainerNum].evCoeff;
+                	evMultBuf += gEvSets[partyData[i].spreadEv].EVs[j];
+                	evMultBuf = evMultBuf >> 8;
+                    SetMonData(&party[i], MON_DATA_HP_EV + j, &evMultBuf);
                     SetMonData(&party[i], MON_DATA_HP_IV + j, &gIvSets[partyData[i].spreadIv][j]);
                 }
                 
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
+                if (gTrainers[trainerNum].doEvoMon) 
+                {
+                updateSpeciesNameBuf = TryEvolveMon(&party[i]);
+                SetMonData(&party[i],MON_DATA_NICKNAME,gSpeciesNames[updateSpeciesNameBuf]);
+                }
+                CalculateMonStats(&party[i]);
                 break;
             }
             case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM:
@@ -2036,7 +2067,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
  				{
    			 		personalityValue = Random32();
    				}
-   				while (*&gEvSets[partyData[i].spreadEv].nature != GetNatureFromPersonality(personalityValue));
+   				while (gEvSets[partyData[i].spreadEv].nature != GetNatureFromPersonality(personalityValue));
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
                 CreateMon(&party[i], partyData[i].species, (baseCoeff*partyData[i].lvl + gTrainers[trainerNum].scalingCoeff * maxLevel + 8) >> 4, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 
@@ -2046,11 +2077,19 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 // Set EVs and IVs from premade spreads
                 for (j = 0; j < 6; j++)
                 {
-                	evBuf[j] = (gEvSets[partyData[i].spreadEv].EVs[j] * gTrainers[trainerNum].evCoeff) >> 8;
-                    SetMonData(&party[i], MON_DATA_HP_EV + j, &evBuf[j]);
+                	evMultBuf = gEvSets[partyData[i].spreadEv].EVs[j];
+                	evMultBuf *= gTrainers[trainerNum].evCoeff;
+                	evMultBuf += gEvSets[partyData[i].spreadEv].EVs[j];
+                	evMultBuf = evMultBuf >> 8;
+                    SetMonData(&party[i], MON_DATA_HP_EV + j, &evMultBuf);
                     SetMonData(&party[i], MON_DATA_HP_IV + j, &gIvSets[partyData[i].spreadIv][j]);
                 }
-
+                
+                if (gTrainers[trainerNum].doEvoMon) 
+                {
+                updateSpeciesNameBuf = TryEvolveMon(&party[i]);
+                SetMonData(&party[i],MON_DATA_NICKNAME,gSpeciesNames[updateSpeciesNameBuf]);
+                }
                 CalculateMonStats(&party[i]); // called twice; fix in future
 
                 for (j = 0; j < MAX_MON_MOVES; j++)
@@ -2058,6 +2097,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                     SetMonData(&party[i], MON_DATA_MOVE1 + j, &partyData[i].moves[j]);
                     SetMonData(&party[i], MON_DATA_PP1 + j, &gBattleMoves[partyData[i].moves[j]].pp);
                 }
+                
                 break;
             }
             }
@@ -2072,6 +2112,106 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
     }
 
     return gTrainers[trainerNum].partySize;
+}
+
+u16 TryEvolveMon(struct Pokemon *mon)
+{
+	u8 i;
+	u16 monSpecies;
+	u8 monLevel;
+	u16 resultMon;
+	u8 monGender;
+	
+	monSpecies = GetMonData(mon, MON_DATA_SPECIES, monSpecies);
+	monLevel = GetMonData(mon, MON_DATA_LEVEL, monLevel);
+	monGender = GetMonGender(mon);
+	resultMon = monSpecies;
+	for (i = 0; i < EVOS_PER_MON; i++)
+	{
+		switch (gEvolutionTable[monSpecies][i].method)
+		{
+		case EVO_LEVEL:
+		case EVO_LEVEL_DARK_TYPE_MON_IN_PARTY:
+		case EVO_LEVEL_DAY:
+		case EVO_LEVEL_NIGHT:
+		case EVO_LEVEL_RAIN:
+		case EVO_LEVEL_NATURE_AMPED:
+		case EVO_LEVEL_DUSK:
+		case EVO_LEVEL_ATK_EQ_DEF:
+		case EVO_LEVEL_SILCOON:
+		case EVO_LEVEL_NINJASK:
+			if((monLevel + 1) > gEvolutionTable[monSpecies][i].param)
+			{
+				resultMon = gEvolutionTable[monSpecies][i].targetSpecies;
+				SetMonData(mon, MON_DATA_SPECIES, &resultMon);
+				TryEvolveMon(mon);
+				return resultMon;
+			}
+			break;
+		case EVO_FRIENDSHIP:
+		case EVO_FRIENDSHIP_DAY:
+		case EVO_FRIENDSHIP_NIGHT:
+		case EVO_TRADE_ITEM:
+		case EVO_TRADE:
+		case EVO_ITEM:
+		case EVO_ITEM_HOLD_DAY:
+		case EVO_ITEM_HOLD_NIGHT:
+		case EVO_CRITICAL_HITS:
+		case EVO_MAPSEC:
+		case EVO_SPECIFIC_MAP:
+		case EVO_SPECIFIC_MON_IN_PARTY:
+		case EVO_TRADE_SPECIFIC_MON:
+		case EVO_SCRIPT_TRIGGER_DMG:
+		case EVO_DARK_SCROLL:
+		case EVO_MOVE:
+		case EVO_MOVE_TYPE:
+			if(monLevel > 39)
+			{
+				resultMon = gEvolutionTable[monSpecies][i].targetSpecies;
+				SetMonData(mon, MON_DATA_SPECIES, &resultMon);
+				TryEvolveMon(mon);
+				return resultMon;
+			}
+			break;
+		case EVO_ITEM_MALE:
+			if(monLevel > 39 && monGender == MON_MALE)
+			{
+				resultMon = gEvolutionTable[monSpecies][i].targetSpecies;
+				SetMonData(mon, MON_DATA_SPECIES, &resultMon);
+				TryEvolveMon(mon);
+				return resultMon;
+			}
+			break;
+		case EVO_ITEM_FEMALE:
+			if(monLevel > 39 && monGender == MON_FEMALE)
+			{
+				resultMon = gEvolutionTable[monSpecies][i].targetSpecies;
+				SetMonData(mon, MON_DATA_SPECIES, &resultMon);
+				TryEvolveMon(mon);
+				return resultMon;
+			}
+			break;
+		case EVO_LEVEL_MALE:
+			if(monLevel > gEvolutionTable[monSpecies][i].param && monGender == MON_MALE)
+			{
+				resultMon = gEvolutionTable[monSpecies][i].targetSpecies;
+				SetMonData(mon, MON_DATA_SPECIES, &resultMon);
+				TryEvolveMon(mon);
+				return resultMon;
+			}
+			break;
+		case EVO_LEVEL_FEMALE:
+			if(monLevel > gEvolutionTable[monSpecies][i].param && monGender == MON_FEMALE)
+			{
+				resultMon = gEvolutionTable[monSpecies][i].targetSpecies;
+				SetMonData(mon, MON_DATA_SPECIES, &resultMon);
+				TryEvolveMon(mon);
+				return resultMon;
+			}
+			break;
+		}
+	}
+	return monSpecies;
 }
 
 void VBlankCB_Battle(void)

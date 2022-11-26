@@ -15,7 +15,6 @@ release
 end
 }
 
-
 text Route3_EarlyGrunt{
 format("Don't even try to get through! We have this place surrounded!")
 }

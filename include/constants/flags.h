@@ -651,17 +651,17 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_TOOK_BULBASAUR  0x264 // Unused Flag
-#define FLAG_TOOK_CHARMANDER  0x265 // Unused Flag
-#define FLAG_TOOK_SQUIRTLE  0x266 // Unused Flag
-#define FLAG_QUEST_MENU_ACTIVE  0x267 // Unused Flag
-#define FLAG_PEWTER_MINE_DONE  0x268 // Unused Flag
-#define FLAG_HAS_GROTTO_LIST  0x269 // Unused Flag
-#define FLAG_CHAPTER_0_DONE  0x26A // Unused Flag
-#define FLAG_CHAPTER_1_DONE  0x26B // Unused Flag
-#define FLAG_CHAPTER_2_DONE  0x26C // Unused Flag
-#define FLAG_CHAPTER_3_DONE  0x26D // Unused Flag
-#define FLAG_UNUSED_0x26E  0x26E // Unused Flag
+#define FLAG_TOOK_BULBASAUR  		0x264 
+#define FLAG_TOOK_CHARMANDER		0x265
+#define FLAG_TOOK_SQUIRTLE  		0x266
+#define FLAG_QUEST_MENU_ACTIVE  	0x267
+#define FLAG_PEWTER_MINE_DONE  		0x268
+#define FLAG_HAS_GROTTO_LIST  		0x269
+#define FLAG_CHAPTER_0_DONE  		0x26A
+#define FLAG_CHAPTER_1_DONE  		0x26B
+#define FLAG_CHAPTER_2_DONE  		0x26C
+#define FLAG_CHAPTER_3_DONE 		0x26D
+#define FLAG_BROCK_IN_GYM			0x26E
 #define FLAG_UNUSED_0x26F  0x26F // Unused Flag
 #define FLAG_UNUSED_0x270  0x270 // Unused Flag
 #define FLAG_UNUSED_0x271  0x271 // Unused Flag
@@ -2160,7 +2160,7 @@
 #define FLAG_BADGE06_GET                             (SYSTEM_FLAGS + 0xC) //Sabrina
 #define FLAG_BADGE07_GET                             (SYSTEM_FLAGS + 0xD) //Steel
 #define FLAG_BADGE08_GET                             (SYSTEM_FLAGS + 0xE) //Soren
-#define FLAG_BADGE09_GET                             (SYSTEM_FLAGS + 0xF) //Fairy
+#define FLAG_BADGE09_GET                             (SYSTEM_FLAGS + 0xF) //Leo
 #define FLAG_BADGE10_GET                             (SYSTEM_FLAGS + 0x10) //Valeria
 #define FLAG_BADGE11_GET                             (SYSTEM_FLAGS + 0x11) //Erica
 #define FLAG_BADGE12_GET                             (SYSTEM_FLAGS + 0x12) //Blaine

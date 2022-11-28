@@ -1,1 +1,14 @@
 mapscripts PewterCity_MapScripts {}
+
+
+script PewterCity_GymGrunt{
+lock
+msgbox(PewterCity_GymGrunt0)
+release
+end
+}
+
+
+text PewterCity_GymGrunt0{
+format("Brock's away right now, so I can't let you through!\nIf you have business with him, he spends all his time in the museum nowadays.")
+}

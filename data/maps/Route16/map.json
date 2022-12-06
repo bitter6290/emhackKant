@@ -17,6 +17,11 @@
       "map": "MAP_CHARTREUSE_CITY",
       "offset": 0,
       "direction": "down"
+    },
+    {
+      "map": "MAP_CERULEAN_WOODS",
+      "offset": 4,
+      "direction": "left"
     }
   ],
   "object_events": [

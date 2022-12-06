@@ -5437,7 +5437,7 @@
       "width": 44,
       "height": 76,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fortree",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/ERangeNW/border.bin",
       "blockdata_filepath": "data/layouts/ERangeNW/map.bin"
     },
@@ -5500,6 +5500,16 @@
       "secondary_tileset": "gTileset_Fallarbor",
       "border_filepath": "data/layouts/KanjohCoastE/border.bin",
       "blockdata_filepath": "data/layouts/KanjohCoastE/map.bin"
+    },
+    {
+      "id": "LAYOUT_MYRTLE_TOWN",
+      "name": "MyrtleTown_Layout",
+      "width": 36,
+      "height": 36,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Sootopolis",
+      "border_filepath": "data/layouts/MyrtleTown/border.bin",
+      "blockdata_filepath": "data/layouts/MyrtleTown/map.bin"
     }
   ]
 }

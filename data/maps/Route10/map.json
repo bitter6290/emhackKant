@@ -10,29 +10,33 @@
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
-  "use_varied_weather": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_ROUTE9",
       "offset": 0,
-      "map": "MAP_ROUTE9"
+      "direction": "down"
     },
     {
-      "direction": "left",
+      "map": "MAP_SAFFRON_DRYLANDS",
       "offset": 28,
-      "map": "MAP_SAFFRON_DRYLANDS"
+      "direction": "left"
     },
     {
-      "direction": "left",
+      "map": "MAP_SAFFRON_DRYLANDS_N",
       "offset": -16,
-      "map": "MAP_SAFFRON_DRYLANDS_N"
+      "direction": "left"
     },
     {
-      "direction": "up",
+      "map": "MAP_CHARTREUSE_CITY",
       "offset": 0,
-      "map": "MAP_CHARTREUSE_CITY"
+      "direction": "up"
+    },
+    {
+      "map": "MAP_ERANGE_NW",
+      "offset": 0,
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -71,5 +75,6 @@
   ],
   "bg_events": [
 
-  ]
+  ],
+  "use_varied_weather": false
 }

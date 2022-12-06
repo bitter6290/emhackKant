@@ -603,6 +603,7 @@
 #define MAP_CHARTREUSE_CITY       (8 | (34 << 8))
 #define MAP_FUCHSIA_CITY          (9 | (34 << 8))
 #define MAP_COBALT_CITY_OVERWORLD (10 | (34 << 8))
+#define MAP_MYRTLE_TOWN           (11 | (34 << 8))
 
 // gMapGroup_NewRoutes
 #define MAP_ROUTE1  (0 | (35 << 8))

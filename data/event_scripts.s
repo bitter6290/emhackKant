@@ -1266,3 +1266,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route22/scripts.inc"
 
 	.include "data/maps/KanjohCoastE/scripts.inc"
+
+	.include "data/maps/MyrtleTown/scripts.inc"

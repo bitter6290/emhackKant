@@ -852,3 +852,14 @@ gTileset_FuchsiaSwamp::
 	.4byte gMetatiles_FuchsiaSwamp
 	.4byte gMetatileAttributes_FuchsiaSwamp
 	.4byte NULL
+
+	.align 2
+gTileset_sand_cave::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_sand_cave
+	.4byte gTilesetPalettes_sand_cave
+	.4byte gMetatiles_sand_cave
+	.4byte gMetatileAttributes_sand_cave
+	.4byte NULL

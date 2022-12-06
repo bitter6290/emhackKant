@@ -573,3 +573,11 @@ gMetatiles_FuchsiaSwamp::
 	.align 1
 gMetatileAttributes_FuchsiaSwamp::
 	.incbin "data/tilesets/secondary/fuchsiaswamp/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_sand_cave::
+	.incbin "data/tilesets/secondary/sand_cave/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_sand_cave::
+	.incbin "data/tilesets/secondary/sand_cave/metatile_attributes.bin"

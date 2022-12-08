@@ -909,7 +909,7 @@
         .flags = SPECIES_FLAG_MYTHICAL,                 \
     }
 
-#define CUBONE_BASE_STATS																\
+#define CUBONE_SPECIES_INFO																\
     {																					\
         .baseHP        = 50,															\
         .baseAttack    = 50,															\
@@ -934,7 +934,7 @@
         .noFlip = FALSE,																\
     }
 
-#define EXEGGCUTE_BASE_STATS												\
+#define EXEGGCUTE_SPECIES_INFO												\
     {																		\
         .baseHP        = 60,												\
         .baseAttack    = 40,												\
@@ -959,7 +959,7 @@
         .noFlip = FALSE,													\
     }
     
-#define KOFFING_BASE_STATS															\
+#define KOFFING_SPECIES_INFO															\
     {																				\
         .baseHP        = 40,														\
         .baseAttack    = 65,														\
@@ -3547,7 +3547,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_EXEGGCUTE] = EXEGGCUTE_BASE_STATS,
+    [SPECIES_EXEGGCUTE] = EXEGGCUTE_SPECIES_INFO,
 
     [SPECIES_EXEGGUTOR] =
     {
@@ -3577,7 +3577,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_CUBONE] = CUBONE_BASE_STATS,
+    [SPECIES_CUBONE] = CUBONE_SPECIES_INFO,
 
     [SPECIES_MAROWAK] =
     {
@@ -3677,7 +3677,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_KOFFING] = KOFFING_BASE_STATS,
+    [SPECIES_KOFFING] = KOFFING_SPECIES_INFO,
 
     [SPECIES_WEEZING] =
     {
@@ -27938,10 +27938,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },
-    [SPECIES_PIKACHU_ALOLAN] = PIKACHU_BASE_STATS(PERCENT_FEMALE(50),FLIP),
-    [SPECIES_CUBONE_ALOLAN] = CUBONE_BASE_STATS,
-    [SPECIES_EXEGGCUTE_ALOLAN] = EXEGGCUTE_BASE_STATS,
-    [SPECIES_KOFFING_GALARIAN] = KOFFING_BASE_STATS,
+    [SPECIES_PIKACHU_ALOLAN] = PIKACHU_SPECIES_INFO(PERCENT_FEMALE(50),FLIP),
+    [SPECIES_CUBONE_ALOLAN] = CUBONE_SPECIES_INFO,
+    [SPECIES_EXEGGCUTE_ALOLAN] = EXEGGCUTE_SPECIES_INFO,
+    [SPECIES_KOFFING_GALARIAN] = KOFFING_SPECIES_INFO,
 
 #endif
 };

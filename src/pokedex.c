@@ -4670,8 +4670,8 @@ static void PrintCurrentSpeciesTypeInfo(u8 newEntry, u16 species)
         type1 = GetTypeBySpecies(species, 1);
         type2 = GetTypeBySpecies(species, 2);
     #else
-        type1 = gBaseStats[species].type1;
-        type2 = gBaseStats[species].type2;
+        type1 = gSpeciesInfo[species].type1;
+        type2 = gSpeciesInfo[species].type2;
     #endif
     if (species == SPECIES_NONE)
         type1 = type2 = TYPE_MYSTERY;
@@ -6421,7 +6421,7 @@ static void ResetStatsWindows(void)
 static void SaveMonDataInStruct(void)
 {
     u16 species = NationalPokedexNumToSpeciesHGSS(sPokedexListItem->dexNum);
-    u8 EVs[6] = {gBaseStats[species].evYield_HP, gBaseStats[species].evYield_Speed, gBaseStats[species].evYield_Attack, gBaseStats[species].evYield_SpAttack, gBaseStats[species].evYield_Defense, gBaseStats[species].evYield_SpDefense};
+    u8 EVs[6] = {gSpeciesInfo[species].evYield_HP, gSpeciesInfo[species].evYield_Speed, gSpeciesInfo[species].evYield_Attack, gSpeciesInfo[species].evYield_SpAttack, gSpeciesInfo[species].evYield_Defense, gSpeciesInfo[species].evYield_SpDefense};
     u8 differentEVs;
     u8 i;
 
@@ -6433,13 +6433,13 @@ static void SaveMonDataInStruct(void)
     }
 
     sPokedexView->sPokemonStats.species             = species;
-    sPokedexView->sPokemonStats.genderRatio         = gBaseStats[species].genderRatio;
-    sPokedexView->sPokemonStats.baseHP              = gBaseStats[species].baseHP;
-    sPokedexView->sPokemonStats.baseSpeed           = gBaseStats[species].baseSpeed;
-    sPokedexView->sPokemonStats.baseAttack          = gBaseStats[species].baseAttack;
-    sPokedexView->sPokemonStats.baseSpAttack        = gBaseStats[species].baseSpAttack;
-    sPokedexView->sPokemonStats.baseDefense         = gBaseStats[species].baseDefense;
-    sPokedexView->sPokemonStats.baseSpDefense       = gBaseStats[species].baseSpDefense;
+    sPokedexView->sPokemonStats.genderRatio         = gSpeciesInfo[species].genderRatio;
+    sPokedexView->sPokemonStats.baseHP              = gSpeciesInfo[species].baseHP;
+    sPokedexView->sPokemonStats.baseSpeed           = gSpeciesInfo[species].baseSpeed;
+    sPokedexView->sPokemonStats.baseAttack          = gSpeciesInfo[species].baseAttack;
+    sPokedexView->sPokemonStats.baseSpAttack        = gSpeciesInfo[species].baseSpAttack;
+    sPokedexView->sPokemonStats.baseDefense         = gSpeciesInfo[species].baseDefense;
+    sPokedexView->sPokemonStats.baseSpDefense       = gSpeciesInfo[species].baseSpDefense;
     sPokedexView->sPokemonStats.differentEVs        = differentEVs;
     sPokedexView->sPokemonStats.evYield_HP          = EVs[0];
     sPokedexView->sPokemonStats.evYield_Speed       = EVs[1];
@@ -6447,13 +6447,13 @@ static void SaveMonDataInStruct(void)
     sPokedexView->sPokemonStats.evYield_SpAttack    = EVs[3];
     sPokedexView->sPokemonStats.evYield_Defense     = EVs[4];
     sPokedexView->sPokemonStats.evYield_SpDefense   = EVs[5];
-    sPokedexView->sPokemonStats.catchRate           = gBaseStats[species].catchRate;
-    sPokedexView->sPokemonStats.growthRate          = gBaseStats[species].growthRate;
-    sPokedexView->sPokemonStats.eggGroup1           = gBaseStats[species].eggGroup1;
-    sPokedexView->sPokemonStats.eggGroup2           = gBaseStats[species].eggGroup2;
-    sPokedexView->sPokemonStats.eggCycles           = gBaseStats[species].eggCycles;
-    sPokedexView->sPokemonStats.expYield            = gBaseStats[species].expYield;
-    sPokedexView->sPokemonStats.friendship          = gBaseStats[species].friendship;
+    sPokedexView->sPokemonStats.catchRate           = gSpeciesInfo[species].catchRate;
+    sPokedexView->sPokemonStats.growthRate          = gSpeciesInfo[species].growthRate;
+    sPokedexView->sPokemonStats.eggGroup1           = gSpeciesInfo[species].eggGroup1;
+    sPokedexView->sPokemonStats.eggGroup2           = gSpeciesInfo[species].eggGroup2;
+    sPokedexView->sPokemonStats.eggCycles           = gSpeciesInfo[species].eggCycles;
+    sPokedexView->sPokemonStats.expYield            = gSpeciesInfo[species].expYield;
+    sPokedexView->sPokemonStats.friendship          = gSpeciesInfo[species].friendship;
     sPokedexView->sPokemonStats.ability0            = GetAbilityBySpecies(species, 0);
     sPokedexView->sPokemonStats.ability1            = GetAbilityBySpecies(species, 1);
     #ifdef POKEMON_EXPANSION  
@@ -8371,12 +8371,12 @@ static void CreateStatBar(u8 *dst, u32 y, u32 width)
 }
 static const u8 sBaseStatOffsets[] =
 {
-    offsetof(struct BaseStats, baseHP),
-    offsetof(struct BaseStats, baseAttack),
-    offsetof(struct BaseStats, baseDefense),
-    offsetof(struct BaseStats, baseSpAttack),
-    offsetof(struct BaseStats, baseSpDefense),
-    offsetof(struct BaseStats, baseSpeed),
+    offsetof(struct SpeciesInfo, baseHP),
+    offsetof(struct SpeciesInfo, baseAttack),
+    offsetof(struct SpeciesInfo, baseDefense),
+    offsetof(struct SpeciesInfo, baseSpAttack),
+    offsetof(struct SpeciesInfo, baseSpDefense),
+    offsetof(struct SpeciesInfo, baseSpeed),
 };
 static void TryDestroyStatBars(void)
 {
@@ -8419,7 +8419,7 @@ static void CreateStatBars(struct PokedexListItem *dexMon)
         memcpy(gfx, sStatBarsGfx, sizeof(sStatBarsGfx));
         for (i = 0; i < NUM_STATS; i++)
         {
-            statValue = *((u8*)(&gBaseStats[species]) + sBaseStatOffsets[i]);
+            statValue = *((u8*)(&gSpeciesInfo[species]) + sBaseStatOffsets[i]);
             if (statValue <= 100)
             {
                 width = statValue / 3;

@@ -3,7 +3,7 @@ import os
 if "convert.py" in os.listdir("."):
     os.chdir(os.path.abspath(os.path.join('..')))
 
-stats = "src/data/pokemon/base_stats.h"
+stats = "src/data/pokemon/species_info.h"
 spreadFile = "src/data/trainer_spreads.h"
 outFile = "src/data/trainer_showdown.h"
 
@@ -123,6 +123,8 @@ def convertSets(path):
                sets[curSet]["party"][curMon]["name"] = sets[curSet]["party"][curMon]["name"] + 'IAN'
             elif(sets[curSet]["party"][curMon]["name"][len(sets[curSet]["party"][curMon]["name"])-5:] == "HISUI"):
                sets[curSet]["party"][curMon]["name"] = sets[curSet]["party"][curMon]["name"] + 'AN'
+            elif(sets[curSet]["party"][curMon]["name"][len(sets[curSet]["party"][curMon]["name"])-6:] == "PALDEA"):
+               sets[curSet]["party"][curMon]["name"] = sets[curSet]["party"][curMon]["name"] + 'N'
             if i[firstNameEnd+1] not in ["@","("]:
                 step += 1
                 continue

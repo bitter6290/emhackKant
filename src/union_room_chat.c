@@ -1173,7 +1173,7 @@ static void Chat_AskQuitChatting(void)
         input = ProcessMenuInput();
         switch (input)
         {
-        case -1:
+        case MENU_B_PRESSED:
         case 1:
             StartDisplaySubtask(CHATDISPLAY_FUNC_DESTROY_YESNO, 0);
             sChat->funcState = 3;
@@ -1212,7 +1212,7 @@ static void Chat_AskQuitChatting(void)
         input = ProcessMenuInput();
         switch (input)
         {
-        case -1:
+        case MENU_B_PRESSED:
         case 1:
             StartDisplaySubtask(CHATDISPLAY_FUNC_DESTROY_YESNO, 0);
             sChat->funcState = 3;
@@ -1514,7 +1514,7 @@ static void Chat_SaveAndExit(void)
         input = ProcessMenuInput();
         switch (input)
         {
-        case -1:
+        case MENU_B_PRESSED:
         case 1:
             sChat->funcState = 12;
             break;
@@ -1539,7 +1539,7 @@ static void Chat_SaveAndExit(void)
         input = ProcessMenuInput();
         switch (input)
         {
-        case -1:
+        case MENU_B_PRESSED:
         case 1:
             sChat->funcState = 12;
             break;

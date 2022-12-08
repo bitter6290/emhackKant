@@ -733,7 +733,9 @@
   "gMapGroup_NewGym": [
     "ViridianGym_1F",
     "ViridianGym_B1F",
-    "ViridianGymB2F"
+    "ViridianGymB2F",
+    "FuchsiaGym_1F",
+    "FuchsiaGym_BossRoom"
   ],
   "gMapGroup_NewCave": [
     "PewterCave1F",

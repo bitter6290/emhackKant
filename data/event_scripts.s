@@ -1268,3 +1268,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/KanjohCoastE/scripts.inc"
 
 	.include "data/maps/MyrtleTown/scripts.inc"
+
+	.include "data/maps/FuchsiaGym_1F/scripts.inc"
+
+	.include "data/maps/FuchsiaGym_BossRoom/scripts.inc"

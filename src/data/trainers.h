@@ -16,7 +16,7 @@ const struct Trainer gTrainers[] = {
         .evCoeff = 0,
     },
 
-    [TRAINER_SAWYER_1] =
+    [TRAINER_CALEB_PEWTER_MINE] =
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
@@ -10276,62 +10276,5 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = FALSE,
         .aiFlags = 0,
         .party = NO_ITEM_DEFAULT_MOVES(sParty_MayLinkPlaceholder),
-    },
-    
-    [TRAINER_BROCK_1] = 
-    {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_RED,
-        .trainerName = _("Brock"),
-        .items = {ITEM_POTION, ITEM_POTION, ITEM_NONE, ITEM_NONE},
-        .doubleBattle = FALSE,
-        .doEvoMon = TRUE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .scalingCoeff = 12,
-        .evCoeff = 50,
-        .party = ITEM_CUSTOM_MOVES(sParty_Brock1),
-    },
-    [TRAINER_BROCK_2] = 
-    {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_RED,
-        .trainerName = _("Brock"),
-        .items = {ITEM_POTION, ITEM_POTION, ITEM_NONE, ITEM_NONE},
-        .doubleBattle = FALSE,
-        .doEvoMon = TRUE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .scalingCoeff = 12,
-        .evCoeff = 100,
-        .party = ITEM_CUSTOM_MOVES(sParty_Brock2),
-    },
-    [TRAINER_BROCK_3] = 
-    {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_RED,
-        .trainerName = _("Brock"),
-        .items = {ITEM_POTION, ITEM_POTION, ITEM_NONE, ITEM_NONE},
-        .doubleBattle = FALSE,
-        .doEvoMon = TRUE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .scalingCoeff = 12,
-        .evCoeff = 160,
-        .party = ITEM_CUSTOM_MOVES(sParty_Brock3),
-    },
-    [TRAINER_BROCK_4] = 
-    {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_RED,
-        .trainerName = _("Brock"),
-        .items = {ITEM_POTION, ITEM_POTION, ITEM_NONE, ITEM_NONE},
-        .doubleBattle = FALSE,
-        .doEvoMon = TRUE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .scalingCoeff = 12,
-        .evCoeff = 255,
-        .party = ITEM_CUSTOM_MOVES(sParty_Brock4),
     },
 };

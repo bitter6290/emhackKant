@@ -38,7 +38,7 @@ msgbox(format("You people have no right to be here! Here, or anywhere in Kanto!"
 faceplayer
 msgbox(format("Hey! Help me chase this grunt away!"),MSGBOX_YESNO)
 if(var(VAR_RESULT)==1){
-multi_fixed_2_vs_1(TRAINER_GRUNT_AQUA_HIDEOUT_3,format("No!"),TRAINER_SAWYER_1,2)
+multi_fixed_2_vs_1(TRAINER_GRUNT_AQUA_HIDEOUT_3,format("No!"),TRAINER_CALEB_PEWTER_MINE,2)
 specialvar(VAR_RESULT, GetBattleOutcome)
 if(var(VAR_RESULT)==B_OUTCOME_WON){
 setvar(VAR_STORY_PROGRESS,14)

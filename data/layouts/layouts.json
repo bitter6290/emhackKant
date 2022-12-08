@@ -4686,7 +4686,7 @@
       "name": "ViridianGym_1F_Layout",
       "width": 14,
       "height": 24,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_MeteorFalls",
       "border_filepath": "data/layouts/ViridianGym_1F/border.bin",
       "blockdata_filepath": "data/layouts/ViridianGym_1F/map.bin"
@@ -5510,6 +5510,26 @@
       "secondary_tileset": "gTileset_Sootopolis",
       "border_filepath": "data/layouts/MyrtleTown/border.bin",
       "blockdata_filepath": "data/layouts/MyrtleTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_FUCHSIA_GYM_1F",
+      "name": "FuchsiaGym_1F_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PetalburgGym",
+      "border_filepath": "data/layouts/FuchsiaGym_1F/border.bin",
+      "blockdata_filepath": "data/layouts/FuchsiaGym_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_FUCHSIA_GYM_BOSS_ROOM",
+      "name": "FuchsiaGym_BossRoom_Layout",
+      "width": 11,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PetalburgGym",
+      "border_filepath": "data/layouts/FuchsiaGym_BossRoom/border.bin",
+      "blockdata_filepath": "data/layouts/FuchsiaGym_BossRoom/map.bin"
     }
   ]
 }

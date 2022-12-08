@@ -689,9 +689,11 @@
 #define MAP_VIRIDIAN_APARTMENTS1FNE (4 | (40 << 8))
 
 // gMapGroup_NewGym
-#define MAP_VIRIDIAN_GYM_1F  (0 | (41 << 8))
-#define MAP_VIRIDIAN_GYM_B1F (1 | (41 << 8))
-#define MAP_VIRIDIAN_GYM_B2F (2 | (41 << 8))
+#define MAP_VIRIDIAN_GYM_1F       (0 | (41 << 8))
+#define MAP_VIRIDIAN_GYM_B1F      (1 | (41 << 8))
+#define MAP_VIRIDIAN_GYM_B2F      (2 | (41 << 8))
+#define MAP_FUCHSIA_GYM_1F        (3 | (41 << 8))
+#define MAP_FUCHSIA_GYM_BOSS_ROOM (4 | (41 << 8))
 
 // gMapGroup_NewCave
 #define MAP_PEWTER_CAVE1F      (0 | (42 << 8))

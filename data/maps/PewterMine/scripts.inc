@@ -63,7 +63,7 @@ PewterMine_JoinCaleb_2:
 	goto PewterMine_JoinCaleb_1
 
 PewterMine_JoinCaleb_4:
-	multi_fixed_2_vs_1 TRAINER_GRUNT_AQUA_HIDEOUT_3, PewterMine_JoinCaleb_Text_2, TRAINER_SAWYER_1, 2
+	multi_fixed_2_vs_1 TRAINER_GRUNT_AQUA_HIDEOUT_3, PewterMine_JoinCaleb_Text_2, TRAINER_CALEB_PEWTER_MINE, 2
 	specialvar VAR_RESULT, GetBattleOutcome
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq PewterMine_JoinCaleb_6

@@ -5227,7 +5227,7 @@
       "width": 80,
       "height": 84,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fortree",
+      "secondary_tileset": "gTileset_FuchsiaSwamp",
       "border_filepath": "data/layouts/FuchsiaSwamp/border.bin",
       "blockdata_filepath": "data/layouts/FuchsiaSwamp/map.bin"
     },

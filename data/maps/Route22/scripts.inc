@@ -1,3 +1,13 @@
 Route22_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route22_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+Route22_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	goto_if_unset FLAG_HIPPOWDON_CAVE_DONE, Route22_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+Route22_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+	end
+
+Route22_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
+	setweather WEATHER_SANDSTORM
+	goto Route22_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 

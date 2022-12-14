@@ -18,8 +18,8 @@ if(var(VAR_RESULT)==1){
 multi_fixed_2_vs_1(TRAINER_GRUNT_AQUA_HIDEOUT_2,format("How..."),TRAINER_GRUNT_AQUA_HIDEOUT_1,3)
 specialvar(VAR_RESULT, GetBattleOutcome)
 if(var(VAR_RESULT)==B_OUTCOME_WON){
-setvar(VAR_STORY_PROGRESS,14)
 playbgm(MUS_RG_ROCKET_HIDEOUT,FALSE)
+setvar(VAR_STORY_PROGRESS,14)
 delay(10)
 goto(PewterMine_Explosion)
 }
@@ -98,7 +98,7 @@ script PewterMine_Magma9Dia{
 }
 script PewterMine_Magma10Dia{
 lock
-msgbox(format("Heh... Our plan is already in place! Those fools just don't know it yet..."))
+msgbox(format("Pfft... Our plan is already in place! They just don't know it yet..."))
 faceplayer
 playse(SE_PIN)
 applymovement(10,PewterMine_Exclam)

@@ -14437,7 +14437,7 @@
           "map": "MAP_PEWTER_CAVE2F",
           "base_label": "gPewterCave2F0",
           "land_mons": {
-            "encounter_rate": 25,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 5,

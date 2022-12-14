@@ -661,6 +661,8 @@
 #define MAP_ERANGE_NW          (33 | (36 << 8))
 #define MAP_ARGENT_WOODS       (34 | (36 << 8))
 #define MAP_KANJOH_COAST_E     (35 | (36 << 8))
+#define MAP_ERANGE_CLIFFS      (36 | (36 << 8))
+#define MAP_SECRET_COAST       (37 | (36 << 8))
 
 // gMapGroup_NewIndoor
 #define MAP_PALLET_PLAYER_HOUSE_1F      (0 | (37 << 8))

@@ -5530,6 +5530,26 @@
       "secondary_tileset": "gTileset_PetalburgGym",
       "border_filepath": "data/layouts/FuchsiaGym_BossRoom/border.bin",
       "blockdata_filepath": "data/layouts/FuchsiaGym_BossRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_ERANGE_CLIFFS",
+      "name": "ERangeCliffs_Layout",
+      "width": 20,
+      "height": 76,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/ERangeCliffs/border.bin",
+      "blockdata_filepath": "data/layouts/ERangeCliffs/map.bin"
+    },
+    {
+      "id": "LAYOUT_SECRET_COAST",
+      "name": "SecretCoast_Layout",
+      "width": 20,
+      "height": 44,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/SecretCoast/border.bin",
+      "blockdata_filepath": "data/layouts/SecretCoast/map.bin"
     }
   ]
 }

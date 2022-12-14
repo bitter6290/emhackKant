@@ -1,1 +1,9 @@
-mapscripts Route22_MapScripts {}
+mapscripts Route22_MapScripts {
+MAP_SCRIPT_ON_TRANSITION{
+	if(flag(FLAG_HIPPOWDON_CAVE_DONE) == false){
+		setweather(WEATHER_SANDSTORM)
+	}
+	end
+}
+
+}

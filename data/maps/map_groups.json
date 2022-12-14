@@ -702,7 +702,9 @@
     "CeruleanRangeW",
     "ERangeNW",
     "ArgentWoods",
-    "KanjohCoastE"
+    "KanjohCoastE",
+    "ERangeCliffs",
+    "SecretCoast"
   ],
   "gMapGroup_NewIndoor": [
     "PalletPlayerHouse_1F",

@@ -1272,3 +1272,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/FuchsiaGym_1F/scripts.inc"
 
 	.include "data/maps/FuchsiaGym_BossRoom/scripts.inc"
+
+	.include "data/maps/ERangeCliffs/scripts.inc"
+
+	.include "data/maps/SecretCoast/scripts.inc"

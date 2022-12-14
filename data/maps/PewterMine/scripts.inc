@@ -39,8 +39,8 @@ PewterMine_JoinEmilie_4:
 	goto PewterMine_JoinEmilie_1
 
 PewterMine_JoinEmilie_6:
-	setvar VAR_STORY_PROGRESS, 14
 	playbgm MUS_RG_ROCKET_HIDEOUT, FALSE
+	setvar VAR_STORY_PROGRESS, 14
 	delay 10
 	goto PewterMine_Explosion
 	goto PewterMine_JoinEmilie_1
@@ -431,8 +431,8 @@ PewterMine_Aqua7Dia_Text_0:
 	.string "turf?$"
 
 PewterMine_Magma10Dia_Text_0:
-	.string "Heh... Our plan is already in place! Those\n"
-	.string "fools just don't know it yet...$"
+	.string "Pfft... Our plan is already in place! They\n"
+	.string "just don't know it yet...$"
 
 PewterMine_Magma10Dia_Text_1:
 	.string "Who are you?\n"

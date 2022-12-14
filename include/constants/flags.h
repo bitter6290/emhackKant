@@ -1587,7 +1587,10 @@
 #define FLAG_UNUSED_0x5FD                                 0x5FD
 #define FLAG_UNUSED_0x5FE                                 0x5FE
 #define FLAG_UNUSED_0x5FF                                 0x5FF
-#define FLAG_UNUSED_0x600                                 0x600
+
+//600-700: "Quest" flags
+
+#define FLAG_HIPPOWDON_CAVE_DONE                          0x600
 #define FLAG_UNUSED_0x601                                 0x601
 #define FLAG_UNUSED_0x602                                 0x602
 #define FLAG_UNUSED_0x603                                 0x603

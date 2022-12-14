@@ -18842,6 +18842,7 @@ static const u16 sWeavileTeachableLearnset[] = {
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
     MOVE_FOCUS_PUNCH,
+    MOVE_FROST_KICK,
     MOVE_FRUSTRATION,
     MOVE_HAIL,
     MOVE_HIDDEN_POWER,

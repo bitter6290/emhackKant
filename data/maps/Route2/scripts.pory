@@ -3,74 +3,86 @@ mapscripts Route2_MapScripts{
 
 script Route2_Grunt{
 lock
+faceplayer
 if(var(VAR_STORY_PROGRESS)<15){
-msgbox(format("We're gonna be setting up a tollbooth here!\lIt's not ready yet, so you'll have to find another way."))
+	msgbox(format("We're gonna be setting up a tollbooth here!\lIt's not ready yet, so you'll have to find another way."))
 }
 else{
-msgbox(format("What are you talking to me for? I'm busy running this tollbooth!"))
+	if(flag(FLAG_TEMP_1) == false)
+	{
+		msgbox(format("What are you talking to me for? I'm busy running this tollbooth!"))
+	}
+	else
+	{
+		msgbox(format("You already paid us! Go ahead before we make you do it again."))
+	}
 }
 release
 end
 }
 script Route2_Stop{
 lock
+if(flag(FLAG_TEMP_1) == true){
+	end
+}
 if(var(VAR_STORY_PROGRESS)<15){
-playse(SE_PIN)
-getplayerxy(VAR_RESULT,VAR_TEMP_1)
-if(var(VAR_TEMP_1)>50){
-if(var(VAR_RESULT)>14){
-applymovement(2,ExclamRight)
+	playse(SE_PIN)
+	getplayerxy(VAR_RESULT,VAR_TEMP_1)
+	if(var(VAR_TEMP_1)>50){
+		if(var(VAR_RESULT)>14){
+			applymovement(2,ExclamRight)
+		}
+		else{
+			applymovement(2,ExclamLeft)
+		}
+	}
+	else{
+		if(var(VAR_RESULT)>12){
+			applymovement(1,ExclamRight)
+		}
+		else{
+			applymovement(1,ExclamLeft)
+		}
+	}
+	waitmovement(0)
+	msgbox("Hey!")
+	msgbox(Route2_GruntMessage1)
+	goto(Route2_AmbiRetreat)
 }
 else{
-applymovement(2,ExclamLeft)
-}
-}
-else{
-if(var(VAR_RESULT)>12){
-applymovement(1,ExclamRight)
-}
-else{
-applymovement(1,ExclamLeft)
-}
-}
-waitmovement(0)
-msgbox("Hey!")
-msgbox(Route2_GruntMessage1)
-goto(Route2_AmbiRetreat)
-}
-else{
-playse(SE_PIN)
-getplayerxy(VAR_RESULT,VAR_TEMP_1)
-if(var(VAR_TEMP_1)>50){
-if(var(VAR_RESULT)>14){
-applymovement(2,ExclamRight)
-}
-else{
-applymovement(2,ExclamLeft)
-}
-}
-else{
-if(var(VAR_RESULT)>12){
-applymovement(1,ExclamRight)
-}
-else{
-applymovement(1,ExclamLeft)
-}
-}
+	playse(SE_PIN)
+	getplayerxy(VAR_RESULT,VAR_TEMP_1)
+	if(var(VAR_TEMP_1)>50){
+		if(var(VAR_RESULT)>14){
+			applymovement(2,ExclamRight)
+		}
+		else{
+			applymovement(2,ExclamLeft)
+		}
+	}
+	else{
+		if(var(VAR_RESULT)>12){
+			applymovement(1,ExclamRight)
+		}
+		else{
+			applymovement(1,ExclamLeft)
+		}
+	}
 msgbox("Hey!")
 msgbox(Route2_GruntMessageToll)
 msgbox(format("Pay the grunt?"),MSGBOX_YESNO)
 if(var(VAR_RESULT)==1){
-checkmoney(50)
-if(var(VAR_RESULT)==1){
-removemoney(50)
-msgbox(format("Go ahead, then."))
-goto(Route2_AmbiForward)
-}
+	checkmoney(50)
+	if(var(VAR_RESULT)==1){
+		removemoney(50)
+		msgbox(format("Go ahead, then."))
+		setflag(FLAG_TEMP_1)
+		goto(Route2_AmbiForward)
+	}
 }
 else{
-msgbox(format("You're not paying? Get lost, then!"))
-goto(Route2_AmbiRetreat)
+	msgbox(format("You're not paying? Get lost, then!"))
+	goto(Route2_AmbiRetreat)
 }
 }
 release
@@ -115,6 +127,7 @@ format("If you wanna go through, you have to pay the fee!\lThat'll be 50!")
 text Route2_GruntMessage1{
 format("We're gonna be setting up a tollbooth here!\lIt's not ready yet, so you'll have to find another way.")
 }
+
 movement ExclamRight{
 face_right
 emote_exclamation_mark

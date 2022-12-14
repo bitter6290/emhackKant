@@ -14934,7 +14934,7 @@
           "map": "MAP_MT_MOON_INSIDE1F",
           "base_label": "gMtMoonInside1F0",
           "land_mons": {
-            "encounter_rate": 12,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 11,

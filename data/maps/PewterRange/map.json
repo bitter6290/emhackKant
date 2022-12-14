@@ -37,6 +37,11 @@
       "map": "MAP_NIGHTMARE_RANGE",
       "offset": -20,
       "direction": "left"
+    },
+    {
+      "map": "MAP_CERULEAN_RANGE_W",
+      "offset": 0,
+      "direction": "up"
     }
   ],
   "object_events": [

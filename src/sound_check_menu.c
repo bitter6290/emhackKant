@@ -1594,6 +1594,8 @@ static void DestroyWindow(u8 windowId) // sub_080E9750
     X(MUS_HG_WIN_MINIGAME             , "MUS-HG-WIN-MINIGAME"             ) \
     X(MUS_GAME_CORNER_JAZZ_1		  , "MUS-GAME-CORNER-JAZZ-1"		  ) \
     X(MUS_SM_TRAINER				  , "MUS-SM-TRAINER"				  ) \
+    X(MUS_NEW_CARNELIAN_CITY		  , "MUS-NEW-CARNELIAN-CITY"		  ) \
+    X(MUS_NEW_CAVE_SLOW_1			  , "MUS-NEW-CAVE-SLOW-1"			  ) \
 
 #define SOUND_LIST_SE \
     X(SE_STOP                  , "STOP"                     ) \

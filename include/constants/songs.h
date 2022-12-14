@@ -944,13 +944,20 @@
 #define MUS_HG_OBTAIN_CASTLE_POINTS       896 // Received Castle Points!
 #define MUS_HG_OBTAIN_B_POINTS            897 // Received Battle Points!
 #define MUS_HG_WIN_MINIGAME               898 // Cleared Wobbuffet Pop!
+
+#define HG_MUSIC_END                      MUS_HG_WIN_MINIGAME
+
+#define NEW_MUSIC_START					  (HG_MUSIC_END) + 1
+
 #define MUS_GAME_CORNER_JAZZ_1			  899 // Game corner 1
 #define MUS_SM_TRAINER					  900 // Sun and Moon trainer battle theme
+#define MUS_NEW_CARNELIAN_CITY			  901 // Carnelian City
+#define MUS_NEW_CAVE_SLOW_1				  902 // Slow cave theme 1 (grotto)
 
 
-#define HG_MUSIC_END                      MUS_SM_TRAINER
+#define NEW_MUSIC_END					  902
 
-#define SONGS_END                         HG_MUSIC_END
+#define SONGS_END                         NEW_MUSIC_END
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

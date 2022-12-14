@@ -902,6 +902,8 @@ gSongTable::
 	song mus_hg_win_minigame, 2, 2
 	song mus_game_corner_jazz_1, 0, 0
 	song mus_sm_trainer, 0, 0
+	song mus_new_carnelian_city, 0, 0
+	song mus_new_cave_slow_1, 0, 0
 
 	.align 2
 dummy_song_header:

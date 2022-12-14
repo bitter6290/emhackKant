@@ -2,7 +2,7 @@
   "id": "MAP_PEWTER_CAVE3F",
   "name": "PewterCave3F",
   "layout": "LAYOUT_PEWTER_CAVE3F",
-  "music": "MUS_DP_OREBURGH_MINE",
+  "music": "MUS_NEW_CAVE_SLOW_1",
   "region_map_section": "MAPSEC_PEWTER_CAVE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

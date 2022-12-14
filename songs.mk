@@ -2345,3 +2345,10 @@ $(MID_SUBDIR)/mus_game_corner_jazz_1.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_sm_trainer.s: %.s: %.mid
 	$(MID) $< $@ -E -R0 -G229 -V100 -p5
+	
+$(MID_SUBDIR)/mus_new_carnelian_city.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G191 -V100 -p5
+	
+$(MID_SUBDIR)/mus_new_cave_slow_1.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G191 -V100 -p5
+	

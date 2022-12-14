@@ -14,24 +14,24 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "left",
+      "map": "MAP_LAVENDER_TOWN",
       "offset": 8,
-      "map": "MAP_LAVENDER_TOWN"
+      "direction": "left"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE9",
       "offset": -44,
-      "map": "MAP_ROUTE9"
+      "direction": "left"
     },
     {
-      "direction": "down",
+      "map": "MAP_ROUTE12",
       "offset": -24,
-      "map": "MAP_ROUTE12"
+      "direction": "down"
     },
     {
-      "direction": "down",
+      "map": "MAP_SEKANTO_SEA_N",
       "offset": 0,
-      "map": "MAP_SEKANTO_SEA_N"
+      "direction": "down"
     }
   ],
   "object_events": [

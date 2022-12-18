@@ -3,6 +3,7 @@
 
 #include "sprite.h"
 #include "constants/field_weather.h"
+#include "constants/weather_class.h"
 
 #define TAG_WEATHER_START 0x1200
 enum {
@@ -136,6 +137,14 @@ struct Weather
     u8 loadDroughtPalsOffset;
 };
 
+struct WeatherClass
+{
+	u8 sandSunChance;
+	u8 rainSnowChance;
+	u8 sunChance; //real sun chance is sandSunChance * sunChance / 65025; sand chance is sandSunChance * (255 - sunChance) / 65025.
+	u8 snowChance; //ditto with snow and rain, respectively
+};
+
 // field_weather.c
 extern struct Weather gWeather;
 extern struct Weather *const gWeatherPtr;
@@ -239,5 +248,15 @@ void SetWeather(u32 weather);
 void DoCurrentWeather(void);
 void UpdateWeatherPerDay(u16 increment);
 void ResumePausedWeather(void);
+
+// data/weather_classes.h
+
+extern const struct WeatherClass gWeatherClasses[];
+
+// weather_dynamic.c (moved to field_weather.c)
+
+void SetDynamicWeather(void);
+void IncrementWeather(void);
+
 
 #endif // GUARD_WEATHER_H

@@ -208,6 +208,8 @@ void NewGameInitData(void)
     memset(&gSaveBlock2Ptr->completedQuests, 0, sizeof(gSaveBlock2Ptr->completedQuests));
     gSaveBlock2Ptr->activeQuest = 0;
     gSaveBlock2Ptr->autoRun = FALSE;
+    gSaveBlock2Ptr->weatherX = 127;
+    gSaveBlock2Ptr->weatherY = 127;
 }
 
 static void ResetMiniGamesRecords(void)

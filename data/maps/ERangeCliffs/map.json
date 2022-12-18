@@ -17,6 +17,11 @@
       "map": "MAP_BURGUNDY_COASTLINE",
       "offset": 0,
       "direction": "up"
+    },
+    {
+      "map": "MAP_SECRET_COAST",
+      "offset": 0,
+      "direction": "down"
     }
   ],
   "object_events": [

@@ -104,6 +104,7 @@ struct GymLeaderParties
 	union TrainerMonPtr parties[4];
 };
 
+
 #define TRAINER_ENCOUNTER_MUSIC(trainer)((gTrainers[trainer].encounterMusic_gender & 0x7F))
 
 extern const u16 gMinigameDigits_Pal[];

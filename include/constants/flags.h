@@ -8,38 +8,38 @@
 // for things like shortening an NPCs introduction text if the player already spoke
 // to them once.
 #define TEMP_FLAGS_START 0x0
-#define FLAG_TEMP_1      (TEMP_FLAGS_START + 0x1)
-#define FLAG_TEMP_2      (TEMP_FLAGS_START + 0x2)
-#define FLAG_TEMP_3      (TEMP_FLAGS_START + 0x3)
-#define FLAG_TEMP_4      (TEMP_FLAGS_START + 0x4)
-#define FLAG_TEMP_5      (TEMP_FLAGS_START + 0x5)  // Unused Flag
-#define FLAG_TEMP_6      (TEMP_FLAGS_START + 0x6)  // Unused Flag
-#define FLAG_TEMP_7      (TEMP_FLAGS_START + 0x7)  // Unused Flag
-#define FLAG_TEMP_8      (TEMP_FLAGS_START + 0x8)  // Unused Flag
-#define FLAG_TEMP_9      (TEMP_FLAGS_START + 0x9)  // Unused Flag
-#define FLAG_TEMP_A      (TEMP_FLAGS_START + 0xA)  // Unused Flag
-#define FLAG_TEMP_B      (TEMP_FLAGS_START + 0xB)  // Unused Flag
-#define FLAG_TEMP_C      (TEMP_FLAGS_START + 0xC)  // Unused Flag
-#define FLAG_TEMP_D      (TEMP_FLAGS_START + 0xD)  // Unused Flag
-#define FLAG_TEMP_E      (TEMP_FLAGS_START + 0xE)  // Unused Flag
-#define FLAG_TEMP_F      (TEMP_FLAGS_START + 0xF)  // Unused Flag
-#define FLAG_TEMP_10     (TEMP_FLAGS_START + 0x10) // Unused Flag
-#define FLAG_TEMP_11     (TEMP_FLAGS_START + 0x11)
-#define FLAG_TEMP_12     (TEMP_FLAGS_START + 0x12)
-#define FLAG_TEMP_13     (TEMP_FLAGS_START + 0x13)
-#define FLAG_TEMP_14     (TEMP_FLAGS_START + 0x14)
-#define FLAG_TEMP_15     (TEMP_FLAGS_START + 0x15)
-#define FLAG_TEMP_16     (TEMP_FLAGS_START + 0x16)
-#define FLAG_TEMP_17     (TEMP_FLAGS_START + 0x17)
-#define FLAG_TEMP_18     (TEMP_FLAGS_START + 0x18)
-#define FLAG_TEMP_19     (TEMP_FLAGS_START + 0x19)
-#define FLAG_TEMP_1A     (TEMP_FLAGS_START + 0x1A)
-#define FLAG_TEMP_1B     (TEMP_FLAGS_START + 0x1B)
-#define FLAG_TEMP_1C     (TEMP_FLAGS_START + 0x1C)
-#define FLAG_TEMP_1D     (TEMP_FLAGS_START + 0x1D)
-#define FLAG_TEMP_1E     (TEMP_FLAGS_START + 0x1E)
-#define FLAG_TEMP_1F     (TEMP_FLAGS_START + 0x1F)
-#define TEMP_FLAGS_END   FLAG_TEMP_1F
+#define FLAG_TEMP_1      				(TEMP_FLAGS_START + 0x1)
+#define FLAG_TEMP_2      				(TEMP_FLAGS_START + 0x2)
+#define FLAG_TEMP_3      				(TEMP_FLAGS_START + 0x3)
+#define FLAG_TEMP_4      				(TEMP_FLAGS_START + 0x4)
+#define FLAG_TEMP_5      				(TEMP_FLAGS_START + 0x5)  // Unused Flag
+#define FLAG_TEMP_6      				(TEMP_FLAGS_START + 0x6)  // Unused Flag
+#define FLAG_TEMP_7      				(TEMP_FLAGS_START + 0x7)  // Unused Flag
+#define FLAG_TEMP_8      				(TEMP_FLAGS_START + 0x8)  // Unused Flag
+#define FLAG_TEMP_9      				(TEMP_FLAGS_START + 0x9)  // Unused Flag
+#define FLAG_TEMP_A     				(TEMP_FLAGS_START + 0xA)  // Unused Flag
+#define FLAG_TEMP_B     				(TEMP_FLAGS_START + 0xB)  // Unused Flag
+#define FLAG_TEMP_C      				(TEMP_FLAGS_START + 0xC)  // Unused Flag
+#define FLAG_TEMP_D      				(TEMP_FLAGS_START + 0xD)  // Unused Flag
+#define FLAG_TEMP_E      				(TEMP_FLAGS_START + 0xE)  // Unused Flag
+#define FLAG_TEMP_DYNAMIC_WEATHER       (TEMP_FLAGS_START + 0xF)  // Previously unused Flag
+#define FLAG_TEMP_10     				(TEMP_FLAGS_START + 0x10) // Unused Flag
+#define FLAG_TEMP_11     				(TEMP_FLAGS_START + 0x11)
+#define FLAG_TEMP_12     				(TEMP_FLAGS_START + 0x12)
+#define FLAG_TEMP_13     				(TEMP_FLAGS_START + 0x13)
+#define FLAG_TEMP_14     				(TEMP_FLAGS_START + 0x14)
+#define FLAG_TEMP_15     				(TEMP_FLAGS_START + 0x15)
+#define FLAG_TEMP_16     				(TEMP_FLAGS_START + 0x16)
+#define FLAG_TEMP_17     				(TEMP_FLAGS_START + 0x17)
+#define FLAG_TEMP_18    				(TEMP_FLAGS_START + 0x18)
+#define FLAG_TEMP_19    				(TEMP_FLAGS_START + 0x19)
+#define FLAG_TEMP_1A    				(TEMP_FLAGS_START + 0x1A)
+#define FLAG_TEMP_1B    				(TEMP_FLAGS_START + 0x1B)
+#define FLAG_TEMP_1C    				(TEMP_FLAGS_START + 0x1C)
+#define FLAG_TEMP_1D    				(TEMP_FLAGS_START + 0x1D)
+#define FLAG_TEMP_1E    				(TEMP_FLAGS_START + 0x1E)
+#define FLAG_TEMP_1F    				(TEMP_FLAGS_START + 0x1F)
+#define TEMP_FLAGS_END  				FLAG_TEMP_1F
 
 #define FLAG_UNUSED_0x020    0x20 // Unused Flag
 #define FLAG_UNUSED_0x021    0x21 // Unused Flag

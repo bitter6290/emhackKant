@@ -14,24 +14,24 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
+      "map": "MAP_CELADON_CITY",
       "offset": -21,
-      "map": "MAP_CELADON_CITY"
+      "direction": "up"
     },
     {
-      "direction": "left",
+      "map": "MAP_CYCLING_ROAD_N",
       "offset": 0,
-      "map": "MAP_CYCLING_ROAD_N"
+      "direction": "left"
     },
     {
-      "direction": "down",
+      "map": "MAP_CELADON_SEA_E",
       "offset": 0,
-      "map": "MAP_CELADON_SEA_E"
+      "direction": "down"
     },
     {
-      "direction": "right",
+      "map": "MAP_SAFFRON_COAST",
       "offset": -12,
-      "map": "MAP_SAFFRON_COAST"
+      "direction": "right"
     }
   ],
   "object_events": [

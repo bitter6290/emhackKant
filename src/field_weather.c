@@ -3,6 +3,7 @@
 #include "constants/weather.h"
 #include "constants/rgb.h"
 #include "util.h"
+#include "event_data.h"
 #include "event_object_movement.h"
 #include "field_weather.h"
 #include "main.h"
@@ -16,6 +17,8 @@
 #include "task.h"
 #include "trig.h"
 #include "gpu_regs.h"
+
+#include "data/weather_classes.h"
 
 #define DROUGHT_COLOR_INDEX(color) ((((color) >> 1) & 0xF) | (((color) >> 2) & 0xF0) | (((color) >> 3) & 0xF00))
 
@@ -1108,4 +1111,64 @@ void PreservePaletteInWeather(u8 preservedPalIndex)
 void ResetPreservedPalettesInWeather(void)
 {
     sPaletteColorMapTypes = sBasePaletteColorMapTypes;
+}
+
+void SetDynamicWeather(void)
+{
+	u16 weatherClass = gSpecialVar_0x8001;
+	
+	gSaveBlock1Ptr->flags[FLAG_TEMP_DYNAMIC_WEATHER/8] |= 1 << FLAG_TEMP_DYNAMIC_WEATHER%8;
+	if(gSaveBlock2Ptr->weatherX > gWeatherClasses[weatherClass].rainSnowChance)
+	{
+		if(gSaveBlock2Ptr->weatherY > gWeatherClasses[weatherClass].snowChance)
+		{
+			SetWeather(WEATHER_SNOW);
+		}
+		else
+		{
+			SetWeather(WEATHER_RAIN);
+		}
+	}
+	else if(gSaveBlock2Ptr->weatherX <= gWeatherClasses[weatherClass].sandSunChance)
+	{
+		if(gSaveBlock2Ptr->weatherY > gWeatherClasses[weatherClass].sunChance)
+		{
+			SetWeather(WEATHER_DROUGHT);
+		}
+		else
+		{
+			SetWeather(WEATHER_SANDSTORM);
+		}
+	}
+	else{
+		SetWeather(WEATHER_SUNNY);
+	}
+}
+
+void IncrementWeather(void)
+{
+	u16 xCheckRaw = Random();
+	u16 yCheckRaw = Random();
+	s8 xCheck = xCheckRaw>>8;
+	s8 yCheck = yCheckRaw>>8;
+	xCheck /= 8;
+	yCheck /= 8;
+	DebugPrintf("Old X is %d.", gSaveBlock2Ptr->weatherX);
+	DebugPrintf("Old Y is %d.", gSaveBlock2Ptr->weatherY);	
+	DebugPrintf("xCheck is %d.", xCheck);
+	DebugPrintf("yCheck is %d.", yCheck);
+	if (gSaveBlock2Ptr->weatherX + xCheck < 1 || gSaveBlock2Ptr->weatherX + xCheck > 255){
+		gSaveBlock2Ptr->weatherX -= xCheck;
+	}
+	else{
+		gSaveBlock2Ptr->weatherX += xCheck;
+	}
+	if (gSaveBlock2Ptr->weatherY + yCheck < 1 || gSaveBlock2Ptr->weatherY + yCheck > 255){
+		gSaveBlock2Ptr->weatherY -= yCheck;
+	}
+	else{
+		gSaveBlock2Ptr->weatherY += yCheck;
+	}
+	DebugPrintf("New X is %d.", gSaveBlock2Ptr->weatherX);
+	DebugPrintf("New Y is %d.", gSaveBlock2Ptr->weatherY);	
 }

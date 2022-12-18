@@ -1,5 +1,11 @@
 Route1_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, Route1_MapScripts_MAP_SCRIPT_ON_LOAD
 	.byte 0
+
+Route1_MapScripts_MAP_SCRIPT_ON_LOAD:
+	setvar VAR_0x8001, 1
+	special SetDynamicWeather
+	return
 
 
 Route1_Lass1::

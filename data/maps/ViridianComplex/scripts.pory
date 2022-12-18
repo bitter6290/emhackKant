@@ -1,1 +1,8 @@
 mapscripts ViridianComplex_MapScripts {}
+
+
+text ViridianComplex_MtMoonGrunt{
+	format(
+	"Have you seen those rocks on the side of Mt. Moon? It's odd to think about it, but it's a real roadblock for Team Rocket- after all, the badge they need is on our side!"
+	)
+}

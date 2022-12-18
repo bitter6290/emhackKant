@@ -727,8 +727,10 @@ struct SaveBlock2
              u16 optionsBattleSceneOff:1; // whether battle animations are disabled
              u16 regionMapZoom:1; // whether the map is zoomed in
     /*0x18*/ struct Pokedex pokedex;
-    /*0x90*/ u8 filler_90[0x7];
-    /*0x97*/ u8 timeCheck;
+    /*0x90*/ u8 filler_90[0x5];
+    /*0x95*/ u8 weatherX;
+    /*0x96*/ u8 weatherY;
+    /*0x97*/ u8 weatherTimeCheck;
     /*0x98*/ struct Time localTimeOffset;
     /*0xA0*/ struct Time lastBerryTreeUpdate;
     /*0xA8*/ u32 gcnLinkFlags; // Read by Pokemon Colosseum/XD

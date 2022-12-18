@@ -71,6 +71,12 @@ static void UpdatePerMinute(struct Time *localTime)
             gSaveBlock2Ptr->lastBerryTreeUpdate = *localTime;
         }
     }
+	gSaveBlock2Ptr->weatherTimeCheck += 1;
+	DebugPrintf("Weather cycle: %d",gSaveBlock2Ptr->weatherTimeCheck);
+    if (gSaveBlock2Ptr->weatherTimeCheck > 5){
+    	gSaveBlock2Ptr->weatherTimeCheck = 0;
+    	IncrementWeather();
+    }
 }
 
 static void ReturnFromStartWallClock(void)

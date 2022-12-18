@@ -1,4 +1,9 @@
 mapscripts Route1_MapScripts{
+
+MAP_SCRIPT_ON_LOAD {
+	setvar(VAR_0x8001, 1)
+	special(SetDynamicWeather)
+}
 }
 
 text Route1_Lass1{

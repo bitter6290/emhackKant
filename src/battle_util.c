@@ -3253,8 +3253,7 @@ u8 DoBattlerEndTurnEffects(void)
             gBattleStruct->turnEffectsTracker++;
             break;
         case ENDTURN_PLASMA_FISTS:
-            for (i = 0; i < gBattlersCount; i++)
-                gStatuses4[i] &= ~STATUS4_PLASMA_FISTS;
+            gStatuses4[gActiveBattler] &= ~STATUS4_PLASMA_FISTS;
             gBattleStruct->turnEffectsTracker++;
             break;
         case ENDTURN_BATTLER_COUNT:  // done
@@ -4845,10 +4844,12 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
             }
             break;
         case ABILITY_INTIMIDATE:
-            if (!(gSpecialStatuses[battler].intimidatedMon))
+            if (!gSpecialStatuses[battler].switchInAbilityDone)
             {
-                gBattleResources->flags->flags[battler] |= RESOURCE_FLAG_INTIMIDATED;
-                gSpecialStatuses[battler].intimidatedMon = TRUE;
+                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                SET_STATCHANGER(STAT_ATK, 1, TRUE);
+                BattleScriptPushCursorAndCallback(BattleScript_IntimidateActivates);
+                effect++;
             }
             break;
         case ABILITY_FORECAST:
@@ -6056,30 +6057,6 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
                 gBattlescriptCurrInstr = BattleScript_SynchronizeActivates;
                 gHitMarker |= HITMARKER_IGNORE_SAFEGUARD;
                 effect++;
-            }
-        }
-        break;
-    case ABILITYEFFECT_INTIMIDATE1:
-    case ABILITYEFFECT_INTIMIDATE2:
-        for (i = 0; i < gBattlersCount; i++)
-        {
-            if (GetBattlerAbility(i) == ABILITY_INTIMIDATE && gBattleResources->flags->flags[i] & RESOURCE_FLAG_INTIMIDATED
-                && (IsBattlerAlive(BATTLE_OPPOSITE(i)) || IsBattlerAlive(BATTLE_PARTNER(BATTLE_OPPOSITE(i))))) // At least one opposing mon has to be alive.
-            {
-                gBattleResources->flags->flags[i] &= ~RESOURCE_FLAG_INTIMIDATED;
-                gLastUsedAbility = ABILITY_INTIMIDATE;
-                if (caseID == ABILITYEFFECT_INTIMIDATE1)
-                {
-                    BattleScriptPushCursorAndCallback(BattleScript_IntimidateActivatesEnd3);
-                }
-                else
-                {
-                    BattleScriptPushCursor();
-                    gBattlescriptCurrInstr = BattleScript_IntimidateActivates;
-                }
-                battler = gBattlerAbility = gBattleStruct->intimidateBattler = i;
-                effect++;
-                break;
             }
         }
         break;

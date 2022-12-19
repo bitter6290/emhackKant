@@ -3266,8 +3266,8 @@ static void BattleStartClearSetData(void)
 
     for (i = 0; i < PARTY_SIZE; i++)
     {
-        gBattleStruct->usedHeldItems[i][0] = 0;
-        gBattleStruct->usedHeldItems[i][1] = 0;
+        gBattleStruct->usedHeldItems[i][B_SIDE_PLAYER] = 0;
+        gBattleStruct->usedHeldItems[i][B_SIDE_OPPONENT] = 0;
         gBattleStruct->itemStolen[i].originalItem = GetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM);
         gPartyCriticalHits[i] = 0;
     }
@@ -3944,8 +3944,6 @@ static void TryDoEventsBeforeFirstTurn(void)
         if (AbilityBattleEffects(ABILITYEFFECT_ON_SWITCHIN, gBattlerAttacker, 0, 0, 0) != 0)
             return;
     }
-    if (AbilityBattleEffects(ABILITYEFFECT_INTIMIDATE1, 0, 0, 0, 0) != 0)
-        return;
     if (AbilityBattleEffects(ABILITYEFFECT_TRACE1, 0, 0, 0, 0) != 0)
         return;
     // Check all switch in items having effect from the fastest mon to slowest.
@@ -5072,10 +5070,10 @@ static void TurnValuesCleanUp(bool8 var0)
         gSpecialStatuses[gActiveBattler].parentalBondState = PARENTAL_BOND_OFF;
     }
 
-    gSideStatuses[0] &= ~(SIDE_STATUS_QUICK_GUARD | SIDE_STATUS_WIDE_GUARD | SIDE_STATUS_CRAFTY_SHIELD | SIDE_STATUS_MAT_BLOCK);
-    gSideStatuses[1] &= ~(SIDE_STATUS_QUICK_GUARD | SIDE_STATUS_WIDE_GUARD | SIDE_STATUS_CRAFTY_SHIELD | SIDE_STATUS_MAT_BLOCK);
-    gSideTimers[0].followmeTimer = 0;
-    gSideTimers[1].followmeTimer = 0;
+    gSideStatuses[B_SIDE_PLAYER] &= ~(SIDE_STATUS_QUICK_GUARD | SIDE_STATUS_WIDE_GUARD | SIDE_STATUS_CRAFTY_SHIELD | SIDE_STATUS_MAT_BLOCK);
+    gSideStatuses[B_SIDE_OPPONENT] &= ~(SIDE_STATUS_QUICK_GUARD | SIDE_STATUS_WIDE_GUARD | SIDE_STATUS_CRAFTY_SHIELD | SIDE_STATUS_MAT_BLOCK);
+    gSideTimers[B_SIDE_PLAYER].followmeTimer = 0;
+    gSideTimers[B_SIDE_OPPONENT].followmeTimer = 0;
 }
 
 void SpecialStatusesClear(void)

@@ -768,7 +768,7 @@ static const u8 sText_AttackerBrokeThroughParalysis[] = _("{B_ATK_NAME_WITH_PREF
 static const u8 sText_AttackerHealedItsBurn[] = _("{B_ATK_NAME_WITH_PREFIX} healed its burn with\nits sheer determination!");
 static const u8 sText_AttackerMeltedTheIce[] = _("{B_ATK_NAME_WITH_PREFIX} melted the ice with\nits fiery determination!");
 static const u8 sText_TargetToughedItOut[] = _("{B_DEF_NAME_WITH_PREFIX} toughed it out\nto show you its best side!");
-
+static const u8 sText_AttackerLostElectricType[] = _("{B_ATK_NAME_WITH_PREFIX} used up all\nof its electricity!");
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
 {
@@ -1397,6 +1397,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_TERRAINLOCK - BATTLESTRINGS_TABLE_START] = sText_AstralLockActivates,
     [STRINGID_STASISACTIVATES - BATTLESTRINGS_TABLE_START] = sText_StasisActivates,
     [STRINGID_ACCELERATEACTIVATES - BATTLESTRINGS_TABLE_START] = sText_AccelerateActivates,
+    [STRINGID_ATTACKERLOSTELECTRICTYPE - BATTLESTRINGS_TABLE_START] = sText_AttackerLostElectricType,
 };
 
 const u16 gZEffectStringIds[] =

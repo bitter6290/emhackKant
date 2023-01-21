@@ -21,7 +21,7 @@ script VFW_EventScript_BTim{
 }
 script VFW_GrottoMasterSign{
 	lock
-	msgbox(format("Even if there's only one way through an area, it never hurts to explore all the possible routes!\lYou never know what you might come across!"))
+	msgbox(format("Even if there's only one way through an area, it never hurts to explore all the possible routes.\lYou never know what you might come across!"))
 	release
 	end
 }

@@ -13060,6 +13060,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_CALYREX_ICE_RIDER] = sAnims_Calyrex,
     [SPECIES_CALYREX_SHADOW_RIDER] = sAnims_Calyrex,
     [SPECIES_ENAMORUS_THERIAN] = sAnims_EnamorusTherian,
+#endif
 #if P_NEW_POKEMON == TRUE
     //custom mons
     [SPECIES_SHINX_KANTO] = sAnims_ShinxKanto,

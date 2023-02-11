@@ -555,7 +555,7 @@ static void ApplyColorMapWithBlend(u8 startPalIndex, u8 numPalettes, s8 colorMap
     u8 gBlend = color.g;
     u8 bBlend = color.b;
 
-    palOffset = startPalIndex * 16;
+    palOffset = BG_PLTT_ID(startPalIndex);
     numPalettes += startPalIndex;
     colorMapIndex--;
     curPalIndex = startPalIndex;
@@ -659,7 +659,7 @@ static void ApplyFogBlend(u8 blendCoeff, u16 blendColor)
     u8 bBlend;
     u16 curPalIndex;
 
-    BlendPalette(0, 256, blendCoeff, blendColor);
+    BlendPalette(BG_PLTT_ID(0), 16 * 16, blendCoeff, blendColor);
     color = *(struct RGBColor *)&blendColor;
     rBlend = color.r;
     gBlend = color.g;
@@ -693,7 +693,7 @@ static void ApplyFogBlend(u8 blendCoeff, u16 blendColor)
         }
         else
         {
-            BlendPalette(curPalIndex * 16, 16, blendCoeff, blendColor);
+            BlendPalette(PLTT_ID(curPalIndex), 16, blendCoeff, blendColor);
         }
     }
 }
@@ -833,8 +833,8 @@ void UpdateSpritePaletteWithWeather(u8 spritePaletteIndex)
         }
         break;
     case WEATHER_PAL_STATE_SCREEN_FADING_OUT:
-        paletteIndex *= 16;
-        CpuFastCopy(gPlttBufferFaded + paletteIndex, gPlttBufferUnfaded + paletteIndex, 32);
+        paletteIndex = PLTT_ID(paletteIndex);
+        CpuFastCopy(gPlttBufferFaded + paletteIndex, gPlttBufferUnfaded + paletteIndex, PLTT_SIZE_4BPP);
         BlendPalette(paletteIndex, 16, gPaletteFade.y, gPaletteFade.blendColor);
         break;
     // WEATHER_PAL_STATE_CHANGING_WEATHER
@@ -846,7 +846,7 @@ void UpdateSpritePaletteWithWeather(u8 spritePaletteIndex)
         }
         else
         {
-            paletteIndex *= 16;
+            paletteIndex = PLTT_ID(paletteIndex);
             BlendPalette(paletteIndex, 16, 12, RGB(28, 31, 28));
         }
         break;
@@ -869,7 +869,7 @@ static bool8 IsFirstFrameOfWeatherFadeIn(void)
 
 void LoadCustomWeatherSpritePalette(const u16 *palette)
 {
-    LoadPalette(palette, 0x100 + gWeatherPtr->weatherPicSpritePalIndex * 16, 32);
+    LoadPalette(palette, OBJ_PLTT_ID(gWeatherPtr->weatherPicSpritePalIndex), PLTT_SIZE_4BPP);
     UpdateSpritePaletteWithWeather(gWeatherPtr->weatherPicSpritePalIndex);
 }
 
@@ -1149,25 +1149,27 @@ void IncrementWeather(void)
 {
 	u16 xCheckRaw = Random();
 	u16 yCheckRaw = Random();
-	s8 xCheck = xCheckRaw>>8;
-	s8 yCheck = yCheckRaw>>8;
-	xCheck /= 8;
-	yCheck /= 8;
+	u8 xCheck = xCheckRaw>>11;
+	u8 yCheck = yCheckRaw>>11;
 	DebugPrintf("Old X is %d.", gSaveBlock2Ptr->weatherX);
 	DebugPrintf("Old Y is %d.", gSaveBlock2Ptr->weatherY);	
 	DebugPrintf("xCheck is %d.", xCheck);
 	DebugPrintf("yCheck is %d.", yCheck);
-	if (gSaveBlock2Ptr->weatherX + xCheck < 1 || gSaveBlock2Ptr->weatherX + xCheck > 255){
+	if (gSaveBlock2Ptr->weatherX > 239 - xCheck || gSaveBlock2Ptr->weatherX < xCheck - 16){
 		gSaveBlock2Ptr->weatherX -= xCheck;
+		gSaveBlock2Ptr->weatherX += 16;
 	}
 	else{
 		gSaveBlock2Ptr->weatherX += xCheck;
+		gSaveBlock2Ptr->weatherX -= 16;
 	}
-	if (gSaveBlock2Ptr->weatherY + yCheck < 1 || gSaveBlock2Ptr->weatherY + yCheck > 255){
+	if (gSaveBlock2Ptr->weatherY > 239 - yCheck || gSaveBlock2Ptr->weatherY < yCheck - 16){
 		gSaveBlock2Ptr->weatherY -= yCheck;
+		gSaveBlock2Ptr->weatherY += 16;
 	}
 	else{
 		gSaveBlock2Ptr->weatherY += yCheck;
+		gSaveBlock2Ptr->weatherY -= 16;
 	}
 	DebugPrintf("New X is %d.", gSaveBlock2Ptr->weatherX);
 	DebugPrintf("New Y is %d.", gSaveBlock2Ptr->weatherY);	

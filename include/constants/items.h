@@ -928,8 +928,15 @@
 #define ITEM_RUBY 756
 #define ITEM_SAPPHIRE 757
 
+#define ITEM_ABILITY_SHIELD 758
+#define ITEM_CLEAR_AMULET 759
+#define ITEM_PUNCHING_GLOVE 760
+#define ITEM_COVERT_CLOAK 761
+#define ITEM_LOADED_DICE 762
+
+
 // New Key Items
-#define START_NEW_ITEMS ITEM_SAPPHIRE + 1
+#define START_NEW_ITEMS ITEM_LOADED_DICE + 1
 
 #define ITEM_GROTTO_LIST 		START_NEW_ITEMS				//758
 #define ITEM_ROPE 				START_NEW_ITEMS + 1			//759
@@ -960,6 +967,7 @@
 #define ITEM_CD_FAIRY			START_NEW_MEGA_STONES + 20	//780
 
 #define ITEMS_COUNT ITEM_CD_FAIRY
+
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

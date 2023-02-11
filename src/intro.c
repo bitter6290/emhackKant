@@ -23,6 +23,7 @@
 #include "sound.h"
 #include "util.h"
 #include "title_screen.h"
+#include "rhh_copyright.h"
 #include "constants/rgb.h"
 #include "constants/battle_anim.h"
 
@@ -1024,6 +1025,18 @@ static const struct SpritePalette sSpritePalette_RayquazaOrb[] =
     {},
 };
 
+#if RHH_COPYRIGHT_INTRO == TRUE
+static void VBlankCB_PretIntro()
+{
+    LoadOam();
+    ProcessSpriteCopyRequests();
+    TransferPlttBuffer();
+    ScanlineEffect_InitHBlankDmaTransfer();
+    RunTasks();
+    AnimateSprites();
+    BuildOamBuffer();
+}
+#endif
 
 static void VBlankCB_Intro(void)
 {
@@ -1051,11 +1064,11 @@ static void MainCB2_EndIntro(void)
         SetMainCallback2(CB2_InitTitleScreen);
 }
 
-static void LoadCopyrightGraphics(u16 tilesetAddress, u16 tilemapAddress, u16 paletteAddress)
+static void LoadCopyrightGraphics(u16 tilesetAddress, u16 tilemapAddress, u16 paletteOffset)
 {
     LZ77UnCompVram(gIntroCopyright_Gfx, (void *)(VRAM + tilesetAddress));
     LZ77UnCompVram(gIntroCopyright_Tilemap, (void *)(VRAM + tilemapAddress));
-    LoadPalette(gIntroCopyright_Pal, paletteAddress, 32);
+    LoadPalette(gIntroCopyright_Pal, paletteOffset, PLTT_SIZE_4BPP);
 }
 
 static void SerialCB_CopyrightScreen(void)
@@ -1080,11 +1093,14 @@ static u8 SetUpCopyrightScreen(void)
         CpuFill32(0, (void *)OAM, OAM_SIZE);
         CpuFill16(0, (void *)(PLTT + 2), PLTT_SIZE - 2);
         ResetPaletteFade();
-        LoadCopyrightGraphics(0, 0x3800, 0);
+#if RHH_COPYRIGHT_INTRO == FALSE
+        LoadCopyrightGraphics(0, 0x3800, BG_PLTT_ID(0));
+#endif
         ScanlineEffect_Stop();
         ResetTasks();
         ResetSpriteData();
         FreeAllSpritePalettes();
+#if RHH_COPYRIGHT_INTRO == FALSE
         BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_WHITEALPHA);
         SetGpuReg(REG_OFFSET_BG0CNT, BGCNT_PRIORITY(0)
                                    | BGCNT_CHARBASE(0)
@@ -1094,14 +1110,59 @@ static u8 SetUpCopyrightScreen(void)
         EnableInterrupts(INTR_FLAG_VBLANK);
         SetVBlankCallback(VBlankCB_Intro);
         REG_DISPCNT = DISPCNT_MODE_0 | DISPCNT_OBJ_1D_MAP | DISPCNT_BG0_ON;
+#else
+        SetGpuReg(REG_OFFSET_BG0CNT, BGCNT_PRIORITY(0)
+                                   | BGCNT_CHARBASE(0)
+                                   | BGCNT_SCREENBASE(7)
+                                   | BGCNT_16COLOR
+                                   | BGCNT_TXT256x256);
+        EnableInterrupts(INTR_FLAG_VBLANK);
+        REG_DISPCNT = DISPCNT_MODE_0 | DISPCNT_OBJ_1D_MAP | DISPCNT_BG0_ON;
+
+        gMain.state++;
+        break;
+    case 1:
+        RhhIntro_InitCopyrightBgs();
+        BeginNormalPaletteFade(PALETTES_ALL, 0, 0x10, 0, RGB_WHITEALPHA);
+        SetVBlankCallback(VBlankCB_PretIntro);
+#endif
         SetSerialCallback(SerialCB_CopyrightScreen);
         GameCubeMultiBoot_Init(&gMultibootProgramStruct);
     default:
+#if RHH_COPYRIGHT_INTRO == TRUE
+        RunTasks();
+        UpdatePaletteFade();
+        gMain.state++;
+        GameCubeMultiBoot_Main(&gMultibootProgramStruct);
+        break;
+    case 30:
+        RhhIntro_LoadCopyrightBgGraphics();
+        BeginNormalPaletteFade(0x00000001, 0, 0x10, 0, RGB_BLACK); 
+        UpdatePaletteFade(); 
+        GameCubeMultiBoot_Main(&gMultibootProgramStruct);
+        gMain.state++;
+        break;
+    case 31:
+        RhhIntro_LoadCopyrightSpriteGraphics();
+        RhhIntro_CreateCopyRightSprites();
+        UpdatePaletteFade(); 
+        GameCubeMultiBoot_Main(&gMultibootProgramStruct);
+        gMain.state++;
+        break;
+    case 45:
+        RhhIntro_ShowRhhCredits();
+        UpdatePaletteFade();
+        GameCubeMultiBoot_Main(&gMultibootProgramStruct);
+        gMain.state++;
+        break;
+    case 253:
+#else
         UpdatePaletteFade();
         gMain.state++;
         GameCubeMultiBoot_Main(&gMultibootProgramStruct);
         break;
     case 140:
+#endif
         GameCubeMultiBoot_Main(&gMultibootProgramStruct);
         if (gMultibootProgramStruct.gcmb_field_2 != 1)
         {
@@ -1109,9 +1170,20 @@ static u8 SetUpCopyrightScreen(void)
             gMain.state++;
         }
         break;
+#if RHH_COPYRIGHT_INTRO == TRUE
+    case 254:
+        if (UpdatePaletteFade())
+            break;
+        RhhIntro_DestroyRhhCreditSprites();
+        gMain.state++;
+        break;
+
+    case 255:
+#else
     case 141:
         if (UpdatePaletteFade())
             break;
+#endif
         CreateTask(Task_Scene1_Load, 0);
         SetMainCallback2(MainCB2_Intro);
         if (gMultibootProgramStruct.gcmb_field_2 != 0)
@@ -1178,7 +1250,7 @@ static void Task_Scene1_Load(u8 taskId)
     DmaClear16(3, BG_SCREEN_ADDR(21), BG_SCREEN_SIZE);
     LZ77UnCompVram(sIntro1Bg3_Tilemap, (void *)(BG_SCREEN_ADDR(22)));
     DmaClear16(3, BG_SCREEN_ADDR(23), BG_SCREEN_SIZE);
-    LoadPalette(sIntro1Bg_Pal, 0, sizeof(sIntro1Bg_Pal));
+    LoadPalette(sIntro1Bg_Pal, BG_PLTT_ID(0), sizeof(sIntro1Bg_Pal));
     SetGpuReg(REG_OFFSET_BG3CNT, BGCNT_PRIORITY(3) | BGCNT_CHARBASE(0) | BGCNT_SCREENBASE(22) | BGCNT_16COLOR | BGCNT_TXT256x512);
     SetGpuReg(REG_OFFSET_BG2CNT, BGCNT_PRIORITY(2) | BGCNT_CHARBASE(0) | BGCNT_SCREENBASE(20) | BGCNT_16COLOR | BGCNT_TXT256x512);
     SetGpuReg(REG_OFFSET_BG1CNT, BGCNT_PRIORITY(1) | BGCNT_CHARBASE(0) | BGCNT_SCREENBASE(18) | BGCNT_16COLOR | BGCNT_TXT256x512);
@@ -1717,7 +1789,7 @@ static void Task_Scene3_Load(u8 taskId)
     IntroResetGpuRegs();
     LZ77UnCompVram(sIntroPokeball_Gfx, (void *)VRAM);
     LZ77UnCompVram(sIntroPokeball_Tilemap, (void *)(BG_CHAR_ADDR(1)));
-    LoadPalette(sIntroPokeball_Pal, 0, sizeof(sIntroPokeball_Pal));
+    LoadPalette(sIntroPokeball_Pal, BG_PLTT_ID(0), sizeof(sIntroPokeball_Pal));
     gTasks[taskId].tAlpha = 0;
     gTasks[taskId].tZoomDiv = 0;
     gTasks[taskId].tZoomDivSpeed = 0;
@@ -2663,10 +2735,10 @@ static void Task_RayquazaAttack(u8 taskId)
         {
             if (--data[3] != 0)
             {
-                BlendPalette(0x50, 16, data[3], RGB(9, 10, 10));
-                CpuCopy16(&gIntro3Bg_Pal[0x1AC], &gPlttBufferFaded[94], 2);
-                CpuCopy16(&gIntro3Bg_Pal[0x1AC], &gPlttBufferFaded[88], 2);
-                CpuCopy16(&gIntro3Bg_Pal[0x18C], &gPlttBufferFaded[92], 2);
+                BlendPalette(BG_PLTT_ID(5), 16, data[3], RGB(9, 10, 10));
+                CpuCopy16(&gIntro3Bg_Pal[428], &gPlttBufferFaded[BG_PLTT_ID(5) + 14], PLTT_SIZEOF(1));
+                CpuCopy16(&gIntro3Bg_Pal[428], &gPlttBufferFaded[BG_PLTT_ID(5) + 8], PLTT_SIZEOF(1));
+                CpuCopy16(&gIntro3Bg_Pal[396], &gPlttBufferFaded[BG_PLTT_ID(5) + 12], PLTT_SIZEOF(1));
             }
             else
             {

@@ -28,7 +28,7 @@ void ClearMysteryGift(void)
 {
     #ifndef FREE_BATTLE_TOWER_E_READER
     CpuFill32(0, &gSaveBlock1Ptr->mysteryGift, sizeof(gSaveBlock1Ptr->mysteryGift));
-    ClearSavedWonderNewsMetadata(); // Clear is redundant, InitSavedWonderNews would be sufficient
+    ClearSavedWonderNewsMetadata(); // Clear is redundant, WonderNews_Reset would be sufficient
     #endif
     InitQuestionnaireWords();
 }
@@ -136,7 +136,7 @@ static void ClearSavedWonderNewsMetadata(void)
 {
     #ifndef FREE_BATTLE_TOWER_E_READER
     CpuFill32(0, GetSavedWonderNewsMetadata(), sizeof(gSaveBlock1Ptr->mysteryGift.newsMetadata));
-    InitSavedWonderNews();
+    WonderNews_Reset();
     #endif
 }
 

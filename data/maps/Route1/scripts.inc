@@ -3,7 +3,7 @@ Route1_MapScripts::
 	.byte 0
 
 Route1_MapScripts_MAP_SCRIPT_ON_TRANSITION:
-	setvar VAR_0x8001, 1
+	setvar VAR_0x8001, WEATHER_TEMPERATE
 	special SetDynamicWeather
 	return
 

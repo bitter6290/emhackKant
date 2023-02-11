@@ -1719,6 +1719,22 @@
       "y": 4,
       "width": 3,
       "height": 3
+    },
+    {
+      "map_section": "MAPSEC_VERMILION_PLAIN",
+      "name": "Vermilion Plain",
+      "x": 15,
+      "y": 11,
+      "width": 3,
+      "height": 2
+    },
+    {
+      "map_section": "MAPSEC_VIRIDIAN_FIELD",
+      "name": "Viridian Field",
+      "x": 6,
+      "y": 12,
+      "width": 1,
+      "height": 3
     }
   ]
 }

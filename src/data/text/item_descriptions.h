@@ -3792,7 +3792,34 @@ static const u8 sSapphireDesc[] = _(
     "A brilliant blue gem\n"
     "that symbolizes\n"
     "honesty.");
-    
+
+static const u8 sAbilityShieldDesc[] = _(
+    "Ability changes are\n"
+    "prevented for this\n"
+    "items's holder.");
+
+static const u8 sClearAmuletDesc[] = _(
+    "Stat lowering is\n"
+    "prevented for this\n"
+    "items's holder.");
+
+static const u8 sPunchingGloveDesc[] = _(
+    "Powers up punching\n"
+    "moves and removes\n"
+    "their contact.");
+
+static const u8 sCovertCloakDesc[] = _(
+    "Protects the holder\n"
+    "from secondary\n"
+    "move effects.");
+
+static const u8 sLoadedDiceDesc[] = _(
+    "Rolls high numbers.\n"
+    "Multihit strikes\n"
+    "hit more times.");
+
+//Custom
+
 static const u8 sGrottoListDesc[] = _(
     "A list of hidden\n"
     "places in the Kanto\n"
@@ -3812,4 +3839,3 @@ static const u8 sCinnabarDriveDesc[] = _(
 	"An odd drive\n"
 	"that can be held by\n"
 	"Porygon-Z.");
-

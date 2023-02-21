@@ -3243,10 +3243,39 @@ static const u8 sBoltKickDescription[] = _(
 static const u8 sFrostKickDescription[] = _(
     "A kick with a high critical-\n"
     "hit ratio. May freeze.");
+    
+static const u8 sPressurePointDescription[] = _(
+	"Strikes the foe's weak\n"
+	"point, hitting SpD.");
+
+static const u8 sSoaringKickDescription[] = _(
+	"A vertical jump-kick that\n"
+	"hits Flying targets hard.");
+
+static const u8 sPureWaterDescription[] = _(
+	"A spray of water that\n"
+	"removes stat changes.");
+	
+static const u8 sVolcanicFlowDescription[] = _(
+	"Hits all other grounded\n"
+	"Pokémon in return for health.");
+
+static const u8 sEctoblastDescription[] = _(
+	"Uses its stored energy to\n"
+	"attack, sacrificing SpD.");
+
+static const u8 sStrangeSymphonyDescription[] = _(
+	"Plays a strange song which\n"
+	"may lower SpA.");
+	
+static const u8 sScorchedEarthDescription[] = _(
+	"A wave of fire that\n"
+	"destroys terrain.");
 
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
     "effect is in development.");
+
 
 #undef BINDING_TURNS
 
@@ -4082,13 +4111,16 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_COMBAT_TORQUE - 1] = sCombatTorqueDescription,
     [MOVE_MAGICAL_TORQUE - 1] = sMagicalTorqueDescription,
 
-    [MOVE_PURE_WATER - 1] = gNotDoneYetDescription,
-    [MOVE_VOLCANIC_FLOW - 1] = gNotDoneYetDescription,
+    [MOVE_PURE_WATER - 1] = sPureWaterDescription,
+    [MOVE_VOLCANIC_FLOW - 1] = sVolcanicFlowDescription,
     [MOVE_DARK_TERRAIN - 1] = gNotDoneYetDescription,
     [MOVE_ROCKY_TERRAIN - 1] = gNotDoneYetDescription,
     [MOVE_RESISTANCE - 1] = gNotDoneYetDescription,
+    [MOVE_SOARING_KICK - 1] = sSoaringKickDescription,
     [MOVE_BOLT_KICK - 1] = sBoltKickDescription,
     [MOVE_FROST_KICK - 1] = sFrostKickDescription,
-    [MOVE_PRESSURE_POINT - 1] = gNotDoneYetDescription,
-    [MOVE_SCORCHED_EARTH - 1] = gNotDoneYetDescription,
+    [MOVE_PRESSURE_POINT - 1] = sPressurePointDescription,
+    [MOVE_SCORCHED_EARTH - 1] = sScorchedEarthDescription,
+    [MOVE_ECTOBLAST - 1] = sEctoblastDescription,
+    [MOVE_STRANGE_SYMPHONY - 1] = sStrangeSymphonyDescription,
 };

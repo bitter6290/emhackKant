@@ -13621,52 +13621,6 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .flags = FLAG_SNATCH_AFFECTED | FLAG_DANCE,
         .split = SPLIT_STATUS,
     },
-    [MOVE_SOARING_KICK] =
-    {
-        .effect = EFFECT_SKY_UPPERCUT,
-        .power = 85,
-        .type = TYPE_FIGHTING,
-        .accuracy = 85,
-        .pp = 15,
-        .secondaryEffectChance = 0,
-        .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
-        .zMovePower = 160,
-        .zMoveEffect = Z_EFFECT_NONE,
-        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_HIGH_CRIT | FLAG_DMG_IN_AIR,
-        .split = SPLIT_PHYSICAL,
-    },
-    [MOVE_BOLT_KICK]=
-    {
-        .effect = EFFECT_PARALYZE_HIT,
-        .power = 85,
-        .type = TYPE_ELECTRIC,
-        .accuracy = 90,
-        .pp = 15,
-        .secondaryEffectChance = 10,
-        .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
-        .zMovePower = 160,
-        .zMoveEffect = Z_EFFECT_NONE,
-        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_HIGH_CRIT,
-        .split = SPLIT_PHYSICAL,
-    },
-    [MOVE_FROST_KICK]=
-    {
-        .effect = EFFECT_FREEZE_HIT,
-        .power = 85,
-        .type = TYPE_ICE,
-        .accuracy = 90,
-        .pp = 15,
-        .secondaryEffectChance = 5,
-        .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
-        .zMovePower = 160,
-        .zMoveEffect = Z_EFFECT_NONE,
-        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_HIGH_CRIT,
-        .split = SPLIT_PHYSICAL,
-    },
-
     [MOVE_TERA_BLAST] =
     {
         .effect = EFFECT_PLACEHOLDER, // EFFECT_TERA_BLAST,
@@ -14493,6 +14447,53 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .zMovePower = 180,
         .zMoveEffect = Z_EFFECT_NONE,
     },
+    [MOVE_ECTOBLAST] =
+    {
+    	.effect = EFFECT_ATTACKER_SPD_DOWN_2_HIT,
+    	.power = 100,
+    	.type = TYPE_GHOST,
+    	.accuracy = 95,
+    	.pp = 5,
+    	.secondaryEffectChance = 100,
+    	.target = MOVE_TARGET_SELECTED,
+    	.priority = 0,
+    	.flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_BALLISTIC,
+    	.split = SPLIT_SPECIAL,
+    	.zMovePower = 165,
+    	.zMoveEffect = Z_EFFECT_NONE,
+    },
+
+    [MOVE_COMBAT_TORQUE] =
+    {
+        .effect = EFFECT_PARALYZE_HIT,
+        .power = 100,
+        .type = TYPE_FIGHTING,
+        .accuracy = 100,
+        .pp = 10,
+        .secondaryEffectChance = 30,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_SHEER_FORCE_BOOST,
+        .split = SPLIT_PHYSICAL,
+        .zMovePower = 160,
+        .zMoveEffect = Z_EFFECT_NONE
+    },
+
+    [MOVE_MAGICAL_TORQUE] =
+    {
+        .effect = EFFECT_CONFUSE_HIT,
+        .power = 100,
+        .type = TYPE_FAIRY,
+        .accuracy = 100,
+        .pp = 10,
+        .secondaryEffectChance = 30,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_SHEER_FORCE_BOOST,
+        .split = SPLIT_PHYSICAL,
+        .zMovePower = 160,
+        .zMoveEffect = Z_EFFECT_NONE
+    },
     //custom moves
     [MOVE_ROCKY_TERRAIN] =
     {
@@ -14599,52 +14600,50 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .zMovePower = 110,
         .zMoveEffect = Z_EFFECT_NONE,
     },
-    [MOVE_ECTOBLAST] =
+    [MOVE_SOARING_KICK] =
     {
-    	.effect = EFFECT_ATTACKER_SPD_DOWN_2_HIT,
-    	.power = 100,
-    	.type = TYPE_GHOST,
-    	.accuracy = 95,
-    	.pp = 5,
-    	.secondaryEffectChance = 100,
-    	.target = MOVE_TARGET_SELECTED,
-    	.priority = 0,
-    	.flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_BALLISTIC,
-    	.split = SPLIT_SPECIAL,
-    	.zMovePower = 165,
-    	.zMoveEffect = Z_EFFECT_NONE,
+        .effect = EFFECT_SKY_UPPERCUT,
+        .power = 85,
+        .type = TYPE_FIGHTING,
+        .accuracy = 85,
+        .pp = 15,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .zMovePower = 160,
+        .zMoveEffect = Z_EFFECT_NONE,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_HIGH_CRIT | FLAG_DMG_IN_AIR,
+        .split = SPLIT_PHYSICAL,
     },
-
-    [MOVE_COMBAT_TORQUE] =
+    [MOVE_BOLT_KICK]=
     {
         .effect = EFFECT_PARALYZE_HIT,
-        .power = 100,
-        .type = TYPE_FIGHTING,
-        .accuracy = 100,
-        .pp = 10,
-        .secondaryEffectChance = 30,
+        .power = 85,
+        .type = TYPE_ELECTRIC,
+        .accuracy = 90,
+        .pp = 15,
+        .secondaryEffectChance = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .flags = FLAG_PROTECT_AFFECTED | FLAG_SHEER_FORCE_BOOST,
-        .split = SPLIT_PHYSICAL,
         .zMovePower = 160,
-        .zMoveEffect = Z_EFFECT_NONE
+        .zMoveEffect = Z_EFFECT_NONE,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_HIGH_CRIT,
+        .split = SPLIT_PHYSICAL,
     },
-
-    [MOVE_MAGICAL_TORQUE] =
+    [MOVE_FROST_KICK]=
     {
-        .effect = EFFECT_CONFUSE_HIT,
-        .power = 100,
-        .type = TYPE_FAIRY,
-        .accuracy = 100,
-        .pp = 10,
-        .secondaryEffectChance = 30,
+        .effect = EFFECT_FREEZE_HIT,
+        .power = 85,
+        .type = TYPE_ICE,
+        .accuracy = 90,
+        .pp = 15,
+        .secondaryEffectChance = 5,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .flags = FLAG_PROTECT_AFFECTED | FLAG_SHEER_FORCE_BOOST,
-        .split = SPLIT_PHYSICAL,
         .zMovePower = 160,
-        .zMoveEffect = Z_EFFECT_NONE
+        .zMoveEffect = Z_EFFECT_NONE,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_HIGH_CRIT,
+        .split = SPLIT_PHYSICAL,
     },
 
     // Z-Moves

@@ -867,13 +867,13 @@
 // Custom Moves
 #define MOVE_ROCKY_TERRAIN 		MOVES_CUSTOM	
 #define MOVE_DARK_TERRAIN 		MOVES_CUSTOM + 1	//
-#define MOVE_PURE_WATER 		MOVES_CUSTOM + 2	//830	Anim needed
-#define MOVE_VOLCANIC_FLOW 		MOVES_CUSTOM + 3	//Anim needed
+#define MOVE_PURE_WATER 		MOVES_CUSTOM + 2	//Anim needed
+#define MOVE_VOLCANIC_FLOW 		MOVES_CUSTOM + 3	//830	Anim needed
 #define MOVE_SCORCHED_EARTH 	MOVES_CUSTOM + 4	//Anim needed
 #define MOVE_RESISTANCE 		MOVES_CUSTOM + 5	//Anim needed
 #define MOVE_SOARING_KICK 		MOVES_CUSTOM + 6	//Anim needed
-#define MOVE_BOLT_KICK 			MOVES_CUSTOM + 7	//835
-#define MOVE_FROST_KICK 		MOVES_CUSTOM + 8
+#define MOVE_BOLT_KICK 			MOVES_CUSTOM + 7	
+#define MOVE_FROST_KICK 		MOVES_CUSTOM + 8	//835
 #define MOVE_PRESSURE_POINT		MOVES_CUSTOM + 9	//Anim needed
 #define MOVE_STRANGE_SYMPHONY 	MOVES_CUSTOM + 10	//Anim needed
 #define MOVE_ECTOBLAST			MOVES_CUSTOM + 11	//Anim needed

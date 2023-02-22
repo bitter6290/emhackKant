@@ -3,14 +3,14 @@
   "name": "KanjohCoastE",
   "layout": "LAYOUT_KANJOH_COAST_E",
   "music": "MUS_ABANDONED_SHIP",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "region_map_section": "MAPSEC_PALLET_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
-  "show_map_name": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
@@ -41,33 +41,7 @@
 
   ],
   "coord_events": [
-    {
-      "type": "trigger",
-      "x": 13,
-      "y": 0,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "KanjohCoastE_SandTrigger"
-    },
-    {
-      "type": "trigger",
-      "x": 14,
-      "y": 0,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "KanjohCoastE_SandTrigger"
-    },
-    {
-      "type": "trigger",
-      "x": 15,
-      "y": 0,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "KanjohCoastE_SandTrigger"
-    }
+
   ],
   "bg_events": [
 

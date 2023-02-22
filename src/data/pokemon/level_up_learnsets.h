@@ -19918,16 +19918,20 @@ static const struct LevelUpMove sLedennaLevelUpLearnset[] = {
 static const struct LevelUpMove sFauvanticLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 1, MOVE_LICK),
 	LEVEL_UP_MOVE( 5, MOVE_INFESTATION),
+	LEVEL_UP_MOVE( 35, MOVE_HYPNOSIS),
 	LEVEL_UP_END
 };
 static const struct LevelUpMove sFloresticLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 1, MOVE_LICK),
 	LEVEL_UP_MOVE( 5, MOVE_VINE_WHIP),
+	LEVEL_UP_MOVE( 35, MOVE_INGRAIN),
 	LEVEL_UP_END
 };
 static const struct LevelUpMove sTerranticLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 1, MOVE_LICK),
 	LEVEL_UP_MOVE( 5, MOVE_ANCIENT_POWER),
+	LEVEL_UP_MOVE( 50, MOVE_HEAD_SMASH),
+	LEVEL_UP_MOVE( 60, MOVE_EARTHQUAKE),
 	LEVEL_UP_END
 };
 static const struct LevelUpMove sAureaticLevelUpLearnset[] = {

@@ -1,8 +1,8 @@
-mapscripts KanjohCoastE_MapScripts {}
-
-script KanjohCoastE_SandTrigger{
+mapscripts KanjohCoastE_MapScripts {
+MAP_SCRIPT_ON_TRANSITION{
 	if(flag(FLAG_HIPPOWDON_CAVE_DONE) == false){
 		setweather(WEATHER_SANDSTORM)
 	}
 	end
+}
 }

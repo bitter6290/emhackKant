@@ -14800,7 +14800,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 8,
             "mons": [
               {
                 "min_level": 27,

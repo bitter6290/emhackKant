@@ -5550,6 +5550,16 @@
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/SecretCoast/border.bin",
       "blockdata_filepath": "data/layouts/SecretCoast/map.bin"
+    },
+    {
+      "id": "LAYOUT_INDIGO_WOODS",
+      "name": "IndigoWoods_Layout",
+      "width": 84,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/IndigoWoods/border.bin",
+      "blockdata_filepath": "data/layouts/IndigoWoods/map.bin"
     }
   ]
 }

@@ -1,0 +1,44 @@
+{
+  "id": "MAP_INDIGO_WOODS",
+  "name": "IndigoWoods",
+  "layout": "LAYOUT_INDIGO_WOODS",
+  "music": "MUS_HG_VIRIDIAN_FOREST",
+  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE22",
+      "offset": -20,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_VIRIDIAN_CITY",
+      "offset": 80,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_INDIGO_WOODS_E",
+      "offset": 0,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

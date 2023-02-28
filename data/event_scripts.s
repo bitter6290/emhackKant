@@ -1277,3 +1277,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/ERangeCliffs/scripts.inc"
 
 	.include "data/maps/SecretCoast/scripts.inc"
+
+	.include "data/maps/IndigoWoods/scripts.inc"

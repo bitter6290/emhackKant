@@ -259,7 +259,7 @@ bool32 IsAffectedByFollowMe(u32 battlerAtk, u32 defSide, u32 move)
 void HandleAction_UseMove(void)
 {
     u32 i, side, moveType, var = 4;
-    u16 moveTarget = GetBattlerMoveTargetType(gBattlerAttacker, gCurrentMove);
+    u16 moveTarget;
 
     gBattlerAttacker = gBattlerByTurnOrder[gCurrentTurnActionNumber];
     if (gBattleStruct->absentBattlerFlags & gBitTable[gBattlerAttacker] || !IsBattlerAlive(gBattlerAttacker))
@@ -324,6 +324,8 @@ void HandleAction_UseMove(void)
         gCurrentMove = gBattleStruct->zmove.toBeUsed[gBattlerAttacker];
     }
 
+    moveTarget = GetBattlerMoveTargetType(gBattlerAttacker, gCurrentMove);
+
     if (gBattleMons[gBattlerAttacker].hp != 0)
     {
         if (GetBattlerSide(gBattlerAttacker) == B_SIDE_PLAYER)
@@ -346,7 +348,7 @@ void HandleAction_UseMove(void)
     }
     else if ((gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
            && gSideTimers[side].followmeTimer == 0
-           && (gBattleMoves[gCurrentMove].power != 0 || moveTarget != MOVE_TARGET_USER)
+           && (gBattleMoves[gCurrentMove].power != 0 || (moveTarget != MOVE_TARGET_USER && moveTarget != MOVE_TARGET_ALL_BATTLERS))
            && ((GetBattlerAbility(*(gBattleStruct->moveTarget + gBattlerAttacker)) != ABILITY_LIGHTNING_ROD && moveType == TYPE_ELECTRIC)
             || (GetBattlerAbility(*(gBattleStruct->moveTarget + gBattlerAttacker)) != ABILITY_STORM_DRAIN && moveType == TYPE_WATER)))
     {
@@ -907,9 +909,8 @@ void HandleAction_NothingIsFainted(void)
 void HandleAction_ActionFinished(void)
 {
     #if B_RECALC_TURN_AFTER_ACTIONS >= GEN_8
-    u8 i, j;
-    u8 battler1 = 0;
-    u8 battler2 = 0;
+    u32 i, j;
+    bool32 afterYouActive = gSpecialStatuses[gBattlerByTurnOrder[gCurrentTurnActionNumber + 1]].afterYou;
     #endif
     *(gBattleStruct->monToSwitchIntoId + gBattlerByTurnOrder[gCurrentTurnActionNumber]) = PARTY_SIZE;
     gCurrentTurnActionNumber++;
@@ -936,25 +937,33 @@ void HandleAction_ActionFinished(void)
     gBattleResources->battleScriptsStack->size = 0;
 
     #if B_RECALC_TURN_AFTER_ACTIONS >= GEN_8
-    // i starts at `gCurrentTurnActionNumber` because we don't want to recalculate turn order for mon that have already
-    // taken action. It's been previously increased, which we want in order to not recalculate the turn of the mon that just finished its action
-    for (i = gCurrentTurnActionNumber; i < gBattlersCount - 1; i++)
+    if (!afterYouActive)
     {
-        for (j = i + 1; j < gBattlersCount; j++)
+        // i starts at `gCurrentTurnActionNumber` because we don't want to recalculate turn order for mon that have already
+        // taken action. It's been previously increased, which we want in order to not recalculate the turn of the mon that just finished its action
+        for (i = gCurrentTurnActionNumber; i < gBattlersCount - 1; i++)
         {
-            u8 battler1 = gBattlerByTurnOrder[i];
-            u8 battler2 = gBattlerByTurnOrder[j];
-            // We recalculate order only for action of the same priority. If any action other than switch/move has been taken, they should
-            // have been executed before. The only recalculation needed is for moves/switch. Mega evolution is handled in src/battle_main.c/TryChangeOrder
-            if((gActionsByTurnOrder[i] == B_ACTION_USE_MOVE && gActionsByTurnOrder[j] == B_ACTION_USE_MOVE))
+            for (j = i + 1; j < gBattlersCount; j++)
             {
-                if (GetWhoStrikesFirst(battler1, battler2, FALSE))
-                    SwapTurnOrder(i, j);
-            }
-            else if ((gActionsByTurnOrder[i] == B_ACTION_SWITCH && gActionsByTurnOrder[j] == B_ACTION_SWITCH))
-            {
-                if (GetWhoStrikesFirst(battler1, battler2, TRUE)) // If the actions chosen are switching, we recalc order but ignoring the moves
-                    SwapTurnOrder(i, j);
+                u8 battler1 = gBattlerByTurnOrder[i];
+                u8 battler2 = gBattlerByTurnOrder[j];
+
+                if (gProtectStructs[battler1].quash || gProtectStructs[battler2].quash
+                    || gProtectStructs[battler1].shellTrap || gProtectStructs[battler2].shellTrap)
+                    continue;
+
+                // We recalculate order only for action of the same priority. If any action other than switch/move has been taken, they should
+                // have been executed before. The only recalculation needed is for moves/switch. Mega evolution is handled in src/battle_main.c/TryChangeOrder
+                if((gActionsByTurnOrder[i] == B_ACTION_USE_MOVE && gActionsByTurnOrder[j] == B_ACTION_USE_MOVE))
+                {
+                    if (GetWhoStrikesFirst(battler1, battler2, FALSE))
+                        SwapTurnOrder(i, j);
+                }
+                else if ((gActionsByTurnOrder[i] == B_ACTION_SWITCH && gActionsByTurnOrder[j] == B_ACTION_SWITCH))
+                {
+                    if (GetWhoStrikesFirst(battler1, battler2, TRUE)) // If the actions chosen are switching, we recalc order but ignoring the moves
+                        SwapTurnOrder(i, j);
+                }
             }
         }
     }
@@ -1278,6 +1287,9 @@ u8 GetBattlerForBattleScript(u8 caseId)
         break;
     case BS_ATTACKER:
         ret = gBattlerAttacker;
+        break;
+    case BS_ATTACKER_PARTNER:
+        ret = BATTLE_PARTNER(gBattlerAttacker);
         break;
     case BS_EFFECT_BATTLER:
         ret = gEffectBattler;
@@ -2143,7 +2155,9 @@ u8 DoFieldEndTurnEffects(void)
                 s32 j;
                 for (j = i + 1; j < gBattlersCount; j++)
                 {
-                    if (GetWhoStrikesFirst(gBattlerByTurnOrder[i], gBattlerByTurnOrder[j], 0))
+                    if (!gProtectStructs[i].quash
+                            && !gProtectStructs[j].quash
+                            && GetWhoStrikesFirst(gBattlerByTurnOrder[i], gBattlerByTurnOrder[j], FALSE))
                         SwapTurnOrder(i, j);
                 }
             }
@@ -3312,7 +3326,7 @@ bool8 HandleWishPerishSongOnTurnEnd(void)
     return FALSE;
 }
 
-#define FAINTED_ACTIONS_MAX_CASE 7
+#define FAINTED_ACTIONS_MAX_CASE 8
 
 bool8 HandleFaintedMonActions(void)
 {
@@ -3397,7 +3411,19 @@ bool8 HandleFaintedMonActions(void)
             else
                 gBattleStruct->faintedActionsState = 4;
             break;
-        case 6:
+        case 6: // All battlers switch-in abilities happen here to prevent them happening against an empty field.
+            for (i = 0; i < gBattlersCount; i++)
+            {
+                if (gBattleStruct->switchInAbilityPostponed & gBitTable[i])
+                {
+                    if (DoSwitchInAbilitiesItems(i))
+                        return TRUE;
+                    gBattleStruct->switchInAbilityPostponed &= ~(gBitTable[i]);
+                }
+            }
+            gBattleStruct->faintedActionsState++;
+            break;
+        case 7:
             if (ItemBattleEffects(ITEMEFFECT_NORMAL, 0, TRUE))
                 return TRUE;
             gBattleStruct->faintedActionsState++;
@@ -3420,35 +3446,6 @@ void TryClearRageAndFuryCutter(void)
             gDisableStructs[i].furyCutterCounter = 0;
     }
 }
-
-enum
-{
-    CANCELLER_FLAGS,
-    CANCELLER_SKY_DROP,
-    CANCELLER_ASLEEP,
-    CANCELLER_FROZEN,
-    CANCELLER_TRUANT,
-    CANCELLER_RECHARGE,
-    CANCELLER_FLINCH,
-    CANCELLER_DISABLED,
-    CANCELLER_GRAVITY,
-    CANCELLER_HEAL_BLOCKED,
-    CANCELLER_TAUNTED,
-    CANCELLER_IMPRISONED,
-    CANCELLER_CONFUSED,
-    CANCELLER_PARALYSED,
-    CANCELLER_IN_LOVE,
-    CANCELLER_BIDE,
-    CANCELLER_THAW,
-    CANCELLER_POWDER_MOVE,
-    CANCELLER_POWDER_STATUS,
-    CANCELLER_THROAT_CHOP,
-    CANCELLER_MULTIHIT_MOVES,
-    CANCELLER_Z_MOVES,
-    CANCELLER_END,
-    CANCELLER_PSYCHIC_TERRAIN,
-    CANCELLER_END2,
-};
 
 u8 AtkCanceller_UnableToUseMove(void)
 {
@@ -3764,7 +3761,10 @@ u8 AtkCanceller_UnableToUseMove(void)
                 if (effect != 0)
                     gBattlescriptCurrInstr = BattleScript_PowderMoveNoEffect;
             }
-            gBattleStruct->atkCancellerTracker++;
+            if (gProtectStructs[gBattlerAttacker].usesBouncedMove) // Edge case for bouncing a powder move against a grass type pokemon.
+                gBattleStruct->atkCancellerTracker = CANCELLER_END;
+            else
+                gBattleStruct->atkCancellerTracker++;
             break;
         case CANCELLER_POWDER_STATUS:
             if (gBattleMons[gBattlerAttacker].status2 & STATUS2_POWDER)
@@ -4826,6 +4826,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
         case ABILITY_INTIMIDATE:
             if (!gSpecialStatuses[battler].switchInAbilityDone)
             {
+                gBattlerAttacker = battler;
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
                 SET_STATCHANGER(STAT_ATK, 1, TRUE);
                 BattleScriptPushCursorAndCallback(BattleScript_IntimidateActivates);
@@ -8342,9 +8343,15 @@ bool32 IsBattlerProtected(u8 battlerId, u16 move)
             return FALSE;
     }
 
-        if (move == MOVE_TEATIME)
+    if (move == MOVE_TEATIME)
     {
-            return FALSE;
+        return FALSE;
+    }
+
+    // Z-Moves and Max Moves bypass protection
+    if (gBattleStruct->zmove.active)
+    {
+        return FALSE;
     }
 
     // Protective Pads doesn't stop Unseen Fist from bypassing Protect effects, so IsMoveMakingContact() isn't used here.
@@ -8789,8 +8796,14 @@ static u16 CalcMoveBasePower(u16 move, u8 battlerAtk, u8 battlerDef)
             basePower *= 2;
         break;
     case EFFECT_ROUND:
-        if (gChosenMoveByBattler[BATTLE_PARTNER(battlerAtk)] == MOVE_ROUND && !(gAbsentBattlerFlags & gBitTable[BATTLE_PARTNER(battlerAtk)]))
-            basePower *= 2;
+        for (i = 0; i < gBattlersCount; i++)
+        {
+            if (i != battlerAtk && IsBattlerAlive(i) && gLastMoves[i] == MOVE_ROUND)
+            {
+                basePower *= 2;
+                break;
+            }
+        }
         break;
     case EFFECT_FUSION_COMBO:
         if (gBattleMoves[gLastUsedMove].effect == EFFECT_FUSION_COMBO && move != gLastUsedMove)
@@ -9731,6 +9744,12 @@ static u32 CalcFinalDmg(u32 dmg, u16 move, u8 battlerAtk, u8 battlerDef, u8 move
             MulModifier(&finalModifier, UQ_4_12(0.25));
     }
 
+    // Z-Moves and Max Moves bypass Protect and do 25% of their original damage
+    if (gBattleStruct->zmove.active && IS_BATTLER_PROTECTED(battlerDef))
+    {
+        MulModifier(&finalModifier, UQ_4_12(0.25));
+    }
+
     // attacker's abilities
     switch (abilityAtk)
     {
@@ -9923,6 +9942,18 @@ static void MulByTypeEffectiveness(u16 *modifier, u16 move, u8 moveType, u8 batt
     MulModifier(modifier, mod);
 }
 
+static void TryNoticeIllusionInTypeEffectiveness(u32 move, u32 moveType, u32 battlerAtk, u32 battlerDef, u16 resultingModifier, u32 illusionSpecies)
+{
+    // Check if the type effectiveness would've been different if the pokemon really had the types as the disguise.
+    u16 presumedModifier = UQ_4_12(1.0);
+    MulByTypeEffectiveness(&presumedModifier, move, moveType, battlerDef, gSpeciesInfo[illusionSpecies].types[0], battlerAtk, FALSE);
+    if (gSpeciesInfo[illusionSpecies].types[1] != gSpeciesInfo[illusionSpecies].types[0])
+        MulByTypeEffectiveness(&presumedModifier, move, moveType, battlerDef, gSpeciesInfo[illusionSpecies].types[1], battlerAtk, FALSE);
+
+    if (presumedModifier != resultingModifier)
+        RecordAbilityBattle(battlerDef, ABILITY_ILLUSION);
+}
+
 static void UpdateMoveResultFlags(u16 modifier)
 {
     if (modifier == UQ_4_12(0.0))
@@ -9948,6 +9979,7 @@ static void UpdateMoveResultFlags(u16 modifier)
 
 static u16 CalcTypeEffectivenessMultiplierInternal(u16 move, u8 moveType, u8 battlerAtk, u8 battlerDef, bool32 recordAbilities, u16 modifier)
 {
+    u32 illusionSpecies;
     u16 defAbility = GetBattlerAbility(battlerDef);
 
     MulByTypeEffectiveness(&modifier, move, moveType, battlerDef, gBattleMons[battlerDef].type1, battlerAtk, recordAbilities);
@@ -9957,8 +9989,20 @@ static u16 CalcTypeEffectivenessMultiplierInternal(u16 move, u8 moveType, u8 bat
         && gBattleMons[battlerDef].type3 != gBattleMons[battlerDef].type1)
         MulByTypeEffectiveness(&modifier, move, moveType, battlerDef, gBattleMons[battlerDef].type3, battlerAtk, recordAbilities);
 
+    if (recordAbilities && (illusionSpecies = GetIllusionMonSpecies(battlerDef)))
+        TryNoticeIllusionInTypeEffectiveness(move, moveType, battlerAtk, battlerDef, modifier, illusionSpecies);
 
-    if ((moveType == TYPE_GROUND || move == MOVE_VOLCANIC_FLOW) && !IsBattlerGrounded2(battlerDef, TRUE) && !(gBattleMoves[move].flags & FLAG_DMG_UNGROUNDED_IGNORE_TYPE_IF_FLYING))
+    if (gBattleMoves[move].split == SPLIT_STATUS && move != MOVE_THUNDER_WAVE)
+    {
+        modifier = UQ_4_12(1.0);
+    #if B_GLARE_GHOST <= GEN_3
+        if (move == MOVE_GLARE && IS_BATTLER_OF_TYPE(battlerDef, TYPE_GHOST))
+        {
+            modifier = UQ_4_12(0.0);
+        }
+    #endif
+    }
+    else if ((moveType == TYPE_GROUND || move == MOVE_VOLCANIC_FLOW) && !IsBattlerGrounded2(battlerDef, TRUE) && !(gBattleMoves[move].flags & FLAG_DMG_UNGROUNDED_IGNORE_TYPE_IF_FLYING))
     {
         modifier = UQ_4_12(0.0);
         if (recordAbilities && defAbility == ABILITY_LEVITATE)
@@ -9974,12 +10018,6 @@ static u16 CalcTypeEffectivenessMultiplierInternal(u16 move, u8 moveType, u8 bat
     else if (move == MOVE_SHEER_COLD && IS_BATTLER_OF_TYPE(battlerDef, TYPE_ICE))
     {
         modifier = UQ_4_12(0.0);
-    }
-#endif
-#if B_GLARE_GHOST >= GEN_4
-    else if (move == MOVE_GLARE && IS_BATTLER_OF_TYPE(battlerDef, TYPE_GHOST))
-    {
-        modifier = UQ_4_12(1.0);
     }
 #endif
 
@@ -10385,6 +10423,14 @@ struct Pokemon *GetIllusionMonPtr(u32 battlerId)
 void ClearIllusionMon(u32 battlerId)
 {
     memset(&gBattleStruct->illusion[battlerId], 0, sizeof(gBattleStruct->illusion[battlerId]));
+}
+
+u32 GetIllusionMonSpecies(u32 battlerId)
+{
+    struct Pokemon *illusionMon = GetIllusionMonPtr(battlerId);
+    if (illusionMon != NULL)
+        return GetMonData(illusionMon, MON_DATA_SPECIES);
+    return SPECIES_NONE;
 }
 
 bool32 SetIllusionMon(struct Pokemon *mon, u32 battlerId)

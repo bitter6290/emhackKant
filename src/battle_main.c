@@ -3879,7 +3879,7 @@ static void TryDoEventsBeforeFirstTurn(void)
     {
         for (i = 0; i < gBattlersCount; i++)
         {
-            if (gBattleMons[i].hp == 0 || gBattleMons[i].species == SPECIES_NONE)
+            if (gBattleMons[i].hp == 0 || gBattleMons[i].species == SPECIES_NONE || GetMonData(GetBattlerPartyData(i), MON_DATA_IS_EGG))
                 gAbsentBattlerFlags |= gBitTable[i];
         }
     }
@@ -4090,8 +4090,8 @@ void BattleTurnPassed(void)
         BattleScriptExecute(BattleScript_PalacePrintFlavorText);
     else if (gBattleTypeFlags & BATTLE_TYPE_ARENA && gBattleStruct->arenaTurnCounter == 0)
         BattleScriptExecute(BattleScript_ArenaTurnBeginning);
-    else if (ShouldDoTrainerSlide(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT), gTrainerBattleOpponent_A, TRAINER_SLIDE_LAST_LOW_HP))
-        BattleScriptExecute(BattleScript_TrainerSlideMsgEnd2);
+    else if ((i = ShouldDoTrainerSlide(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT), TRAINER_SLIDE_LAST_LOW_HP)))
+        BattleScriptExecute(i == 1 ? BattleScript_TrainerASlideMsgEnd2 : BattleScript_TrainerBSlideMsgEnd2);
 }
 
 u8 IsRunningFromBattleImpossible(void)
@@ -5179,6 +5179,9 @@ static void CheckChosenMoveForEffectsBeforeTurnStarts(void)
                     return;
                 case MOVE_BEAK_BLAST:
                     BattleScriptExecute(BattleScript_BeakBlastSetUp);
+                    return;
+                case MOVE_SHELL_TRAP:
+                    BattleScriptExecute(BattleScript_ShellTrapSetUp);
                     return;
                 }
             }

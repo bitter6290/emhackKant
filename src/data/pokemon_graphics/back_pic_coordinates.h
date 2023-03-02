@@ -1413,6 +1413,12 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = MON_COORDS_SIZE(64, 48),
         .y_offset = 8,
     },
+    [SPECIES_GIBLE_KANTO]                  = { .size = MON_COORDS_SIZE(56, 48), .y_offset =  9 },
+    [SPECIES_GABITE_KANTO]                 = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  3 },
+    [SPECIES_GARCHOMP_KANTO]               = { .size = MON_COORDS_SIZE(64, 56), .y_offset =  4 },
+    [SPECIES_SURSKIT_KANTO]                = { .size = MON_COORDS_SIZE(56, 40), .y_offset = 13 },
+    [SPECIES_MASQUERAIN_KANTO]             = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 },
+    [SPECIES_ARIDOSPID]                    = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 },
     [SPECIES_KRICKETON] =
     {
         .size = MON_COORDS_SIZE(64, 64),
@@ -1454,6 +1460,10 @@ const struct MonCoords gMonBackPicCoords[] =
         .y_offset = 0,
     },
     [SPECIES_ARBOK_MEGA] 			= { .size = MON_COORDS_SIZE(64, 64), .y_offset = 0 },
+    [SPECIES_BLASTOISE_MEGA_Y] 		= { .size = MON_COORDS_SIZE(64, 64), .y_offset = 0 },
+    [SPECIES_VENUSAUR_MEGA_Y] 		= { .size = MON_COORDS_SIZE(64, 64), .y_offset = 0 },
+    [SPECIES_OMASTAR_MEGA] 			= { .size = MON_COORDS_SIZE(64, 64), .y_offset = 0 },
+    [SPECIES_KABUTOPS_MEGA]			= { .size = MON_COORDS_SIZE(64, 64), .y_offset = 0 },
     [SPECIES_SANDYGAST_KANTO] 		= { .size = MON_COORDS_SIZE(64, 64), .y_offset = 0 },
     [SPECIES_POLTENDULA] 			= { .size = MON_COORDS_SIZE(64, 64), .y_offset = 0 },
     [SPECIES_PORYGON_NORMAL]		= { .size = MON_COORDS_SIZE(64,64), .y_offset = 10 }, //gMonIcon_PorygonXNormal

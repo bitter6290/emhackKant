@@ -10797,110 +10797,6 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
     
-// Custom mons
-    [NATIONAL_DEX_KRICKETON] =
-    {
-        .categoryName = _("Conductor"),
-        .height = 14,
-        .weight = 320,
-        .description = gKricketonPokedexText,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-    
-    [NATIONAL_DEX_KRICKALLOUS] =
-    {
-        .categoryName = _("Bitter"),
-        .height = 12,
-        .weight = 360,
-        .description = gKrickallousPokedexText,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-    
-    [NATIONAL_DEX_LEDENNA] =
-    {
-        .categoryName = _("Five Star"),
-        .height = 19,
-        .weight = 510,
-        .description = gLedennaPokedexText,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-    
-    [NATIONAL_DEX_ALOOBAT] =
-    {
-        .categoryName = _("Departing"),
-        .height = 12,
-        .weight = 210,
-        .description = gAloobatPokedexText,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-    
-    [NATIONAL_DEX_POLTENDULA] =
-    {
-    	.categoryName = _("Timekeeper"),
-    	.height = 17,
-    	.weight = 2022,
-    },
-    
-    [NATIONAL_DEX_FAUVANTIC] =
-    {
-        .categoryName = _("ForestSpirit"),
-        .height = 13,
-        .weight = 110,
-        .description = gFauvanticPokedexText,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-    
-    [NATIONAL_DEX_FLORESTIC] =
-    {
-        .categoryName = _("ForestSpirit"),
-        .height = 12,
-        .weight = 220,
-        .description = gFloresticPokedexText,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-    
-    [NATIONAL_DEX_TERRANTIC] =
-    {
-        .categoryName = _("ForestSpirit"),
-        .height = 10,
-        .weight = 440,
-        .description = gTerranticPokedexText,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-    
-    [NATIONAL_DEX_AUREATIC] =
-    {
-        .categoryName = _("Sun Spirit"),
-        .height = 11,
-        .weight = 560,
-        .description = gAureaticPokedexText,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-    
     [NATIONAL_DEX_WYRDEER] =
     {
         .categoryName = _("Big Horn"),
@@ -10979,6 +10875,129 @@ const struct PokedexEntry gPokedexEntries[] =
         .height = 16,
         .weight = 480,
         .description = gEnamorusPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    
+    
+    
+// Custom mons
+    [NATIONAL_DEX_KRICKETON] =
+    {
+        .categoryName = _("Conductor"),
+        .height = 14,
+        .weight = 320,
+        .description = gKricketonPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    
+    [NATIONAL_DEX_KRICKALLOUS] =
+    {
+        .categoryName = _("Bitter"),
+        .height = 12,
+        .weight = 360,
+        .description = gKrickallousPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    
+    [NATIONAL_DEX_LEDENNA] =
+    {
+        .categoryName = _("Five Star"),
+        .height = 19,
+        .weight = 510,
+        .description = gLedennaPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    
+    [NATIONAL_DEX_ALOOBAT] =
+    {
+        .categoryName = _("Departing"),
+        .height = 12,
+        .weight = 210,
+        .description = gAloobatPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    
+    [NATIONAL_DEX_POLTENDULA] =
+    {
+    	.categoryName = _("Timekeeper"),
+    	.height = 17,
+    	.weight = 2022,
+        .description = gPoltendulaPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    
+    [NATIONAL_DEX_ARIDOSPID] =
+    {
+    	.categoryName = _("DesertSun"),
+    	.height = 9,
+    	.weight = 200,
+        .description = gAridospidPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    
+    [NATIONAL_DEX_FAUVANTIC] =
+    {
+        .categoryName = _("ForestSpirit"),
+        .height = 13,
+        .weight = 110,
+        .description = gFauvanticPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    
+    [NATIONAL_DEX_FLORESTIC] =
+    {
+        .categoryName = _("ForestSpirit"),
+        .height = 12,
+        .weight = 220,
+        .description = gFloresticPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    
+    [NATIONAL_DEX_TERRANTIC] =
+    {
+        .categoryName = _("ForestSpirit"),
+        .height = 10,
+        .weight = 440,
+        .description = gTerranticPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    
+    [NATIONAL_DEX_AUREATIC] =
+    {
+        .categoryName = _("Sun Spirit"),
+        .height = 11,
+        .weight = 560,
+        .description = gAureaticPokedexText,
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,

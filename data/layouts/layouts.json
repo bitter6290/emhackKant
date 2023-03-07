@@ -5507,7 +5507,7 @@
       "width": 36,
       "height": 36,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Sootopolis",
+      "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/MyrtleTown/border.bin",
       "blockdata_filepath": "data/layouts/MyrtleTown/map.bin"
     },

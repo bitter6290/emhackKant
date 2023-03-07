@@ -1359,7 +1359,18 @@ const struct CompressedSpritePalette gMonPaletteTable[] =
      SPECIES_PAL(ALOOBAT, gMonPalette_Aloobat),
      SPECIES_PAL(SANDYGAST_KANTO, gMonPalette_CircledQuestionMark),
      SPECIES_PAL(POLTENDULA, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(SURSKIT_KANTO, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(MASQUERAIN_KANTO, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(ARIDOSPID, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(GIBLE_KANTO, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(GABITE_KANTO, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(GARCHOMP_KANTO, gMonPalette_CircledQuestionMark),
+     
      SPECIES_PAL(ARBOK_MEGA, gMonPalette_ArbokMega),
+     SPECIES_PAL(BLASTOISE_MEGA_Y, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(VENUSAUR_MEGA_Y, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(KABUTOPS_MEGA, gMonPalette_CircledQuestionMark),
+     SPECIES_PAL(OMASTAR_MEGA, gMonPalette_CircledQuestionMark),
      SPECIES_PAL(PORYGON_NORMAL, gMonPalette_CircledQuestionMark), //gMonIcon_PorygonXNormal
      SPECIES_PAL(PORYGON_FIRE, gMonPalette_CircledQuestionMark),
      SPECIES_PAL(PORYGON_WATER, gMonPalette_CircledQuestionMark),

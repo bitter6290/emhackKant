@@ -824,6 +824,16 @@ static const struct TrainerMonItemCustomMoves sParty_Yvonne4[] = {
 	{
 	.iv = 0,
 	.lvl = 52,
+	.species = SPECIES_ARIDOSPID,
+	.heldItem = ITEM_LEFTOVERS,
+	.ability = 0,
+	.spreadEv = SPREAD_SPECIALLY_DEFENSIVE_PH,
+	.spreadIv = SPREAD_31_IV,
+	.moves = {MOVE_STEALTH_ROCK, MOVE_U_TURN, MOVE_EARTHQUAKE, MOVE_MEGAHORN},
+	},
+	{
+	.iv = 0,
+	.lvl = 52,
 	.species = SPECIES_SCIZOR,
 	.heldItem = ITEM_SCIZORITE,
 	.ability = 1,
@@ -840,16 +850,6 @@ static const struct TrainerMonItemCustomMoves sParty_Yvonne4[] = {
 	.spreadEv = SPREAD_FAST_SPECIAL_SWEEPER_A,
 	.spreadIv = SPREAD_LOW_ATTACK,
 	.moves = {MOVE_QUIVER_DANCE, MOVE_FIERY_DANCE, MOVE_MORNING_SUN, MOVE_DEFOG},
-	},
-	{
-	.iv = 0,
-	.lvl = 52,
-	.species = SPECIES_ARAQUANID,
-	.heldItem = ITEM_LEFTOVERS,
-	.ability = 0,
-	.spreadEv = SPREAD_BULKY_PHYSICAL_SWEEPER,
-	.spreadIv = SPREAD_31_IV,
-	.moves = {MOVE_LUNGE, MOVE_LIQUIDATION, MOVE_REFLECT, MOVE_RAIN_DANCE},
 	},
 	{
 	.iv = 0,

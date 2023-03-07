@@ -852,6 +852,16 @@ IVs: 0 Atk
 
 === [] Yvonne 4 ===
 
+Aridospid @ Leftovers  
+Ability: Intimidate  
+Level: 52  
+EVs: 252 HP / 4 Def / 252 SpD  
+Careful Nature  
+- Stealth Rock  
+- U-Turn  
+- Earthquake  
+- Megahorn  
+
 Scizor-Mega @ Scizorite  
 Ability: Technician  
 Level: 52  
@@ -872,16 +882,6 @@ IVs: 0 Atk
 - Fiery Dance  
 - Morning Sun  
 - Defog  
-
-Araquanid @ Leftovers  
-Ability: Water Bubble  
-Level: 52  
-EVs: 252 HP / 252 Atk / 4 SpD  
-Adamant Nature  
-- Lunge  
-- Liquidation  
-- Reflect  
-- Rain Dance  
 
 Ledenna @ Life Orb  
 Ability: Swarm  

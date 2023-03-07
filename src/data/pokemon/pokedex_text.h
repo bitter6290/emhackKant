@@ -5380,6 +5380,16 @@ const u8 gAloobatPokedexText[] = _(
 	"season ended. It's less social now,\n"
 	"but its sonic abilities are stronger.");
 	
+const u8 gPoltendulaPokedexText[] = _(
+	"Sandygast's captivity in its hourglass\n"
+	"caused a change in its form, giving it\n"
+	"control over the passage of time.");
+	
+const u8 gAridospidPokedexText[] = _(
+	"Adapted to Kanto's deserts, this\n"
+	"Pokémon communicates with others using\n"
+	"its horns and tail.");
+	
 const u8 gFauvanticPokedexText[] = _(
 	"This Pokémon is the guardian spirit\n"
 	"of Kanto's forest creatures. It\n"

@@ -1360,6 +1360,21 @@ const struct CompressedSpriteSheet gMonBackPicTable[] =
     SPECIES_SPRITE(ALOOBAT, gMonBackPic_Aloobat),
     SPECIES_SPRITE(SANDYGAST_KANTO, gMonBackPic_CircledQuestionMark), //REPLACE
     SPECIES_SPRITE(POLTENDULA, gMonBackPic_CircledQuestionMark), //REPLACE
+    SPECIES_SPRITE(SURSKIT_KANTO, gMonBackPic_CircledQuestionMark),
+    SPECIES_SPRITE(MASQUERAIN_KANTO, gMonBackPic_CircledQuestionMark),
+    SPECIES_SPRITE(ARIDOSPID, gMonBackPic_CircledQuestionMark),
+    SPECIES_SPRITE(GIBLE_KANTO, gMonBackPic_CircledQuestionMark),
+    SPECIES_SPRITE(GABITE_KANTO, gMonBackPic_CircledQuestionMark),    
+    SPECIES_SPRITE(GARCHOMP_KANTO, gMonBackPic_CircledQuestionMark),
+
+	//custom megas
+
+    SPECIES_SPRITE(VENUSAUR_MEGA_Y, gMonBackPic_CircledQuestionMark),
+    SPECIES_SPRITE(BLASTOISE_MEGA_Y, gMonBackPic_CircledQuestionMark),
+    SPECIES_SPRITE(ARBOK_MEGA, gMonBackPic_CircledQuestionMark),
+    SPECIES_SPRITE(OMASTAR_MEGA, gMonBackPic_CircledQuestionMark),
+    SPECIES_SPRITE(KABUTOPS_MEGA, gMonBackPic_CircledQuestionMark),
+
     SPECIES_SPRITE(PORYGON_NORMAL, gMonBackPic_CircledQuestionMark), //gMonIcon_PorygonXNormal
     SPECIES_SPRITE(PORYGON_FIRE, gMonBackPic_CircledQuestionMark),
     SPECIES_SPRITE(PORYGON_WATER, gMonBackPic_CircledQuestionMark),
@@ -1385,9 +1400,6 @@ const struct CompressedSpriteSheet gMonBackPicTable[] =
     SPECIES_SPRITE(KOFFING_GALARIAN, gMonBackPic_Koffing),
 	
     
-	//custom megas
-	
-    SPECIES_SPRITE(ARBOK_MEGA, gMonBackPic_ArbokMega),
 
 	//egg
 #endif

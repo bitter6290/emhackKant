@@ -33499,3 +33499,7 @@ static const u16 sCalyrexShadowRiderTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif
+
+static const u16 sNotDoneYetTeachableLearnset[] = {
+	MOVE_UNAVAILABLE,
+};

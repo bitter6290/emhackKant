@@ -19919,17 +19919,21 @@ static const struct LevelUpMove sFauvanticLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 1, MOVE_LICK),
 	LEVEL_UP_MOVE( 5, MOVE_INFESTATION),
 	LEVEL_UP_MOVE( 35, MOVE_HYPNOSIS),
+	LEVEL_UP_MOVE( 45, MOVE_DUAL_WINGBEAT),
+	LEVEL_UP_MOVE( 60, MOVE_MEGAHORN),
 	LEVEL_UP_END
 };
 static const struct LevelUpMove sFloresticLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 1, MOVE_LICK),
 	LEVEL_UP_MOVE( 5, MOVE_VINE_WHIP),
 	LEVEL_UP_MOVE( 35, MOVE_INGRAIN),
+	LEVEL_UP_MOVE( 60, MOVE_POWER_WHIP),
 	LEVEL_UP_END
 };
 static const struct LevelUpMove sTerranticLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 1, MOVE_LICK),
 	LEVEL_UP_MOVE( 5, MOVE_ANCIENT_POWER),
+	LEVEL_UP_MOVE( 40, MOVE_EARTH_POWER),
 	LEVEL_UP_MOVE( 50, MOVE_HEAD_SMASH),
 	LEVEL_UP_MOVE( 60, MOVE_EARTHQUAKE),
 	LEVEL_UP_END
@@ -19955,3 +19959,8 @@ static const struct LevelUpMove sPoltendulaLevelUpLearnset [] = {
 	LEVEL_UP_END
 };
 #endif
+
+static const struct LevelUpMove sNotDoneYetLevelUpLearnset [] = {
+	LEVEL_UP_MOVE( 1, MOVE_SPLASH),
+	LEVEL_UP_END
+};

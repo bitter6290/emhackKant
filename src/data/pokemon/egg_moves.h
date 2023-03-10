@@ -4429,7 +4429,6 @@ const u16 gEggMoves[] = {
         MOVE_QUICK_ATTACK,
         MOVE_HOWL,
         MOVE_FLAME_CHARGE,
-        MOVE_NIGHT_SLASH,
         MOVE_SHOCK_WAVE,
         MOVE_SWIFT,
         MOVE_DOUBLE_KICK,
@@ -4437,6 +4436,13 @@ const u16 gEggMoves[] = {
         MOVE_HELPING_HAND,
         MOVE_EERIE_IMPULSE,
         MOVE_FAKE_TEARS),
+        
+    egg_moves(SURSKIT_KANTO,
+    	MOVE_KNOCK_OFF,
+    	MOVE_EARTHQUAKE,
+    	MOVE_ROCK_TOMB,
+    	MOVE_AQUA_JET,
+    	MOVE_DOUBLE_KICK),
 
     EGG_MOVES_TERMINATOR
 };

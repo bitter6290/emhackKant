@@ -24872,6 +24872,7 @@ General_MegaEvolution:
 	createvisualtask AnimTask_BlendBattleAnimPalExclude, 5, 5, 2, 16, 0, RGB_WHITEALPHA
 	createvisualtask AnimTask_HorizontalShake, 5, 1, 5, 14
 	waitforvisualfinish
+	createvisualtask SoundTask_PlayNormalCry, 0
 	createsprite gMegaSymbolSpriteTemplate ANIM_ATTACKER, 2
 	waitforvisualfinish
 	clearmonbg ANIM_ATK_PARTNER
@@ -25017,6 +25018,7 @@ General_PrimalReversion_Alpha:
 	createvisualtask AnimTask_BlendBattleAnimPalExclude, 5, 5, 2, 16, 0, RGB_WHITEALPHA
 	createvisualtask AnimTask_HorizontalShake, 5, 1, 5, 14
 	waitforvisualfinish
+	createvisualtask SoundTask_PlayNormalCry, 0
 	createsprite gAlphaSymbolSpriteTemplate ANIM_ATTACKER, 2
 	waitforvisualfinish
 	clearmonbg ANIM_ATK_PARTNER
@@ -25043,6 +25045,7 @@ General_PrimalReversion_Omega:
 	createvisualtask AnimTask_BlendBattleAnimPalExclude, 5, 5, 2, 16, 0, RGB_WHITEALPHA
 	createvisualtask AnimTask_HorizontalShake, 5, 1, 5, 14
 	waitforvisualfinish
+	createvisualtask SoundTask_PlayNormalCry, 0
 	createsprite gOmegaSymbolSpriteTemplate ANIM_ATTACKER, 2
 	waitforvisualfinish
 	clearmonbg ANIM_ATK_PARTNER

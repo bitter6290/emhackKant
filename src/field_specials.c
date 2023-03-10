@@ -1452,7 +1452,7 @@ bool8 IsStarterInParty(void)
     u8 partyCount = CalculatePlayerPartyCount();
     for (i = 0; i < partyCount; i++)
     {
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, NULL) == starter)
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG, NULL) == starter)
             return TRUE;
     }
     return FALSE;
@@ -1545,8 +1545,8 @@ u8 GetLeadMonIndex(void)
     u8 partyCount = CalculatePlayerPartyCount();
     for (i = 0; i < partyCount; i++)
     {
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, NULL) != SPECIES_EGG
-         && GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, NULL) != SPECIES_NONE)
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG, NULL) != SPECIES_EGG
+         && GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG, NULL) != SPECIES_NONE)
             return i;
     }
     return 0;
@@ -1554,7 +1554,7 @@ u8 GetLeadMonIndex(void)
 
 u16 ScriptGetPartyMonSpecies(void)
 {
-    return GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES2, NULL);
+    return GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES_OR_EGG, NULL);
 }
 
 // Removed for Emerald
@@ -4317,7 +4317,7 @@ void GetRotomNewSpecialMove (void)
 // Gets Rotom's current form and the matching move, stores them in gSpecialVar_0x8007 and gSpecialVar_0x8008
 void GetRotomState (void)
 {
-    gSpecialVar_0x8007 = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES2, NULL);
+    gSpecialVar_0x8007 = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES_OR_EGG, NULL);
     gSpecialVar_0x8008 = RotomFormToMove(gSpecialVar_0x8007);
 }
 
@@ -4349,11 +4349,11 @@ void ChangeRotomForm (void)
 {
     u16 currentForm, newForm;
 
-    currentForm = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES2, NULL);
+    currentForm = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES_OR_EGG, NULL);
     newForm = gSpecialVar_0x8005;
 
     SetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES, &newForm);
-    SetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES2, &newForm);
+    SetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES_OR_EGG, &newForm);
     CalculateMonStats(&gPlayerParty[gSpecialVar_0x8004]);
 }
 
@@ -4370,7 +4370,7 @@ bool8 IsSelectedMonRotom (void)
 {
     u32 species;
 
-    species = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES2, NULL);
+    species = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES_OR_EGG, NULL);
     if (SpeciesToNationalPokedexNum(species) == NATIONAL_DEX_ROTOM)
     {
         return TRUE;

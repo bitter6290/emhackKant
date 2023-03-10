@@ -907,7 +907,7 @@ void AnimTask_GetFieldTerrain(u8 taskId)
 
 void AnimTask_AllocBackupPalBuffer(u8 taskId)
 {
-    gMonSpritesGfxPtr->buffer = AllocZeroed(0x2000);
+    gMonSpritesGfxPtr->buffer = AllocZeroed(MON_PIC_SIZE * MAX_MON_PIC_FRAMES);
     DestroyAnimVisualTask(taskId);
 }
 
